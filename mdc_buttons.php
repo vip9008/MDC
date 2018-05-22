@@ -432,6 +432,57 @@ $url = "mdc_buttons.php";
     </section>
 </div>
 <div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Toggle button</h1>
+                <div class="space"></div>
+                <h1>Usage</h1>
+                <p class="text-secondary">Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.</p>
+                <h3>Selected action</h3>
+                <p class="text-secondary">Only one option in a group of toggle buttons can be selected and active at a time. Selecting one option deselects any other.</p>
+                <figure class="img_figure clearfix"><img src="img/buttons/buttons-toggle-usage.png"></figure>
+                <p class="text-secondary">These toggle buttons present options for aligning text to the left, right, and center.</p>
+                <div class="space"></div>
+                <figure class="img_figure clearfix"><img src="img/buttons/buttons-toggle-usage-2.png"></figure>
+                <p class="text-secondary">Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col xlarge-6 large-9 medium-12">
+            <div class="mdc-divider"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1>States</h1>
+                <h3>Active and available toggle buttons</h3>
+                <p class="text-secondary">A toggle button’s state makes it clear which button is active. Hover and focus states express the available selection options for buttons in a toggle group.</p>
+                <h3>Disabled toggle buttons</h3>
+                <p class="text-secondary">Toggle buttons that cannot be selected can either be given a disabled state, or be hidden.</p>
+                <figure class="img_figure clearfix"><img src="img/buttons/toggle-buttons-states.png"></figure>
+                <p class="text-secondary">Toggle button states</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Implementation</h1>
+                <div class="space"></div>
+                <h3 class="text-secondary">Buttons implementation support for web</h3>
+            </div>
+        </div>
+    </section>
+</div>
 
 </body>
 </html>
