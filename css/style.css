@@ -1,0 +1,60 @@
+:root {
+    --hljs-name: #E53935;
+    --hljs-attr: #0277BD;
+    --hljs-string: #00838F;
+}
+
+.md-theme-light {
+    --hljs-name: #E53935;
+    --hljs-attr: #0277BD;
+    --hljs-string: #00838F;
+}
+
+.md-theme-dark {
+    --hljs-name: #EF9A9A;
+    --hljs-attr: #29B6F6;
+    --hljs-string: #26C6DA;
+}
+
+h1.article_title {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+.img_figure {
+    margin: 1rem 0;
+    border: solid 1px var(--initial-text-divider);
+}
+
+.img_figure > img {
+    float: left;
+}
+
+pre, pre *, code, code * {
+    font-family: Monaco, monospace !important;
+}
+
+pre.html .hljs-name {
+    color: var(--hljs-name);
+}
+
+pre.html .hljs-attr {
+    color: var(--hljs-attr);
+}
+
+pre.html .hljs-string {
+    color: var(--hljs-string);
+}
+
+.mdc-list-group.example {
+    margin: 1rem 0;
+    border: solid 1px var(--initial-text-divider);
+}
+
+#mdc-nav-drawer .mdc-list-group > .mdc-dropdown > a.mdc-list-item > .material-icon {
+    margin: 0.75rem 2rem 0.75rem 0;
+}
+
+.space {
+    padding: 1rem;
+}

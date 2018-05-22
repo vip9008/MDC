@@ -1,0 +1,101 @@
+/* USING REM UNIT (BASE 16px) */
+
+#mdc-top-app-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background-color: var(--bg-app-bar);
+    color: var(--text-primary);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4rem;
+    padding: 0 1.5rem;
+    transition: top 0.6s, box-shadow 0.3s, transform 0.2s, opacity 0.2s, margin 0.3s;
+    z-index: var(--z-axis-4-index);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#mdc-top-app-bar.standard {
+    position: fixed;
+}
+
+#mdc-top-app-bar.standard-hidden {
+    opacity: 0;
+    -ms-transform-origin: top;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+#mdc-top-app-bar.fixed {
+    position: fixed;
+}
+
+#mdc-top-app-bar.active {
+    position: fixed;
+    opacity: 1;
+    box-shadow: var(--z-axis-4-shadow);
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+#mdc-top-app-bar > .nav-icon {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 1.25rem 1.25rem 1.25rem 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#mdc-top-app-bar > .title {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: 0.0125em;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#mdc-top-app-bar > .actions {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 3rem;
+    margin: 0.5rem 0 0.5rem auto;
+}
+
+#mdc-top-app-bar > .actions > .material-icon {
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 959px) {
+    #mdc-top-app-bar {
+        padding: 0 1rem;
+    }
+}

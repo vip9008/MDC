@@ -1,0 +1,172 @@
+#mdc-nav-drawer {
+    min-width: 16rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: var(--bg-app-bar);
+    z-index: var(--z-axis-0-index);
+    border-right: solid 1px var(--bg-border);
+    transition: all 0.3s;
+}
+
+#mdc-nav-drawer > .header {
+    padding: 1rem;
+}
+
+#mdc-nav-drawer > .header > .title {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.0125em;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#mdc-nav-drawer .mdc-list-group:not(.expanded) > .mdc-list-item {
+    --text-primary: var(--initial-text-primary);
+    --text-secondary: var(--initial-text-secondary);
+    --text-hint: var(--initial-text-hint);
+    --text-divider: var(--initial-text-divider);
+}
+
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:before {
+    background-color: var(--main-color);
+    opacity: var(--opacity-activated);
+}
+
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:hover:before {
+    background-color: var(--initial-main-color);
+    opacity: var(--opacity-hover);
+}
+
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:active:before {
+    background-color: var(--initial-main-color);
+    opacity: var(--opacity-pressed);
+}
+
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:focus:before {
+    background-color: var(--initial-main-color);
+    opacity: var(--opacity-focus);
+}
+
+#mdc-nav-drawer.modal {
+    width: 20rem;
+    max-width: calc(100% - 3.5rem);
+    left: -20rem;
+    right: auto;
+    z-index: var(--z-axis-16-index);
+}
+
+body {
+    transition: margin 0.3s;
+}
+
+body.mdc-drawer-modal {
+    overflow: hidden;
+}
+
+body.mdc-drawer-modal > #mdc-nav-drawer.modal {
+    left: 0;
+    box-shadow: var(--z-axis-16-shadow);
+}
+
+.mdc-drawer-scrim {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: calc(var(--z-axis-16-index) - 1);
+}
+
+body.mdc-drawer-modal > #mdc-nav-drawer.modal + .mdc-drawer-scrim {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#mdc-nav-drawer.persistent {
+    width: 16rem;
+    left: -16rem;
+    right: auto;
+    z-index: var(--z-axis-0-index);
+}
+
+body.mdc-drawer-expand {
+    margin-left: 16rem;
+}
+
+body.mdc-drawer-expand > #mdc-nav-drawer.persistent {
+    left: 0;
+}
+
+#mdc-nav-drawer.permanent {
+    width: 16rem;
+    left: 0;
+    right: auto;
+    z-index: var(--z-axis-0-index);
+}
+
+body:not(.mdc-top-app-bar-hidden) > #mdc-nav-drawer.clipped:not(.modal) {
+    padding-top: 4rem;
+}
+
+body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
+    margin-left: calc(16rem - 1px);
+}
+
+#mdc-nav-drawer.permanent + .mdc-drawer-scrim + #mdc-top-app-bar > .nav-icon {
+    display: none;
+}
+
+@media (max-width: 719px) {
+    #mdc-nav-drawer.persistent,
+    #mdc-nav-drawer.permanent {
+        width: 20rem;
+        max-width: calc(100% - 3.5rem);
+        left: -20rem;
+        right: auto;
+        z-index: var(--z-axis-16-index);
+    }
+
+    #mdc-nav-drawer.active.persistent,
+    #mdc-nav-drawer.active.permanent {
+        left: 0;
+        box-shadow: var(--z-axis-16-shadow);
+    }
+
+    body.mdc-drawer-expand {
+        margin: 0;
+    }
+
+    #mdc-nav-drawer.active.persistent + .mdc-drawer-scrim,
+    #mdc-nav-drawer.active.permanent + .mdc-drawer-scrim {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+    body:not(.mdc-top-app-bar-hidden) > #mdc-nav-drawer.clipped:not(.modal) {
+        padding-top: 0;
+    }
+
+    body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
+        margin: 0;
+    }
+
+    #mdc-nav-drawer.permanent + .mdc-drawer-scrim + #mdc-top-app-bar > .nav-icon {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+    }
+}

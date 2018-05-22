@@ -1,0 +1,3640 @@
+.checkbox-input.switch.active.red-50 .checkbox {
+    background-color: rgba(255, 235, 238, 0.5);
+}
+
+.checkbox-input.switch.active.red-50 .checkbox:after {
+    background-color: #FFEBEE;
+}
+
+.checkbox-input.switch.active.red-100 .checkbox {
+    background-color: rgba(255, 205, 210, 0.5);
+}
+
+.checkbox-input.switch.active.red-100 .checkbox:after {
+    background-color: #FFCDD2;
+}
+
+.checkbox-input.switch.active.red-200 .checkbox {
+    background-color: rgba(239, 154, 154, 0.5);
+}
+
+.checkbox-input.switch.active.red-200 .checkbox:after {
+    background-color: #EF9A9A;
+}
+
+.checkbox-input.switch.active.red-300 .checkbox {
+    background-color: rgba(229, 115, 115, 0.5);
+}
+
+.checkbox-input.switch.active.red-300 .checkbox:after {
+    background-color: #E57373;
+}
+
+.checkbox-input.switch.active.red-400 .checkbox {
+    background-color: rgba(239, 83, 80, 0.5);
+}
+
+.checkbox-input.switch.active.red-400 .checkbox:after {
+    background-color: #EF5350;
+}
+
+.checkbox-input.switch.active.red .checkbox,
+.checkbox-input.switch.active.red-500 .checkbox {
+    background-color: rgba(244, 67, 54, 0.5);
+}
+
+.checkbox-input.switch.active.red .checkbox:after,
+.checkbox-input.switch.active.red-500 .checkbox:after {
+    background-color: #F44336;
+}
+
+.checkbox-input.switch.active.red-600 .checkbox {
+    background-color: rgba(229, 57, 53, 0.5);
+}
+
+.checkbox-input.switch.active.red-600 .checkbox:after {
+    background-color: #E53935;
+}
+
+.checkbox-input.switch.active.red-700 .checkbox {
+    background-color: rgba(211, 47, 47, 0.5);
+}
+
+.checkbox-input.switch.active.red-700 .checkbox:after {
+    background-color: #D32F2F;
+}
+
+.checkbox-input.switch.active.red-800 .checkbox {
+    background-color: rgba(198, 40, 40, 0.5);
+}
+
+.checkbox-input.switch.active.red-800 .checkbox:after {
+    background-color: #C62828;
+}
+
+.checkbox-input.switch.active.red-900 .checkbox {
+    background-color: rgba(183, 28, 28, 0.5);
+}
+
+.checkbox-input.switch.active.red-900 .checkbox:after {
+    background-color: #B71C1C;
+}
+
+.checkbox-input.switch.active.red-A100 .checkbox {
+    background-color: rgba(255, 138, 128, 0.5);
+}
+
+.checkbox-input.switch.active.red-A100 .checkbox:after {
+    background-color: #FF8A80;
+}
+
+.checkbox-input.switch.active.red-A200 .checkbox {
+    background-color: rgba(255, 82, 82, 0.5);
+}
+
+.checkbox-input.switch.active.red-A200 .checkbox:after {
+    background-color: #FF5252;
+}
+
+.checkbox-input.switch.active.red-A400 .checkbox {
+    background-color: rgba(255, 23, 68, 0.5);
+}
+
+.checkbox-input.switch.active.red-A400 .checkbox:after {
+    background-color: #FF1744;
+}
+
+.checkbox-input.switch.active.red-A700 .checkbox {
+    background-color: rgba(213, 0, 0, 0.5);
+}
+
+.checkbox-input.switch.active.red-A700 .checkbox:after {
+    background-color: #D50000;
+}
+
+.checkbox-input.switch.active.pink-50 .checkbox {
+    background-color: rgba(252, 228, 236, 0.5);
+}
+
+.checkbox-input.switch.active.pink-50 .checkbox:after {
+    background-color: #FCE4EC;
+}
+
+.checkbox-input.switch.active.pink-100 .checkbox {
+    background-color: rgba(248, 187, 208, 0.5);
+}
+
+.checkbox-input.switch.active.pink-100 .checkbox:after {
+    background-color: #F8BBD0;
+}
+
+.checkbox-input.switch.active.pink-200 .checkbox {
+    background-color: rgba(244, 143, 177, 0.5);
+}
+
+.checkbox-input.switch.active.pink-200 .checkbox:after {
+    background-color: #F48FB1;
+}
+
+.checkbox-input.switch.active.pink-300 .checkbox {
+    background-color: rgba(240, 98, 146, 0.5);
+}
+
+.checkbox-input.switch.active.pink-300 .checkbox:after {
+    background-color: #F06292;
+}
+
+.checkbox-input.switch.active.pink-400 .checkbox {
+    background-color: rgba(236, 64, 122, 0.5);
+}
+
+.checkbox-input.switch.active.pink-400 .checkbox:after {
+    background-color: #EC407A;
+}
+
+.checkbox-input.switch.active.pink .checkbox,
+.checkbox-input.switch.active.pink-500 .checkbox {
+    background-color: rgba(233, 30, 99, 0.5);
+}
+
+.checkbox-input.switch.active.pink .checkbox:after,
+.checkbox-input.switch.active.pink-500 .checkbox:after {
+    background-color: #E91E63;
+}
+
+.checkbox-input.switch.active.pink-600 .checkbox {
+    background-color: rgba(216, 27, 96, 0.5);
+}
+
+.checkbox-input.switch.active.pink-600 .checkbox:after {
+    background-color: #D81B60;
+}
+
+.checkbox-input.switch.active.pink-700 .checkbox {
+    background-color: rgba(194, 24, 91, 0.5);
+}
+
+.checkbox-input.switch.active.pink-700 .checkbox:after {
+    background-color: #C2185B;
+}
+
+.checkbox-input.switch.active.pink-800 .checkbox {
+    background-color: rgba(173, 20, 87, 0.5);
+}
+
+.checkbox-input.switch.active.pink-800 .checkbox:after {
+    background-color: #AD1457;
+}
+
+.checkbox-input.switch.active.pink-900 .checkbox {
+    background-color: rgba(136, 14, 79, 0.5);
+}
+
+.checkbox-input.switch.active.pink-900 .checkbox:after {
+    background-color: #880E4F;
+}
+
+.checkbox-input.switch.active.pink-A100 .checkbox {
+    background-color: rgba(255, 128, 171, 0.5);
+}
+
+.checkbox-input.switch.active.pink-A100 .checkbox:after {
+    background-color: #FF80AB;
+}
+
+.checkbox-input.switch.active.pink-A200 .checkbox {
+    background-color: rgba(255, 64, 129, 0.5);
+}
+
+.checkbox-input.switch.active.pink-A200 .checkbox:after {
+    background-color: #FF4081;
+}
+
+.checkbox-input.switch.active.pink-A400 .checkbox {
+    background-color: rgba(245, 0, 87, 0.5);
+}
+
+.checkbox-input.switch.active.pink-A400 .checkbox:after {
+    background-color: #F50057;
+}
+
+.checkbox-input.switch.active.pink-A700 .checkbox {
+    background-color: rgba(197, 17, 98, 0.5);
+}
+
+.checkbox-input.switch.active.pink-A700 .checkbox:after {
+    background-color: #C51162;
+}
+
+.checkbox-input.switch.active.purple-50 .checkbox {
+    background-color: rgba(243, 229, 245, 0.5);
+}
+
+.checkbox-input.switch.active.purple-50 .checkbox:after {
+    background-color: #F3E5F5;
+}
+
+.checkbox-input.switch.active.purple-100 .checkbox {
+    background-color: rgba(225, 190, 231, 0.5);
+}
+
+.checkbox-input.switch.active.purple-100 .checkbox:after {
+    background-color: #E1BEE7;
+}
+
+.checkbox-input.switch.active.purple-200 .checkbox {
+    background-color: rgba(206, 147, 216, 0.5);
+}
+
+.checkbox-input.switch.active.purple-200 .checkbox:after {
+    background-color: #CE93D8;
+}
+
+.checkbox-input.switch.active.purple-300 .checkbox {
+    background-color: rgba(186, 104, 200, 0.5);
+}
+
+.checkbox-input.switch.active.purple-300 .checkbox:after {
+    background-color: #BA68C8;
+}
+
+.checkbox-input.switch.active.purple-400 .checkbox {
+    background-color: rgba(171, 71, 188, 0.5);
+}
+
+.checkbox-input.switch.active.purple-400 .checkbox:after {
+    background-color: #AB47BC;
+}
+
+.checkbox-input.switch.active.purple .checkbox,
+.checkbox-input.switch.active.purple-500 .checkbox {
+    background-color: rgba(156, 39, 176, 0.5);
+}
+
+.checkbox-input.switch.active.purple .checkbox:after,
+.checkbox-input.switch.active.purple-500 .checkbox:after {
+    background-color: #9C27B0;
+}
+
+.checkbox-input.switch.active.purple-600 .checkbox {
+    background-color: rgba(142, 36, 170, 0.5);
+}
+
+.checkbox-input.switch.active.purple-600 .checkbox:after {
+    background-color: #8E24AA;
+}
+
+.checkbox-input.switch.active.purple-700 .checkbox {
+    background-color: rgba(123, 31, 162, 0.5);
+}
+
+.checkbox-input.switch.active.purple-700 .checkbox:after {
+    background-color: #7B1FA2;
+}
+
+.checkbox-input.switch.active.purple-800 .checkbox {
+    background-color: rgba(106, 27, 154, 0.5);
+}
+
+.checkbox-input.switch.active.purple-800 .checkbox:after {
+    background-color: #6A1B9A;
+}
+
+.checkbox-input.switch.active.purple-900 .checkbox {
+    background-color: rgba(74, 20, 140, 0.5);
+}
+
+.checkbox-input.switch.active.purple-900 .checkbox:after {
+    background-color: #4A148C;
+}
+
+.checkbox-input.switch.active.purple-A100 .checkbox {
+    background-color: rgba(234, 128, 252, 0.5);
+}
+
+.checkbox-input.switch.active.purple-A100 .checkbox:after {
+    background-color: #EA80FC;
+}
+
+.checkbox-input.switch.active.purple-A200 .checkbox {
+    background-color: rgba(224, 64, 251, 0.5);
+}
+
+.checkbox-input.switch.active.purple-A200 .checkbox:after {
+    background-color: #E040FB;
+}
+
+.checkbox-input.switch.active.purple-A400 .checkbox {
+    background-color: rgba(213, 0, 249, 0.5);
+}
+
+.checkbox-input.switch.active.purple-A400 .checkbox:after {
+    background-color: #D500F9;
+}
+
+.checkbox-input.switch.active.purple-A700 .checkbox {
+    background-color: rgba(170, 0, 255, 0.5);
+}
+
+.checkbox-input.switch.active.purple-A700 .checkbox:after {
+    background-color: #AA00FF;
+}
+
+.checkbox-input.switch.active.deep-purple-50 .checkbox {
+    background-color: rgba(237, 231, 246, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-50 .checkbox:after {
+    background-color: #EDE7F6;
+}
+
+.checkbox-input.switch.active.deep-purple-100 .checkbox {
+    background-color: rgba(209, 196, 233, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-100 .checkbox:after {
+    background-color: #D1C4E9;
+}
+
+.checkbox-input.switch.active.deep-purple-200 .checkbox {
+    background-color: rgba(179, 157, 219, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-200 .checkbox:after {
+    background-color: #B39DDB;
+}
+
+.checkbox-input.switch.active.deep-purple-300 .checkbox {
+    background-color: rgba(149, 117, 205, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-300 .checkbox:after {
+    background-color: #9575CD;
+}
+
+.checkbox-input.switch.active.deep-purple-400 .checkbox {
+    background-color: rgba(126, 87, 194, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-400 .checkbox:after {
+    background-color: #7E57C2;
+}
+
+.checkbox-input.switch.active.deep-purple .checkbox,
+.checkbox-input.switch.active.deep-purple-500 .checkbox {
+    background-color: rgba(103, 58, 183, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple .checkbox:after,
+.checkbox-input.switch.active.deep-purple-500 .checkbox:after {
+    background-color: #673AB7;
+}
+
+.checkbox-input.switch.active.deep-purple-600 .checkbox {
+    background-color: rgba(94, 53, 177, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-600 .checkbox:after {
+    background-color: #5E35B1;
+}
+
+.checkbox-input.switch.active.deep-purple-700 .checkbox {
+    background-color: rgba(81, 45, 168, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-700 .checkbox:after {
+    background-color: #512DA8;
+}
+
+.checkbox-input.switch.active.deep-purple-800 .checkbox {
+    background-color: rgba(69, 39, 160, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-800 .checkbox:after {
+    background-color: #4527A0;
+}
+
+.checkbox-input.switch.active.deep-purple-900 .checkbox {
+    background-color: rgba(49, 27, 146, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-900 .checkbox:after {
+    background-color: #311B92;
+}
+
+.checkbox-input.switch.active.deep-purple-A100 .checkbox {
+    background-color: rgba(179, 136, 255, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-A100 .checkbox:after {
+    background-color: #B388FF;
+}
+
+.checkbox-input.switch.active.deep-purple-A200 .checkbox {
+    background-color: rgba(124, 77, 255, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-A200 .checkbox:after {
+    background-color: #7C4DFF;
+}
+
+.checkbox-input.switch.active.deep-purple-A400 .checkbox {
+    background-color: rgba(101, 31, 255, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-A400 .checkbox:after {
+    background-color: #651FFF;
+}
+
+.checkbox-input.switch.active.deep-purple-A700 .checkbox {
+    background-color: rgba(98, 0, 234, 0.5);
+}
+
+.checkbox-input.switch.active.deep-purple-A700 .checkbox:after {
+    background-color: #6200EA;
+}
+
+.checkbox-input.switch.active.indigo-50 .checkbox {
+    background-color: rgba(232, 234, 246, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-50 .checkbox:after {
+    background-color: #E8EAF6;
+}
+
+.checkbox-input.switch.active.indigo-100 .checkbox {
+    background-color: rgba(197, 202, 233, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-100 .checkbox:after {
+    background-color: #C5CAE9;
+}
+
+.checkbox-input.switch.active.indigo-200 .checkbox {
+    background-color: rgba(159, 168, 218, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-200 .checkbox:after {
+    background-color: #9FA8DA;
+}
+
+.checkbox-input.switch.active.indigo-300 .checkbox {
+    background-color: rgba(121, 134, 203, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-300 .checkbox:after {
+    background-color: #7986CB;
+}
+
+.checkbox-input.switch.active.indigo-400 .checkbox {
+    background-color: rgba(92, 107, 192, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-400 .checkbox:after {
+    background-color: #5C6BC0;
+}
+
+.checkbox-input.switch.active.indigo .checkbox,
+.checkbox-input.switch.active.indigo-500 .checkbox {
+    background-color: rgba(63, 81, 181, 0.5);
+}
+
+.checkbox-input.switch.active.indigo .checkbox:after,
+.checkbox-input.switch.active.indigo-500 .checkbox:after {
+    background-color: #3F51B5;
+}
+
+.checkbox-input.switch.active.indigo-600 .checkbox {
+    background-color: rgba(57, 73, 171, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-600 .checkbox:after {
+    background-color: #3949AB;
+}
+
+.checkbox-input.switch.active.indigo-700 .checkbox {
+    background-color: rgba(48, 63, 159, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-700 .checkbox:after {
+    background-color: #303F9F;
+}
+
+.checkbox-input.switch.active.indigo-800 .checkbox {
+    background-color: rgba(40, 53, 147, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-800 .checkbox:after {
+    background-color: #283593;
+}
+
+.checkbox-input.switch.active.indigo-900 .checkbox {
+    background-color: rgba(26, 35, 126, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-900 .checkbox:after {
+    background-color: #1A237E;
+}
+
+.checkbox-input.switch.active.indigo-A100 .checkbox {
+    background-color: rgba(140, 158, 255, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-A100 .checkbox:after {
+    background-color: #8C9EFF;
+}
+
+.checkbox-input.switch.active.indigo-A200 .checkbox {
+    background-color: rgba(83, 109, 254, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-A200 .checkbox:after {
+    background-color: #536DFE;
+}
+
+.checkbox-input.switch.active.indigo-A400 .checkbox {
+    background-color: rgba(61, 90, 254, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-A400 .checkbox:after {
+    background-color: #3D5AFE;
+}
+
+.checkbox-input.switch.active.indigo-A700 .checkbox {
+    background-color: rgba(48, 79, 254, 0.5);
+}
+
+.checkbox-input.switch.active.indigo-A700 .checkbox:after {
+    background-color: #304FFE;
+}
+
+.checkbox-input.switch.active.blue-50 .checkbox {
+    background-color: rgba(227, 242, 253, 0.5);
+}
+
+.checkbox-input.switch.active.blue-50 .checkbox:after {
+    background-color: #E3F2FD;
+}
+
+.checkbox-input.switch.active.blue-100 .checkbox {
+    background-color: rgba(187, 222, 251, 0.5);
+}
+
+.checkbox-input.switch.active.blue-100 .checkbox:after {
+    background-color: #BBDEFB;
+}
+
+.checkbox-input.switch.active.blue-200 .checkbox {
+    background-color: rgba(144, 202, 249, 0.5);
+}
+
+.checkbox-input.switch.active.blue-200 .checkbox:after {
+    background-color: #90CAF9;
+}
+
+.checkbox-input.switch.active.blue-300 .checkbox {
+    background-color: rgba(100, 181, 246, 0.5);
+}
+
+.checkbox-input.switch.active.blue-300 .checkbox:after {
+    background-color: #64B5F6;
+}
+
+.checkbox-input.switch.active.blue-400 .checkbox {
+    background-color: rgba(66, 165, 245, 0.5);
+}
+
+.checkbox-input.switch.active.blue-400 .checkbox:after {
+    background-color: #42A5F5;
+}
+
+.checkbox-input.switch.active.blue .checkbox,
+.checkbox-input.switch.active.blue-500 .checkbox {
+    background-color: rgba(33, 150, 243, 0.5);
+}
+
+.checkbox-input.switch.active.blue .checkbox:after,
+.checkbox-input.switch.active.blue-500 .checkbox:after {
+    background-color: #2196F3;
+}
+
+.checkbox-input.switch.active.blue-600 .checkbox {
+    background-color: rgba(30, 136, 229, 0.5);
+}
+
+.checkbox-input.switch.active.blue-600 .checkbox:after {
+    background-color: #1E88E5;
+}
+
+.checkbox-input.switch.active.blue-700 .checkbox {
+    background-color: rgba(25, 118, 210, 0.5);
+}
+
+.checkbox-input.switch.active.blue-700 .checkbox:after {
+    background-color: #1976D2;
+}
+
+.checkbox-input.switch.active.blue-800 .checkbox {
+    background-color: rgba(21, 101, 192, 0.5);
+}
+
+.checkbox-input.switch.active.blue-800 .checkbox:after {
+    background-color: #1565C0;
+}
+
+.checkbox-input.switch.active.blue-900 .checkbox {
+    background-color: rgba(13, 71, 161, 0.5);
+}
+
+.checkbox-input.switch.active.blue-900 .checkbox:after {
+    background-color: #0D47A1;
+}
+
+.checkbox-input.switch.active.blue-A100 .checkbox {
+    background-color: rgba(130, 177, 255, 0.5);
+}
+
+.checkbox-input.switch.active.blue-A100 .checkbox:after {
+    background-color: #82B1FF;
+}
+
+.checkbox-input.switch.active.blue-A200 .checkbox {
+    background-color: rgba(68, 138, 255, 0.5);
+}
+
+.checkbox-input.switch.active.blue-A200 .checkbox:after {
+    background-color: #448AFF;
+}
+
+.checkbox-input.switch.active.blue-A400 .checkbox {
+    background-color: rgba(41, 121, 255, 0.5);
+}
+
+.checkbox-input.switch.active.blue-A400 .checkbox:after {
+    background-color: #2979FF;
+}
+
+.checkbox-input.switch.active.blue-A700 .checkbox {
+    background-color: rgba(41, 98, 255, 0.5);
+}
+
+.checkbox-input.switch.active.blue-A700 .checkbox:after {
+    background-color: #2962FF;
+}
+
+.checkbox-input.switch.active.light-blue-50 .checkbox {
+    background-color: rgba(225, 245, 254, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-50 .checkbox:after {
+    background-color: #E1F5FE;
+}
+
+.checkbox-input.switch.active.light-blue-100 .checkbox {
+    background-color: rgba(179, 229, 252, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-100 .checkbox:after {
+    background-color: #B3E5FC;
+}
+
+.checkbox-input.switch.active.light-blue-200 .checkbox {
+    background-color: rgba(129, 212, 250, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-200 .checkbox:after {
+    background-color: #81D4FA;
+}
+
+.checkbox-input.switch.active.light-blue-300 .checkbox {
+    background-color: rgba(79, 195, 247, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-300 .checkbox:after {
+    background-color: #4FC3F7;
+}
+
+.checkbox-input.switch.active.light-blue-400 .checkbox {
+    background-color: rgba(41, 182, 246, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-400 .checkbox:after {
+    background-color: #29B6F6;
+}
+
+.checkbox-input.switch.active.light-blue .checkbox,
+.checkbox-input.switch.active.light-blue-500 .checkbox {
+    background-color: rgba(3, 169, 244, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue .checkbox:after,
+.checkbox-input.switch.active.light-blue-500 .checkbox:after {
+    background-color: #03A9F4;
+}
+
+.checkbox-input.switch.active.light-blue-600 .checkbox {
+    background-color: rgba(3, 155, 229, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-600 .checkbox:after {
+    background-color: #039BE5;
+}
+
+.checkbox-input.switch.active.light-blue-700 .checkbox {
+    background-color: rgba(2, 136, 209, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-700 .checkbox:after {
+    background-color: #0288D1;
+}
+
+.checkbox-input.switch.active.light-blue-800 .checkbox {
+    background-color: rgba(2, 119, 189, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-800 .checkbox:after {
+    background-color: #0277BD;
+}
+
+.checkbox-input.switch.active.light-blue-900 .checkbox {
+    background-color: rgba(1, 87, 155, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-900 .checkbox:after {
+    background-color: #01579B;
+}
+
+.checkbox-input.switch.active.light-blue-A100 .checkbox {
+    background-color: rgba(128, 216, 255, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-A100 .checkbox:after {
+    background-color: #80D8FF;
+}
+
+.checkbox-input.switch.active.light-blue-A200 .checkbox {
+    background-color: rgba(64, 196, 255, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-A200 .checkbox:after {
+    background-color: #40C4FF;
+}
+
+.checkbox-input.switch.active.light-blue-A400 .checkbox {
+    background-color: rgba(0, 176, 255, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-A400 .checkbox:after {
+    background-color: #00B0FF;
+}
+
+.checkbox-input.switch.active.light-blue-A700 .checkbox {
+    background-color: rgba(0, 145, 234, 0.5);
+}
+
+.checkbox-input.switch.active.light-blue-A700 .checkbox:after {
+    background-color: #0091EA;
+}
+
+.checkbox-input.switch.active.cyan-50 .checkbox {
+    background-color: rgba(224, 247, 250, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-50 .checkbox:after {
+    background-color: #E0F7FA;
+}
+
+.checkbox-input.switch.active.cyan-100 .checkbox {
+    background-color: rgba(178, 235, 242, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-100 .checkbox:after {
+    background-color: #B2EBF2;
+}
+
+.checkbox-input.switch.active.cyan-200 .checkbox {
+    background-color: rgba(128, 222, 234, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-200 .checkbox:after {
+    background-color: #80DEEA;
+}
+
+.checkbox-input.switch.active.cyan-300 .checkbox {
+    background-color: rgba(77, 208, 225, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-300 .checkbox:after {
+    background-color: #4DD0E1;
+}
+
+.checkbox-input.switch.active.cyan-400 .checkbox {
+    background-color: rgba(38, 198, 218, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-400 .checkbox:after {
+    background-color: #26C6DA;
+}
+
+.checkbox-input.switch.active.cyan .checkbox,
+.checkbox-input.switch.active.cyan-500 .checkbox {
+    background-color: rgba(0, 188, 212, 0.5);
+}
+
+.checkbox-input.switch.active.cyan .checkbox:after,
+.checkbox-input.switch.active.cyan-500 .checkbox:after {
+    background-color: #00BCD4;
+}
+
+.checkbox-input.switch.active.cyan-600 .checkbox {
+    background-color: rgba(0, 172, 193, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-600 .checkbox:after {
+    background-color: #00ACC1;
+}
+
+.checkbox-input.switch.active.cyan-700 .checkbox {
+    background-color: rgba(0, 151, 167, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-700 .checkbox:after {
+    background-color: #0097A7;
+}
+
+.checkbox-input.switch.active.cyan-800 .checkbox {
+    background-color: rgba(0, 131, 143, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-800 .checkbox:after {
+    background-color: #00838F;
+}
+
+.checkbox-input.switch.active.cyan-900 .checkbox {
+    background-color: rgba(0, 96, 100, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-900 .checkbox:after {
+    background-color: #006064;
+}
+
+.checkbox-input.switch.active.cyan-A100 .checkbox {
+    background-color: rgba(132, 255, 255, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-A100 .checkbox:after {
+    background-color: #84FFFF;
+}
+
+.checkbox-input.switch.active.cyan-A200 .checkbox {
+    background-color: rgba(24, 255, 255, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-A200 .checkbox:after {
+    background-color: #18FFFF;
+}
+
+.checkbox-input.switch.active.cyan-A400 .checkbox {
+    background-color: rgba(0, 229, 255, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-A400 .checkbox:after {
+    background-color: #00E5FF;
+}
+
+.checkbox-input.switch.active.cyan-A700 .checkbox {
+    background-color: rgba(0, 184, 212, 0.5);
+}
+
+.checkbox-input.switch.active.cyan-A700 .checkbox:after {
+    background-color: #00B8D4;
+}
+
+.checkbox-input.switch.active.teal-50 .checkbox {
+    background-color: rgba(224, 242, 241, 0.5);
+}
+
+.checkbox-input.switch.active.teal-50 .checkbox:after {
+    background-color: #E0F2F1;
+}
+
+.checkbox-input.switch.active.teal-100 .checkbox {
+    background-color: rgba(178, 223, 219, 0.5);
+}
+
+.checkbox-input.switch.active.teal-100 .checkbox:after {
+    background-color: #B2DFDB;
+}
+
+.checkbox-input.switch.active.teal-200 .checkbox {
+    background-color: rgba(128, 203, 196, 0.5);
+}
+
+.checkbox-input.switch.active.teal-200 .checkbox:after {
+    background-color: #80CBC4;
+}
+
+.checkbox-input.switch.active.teal-300 .checkbox {
+    background-color: rgba(77, 182, 172, 0.5);
+}
+
+.checkbox-input.switch.active.teal-300 .checkbox:after {
+    background-color: #4DB6AC;
+}
+
+.checkbox-input.switch.active.teal-400 .checkbox {
+    background-color: rgba(38, 166, 154, 0.5);
+}
+
+.checkbox-input.switch.active.teal-400 .checkbox:after {
+    background-color: #26A69A;
+}
+
+.checkbox-input.switch.active.teal .checkbox,
+.checkbox-input.switch.active.teal-500 .checkbox {
+    background-color: rgba(0, 150, 136, 0.5);
+}
+
+.checkbox-input.switch.active.teal .checkbox:after,
+.checkbox-input.switch.active.teal-500 .checkbox:after {
+    background-color: #009688;
+}
+
+.checkbox-input.switch.active.teal-600 .checkbox {
+    background-color: rgba(0, 137, 123, 0.5);
+}
+
+.checkbox-input.switch.active.teal-600 .checkbox:after {
+    background-color: #00897B;
+}
+
+.checkbox-input.switch.active.teal-700 .checkbox {
+    background-color: rgba(0, 121, 107, 0.5);
+}
+
+.checkbox-input.switch.active.teal-700 .checkbox:after {
+    background-color: #00796B;
+}
+
+.checkbox-input.switch.active.teal-800 .checkbox {
+    background-color: rgba(0, 105, 92, 0.5);
+}
+
+.checkbox-input.switch.active.teal-800 .checkbox:after {
+    background-color: #00695C;
+}
+
+.checkbox-input.switch.active.teal-900 .checkbox {
+    background-color: rgba(0, 77, 64, 0.5);
+}
+
+.checkbox-input.switch.active.teal-900 .checkbox:after {
+    background-color: #004D40;
+}
+
+.checkbox-input.switch.active.teal-A100 .checkbox {
+    background-color: rgba(167, 255, 235, 0.5);
+}
+
+.checkbox-input.switch.active.teal-A100 .checkbox:after {
+    background-color: #A7FFEB;
+}
+
+.checkbox-input.switch.active.teal-A200 .checkbox {
+    background-color: rgba(100, 255, 218, 0.5);
+}
+
+.checkbox-input.switch.active.teal-A200 .checkbox:after {
+    background-color: #64FFDA;
+}
+
+.checkbox-input.switch.active.teal-A400 .checkbox {
+    background-color: rgba(29, 233, 182, 0.5);
+}
+
+.checkbox-input.switch.active.teal-A400 .checkbox:after {
+    background-color: #1DE9B6;
+}
+
+.checkbox-input.switch.active.teal-A700 .checkbox {
+    background-color: rgba(0, 191, 165, 0.5);
+}
+
+.checkbox-input.switch.active.teal-A700 .checkbox:after {
+    background-color: #00BFA5;
+}
+
+.checkbox-input.switch.active.green-50 .checkbox {
+    background-color: rgba(232, 245, 233, 0.5);
+}
+
+.checkbox-input.switch.active.green-50 .checkbox:after {
+    background-color: #E8F5E9;
+}
+
+.checkbox-input.switch.active.green-100 .checkbox {
+    background-color: rgba(200, 230, 201, 0.5);
+}
+
+.checkbox-input.switch.active.green-100 .checkbox:after {
+    background-color: #C8E6C9;
+}
+
+.checkbox-input.switch.active.green-200 .checkbox {
+    background-color: rgba(165, 214, 167, 0.5);
+}
+
+.checkbox-input.switch.active.green-200 .checkbox:after {
+    background-color: #A5D6A7;
+}
+
+.checkbox-input.switch.active.green-300 .checkbox {
+    background-color: rgba(129, 199, 132, 0.5);
+}
+
+.checkbox-input.switch.active.green-300 .checkbox:after {
+    background-color: #81C784;
+}
+
+.checkbox-input.switch.active.green-400 .checkbox {
+    background-color: rgba(102, 187, 106, 0.5);
+}
+
+.checkbox-input.switch.active.green-400 .checkbox:after {
+    background-color: #66BB6A;
+}
+
+.checkbox-input.switch.active.green .checkbox,
+.checkbox-input.switch.active.green-500 .checkbox {
+    background-color: rgba(76, 175, 80, 0.5);
+}
+
+.checkbox-input.switch.active.green .checkbox:after,
+.checkbox-input.switch.active.green-500 .checkbox:after {
+    background-color: #4CAF50;
+}
+
+.checkbox-input.switch.active.green-600 .checkbox {
+    background-color: rgba(67, 160, 71, 0.5);
+}
+
+.checkbox-input.switch.active.green-600 .checkbox:after {
+    background-color: #43A047;
+}
+
+.checkbox-input.switch.active.green-700 .checkbox {
+    background-color: rgba(56, 142, 60, 0.5);
+}
+
+.checkbox-input.switch.active.green-700 .checkbox:after {
+    background-color: #388E3C;
+}
+
+.checkbox-input.switch.active.green-800 .checkbox {
+    background-color: rgba(46, 125, 50, 0.5);
+}
+
+.checkbox-input.switch.active.green-800 .checkbox:after {
+    background-color: #2E7D32;
+}
+
+.checkbox-input.switch.active.green-900 .checkbox {
+    background-color: rgba(27, 94, 32, 0.5);
+}
+
+.checkbox-input.switch.active.green-900 .checkbox:after {
+    background-color: #1B5E20;
+}
+
+.checkbox-input.switch.active.green-A100 .checkbox {
+    background-color: rgba(185, 246, 202, 0.5);
+}
+
+.checkbox-input.switch.active.green-A100 .checkbox:after {
+    background-color: #B9F6CA;
+}
+
+.checkbox-input.switch.active.green-A200 .checkbox {
+    background-color: rgba(105, 240, 174, 0.5);
+}
+
+.checkbox-input.switch.active.green-A200 .checkbox:after {
+    background-color: #69F0AE;
+}
+
+.checkbox-input.switch.active.green-A400 .checkbox {
+    background-color: rgba(0, 230, 118, 0.5);
+}
+
+.checkbox-input.switch.active.green-A400 .checkbox:after {
+    background-color: #00E676;
+}
+
+.checkbox-input.switch.active.green-A700 .checkbox {
+    background-color: rgba(0, 200, 83, 0.5);
+}
+
+.checkbox-input.switch.active.green-A700 .checkbox:after {
+    background-color: #00C853;
+}
+
+.checkbox-input.switch.active.light-green-50 .checkbox {
+    background-color: rgba(241, 248, 233, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-50 .checkbox:after {
+    background-color: #F1F8E9;
+}
+
+.checkbox-input.switch.active.light-green-100 .checkbox {
+    background-color: rgba(220, 237, 200, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-100 .checkbox:after {
+    background-color: #DCEDC8;
+}
+
+.checkbox-input.switch.active.light-green-200 .checkbox {
+    background-color: rgba(197, 225, 165, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-200 .checkbox:after {
+    background-color: #C5E1A5;
+}
+
+.checkbox-input.switch.active.light-green-300 .checkbox {
+    background-color: rgba(174, 213, 129, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-300 .checkbox:after {
+    background-color: #AED581;
+}
+
+.checkbox-input.switch.active.light-green-400 .checkbox {
+    background-color: rgba(156, 204, 101, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-400 .checkbox:after {
+    background-color: #9CCC65;
+}
+
+.checkbox-input.switch.active.light-green .checkbox,
+.checkbox-input.switch.active.light-green-500 .checkbox {
+    background-color: rgba(139, 195, 74, 0.5);
+}
+
+.checkbox-input.switch.active.light-green .checkbox:after,
+.checkbox-input.switch.active.light-green-500 .checkbox:after {
+    background-color: #8BC34A;
+}
+
+.checkbox-input.switch.active.light-green-600 .checkbox {
+    background-color: rgba(124, 179, 66, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-600 .checkbox:after {
+    background-color: #7CB342;
+}
+
+.checkbox-input.switch.active.light-green-700 .checkbox {
+    background-color: rgba(104, 159, 56, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-700 .checkbox:after {
+    background-color: #689F38;
+}
+
+.checkbox-input.switch.active.light-green-800 .checkbox {
+    background-color: rgba(85, 139, 47, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-800 .checkbox:after {
+    background-color: #558B2F;
+}
+
+.checkbox-input.switch.active.light-green-900 .checkbox {
+    background-color: rgba(51, 105, 30, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-900 .checkbox:after {
+    background-color: #33691E;
+}
+
+.checkbox-input.switch.active.light-green-A100 .checkbox {
+    background-color: rgba(204, 255, 144, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-A100 .checkbox:after {
+    background-color: #CCFF90;
+}
+
+.checkbox-input.switch.active.light-green-A200 .checkbox {
+    background-color: rgba(178, 255, 89, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-A200 .checkbox:after {
+    background-color: #B2FF59;
+}
+
+.checkbox-input.switch.active.light-green-A400 .checkbox {
+    background-color: rgba(118, 255, 3, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-A400 .checkbox:after {
+    background-color: #76FF03;
+}
+
+.checkbox-input.switch.active.light-green-A700 .checkbox {
+    background-color: rgba(100, 221, 23, 0.5);
+}
+
+.checkbox-input.switch.active.light-green-A700 .checkbox:after {
+    background-color: #64DD17;
+}
+
+.checkbox-input.switch.active.lime-50 .checkbox {
+    background-color: rgba(249, 251, 231, 0.5);
+}
+
+.checkbox-input.switch.active.lime-50 .checkbox:after {
+    background-color: #F9FBE7;
+}
+
+.checkbox-input.switch.active.lime-100 .checkbox {
+    background-color: rgba(240, 244, 195, 0.5);
+}
+
+.checkbox-input.switch.active.lime-100 .checkbox:after {
+    background-color: #F0F4C3;
+}
+
+.checkbox-input.switch.active.lime-200 .checkbox {
+    background-color: rgba(230, 238, 156, 0.5);
+}
+
+.checkbox-input.switch.active.lime-200 .checkbox:after {
+    background-color: #E6EE9C;
+}
+
+.checkbox-input.switch.active.lime-300 .checkbox {
+    background-color: rgba(220, 231, 117, 0.5);
+}
+
+.checkbox-input.switch.active.lime-300 .checkbox:after {
+    background-color: #DCE775;
+}
+
+.checkbox-input.switch.active.lime-400 .checkbox {
+    background-color: rgba(212, 225, 87, 0.5);
+}
+
+.checkbox-input.switch.active.lime-400 .checkbox:after {
+    background-color: #D4E157;
+}
+
+.checkbox-input.switch.active.lime .checkbox,
+.checkbox-input.switch.active.lime-500 .checkbox {
+    background-color: rgba(205, 220, 57, 0.5);
+}
+
+.checkbox-input.switch.active.lime .checkbox:after,
+.checkbox-input.switch.active.lime-500 .checkbox:after {
+    background-color: #CDDC39;
+}
+
+.checkbox-input.switch.active.lime-600 .checkbox {
+    background-color: rgba(192, 202, 51, 0.5);
+}
+
+.checkbox-input.switch.active.lime-600 .checkbox:after {
+    background-color: #C0CA33;
+}
+
+.checkbox-input.switch.active.lime-700 .checkbox {
+    background-color: rgba(175, 180, 43, 0.5);
+}
+
+.checkbox-input.switch.active.lime-700 .checkbox:after {
+    background-color: #AFB42B;
+}
+
+.checkbox-input.switch.active.lime-800 .checkbox {
+    background-color: rgba(158, 157, 36, 0.5);
+}
+
+.checkbox-input.switch.active.lime-800 .checkbox:after {
+    background-color: #9E9D24;
+}
+
+.checkbox-input.switch.active.lime-900 .checkbox {
+    background-color: rgba(130, 119, 23, 0.5);
+}
+
+.checkbox-input.switch.active.lime-900 .checkbox:after {
+    background-color: #827717;
+}
+
+.checkbox-input.switch.active.lime-A100 .checkbox {
+    background-color: rgba(244, 255, 129, 0.5);
+}
+
+.checkbox-input.switch.active.lime-A100 .checkbox:after {
+    background-color: #F4FF81;
+}
+
+.checkbox-input.switch.active.lime-A200 .checkbox {
+    background-color: rgba(238, 255, 65, 0.5);
+}
+
+.checkbox-input.switch.active.lime-A200 .checkbox:after {
+    background-color: #EEFF41;
+}
+
+.checkbox-input.switch.active.lime-A400 .checkbox {
+    background-color: rgba(198, 255, 0, 0.5);
+}
+
+.checkbox-input.switch.active.lime-A400 .checkbox:after {
+    background-color: #C6FF00;
+}
+
+.checkbox-input.switch.active.lime-A700 .checkbox {
+    background-color: rgba(174, 234, 0, 0.5);
+}
+
+.checkbox-input.switch.active.lime-A700 .checkbox:after {
+    background-color: #AEEA00;
+}
+
+.checkbox-input.switch.active.yellow-50 .checkbox {
+    background-color: rgba(255, 253, 231, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-50 .checkbox:after {
+    background-color: #FFFDE7;
+}
+
+.checkbox-input.switch.active.yellow-100 .checkbox {
+    background-color: rgba(255, 249, 196, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-100 .checkbox:after {
+    background-color: #FFF9C4;
+}
+
+.checkbox-input.switch.active.yellow-200 .checkbox {
+    background-color: rgba(255, 245, 157, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-200 .checkbox:after {
+    background-color: #FFF59D;
+}
+
+.checkbox-input.switch.active.yellow-300 .checkbox {
+    background-color: rgba(255, 241, 118, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-300 .checkbox:after {
+    background-color: #FFF176;
+}
+
+.checkbox-input.switch.active.yellow-400 .checkbox {
+    background-color: rgba(255, 238, 88, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-400 .checkbox:after {
+    background-color: #FFEE58;
+}
+
+.checkbox-input.switch.active.yellow .checkbox,
+.checkbox-input.switch.active.yellow-500 .checkbox {
+    background-color: rgba(255, 235, 59, 0.5);
+}
+
+.checkbox-input.switch.active.yellow .checkbox:after,
+.checkbox-input.switch.active.yellow-500 .checkbox:after {
+    background-color: #FFEB3B;
+}
+
+.checkbox-input.switch.active.yellow-600 .checkbox {
+    background-color: rgba(253, 216, 53, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-600 .checkbox:after {
+    background-color: #FDD835;
+}
+
+.checkbox-input.switch.active.yellow-700 .checkbox {
+    background-color: rgba(251, 192, 45, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-700 .checkbox:after {
+    background-color: #FBC02D;
+}
+
+.checkbox-input.switch.active.yellow-800 .checkbox {
+    background-color: rgba(249, 168, 37, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-800 .checkbox:after {
+    background-color: #F9A825;
+}
+
+.checkbox-input.switch.active.yellow-900 .checkbox {
+    background-color: rgba(245, 127, 23, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-900 .checkbox:after {
+    background-color: #F57F17;
+}
+
+.checkbox-input.switch.active.yellow-A100 .checkbox {
+    background-color: rgba(255, 255, 141, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-A100 .checkbox:after {
+    background-color: #FFFF8D;
+}
+
+.checkbox-input.switch.active.yellow-A200 .checkbox {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-A200 .checkbox:after {
+    background-color: #FFFF00;
+}
+
+.checkbox-input.switch.active.yellow-A400 .checkbox {
+    background-color: rgba(255, 234, 0, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-A400 .checkbox:after {
+    background-color: #FFEA00;
+}
+
+.checkbox-input.switch.active.yellow-A700 .checkbox {
+    background-color: rgba(255, 214, 0, 0.5);
+}
+
+.checkbox-input.switch.active.yellow-A700 .checkbox:after {
+    background-color: #FFD600;
+}
+
+.checkbox-input.switch.active.amber-50 .checkbox {
+    background-color: rgba(255, 248, 225, 0.5);
+}
+
+.checkbox-input.switch.active.amber-50 .checkbox:after {
+    background-color: #FFF8E1;
+}
+
+.checkbox-input.switch.active.amber-100 .checkbox {
+    background-color: rgba(255, 236, 179, 0.5);
+}
+
+.checkbox-input.switch.active.amber-100 .checkbox:after {
+    background-color: #FFECB3;
+}
+
+.checkbox-input.switch.active.amber-200 .checkbox {
+    background-color: rgba(255, 224, 130, 0.5);
+}
+
+.checkbox-input.switch.active.amber-200 .checkbox:after {
+    background-color: #FFE082;
+}
+
+.checkbox-input.switch.active.amber-300 .checkbox {
+    background-color: rgba(255, 213, 79, 0.5);
+}
+
+.checkbox-input.switch.active.amber-300 .checkbox:after {
+    background-color: #FFD54F;
+}
+
+.checkbox-input.switch.active.amber-400 .checkbox {
+    background-color: rgba(255, 202, 40, 0.5);
+}
+
+.checkbox-input.switch.active.amber-400 .checkbox:after {
+    background-color: #FFCA28;
+}
+
+.checkbox-input.switch.active.amber .checkbox,
+.checkbox-input.switch.active.amber-500 .checkbox {
+    background-color: rgba(255, 193, 7, 0.5);
+}
+
+.checkbox-input.switch.active.amber .checkbox:after,
+.checkbox-input.switch.active.amber-500 .checkbox:after {
+    background-color: #FFC107;
+}
+
+.checkbox-input.switch.active.amber-600 .checkbox {
+    background-color: rgba(255, 179, 0, 0.5);
+}
+
+.checkbox-input.switch.active.amber-600 .checkbox:after {
+    background-color: #FFB300;
+}
+
+.checkbox-input.switch.active.amber-700 .checkbox {
+    background-color: rgba(255, 160, 0, 0.5);
+}
+
+.checkbox-input.switch.active.amber-700 .checkbox:after {
+    background-color: #FFA000;
+}
+
+.checkbox-input.switch.active.amber-800 .checkbox {
+    background-color: rgba(255, 143, 0, 0.5);
+}
+
+.checkbox-input.switch.active.amber-800 .checkbox:after {
+    background-color: #FF8F00;
+}
+
+.checkbox-input.switch.active.amber-900 .checkbox {
+    background-color: rgba(255, 111, 0, 0.5);
+}
+
+.checkbox-input.switch.active.amber-900 .checkbox:after {
+    background-color: #FF6F00;
+}
+
+.checkbox-input.switch.active.amber-A100 .checkbox {
+    background-color: rgba(255, 229, 127, 0.5);
+}
+
+.checkbox-input.switch.active.amber-A100 .checkbox:after {
+    background-color: #FFE57F;
+}
+
+.checkbox-input.switch.active.amber-A200 .checkbox {
+    background-color: rgba(255, 215, 64, 0.5);
+}
+
+.checkbox-input.switch.active.amber-A200 .checkbox:after {
+    background-color: #FFD740;
+}
+
+.checkbox-input.switch.active.amber-A400 .checkbox {
+    background-color: rgba(255, 196, 0, 0.5);
+}
+
+.checkbox-input.switch.active.amber-A400 .checkbox:after {
+    background-color: #FFC400;
+}
+
+.checkbox-input.switch.active.amber-A700 .checkbox {
+    background-color: rgba(255, 171, 0, 0.5);
+}
+
+.checkbox-input.switch.active.amber-A700 .checkbox:after {
+    background-color: #FFAB00;
+}
+
+.checkbox-input.switch.active.orange-50 .checkbox {
+    background-color: rgba(255, 243, 224, 0.5);
+}
+
+.checkbox-input.switch.active.orange-50 .checkbox:after {
+    background-color: #FFF3E0;
+}
+
+.checkbox-input.switch.active.orange-100 .checkbox {
+    background-color: rgba(255, 224, 178, 0.5);
+}
+
+.checkbox-input.switch.active.orange-100 .checkbox:after {
+    background-color: #FFE0B2;
+}
+
+.checkbox-input.switch.active.orange-200 .checkbox {
+    background-color: rgba(255, 204, 128, 0.5);
+}
+
+.checkbox-input.switch.active.orange-200 .checkbox:after {
+    background-color: #FFCC80;
+}
+
+.checkbox-input.switch.active.orange-300 .checkbox {
+    background-color: rgba(255, 183, 77, 0.5);
+}
+
+.checkbox-input.switch.active.orange-300 .checkbox:after {
+    background-color: #FFB74D;
+}
+
+.checkbox-input.switch.active.orange-400 .checkbox {
+    background-color: rgba(255, 167, 38, 0.5);
+}
+
+.checkbox-input.switch.active.orange-400 .checkbox:after {
+    background-color: #FFA726;
+}
+
+.checkbox-input.switch.active.orange .checkbox,
+.checkbox-input.switch.active.orange-500 .checkbox {
+    background-color: rgba(255, 152, 0, 0.5);
+}
+
+.checkbox-input.switch.active.orange .checkbox:after,
+.checkbox-input.switch.active.orange-500 .checkbox:after {
+    background-color: #FF9800;
+}
+
+.checkbox-input.switch.active.orange-600 .checkbox {
+    background-color: rgba(251, 140, 0, 0.5);
+}
+
+.checkbox-input.switch.active.orange-600 .checkbox:after {
+    background-color: #FB8C00;
+}
+
+.checkbox-input.switch.active.orange-700 .checkbox {
+    background-color: rgba(245, 124, 0, 0.5);
+}
+
+.checkbox-input.switch.active.orange-700 .checkbox:after {
+    background-color: #F57C00;
+}
+
+.checkbox-input.switch.active.orange-800 .checkbox {
+    background-color: rgba(239, 108, 0, 0.5);
+}
+
+.checkbox-input.switch.active.orange-800 .checkbox:after {
+    background-color: #EF6C00;
+}
+
+.checkbox-input.switch.active.orange-900 .checkbox {
+    background-color: rgba(230, 81, 0, 0.5);
+}
+
+.checkbox-input.switch.active.orange-900 .checkbox:after {
+    background-color: #E65100;
+}
+
+.checkbox-input.switch.active.orange-A100 .checkbox {
+    background-color: rgba(255, 209, 128, 0.5);
+}
+
+.checkbox-input.switch.active.orange-A100 .checkbox:after {
+    background-color: #FFD180;
+}
+
+.checkbox-input.switch.active.orange-A200 .checkbox {
+    background-color: rgba(255, 171, 64, 0.5);
+}
+
+.checkbox-input.switch.active.orange-A200 .checkbox:after {
+    background-color: #FFAB40;
+}
+
+.checkbox-input.switch.active.orange-A400 .checkbox {
+    background-color: rgba(255, 145, 0, 0.5);
+}
+
+.checkbox-input.switch.active.orange-A400 .checkbox:after {
+    background-color: #FF9100;
+}
+
+.checkbox-input.switch.active.orange-A700 .checkbox {
+    background-color: rgba(255, 109, 0, 0.5);
+}
+
+.checkbox-input.switch.active.orange-A700 .checkbox:after {
+    background-color: #FF6D00;
+}
+
+.checkbox-input.switch.active.deep-orange-50 .checkbox {
+    background-color: rgba(251, 233, 231, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-50 .checkbox:after {
+    background-color: #FBE9E7;
+}
+
+.checkbox-input.switch.active.deep-orange-100 .checkbox {
+    background-color: rgba(255, 204, 188, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-100 .checkbox:after {
+    background-color: #FFCCBC;
+}
+
+.checkbox-input.switch.active.deep-orange-200 .checkbox {
+    background-color: rgba(255, 171, 145, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-200 .checkbox:after {
+    background-color: #FFAB91;
+}
+
+.checkbox-input.switch.active.deep-orange-300 .checkbox {
+    background-color: rgba(255, 138, 101, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-300 .checkbox:after {
+    background-color: #FF8A65;
+}
+
+.checkbox-input.switch.active.deep-orange-400 .checkbox {
+    background-color: rgba(255, 112, 67, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-400 .checkbox:after {
+    background-color: #FF7043;
+}
+
+.checkbox-input.switch.active.deep-orange .checkbox,
+.checkbox-input.switch.active.deep-orange-500 .checkbox {
+    background-color: rgba(255, 87, 34, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange .checkbox:after,
+.checkbox-input.switch.active.deep-orange-500 .checkbox:after {
+    background-color: #FF5722;
+}
+
+.checkbox-input.switch.active.deep-orange-600 .checkbox {
+    background-color: rgba(244, 81, 30, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-600 .checkbox:after {
+    background-color: #F4511E;
+}
+
+.checkbox-input.switch.active.deep-orange-700 .checkbox {
+    background-color: rgba(230, 74, 25, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-700 .checkbox:after {
+    background-color: #E64A19;
+}
+
+.checkbox-input.switch.active.deep-orange-800 .checkbox {
+    background-color: rgba(216, 67, 21, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-800 .checkbox:after {
+    background-color: #D84315;
+}
+
+.checkbox-input.switch.active.deep-orange-900 .checkbox {
+    background-color: rgba(191, 54, 12, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-900 .checkbox:after {
+    background-color: #BF360C;
+}
+
+.checkbox-input.switch.active.deep-orange-A100 .checkbox {
+    background-color: rgba(255, 158, 128, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-A100 .checkbox:after {
+    background-color: #FF9E80;
+}
+
+.checkbox-input.switch.active.deep-orange-A200 .checkbox {
+    background-color: rgba(255, 110, 64, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-A200 .checkbox:after {
+    background-color: #FF6E40;
+}
+
+.checkbox-input.switch.active.deep-orange-A400 .checkbox {
+    background-color: rgba(255, 61, 0, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-A400 .checkbox:after {
+    background-color: #FF3D00;
+}
+
+.checkbox-input.switch.active.deep-orange-A700 .checkbox {
+    background-color: rgba(221, 44, 0, 0.5);
+}
+
+.checkbox-input.switch.active.deep-orange-A700 .checkbox:after {
+    background-color: #DD2C00;
+}
+
+.checkbox-input.switch.active.brown-50 .checkbox {
+    background-color: rgba(239, 235, 233, 0.5);
+}
+
+.checkbox-input.switch.active.brown-50 .checkbox:after {
+    background-color: #EFEBE9;
+}
+
+.checkbox-input.switch.active.brown-100 .checkbox {
+    background-color: rgba(215, 204, 200, 0.5);
+}
+
+.checkbox-input.switch.active.brown-100 .checkbox:after {
+    background-color: #D7CCC8;
+}
+
+.checkbox-input.switch.active.brown-200 .checkbox {
+    background-color: rgba(188, 170, 164, 0.5);
+}
+
+.checkbox-input.switch.active.brown-200 .checkbox:after {
+    background-color: #BCAAA4;
+}
+
+.checkbox-input.switch.active.brown-300 .checkbox {
+    background-color: rgba(161, 136, 127, 0.5);
+}
+
+.checkbox-input.switch.active.brown-300 .checkbox:after {
+    background-color: #A1887F;
+}
+
+.checkbox-input.switch.active.brown-400 .checkbox {
+    background-color: rgba(141, 110, 99, 0.5);
+}
+
+.checkbox-input.switch.active.brown-400 .checkbox:after {
+    background-color: #8D6E63;
+}
+
+.checkbox-input.switch.active.brown .checkbox,
+.checkbox-input.switch.active.brown-500 .checkbox {
+    background-color: rgba(121, 85, 72, 0.5);
+}
+
+.checkbox-input.switch.active.brown .checkbox:after,
+.checkbox-input.switch.active.brown-500 .checkbox:after {
+    background-color: #795548;
+}
+
+.checkbox-input.switch.active.brown-600 .checkbox {
+    background-color: rgba(109, 76, 65, 0.5);
+}
+
+.checkbox-input.switch.active.brown-600 .checkbox:after {
+    background-color: #6D4C41;
+}
+
+.checkbox-input.switch.active.brown-700 .checkbox {
+    background-color: rgba(93, 64, 55, 0.5);
+}
+
+.checkbox-input.switch.active.brown-700 .checkbox:after {
+    background-color: #5D4037;
+}
+
+.checkbox-input.switch.active.brown-800 .checkbox {
+    background-color: rgba(78, 52, 46, 0.5);
+}
+
+.checkbox-input.switch.active.brown-800 .checkbox:after {
+    background-color: #4E342E;
+}
+
+.checkbox-input.switch.active.brown-900 .checkbox {
+    background-color: rgba(62, 39, 35, 0.5);
+}
+
+.checkbox-input.switch.active.brown-900 .checkbox:after {
+    background-color: #3E2723;
+}
+
+.checkbox-input.switch.active.grey-50 .checkbox {
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+.checkbox-input.switch.active.grey-50 .checkbox:after {
+    background-color: #FAFAFA;
+}
+
+.checkbox-input.switch.active.grey-100 .checkbox {
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.checkbox-input.switch.active.grey-100 .checkbox:after {
+    background-color: #F5F5F5;
+}
+
+.checkbox-input.switch.active.grey-200 .checkbox {
+    background-color: rgba(238, 238, 238, 0.5);
+}
+
+.checkbox-input.switch.active.grey-200 .checkbox:after {
+    background-color: #EEEEEE;
+}
+
+.checkbox-input.switch.active.grey-300 .checkbox {
+    background-color: rgba(224, 224, 224, 0.5);
+}
+
+.checkbox-input.switch.active.grey-300 .checkbox:after {
+    background-color: #E0E0E0;
+}
+
+.checkbox-input.switch.active.grey-400 .checkbox {
+    background-color: rgba(189, 189, 189, 0.5);
+}
+
+.checkbox-input.switch.active.grey-400 .checkbox:after {
+    background-color: ;
+}
+
+.checkbox-input.switch.active.grey .checkbox,
+.checkbox-input.switch.active.grey-500 .checkbox {
+    background-color: rgba(158, 158, 158, 0.5);
+}
+
+.checkbox-input.switch.active.grey .checkbox:after,
+.checkbox-input.switch.active.grey-500 .checkbox:after {
+    background-color: #9E9E9E;
+}
+
+.checkbox-input.switch.active.grey-600 .checkbox {
+    background-color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-input.switch.active.grey-600 .checkbox:after {
+    background-color: #757575;
+}
+
+.checkbox-input.switch.active.grey-700 .checkbox {
+    background-color: rgba(97, 97, 97, 0.5);
+}
+
+.checkbox-input.switch.active.grey-700 .checkbox:after {
+    background-color: #616161;
+}
+
+.checkbox-input.switch.active.grey-800 .checkbox {
+    background-color: rgba(66, 66, 66, 0.5);
+}
+
+.checkbox-input.switch.active.grey-800 .checkbox:after {
+    background-color: ;
+}
+
+.checkbox-input.switch.active.grey-900 .checkbox {
+    background-color: rgba(33, 33, 33, 0.5);
+}
+
+.checkbox-input.switch.active.grey-900 .checkbox:after {
+    background-color: #212121;
+}
+
+.checkbox-input.switch.active.blue-grey-50 .checkbox {
+    background-color: rgba(236, 239, 241, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-50 .checkbox:after {
+    background-color: #ECEFF1;
+}
+
+.checkbox-input.switch.active.blue-grey-100 .checkbox {
+    background-color: rgba(207, 216, 220, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-100 .checkbox:after {
+    background-color: #CFD8DC;
+}
+
+.checkbox-input.switch.active.blue-grey-200 .checkbox {
+    background-color: rgba(176, 190, 197, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-200 .checkbox:after {
+    background-color: #B0BEC5;
+}
+
+.checkbox-input.switch.active.blue-grey-300 .checkbox {
+    background-color: rgba(144, 164, 174, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-300 .checkbox:after {
+    background-color: #90A4AE;
+}
+
+.checkbox-input.switch.active.blue-grey-400 .checkbox {
+    background-color: rgba(120, 144, 156, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-400 .checkbox:after {
+    background-color: #78909C;
+}
+
+.checkbox-input.switch.active.blue-grey .checkbox,
+.checkbox-input.switch.active.blue-grey-500 .checkbox {
+    background-color: rgba(96, 125, 139, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey .checkbox:after,
+.checkbox-input.switch.active.blue-grey-500 .checkbox:after {
+    background-color: #607D8B;
+}
+
+.checkbox-input.switch.active.blue-grey-600 .checkbox {
+    background-color: rgba(84, 110, 122, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-600 .checkbox:after {
+    background-color: #546E7A;
+}
+
+.checkbox-input.switch.active.blue-grey-700 .checkbox {
+    background-color: rgba(69, 90, 100, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-700 .checkbox:after {
+    background-color: #455A64;
+}
+
+.checkbox-input.switch.active.blue-grey-800 .checkbox {
+    background-color: rgba(55, 71, 79, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-800 .checkbox:after {
+    background-color: #37474F;
+}
+
+.checkbox-input.switch.active.blue-grey-900 .checkbox {
+    background-color: rgba(38, 50, 56, 0.5);
+}
+
+.checkbox-input.switch.active.blue-grey-900 .checkbox:after {
+    background-color: #263238;
+}
+
+.checkbox-input.switch.active.black .checkbox {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.checkbox-input.switch.active.black .checkbox:after {
+    background-color: #000000;
+}
+
+.checkbox-input.switch.active.white .checkbox {
+    background-color: ;
+}
+
+.checkbox-input.switch.active.white .checkbox:after {
+    background-color: #FFFFFF;
+}
+
+.progress.buffer.bg-red-50 > .buffer-bar {
+    background: radial-gradient(#FFEBEE 0, #FFEBEE 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-100 > .buffer-bar {
+    background: radial-gradient(#FFCDD2 0, #FFCDD2 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-200 > .buffer-bar {
+    background: radial-gradient(#EF9A9A 0, #EF9A9A 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-300 > .buffer-bar {
+    background: radial-gradient(#E57373 0, #E57373 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-400 > .buffer-bar {
+    background: radial-gradient(#EF5350 0, #EF5350 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red > .buffer-bar,
+.progress.buffer.bg-red-500 > .buffer-bar {
+    background: radial-gradient(#F44336 0, #F44336 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-600 > .buffer-bar {
+    background: radial-gradient(#E53935 0, #E53935 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-700 > .buffer-bar {
+    background: radial-gradient(#D32F2F 0, #D32F2F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-800 > .buffer-bar {
+    background: radial-gradient(#C62828 0, #C62828 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-900 > .buffer-bar {
+    background: radial-gradient(#B71C1C 0, #B71C1C 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-A100 > .buffer-bar {
+    background: radial-gradient(#FF8A80 0, #FF8A80 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-A200 > .buffer-bar {
+    background: radial-gradient(#FF5252 0, #FF5252 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-A400 > .buffer-bar {
+    background: radial-gradient(#FF1744 0, #FF1744 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-red-A700 > .buffer-bar {
+    background: radial-gradient(#D50000 0, #D50000 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-50 > .buffer-bar {
+    background: radial-gradient(#FCE4EC 0, #FCE4EC 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-100 > .buffer-bar {
+    background: radial-gradient(#F8BBD0 0, #F8BBD0 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-200 > .buffer-bar {
+    background: radial-gradient(#F48FB1 0, #F48FB1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-300 > .buffer-bar {
+    background: radial-gradient(#F06292 0, #F06292 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-400 > .buffer-bar {
+    background: radial-gradient(#EC407A 0, #EC407A 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink > .buffer-bar,
+.progress.buffer.bg-pink-500 > .buffer-bar {
+    background: radial-gradient(#E91E63 0, #E91E63 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-600 > .buffer-bar {
+    background: radial-gradient(#D81B60 0, #D81B60 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-700 > .buffer-bar {
+    background: radial-gradient(#C2185B 0, #C2185B 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-800 > .buffer-bar {
+    background: radial-gradient(#AD1457 0, #AD1457 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-900 > .buffer-bar {
+    background: radial-gradient(#880E4F 0, #880E4F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-A100 > .buffer-bar {
+    background: radial-gradient(#FF80AB 0, #FF80AB 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-A200 > .buffer-bar {
+    background: radial-gradient(#FF4081 0, #FF4081 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-A400 > .buffer-bar {
+    background: radial-gradient(#F50057 0, #F50057 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-pink-A700 > .buffer-bar {
+    background: radial-gradient(#C51162 0, #C51162 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-50 > .buffer-bar {
+    background: radial-gradient(#F3E5F5 0, #F3E5F5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-100 > .buffer-bar {
+    background: radial-gradient(#E1BEE7 0, #E1BEE7 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-200 > .buffer-bar {
+    background: radial-gradient(#CE93D8 0, #CE93D8 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-300 > .buffer-bar {
+    background: radial-gradient(#BA68C8 0, #BA68C8 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-400 > .buffer-bar {
+    background: radial-gradient(#AB47BC 0, #AB47BC 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple > .buffer-bar,
+.progress.buffer.bg-purple-500 > .buffer-bar {
+    background: radial-gradient(#9C27B0 0, #9C27B0 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-600 > .buffer-bar {
+    background: radial-gradient(#8E24AA 0, #8E24AA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-700 > .buffer-bar {
+    background: radial-gradient(#7B1FA2 0, #7B1FA2 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-800 > .buffer-bar {
+    background: radial-gradient(#6A1B9A 0, #6A1B9A 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-900 > .buffer-bar {
+    background: radial-gradient(#4A148C 0, #4A148C 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-A100 > .buffer-bar {
+    background: radial-gradient(#EA80FC 0, #EA80FC 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-A200 > .buffer-bar {
+    background: radial-gradient(#E040FB 0, #E040FB 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-A400 > .buffer-bar {
+    background: radial-gradient(#D500F9 0, #D500F9 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-purple-A700 > .buffer-bar {
+    background: radial-gradient(#AA00FF 0, #AA00FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-50 > .buffer-bar {
+    background: radial-gradient(#EDE7F6 0, #EDE7F6 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-100 > .buffer-bar {
+    background: radial-gradient(#D1C4E9 0, #D1C4E9 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-200 > .buffer-bar {
+    background: radial-gradient(#B39DDB 0, #B39DDB 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-300 > .buffer-bar {
+    background: radial-gradient(#9575CD 0, #9575CD 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-400 > .buffer-bar {
+    background: radial-gradient(#7E57C2 0, #7E57C2 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple > .buffer-bar,
+.progress.buffer.bg-deep-purple-500 > .buffer-bar {
+    background: radial-gradient(#673AB7 0, #673AB7 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-600 > .buffer-bar {
+    background: radial-gradient(#5E35B1 0, #5E35B1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-700 > .buffer-bar {
+    background: radial-gradient(#512DA8 0, #512DA8 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-800 > .buffer-bar {
+    background: radial-gradient(#4527A0 0, #4527A0 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-900 > .buffer-bar {
+    background: radial-gradient(#311B92 0, #311B92 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-A100 > .buffer-bar {
+    background: radial-gradient(#B388FF 0, #B388FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-A200 > .buffer-bar {
+    background: radial-gradient(#7C4DFF 0, #7C4DFF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-A400 > .buffer-bar {
+    background: radial-gradient(#651FFF 0, #651FFF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-purple-A700 > .buffer-bar {
+    background: radial-gradient(#6200EA 0, #6200EA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-50 > .buffer-bar {
+    background: radial-gradient(#E8EAF6 0, #E8EAF6 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-100 > .buffer-bar {
+    background: radial-gradient(#C5CAE9 0, #C5CAE9 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-200 > .buffer-bar {
+    background: radial-gradient(#9FA8DA 0, #9FA8DA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-300 > .buffer-bar {
+    background: radial-gradient(#7986CB 0, #7986CB 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-400 > .buffer-bar {
+    background: radial-gradient(#5C6BC0 0, #5C6BC0 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo > .buffer-bar,
+.progress.buffer.bg-indigo-500 > .buffer-bar {
+    background: radial-gradient(#3F51B5 0, #3F51B5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-600 > .buffer-bar {
+    background: radial-gradient(#3949AB 0, #3949AB 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-700 > .buffer-bar {
+    background: radial-gradient(#303F9F 0, #303F9F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-800 > .buffer-bar {
+    background: radial-gradient(#283593 0, #283593 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-900 > .buffer-bar {
+    background: radial-gradient(#1A237E 0, #1A237E 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-A100 > .buffer-bar {
+    background: radial-gradient(#8C9EFF 0, #8C9EFF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-A200 > .buffer-bar {
+    background: radial-gradient(#536DFE 0, #536DFE 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-A400 > .buffer-bar {
+    background: radial-gradient(#3D5AFE 0, #3D5AFE 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-indigo-A700 > .buffer-bar {
+    background: radial-gradient(#304FFE 0, #304FFE 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-50 > .buffer-bar {
+    background: radial-gradient(#E3F2FD 0, #E3F2FD 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-100 > .buffer-bar {
+    background: radial-gradient(#BBDEFB 0, #BBDEFB 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-200 > .buffer-bar {
+    background: radial-gradient(#90CAF9 0, #90CAF9 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-300 > .buffer-bar {
+    background: radial-gradient(#64B5F6 0, #64B5F6 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-400 > .buffer-bar {
+    background: radial-gradient(#42A5F5 0, #42A5F5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue > .buffer-bar,
+.progress.buffer.bg-blue-500 > .buffer-bar {
+    background: radial-gradient(#2196F3 0, #2196F3 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-600 > .buffer-bar {
+    background: radial-gradient(#1E88E5 0, #1E88E5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-700 > .buffer-bar {
+    background: radial-gradient(#1976D2 0, #1976D2 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-800 > .buffer-bar {
+    background: radial-gradient(#1565C0 0, #1565C0 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-900 > .buffer-bar {
+    background: radial-gradient(#0D47A1 0, #0D47A1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-A100 > .buffer-bar {
+    background: radial-gradient(#82B1FF 0, #82B1FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-A200 > .buffer-bar {
+    background: radial-gradient(#448AFF 0, #448AFF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-A400 > .buffer-bar {
+    background: radial-gradient(#2979FF 0, #2979FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-A700 > .buffer-bar {
+    background: radial-gradient(#2962FF 0, #2962FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-50 > .buffer-bar {
+    background: radial-gradient(#E1F5FE 0, #E1F5FE 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-100 > .buffer-bar {
+    background: radial-gradient(#B3E5FC 0, #B3E5FC 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-200 > .buffer-bar {
+    background: radial-gradient(#81D4FA 0, #81D4FA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-300 > .buffer-bar {
+    background: radial-gradient(#4FC3F7 0, #4FC3F7 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-400 > .buffer-bar {
+    background: radial-gradient(#29B6F6 0, #29B6F6 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue > .buffer-bar,
+.progress.buffer.bg-light-blue-500 > .buffer-bar {
+    background: radial-gradient(#03A9F4 0, #03A9F4 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-600 > .buffer-bar {
+    background: radial-gradient(#039BE5 0, #039BE5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-700 > .buffer-bar {
+    background: radial-gradient(#0288D1 0, #0288D1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-800 > .buffer-bar {
+    background: radial-gradient(#0277BD 0, #0277BD 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-900 > .buffer-bar {
+    background: radial-gradient(#01579B 0, #01579B 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-A100 > .buffer-bar {
+    background: radial-gradient(#80D8FF 0, #80D8FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-A200 > .buffer-bar {
+    background: radial-gradient(#40C4FF 0, #40C4FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-A400 > .buffer-bar {
+    background: radial-gradient(#00B0FF 0, #00B0FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-blue-A700 > .buffer-bar {
+    background: radial-gradient(#0091EA 0, #0091EA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-50 > .buffer-bar {
+    background: radial-gradient(#E0F7FA 0, #E0F7FA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-100 > .buffer-bar {
+    background: radial-gradient(#B2EBF2 0, #B2EBF2 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-200 > .buffer-bar {
+    background: radial-gradient(#80DEEA 0, #80DEEA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-300 > .buffer-bar {
+    background: radial-gradient(#4DD0E1 0, #4DD0E1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-400 > .buffer-bar {
+    background: radial-gradient(#26C6DA 0, #26C6DA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan > .buffer-bar,
+.progress.buffer.bg-cyan-500 > .buffer-bar {
+    background: radial-gradient(#00BCD4 0, #00BCD4 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-600 > .buffer-bar {
+    background: radial-gradient(#00ACC1 0, #00ACC1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-700 > .buffer-bar {
+    background: radial-gradient(#0097A7 0, #0097A7 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-800 > .buffer-bar {
+    background: radial-gradient(#00838F 0, #00838F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-900 > .buffer-bar {
+    background: radial-gradient(#006064 0, #006064 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-A100 > .buffer-bar {
+    background: radial-gradient(#84FFFF 0, #84FFFF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-A200 > .buffer-bar {
+    background: radial-gradient(#18FFFF 0, #18FFFF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-A400 > .buffer-bar {
+    background: radial-gradient(#00E5FF 0, #00E5FF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-cyan-A700 > .buffer-bar {
+    background: radial-gradient(#00B8D4 0, #00B8D4 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-50 > .buffer-bar {
+    background: radial-gradient(#E0F2F1 0, #E0F2F1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-100 > .buffer-bar {
+    background: radial-gradient(#B2DFDB 0, #B2DFDB 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-200 > .buffer-bar {
+    background: radial-gradient(#80CBC4 0, #80CBC4 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-300 > .buffer-bar {
+    background: radial-gradient(#4DB6AC 0, #4DB6AC 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-400 > .buffer-bar {
+    background: radial-gradient(#26A69A 0, #26A69A 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal > .buffer-bar,
+.progress.buffer.bg-teal-500 > .buffer-bar {
+    background: radial-gradient(#009688 0, #009688 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-600 > .buffer-bar {
+    background: radial-gradient(#00897B 0, #00897B 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-700 > .buffer-bar {
+    background: radial-gradient(#00796B 0, #00796B 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-800 > .buffer-bar {
+    background: radial-gradient(#00695C 0, #00695C 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-900 > .buffer-bar {
+    background: radial-gradient(#004D40 0, #004D40 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-A100 > .buffer-bar {
+    background: radial-gradient(#A7FFEB 0, #A7FFEB 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-A200 > .buffer-bar {
+    background: radial-gradient(#64FFDA 0, #64FFDA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-A400 > .buffer-bar {
+    background: radial-gradient(#1DE9B6 0, #1DE9B6 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-teal-A700 > .buffer-bar {
+    background: radial-gradient(#00BFA5 0, #00BFA5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-50 > .buffer-bar {
+    background: radial-gradient(#E8F5E9 0, #E8F5E9 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-100 > .buffer-bar {
+    background: radial-gradient(#C8E6C9 0, #C8E6C9 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-200 > .buffer-bar {
+    background: radial-gradient(#A5D6A7 0, #A5D6A7 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-300 > .buffer-bar {
+    background: radial-gradient(#81C784 0, #81C784 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-400 > .buffer-bar {
+    background: radial-gradient(#66BB6A 0, #66BB6A 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green > .buffer-bar,
+.progress.buffer.bg-green-500 > .buffer-bar {
+    background: radial-gradient(#4CAF50 0, #4CAF50 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-600 > .buffer-bar {
+    background: radial-gradient(#43A047 0, #43A047 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-700 > .buffer-bar {
+    background: radial-gradient(#388E3C 0, #388E3C 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-800 > .buffer-bar {
+    background: radial-gradient(#2E7D32 0, #2E7D32 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-900 > .buffer-bar {
+    background: radial-gradient(#1B5E20 0, #1B5E20 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-A100 > .buffer-bar {
+    background: radial-gradient(#B9F6CA 0, #B9F6CA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-A200 > .buffer-bar {
+    background: radial-gradient(#69F0AE 0, #69F0AE 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-A400 > .buffer-bar {
+    background: radial-gradient(#00E676 0, #00E676 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-green-A700 > .buffer-bar {
+    background: radial-gradient(#00C853 0, #00C853 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-50 > .buffer-bar {
+    background: radial-gradient(#F1F8E9 0, #F1F8E9 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-100 > .buffer-bar {
+    background: radial-gradient(#DCEDC8 0, #DCEDC8 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-200 > .buffer-bar {
+    background: radial-gradient(#C5E1A5 0, #C5E1A5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-300 > .buffer-bar {
+    background: radial-gradient(#AED581 0, #AED581 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-400 > .buffer-bar {
+    background: radial-gradient(#9CCC65 0, #9CCC65 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green > .buffer-bar,
+.progress.buffer.bg-light-green-500 > .buffer-bar {
+    background: radial-gradient(#8BC34A 0, #8BC34A 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-600 > .buffer-bar {
+    background: radial-gradient(#7CB342 0, #7CB342 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-700 > .buffer-bar {
+    background: radial-gradient(#689F38 0, #689F38 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-800 > .buffer-bar {
+    background: radial-gradient(#558B2F 0, #558B2F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-900 > .buffer-bar {
+    background: radial-gradient(#33691E 0, #33691E 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-A100 > .buffer-bar {
+    background: radial-gradient(#CCFF90 0, #CCFF90 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-A200 > .buffer-bar {
+    background: radial-gradient(#B2FF59 0, #B2FF59 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-A400 > .buffer-bar {
+    background: radial-gradient(#76FF03 0, #76FF03 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-light-green-A700 > .buffer-bar {
+    background: radial-gradient(#64DD17 0, #64DD17 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-50 > .buffer-bar {
+    background: radial-gradient(#F9FBE7 0, #F9FBE7 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-100 > .buffer-bar {
+    background: radial-gradient(#F0F4C3 0, #F0F4C3 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-200 > .buffer-bar {
+    background: radial-gradient(#E6EE9C 0, #E6EE9C 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-300 > .buffer-bar {
+    background: radial-gradient(#DCE775 0, #DCE775 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-400 > .buffer-bar {
+    background: radial-gradient(#D4E157 0, #D4E157 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime > .buffer-bar,
+.progress.buffer.bg-lime-500 > .buffer-bar {
+    background: radial-gradient(#CDDC39 0, #CDDC39 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-600 > .buffer-bar {
+    background: radial-gradient(#C0CA33 0, #C0CA33 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-700 > .buffer-bar {
+    background: radial-gradient(#AFB42B 0, #AFB42B 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-800 > .buffer-bar {
+    background: radial-gradient(#9E9D24 0, #9E9D24 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-900 > .buffer-bar {
+    background: radial-gradient(#827717 0, #827717 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-A100 > .buffer-bar {
+    background: radial-gradient(#F4FF81 0, #F4FF81 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-A200 > .buffer-bar {
+    background: radial-gradient(#EEFF41 0, #EEFF41 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-A400 > .buffer-bar {
+    background: radial-gradient(#C6FF00 0, #C6FF00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-lime-A700 > .buffer-bar {
+    background: radial-gradient(#AEEA00 0, #AEEA00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-50 > .buffer-bar {
+    background: radial-gradient(#FFFDE7 0, #FFFDE7 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-100 > .buffer-bar {
+    background: radial-gradient(#FFF9C4 0, #FFF9C4 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-200 > .buffer-bar {
+    background: radial-gradient(#FFF59D 0, #FFF59D 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-300 > .buffer-bar {
+    background: radial-gradient(#FFF176 0, #FFF176 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-400 > .buffer-bar {
+    background: radial-gradient(#FFEE58 0, #FFEE58 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow > .buffer-bar,
+.progress.buffer.bg-yellow-500 > .buffer-bar {
+    background: radial-gradient(#FFEB3B 0, #FFEB3B 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-600 > .buffer-bar {
+    background: radial-gradient(#FDD835 0, #FDD835 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-700 > .buffer-bar {
+    background: radial-gradient(#FBC02D 0, #FBC02D 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-800 > .buffer-bar {
+    background: radial-gradient(#F9A825 0, #F9A825 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-900 > .buffer-bar {
+    background: radial-gradient(#F57F17 0, #F57F17 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-A100 > .buffer-bar {
+    background: radial-gradient(#FFFF8D 0, #FFFF8D 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-A200 > .buffer-bar {
+    background: radial-gradient(#FFFF00 0, #FFFF00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-A400 > .buffer-bar {
+    background: radial-gradient(#FFEA00 0, #FFEA00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-yellow-A700 > .buffer-bar {
+    background: radial-gradient(#FFD600 0, #FFD600 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-50 > .buffer-bar {
+    background: radial-gradient(#FFF8E1 0, #FFF8E1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-100 > .buffer-bar {
+    background: radial-gradient(#FFECB3 0, #FFECB3 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-200 > .buffer-bar {
+    background: radial-gradient(#FFE082 0, #FFE082 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-300 > .buffer-bar {
+    background: radial-gradient(#FFD54F 0, #FFD54F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-400 > .buffer-bar {
+    background: radial-gradient(#FFCA28 0, #FFCA28 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber > .buffer-bar,
+.progress.buffer.bg-amber-500 > .buffer-bar {
+    background: radial-gradient(#FFC107 0, #FFC107 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-600 > .buffer-bar {
+    background: radial-gradient(#FFB300 0, #FFB300 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-700 > .buffer-bar {
+    background: radial-gradient(#FFA000 0, #FFA000 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-800 > .buffer-bar {
+    background: radial-gradient(#FF8F00 0, #FF8F00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-900 > .buffer-bar {
+    background: radial-gradient(#FF6F00 0, #FF6F00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-A100 > .buffer-bar {
+    background: radial-gradient(#FFE57F 0, #FFE57F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-A200 > .buffer-bar {
+    background: radial-gradient(#FFD740 0, #FFD740 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-A400 > .buffer-bar {
+    background: radial-gradient(#FFC400 0, #FFC400 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-amber-A700 > .buffer-bar {
+    background: radial-gradient(#FFAB00 0, #FFAB00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-50 > .buffer-bar {
+    background: radial-gradient(#FFF3E0 0, #FFF3E0 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-100 > .buffer-bar {
+    background: radial-gradient(#FFE0B2 0, #FFE0B2 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-200 > .buffer-bar {
+    background: radial-gradient(#FFCC80 0, #FFCC80 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-300 > .buffer-bar {
+    background: radial-gradient(#FFB74D 0, #FFB74D 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-400 > .buffer-bar {
+    background: radial-gradient(#FFA726 0, #FFA726 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange > .buffer-bar,
+.progress.buffer.bg-orange-500 > .buffer-bar {
+    background: radial-gradient(#FF9800 0, #FF9800 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-600 > .buffer-bar {
+    background: radial-gradient(#FB8C00 0, #FB8C00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-700 > .buffer-bar {
+    background: radial-gradient(#F57C00 0, #F57C00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-800 > .buffer-bar {
+    background: radial-gradient(#EF6C00 0, #EF6C00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-900 > .buffer-bar {
+    background: radial-gradient(#E65100 0, #E65100 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-A100 > .buffer-bar {
+    background: radial-gradient(#FFD180 0, #FFD180 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-A200 > .buffer-bar {
+    background: radial-gradient(#FFAB40 0, #FFAB40 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-A400 > .buffer-bar {
+    background: radial-gradient(#FF9100 0, #FF9100 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-orange-A700 > .buffer-bar {
+    background: radial-gradient(#FF6D00 0, #FF6D00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-50 > .buffer-bar {
+    background: radial-gradient(#FBE9E7 0, #FBE9E7 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-100 > .buffer-bar {
+    background: radial-gradient(#FFCCBC 0, #FFCCBC 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-200 > .buffer-bar {
+    background: radial-gradient(#FFAB91 0, #FFAB91 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-300 > .buffer-bar {
+    background: radial-gradient(#FF8A65 0, #FF8A65 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-400 > .buffer-bar {
+    background: radial-gradient(#FF7043 0, #FF7043 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange > .buffer-bar,
+.progress.buffer.bg-deep-orange-500 > .buffer-bar {
+    background: radial-gradient(#FF5722 0, #FF5722 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-600 > .buffer-bar {
+    background: radial-gradient(#F4511E 0, #F4511E 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-700 > .buffer-bar {
+    background: radial-gradient(#E64A19 0, #E64A19 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-800 > .buffer-bar {
+    background: radial-gradient(#D84315 0, #D84315 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-900 > .buffer-bar {
+    background: radial-gradient(#BF360C 0, #BF360C 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-A100 > .buffer-bar {
+    background: radial-gradient(#FF9E80 0, #FF9E80 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-A200 > .buffer-bar {
+    background: radial-gradient(#FF6E40 0, #FF6E40 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-A400 > .buffer-bar {
+    background: radial-gradient(#FF3D00 0, #FF3D00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-deep-orange-A700 > .buffer-bar {
+    background: radial-gradient(#DD2C00 0, #DD2C00 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-50 > .buffer-bar {
+    background: radial-gradient(#EFEBE9 0, #EFEBE9 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-100 > .buffer-bar {
+    background: radial-gradient(#D7CCC8 0, #D7CCC8 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-200 > .buffer-bar {
+    background: radial-gradient(#BCAAA4 0, #BCAAA4 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-300 > .buffer-bar {
+    background: radial-gradient(#A1887F 0, #A1887F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-400 > .buffer-bar {
+    background: radial-gradient(#8D6E63 0, #8D6E63 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown > .buffer-bar,
+.progress.buffer.bg-brown-500 > .buffer-bar {
+    background: radial-gradient(#795548 0, #795548 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-600 > .buffer-bar {
+    background: radial-gradient(#6D4C41 0, #6D4C41 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-700 > .buffer-bar {
+    background: radial-gradient(#5D4037 0, #5D4037 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-800 > .buffer-bar {
+    background: radial-gradient(#4E342E 0, #4E342E 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-brown-900 > .buffer-bar {
+    background: radial-gradient(#3E2723 0, #3E2723 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-50 > .buffer-bar {
+    background: radial-gradient(#FAFAFA 0, #FAFAFA 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-100 > .buffer-bar {
+    background: radial-gradient(#F5F5F5 0, #F5F5F5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-200 > .buffer-bar {
+    background: radial-gradient(#EEEEEE 0, #EEEEEE 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-300 > .buffer-bar {
+    background: radial-gradient(#E0E0E0 0, #E0E0E0 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-400 > .buffer-bar {
+    background: radial-gradient( 0,  16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey > .buffer-bar,
+.progress.buffer.bg-grey-500 > .buffer-bar {
+    background: radial-gradient(#9E9E9E 0, #9E9E9E 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-600 > .buffer-bar {
+    background: radial-gradient(#757575 0, #757575 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-700 > .buffer-bar {
+    background: radial-gradient(#616161 0, #616161 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-800 > .buffer-bar {
+    background: radial-gradient( 0,  16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-grey-900 > .buffer-bar {
+    background: radial-gradient(#212121 0, #212121 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-50 > .buffer-bar {
+    background: radial-gradient(#ECEFF1 0, #ECEFF1 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-100 > .buffer-bar {
+    background: radial-gradient(#CFD8DC 0, #CFD8DC 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-200 > .buffer-bar {
+    background: radial-gradient(#B0BEC5 0, #B0BEC5 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-300 > .buffer-bar {
+    background: radial-gradient(#90A4AE 0, #90A4AE 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-400 > .buffer-bar {
+    background: radial-gradient(#78909C 0, #78909C 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey > .buffer-bar,
+.progress.buffer.bg-blue-grey-500 > .buffer-bar {
+    background: radial-gradient(#607D8B 0, #607D8B 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-600 > .buffer-bar {
+    background: radial-gradient(#546E7A 0, #546E7A 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-700 > .buffer-bar {
+    background: radial-gradient(#455A64 0, #455A64 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-800 > .buffer-bar {
+    background: radial-gradient(#37474F 0, #37474F 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-blue-grey-900 > .buffer-bar {
+    background: radial-gradient(#263238 0, #263238 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-black > .buffer-bar {
+    background: radial-gradient(#000000 0, #000000 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}
+
+.progress.buffer.bg-white > .buffer-bar {
+    background: radial-gradient(#FFFFFF 0, #FFFFFF 16%, transparent 42%);
+    background-size: 10px 10px;
+    background-position: 0 -23px;
+}

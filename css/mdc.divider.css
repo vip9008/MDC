@@ -1,0 +1,21 @@
+.mdc-divider {
+    display: block;
+    height: 1px;
+    width: auto;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-border);
+}
+
+.mdc-list-group > .mdc-divider.inset {
+    margin-left: 4.5rem;
+}
+
+.mdc-list-group > .mdc-divider.inset.md-56 {
+    margin-left: 5.5rem;
+}
+
+.mdc-list-group > .mdc-divider.inset.md-100 {
+    margin-left: 7.25rem;
+}
