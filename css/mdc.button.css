@@ -22,6 +22,7 @@ a.mdc-button, button.mdc-button, .mdc-button {
     padding: 0 0.5rem;
     overflow: hidden;
     vertical-align: middle;
+    transition: all 0.2s;
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -32,6 +33,16 @@ a.mdc-button, button.mdc-button, .mdc-button {
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
+}
+
+.mdc-button > .material-icon {
+    margin-left: 0;
+    margin-right: 0.5rem;
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem;
+    font-size: 1.125rem;
+    vertical-align: middle;
 }
 
 .mdc-button:before {
@@ -74,4 +85,118 @@ a.mdc-button, button.mdc-button, .mdc-button {
 
 .mdc-button.disabled:before, .mdc-button[disabled]:before, .mdc-button:disabled:before {
     display: none;
+}
+
+.mdc-button.disabled > .material-icon, .mdc-button[disabled] > .material-icon, .mdc-button:disabled > .material-icon {
+    color: var(--initial-text-hint);
+}
+
+.mdc-button.btn-outlined, .mdc-button.btn-contained, .mdc-button[class*="bg-"] {
+    padding: 0 1rem;
+}
+
+.mdc-button.btn-outlined > .material-icon, .mdc-button.btn-contained > .material-icon, .mdc-button[class*="bg-"] > .material-icon {
+    margin-left: -0.25rem;
+}
+
+.mdc-button.btn-outlined {
+    border: solid 0.0625rem var(--initial-text-divider);
+}
+
+.mdc-button.btn-contained {
+    z-index: var(--z-axis-2-index);
+    box-shadow: var(--z-axis-2-shadow);
+}
+
+.mdc-button.btn-contained:hover {
+    z-index: var(--z-axis-4-index);
+    box-shadow: var(--z-axis-4-shadow);
+}
+
+.mdc-button.btn-contained:active {
+    z-index: var(--z-axis-8-index);
+    box-shadow: var(--z-axis-8-shadow);
+}
+
+.mdc-button.btn-contained.disabled, .mdc-button.btn-contained[disabled], .mdc-button.btn-contained:disabled,
+.mdc-button.btn-contained.disabled:hover, .mdc-button.btn-contained[disabled]:hover, .mdc-button.btn-contained:disabled:hover,
+.mdc-button.btn-contained.disabled:active, .mdc-button.btn-contained[disabled]:active, .mdc-button.btn-contained:disabled:active {
+    z-index: var(--z-axis-0-index);
+    box-shadow: var(--z-axis-0-shadow);
+}
+
+.mdc-button.full-width.btn-outlined, .mdc-button.full-width.btn-contained, .mdc-button.full-width[class*="bg-"] {
+    width: 100%;
+}
+
+.mdc-toggle-buttons {
+    border-radius: 0.25rem;
+    overflow: hidden;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
+    border: solid 0.0625rem var(--initial-text-divider);
+}
+
+.mdc-toggle-buttons > .mdc-button {
+    border-radius: 0;
+    min-width: 0;
+    height: 2.875rem;
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+    text-transform: none;
+    padding: 0.6875rem;
+
+}
+
+.mdc-toggle-buttons > .mdc-button + .mdc-button {
+    border-left: solid 0.0625rem var(--initial-text-divider);
+}
+
+.mdc-toggle-buttons > .mdc-button:focus:before {
+    top: 0.25rem;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    left: 0.25rem;
+    border-radius: 100%;
+}
+
+.mdc-toggle-buttons > .mdc-button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.2s;
+    background-color: var(--main-color);
+    opacity: 0;
+}
+
+.mdc-toggle-buttons > .mdc-button.active:focus:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.6s;
+    opacity: 0;
+    border-radius: 0;
+}
+
+.mdc-toggle-buttons > .mdc-button.active:after {
+    opacity: var(--opacity-pressed);
+}
+
+.mdc-toggle-buttons > .mdc-button > .material-icon {
+    margin: 0;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
 }

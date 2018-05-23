@@ -15,6 +15,7 @@ $js_files = [
     "js/mdc.list.js",
     "js/mdc.nav.drawer.js",
     "js/mdc.top.app.bar.js",
+    "js/mdc.button.js",
 ];
 
 $topAppBarColor = "bg-blue-grey-900";
@@ -478,10 +479,253 @@ $url = "mdc_buttons.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
-                <h3 class="text-secondary">Buttons implementation support for web</h3>
-                <button class="mdc-button">Button</button>
-                <a href="javascript: ;" class="mdc-button">Ancor</a>
-                <div class="mdc-button" disabled>Div</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1>Text buttons</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="btn-group-example">
+                    <button class="mdc-button deep-purple-A700">Text</button>
+                    <button class="mdc-button deep-purple-A700" disabled>Text</button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button deep-purple-A700">
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                    <button class="mdc-button deep-purple-A700" disabled>
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-12">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<button class="mdc-button deep-purple-A700">Text</button>
+<button class="mdc-button deep-purple-A700" disabled>Text</button>
+
+<button class="mdc-button deep-purple-A700">
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+<button class="mdc-button deep-purple-A700" disabled>
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+    </section>
+    
+    <div class="row">
+        <div class="col xlarge-8 large-10 medium-12">
+            <div class="mdc-divider"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1>Outlined buttons</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-outlined deep-purple-A700">Text</button>
+                    <button class="mdc-button btn-outlined deep-purple-A700" disabled>Text</button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-outlined deep-purple-A700">
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                    <button class="mdc-button btn-outlined deep-purple-A700" disabled>
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-outlined full-width deep-purple-A700">Text</button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-outlined full-width deep-purple-A700" disabled>Text</button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-outlined full-width deep-purple-A700">
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-outlined full-width deep-purple-A700" disabled>
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-12">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<button class="mdc-button btn-outlined deep-purple-A700">Text</button>
+<button class="mdc-button btn-outlined deep-purple-A700" disabled>Text</button>
+
+<button class="mdc-button btn-outlined deep-purple-A700">
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+<button class="mdc-button btn-outlined deep-purple-A700" disabled>
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+
+<button class="mdc-button btn-outlined full-width deep-purple-A700">Text</button>
+<button class="mdc-button btn-outlined full-width deep-purple-A700" disabled>Text</button>
+
+<button class="mdc-button btn-outlined full-width deep-purple-A700">
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+<button class="mdc-button btn-outlined full-width deep-purple-A700" disabled>
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col xlarge-8 large-10 medium-12">
+            <div class="mdc-divider"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1>Contained buttons</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-contained bg-deep-purple-A700">Text</button>
+                    <button class="mdc-button btn-contained bg-deep-purple-A700" disabled>Text</button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-contained bg-deep-purple-A700">
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                    <button class="mdc-button btn-contained bg-deep-purple-A700" disabled>
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-contained full-width bg-deep-purple-A700">Text</button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-contained full-width bg-deep-purple-A700" disabled>Text</button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-contained full-width bg-deep-purple-A700">
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                </div>
+                <div class="btn-group-example">
+                    <button class="mdc-button btn-contained full-width bg-deep-purple-A700" disabled>
+                        <div class="material-icon">favorite</div>
+                        Text
+                    </button>
+                </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-12">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<button class="mdc-button btn-contained bg-deep-purple-A700">Text</button>
+<button class="mdc-button btn-contained bg-deep-purple-A700" disabled>Text</button>
+
+<button class="mdc-button btn-contained bg-deep-purple-A700">
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+<button class="mdc-button btn-contained bg-deep-purple-A700" disabled>
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+
+<button class="mdc-button btn-contained full-width bg-deep-purple-A700">Text</button>
+<button class="mdc-button btn-contained full-width bg-deep-purple-A700" disabled>Text</button>
+
+<button class="mdc-button btn-contained full-width bg-deep-purple-A700">
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+<button class="mdc-button btn-contained full-width bg-deep-purple-A700" disabled>
+    <div class="material-icon">favorite</div>
+    Text
+</button>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col xlarge-8 large-10 medium-12">
+            <div class="mdc-divider"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1>Toggle buttons</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="btn-group-example toggle-buttons">
+                    <div class="mdc-toggle-buttons">
+                        <button class="mdc-button"><div class="material-icon">format_italic</div></button>
+                        <button class="mdc-button active"><div class="material-icon">format_bold</div></button>
+                        <button class="mdc-button" disabled><div class="material-icon">format_underlined</div></button>
+                    </div>
+                </div>
+                <div class="btn-group-example toggle-buttons">
+                    <div class="mdc-toggle-buttons deep-purple-A700">
+                        <button class="mdc-button"><div class="material-icon">format_italic</div></button>
+                        <button class="mdc-button active"><div class="material-icon">format_bold</div></button>
+                        <button class="mdc-button" disabled><div class="material-icon">format_underlined</div></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-12">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-toggle-buttons">
+    <button class="mdc-button"><div class="material-icon">format_italic</div></button>
+    <button class="mdc-button active"><div class="material-icon">format_bold</div></button>
+    <button class="mdc-button" disabled><div class="material-icon">format_underlined</div></button>
+</div>
+
+<div class="mdc-toggle-buttons deep-purple-A700">
+    <button class="mdc-button"><div class="material-icon">format_italic</div></button>
+    <button class="mdc-button active"><div class="material-icon">format_bold</div></button>
+    <button class="mdc-button" disabled><div class="material-icon">format_underlined</div></button>
+</div>
+TEXT
+) ?></pre>
             </div>
         </div>
     </section>

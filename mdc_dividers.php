@@ -232,7 +232,6 @@ $url = "mdc_dividers.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
-                <h3 class="text-secondary">Dividers implementation support for web</h3>
             </div>
         </div>
         <div class="row">

@@ -15,7 +15,7 @@
     --z-axis-16-index: 16000;
     --z-axis-24-index: 24000;
 
-    --z-axis-0-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.2);
+    --z-axis-0-shadow: none;
     --z-axis-1-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.2),
                        0 0.0625rem 0.0625rem 0 rgba(0, 0, 0, 0.14),
                        0 0.125rem 0.0625rem -0.0625rem rgba(0, 0, 0, 0.12);

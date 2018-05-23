@@ -23,7 +23,7 @@ h1.article_title {
 
 .img_figure {
     margin: 1rem 0;
-    border: solid 1px var(--initial-text-divider);
+    border: solid 0.0625rem var(--initial-text-divider);
 }
 
 .img_figure > img {
@@ -48,7 +48,7 @@ pre.html .hljs-string {
 
 .mdc-list-group.example {
     margin: 1rem 0;
-    border: solid 1px var(--initial-text-divider);
+    border: solid 0.0625rem var(--initial-text-divider);
 }
 
 #mdc-nav-drawer .mdc-list-group > .mdc-dropdown > a.mdc-list-item > .material-icon {
@@ -57,4 +57,12 @@ pre.html .hljs-string {
 
 .space {
     padding: 1rem;
+}
+
+.btn-group-example {
+    margin: 1rem 0;
+}
+
+.btn-group-example > .mdc-button + .mdc-button {
+    margin-left: 0.5rem;
 }
