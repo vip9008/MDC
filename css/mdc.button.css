@@ -1,0 +1,77 @@
+a.mdc-button, button.mdc-button, .mdc-button {
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    min-width: 4rem;
+    height: 2.25rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    letter-spacing: 0.08929em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    overflow: hidden;
+    vertical-align: middle;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.mdc-button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.2s;
+    background-color: var(--main-color);
+    opacity: 0;
+}
+
+.mdc-button:hover:before {
+    opacity: var(--opacity-hover);
+}
+
+.mdc-button:focus:before {
+    opacity: var(--opacity-focus);
+}
+
+.mdc-button:active:before {
+    opacity: var(--opacity-pressed);
+}
+
+.mdc-button.disabled, .mdc-button[disabled], .mdc-button:disabled {
+    --initial-text-hint: inherit;
+    --initial-text-divider: inherit;
+
+    cursor: default;
+    color: var(--initial-text-hint);
+}
+
+.mdc-button.disabled[class*="bg-"], .mdc-button[class*="bg-"][disabled], .mdc-button[class*="bg-"]:disabled {
+    background-color: var(--initial-text-divider);
+}
+
+.mdc-button.disabled:before, .mdc-button[disabled]:before, .mdc-button:disabled:before {
+    display: none;
+}

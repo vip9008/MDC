@@ -479,6 +479,9 @@ $url = "mdc_buttons.php";
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
                 <h3 class="text-secondary">Buttons implementation support for web</h3>
+                <button class="mdc-button">Button</button>
+                <a href="javascript: ;" class="mdc-button">Ancor</a>
+                <div class="mdc-button" disabled>Div</div>
             </div>
         </div>
     </section>
