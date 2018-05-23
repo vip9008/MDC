@@ -12,10 +12,46 @@
     margin-left: 4.5rem;
 }
 
+html[dir="ltr"] .mdc-list-group > .mdc-divider.inset,
+html[dir] .mdc-list-group[dir="ltr"] > .mdc-divider.inset {
+    margin-left: 4.5rem;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .mdc-list-group > .mdc-divider.inset,
+html[dir] .mdc-list-group[dir="rtl"] > .mdc-divider.inset {
+    margin-left: 0;
+    margin-right: 4.5rem;
+}
+
 .mdc-list-group > .mdc-divider.inset.md-56 {
     margin-left: 5.5rem;
 }
 
+html[dir="ltr"] .mdc-list-group > .mdc-divider.inset.md-56,
+html[dir] .mdc-list-group[dir="ltr"] > .mdc-divider.inset.md-56 {
+    margin-left: 5.5rem;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .mdc-list-group > .mdc-divider.inset.md-56,
+html[dir] .mdc-list-group[dir="rtl"] > .mdc-divider.inset.md-56 {
+    margin-left: 0;
+    margin-right: 5.5rem;
+}
+
 .mdc-list-group > .mdc-divider.inset.md-100 {
     margin-left: 7.25rem;
+}
+
+html[dir="ltr"] .mdc-list-group > .mdc-divider.inset.md-100,
+html[dir] .mdc-list-group[dir="ltr"] > .mdc-divider.inset.md-100 {
+    margin-left: 7.25rem;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .mdc-list-group > .mdc-divider.inset.md-100,
+html[dir] .mdc-list-group[dir="rtl"] > .mdc-divider.inset.md-100 {
+    margin-left: 0;
+    margin-right: 7.25rem;
 }

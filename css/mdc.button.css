@@ -45,6 +45,18 @@ a.mdc-button, button.mdc-button, .mdc-button {
     vertical-align: middle;
 }
 
+html[dir="ltr"] .mdc-button > .material-icon,
+html[dir] .mdc-button[dir="ltr"] > .material-icon {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+html[dir="rtl"] .mdc-button > .material-icon,
+html[dir] .mdc-button[dir="rtl"] > .material-icon {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
 .mdc-button:before {
     content: '';
     display: block;
@@ -97,6 +109,26 @@ a.mdc-button, button.mdc-button, .mdc-button {
 
 .mdc-button.btn-outlined > .material-icon, .mdc-button.btn-contained > .material-icon, .mdc-button[class*="bg-"] > .material-icon {
     margin-left: -0.25rem;
+}
+
+html[dir="ltr"] .mdc-button.btn-outlined > .material-icon,
+html[dir="ltr"] .mdc-button.btn-contained > .material-icon,
+html[dir="ltr"] .mdc-button[class*="bg-"] > .material-icon,
+html[dir] .mdc-button.btn-outlined[dir="ltr"] > .material-icon,
+html[dir] .mdc-button.btn-contained[dir="ltr"] > .material-icon,
+html[dir] .mdc-button[class*="bg-"][dir="ltr"] > .material-icon {
+    margin-left: -0.25rem;
+    margin-right: 0.5rem;
+}
+
+html[dir="rtl"] .mdc-button.btn-outlined > .material-icon,
+html[dir="rtl"] .mdc-button.btn-contained > .material-icon,
+html[dir="rtl"] .mdc-button[class*="bg-"] > .material-icon,
+html[dir] .mdc-button.btn-outlined[dir="rtl"] > .material-icon,
+html[dir] .mdc-button.btn-contained[dir="rtl"] > .material-icon,
+html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .material-icon {
+    margin-left: 0.5rem;
+    margin-right: -0.25rem;
 }
 
 .mdc-button.btn-outlined {
@@ -199,4 +231,10 @@ a.mdc-button, button.mdc-button, .mdc-button {
     height: 1.5rem;
     font-size: 1.5rem;
     vertical-align: middle;
+}
+
+html[dir] .mdc-toggle-buttons > .mdc-button > .material-icon,
+html[dir] .mdc-toggle-buttons[dir] > .mdc-button > .material-icon,
+html[dir] .mdc-toggle-buttons > .mdc-button[dir] > .material-icon {
+    margin: 0;
 }

@@ -5,7 +5,7 @@
 }
 
 .mdc-list-container + .mdc-list-container {
-    border-top: solid 1px;
+    border-top: solid 1px var(--initial-text-divider);
 }
 
 .mdc-list-item {
@@ -96,6 +96,16 @@ a.mdc-list-item:active:before, button.mdc-list-item:active:before, .mdc-list-ite
 
 }
 
+html[dir="ltr"] .mdc-list-item > .material-icon,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .material-icon {
+    margin: 1rem 2rem 1rem 0;
+}
+
+html[dir="rtl"] .mdc-list-item > .material-icon,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .material-icon {
+    margin: 1rem 0 1rem 2rem;
+}
+
 .mdc-list-item > .meta {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -109,6 +119,20 @@ a.mdc-list-item:active:before, button.mdc-list-item:active:before, .mdc-list-ite
     color: var(--text-secondary);
 }
 
+html[dir="ltr"] .mdc-list-item > .meta,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .meta {
+    margin: 1rem 0 1rem auto;
+    padding: 0;
+    padding-left: 1.75rem;
+}
+
+html[dir="rtl"] .mdc-list-item > .meta,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta {
+    margin: 1rem auto 1rem 0;
+    padding: 0;
+    padding-right: 1.75rem;
+}
+
 .mdc-list-item > .meta.material-icon {
     margin: 0.75rem 0 0.75rem auto;
     padding-left: 1rem;
@@ -116,6 +140,20 @@ a.mdc-list-item:active:before, button.mdc-list-item:active:before, .mdc-list-ite
     font-size: 1.5rem;
     -webkit-align-self: center;
     align-self: center;
+}
+
+html[dir="ltr"] .mdc-list-item > .meta.material-icon,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .meta.material-icon {
+    margin: 0.75rem 0 0.75rem auto;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+html[dir="rtl"] .mdc-list-item > .meta.material-icon,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta.material-icon {
+    margin: 0.75rem auto 0.75rem 0;
+    padding: 0;
+    padding-right: 1rem;
 }
 
 .mdc-list-item > .meta > a,
@@ -152,6 +190,16 @@ a.mdc-list-item:active:before, button.mdc-list-item:active:before, .mdc-list-ite
     background-size: cover;
 }
 
+html[dir="ltr"] .mdc-list-item > .graphic,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .graphic {
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+html[dir="rtl"] .mdc-list-item > .graphic,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .graphic {
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
 .mdc-list-item > .graphic.md-40 {
     border-radius: 100%;
     width: 2.5rem;
@@ -171,6 +219,16 @@ a.mdc-list-item:active:before, button.mdc-list-item:active:before, .mdc-list-ite
     height: 3.5rem;
 }
 
+html[dir="ltr"] .mdc-list-item > .graphic.md-100,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .graphic.md-100 {
+    margin: 0.5rem 1rem 0.5rem -1rem;
+}
+
+html[dir="rtl"] .mdc-list-item > .graphic.md-100,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .graphic.md-100 {
+    margin: 0.5rem -1rem 0.5rem 1rem;
+}
+
 .mdc-list-item > .material-icon:not(.meta) + .text > .secondary {
     margin: 0.125rem 0;
 }
@@ -185,7 +243,15 @@ a.mdc-list-item:active:before, button.mdc-list-item:active:before, .mdc-list-ite
 .md-3line > .mdc-list-item > .material-icon,
 .md-3line.mdc-list-item > .material-icon,
 .md-3line > .mdc-list-item > .graphic,
-.md-3line.mdc-list-item > .graphic {
+.md-3line.mdc-list-item > .graphic,
+html[dir] .md-3line > .mdc-list-item > .material-icon,
+html[dir] .md-3line.mdc-list-item > .material-icon,
+html[dir] .md-3line > .mdc-list-item > .graphic,
+html[dir] .md-3line.mdc-list-item > .graphic,
+html[dir] .md-3line[dir] > .mdc-list-item > .material-icon,
+html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .material-icon,
+html[dir] .md-3line[dir] > .mdc-list-item > .graphic,
+html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
     margin-top: 1rem;
     margin-bottom: 1rem;
     -webkit-align-self: flex-start;

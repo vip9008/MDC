@@ -1,6 +1,6 @@
 <?php
 $language = "en-US";
-$direction = "ltr";
+$direction = "rtl";
 $head_title = "MDC v2";
 $css_files = [
     "css/md.grid.flex.css",

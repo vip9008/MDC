@@ -478,6 +478,11 @@ a.material-icon:focus:before, button.material-icon:focus:before, .material-icon.
     justify-content: space-between!important;
 }
 
+.row.direction-reverse {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse; 
+}
+
 .row.row-nested {
     margin: 0 -0.5rem;
 }
@@ -519,16 +524,6 @@ a.material-icon:focus:before, button.material-icon:focus:before, .material-icon.
     flex: 0 0 auto;
     width: auto;
     max-width: none;
-}
-
-/* COLUMNS DIRECTION */
-
-html[dir="ltr"] .row .col,
-html[dir] .row[dir="ltr"] .col {
-}
-
-html[dir="rtl"] .row .col,
-html[dir] .row[dir="rtl"] .col {
 }
 
 /* X-SMALL CLASSES */
