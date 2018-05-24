@@ -49,7 +49,7 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/lists-intro.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-intro.png"></figure>
             </div>
         </div>
     </section>
@@ -73,18 +73,18 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/lists-illos-logical.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-illos-logical.png"></figure>
                 <h3>Logical</h3>
                 <p class="text-secondary">Lists should be sorted in logical ways that make content easy to scan, such as alphabetical, numerical, chronological, or by user preference.</p>
             </div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/lists-illos-content.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-illos-content.png"></figure>
                 <h3>Actionable</h3>
                 <p class="text-secondary">Lists present content in a way that makes it easy to identify a specific item in a collection and act on it.</p>
             </div>
             <div class="clearfix visible-smallext visible-small"></div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/lists-illos-consistency.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-illos-consistency.png"></figure>
                 <h3>Consistent</h3>
                 <p class="text-secondary">Lists should present icons, text, and actions in a consistent format.</p>
             </div>
@@ -105,7 +105,7 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/usage-types.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/usage-types.png"></figure>
                 <h3>1. Single-line list</h3>
                 <p class="text-secondary">Single-line list items contain a maximum of one line of text.</p>
                 <h3>2. Two-line list</h3>
@@ -128,7 +128,7 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/lists-elements.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-elements.png"></figure>
                 <h3>1. List</h3>
                 <h3>2. Row</h3>
                 <h3>3. List item content</h3>
@@ -144,7 +144,7 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/list-elements.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/list-elements.png"></figure>
                 <h3>List items are comprised of three different content types:</h3>
                 <h3>1. Supporting visuals</h3>
                 <h3>2. Primary text</h3>
@@ -156,7 +156,7 @@ $url = $prefix."components/lists.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <p class="text-secondary">A list control can display information and actions for list items.</p>
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/list-elements-2.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/list-elements-2.png"></figure>
                 <h3>Lists with controls contain three content types:</h3>
                 <h3>1. Supporting visuals</h3>
                 <h3>2. Primary text</h3>
@@ -178,11 +178,11 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/two-line-example-2.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/two-line-example-2.png"></figure>
                 <p class="text-secondary">Improve scannability by anchoring supporting visuals, such as thumbnails, along the row's edge.</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/threeline-sample-2.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/threeline-sample-2.png"></figure>
                 <p class="text-secondary">Place a divider between rows with lots of content, such as those with three-line lists.</p>
             </div>
         </div>
@@ -191,7 +191,7 @@ $url = $prefix."components/lists.php";
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
                 <figure class="img_figure bg-white clearfix" style="padding-top: 1.5rem;">
-                    <img src="<?= $prefix ?>img/lists/content-action.png">
+                    <img src="<?= $prefix ?>img/component_lists/content-action.png">
                 </figure>
                 <p class="text-secondary">The primary action takes up the majority of space.</p>
                 <ol>
@@ -201,7 +201,7 @@ $url = $prefix."components/lists.php";
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
                 <figure class="img_figure bg-white clearfix" style="padding-top: 1.5rem;">
-                    <img src="<?= $prefix ?>img/lists/content-hierarchy.png">
+                    <img src="<?= $prefix ?>img/component_lists/content-hierarchy.png">
                 </figure>
                 <p class="text-secondary">Clear hierarchy is created by aligning the most distinguishing content on the left, with the least distinguishing on the right.</p>
                 <ol>
@@ -225,7 +225,7 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/lists/subheader-lists.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/subheader-lists.png"></figure>
                 <h3>1. Subheader</h3>
                 <p class="text-secondary">A subheader should be left-aligned with an avatar or icon in a list.</p>
                 <h3>2. Subheader inset</h3>
@@ -246,11 +246,11 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/single-line-example-1.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/single-line-example-1.png"></figure>
                 <p class="text-secondary">A text list</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/single-line-example-2.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/single-line-example-2.png"></figure>
                 <p class="text-secondary">A single-line list with icons and text</p>
             </div>
         </div>
@@ -269,17 +269,17 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/two-line-example-1.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/two-line-example-1.png"></figure>
                 <p class="text-secondary">A text list</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/two-line-example-2.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/two-line-example-2.png"></figure>
                 <p class="text-secondary">A single-line list with icons and text</p>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/two-line-mix.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/two-line-mix.png"></figure>
                 <p class="text-secondary">The amount of text can vary between different rows within the same list</p>
             </div>
         </div>
@@ -297,17 +297,17 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/threeline-sample-1.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/threeline-sample-1.png"></figure>
                 <p class="text-secondary">A three-line text with an avatar</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/threeline-sample-2.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/threeline-sample-2.png"></figure>
                 <p class="text-secondary">A three-line text list, with a thumbnail and meta text</p>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/three-line-mix.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/three-line-mix.png"></figure>
                 <p class="text-secondary">The amount of text can vary between rows within the same list</p>
             </div>
         </div>
@@ -327,7 +327,7 @@ $url = $prefix."components/lists.php";
 
                 <h3>Checkbox</h3>
                 <p class="text-secondary">A checkbox can either be a primary or secondary action.</p>
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/lists-controls-checkbox.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/lists-controls-checkbox.png"></figure>
                 <p class="text-secondary">1. Secondary action<br>This checkbox is the list item’s secondary action.</p>
                 <p class="text-secondary">2. Primary action<br>This checkbox is both the list item’s primary action and state indicator.</p>
                 <br>
@@ -342,13 +342,13 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/lists-controls-expandable-close.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/lists-controls-expandable-close.png"></figure>
                 <p class="text-secondary">Tapping the list control expands the list</p>
                 <br>
                 <br>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/lists-controls-expandable-open.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/lists-controls-expandable-open.png"></figure>
                 <p class="text-secondary">An expanded list</p>
                 <br>
                 <br>
@@ -357,12 +357,12 @@ $url = $prefix."components/lists.php";
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
                 <h3>Switch</h3>
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/lists-controls-switch.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/lists-controls-switch.png"></figure>
                 <p class="text-secondary">Tapping the list control expands the list</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
                 <h3>Reorder</h3>
-                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/lists/lists-controls-reorder.png"></figure>
+                <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/lists-controls-reorder.png"></figure>
                 <p class="text-secondary">Usually appearing in edit mode, dragging lists items moves them to other locations within the list. This reorder icon is the list item’s secondary action</p>
             </div>
         </div>
@@ -523,17 +523,17 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item">
-                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-1.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-1.png');"></div>
                         <div class="text">Pencil</div>
                         <div class="meta">in stock</div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-2.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-2.png');"></div>
                         <div class="text">Rubberbands</div>
                         <div class="meta">in stock</div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-3.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-3.png');"></div>
                         <div class="text">Rulers</div>
                         <div class="meta">only 1 in stock</div>
                     </div>
@@ -561,17 +561,17 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-1.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-1.png');"></div>
                         <div class="text">Crunchy Croissants</div>
                         <div class="meta">01</div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-2.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-2.png');"></div>
                         <div class="text">Grilled Eggplant</div>
                         <div class="meta">02</div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-3.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-3.png');"></div>
                         <div class="text">Tngerine Salad</div>
                         <div class="meta">03</div>
                     </div>
@@ -945,7 +945,7 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-1.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-1.png');"></div>
                         <div class="text">
                             Pencil
                             <div class="secondary">in stock</div>
@@ -953,7 +953,7 @@ TEXT
                         <div class="meta">$1.5</div>
                     </div>
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-2.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-2.png');"></div>
                         <div class="text">
                             Rubberbands
                             <div class="secondary">in stock</div>
@@ -961,7 +961,7 @@ TEXT
                         <div class="meta">$4.5</div>
                     </div>
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-3.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-3.png');"></div>
                         <div class="text">
                             Rulers
                             <div class="secondary">only 1 in stock</div>
@@ -995,7 +995,7 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-1.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-1.png');"></div>
                         <div class="text">
                             Crunchy Croissants
                             <div class="secondary">Breakfast delight</div>
@@ -1003,7 +1003,7 @@ TEXT
                         <div class="meta">01</div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-2.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-2.png');"></div>
                         <div class="text">
                             Grilled Eggplant
                             <div class="secondary">Healthy & tasty</div>
@@ -1011,7 +1011,7 @@ TEXT
                         <div class="meta">02</div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-3.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-3.png');"></div>
                         <div class="text">
                             Tngerine Salad
                             <div class="secondary">Nutrition & diet</div>
@@ -1119,7 +1119,7 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group md-3line bg-cards example">
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-1.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-1.png');"></div>
                         <div class="text">
                             Crunchy Croissants
                             <div class="secondary">Buttery, flaky pastry named for its crecent shape.</div>
@@ -1127,7 +1127,7 @@ TEXT
                         <div class="meta">01</div>
                     </div>
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-2.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-2.png');"></div>
                         <div class="text">
                             Grilled Eggplant
                             <div class="secondary">Tender with a rich, complex flavor when cooked.</div>
@@ -1135,7 +1135,7 @@ TEXT
                         <div class="meta">02</div>
                     </div>
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-3.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-3.png');"></div>
                         <div class="text">
                             Tngerine Salad
                             <div class="secondary">Peak tangerine season lasts from autumn to spring.</div>
