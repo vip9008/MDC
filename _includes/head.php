@@ -9,16 +9,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <?php foreach ($css_files as $file) { ?>
-    <link href="<?= $file ?>" rel="stylesheet">
+    <link href="<?= $prefix.$file ?>" rel="stylesheet">
     <?php } ?>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?= $prefix ?>css/style.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <?php foreach ($js_files as $file) { ?>
-    <script src="<?= $file ?>"></script>
+    <script src="<?= $prefix.$file ?>"></script>
     <?php } ?>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="<?= $prefix ?>js/script.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#mdc-nav-drawer a.mdc-list-item[href="<?= $url ?>"]')

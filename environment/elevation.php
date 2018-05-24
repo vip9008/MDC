@@ -19,13 +19,13 @@ $js_files = [
 $head_title = "MDC v2";
 
 $topAppBarColor = "bg-blue-grey-900";
-$topAppBarTitle = "Material Design v2";
+$topAppBarTitle = "Environment - Elevation";
 
 $primaryColor = "indigo";
 $accentColor = "blue";
 
-$prefix = "";
-$url = $prefix."index.php";
+$prefix = "../";
+$url = $prefix."environment/elevation.php";
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ $url = $prefix."index.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1 class="article_title">INDEX PAGE</h1>
+                <h1 class="article_title">Elevation</h1>
                 <div class="space"></div>
                 <h2 class="text-secondary"></h2>
             </div>

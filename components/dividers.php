@@ -1,7 +1,7 @@
 <?php
 $language = "en-US";
 $direction = "ltr";
-$head_title = "MDC v2";
+
 $css_files = [
     "css/md.grid.flex.css",
     "css/md.colors.css",
@@ -16,24 +16,27 @@ $js_files = [
     "js/mdc.top.app.bar.js",
 ];
 
+$head_title = "MDC v2";
+
 $topAppBarColor = "bg-blue-grey-900";
 $topAppBarTitle = "Components - Dividers";
 
 $primaryColor = "indigo";
 $accentColor = "blue";
 
-$url = "mdc_dividers.php";
+$prefix = "../";
+$url = $prefix."components/dividers.php";
 ?>
 
 <!DOCTYPE html>
 <html lang="<?= $language ?>" dir="<?= $direction ?>">
 
-<?php include "_includes/head.php"; ?>
+<?php include $prefix."_includes/head.php"; ?>
 
 <body>
 
-<?php include "_includes/drawer.php"; ?>
-<?php include "_includes/app_bar.php"; ?>
+<?php include $prefix."_includes/drawer.php"; ?>
+<?php include $prefix."_includes/app_bar.php"; ?>
 
 <div class="container">
     <section>
@@ -46,7 +49,7 @@ $url = "mdc_dividers.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <figure class="img_figure clearfix"><img src="img/dividers/divider-intro.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/divider-intro.png"></figure>
             </div>
         </div>
     </section>
@@ -70,18 +73,18 @@ $url = "mdc_dividers.php";
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/divider-illos-03.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/divider-illos-03.png"></figure>
                 <h3>Subtle</h3>
                 <p class="text-secondary">Dividers should be noticeable in a layout, but not jarring.</p>
             </div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/divider-illos-04.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/divider-illos-04.png"></figure>
                 <h3>Secondary</h3>
                 <p class="text-secondary">Dividers should only be used if elements cannot be separated using white space.</p>
             </div>
             <div class="clearfix visible-smallext visible-small"></div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/divider-illos-05.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/divider-illos-05.png"></figure>
                 <h3>Infrequent</h3>
                 <p class="text-secondary">Use dividers sparingly, to create groupings rather than separate items.</p>
             </div>
@@ -102,12 +105,12 @@ $url = "mdc_dividers.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/dividers-full.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/dividers-full.png"></figure>
                 <h3>Full-bleed dividers</h3>
                 <p class="text-secondary">Full-bleed dividers separate content into sections and span the entire length of a layout.</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/dividers.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/dividers.png"></figure>
                 <h3>Inset dividers</h3>
                 <p class="text-secondary">Inset dividers separate related content, anchored by elements that align with the app bar title.</p>
             </div>
@@ -117,12 +120,12 @@ $url = "mdc_dividers.php";
     <section>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/divider-middle.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/divider-middle.png"></figure>
                 <h3>Middle dividers</h3>
                 <p class="text-secondary">Middle dividers space related content and are centered in a layout or list.</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/dividers-subhead.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/dividers-subhead.png"></figure>
                 <h3>Dividers with subheaders</h3>
                 <p class="text-secondary">Dividers can be paired with subheaders to help define content groupings.</p>
             </div>
@@ -146,11 +149,11 @@ $url = "mdc_dividers.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/dividers-full-bleed.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/dividers-full-bleed.png"></figure>
                 <p class="text-secondary">When lists don’t have an anchoring element (such as an icon), spacing may not be enough to separate content. Full-bleed dividers can help separate individual tiles</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/baseline-drawer.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/baseline-drawer.png"></figure>
                 <p class="text-secondary">A full-bleed divider in a navigation drawer</p>
             </div>
         </div>
@@ -169,11 +172,11 @@ $url = "mdc_dividers.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/dividers-with-dividers.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/dividers-with-dividers.png"></figure>
                 <p class="text-secondary">Inset dividers</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/dividers-inset-2.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/dividers-inset-2.png"></figure>
                 <p class="text-secondary">Use inset dividers when there are anchoring elements such as an icon or avatar</p>
             </div>
         </div>
@@ -192,11 +195,11 @@ $url = "mdc_dividers.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/divider-middle-2.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/divider-middle-2.png"></figure>
                 <p class="text-secondary">An inset divider above a subheader</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/divider-middle.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/divider-middle.png"></figure>
                 <p class="text-secondary">A full divider above a subheader</p>
             </div>
         </div>
@@ -215,11 +218,11 @@ $url = "mdc_dividers.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/dividers-subhead.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/dividers-subhead.png"></figure>
                 <p class="text-secondary">An inset divider above a subheader</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="img/dividers/dividers-subhead-2.png"></figure>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/dividers/dividers-subhead-2.png"></figure>
                 <p class="text-secondary">A full-bleed divider above a subheaderA full divider above a subheader</p>
             </div>
         </div>
@@ -367,7 +370,7 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-56" style="background-image: url('img/lists/avatar-1.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-1.png');"></div>
                         <div class="text">
                             Pencil
                             <div class="secondary">in stock</div>
@@ -376,7 +379,7 @@ TEXT
                     </div>
                     <div class="mdc-divider inset md-56"></div>
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-56" style="background-image: url('img/lists/avatar-2.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-2.png');"></div>
                         <div class="text">
                             Rubberbands
                             <div class="secondary">in stock</div>
@@ -385,7 +388,7 @@ TEXT
                     </div>
                     <div class="mdc-divider inset md-56"></div>
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-56" style="background-image: url('img/lists/avatar-3.png');"></div>
+                        <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/lists/avatar-3.png');"></div>
                         <div class="text">
                             Rulers
                             <div class="secondary">only 1 in stock</div>
@@ -415,7 +418,7 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group md-3line bg-cards example">
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-100" style="background-image: url('img/lists/thumb-1.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-1.png');"></div>
                         <div class="text">
                             Crunchy Croissants
                             <div class="secondary">Buttery, flaky pastry named for its crecent shape.</div>
@@ -424,7 +427,7 @@ TEXT
                     </div>
                     <div class="mdc-divider inset md-100"></div>
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-100" style="background-image: url('img/lists/thumb-2.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-2.png');"></div>
                         <div class="text">
                             Grilled Eggplant
                             <div class="secondary">Tender with a rich, complex flavor when cooked.</div>
@@ -433,7 +436,7 @@ TEXT
                     </div>
                     <div class="mdc-divider inset md-100"></div>
                     <div class="mdc-list-item interactive">
-                        <div class="graphic md-100" style="background-image: url('img/lists/thumb-3.png');"></div>
+                        <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/lists/thumb-3.png');"></div>
                         <div class="text">
                             Tngerine Salad
                             <div class="secondary">Peak tangerine season lasts from autumn to spring.</div>
