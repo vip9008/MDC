@@ -418,12 +418,12 @@ a.material-icon:focus:before, button.material-icon:focus:before, .material-icon.
     box-sizing: inherit;
 }
 
-.clearfix:before, .clearfix:after, .row:before, .row:after {
+.clearfix:before, .clearfix:after {
     content: '';
     display: table;
 }
 
-.clearfix:after, .row:after {
+.clearfix:after {
     clear: both;
 }
 
@@ -852,6 +852,16 @@ html[dir="rtl"] .row .col.xsmall-pull-4, html[dir] .row[dir="rtl"] .col.xsmall-p
     }
 }
 
+@media (min-width: 720px) {
+    .container, .container-fluid, .container-standard, .col {
+        padding: 0 0.75rem;
+    }
+
+    .row.row-nested {
+        margin: 0 -0.75rem;
+    }
+}
+
 /* SMALL-EXTENDED SCREEN SIZE */
 @media (min-width: 840px) and (max-width: 959px) {
     .container {
@@ -860,14 +870,6 @@ html[dir="rtl"] .row .col.xsmall-pull-4, html[dir] .row[dir="rtl"] .col.xsmall-p
 }
 
 @media (min-width: 840px) {
-    .container, .container-fluid, .container-standard, .col {
-        padding: 0 0.75rem;
-    }
-
-    .row.row-nested {
-        margin: 0 -0.75rem;
-    }
-
     .col.smallext-1, .col.smallext-2, .col.smallext-3, .col.smallext-4,
     .col.smallext-5, .col.smallext-6, .col.smallext-7, .col.smallext-8,
     .col.smallext-9, .col.smallext-10, .col.smallext-11, .col.smallext-12 {
