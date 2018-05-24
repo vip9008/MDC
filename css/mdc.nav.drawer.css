@@ -245,7 +245,7 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
         right: 0;
     }
 
-    body.mdc-drawer-expand {
+    body.mdc-drawer-expand, html[dir] body.mdc-drawer-expand {
         margin: 0;
     }
 
@@ -265,7 +265,8 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
         padding-top: 0;
     }
 
-    body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
+    body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar,
+    html[dir] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
         margin: 0;
     }
 

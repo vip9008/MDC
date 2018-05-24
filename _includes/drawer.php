@@ -1,5 +1,5 @@
 <nav id="mdc-nav-drawer" class="permanent clipped">
-    <div class="mdc-list-group">
+    <div class="mdc-list-container">
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="material-icon">view_quilt</div>
