@@ -45,12 +45,7 @@ $url = $prefix."components/buttons.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Buttons</h1>
-                <div class="space"></div>
                 <h2 class="text-secondary">Buttons allow users to take actions, and make choices, with a single tap.</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-usage.png"></figure>
             </div>
         </div>

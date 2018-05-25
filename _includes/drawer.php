@@ -2,7 +2,7 @@
     <div class="mdc-list-container">
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
-                <div class="material-icon">image</div>
+                <div class="material-icon">landscape</div>
                 <div class="text">Environment</div>
                 <div class="meta material-icon">keyboard_arrow_down</div>
             </div>
@@ -19,7 +19,20 @@
         </div>
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
-                <div class="material-icon">view_quilt</div>
+                <div class="material-icon">brush</div>
+                <div class="text">Color</div>
+                <div class="meta material-icon">keyboard_arrow_down</div>
+            </div>
+            <div class="mdc-dropdown">
+                <a href="<?= $prefix ?>color/the-color-system.php" class="mdc-list-item">
+                    <div class="material-icon"></div>
+                    <div class="text">The color system</div>
+                </a>
+            </div>
+        </div>
+        <div class="mdc-list-group collapsed">
+            <div class="mdc-list-item interactive <?= $primaryColor ?>">
+                <div class="material-icon">extension</div>
                 <div class="text">Components</div>
                 <div class="meta material-icon">keyboard_arrow_down</div>
             </div>

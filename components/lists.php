@@ -43,12 +43,7 @@ $url = $prefix."components/lists.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Lists</h1>
-                <div class="space"></div>
                 <h2 class="text-secondary">Lists are continuous, vertical indexes of text or images.</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-intro.png"></figure>
             </div>
         </div>

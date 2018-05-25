@@ -43,7 +43,6 @@ $url = $prefix."environment/light-shadows.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Light & shadows</h1>
-                <div class="space"></div>
                 <h2 class="text-secondary">Material surfaces cast shadows when they obstruct light sources.</h2>
             </div>
         </div>

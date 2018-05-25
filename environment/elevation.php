@@ -43,7 +43,6 @@ $url = $prefix."environment/elevation.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Elevation</h1>
-                <div class="space"></div>
                 <h2 class="text-secondary">Elevation is the relative distance between two surfaces along the z-axis.</h2>
             </div>
         </div>

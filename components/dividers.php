@@ -43,12 +43,7 @@ $url = $prefix."components/dividers.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Dividers</h1>
-                <div class="space"></div>
                 <h2 class="text-secondary">A divider is a thin line that groups content in lists and layouts.</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-intro.png"></figure>
             </div>
         </div>
