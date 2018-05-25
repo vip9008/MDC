@@ -7,10 +7,6 @@
                 <div class="meta material-icon">keyboard_arrow_down</div>
             </div>
             <div class="mdc-dropdown">
-                <a href="<?= $prefix ?>environment/surfaces.php" class="mdc-list-item">
-                    <div class="material-icon"></div>
-                    <div class="text">Surfaces</div>
-                </a>
                 <a href="<?= $prefix ?>environment/elevation.php" class="mdc-list-item">
                     <div class="material-icon"></div>
                     <div class="text">Elevation</div>

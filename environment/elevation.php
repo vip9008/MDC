@@ -273,12 +273,12 @@ $url = $prefix."environment/elevation.php";
                 <h1>Table of default elevation values</h1>
                 
                 <table class="bg-cards">
-                    <thead>
+                    <thead class="bg-app-bar">
                         <th>
-                            <span class="bold <?= $primaryColor ?>">Component</span>
+                            <span class="bold">Component</span>
                         </th>
                         <th>
-                            <span class="bold <?= $primaryColor ?>">Default elevation values (dp)</span>
+                            <span class="bold">Default elevation values (dp)</span>
                         </th>
                     </thead>
                     <tbody>
@@ -315,7 +315,7 @@ $url = $prefix."environment/elevation.php";
                             <td>8</td>
                         </tr>
                         <tr>
-                            <td>Card (when picked up) </td>
+                            <td>Card (when picked up)</td>
                             <td>8</td>
                         </tr>
                         <tr>
@@ -323,8 +323,7 @@ $url = $prefix."environment/elevation.php";
                             <td>8</td>
                         </tr>
                         <tr>
-                            <td>Floating action button (FAB - resting elevation)<br>
-                            Snackbar<br></td>
+                            <td>Floating action button (FAB - resting elevation)<br>Snackbar</td>
                             <td>6</td>
                         </tr>
                         <tr>
@@ -336,8 +335,7 @@ $url = $prefix."environment/elevation.php";
                             <td>0 or 4</td>
                         </tr>
                         <tr>
-                            <td>Refresh indicator<br>
-                            Search bar (scrolled state)<br></td>
+                            <td>Refresh indicator<br>Search bar (scrolled state)</td>
                             <td>3</td>
                         </tr>
                         <tr>
@@ -366,6 +364,14 @@ $url = $prefix."environment/elevation.php";
                         </tr>
                     </tbody>
                 </table>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h1>Diagram of default elevation values</h1>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/environment_elevation/baselineelevation-chart.png"></figure>
+                <p class="text-secondary">Cross-section diagram showing the resting elevation and dynamic elevation offsets for multiple components.</p>
             </div>
         </div>
     </section>

@@ -165,8 +165,7 @@ table {
 }
 
 table th, table td {
-    border-style: solid;
-    border-width: 0.0625rem;
+    border: solid 0.0625rem var(--initial-text-divider);
     font-size: 0.875rem;
     font-weight: normal;
     line-height: 1.8;
