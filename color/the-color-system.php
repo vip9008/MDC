@@ -570,11 +570,10 @@ $url = $prefix."color/the-color-system.php";
         ?>
         <div class="row">
             <?php
-            $count = 0;
             foreach ($palettes as $name => $colors) {
                 $color_class = strtolower(str_replace(' ', '-', $name));
                 ?>
-                <div class="col large-3 medium-4">
+                <div class="col large-3 medium-4 smallext-6">
                     <ul class="palette z-axis-1">
                         <li class="bg-<?= $color_class ?>">
                             <div class="title"><?= $name ?></div>
@@ -590,16 +589,9 @@ $url = $prefix."color/the-color-system.php";
                     </ul>
                 </div>
                 <?php
-                $count++;
-                if ($count % 4 == 0) {
-                    ?>
-                    </div>
-                    <div class="row">
-                    <?php
-                }
             }
             ?>
-            <div class="col large-3 medium-4">
+            <div class="col large-3 medium-4 smallext-6">
                 <ul class="palette z-axis-1">
                     <li class="bg-black">
                         <div class="title">Black</div>
