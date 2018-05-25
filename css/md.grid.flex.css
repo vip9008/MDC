@@ -494,9 +494,10 @@ a.material-icon:focus:before, button.material-icon:focus:before, .material-icon.
     position: relative;
     min-height: 1px;
     padding: 0 0.5rem;
-    width: 100%;
-    max-width: 100%;
 
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
