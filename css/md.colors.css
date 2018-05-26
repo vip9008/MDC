@@ -35,11 +35,6 @@
     border-color: var(--bg-border);
 }
 
-* {
-    color: var(--text-primary);
-    border-color: var(--bg-border);
-}
-
 .md-theme-light {
     --main-color: #000000;
     --initial-main-color: #000000;
@@ -110,6 +105,8 @@
 
 body {
     background-color: var(--bg-main-content);
+    color: var(--text-primary);
+    border-color: var(--bg-border);
 }
 
 .text-primary {

@@ -64,6 +64,7 @@
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga';
+    color: inherit;
 }
 
 html:lang(en-US) *, html[lang] *:lang(en-US), html[lang] *:lang(en-US) * {
