@@ -45,7 +45,7 @@ $url = $prefix."components/buttons.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Buttons</h1>
-                <h2 class="text-secondary">Buttons allow users to take actions, and make choices, with a single tap.</h2>
+                <h5 class="text-secondary">Buttons allow users to take actions, and make choices, with a single tap.</h5>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-usage.png"></figure>
             </div>
         </div>
@@ -72,24 +72,24 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Principles</h1>
+                <h4>Principles</h4>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-illos-01.png"></figure>
-                <h3>Identifiable</h3>
+                <h6>Identifiable</h6>
                 <p class="text-secondary">Buttons should indicate that they can trigger an action.</p>
             </div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-illos-02.png"></figure>
-                <h3>Findable</h3>
+                <h6>Findable</h6>
                 <p class="text-secondary">Buttons should be easy to find among other elements, including other buttons.</p>
             </div>
             <div class="clearfix visible-smallext visible-small"></div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-illos-03.png"></figure>
-                <h3>Clear</h3>
+                <h6>Clear</h6>
                 <p class="text-secondary">A button’s action and state should be clear.</p>
             </div>
         </div>
@@ -104,7 +104,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Types</h1>
+                <h4>Types</h4>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-types-all.png"></figure>
                 <ol>
                     <li>
@@ -169,7 +169,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Text label</h1>
+                <h4>Text label</h4>
                 <p class="text-secondary">Text buttons and contained buttons use text labels, which describe the action that will occur if a user taps a button. If a text label is not used, an icon should be present to signify what the button does.</p>
                 <p class="text-secondary">By default Material uses capitalized button text labels (for languages that have capitalization). This is to distinguish the text label from surrounding text. If a text button does not use capitalization for button text, find another characteristic to distinguish it such as color, size, or placement.</p>
             </div>
@@ -183,10 +183,10 @@ $url = $prefix."components/buttons.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Hierarchy and placement</h1>
                 <div class="space"></div>
-                <h1>Hierarchy</h1>
-                <h3>A single, prominent button</h3>
+                <h4>Hierarchy</h4>
+                <h6>A single, prominent button</h6>
                 <p class="text-secondary">A layout should contain a single prominent button that makes it clear that other buttons have less importance in the hierarchy. This high-emphasis button commands the most attention.</p>
-                <h3>Other buttons</h3>
+                <h6>Other buttons</h6>
                 <p class="text-secondary">An app can show more than one button in a layout at a time, so a high-emphasis button can be accompanied by medium- and low-emphasis buttons that perform less important actions. When using multiple buttons, ensure the available state of one button doesn’t look like the disabled state of another.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-layout-diagram-01.png"></figure>
                 <p class="text-secondary">A button’s level of emphasis helps determine its appearance, typography, and placement.</p>
@@ -203,7 +203,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Placement</h1>
+                <h4>Placement</h4>
                 <p class="text-secondary">Multiple button types can be used to express different emphasis levels.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-layout-when-to-use-02.png"></figure>
                 <p class="text-secondary">This screen layout uses:</p>
@@ -223,7 +223,7 @@ $url = $prefix."components/buttons.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Text button</h1>
                 <div class="space"></div>
-                <h1>Usage</h1>
+                <h4>Usage</h4>
                 <p class="text-secondary">Text buttons are typically used for less-pronounced actions, including those located:</p>
                 <ul>
                     <li class="text-secondary">In dialogs</li>
@@ -249,7 +249,7 @@ $url = $prefix."components/buttons.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h3>Text label</h3>
+                <h6>Text label</h6>
                 <p class="text-secondary">A button’s text label is the most important element on a button, as it communicates the action that will be performed when the user touches it.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/text-button-usage-1.png"></figure>
                 <p class="text-secondary">Text label using a distinct action</p>
@@ -267,7 +267,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Placement</h1>
+                <h4>Placement</h4>
                 <p class="text-secondary">Text buttons are often embedded in contained components like cards and dialogs, in order to relate themselves to the component in which they appear. Because text buttons don’t have a container, they don’t distract from nearby content.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-text-when-to-use-02.png"></figure>
@@ -288,7 +288,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>States</h1>
+                <h4>States</h4>
                 <p class="text-secondary">Text buttons can be placed in front of a variety of backgrounds. Until the button is interacted with, its container isn’t visible.</p>
                 <p class="text-secondary">To maintain accessibility, Material Design provides baseline opacity values for the color overlays used by states. A brand can adjust opacity values to suit its color scheme.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/text-buttons-states.png"></figure>
@@ -304,9 +304,9 @@ $url = $prefix."components/buttons.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Outlined button</h1>
                 <div class="space"></div>
-                <h1>Usage</h1>
+                <h4>Usage</h4>
                 <p class="text-secondary">Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.</p>
-                <h3>Alternatives</h3>
+                <h6>Alternatives</h6>
                 <p class="text-secondary">Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-text-when-to-use-01.png"></figure>
             </div>
@@ -322,7 +322,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Container</h1>
+                <h4>Container</h4>
                 <p class="text-secondary">Outlined buttons display a stroke around a text label. Stroke can be represented in different ways:</p>
                 <ul>
                     <li class="text-secondary">Set a button’s width to be the size of the text label, with 16dp padding on the left and right</li>
@@ -343,7 +343,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>States</h1>
+                <h4>States</h4>
                 <p class="text-secondary">Outlined buttons can be placed on top of a variety of backgrounds. Its container is transparent and until the button is interacted with, a color isn’t visible.</p>
                 <p class="text-secondary">To maintain accessibility, Material Design provides baseline opacity values for the color overlays used by states. A brand can adjust opacity values to suit its color scheme.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/outlined-button-states.png"></figure>
@@ -359,7 +359,7 @@ $url = $prefix."components/buttons.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Contained button</h1>
                 <div class="space"></div>
-                <h1>Usage</h1>
+                <h4>Usage</h4>
                 <p class="text-secondary">Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.</p>
             </div>
         </div>
@@ -380,7 +380,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Container</h1>
+                <h4>Container</h4>
                 <p class="text-secondary">Contained buttons display a container around a text label. Containers can be represented in different ways:</p>
                 <ul>
                     <li class="text-secondary">Set container width to the size of the text label with 16dp padding on the left and right</li>
@@ -406,7 +406,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Shadow & elevation</h1>
+                <h4>Shadow & elevation</h4>
                 <p class="text-secondary">Buttons at higher elevations typically appear more prominent in a design. On press, elevated buttons lift up and the container displays touch feedback.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-elements-shadow-elevation.png"></figure>
                 <p class="text-secondary">Higher elevation increases the prominence of a contained button.</p>
@@ -422,7 +422,7 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>States</h1>
+                <h4>States</h4>
                 <p class="text-secondary">The following opacity values are recommended for button container fill colors. Each app can alter the overlay values to suit their brand’s color palette.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/contained-buttons-states.png"></figure>
                 <p class="text-secondary">Contained button states</p>
@@ -437,9 +437,9 @@ $url = $prefix."components/buttons.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Toggle button</h1>
                 <div class="space"></div>
-                <h1>Usage</h1>
+                <h4>Usage</h4>
                 <p class="text-secondary">Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.</p>
-                <h3>Selected action</h3>
+                <h6>Selected action</h6>
                 <p class="text-secondary">Only one option in a group of toggle buttons can be selected and active at a time. Selecting one option deselects any other.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/buttons-toggle-usage.png"></figure>
                 <p class="text-secondary">These toggle buttons present options for aligning text to the left, right, and center.</p>
@@ -459,10 +459,10 @@ $url = $prefix."components/buttons.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>States</h1>
-                <h3>Active and available toggle buttons</h3>
+                <h4>States</h4>
+                <h6>Active and available toggle buttons</h6>
                 <p class="text-secondary">A toggle button’s state makes it clear which button is active. Hover and focus states express the available selection options for buttons in a toggle group.</p>
-                <h3>Disabled toggle buttons</h3>
+                <h6>Disabled toggle buttons</h6>
                 <p class="text-secondary">Toggle buttons that cannot be selected can either be given a disabled state, or be hidden.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_buttons/toggle-buttons-states.png"></figure>
                 <p class="text-secondary">Toggle button states</p>
@@ -481,7 +481,7 @@ $url = $prefix."components/buttons.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Text buttons</h1>
+                <h4>Text buttons</h4>
             </div>
         </div>
         <div class="row">
@@ -530,7 +530,7 @@ TEXT
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Outlined buttons</h1>
+                <h4>Outlined buttons</h4>
             </div>
         </div>
         <div class="row">
@@ -609,7 +609,7 @@ TEXT
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Contained buttons</h1>
+                <h4>Contained buttons</h4>
             </div>
         </div>
         <div class="row">
@@ -688,7 +688,7 @@ TEXT
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Toggle buttons</h1>
+                <h4>Toggle buttons</h4>
             </div>
         </div>
         <div class="row">

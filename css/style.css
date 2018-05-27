@@ -125,3 +125,12 @@ html[dir="ltr"] ul.palette .right {
 html[dir="rtl"] ul.palette .right {
     text-align: left;
 }
+
+ul.palette.text-colors {
+    border: solid 0.0625rem var(--initial-text-divider);
+    margin: 0;
+}
+
+ul.palette.text-colors > li + li {
+    border-top: solid 0.0625rem var(--initial-text-divider);
+}

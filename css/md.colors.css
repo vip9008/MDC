@@ -10,12 +10,12 @@
     --opacity-dragged: 0.08;
 
     --text-primary: rgba(0, 0, 0, 0.87);
-    --text-secondary: rgba(0, 0, 0, 0.54);
+    --text-secondary: rgba(0, 0, 0, 0.6);
     --text-hint: rgba(0, 0, 0, 0.38);
     --text-divider: rgba(0, 0, 0, 0.12);
 
     --initial-text-primary: rgba(0, 0, 0, 0.87);
-    --initial-text-secondary: rgba(0, 0, 0, 0.54);
+    --initial-text-secondary: rgba(0, 0, 0, 0.6);
     --initial-text-hint: rgba(0, 0, 0, 0.38);
     --initial-text-divider: rgba(0, 0, 0, 0.12);
 
@@ -47,12 +47,12 @@
     --opacity-dragged: 0.08;
 
     --text-primary: rgba(0, 0, 0, 0.87);
-    --text-secondary: rgba(0, 0, 0, 0.54);
+    --text-secondary: rgba(0, 0, 0, 0.6);
     --text-hint: rgba(0, 0, 0, 0.38);
     --text-divider: rgba(0, 0, 0, 0.12);
 
     --initial-text-primary: rgba(0, 0, 0, 0.87);
-    --initial-text-secondary: rgba(0, 0, 0, 0.54);
+    --initial-text-secondary: rgba(0, 0, 0, 0.6);
     --initial-text-hint: rgba(0, 0, 0, 0.38);
     --initial-text-divider: rgba(0, 0, 0, 0.12);
 
@@ -5029,12 +5029,12 @@ body {
     --opacity-dragged: 0.08;
 
     --text-primary: rgba(0, 0, 0, 0.87);
-    --text-secondary: rgba(0, 0, 0, 0.54);
+    --text-secondary: rgba(0, 0, 0, 0.6);
     --text-hint: rgba(0, 0, 0, 0.38);
     --text-divider: rgba(0, 0, 0, 0.12);
 
     --initial-text-primary: rgba(0, 0, 0, 0.87);
-    --initial-text-secondary: rgba(0, 0, 0, 0.54);
+    --initial-text-secondary: rgba(0, 0, 0, 0.6);
     --initial-text-hint: rgba(0, 0, 0, 0.38);
     --initial-text-divider: rgba(0, 0, 0, 0.12);
 

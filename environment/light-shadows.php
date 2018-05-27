@@ -43,7 +43,7 @@ $url = $prefix."environment/light-shadows.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Light & shadows</h1>
-                <h2 class="text-secondary">Material surfaces cast shadows when they obstruct light sources.</h2>
+                <h5 class="text-secondary">Material surfaces cast shadows when they obstruct light sources.</h5>
             </div>
         </div>
     </section>
@@ -55,7 +55,7 @@ $url = $prefix."environment/light-shadows.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Light</h1>
                 <div class="space"></div>
-                <h1>Light and shadows</h1>
+                <h4>Light and shadows</h4>
                 <p class="text-secondary">In the Material Design environment, virtual lights illuminate the UI. Key lights create sharper, directional shadows, called key shadows. Ambient light appears from all angles to create diffused, soft shadows, called ambient shadows.</p>
             </div>
         </div>
@@ -91,7 +91,7 @@ $url = $prefix."environment/light-shadows.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Light sources</h1>
+                <h4>Light sources</h4>
                 <p class="text-secondary">Shadows in the Material environment are cast by a key light and ambient light. In Android and iOS development, shadows occur when light sources are blocked by Material surfaces at various positions along the z-axis. On the web, shadows are depicted by manipulating the y-axis only. The following example shows a card with an elevation of 6dp.</p>
             </div>
         </div>
@@ -107,7 +107,7 @@ $url = $prefix."environment/light-shadows.php";
 
                 <div class="space"></div>
 
-                <h1>Usage</h1>
+                <h4>Usage</h4>
                 <p class="text-secondary">Because shadows express the degree of elevation between surfaces, they must be used consistently throughout your product.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/environment_elevation/shadowprinciples-do-1.png"></figure>
@@ -121,7 +121,7 @@ $url = $prefix."environment/light-shadows.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Shadows & Motion</h1>
+                <h4>Shadows & Motion</h4>
                 <p class="text-secondary">Shadows provide useful cues about an surface’s direction of movement and whether the distance between surfaces is increasing or decreasing.</p>
             </div>
         </div>

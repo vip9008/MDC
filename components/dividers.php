@@ -43,7 +43,7 @@ $url = $prefix."components/dividers.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Dividers</h1>
-                <h2 class="text-secondary">A divider is a thin line that groups content in lists and layouts.</h2>
+                <h5 class="text-secondary">A divider is a thin line that groups content in lists and layouts.</h5>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-intro.png"></figure>
             </div>
         </div>
@@ -63,24 +63,24 @@ $url = $prefix."components/dividers.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Principles</h1>
+                <h4>Principles</h4>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-illos-03.png"></figure>
-                <h3>Subtle</h3>
+                <h6>Subtle</h6>
                 <p class="text-secondary">Dividers should be noticeable in a layout, but not jarring.</p>
             </div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-illos-04.png"></figure>
-                <h3>Secondary</h3>
+                <h6>Secondary</h6>
                 <p class="text-secondary">Dividers should only be used if elements cannot be separated using white space.</p>
             </div>
             <div class="clearfix visible-smallext visible-small"></div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-illos-05.png"></figure>
-                <h3>Infrequent</h3>
+                <h6>Infrequent</h6>
                 <p class="text-secondary">Use dividers sparingly, to create groupings rather than separate items.</p>
             </div>
         </div>
@@ -95,18 +95,18 @@ $url = $prefix."components/dividers.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Types</h1>
+                <h4>Types</h4>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/dividers-full.png"></figure>
-                <h3>Full-bleed dividers</h3>
+                <h6>Full-bleed dividers</h6>
                 <p class="text-secondary">Full-bleed dividers separate content into sections and span the entire length of a layout.</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/dividers.png"></figure>
-                <h3>Inset dividers</h3>
+                <h6>Inset dividers</h6>
                 <p class="text-secondary">Inset dividers separate related content, anchored by elements that align with the app bar title.</p>
             </div>
         </div>
@@ -116,12 +116,12 @@ $url = $prefix."components/dividers.php";
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-middle.png"></figure>
-                <h3>Middle dividers</h3>
+                <h6>Middle dividers</h6>
                 <p class="text-secondary">Middle dividers space related content and are centered in a layout or list.</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/dividers-subhead.png"></figure>
-                <h3>Dividers with subheaders</h3>
+                <h6>Dividers with subheaders</h6>
                 <p class="text-secondary">Dividers can be paired with subheaders to help define content groupings.</p>
             </div>
         </div>
@@ -134,7 +134,7 @@ $url = $prefix."components/dividers.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Types</h1>
                 <div class="space"></div>
-                <h1>Full-bleed dividers</h1>
+                <h4>Full-bleed dividers</h4>
                 <p class="text-secondary">Full-bleed dividers separate content into sections, such as:</p>
                 <ul>
                     <li class="text-secondary">Separating list and layout elements</li>
@@ -161,7 +161,7 @@ $url = $prefix."components/dividers.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Inset dividers</h1>
+                <h4>Inset dividers</h4>
                 <p class="text-secondary">Inset dividers separate related content, such as emails in an email thread. They should be used with anchoring elements such as icons or avatars, and left-aligned with the app bar title.</p>
             </div>
         </div>
@@ -184,7 +184,7 @@ $url = $prefix."components/dividers.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Middle dividers</h1>
+                <h4>Middle dividers</h4>
                 <p class="text-secondary">Dividers can also be placed in the middle of a layout. They are best for separating related content, such prices on a receipt.</p>
             </div>
         </div>
@@ -207,7 +207,7 @@ $url = $prefix."components/dividers.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Dividers with subheaders</h1>
+                <h4>Dividers with subheaders</h4>
                 <p class="text-secondary">Dividers can be paired with subheaders to identify grouped content. Place dividers above subheaders to reinforce the subheader’s connection to content.</p>
             </div>
         </div>
@@ -234,7 +234,7 @@ $url = $prefix."components/dividers.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Full-bleed dividers</h1>
+                <h4>Full-bleed dividers</h4>
                 <p class="text-secondary">Placing a divider inside any container will cover the whole available width.</p>
             </div>
         </div>
@@ -300,7 +300,7 @@ TEXT
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Inset dividers</h1>
+                <h4>Inset dividers</h4>
                 <p class="text-secondary">Inset dividers are a special type of full-bleed dividers with additional margin settings.</p>
             </div>
         </div>
@@ -465,7 +465,7 @@ TEXT
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Middle dividers</h1>
+                <h4>Middle dividers</h4>
                 <p class="text-secondary">Placing a divider inside an item will act as a middle divider depending on the item padding and margin settings.</p>
             </div>
         </div>

@@ -43,7 +43,7 @@ $url = $prefix."color/applying-color-to-ui.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Applying color to UI</h1>
-                <h2 class="text-secondary">Color is applied to UI elements and components in consistent and meaningful ways.</h2>
+                <h5 class="text-secondary">Color is applied to UI elements and components in consistent and meaningful ways.</h5>
             </div>
         </div>
     </section>
@@ -58,24 +58,24 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <p class="text-secondary">These guidelines describe a variety of UI components and elements where color application is important.</p>
                 <div class="space"></div>
 
-                <h1>Principles</h1>
+                <h4>Principles</h4>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-illos-08.png"></figure>
-                <h3>Consistent</h3>
+                <h6>Consistent</h6>
                 <p class="text-secondary">Color should be applied throughout a UI consistently and be compatible with the brand it represents.</p>
             </div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-illos-09.png"></figure>
-                <h3>Distinct</h3>
+                <h6>Distinct</h6>
                 <p class="text-secondary">Color should create distinction between elements, with sufficient contrast between them.</p>
             </div>
             <div class="clearfix visible-smallext visible-small"></div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-illos-10.png"></figure>
-                <h3>Intentional</h3>
+                <h6>Intentional</h6>
                 <p class="text-secondary">Color should be applied purposefully as it can convey meaning in multiple ways, such as relationships between elements and degrees of hierarchy.</p>
             </div>
         </div>
@@ -91,7 +91,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <p class="text-secondary">The way color is applied to top and bottom app bars helps users identify them and understand their relationship to surrounding UI elements.</p>
                 <div class="space"></div>
                 
-                <h1>Identifying app bars</h1>
+                <h4>Identifying app bars</h4>
                 <p class="text-secondary">Top and bottom app bars use an app’s primary color. System bars can use a dark or light variant of the primary color to separate system content from top app bar content.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-applyingcolorui-bars-differentiating-baseline.png"></figure>
@@ -110,7 +110,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Blending an app bar with the background</h1>
+                <h4>Blending an app bar with the background</h4>
                 <p class="text-secondary">When an app’s top or bottom app bar color is the same color as the background color, they blend together, placing emphasis on an app’s content instead of its structure.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-applyingcolorui-blendedbars-owl.png"></figure>
@@ -154,7 +154,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 </ol>
                 <div class="space"></div>
 
-                <h1>Modal sheets</h1>
+                <h4>Modal sheets</h4>
                 <p class="text-secondary">Use contrasting colors on surfaces that appear on-screen temporarily, such as navigation drawers and bottom sheets. Usually these surfaces are white, but you can use your app’s primary or secondary color.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-applyingcolorui-surfaces-tempsurfaces-reply.png"></figure>
@@ -168,7 +168,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Cards</h1>
+                <h4>Cards</h4>
                 <p class="text-secondary">The baseline color for cards is white. This color can be customized to express brand or to improve legibility. Card text and icons can also use the color theme to improve legibility.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-applyingcolorui-surfaces-cards-baseline.png"></figure>
@@ -196,7 +196,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <div class="space"></div>
                 <p class="text-secondary">Buttons, chips and selection controls can be emphasized by applying your primary or secondary color to them.</p>
 
-                <h3>Color categories</h3>
+                <h6>Color categories</h6>
                 <ul>
                     <li class="text-secondary">The baseline color for contained, text and outlined buttons is your <b>primary color</b>.</li>
                     <li class="text-secondary">The baseline color for floating action buttons and extended floating action buttons is your <b>secondary color</b>.</li>
@@ -211,7 +211,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 </ol>
                 <div class="space"></div>
 
-                <h1>Buttons, chips, and selection controls</h1>
+                <h4>Buttons, chips, and selection controls</h4>
                 <p class="text-secondary">Buttons, chips, and selection controls can be emphasized with your primary or secondary colors.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-applyingcolorui-inputselectioncontrols-buttonschips-shrine.png"></figure>
@@ -236,7 +236,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Floating action button (FAB)</h1>
+                <h4>Floating action button (FAB)</h4>
                 <p class="text-secondary">The floating action button (FAB) should be one of the most recognizable items on your screen.</p>
                 <p class="text-secondary">Use color to create contrast between the FAB and surrounding elements, such as the app bar. Your secondary color is the baseline color for use on the FAB. If your canvas uses many colors, your FAB can use monochromatic coloring instead, to stand out from the content.</p>
 
@@ -259,7 +259,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <div class="space"></div>
                 <p class="text-secondary">Color can express whether text has greater, or lesser, importance relative to other text. Color also ensures text remains legible when placed above imagery or backgrounds, which can make it difficult to read the text in front of them.</p>
 
-                <h3>Typographic hierarchy</h3>
+                <h6>Typographic hierarchy</h6>
                 <p class="text-secondary">Color can increase both text’s visibility and its level of importance.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-applyingcolorui-typography-baseline-alt.png"></figure>
@@ -269,7 +269,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Headlines and tabs</h1>
+                <h4>Headlines and tabs</h4>
                 <p class="text-secondary">Important text, like tabs and headlines, can use your primary or secondary color.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-applyingcolorui-typography-headlinetabs-basil-1.png"></figure>
@@ -298,7 +298,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Text legibility</h1>
+                <h4>Text legibility</h4>
                 <p class="text-secondary">When text is placed above imagery, it often leads to legibility issues. Creating a colored layer between text and image can ensure text remains legible.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/textlegibility-posivibes-2.png"></figure>
@@ -308,7 +308,7 @@ $url = $prefix."color/applying-color-to-ui.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Icons</h1>
+                <h4>Icons</h4>
                 <p class="text-secondary">Icons help identify actions and provide information. Their color should contrast against the background to ensure that they are legible and identifiable.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_applying_color_to_ui/color-applyingcolorui-inputselectioncontrols-icons-shrine.png"></figure>

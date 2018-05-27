@@ -1,4 +1,4 @@
-<header id="mdc-top-app-bar" class="fixed <?= $topAppBarColor ?>">
+<header id="mdc-top-app-bar" class="fixed z-axis-4 <?= $topAppBarColor ?>">
     <button class="material-icon nav-icon">menu</button>
     <span class="title"><?= $topAppBarTitle ?></span>
     <div class="actions">

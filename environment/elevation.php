@@ -43,7 +43,7 @@ $url = $prefix."environment/elevation.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Elevation</h1>
-                <h2 class="text-secondary">Elevation is the relative distance between two surfaces along the z-axis.</h2>
+                <h5 class="text-secondary">Elevation is the relative distance between two surfaces along the z-axis.</h5>
             </div>
         </div>
     </section>
@@ -56,7 +56,7 @@ $url = $prefix."environment/elevation.php";
                 <h1 class="article_title">Elevation in Material Design</h1>
                 <div class="space"></div>
 
-                <h1>Measuring elevation</h1>
+                <h4>Measuring elevation</h4>
                 <p class="text-secondary">Elevation in Material Design is measured as the distance between Material surfaces. The distance from the front of one Material surface to the front of another is measured along the z-axis in density-independent pixels (dps) and depicted (by default) using shadows.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/environment_elevation/elevation-materialdesign.png"></figure>
@@ -78,7 +78,7 @@ $url = $prefix."environment/elevation.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>The elevation system</h1>
+                <h4>The elevation system</h4>
                 <p class="text-secondary">All Material Design surfaces, and components, have elevation values.</p>
                 <p>Surfaces at different elevations do the following:</p>
                 <ul>
@@ -94,9 +94,9 @@ $url = $prefix."environment/elevation.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Resting elevation</h1>
+                <h4>Resting elevation</h4>
                 <p class="text-secondary">Resting elevations are starting elevation values given to components by default. Components move from resting elevations in response to the user or a system event. All Material components have resting elevations that are the same for each type of component. For example, all cards have the same resting elevations as each other, and a dialog has the same resting elevation as other dialogs.</p>
-                <h3>Resting elevation and environment</h3>
+                <h6>Resting elevation and environment</h6>
                 <p class="text-secondary">Resting elevations vary based on the environment, platform, or app. The resting elevations on mobile are designed to provide visual cues, like shadows, to indicate when components are interactive. In contrast, resting elevations on desktop are shallower because other cues, like hover states, communicate when a component is interactive. For example, cards at 0dp elevation on desktop are outlined with a stroke.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/environment_elevation/restingelevation-baselineelevation.png"></figure>
                 <ol>
@@ -116,7 +116,7 @@ $url = $prefix."environment/elevation.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Changing elevation</h1>
+                <h4>Changing elevation</h4>
                 <p class="text-secondary">Components can change elevation in response to user input or system events. When this happens, components move to preset dynamic elevation offsets, which are the default elevations components move to when not resting.</p>
                 <p class="text-secondary">Dynamic elevation offsets are the same across each type of component. For example, all cards use the same offset as other cards, and all floating action buttons use the same offset as other floating action buttons.</p>
                 <p class="text-secondary">Once the user input (or system event) is completed or cancelled, the component swiftly returns to its resting elevation.</p>
@@ -125,7 +125,7 @@ $url = $prefix."environment/elevation.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Elevation interference</h1>
+                <h4>Elevation interference</h4>
                 <p class="text-secondary">When a component moves between its resting elevation and dynamic elevation offset, it shouldn’t collide with other components.</p>
                 <p class="text-secondary">To avoid these kinds of collisions, components can move out of the way. For example, if increasing a card’s elevation positions it to pass through a floating action button, that button can disappear or move off-screen before the collision occurs.</p>
                 <p class="text-secondary">You can also design your app’s layout to avoid collisions, such as placing a floating action button beside cards, instead of directly above them.</p>
@@ -149,7 +149,7 @@ $url = $prefix."environment/elevation.php";
 
                 <div class="space"></div>
 
-                <h1>Surface edges</h1>
+                <h4>Surface edges</h4>
                 <p class="text-secondary">Edges help to express the tactile quality of Material surfaces. They show where one surface ends and another begins by separating different parts of a UI into identifiable components. For example, the edges of an app bar show that it is separate from a grid list, communicating to the user that the grid list scrolls independently of the app bar.</p>
                 <p class="text-secondary">By default, Material surfaces use shadows to indicate edges. Other methods can be used to indicate edges, such as:</p>
                 <ul>
@@ -175,7 +175,7 @@ $url = $prefix."environment/elevation.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Surface overlap</h1>
+                <h4>Surface overlap</h4>
                 <p class="text-secondary">When a surface overlaps another surface, either partially or completely, it indicates that the two surfaces occupy different elevations (but not the degree, or amount, of difference between them). Surfaces at higher elevations appear in front of those at lower elevations, meaning they are positioned at different elevations along the z-axis. Surfaces may overlap one another by default, or become overlapped as a result of motion that changes their position in the UI.</p>
                 <p class="text-secondary">When surfaces have different opacities or insufficient contrast from one another, it can make it difficult to tell which surface is in front of another. Avoid ambiguous overlap by ensuring surface edges are clearly defined.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/environment_elevation/surfaceedges-grid-1.png"></figure>
@@ -189,9 +189,9 @@ $url = $prefix."environment/elevation.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Distance</h1>
+                <h4>Distance</h4>
                 <p class="text-secondary">The degree of elevation difference between surfaces can be expressed using scrimmed backgrounds, or using shadows.</p>
-                <h3>Scrimmed backgrounds</h3>
+                <h6>Scrimmed backgrounds</h6>
                 <p class="text-secondary">When the background is scrimmed in a UI, it expresses that the content above it is at a higher elevation. Scrimmed backgrounds express large, but unspecified, amounts of elevation.</p>
             </div>
         </div>
@@ -204,7 +204,7 @@ $url = $prefix."environment/elevation.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h3>Shadows</h3>
+                <h6>Shadows</h6>
                 <p class="text-secondary">Shadows can express the degree of elevation between surfaces in ways that other techniques cannot.</p>
                 <p class="text-secondary">Both a shadow’s size and amount of softness or diffusion express the degree of distance between two surfaces. For example, a surface with a shadow that is small and sharp indicates a surface’s close proximity to the surface behind it. Larger, softer shadows express more distance.</p>
                 <p class="text-secondary">Subtle differences in shadow size and diffusion communicate:</p>
@@ -226,7 +226,7 @@ $url = $prefix."environment/elevation.php";
                 <h1 class="article_title">Elevation hierarchy</h1>
                 <p class="text-secondary">Content relates to other content depending on whether they are at similar or different elevations.</p>
                 <div class="space"></div>
-                <h1>Content at different elevations</h1>
+                <h4>Content at different elevations</h4>
                 <p class="text-secondary">Surfaces in front of other surfaces typically:</p>
                 <ol>
                     <li class="text-secondary">Contain more important content</li>
@@ -246,7 +246,7 @@ $url = $prefix."environment/elevation.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Content on coplanar surfaces</h1>
+                <h4>Content on coplanar surfaces</h4>
                 <p class="text-secondary">Positioning surfaces at the same elevation makes them coplanar, and may indicate they contain content of equal importance as one another. For example, all cards in a collection have equal importance.</p>
                 <p class="text-secondary">Surfaces that don’t express elevation can appear coplanar. For surfaces that don’t express elevation, you can communicate hierarchy differences through their content and by adjusting their horizontal and vertical layout position to suggest their relative hierarchy levels.</p>
                 <p class="text-secondary">For example, on a dashboard with coplanar surfaces, detail content is placed next to parent content, based on the direction a language’s text is displayed.</p>
@@ -269,7 +269,7 @@ $url = $prefix."environment/elevation.php";
                 <p class="text-secondary">All elements have default values for resting elevation and dynamic elevation offsets. Certain components are positioned at higher elevations than others, establishing a consistent elevation order across all components. For example, dialogs always appear in front of all other components.</p>
                 <p class="text-secondary">The following table lists default values for resting elevation and dynamic elevation offsets.</p>
                 <div class="space"></div>
-                <h1>Table of default elevation values</h1>
+                <h4>Table of default elevation values</h4>
                 
                 <table class="bg-cards">
                     <thead class="bg-app-bar">
@@ -368,7 +368,7 @@ $url = $prefix."environment/elevation.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Diagram of default elevation values</h1>
+                <h4>Diagram of default elevation values</h4>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/environment_elevation/baselineelevation-chart.png"></figure>
                 <p class="text-secondary">Cross-section diagram showing the resting elevation and dynamic elevation offsets for multiple components.</p>
             </div>

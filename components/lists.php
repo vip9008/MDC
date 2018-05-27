@@ -43,7 +43,7 @@ $url = $prefix."components/lists.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Lists</h1>
-                <h2 class="text-secondary">Lists are continuous, vertical indexes of text or images.</h2>
+                <h5 class="text-secondary">Lists are continuous, vertical indexes of text or images.</h5>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-intro.png"></figure>
             </div>
         </div>
@@ -63,24 +63,24 @@ $url = $prefix."components/lists.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Principles</h1>
+                <h4>Principles</h4>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-illos-logical.png"></figure>
-                <h3>Logical</h3>
+                <h6>Logical</h6>
                 <p class="text-secondary">Lists should be sorted in logical ways that make content easy to scan, such as alphabetical, numerical, chronological, or by user preference.</p>
             </div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-illos-content.png"></figure>
-                <h3>Actionable</h3>
+                <h6>Actionable</h6>
                 <p class="text-secondary">Lists present content in a way that makes it easy to identify a specific item in a collection and act on it.</p>
             </div>
             <div class="clearfix visible-smallext visible-small"></div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-illos-consistency.png"></figure>
-                <h3>Consistent</h3>
+                <h6>Consistent</h6>
                 <p class="text-secondary">Lists should present icons, text, and actions in a consistent format.</p>
             </div>
         </div>
@@ -95,17 +95,17 @@ $url = $prefix."components/lists.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Types</h1>
+                <h4>Types</h4>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/usage-types.png"></figure>
-                <h3>1. Single-line list</h3>
+                <h6>1. Single-line list</h6>
                 <p class="text-secondary">Single-line list items contain a maximum of one line of text.</p>
-                <h3>2. Two-line list</h3>
+                <h6>2. Two-line list</h6>
                 <p class="text-secondary">Two-line list items contain a maximum of two lines of text.</p>
-                <h3>3. Three-line list</h3>
+                <h6>3. Three-line list</h6>
                 <p class="text-secondary">Three-line list items contains a maximum of three lines of text.</p>
             </div>
         </div>
@@ -124,26 +124,26 @@ $url = $prefix."components/lists.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/lists-elements.png"></figure>
-                <h3>1. List</h3>
-                <h3>2. Row</h3>
-                <h3>3. List item content</h3>
+                <h6>1. List</h6>
+                <h6>2. Row</h6>
+                <h6>3. List item content</h6>
             </div>
         </div>
     </section>
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Content types</h1>
+                <h4>Content types</h4>
                 <p class="text-secondary">Content types can take different forms, depending on the needs of a list.</p>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/list-elements.png"></figure>
-                <h3>List items are comprised of three different content types:</h3>
-                <h3>1. Supporting visuals</h3>
-                <h3>2. Primary text</h3>
-                <h3>3. Metadata</h3>
+                <h6>List items are comprised of three different content types:</h6>
+                <h6>1. Supporting visuals</h6>
+                <h6>2. Primary text</h6>
+                <h6>3. Metadata</h6>
             </div>
         </div>
     </section>
@@ -152,10 +152,10 @@ $url = $prefix."components/lists.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <p class="text-secondary">A list control can display information and actions for list items.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/list-elements-2.png"></figure>
-                <h3>Lists with controls contain three content types:</h3>
-                <h3>1. Supporting visuals</h3>
-                <h3>2. Primary text</h3>
-                <h3>3. List control</h3>
+                <h6>Lists with controls contain three content types:</h6>
+                <h6>1. Supporting visuals</h6>
+                <h6>2. Primary text</h6>
+                <h6>3. List control</h6>
             </div>
         </div>
     </section>
@@ -167,7 +167,7 @@ $url = $prefix."components/lists.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Visuals, dividers, and spacing</h1>
+                <h4>Visuals, dividers, and spacing</h4>
                 <p class="text-secondary">List structure can be organized using visuals, dividers, and spacing.</p>
             </div>
         </div>
@@ -214,16 +214,16 @@ $url = $prefix."components/lists.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Subheaders</h1>
+                <h4>Subheaders</h4>
                 <p class="text-secondary">Subheaders delineate sections of a list. They appear on list rows.</p>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_lists/subheader-lists.png"></figure>
-                <h3>1. Subheader</h3>
+                <h6>1. Subheader</h6>
                 <p class="text-secondary">A subheader should be left-aligned with an avatar or icon in a list.</p>
-                <h3>2. Subheader inset</h3>
+                <h6>2. Subheader inset</h6>
                 <p class="text-secondary">If a floating action button is aligned with list avatars or icons, the subheader should be aligned with the text content.</p>
             </div>
         </div>
@@ -236,7 +236,7 @@ $url = $prefix."components/lists.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Types</h1>
                 <div class="space"></div>
-                <h1>Single-line list</h1>
+                <h4>Single-line list</h4>
             </div>
         </div>
         <div class="row">
@@ -258,7 +258,7 @@ $url = $prefix."components/lists.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Two-line list</h1>
+                <h4>Two-line list</h4>
                 <p class="text-secondary">In a two-line list, each row contains two lines of text maximum.</p>
             </div>
         </div>
@@ -287,7 +287,7 @@ $url = $prefix."components/lists.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Three-line list</h1>
+                <h4>Three-line list</h4>
             </div>
         </div>
         <div class="row">
@@ -315,12 +315,12 @@ $url = $prefix."components/lists.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>List controls</h1>
+                <h4>List controls</h4>
                 <h3 class="text-secondary">List controls display information and actions for list items.</h3>
 
                 <br>
 
-                <h3>Checkbox</h3>
+                <h6>Checkbox</h6>
                 <p class="text-secondary">A checkbox can either be a primary or secondary action.</p>
                 <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/lists-controls-checkbox.png"></figure>
                 <p class="text-secondary">1. Secondary action<br>This checkbox is the list item’s secondary action.</p>
@@ -331,7 +331,7 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h3>Expand and collapse</h3>
+                <h6>Expand and collapse</h6>
                 <p class="text-secondary">Show and hide details of existing list items by expanding and collapsing list content vertically.</p>
             </div>
         </div>
@@ -351,12 +351,12 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <h3>Switch</h3>
+                <h6>Switch</h6>
                 <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/lists-controls-switch.png"></figure>
                 <p class="text-secondary">Tapping the list control expands the list</p>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <h3>Reorder</h3>
+                <h6>Reorder</h6>
                 <figure class="img_figure clearfix""><img src="<?= $prefix ?>img/component_lists/lists-controls-reorder.png"></figure>
                 <p class="text-secondary">Usually appearing in edit mode, dragging lists items moves them to other locations within the list. This reorder icon is the list item’s secondary action</p>
             </div>
@@ -375,7 +375,7 @@ $url = $prefix."components/lists.php";
         </div>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Single-line list</h1>
+                <h4>Single-line list</h4>
             </div>
         </div>
         <div class="row">
@@ -699,7 +699,7 @@ TEXT
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Two-line list</h1>
+                <h4>Two-line list</h4>
             </div>
         </div>
         <div class="row">
@@ -1044,7 +1044,7 @@ TEXT
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Three-line list</h1>
+                <h4>Three-line list</h4>
             </div>
         </div>
         

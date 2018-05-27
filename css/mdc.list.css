@@ -21,6 +21,7 @@
     padding: 0 1rem;
     text-align: inherit;
     border: none;
+    color: var(--text-primary);
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */

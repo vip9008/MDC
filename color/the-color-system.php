@@ -44,7 +44,7 @@ $url = $prefix."color/the-color-system.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">The color system</h1>
-                <h2 class="text-secondary">The Material Design color system can be used to create a color theme that reflects your brand or style.</h2>
+                <h5 class="text-secondary">The Material Design color system can be used to create a color theme that reflects your brand or style.</h5>
             </div>
         </div>
     </section>
@@ -58,7 +58,7 @@ $url = $prefix."color/the-color-system.php";
                 <div class="space"></div>
                 <p class="text-secondary">The Material Design color system uses an organized approach to applying color to your UI. In this system, a primary and a secondary color are typically selected to represent your brand. Dark and light variants of each color can then be applied to your UI in different ways.</p>
                 <div class="space"></div>
-                <h3>Colors and theming</h3>
+                <h6>Colors and theming</h6>
                 <p class="text-secondary">Your app’s primary and secondary colors, and their variants, help create a color theme that is harmonious, ensures accessible text, and distinguishes UI elements and surfaces from one another.</p>
                 <p class="text-secondary">To select primary and secondary colors, and generate light and dark variants of each, use the Material Design palette tool, Theme Editor, or 2014 Material Design palettes.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-colorsystem-usagepalettes-1.png"></figure>
@@ -74,24 +74,24 @@ $url = $prefix."color/the-color-system.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1>Principles</h1>
+                <h4>Principles</h4>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-illos-01.png"></figure>
-                <h3>Hierarchical</h3>
+                <h6>Hierarchical</h6>
                 <p class="text-secondary">Color indicates which elements are interactive, how they relate to other elements, and their level of prominence. Important elements should stand out the most.</p>
             </div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-illos-02.png"></figure>
-                <h3>Legible</h3>
+                <h6>Legible</h6>
                 <p class="text-secondary">Text and important elements, like icons, should meet legibility standards when appearing on colored backgrounds, across all screen and device types.</p>
             </div>
             <div class="clearfix visible-smallext visible-small"></div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-illos-03.png"></figure>
-                <h3>Expressive</h3>
+                <h6>Expressive</h6>
                 <p class="text-secondary">Reinforce your brand by showing brand colors at memorable moments that reinforce your brand’s style.</p>
             </div>
         </div>
@@ -104,7 +104,7 @@ $url = $prefix."color/the-color-system.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Color theme creation</h1>
                 <div class="space"></div>
-                <h1>The baseline Material color theme</h1>
+                <h4>The baseline Material color theme</h4>
                 <p class="text-secondary">Material Design comes designed with a built-in, baseline theme that can be used as-is, straight out of the proverbial box.</p>
                 <p class="text-secondary">This includes default colors for primary, secondary, and their variants. This baseline theme also includes additional colors that define your UI, such as the colors for backgrounds, surfaces, errors, typography, and iconography. All of these colors can be customized for your app.</p>
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/theming-color-chart-1.png"></figure>
@@ -114,14 +114,14 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Primary color</h1>
+                <h4>Primary color</h4>
                 <p class="text-secondary">A <b>primary color</b> is the color displayed most frequently across your app’s screens and components.</p>
                 <p class="text-secondary">If you don’t have a secondary color, your primary color can also be used to accent elements.</p>
 
-                <h3>Dark and light primary variants</h3>
+                <h6>Dark and light primary variants</h6>
                 <p class="text-secondary">You can make a color theme for your app using your primary color, as well as dark and light primary variants.</p>
 
-                <h3>Distinguish UI elements</h3>
+                <h6>Distinguish UI elements</h6>
                 <p class="text-secondary">To create contrast between UI elements, such as distinguishing a top app bar from a system bar, you can use light or dark variants of your primary color on each elements. You can also use variants to distinguish elements within a component, such different variants used on a floating action button container, and the icon within it.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-colorsystem-schemecreation-primary-baseline-2.png"></figure>
@@ -131,7 +131,7 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Secondary color</h1>
+                <h4>Secondary color</h4>
                 <p class="text-secondary">A <b>secondary color</b> provides more ways to accent and distinguish your product. Having a secondary color is optional, and should be applied sparingly to accent select parts of your UI.</p>
                 <p class="text-secondary">Secondary colors are best for:</p>
                 <ul>
@@ -142,7 +142,7 @@ $url = $prefix."color/the-color-system.php";
                     <li class="text-secondary">Links and headlines</li>
                 </ul>
 
-                <h3>Dark and light secondary variants</h3>
+                <h6>Dark and light secondary variants</h6>
                 <p class="text-secondary">Just like the primary color, your secondary color can have dark and light variants. You can make a color theme by using your primary color, secondary color, and dark and light variants of each color.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-colorsystem-schemecreation-secondary-baseline-1.png"></figure>
@@ -152,7 +152,7 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Surface, background, and error colors</h1>
+                <h4>Surface, background, and error colors</h4>
                 <p class="text-secondary">Surface, background, and error colors typically don’t represent brand:</p>
                 <ul>
                     <li class="text-secondary">Surface colors affect surfaces of components, such as cards, sheets, and menus. </li>
@@ -167,9 +167,9 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Typography and iconography colors</h1>
+                <h4>Typography and iconography colors</h4>
 
-                <h3>“On” colors</h3>
+                <h6>“On” colors</h6>
                 <p class="text-secondary">The elements in an app use colors from specific categories in your color palette, such as a primary color. Whenever other screen elements, such as text or icons, appear in front of surfaces using those colors, those elements should use colors specifically designed to appear clearly and legibly against the colors behind them.</p>
                 <p class="text-secondary">This category of colors is called “on” colors, referring to the fact that they color elements that are sometimes placed “on” top of key surfaces that use a primary color, secondary color, surface color, background color, or error color. These are labelled using the original category name (such as primary color) with the prefix “on”.</p>
                 <p class="text-secondary">“On” colors are primarily applied to text, iconography, and strokes. Sometimes, they are also applied to surfaces.</p>
@@ -182,11 +182,11 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Accessible colors</h1>
+                <h4>Accessible colors</h4>
                 <p class="text-secondary">To ensure that a color provides an accessible background behind light or dark text, you can use light and dark variants of your primary and secondary colors.</p>
                 <p class="text-secondary">Alternatively, these colors can be used for typography that appears in front of light and dark backgrounds.</p>
 
-                <h3>Color swatches</h3>
+                <h6>Color swatches</h6>
                 <p class="text-secondary">A <b>swatch</b> is a sample of a color chosen from a range of similar colors.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-colorsystem-schemecreation-accessibility-2.png"></figure>
@@ -201,7 +201,7 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Alternative colors</h1>
+                <h4>Alternative colors</h4>
                 <p class="text-secondary">The Material Design color system supports alternative colors, which are colors used as alternatives to your brand’s primary and secondary colors (they constitute additional colors to your theme). Apps can use alternative colors to establish themes that distinguish different sections.</p>
                 <p class="text-secondary">Alternative colors are best for:</p>
 
@@ -217,7 +217,7 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Alternative colors for section themes</h1>
+                <h4>Alternative colors for section themes</h4>
                 <p class="text-secondary">Alternative colors can be used to theme different parts of an app.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-colorsystem-schemecreation-altprimarysecondary-3.png"></figure>
@@ -227,7 +227,7 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>Additional colors for data visualization</h1>
+                <h4>Additional colors for data visualization</h4>
                 <p class="text-secondary">Apps can use additional colors to convey categories that are outside of your main color theme. They are still a part of your full color palette.</p>
 
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/color_color_system/color-colorsystem-schemecreation-dataviz.png"></figure>
@@ -249,13 +249,13 @@ $url = $prefix."color/the-color-system.php";
                 <h1 class="article_title">Tools for picking colors</h1>
                 <div class="space"></div>
 
-                <h1>Material palette generator</h1>
+                <h4>Material palette generator</h4>
                 <p class="text-secondary">The Material palette generator can be used to generate a palette for any color you input. An algorithmic adjustment of hue, chroma, and lightness creates palettes that are both usable and aesthetically pleasing.</p>
 
-                <h3>Input colors</h3>
+                <h6>Input colors</h6>
                 <p class="text-secondary">Color palettes can be generated based on the primary input color, and whether the desired palette should be analogous, complementary, or triadic in relation to the primary color. Alternatively, the tool can generate expanded palettes for any primary and secondary color input.</p>
 
-                <h3>Color variations for accessibility</h3>
+                <h6>Color variations for accessibility</h6>
                 <p class="text-secondary">These palettes provide additional ways to use your primary and secondary colors, by providing lighter and darker options to separate surfaces and provide colors that meet accessibility standards.</p>
 
                 <a class="mdc-button bg-<?= $primaryColor ?>" href="https://material.io/tools/color" target="_blank">
@@ -267,7 +267,7 @@ $url = $prefix."color/the-color-system.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h1>2014 Material Design color palettes</h1>
+                <h4>2014 Material Design color palettes</h4>
                 <p class="text-secondary">These color palettes, originally created by Material Design in 2014, comprises of colors designed to work together harmoniously, and can be used to develop your brand palette. To generate your own harmonious palettes, use either the palette generation tool or Material Theme Editor.</p>
                 <div class="space"></div>
             </div>
