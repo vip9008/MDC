@@ -54,6 +54,12 @@
                     <div class="text">The type system</div>
                 </a>
             </div>
+            <div class="mdc-dropdown">
+                <a href="<?= $prefix ?>typography/understanding-typography.php" class="mdc-list-item">
+                    <div class="material-icon"></div>
+                    <div class="text">Understanding typography</div>
+                </a>
+            </div>
         </div>
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
