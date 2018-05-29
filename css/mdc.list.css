@@ -80,6 +80,18 @@ a.mdc-list-item:active:before, button.mdc-list-item:active:before, .mdc-list-ite
     color: var(--text-secondary);
 }
 
+.mdc-list-item > .text > .overline {
+    font-size: 0.625rem;
+    line-height: 1.25rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: -0.125rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-secondary);
+}
+
 .mdc-list-item > .material-icon {
     margin: 1rem 2rem 1rem 0;
     width: 1.5rem;

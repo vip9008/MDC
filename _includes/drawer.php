@@ -80,6 +80,10 @@
                     <div class="material-icon"></div>
                     <div class="text">Lists</div>
                 </a>
+                <a href="<?= $prefix ?>components/text-fields.php" class="mdc-list-item">
+                    <div class="material-icon"></div>
+                    <div class="text">Text fields</div>
+                </a>
             </div>
         </div>
     </div>

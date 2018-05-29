@@ -1,0 +1,62 @@
+.mdc-text-field {
+    will-change: transform, opacity;
+    border-radius: 0.25rem 0.25rem 0 0;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    height: 3.5rem;
+    margin: 1rem 0 0.5rem;
+    overflow: hidden;
+}
+
+.mdc-text-field > .input {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0.009375em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem 1rem 0;
+    border: none;
+    border-bottom: 0.0625rem solid;
+    border-radius: 0;
+    background: none;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    background-color: var(--input);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.mdc-text-field:hover > .input {
+    background-color: var(--input-hover);
+}
+
+.mdc-text-field > .label {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.009375em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1rem;
+    right: auto;
+    cursor: text;
+    width: calc(100% - 3rem);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    overflow: hidden;
+
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    line-height: 1.15rem;
+    will-change: transform;
+}

@@ -25,8 +25,9 @@
     --bg-cards: #FFFFFF;
     --bg-border: rgba(0, 0, 0, 0.12);
 
-    --input: rgba(0, 0, 0, 0.06);
-    --input-hover: rgba(0, 0, 0, 0.07);
+    --input: rgba(0, 0, 0, 0.04);
+    --input-hover: rgba(0, 0, 0, 0.12);
+
     --input-disabled: rgba(0, 0, 0, 0.04);
     --boolean: rgba(0, 0, 0, 0.26);
     --boolean-disabled: #BDBDBD;
@@ -62,8 +63,9 @@
     --bg-cards: #FFFFFF;
     --bg-border: rgba(0, 0, 0, 0.12);
 
-    --input: rgba(0, 0, 0, 0.06);
-    --input-hover: rgba(0, 0, 0, 0.07);
+    --input: rgba(0, 0, 0, 0.04);
+    --input-hover: rgba(0, 0, 0, 0.12);
+
     --input-disabled: rgba(0, 0, 0, 0.04);
     --boolean: rgba(0, 0, 0, 0.26);
     --boolean-disabled: #BDBDBD;
@@ -96,8 +98,9 @@
     --bg-cards: #424242;
     --bg-border: rgba(255, 255, 255, 0.12);
 
-    --input: rgba(255, 255, 255, 0.1);
-    --input-hover: rgba(255, 255, 255, 0.1);
+    --input: rgba(255, 255, 255, 0.04);
+    --input-hover: rgba(255, 255, 255, 0.12);
+
     --input-disabled: rgba(255, 255, 255, 0.06);
     --boolean: rgba(255, 255, 255, 0.3);
     --boolean-disabled: #424242;

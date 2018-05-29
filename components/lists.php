@@ -749,19 +749,19 @@ TEXT
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item">
                         <div class="text">
-                            <div class="secondary">April 14</div>
+                            <div class="overline">April 14</div>
                             Family camp
                         </div>
                     </div>
                     <div class="mdc-list-item">
                         <div class="text">
-                            <div class="secondary">March 3</div>
+                            <div class="overline">March 3</div>
                             Dentist appointment
                         </div>
                     </div>
                     <div class="mdc-list-item">
                         <div class="text">
-                            <div class="secondary">January 10</div>
+                            <div class="overline">January 10</div>
                             Annual meeting
                         </div>
                     </div>
@@ -773,7 +773,7 @@ TEXT
 <div class="mdc-list-group">
     <div class="mdc-list-item">
         <div class="text">
-            <div class="secondary">April 14</div>
+            <div class="overline">April 14</div>
             Family camp
         </div>
     </div>

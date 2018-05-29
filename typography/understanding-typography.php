@@ -82,12 +82,12 @@ $url = $prefix."typography/understanding-typography.php";
             </div>
         </div>
         <div class="row">
-            <div class="col xlarge-2 large-3 medium-4">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/typography_understanding_typography/type-setting-baseline.png"></figure>
                 <p class="text-secondary">Reference baselines for vertical alignment, instead of bounding boxes. This produces more accurate implementation across design software and platforms.</p>
                 <div class="space"></div>
             </div>
-            <div class="col xlarge-2 large-3 medium-4">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/typography_understanding_typography/type-setting-ex1.png"></figure>
                 <p class="text-secondary">Measure text in relation to other components.</p>
                 <div class="space"></div>
