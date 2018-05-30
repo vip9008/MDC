@@ -44,15 +44,31 @@ $url = $prefix."components/text-fields.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-                <h1 class="article_title">Text fields</h1>
-                <h5 class="text-secondary">A divider is a thin line that groups content in lists and layouts.</h5>
 
-                <div class="mdc-text-field blue">
+                <div class="mdc-text-field orange">
                     <input type="text" class="input">
                     <label class="label">Default</label>
+                    <div class="help-block">Help text here</div>
                 </div>
 
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-intro.png"></figure>
+                <div class="mdc-text-field orange">
+                    <div class="material-icon">person</div>
+                    <input type="text" class="input">
+                    <label class="label">Default</label>
+                    <div class="help-block">Help text here</div>
+                </div>
+
+                <div class="mdc-text-field orange">
+                    <div class="material-icon trailing">person</div>
+                    <input type="text" class="input">
+                    <label class="label">Default</label>
+                    <div class="help-block">Help text here</div>
+                </div>
+
+                <h1 class="article_title">Text fields</h1>
+                <h5 class="text-secondary">Text fields let users enter and edit text.</h5>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfields-intro.png"></figure>
             </div>
         </div>
     </section>
@@ -64,32 +80,29 @@ $url = $prefix."components/text-fields.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Usage</h1>
                 <div class="space"></div>
-                <p class="text-secondary">Dividers separate content into clear groups.</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+
+                <p class="text-secondary">Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.</p>
+                <div class="space"></div>
+
                 <h4>Principles</h4>
             </div>
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-illos-03.png"></figure>
-                <h6>Subtle</h6>
-                <p class="text-secondary">Dividers should be noticeable in a layout, but not jarring.</p>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfield-illo-01.png"></figure>
+                <h6>Discoverable</h6>
+                <p class="text-secondary">Text fields should stand out and indicate that users can input information.</p>
             </div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-illos-04.png"></figure>
-                <h6>Secondary</h6>
-                <p class="text-secondary">Dividers should only be used if elements cannot be separated using white space.</p>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfield-illo-02.png"></figure>
+                <h6>Clear</h6>
+                <p class="text-secondary">Text field states should be clearly differentiated from one another.</p>
             </div>
             <div class="clearfix visible-smallext visible-small"></div>
             <div class="col xlarge-2 large-3 medium-4 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/divider-illos-05.png"></figure>
-                <h6>Infrequent</h6>
-                <p class="text-secondary">Use dividers sparingly, to create groupings rather than separate items.</p>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfield-illo-03.png"></figure>
+                <h6>Efficient</h6>
+                <p class="text-secondary">Text fields should make it easy to understand the requested information and to address any errors.</p>
             </div>
         </div>
     </section>
@@ -104,18 +117,22 @@ $url = $prefix."components/text-fields.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h4>Types</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/dividers-full.png"></figure>
-                <h6>Full-bleed dividers</h6>
-                <p class="text-secondary">Full-bleed dividers separate content into sections and span the entire length of a layout.</p>
-            </div>
-            <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_dividers/dividers.png"></figure>
-                <h6>Inset dividers</h6>
-                <p class="text-secondary">Inset dividers separate related content, anchored by elements that align with the app bar title.</p>
+                <p class="text-secondary">Text fields come in two types:</p>
+                <ul class="text-secondary">
+                    <li>Filled text fields</li>
+                    <li>Outlined text fields</li>
+                </ul>
+                <p class="text-secondary">Both types of text fields use a container to provide a clear affordance for interaction, making the fields discoverable in layouts.</p>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfields-types.png"></figure>
+                <ol class="text-secondary">
+                    <li>Filled text fields</li>
+                    <li>Outlined text fields</li>
+                </ol>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
             </div>
         </div>
     </section>
