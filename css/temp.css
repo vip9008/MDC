@@ -2,7 +2,7 @@
     background-color: rgba(255, 235, 238, 0.5);
 }
 
-.checkbox-input.switch.active.red-50 .checkbox:after {
+.checkbox-input.switch.active.red-50 .checkbox::after {
     background-color: #FFEBEE;
 }
 
@@ -10,7 +10,7 @@
     background-color: rgba(255, 205, 210, 0.5);
 }
 
-.checkbox-input.switch.active.red-100 .checkbox:after {
+.checkbox-input.switch.active.red-100 .checkbox::after {
     background-color: #FFCDD2;
 }
 
@@ -18,7 +18,7 @@
     background-color: rgba(239, 154, 154, 0.5);
 }
 
-.checkbox-input.switch.active.red-200 .checkbox:after {
+.checkbox-input.switch.active.red-200 .checkbox::after {
     background-color: #EF9A9A;
 }
 
@@ -26,7 +26,7 @@
     background-color: rgba(229, 115, 115, 0.5);
 }
 
-.checkbox-input.switch.active.red-300 .checkbox:after {
+.checkbox-input.switch.active.red-300 .checkbox::after {
     background-color: #E57373;
 }
 
@@ -34,7 +34,7 @@
     background-color: rgba(239, 83, 80, 0.5);
 }
 
-.checkbox-input.switch.active.red-400 .checkbox:after {
+.checkbox-input.switch.active.red-400 .checkbox::after {
     background-color: #EF5350;
 }
 
@@ -43,8 +43,8 @@
     background-color: rgba(244, 67, 54, 0.5);
 }
 
-.checkbox-input.switch.active.red .checkbox:after,
-.checkbox-input.switch.active.red-500 .checkbox:after {
+.checkbox-input.switch.active.red .checkbox::after,
+.checkbox-input.switch.active.red-500 .checkbox::after {
     background-color: #F44336;
 }
 
@@ -52,7 +52,7 @@
     background-color: rgba(229, 57, 53, 0.5);
 }
 
-.checkbox-input.switch.active.red-600 .checkbox:after {
+.checkbox-input.switch.active.red-600 .checkbox::after {
     background-color: #E53935;
 }
 
@@ -60,7 +60,7 @@
     background-color: rgba(211, 47, 47, 0.5);
 }
 
-.checkbox-input.switch.active.red-700 .checkbox:after {
+.checkbox-input.switch.active.red-700 .checkbox::after {
     background-color: #D32F2F;
 }
 
@@ -68,7 +68,7 @@
     background-color: rgba(198, 40, 40, 0.5);
 }
 
-.checkbox-input.switch.active.red-800 .checkbox:after {
+.checkbox-input.switch.active.red-800 .checkbox::after {
     background-color: #C62828;
 }
 
@@ -76,7 +76,7 @@
     background-color: rgba(183, 28, 28, 0.5);
 }
 
-.checkbox-input.switch.active.red-900 .checkbox:after {
+.checkbox-input.switch.active.red-900 .checkbox::after {
     background-color: #B71C1C;
 }
 
@@ -84,7 +84,7 @@
     background-color: rgba(255, 138, 128, 0.5);
 }
 
-.checkbox-input.switch.active.red-A100 .checkbox:after {
+.checkbox-input.switch.active.red-A100 .checkbox::after {
     background-color: #FF8A80;
 }
 
@@ -92,7 +92,7 @@
     background-color: rgba(255, 82, 82, 0.5);
 }
 
-.checkbox-input.switch.active.red-A200 .checkbox:after {
+.checkbox-input.switch.active.red-A200 .checkbox::after {
     background-color: #FF5252;
 }
 
@@ -100,7 +100,7 @@
     background-color: rgba(255, 23, 68, 0.5);
 }
 
-.checkbox-input.switch.active.red-A400 .checkbox:after {
+.checkbox-input.switch.active.red-A400 .checkbox::after {
     background-color: #FF1744;
 }
 
@@ -108,7 +108,7 @@
     background-color: rgba(213, 0, 0, 0.5);
 }
 
-.checkbox-input.switch.active.red-A700 .checkbox:after {
+.checkbox-input.switch.active.red-A700 .checkbox::after {
     background-color: #D50000;
 }
 
@@ -116,7 +116,7 @@
     background-color: rgba(252, 228, 236, 0.5);
 }
 
-.checkbox-input.switch.active.pink-50 .checkbox:after {
+.checkbox-input.switch.active.pink-50 .checkbox::after {
     background-color: #FCE4EC;
 }
 
@@ -124,7 +124,7 @@
     background-color: rgba(248, 187, 208, 0.5);
 }
 
-.checkbox-input.switch.active.pink-100 .checkbox:after {
+.checkbox-input.switch.active.pink-100 .checkbox::after {
     background-color: #F8BBD0;
 }
 
@@ -132,7 +132,7 @@
     background-color: rgba(244, 143, 177, 0.5);
 }
 
-.checkbox-input.switch.active.pink-200 .checkbox:after {
+.checkbox-input.switch.active.pink-200 .checkbox::after {
     background-color: #F48FB1;
 }
 
@@ -140,7 +140,7 @@
     background-color: rgba(240, 98, 146, 0.5);
 }
 
-.checkbox-input.switch.active.pink-300 .checkbox:after {
+.checkbox-input.switch.active.pink-300 .checkbox::after {
     background-color: #F06292;
 }
 
@@ -148,7 +148,7 @@
     background-color: rgba(236, 64, 122, 0.5);
 }
 
-.checkbox-input.switch.active.pink-400 .checkbox:after {
+.checkbox-input.switch.active.pink-400 .checkbox::after {
     background-color: #EC407A;
 }
 
@@ -157,8 +157,8 @@
     background-color: rgba(233, 30, 99, 0.5);
 }
 
-.checkbox-input.switch.active.pink .checkbox:after,
-.checkbox-input.switch.active.pink-500 .checkbox:after {
+.checkbox-input.switch.active.pink .checkbox::after,
+.checkbox-input.switch.active.pink-500 .checkbox::after {
     background-color: #E91E63;
 }
 
@@ -166,7 +166,7 @@
     background-color: rgba(216, 27, 96, 0.5);
 }
 
-.checkbox-input.switch.active.pink-600 .checkbox:after {
+.checkbox-input.switch.active.pink-600 .checkbox::after {
     background-color: #D81B60;
 }
 
@@ -174,7 +174,7 @@
     background-color: rgba(194, 24, 91, 0.5);
 }
 
-.checkbox-input.switch.active.pink-700 .checkbox:after {
+.checkbox-input.switch.active.pink-700 .checkbox::after {
     background-color: #C2185B;
 }
 
@@ -182,7 +182,7 @@
     background-color: rgba(173, 20, 87, 0.5);
 }
 
-.checkbox-input.switch.active.pink-800 .checkbox:after {
+.checkbox-input.switch.active.pink-800 .checkbox::after {
     background-color: #AD1457;
 }
 
@@ -190,7 +190,7 @@
     background-color: rgba(136, 14, 79, 0.5);
 }
 
-.checkbox-input.switch.active.pink-900 .checkbox:after {
+.checkbox-input.switch.active.pink-900 .checkbox::after {
     background-color: #880E4F;
 }
 
@@ -198,7 +198,7 @@
     background-color: rgba(255, 128, 171, 0.5);
 }
 
-.checkbox-input.switch.active.pink-A100 .checkbox:after {
+.checkbox-input.switch.active.pink-A100 .checkbox::after {
     background-color: #FF80AB;
 }
 
@@ -206,7 +206,7 @@
     background-color: rgba(255, 64, 129, 0.5);
 }
 
-.checkbox-input.switch.active.pink-A200 .checkbox:after {
+.checkbox-input.switch.active.pink-A200 .checkbox::after {
     background-color: #FF4081;
 }
 
@@ -214,7 +214,7 @@
     background-color: rgba(245, 0, 87, 0.5);
 }
 
-.checkbox-input.switch.active.pink-A400 .checkbox:after {
+.checkbox-input.switch.active.pink-A400 .checkbox::after {
     background-color: #F50057;
 }
 
@@ -222,7 +222,7 @@
     background-color: rgba(197, 17, 98, 0.5);
 }
 
-.checkbox-input.switch.active.pink-A700 .checkbox:after {
+.checkbox-input.switch.active.pink-A700 .checkbox::after {
     background-color: #C51162;
 }
 
@@ -230,7 +230,7 @@
     background-color: rgba(243, 229, 245, 0.5);
 }
 
-.checkbox-input.switch.active.purple-50 .checkbox:after {
+.checkbox-input.switch.active.purple-50 .checkbox::after {
     background-color: #F3E5F5;
 }
 
@@ -238,7 +238,7 @@
     background-color: rgba(225, 190, 231, 0.5);
 }
 
-.checkbox-input.switch.active.purple-100 .checkbox:after {
+.checkbox-input.switch.active.purple-100 .checkbox::after {
     background-color: #E1BEE7;
 }
 
@@ -246,7 +246,7 @@
     background-color: rgba(206, 147, 216, 0.5);
 }
 
-.checkbox-input.switch.active.purple-200 .checkbox:after {
+.checkbox-input.switch.active.purple-200 .checkbox::after {
     background-color: #CE93D8;
 }
 
@@ -254,7 +254,7 @@
     background-color: rgba(186, 104, 200, 0.5);
 }
 
-.checkbox-input.switch.active.purple-300 .checkbox:after {
+.checkbox-input.switch.active.purple-300 .checkbox::after {
     background-color: #BA68C8;
 }
 
@@ -262,7 +262,7 @@
     background-color: rgba(171, 71, 188, 0.5);
 }
 
-.checkbox-input.switch.active.purple-400 .checkbox:after {
+.checkbox-input.switch.active.purple-400 .checkbox::after {
     background-color: #AB47BC;
 }
 
@@ -271,8 +271,8 @@
     background-color: rgba(156, 39, 176, 0.5);
 }
 
-.checkbox-input.switch.active.purple .checkbox:after,
-.checkbox-input.switch.active.purple-500 .checkbox:after {
+.checkbox-input.switch.active.purple .checkbox::after,
+.checkbox-input.switch.active.purple-500 .checkbox::after {
     background-color: #9C27B0;
 }
 
@@ -280,7 +280,7 @@
     background-color: rgba(142, 36, 170, 0.5);
 }
 
-.checkbox-input.switch.active.purple-600 .checkbox:after {
+.checkbox-input.switch.active.purple-600 .checkbox::after {
     background-color: #8E24AA;
 }
 
@@ -288,7 +288,7 @@
     background-color: rgba(123, 31, 162, 0.5);
 }
 
-.checkbox-input.switch.active.purple-700 .checkbox:after {
+.checkbox-input.switch.active.purple-700 .checkbox::after {
     background-color: #7B1FA2;
 }
 
@@ -296,7 +296,7 @@
     background-color: rgba(106, 27, 154, 0.5);
 }
 
-.checkbox-input.switch.active.purple-800 .checkbox:after {
+.checkbox-input.switch.active.purple-800 .checkbox::after {
     background-color: #6A1B9A;
 }
 
@@ -304,7 +304,7 @@
     background-color: rgba(74, 20, 140, 0.5);
 }
 
-.checkbox-input.switch.active.purple-900 .checkbox:after {
+.checkbox-input.switch.active.purple-900 .checkbox::after {
     background-color: #4A148C;
 }
 
@@ -312,7 +312,7 @@
     background-color: rgba(234, 128, 252, 0.5);
 }
 
-.checkbox-input.switch.active.purple-A100 .checkbox:after {
+.checkbox-input.switch.active.purple-A100 .checkbox::after {
     background-color: #EA80FC;
 }
 
@@ -320,7 +320,7 @@
     background-color: rgba(224, 64, 251, 0.5);
 }
 
-.checkbox-input.switch.active.purple-A200 .checkbox:after {
+.checkbox-input.switch.active.purple-A200 .checkbox::after {
     background-color: #E040FB;
 }
 
@@ -328,7 +328,7 @@
     background-color: rgba(213, 0, 249, 0.5);
 }
 
-.checkbox-input.switch.active.purple-A400 .checkbox:after {
+.checkbox-input.switch.active.purple-A400 .checkbox::after {
     background-color: #D500F9;
 }
 
@@ -336,7 +336,7 @@
     background-color: rgba(170, 0, 255, 0.5);
 }
 
-.checkbox-input.switch.active.purple-A700 .checkbox:after {
+.checkbox-input.switch.active.purple-A700 .checkbox::after {
     background-color: #AA00FF;
 }
 
@@ -344,7 +344,7 @@
     background-color: rgba(237, 231, 246, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-50 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-50 .checkbox::after {
     background-color: #EDE7F6;
 }
 
@@ -352,7 +352,7 @@
     background-color: rgba(209, 196, 233, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-100 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-100 .checkbox::after {
     background-color: #D1C4E9;
 }
 
@@ -360,7 +360,7 @@
     background-color: rgba(179, 157, 219, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-200 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-200 .checkbox::after {
     background-color: #B39DDB;
 }
 
@@ -368,7 +368,7 @@
     background-color: rgba(149, 117, 205, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-300 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-300 .checkbox::after {
     background-color: #9575CD;
 }
 
@@ -376,7 +376,7 @@
     background-color: rgba(126, 87, 194, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-400 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-400 .checkbox::after {
     background-color: #7E57C2;
 }
 
@@ -385,8 +385,8 @@
     background-color: rgba(103, 58, 183, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple .checkbox:after,
-.checkbox-input.switch.active.deep-purple-500 .checkbox:after {
+.checkbox-input.switch.active.deep-purple .checkbox::after,
+.checkbox-input.switch.active.deep-purple-500 .checkbox::after {
     background-color: #673AB7;
 }
 
@@ -394,7 +394,7 @@
     background-color: rgba(94, 53, 177, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-600 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-600 .checkbox::after {
     background-color: #5E35B1;
 }
 
@@ -402,7 +402,7 @@
     background-color: rgba(81, 45, 168, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-700 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-700 .checkbox::after {
     background-color: #512DA8;
 }
 
@@ -410,7 +410,7 @@
     background-color: rgba(69, 39, 160, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-800 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-800 .checkbox::after {
     background-color: #4527A0;
 }
 
@@ -418,7 +418,7 @@
     background-color: rgba(49, 27, 146, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-900 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-900 .checkbox::after {
     background-color: #311B92;
 }
 
@@ -426,7 +426,7 @@
     background-color: rgba(179, 136, 255, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-A100 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-A100 .checkbox::after {
     background-color: #B388FF;
 }
 
@@ -434,7 +434,7 @@
     background-color: rgba(124, 77, 255, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-A200 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-A200 .checkbox::after {
     background-color: #7C4DFF;
 }
 
@@ -442,7 +442,7 @@
     background-color: rgba(101, 31, 255, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-A400 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-A400 .checkbox::after {
     background-color: #651FFF;
 }
 
@@ -450,7 +450,7 @@
     background-color: rgba(98, 0, 234, 0.5);
 }
 
-.checkbox-input.switch.active.deep-purple-A700 .checkbox:after {
+.checkbox-input.switch.active.deep-purple-A700 .checkbox::after {
     background-color: #6200EA;
 }
 
@@ -458,7 +458,7 @@
     background-color: rgba(232, 234, 246, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-50 .checkbox:after {
+.checkbox-input.switch.active.indigo-50 .checkbox::after {
     background-color: #E8EAF6;
 }
 
@@ -466,7 +466,7 @@
     background-color: rgba(197, 202, 233, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-100 .checkbox:after {
+.checkbox-input.switch.active.indigo-100 .checkbox::after {
     background-color: #C5CAE9;
 }
 
@@ -474,7 +474,7 @@
     background-color: rgba(159, 168, 218, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-200 .checkbox:after {
+.checkbox-input.switch.active.indigo-200 .checkbox::after {
     background-color: #9FA8DA;
 }
 
@@ -482,7 +482,7 @@
     background-color: rgba(121, 134, 203, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-300 .checkbox:after {
+.checkbox-input.switch.active.indigo-300 .checkbox::after {
     background-color: #7986CB;
 }
 
@@ -490,7 +490,7 @@
     background-color: rgba(92, 107, 192, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-400 .checkbox:after {
+.checkbox-input.switch.active.indigo-400 .checkbox::after {
     background-color: #5C6BC0;
 }
 
@@ -499,8 +499,8 @@
     background-color: rgba(63, 81, 181, 0.5);
 }
 
-.checkbox-input.switch.active.indigo .checkbox:after,
-.checkbox-input.switch.active.indigo-500 .checkbox:after {
+.checkbox-input.switch.active.indigo .checkbox::after,
+.checkbox-input.switch.active.indigo-500 .checkbox::after {
     background-color: #3F51B5;
 }
 
@@ -508,7 +508,7 @@
     background-color: rgba(57, 73, 171, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-600 .checkbox:after {
+.checkbox-input.switch.active.indigo-600 .checkbox::after {
     background-color: #3949AB;
 }
 
@@ -516,7 +516,7 @@
     background-color: rgba(48, 63, 159, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-700 .checkbox:after {
+.checkbox-input.switch.active.indigo-700 .checkbox::after {
     background-color: #303F9F;
 }
 
@@ -524,7 +524,7 @@
     background-color: rgba(40, 53, 147, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-800 .checkbox:after {
+.checkbox-input.switch.active.indigo-800 .checkbox::after {
     background-color: #283593;
 }
 
@@ -532,7 +532,7 @@
     background-color: rgba(26, 35, 126, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-900 .checkbox:after {
+.checkbox-input.switch.active.indigo-900 .checkbox::after {
     background-color: #1A237E;
 }
 
@@ -540,7 +540,7 @@
     background-color: rgba(140, 158, 255, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-A100 .checkbox:after {
+.checkbox-input.switch.active.indigo-A100 .checkbox::after {
     background-color: #8C9EFF;
 }
 
@@ -548,7 +548,7 @@
     background-color: rgba(83, 109, 254, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-A200 .checkbox:after {
+.checkbox-input.switch.active.indigo-A200 .checkbox::after {
     background-color: #536DFE;
 }
 
@@ -556,7 +556,7 @@
     background-color: rgba(61, 90, 254, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-A400 .checkbox:after {
+.checkbox-input.switch.active.indigo-A400 .checkbox::after {
     background-color: #3D5AFE;
 }
 
@@ -564,7 +564,7 @@
     background-color: rgba(48, 79, 254, 0.5);
 }
 
-.checkbox-input.switch.active.indigo-A700 .checkbox:after {
+.checkbox-input.switch.active.indigo-A700 .checkbox::after {
     background-color: #304FFE;
 }
 
@@ -572,7 +572,7 @@
     background-color: rgba(227, 242, 253, 0.5);
 }
 
-.checkbox-input.switch.active.blue-50 .checkbox:after {
+.checkbox-input.switch.active.blue-50 .checkbox::after {
     background-color: #E3F2FD;
 }
 
@@ -580,7 +580,7 @@
     background-color: rgba(187, 222, 251, 0.5);
 }
 
-.checkbox-input.switch.active.blue-100 .checkbox:after {
+.checkbox-input.switch.active.blue-100 .checkbox::after {
     background-color: #BBDEFB;
 }
 
@@ -588,7 +588,7 @@
     background-color: rgba(144, 202, 249, 0.5);
 }
 
-.checkbox-input.switch.active.blue-200 .checkbox:after {
+.checkbox-input.switch.active.blue-200 .checkbox::after {
     background-color: #90CAF9;
 }
 
@@ -596,7 +596,7 @@
     background-color: rgba(100, 181, 246, 0.5);
 }
 
-.checkbox-input.switch.active.blue-300 .checkbox:after {
+.checkbox-input.switch.active.blue-300 .checkbox::after {
     background-color: #64B5F6;
 }
 
@@ -604,7 +604,7 @@
     background-color: rgba(66, 165, 245, 0.5);
 }
 
-.checkbox-input.switch.active.blue-400 .checkbox:after {
+.checkbox-input.switch.active.blue-400 .checkbox::after {
     background-color: #42A5F5;
 }
 
@@ -613,8 +613,8 @@
     background-color: rgba(33, 150, 243, 0.5);
 }
 
-.checkbox-input.switch.active.blue .checkbox:after,
-.checkbox-input.switch.active.blue-500 .checkbox:after {
+.checkbox-input.switch.active.blue .checkbox::after,
+.checkbox-input.switch.active.blue-500 .checkbox::after {
     background-color: #2196F3;
 }
 
@@ -622,7 +622,7 @@
     background-color: rgba(30, 136, 229, 0.5);
 }
 
-.checkbox-input.switch.active.blue-600 .checkbox:after {
+.checkbox-input.switch.active.blue-600 .checkbox::after {
     background-color: #1E88E5;
 }
 
@@ -630,7 +630,7 @@
     background-color: rgba(25, 118, 210, 0.5);
 }
 
-.checkbox-input.switch.active.blue-700 .checkbox:after {
+.checkbox-input.switch.active.blue-700 .checkbox::after {
     background-color: #1976D2;
 }
 
@@ -638,7 +638,7 @@
     background-color: rgba(21, 101, 192, 0.5);
 }
 
-.checkbox-input.switch.active.blue-800 .checkbox:after {
+.checkbox-input.switch.active.blue-800 .checkbox::after {
     background-color: #1565C0;
 }
 
@@ -646,7 +646,7 @@
     background-color: rgba(13, 71, 161, 0.5);
 }
 
-.checkbox-input.switch.active.blue-900 .checkbox:after {
+.checkbox-input.switch.active.blue-900 .checkbox::after {
     background-color: #0D47A1;
 }
 
@@ -654,7 +654,7 @@
     background-color: rgba(130, 177, 255, 0.5);
 }
 
-.checkbox-input.switch.active.blue-A100 .checkbox:after {
+.checkbox-input.switch.active.blue-A100 .checkbox::after {
     background-color: #82B1FF;
 }
 
@@ -662,7 +662,7 @@
     background-color: rgba(68, 138, 255, 0.5);
 }
 
-.checkbox-input.switch.active.blue-A200 .checkbox:after {
+.checkbox-input.switch.active.blue-A200 .checkbox::after {
     background-color: #448AFF;
 }
 
@@ -670,7 +670,7 @@
     background-color: rgba(41, 121, 255, 0.5);
 }
 
-.checkbox-input.switch.active.blue-A400 .checkbox:after {
+.checkbox-input.switch.active.blue-A400 .checkbox::after {
     background-color: #2979FF;
 }
 
@@ -678,7 +678,7 @@
     background-color: rgba(41, 98, 255, 0.5);
 }
 
-.checkbox-input.switch.active.blue-A700 .checkbox:after {
+.checkbox-input.switch.active.blue-A700 .checkbox::after {
     background-color: #2962FF;
 }
 
@@ -686,7 +686,7 @@
     background-color: rgba(225, 245, 254, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-50 .checkbox:after {
+.checkbox-input.switch.active.light-blue-50 .checkbox::after {
     background-color: #E1F5FE;
 }
 
@@ -694,7 +694,7 @@
     background-color: rgba(179, 229, 252, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-100 .checkbox:after {
+.checkbox-input.switch.active.light-blue-100 .checkbox::after {
     background-color: #B3E5FC;
 }
 
@@ -702,7 +702,7 @@
     background-color: rgba(129, 212, 250, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-200 .checkbox:after {
+.checkbox-input.switch.active.light-blue-200 .checkbox::after {
     background-color: #81D4FA;
 }
 
@@ -710,7 +710,7 @@
     background-color: rgba(79, 195, 247, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-300 .checkbox:after {
+.checkbox-input.switch.active.light-blue-300 .checkbox::after {
     background-color: #4FC3F7;
 }
 
@@ -718,7 +718,7 @@
     background-color: rgba(41, 182, 246, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-400 .checkbox:after {
+.checkbox-input.switch.active.light-blue-400 .checkbox::after {
     background-color: #29B6F6;
 }
 
@@ -727,8 +727,8 @@
     background-color: rgba(3, 169, 244, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue .checkbox:after,
-.checkbox-input.switch.active.light-blue-500 .checkbox:after {
+.checkbox-input.switch.active.light-blue .checkbox::after,
+.checkbox-input.switch.active.light-blue-500 .checkbox::after {
     background-color: #03A9F4;
 }
 
@@ -736,7 +736,7 @@
     background-color: rgba(3, 155, 229, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-600 .checkbox:after {
+.checkbox-input.switch.active.light-blue-600 .checkbox::after {
     background-color: #039BE5;
 }
 
@@ -744,7 +744,7 @@
     background-color: rgba(2, 136, 209, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-700 .checkbox:after {
+.checkbox-input.switch.active.light-blue-700 .checkbox::after {
     background-color: #0288D1;
 }
 
@@ -752,7 +752,7 @@
     background-color: rgba(2, 119, 189, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-800 .checkbox:after {
+.checkbox-input.switch.active.light-blue-800 .checkbox::after {
     background-color: #0277BD;
 }
 
@@ -760,7 +760,7 @@
     background-color: rgba(1, 87, 155, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-900 .checkbox:after {
+.checkbox-input.switch.active.light-blue-900 .checkbox::after {
     background-color: #01579B;
 }
 
@@ -768,7 +768,7 @@
     background-color: rgba(128, 216, 255, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-A100 .checkbox:after {
+.checkbox-input.switch.active.light-blue-A100 .checkbox::after {
     background-color: #80D8FF;
 }
 
@@ -776,7 +776,7 @@
     background-color: rgba(64, 196, 255, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-A200 .checkbox:after {
+.checkbox-input.switch.active.light-blue-A200 .checkbox::after {
     background-color: #40C4FF;
 }
 
@@ -784,7 +784,7 @@
     background-color: rgba(0, 176, 255, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-A400 .checkbox:after {
+.checkbox-input.switch.active.light-blue-A400 .checkbox::after {
     background-color: #00B0FF;
 }
 
@@ -792,7 +792,7 @@
     background-color: rgba(0, 145, 234, 0.5);
 }
 
-.checkbox-input.switch.active.light-blue-A700 .checkbox:after {
+.checkbox-input.switch.active.light-blue-A700 .checkbox::after {
     background-color: #0091EA;
 }
 
@@ -800,7 +800,7 @@
     background-color: rgba(224, 247, 250, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-50 .checkbox:after {
+.checkbox-input.switch.active.cyan-50 .checkbox::after {
     background-color: #E0F7FA;
 }
 
@@ -808,7 +808,7 @@
     background-color: rgba(178, 235, 242, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-100 .checkbox:after {
+.checkbox-input.switch.active.cyan-100 .checkbox::after {
     background-color: #B2EBF2;
 }
 
@@ -816,7 +816,7 @@
     background-color: rgba(128, 222, 234, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-200 .checkbox:after {
+.checkbox-input.switch.active.cyan-200 .checkbox::after {
     background-color: #80DEEA;
 }
 
@@ -824,7 +824,7 @@
     background-color: rgba(77, 208, 225, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-300 .checkbox:after {
+.checkbox-input.switch.active.cyan-300 .checkbox::after {
     background-color: #4DD0E1;
 }
 
@@ -832,7 +832,7 @@
     background-color: rgba(38, 198, 218, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-400 .checkbox:after {
+.checkbox-input.switch.active.cyan-400 .checkbox::after {
     background-color: #26C6DA;
 }
 
@@ -841,8 +841,8 @@
     background-color: rgba(0, 188, 212, 0.5);
 }
 
-.checkbox-input.switch.active.cyan .checkbox:after,
-.checkbox-input.switch.active.cyan-500 .checkbox:after {
+.checkbox-input.switch.active.cyan .checkbox::after,
+.checkbox-input.switch.active.cyan-500 .checkbox::after {
     background-color: #00BCD4;
 }
 
@@ -850,7 +850,7 @@
     background-color: rgba(0, 172, 193, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-600 .checkbox:after {
+.checkbox-input.switch.active.cyan-600 .checkbox::after {
     background-color: #00ACC1;
 }
 
@@ -858,7 +858,7 @@
     background-color: rgba(0, 151, 167, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-700 .checkbox:after {
+.checkbox-input.switch.active.cyan-700 .checkbox::after {
     background-color: #0097A7;
 }
 
@@ -866,7 +866,7 @@
     background-color: rgba(0, 131, 143, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-800 .checkbox:after {
+.checkbox-input.switch.active.cyan-800 .checkbox::after {
     background-color: #00838F;
 }
 
@@ -874,7 +874,7 @@
     background-color: rgba(0, 96, 100, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-900 .checkbox:after {
+.checkbox-input.switch.active.cyan-900 .checkbox::after {
     background-color: #006064;
 }
 
@@ -882,7 +882,7 @@
     background-color: rgba(132, 255, 255, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-A100 .checkbox:after {
+.checkbox-input.switch.active.cyan-A100 .checkbox::after {
     background-color: #84FFFF;
 }
 
@@ -890,7 +890,7 @@
     background-color: rgba(24, 255, 255, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-A200 .checkbox:after {
+.checkbox-input.switch.active.cyan-A200 .checkbox::after {
     background-color: #18FFFF;
 }
 
@@ -898,7 +898,7 @@
     background-color: rgba(0, 229, 255, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-A400 .checkbox:after {
+.checkbox-input.switch.active.cyan-A400 .checkbox::after {
     background-color: #00E5FF;
 }
 
@@ -906,7 +906,7 @@
     background-color: rgba(0, 184, 212, 0.5);
 }
 
-.checkbox-input.switch.active.cyan-A700 .checkbox:after {
+.checkbox-input.switch.active.cyan-A700 .checkbox::after {
     background-color: #00B8D4;
 }
 
@@ -914,7 +914,7 @@
     background-color: rgba(224, 242, 241, 0.5);
 }
 
-.checkbox-input.switch.active.teal-50 .checkbox:after {
+.checkbox-input.switch.active.teal-50 .checkbox::after {
     background-color: #E0F2F1;
 }
 
@@ -922,7 +922,7 @@
     background-color: rgba(178, 223, 219, 0.5);
 }
 
-.checkbox-input.switch.active.teal-100 .checkbox:after {
+.checkbox-input.switch.active.teal-100 .checkbox::after {
     background-color: #B2DFDB;
 }
 
@@ -930,7 +930,7 @@
     background-color: rgba(128, 203, 196, 0.5);
 }
 
-.checkbox-input.switch.active.teal-200 .checkbox:after {
+.checkbox-input.switch.active.teal-200 .checkbox::after {
     background-color: #80CBC4;
 }
 
@@ -938,7 +938,7 @@
     background-color: rgba(77, 182, 172, 0.5);
 }
 
-.checkbox-input.switch.active.teal-300 .checkbox:after {
+.checkbox-input.switch.active.teal-300 .checkbox::after {
     background-color: #4DB6AC;
 }
 
@@ -946,7 +946,7 @@
     background-color: rgba(38, 166, 154, 0.5);
 }
 
-.checkbox-input.switch.active.teal-400 .checkbox:after {
+.checkbox-input.switch.active.teal-400 .checkbox::after {
     background-color: #26A69A;
 }
 
@@ -955,8 +955,8 @@
     background-color: rgba(0, 150, 136, 0.5);
 }
 
-.checkbox-input.switch.active.teal .checkbox:after,
-.checkbox-input.switch.active.teal-500 .checkbox:after {
+.checkbox-input.switch.active.teal .checkbox::after,
+.checkbox-input.switch.active.teal-500 .checkbox::after {
     background-color: #009688;
 }
 
@@ -964,7 +964,7 @@
     background-color: rgba(0, 137, 123, 0.5);
 }
 
-.checkbox-input.switch.active.teal-600 .checkbox:after {
+.checkbox-input.switch.active.teal-600 .checkbox::after {
     background-color: #00897B;
 }
 
@@ -972,7 +972,7 @@
     background-color: rgba(0, 121, 107, 0.5);
 }
 
-.checkbox-input.switch.active.teal-700 .checkbox:after {
+.checkbox-input.switch.active.teal-700 .checkbox::after {
     background-color: #00796B;
 }
 
@@ -980,7 +980,7 @@
     background-color: rgba(0, 105, 92, 0.5);
 }
 
-.checkbox-input.switch.active.teal-800 .checkbox:after {
+.checkbox-input.switch.active.teal-800 .checkbox::after {
     background-color: #00695C;
 }
 
@@ -988,7 +988,7 @@
     background-color: rgba(0, 77, 64, 0.5);
 }
 
-.checkbox-input.switch.active.teal-900 .checkbox:after {
+.checkbox-input.switch.active.teal-900 .checkbox::after {
     background-color: #004D40;
 }
 
@@ -996,7 +996,7 @@
     background-color: rgba(167, 255, 235, 0.5);
 }
 
-.checkbox-input.switch.active.teal-A100 .checkbox:after {
+.checkbox-input.switch.active.teal-A100 .checkbox::after {
     background-color: #A7FFEB;
 }
 
@@ -1004,7 +1004,7 @@
     background-color: rgba(100, 255, 218, 0.5);
 }
 
-.checkbox-input.switch.active.teal-A200 .checkbox:after {
+.checkbox-input.switch.active.teal-A200 .checkbox::after {
     background-color: #64FFDA;
 }
 
@@ -1012,7 +1012,7 @@
     background-color: rgba(29, 233, 182, 0.5);
 }
 
-.checkbox-input.switch.active.teal-A400 .checkbox:after {
+.checkbox-input.switch.active.teal-A400 .checkbox::after {
     background-color: #1DE9B6;
 }
 
@@ -1020,7 +1020,7 @@
     background-color: rgba(0, 191, 165, 0.5);
 }
 
-.checkbox-input.switch.active.teal-A700 .checkbox:after {
+.checkbox-input.switch.active.teal-A700 .checkbox::after {
     background-color: #00BFA5;
 }
 
@@ -1028,7 +1028,7 @@
     background-color: rgba(232, 245, 233, 0.5);
 }
 
-.checkbox-input.switch.active.green-50 .checkbox:after {
+.checkbox-input.switch.active.green-50 .checkbox::after {
     background-color: #E8F5E9;
 }
 
@@ -1036,7 +1036,7 @@
     background-color: rgba(200, 230, 201, 0.5);
 }
 
-.checkbox-input.switch.active.green-100 .checkbox:after {
+.checkbox-input.switch.active.green-100 .checkbox::after {
     background-color: #C8E6C9;
 }
 
@@ -1044,7 +1044,7 @@
     background-color: rgba(165, 214, 167, 0.5);
 }
 
-.checkbox-input.switch.active.green-200 .checkbox:after {
+.checkbox-input.switch.active.green-200 .checkbox::after {
     background-color: #A5D6A7;
 }
 
@@ -1052,7 +1052,7 @@
     background-color: rgba(129, 199, 132, 0.5);
 }
 
-.checkbox-input.switch.active.green-300 .checkbox:after {
+.checkbox-input.switch.active.green-300 .checkbox::after {
     background-color: #81C784;
 }
 
@@ -1060,7 +1060,7 @@
     background-color: rgba(102, 187, 106, 0.5);
 }
 
-.checkbox-input.switch.active.green-400 .checkbox:after {
+.checkbox-input.switch.active.green-400 .checkbox::after {
     background-color: #66BB6A;
 }
 
@@ -1069,8 +1069,8 @@
     background-color: rgba(76, 175, 80, 0.5);
 }
 
-.checkbox-input.switch.active.green .checkbox:after,
-.checkbox-input.switch.active.green-500 .checkbox:after {
+.checkbox-input.switch.active.green .checkbox::after,
+.checkbox-input.switch.active.green-500 .checkbox::after {
     background-color: #4CAF50;
 }
 
@@ -1078,7 +1078,7 @@
     background-color: rgba(67, 160, 71, 0.5);
 }
 
-.checkbox-input.switch.active.green-600 .checkbox:after {
+.checkbox-input.switch.active.green-600 .checkbox::after {
     background-color: #43A047;
 }
 
@@ -1086,7 +1086,7 @@
     background-color: rgba(56, 142, 60, 0.5);
 }
 
-.checkbox-input.switch.active.green-700 .checkbox:after {
+.checkbox-input.switch.active.green-700 .checkbox::after {
     background-color: #388E3C;
 }
 
@@ -1094,7 +1094,7 @@
     background-color: rgba(46, 125, 50, 0.5);
 }
 
-.checkbox-input.switch.active.green-800 .checkbox:after {
+.checkbox-input.switch.active.green-800 .checkbox::after {
     background-color: #2E7D32;
 }
 
@@ -1102,7 +1102,7 @@
     background-color: rgba(27, 94, 32, 0.5);
 }
 
-.checkbox-input.switch.active.green-900 .checkbox:after {
+.checkbox-input.switch.active.green-900 .checkbox::after {
     background-color: #1B5E20;
 }
 
@@ -1110,7 +1110,7 @@
     background-color: rgba(185, 246, 202, 0.5);
 }
 
-.checkbox-input.switch.active.green-A100 .checkbox:after {
+.checkbox-input.switch.active.green-A100 .checkbox::after {
     background-color: #B9F6CA;
 }
 
@@ -1118,7 +1118,7 @@
     background-color: rgba(105, 240, 174, 0.5);
 }
 
-.checkbox-input.switch.active.green-A200 .checkbox:after {
+.checkbox-input.switch.active.green-A200 .checkbox::after {
     background-color: #69F0AE;
 }
 
@@ -1126,7 +1126,7 @@
     background-color: rgba(0, 230, 118, 0.5);
 }
 
-.checkbox-input.switch.active.green-A400 .checkbox:after {
+.checkbox-input.switch.active.green-A400 .checkbox::after {
     background-color: #00E676;
 }
 
@@ -1134,7 +1134,7 @@
     background-color: rgba(0, 200, 83, 0.5);
 }
 
-.checkbox-input.switch.active.green-A700 .checkbox:after {
+.checkbox-input.switch.active.green-A700 .checkbox::after {
     background-color: #00C853;
 }
 
@@ -1142,7 +1142,7 @@
     background-color: rgba(241, 248, 233, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-50 .checkbox:after {
+.checkbox-input.switch.active.light-green-50 .checkbox::after {
     background-color: #F1F8E9;
 }
 
@@ -1150,7 +1150,7 @@
     background-color: rgba(220, 237, 200, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-100 .checkbox:after {
+.checkbox-input.switch.active.light-green-100 .checkbox::after {
     background-color: #DCEDC8;
 }
 
@@ -1158,7 +1158,7 @@
     background-color: rgba(197, 225, 165, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-200 .checkbox:after {
+.checkbox-input.switch.active.light-green-200 .checkbox::after {
     background-color: #C5E1A5;
 }
 
@@ -1166,7 +1166,7 @@
     background-color: rgba(174, 213, 129, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-300 .checkbox:after {
+.checkbox-input.switch.active.light-green-300 .checkbox::after {
     background-color: #AED581;
 }
 
@@ -1174,7 +1174,7 @@
     background-color: rgba(156, 204, 101, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-400 .checkbox:after {
+.checkbox-input.switch.active.light-green-400 .checkbox::after {
     background-color: #9CCC65;
 }
 
@@ -1183,8 +1183,8 @@
     background-color: rgba(139, 195, 74, 0.5);
 }
 
-.checkbox-input.switch.active.light-green .checkbox:after,
-.checkbox-input.switch.active.light-green-500 .checkbox:after {
+.checkbox-input.switch.active.light-green .checkbox::after,
+.checkbox-input.switch.active.light-green-500 .checkbox::after {
     background-color: #8BC34A;
 }
 
@@ -1192,7 +1192,7 @@
     background-color: rgba(124, 179, 66, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-600 .checkbox:after {
+.checkbox-input.switch.active.light-green-600 .checkbox::after {
     background-color: #7CB342;
 }
 
@@ -1200,7 +1200,7 @@
     background-color: rgba(104, 159, 56, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-700 .checkbox:after {
+.checkbox-input.switch.active.light-green-700 .checkbox::after {
     background-color: #689F38;
 }
 
@@ -1208,7 +1208,7 @@
     background-color: rgba(85, 139, 47, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-800 .checkbox:after {
+.checkbox-input.switch.active.light-green-800 .checkbox::after {
     background-color: #558B2F;
 }
 
@@ -1216,7 +1216,7 @@
     background-color: rgba(51, 105, 30, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-900 .checkbox:after {
+.checkbox-input.switch.active.light-green-900 .checkbox::after {
     background-color: #33691E;
 }
 
@@ -1224,7 +1224,7 @@
     background-color: rgba(204, 255, 144, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-A100 .checkbox:after {
+.checkbox-input.switch.active.light-green-A100 .checkbox::after {
     background-color: #CCFF90;
 }
 
@@ -1232,7 +1232,7 @@
     background-color: rgba(178, 255, 89, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-A200 .checkbox:after {
+.checkbox-input.switch.active.light-green-A200 .checkbox::after {
     background-color: #B2FF59;
 }
 
@@ -1240,7 +1240,7 @@
     background-color: rgba(118, 255, 3, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-A400 .checkbox:after {
+.checkbox-input.switch.active.light-green-A400 .checkbox::after {
     background-color: #76FF03;
 }
 
@@ -1248,7 +1248,7 @@
     background-color: rgba(100, 221, 23, 0.5);
 }
 
-.checkbox-input.switch.active.light-green-A700 .checkbox:after {
+.checkbox-input.switch.active.light-green-A700 .checkbox::after {
     background-color: #64DD17;
 }
 
@@ -1256,7 +1256,7 @@
     background-color: rgba(249, 251, 231, 0.5);
 }
 
-.checkbox-input.switch.active.lime-50 .checkbox:after {
+.checkbox-input.switch.active.lime-50 .checkbox::after {
     background-color: #F9FBE7;
 }
 
@@ -1264,7 +1264,7 @@
     background-color: rgba(240, 244, 195, 0.5);
 }
 
-.checkbox-input.switch.active.lime-100 .checkbox:after {
+.checkbox-input.switch.active.lime-100 .checkbox::after {
     background-color: #F0F4C3;
 }
 
@@ -1272,7 +1272,7 @@
     background-color: rgba(230, 238, 156, 0.5);
 }
 
-.checkbox-input.switch.active.lime-200 .checkbox:after {
+.checkbox-input.switch.active.lime-200 .checkbox::after {
     background-color: #E6EE9C;
 }
 
@@ -1280,7 +1280,7 @@
     background-color: rgba(220, 231, 117, 0.5);
 }
 
-.checkbox-input.switch.active.lime-300 .checkbox:after {
+.checkbox-input.switch.active.lime-300 .checkbox::after {
     background-color: #DCE775;
 }
 
@@ -1288,7 +1288,7 @@
     background-color: rgba(212, 225, 87, 0.5);
 }
 
-.checkbox-input.switch.active.lime-400 .checkbox:after {
+.checkbox-input.switch.active.lime-400 .checkbox::after {
     background-color: #D4E157;
 }
 
@@ -1297,8 +1297,8 @@
     background-color: rgba(205, 220, 57, 0.5);
 }
 
-.checkbox-input.switch.active.lime .checkbox:after,
-.checkbox-input.switch.active.lime-500 .checkbox:after {
+.checkbox-input.switch.active.lime .checkbox::after,
+.checkbox-input.switch.active.lime-500 .checkbox::after {
     background-color: #CDDC39;
 }
 
@@ -1306,7 +1306,7 @@
     background-color: rgba(192, 202, 51, 0.5);
 }
 
-.checkbox-input.switch.active.lime-600 .checkbox:after {
+.checkbox-input.switch.active.lime-600 .checkbox::after {
     background-color: #C0CA33;
 }
 
@@ -1314,7 +1314,7 @@
     background-color: rgba(175, 180, 43, 0.5);
 }
 
-.checkbox-input.switch.active.lime-700 .checkbox:after {
+.checkbox-input.switch.active.lime-700 .checkbox::after {
     background-color: #AFB42B;
 }
 
@@ -1322,7 +1322,7 @@
     background-color: rgba(158, 157, 36, 0.5);
 }
 
-.checkbox-input.switch.active.lime-800 .checkbox:after {
+.checkbox-input.switch.active.lime-800 .checkbox::after {
     background-color: #9E9D24;
 }
 
@@ -1330,7 +1330,7 @@
     background-color: rgba(130, 119, 23, 0.5);
 }
 
-.checkbox-input.switch.active.lime-900 .checkbox:after {
+.checkbox-input.switch.active.lime-900 .checkbox::after {
     background-color: #827717;
 }
 
@@ -1338,7 +1338,7 @@
     background-color: rgba(244, 255, 129, 0.5);
 }
 
-.checkbox-input.switch.active.lime-A100 .checkbox:after {
+.checkbox-input.switch.active.lime-A100 .checkbox::after {
     background-color: #F4FF81;
 }
 
@@ -1346,7 +1346,7 @@
     background-color: rgba(238, 255, 65, 0.5);
 }
 
-.checkbox-input.switch.active.lime-A200 .checkbox:after {
+.checkbox-input.switch.active.lime-A200 .checkbox::after {
     background-color: #EEFF41;
 }
 
@@ -1354,7 +1354,7 @@
     background-color: rgba(198, 255, 0, 0.5);
 }
 
-.checkbox-input.switch.active.lime-A400 .checkbox:after {
+.checkbox-input.switch.active.lime-A400 .checkbox::after {
     background-color: #C6FF00;
 }
 
@@ -1362,7 +1362,7 @@
     background-color: rgba(174, 234, 0, 0.5);
 }
 
-.checkbox-input.switch.active.lime-A700 .checkbox:after {
+.checkbox-input.switch.active.lime-A700 .checkbox::after {
     background-color: #AEEA00;
 }
 
@@ -1370,7 +1370,7 @@
     background-color: rgba(255, 253, 231, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-50 .checkbox:after {
+.checkbox-input.switch.active.yellow-50 .checkbox::after {
     background-color: #FFFDE7;
 }
 
@@ -1378,7 +1378,7 @@
     background-color: rgba(255, 249, 196, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-100 .checkbox:after {
+.checkbox-input.switch.active.yellow-100 .checkbox::after {
     background-color: #FFF9C4;
 }
 
@@ -1386,7 +1386,7 @@
     background-color: rgba(255, 245, 157, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-200 .checkbox:after {
+.checkbox-input.switch.active.yellow-200 .checkbox::after {
     background-color: #FFF59D;
 }
 
@@ -1394,7 +1394,7 @@
     background-color: rgba(255, 241, 118, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-300 .checkbox:after {
+.checkbox-input.switch.active.yellow-300 .checkbox::after {
     background-color: #FFF176;
 }
 
@@ -1402,7 +1402,7 @@
     background-color: rgba(255, 238, 88, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-400 .checkbox:after {
+.checkbox-input.switch.active.yellow-400 .checkbox::after {
     background-color: #FFEE58;
 }
 
@@ -1411,8 +1411,8 @@
     background-color: rgba(255, 235, 59, 0.5);
 }
 
-.checkbox-input.switch.active.yellow .checkbox:after,
-.checkbox-input.switch.active.yellow-500 .checkbox:after {
+.checkbox-input.switch.active.yellow .checkbox::after,
+.checkbox-input.switch.active.yellow-500 .checkbox::after {
     background-color: #FFEB3B;
 }
 
@@ -1420,7 +1420,7 @@
     background-color: rgba(253, 216, 53, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-600 .checkbox:after {
+.checkbox-input.switch.active.yellow-600 .checkbox::after {
     background-color: #FDD835;
 }
 
@@ -1428,7 +1428,7 @@
     background-color: rgba(251, 192, 45, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-700 .checkbox:after {
+.checkbox-input.switch.active.yellow-700 .checkbox::after {
     background-color: #FBC02D;
 }
 
@@ -1436,7 +1436,7 @@
     background-color: rgba(249, 168, 37, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-800 .checkbox:after {
+.checkbox-input.switch.active.yellow-800 .checkbox::after {
     background-color: #F9A825;
 }
 
@@ -1444,7 +1444,7 @@
     background-color: rgba(245, 127, 23, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-900 .checkbox:after {
+.checkbox-input.switch.active.yellow-900 .checkbox::after {
     background-color: #F57F17;
 }
 
@@ -1452,7 +1452,7 @@
     background-color: rgba(255, 255, 141, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-A100 .checkbox:after {
+.checkbox-input.switch.active.yellow-A100 .checkbox::after {
     background-color: #FFFF8D;
 }
 
@@ -1460,7 +1460,7 @@
     background-color: rgba(255, 255, 0, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-A200 .checkbox:after {
+.checkbox-input.switch.active.yellow-A200 .checkbox::after {
     background-color: #FFFF00;
 }
 
@@ -1468,7 +1468,7 @@
     background-color: rgba(255, 234, 0, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-A400 .checkbox:after {
+.checkbox-input.switch.active.yellow-A400 .checkbox::after {
     background-color: #FFEA00;
 }
 
@@ -1476,7 +1476,7 @@
     background-color: rgba(255, 214, 0, 0.5);
 }
 
-.checkbox-input.switch.active.yellow-A700 .checkbox:after {
+.checkbox-input.switch.active.yellow-A700 .checkbox::after {
     background-color: #FFD600;
 }
 
@@ -1484,7 +1484,7 @@
     background-color: rgba(255, 248, 225, 0.5);
 }
 
-.checkbox-input.switch.active.amber-50 .checkbox:after {
+.checkbox-input.switch.active.amber-50 .checkbox::after {
     background-color: #FFF8E1;
 }
 
@@ -1492,7 +1492,7 @@
     background-color: rgba(255, 236, 179, 0.5);
 }
 
-.checkbox-input.switch.active.amber-100 .checkbox:after {
+.checkbox-input.switch.active.amber-100 .checkbox::after {
     background-color: #FFECB3;
 }
 
@@ -1500,7 +1500,7 @@
     background-color: rgba(255, 224, 130, 0.5);
 }
 
-.checkbox-input.switch.active.amber-200 .checkbox:after {
+.checkbox-input.switch.active.amber-200 .checkbox::after {
     background-color: #FFE082;
 }
 
@@ -1508,7 +1508,7 @@
     background-color: rgba(255, 213, 79, 0.5);
 }
 
-.checkbox-input.switch.active.amber-300 .checkbox:after {
+.checkbox-input.switch.active.amber-300 .checkbox::after {
     background-color: #FFD54F;
 }
 
@@ -1516,7 +1516,7 @@
     background-color: rgba(255, 202, 40, 0.5);
 }
 
-.checkbox-input.switch.active.amber-400 .checkbox:after {
+.checkbox-input.switch.active.amber-400 .checkbox::after {
     background-color: #FFCA28;
 }
 
@@ -1525,8 +1525,8 @@
     background-color: rgba(255, 193, 7, 0.5);
 }
 
-.checkbox-input.switch.active.amber .checkbox:after,
-.checkbox-input.switch.active.amber-500 .checkbox:after {
+.checkbox-input.switch.active.amber .checkbox::after,
+.checkbox-input.switch.active.amber-500 .checkbox::after {
     background-color: #FFC107;
 }
 
@@ -1534,7 +1534,7 @@
     background-color: rgba(255, 179, 0, 0.5);
 }
 
-.checkbox-input.switch.active.amber-600 .checkbox:after {
+.checkbox-input.switch.active.amber-600 .checkbox::after {
     background-color: #FFB300;
 }
 
@@ -1542,7 +1542,7 @@
     background-color: rgba(255, 160, 0, 0.5);
 }
 
-.checkbox-input.switch.active.amber-700 .checkbox:after {
+.checkbox-input.switch.active.amber-700 .checkbox::after {
     background-color: #FFA000;
 }
 
@@ -1550,7 +1550,7 @@
     background-color: rgba(255, 143, 0, 0.5);
 }
 
-.checkbox-input.switch.active.amber-800 .checkbox:after {
+.checkbox-input.switch.active.amber-800 .checkbox::after {
     background-color: #FF8F00;
 }
 
@@ -1558,7 +1558,7 @@
     background-color: rgba(255, 111, 0, 0.5);
 }
 
-.checkbox-input.switch.active.amber-900 .checkbox:after {
+.checkbox-input.switch.active.amber-900 .checkbox::after {
     background-color: #FF6F00;
 }
 
@@ -1566,7 +1566,7 @@
     background-color: rgba(255, 229, 127, 0.5);
 }
 
-.checkbox-input.switch.active.amber-A100 .checkbox:after {
+.checkbox-input.switch.active.amber-A100 .checkbox::after {
     background-color: #FFE57F;
 }
 
@@ -1574,7 +1574,7 @@
     background-color: rgba(255, 215, 64, 0.5);
 }
 
-.checkbox-input.switch.active.amber-A200 .checkbox:after {
+.checkbox-input.switch.active.amber-A200 .checkbox::after {
     background-color: #FFD740;
 }
 
@@ -1582,7 +1582,7 @@
     background-color: rgba(255, 196, 0, 0.5);
 }
 
-.checkbox-input.switch.active.amber-A400 .checkbox:after {
+.checkbox-input.switch.active.amber-A400 .checkbox::after {
     background-color: #FFC400;
 }
 
@@ -1590,7 +1590,7 @@
     background-color: rgba(255, 171, 0, 0.5);
 }
 
-.checkbox-input.switch.active.amber-A700 .checkbox:after {
+.checkbox-input.switch.active.amber-A700 .checkbox::after {
     background-color: #FFAB00;
 }
 
@@ -1598,7 +1598,7 @@
     background-color: rgba(255, 243, 224, 0.5);
 }
 
-.checkbox-input.switch.active.orange-50 .checkbox:after {
+.checkbox-input.switch.active.orange-50 .checkbox::after {
     background-color: #FFF3E0;
 }
 
@@ -1606,7 +1606,7 @@
     background-color: rgba(255, 224, 178, 0.5);
 }
 
-.checkbox-input.switch.active.orange-100 .checkbox:after {
+.checkbox-input.switch.active.orange-100 .checkbox::after {
     background-color: #FFE0B2;
 }
 
@@ -1614,7 +1614,7 @@
     background-color: rgba(255, 204, 128, 0.5);
 }
 
-.checkbox-input.switch.active.orange-200 .checkbox:after {
+.checkbox-input.switch.active.orange-200 .checkbox::after {
     background-color: #FFCC80;
 }
 
@@ -1622,7 +1622,7 @@
     background-color: rgba(255, 183, 77, 0.5);
 }
 
-.checkbox-input.switch.active.orange-300 .checkbox:after {
+.checkbox-input.switch.active.orange-300 .checkbox::after {
     background-color: #FFB74D;
 }
 
@@ -1630,7 +1630,7 @@
     background-color: rgba(255, 167, 38, 0.5);
 }
 
-.checkbox-input.switch.active.orange-400 .checkbox:after {
+.checkbox-input.switch.active.orange-400 .checkbox::after {
     background-color: #FFA726;
 }
 
@@ -1639,8 +1639,8 @@
     background-color: rgba(255, 152, 0, 0.5);
 }
 
-.checkbox-input.switch.active.orange .checkbox:after,
-.checkbox-input.switch.active.orange-500 .checkbox:after {
+.checkbox-input.switch.active.orange .checkbox::after,
+.checkbox-input.switch.active.orange-500 .checkbox::after {
     background-color: #FF9800;
 }
 
@@ -1648,7 +1648,7 @@
     background-color: rgba(251, 140, 0, 0.5);
 }
 
-.checkbox-input.switch.active.orange-600 .checkbox:after {
+.checkbox-input.switch.active.orange-600 .checkbox::after {
     background-color: #FB8C00;
 }
 
@@ -1656,7 +1656,7 @@
     background-color: rgba(245, 124, 0, 0.5);
 }
 
-.checkbox-input.switch.active.orange-700 .checkbox:after {
+.checkbox-input.switch.active.orange-700 .checkbox::after {
     background-color: #F57C00;
 }
 
@@ -1664,7 +1664,7 @@
     background-color: rgba(239, 108, 0, 0.5);
 }
 
-.checkbox-input.switch.active.orange-800 .checkbox:after {
+.checkbox-input.switch.active.orange-800 .checkbox::after {
     background-color: #EF6C00;
 }
 
@@ -1672,7 +1672,7 @@
     background-color: rgba(230, 81, 0, 0.5);
 }
 
-.checkbox-input.switch.active.orange-900 .checkbox:after {
+.checkbox-input.switch.active.orange-900 .checkbox::after {
     background-color: #E65100;
 }
 
@@ -1680,7 +1680,7 @@
     background-color: rgba(255, 209, 128, 0.5);
 }
 
-.checkbox-input.switch.active.orange-A100 .checkbox:after {
+.checkbox-input.switch.active.orange-A100 .checkbox::after {
     background-color: #FFD180;
 }
 
@@ -1688,7 +1688,7 @@
     background-color: rgba(255, 171, 64, 0.5);
 }
 
-.checkbox-input.switch.active.orange-A200 .checkbox:after {
+.checkbox-input.switch.active.orange-A200 .checkbox::after {
     background-color: #FFAB40;
 }
 
@@ -1696,7 +1696,7 @@
     background-color: rgba(255, 145, 0, 0.5);
 }
 
-.checkbox-input.switch.active.orange-A400 .checkbox:after {
+.checkbox-input.switch.active.orange-A400 .checkbox::after {
     background-color: #FF9100;
 }
 
@@ -1704,7 +1704,7 @@
     background-color: rgba(255, 109, 0, 0.5);
 }
 
-.checkbox-input.switch.active.orange-A700 .checkbox:after {
+.checkbox-input.switch.active.orange-A700 .checkbox::after {
     background-color: #FF6D00;
 }
 
@@ -1712,7 +1712,7 @@
     background-color: rgba(251, 233, 231, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-50 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-50 .checkbox::after {
     background-color: #FBE9E7;
 }
 
@@ -1720,7 +1720,7 @@
     background-color: rgba(255, 204, 188, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-100 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-100 .checkbox::after {
     background-color: #FFCCBC;
 }
 
@@ -1728,7 +1728,7 @@
     background-color: rgba(255, 171, 145, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-200 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-200 .checkbox::after {
     background-color: #FFAB91;
 }
 
@@ -1736,7 +1736,7 @@
     background-color: rgba(255, 138, 101, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-300 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-300 .checkbox::after {
     background-color: #FF8A65;
 }
 
@@ -1744,7 +1744,7 @@
     background-color: rgba(255, 112, 67, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-400 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-400 .checkbox::after {
     background-color: #FF7043;
 }
 
@@ -1753,8 +1753,8 @@
     background-color: rgba(255, 87, 34, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange .checkbox:after,
-.checkbox-input.switch.active.deep-orange-500 .checkbox:after {
+.checkbox-input.switch.active.deep-orange .checkbox::after,
+.checkbox-input.switch.active.deep-orange-500 .checkbox::after {
     background-color: #FF5722;
 }
 
@@ -1762,7 +1762,7 @@
     background-color: rgba(244, 81, 30, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-600 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-600 .checkbox::after {
     background-color: #F4511E;
 }
 
@@ -1770,7 +1770,7 @@
     background-color: rgba(230, 74, 25, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-700 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-700 .checkbox::after {
     background-color: #E64A19;
 }
 
@@ -1778,7 +1778,7 @@
     background-color: rgba(216, 67, 21, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-800 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-800 .checkbox::after {
     background-color: #D84315;
 }
 
@@ -1786,7 +1786,7 @@
     background-color: rgba(191, 54, 12, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-900 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-900 .checkbox::after {
     background-color: #BF360C;
 }
 
@@ -1794,7 +1794,7 @@
     background-color: rgba(255, 158, 128, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-A100 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-A100 .checkbox::after {
     background-color: #FF9E80;
 }
 
@@ -1802,7 +1802,7 @@
     background-color: rgba(255, 110, 64, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-A200 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-A200 .checkbox::after {
     background-color: #FF6E40;
 }
 
@@ -1810,7 +1810,7 @@
     background-color: rgba(255, 61, 0, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-A400 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-A400 .checkbox::after {
     background-color: #FF3D00;
 }
 
@@ -1818,7 +1818,7 @@
     background-color: rgba(221, 44, 0, 0.5);
 }
 
-.checkbox-input.switch.active.deep-orange-A700 .checkbox:after {
+.checkbox-input.switch.active.deep-orange-A700 .checkbox::after {
     background-color: #DD2C00;
 }
 
@@ -1826,7 +1826,7 @@
     background-color: rgba(239, 235, 233, 0.5);
 }
 
-.checkbox-input.switch.active.brown-50 .checkbox:after {
+.checkbox-input.switch.active.brown-50 .checkbox::after {
     background-color: #EFEBE9;
 }
 
@@ -1834,7 +1834,7 @@
     background-color: rgba(215, 204, 200, 0.5);
 }
 
-.checkbox-input.switch.active.brown-100 .checkbox:after {
+.checkbox-input.switch.active.brown-100 .checkbox::after {
     background-color: #D7CCC8;
 }
 
@@ -1842,7 +1842,7 @@
     background-color: rgba(188, 170, 164, 0.5);
 }
 
-.checkbox-input.switch.active.brown-200 .checkbox:after {
+.checkbox-input.switch.active.brown-200 .checkbox::after {
     background-color: #BCAAA4;
 }
 
@@ -1850,7 +1850,7 @@
     background-color: rgba(161, 136, 127, 0.5);
 }
 
-.checkbox-input.switch.active.brown-300 .checkbox:after {
+.checkbox-input.switch.active.brown-300 .checkbox::after {
     background-color: #A1887F;
 }
 
@@ -1858,7 +1858,7 @@
     background-color: rgba(141, 110, 99, 0.5);
 }
 
-.checkbox-input.switch.active.brown-400 .checkbox:after {
+.checkbox-input.switch.active.brown-400 .checkbox::after {
     background-color: #8D6E63;
 }
 
@@ -1867,8 +1867,8 @@
     background-color: rgba(121, 85, 72, 0.5);
 }
 
-.checkbox-input.switch.active.brown .checkbox:after,
-.checkbox-input.switch.active.brown-500 .checkbox:after {
+.checkbox-input.switch.active.brown .checkbox::after,
+.checkbox-input.switch.active.brown-500 .checkbox::after {
     background-color: #795548;
 }
 
@@ -1876,7 +1876,7 @@
     background-color: rgba(109, 76, 65, 0.5);
 }
 
-.checkbox-input.switch.active.brown-600 .checkbox:after {
+.checkbox-input.switch.active.brown-600 .checkbox::after {
     background-color: #6D4C41;
 }
 
@@ -1884,7 +1884,7 @@
     background-color: rgba(93, 64, 55, 0.5);
 }
 
-.checkbox-input.switch.active.brown-700 .checkbox:after {
+.checkbox-input.switch.active.brown-700 .checkbox::after {
     background-color: #5D4037;
 }
 
@@ -1892,7 +1892,7 @@
     background-color: rgba(78, 52, 46, 0.5);
 }
 
-.checkbox-input.switch.active.brown-800 .checkbox:after {
+.checkbox-input.switch.active.brown-800 .checkbox::after {
     background-color: #4E342E;
 }
 
@@ -1900,7 +1900,7 @@
     background-color: rgba(62, 39, 35, 0.5);
 }
 
-.checkbox-input.switch.active.brown-900 .checkbox:after {
+.checkbox-input.switch.active.brown-900 .checkbox::after {
     background-color: #3E2723;
 }
 
@@ -1908,7 +1908,7 @@
     background-color: rgba(250, 250, 250, 0.5);
 }
 
-.checkbox-input.switch.active.grey-50 .checkbox:after {
+.checkbox-input.switch.active.grey-50 .checkbox::after {
     background-color: #FAFAFA;
 }
 
@@ -1916,7 +1916,7 @@
     background-color: rgba(245, 245, 245, 0.5);
 }
 
-.checkbox-input.switch.active.grey-100 .checkbox:after {
+.checkbox-input.switch.active.grey-100 .checkbox::after {
     background-color: #F5F5F5;
 }
 
@@ -1924,7 +1924,7 @@
     background-color: rgba(238, 238, 238, 0.5);
 }
 
-.checkbox-input.switch.active.grey-200 .checkbox:after {
+.checkbox-input.switch.active.grey-200 .checkbox::after {
     background-color: #EEEEEE;
 }
 
@@ -1932,7 +1932,7 @@
     background-color: rgba(224, 224, 224, 0.5);
 }
 
-.checkbox-input.switch.active.grey-300 .checkbox:after {
+.checkbox-input.switch.active.grey-300 .checkbox::after {
     background-color: #E0E0E0;
 }
 
@@ -1940,7 +1940,7 @@
     background-color: rgba(189, 189, 189, 0.5);
 }
 
-.checkbox-input.switch.active.grey-400 .checkbox:after {
+.checkbox-input.switch.active.grey-400 .checkbox::after {
     background-color: ;
 }
 
@@ -1949,8 +1949,8 @@
     background-color: rgba(158, 158, 158, 0.5);
 }
 
-.checkbox-input.switch.active.grey .checkbox:after,
-.checkbox-input.switch.active.grey-500 .checkbox:after {
+.checkbox-input.switch.active.grey .checkbox::after,
+.checkbox-input.switch.active.grey-500 .checkbox::after {
     background-color: #9E9E9E;
 }
 
@@ -1958,7 +1958,7 @@
     background-color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-input.switch.active.grey-600 .checkbox:after {
+.checkbox-input.switch.active.grey-600 .checkbox::after {
     background-color: #757575;
 }
 
@@ -1966,7 +1966,7 @@
     background-color: rgba(97, 97, 97, 0.5);
 }
 
-.checkbox-input.switch.active.grey-700 .checkbox:after {
+.checkbox-input.switch.active.grey-700 .checkbox::after {
     background-color: #616161;
 }
 
@@ -1974,7 +1974,7 @@
     background-color: rgba(66, 66, 66, 0.5);
 }
 
-.checkbox-input.switch.active.grey-800 .checkbox:after {
+.checkbox-input.switch.active.grey-800 .checkbox::after {
     background-color: ;
 }
 
@@ -1982,7 +1982,7 @@
     background-color: rgba(33, 33, 33, 0.5);
 }
 
-.checkbox-input.switch.active.grey-900 .checkbox:after {
+.checkbox-input.switch.active.grey-900 .checkbox::after {
     background-color: #212121;
 }
 
@@ -1990,7 +1990,7 @@
     background-color: rgba(236, 239, 241, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-50 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-50 .checkbox::after {
     background-color: #ECEFF1;
 }
 
@@ -1998,7 +1998,7 @@
     background-color: rgba(207, 216, 220, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-100 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-100 .checkbox::after {
     background-color: #CFD8DC;
 }
 
@@ -2006,7 +2006,7 @@
     background-color: rgba(176, 190, 197, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-200 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-200 .checkbox::after {
     background-color: #B0BEC5;
 }
 
@@ -2014,7 +2014,7 @@
     background-color: rgba(144, 164, 174, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-300 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-300 .checkbox::after {
     background-color: #90A4AE;
 }
 
@@ -2022,7 +2022,7 @@
     background-color: rgba(120, 144, 156, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-400 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-400 .checkbox::after {
     background-color: #78909C;
 }
 
@@ -2031,8 +2031,8 @@
     background-color: rgba(96, 125, 139, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey .checkbox:after,
-.checkbox-input.switch.active.blue-grey-500 .checkbox:after {
+.checkbox-input.switch.active.blue-grey .checkbox::after,
+.checkbox-input.switch.active.blue-grey-500 .checkbox::after {
     background-color: #607D8B;
 }
 
@@ -2040,7 +2040,7 @@
     background-color: rgba(84, 110, 122, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-600 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-600 .checkbox::after {
     background-color: #546E7A;
 }
 
@@ -2048,7 +2048,7 @@
     background-color: rgba(69, 90, 100, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-700 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-700 .checkbox::after {
     background-color: #455A64;
 }
 
@@ -2056,7 +2056,7 @@
     background-color: rgba(55, 71, 79, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-800 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-800 .checkbox::after {
     background-color: #37474F;
 }
 
@@ -2064,7 +2064,7 @@
     background-color: rgba(38, 50, 56, 0.5);
 }
 
-.checkbox-input.switch.active.blue-grey-900 .checkbox:after {
+.checkbox-input.switch.active.blue-grey-900 .checkbox::after {
     background-color: #263238;
 }
 
@@ -2072,7 +2072,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.checkbox-input.switch.active.black .checkbox:after {
+.checkbox-input.switch.active.black .checkbox::after {
     background-color: #000000;
 }
 
@@ -2080,7 +2080,7 @@
     background-color: ;
 }
 
-.checkbox-input.switch.active.white .checkbox:after {
+.checkbox-input.switch.active.white .checkbox::after {
     background-color: #FFFFFF;
 }
 

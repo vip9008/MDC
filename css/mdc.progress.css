@@ -10,7 +10,7 @@
     transition: height 0.2s;
 }
 
-.mdc-progress:before {
+.mdc-progress::before {
     content: '';
     display: block;
     position: absolute;
@@ -22,7 +22,7 @@
     background-color: var(--text-primary);
 }
 
-.mdc-progress.buffer:before {
+.mdc-progress.buffer::before {
     display: none;
 }
 
@@ -98,7 +98,7 @@ html[dir="rtl"] .mdc-progress.buffer > .bar, html[dir] .mdc-progress.buffer[dir=
     width: 100%;
 }
 
-.mdc-progress > .indeterminate:before {
+.mdc-progress > .indeterminate::before {
     content: '';
     position: absolute;
     background-color: var(--text-primary);
@@ -109,20 +109,20 @@ html[dir="rtl"] .mdc-progress.buffer > .bar, html[dir] .mdc-progress.buffer[dir=
     -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
     animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
-html[dir="ltr"] .mdc-progress > .indeterminate:before, html[dir] .mdc-progress[dir="ltr"] > .indeterminate:before {
+html[dir="ltr"] .mdc-progress > .indeterminate::before, html[dir] .mdc-progress[dir="ltr"] > .indeterminate::before {
     left: 0;
     right: auto;
     -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
     animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
-html[dir="rtl"] .mdc-progress > .indeterminate:before, html[dir] .mdc-progress[dir="rtl"] > .indeterminate:before {
+html[dir="rtl"] .mdc-progress > .indeterminate::before, html[dir] .mdc-progress[dir="rtl"] > .indeterminate::before {
     left: auto;
     right: 0;
     -webkit-animation: indeterminate-rtl 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
     animation: indeterminate-rtl 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
 
-.mdc-progress > .indeterminate:after {
+.mdc-progress > .indeterminate::after {
     content: '';
     position: absolute;
     background-color: var(--text-primary);
@@ -135,7 +135,7 @@ html[dir="rtl"] .mdc-progress > .indeterminate:before, html[dir] .mdc-progress[d
     -webkit-animation-delay: 1.15s;
     animation-delay: 1.15s;
 }
-html[dir="ltr"] .mdc-progress > .indeterminate:after, html[dir] .mdc-progress[dir="ltr"] > .indeterminate:after {
+html[dir="ltr"] .mdc-progress > .indeterminate::after, html[dir] .mdc-progress[dir="ltr"] > .indeterminate::after {
     left: 0;
     right: auto;
     -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
@@ -143,7 +143,7 @@ html[dir="ltr"] .mdc-progress > .indeterminate:after, html[dir] .mdc-progress[di
     -webkit-animation-delay: 1.15s;
     animation-delay: 1.15s;
 }
-html[dir="rtl"] .mdc-progress > .indeterminate:after, html[dir] .mdc-progress[dir="rtl"] > .indeterminate:after {
+html[dir="rtl"] .mdc-progress > .indeterminate::after, html[dir] .mdc-progress[dir="rtl"] > .indeterminate::after {
     left: auto;
     right: 0;
     -webkit-animation: indeterminate-short-rtl 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;

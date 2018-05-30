@@ -36,7 +36,7 @@ a.mdc-list-item, button.mdc-list-item, .mdc-list-item.interactive {
     position: relative;
 }
 
-a.mdc-list-item:before, button.mdc-list-item:before, .mdc-list-item.interactive:before {
+a.mdc-list-item::before, button.mdc-list-item::before, .mdc-list-item.interactive::before {
     content: '';
     position: absolute;
     top: 0;
@@ -49,15 +49,15 @@ a.mdc-list-item:before, button.mdc-list-item:before, .mdc-list-item.interactive:
     opacity: 0;
 }
 
-a.mdc-list-item:hover:before, button.mdc-list-item:hover:before, .mdc-list-item.interactive:hover:before {
+a.mdc-list-item:hover::before, button.mdc-list-item:hover::before, .mdc-list-item.interactive:hover::before {
     opacity: var(--opacity-hover);
 }
 
-a.mdc-list-item:focus:before, button.mdc-list-item:focus:before, .mdc-list-item.interactive:focus:before {
+a.mdc-list-item:focus::before, button.mdc-list-item:focus::before, .mdc-list-item.interactive:focus::before {
     opacity: var(--opacity-focus);
 }
 
-a.mdc-list-item:active:before, button.mdc-list-item:active:before, .mdc-list-item.interactive:active:before {
+a.mdc-list-item:active::before, button.mdc-list-item:active::before, .mdc-list-item.interactive:active::before {
     opacity: var(--opacity-pressed);
 }
 

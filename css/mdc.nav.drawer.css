@@ -42,22 +42,22 @@ html[dir="rtl"] #mdc-nav-drawer {
     --text-divider: var(--initial-text-divider);
 }
 
-#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:before {
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item::before {
     background-color: var(--main-color);
     opacity: var(--opacity-activated);
 }
 
-#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:hover:before {
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:hover::before {
     background-color: var(--initial-main-color);
     opacity: var(--opacity-hover);
 }
 
-#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:active:before {
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:active::before {
     background-color: var(--initial-main-color);
     opacity: var(--opacity-pressed);
 }
 
-#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:focus:before {
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:focus::before {
     background-color: var(--initial-main-color);
     opacity: var(--opacity-focus);
 }

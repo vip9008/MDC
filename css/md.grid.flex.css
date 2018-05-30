@@ -404,7 +404,7 @@ a.material-icon, button.material-icon, .material-icon.interactive {
     cursor: pointer;
 }
 
-a.material-icon:before, button.material-icon:before, .material-icon.interactive:before {
+a.material-icon::before, button.material-icon::before, .material-icon.interactive::before {
     content: '';
     display: inline-block;
     background-color: var(--initial-main-color);
@@ -427,21 +427,21 @@ a.material-icon:before, button.material-icon:before, .material-icon.interactive:
     transform-delay: scale(0);
 }
 
-a.material-icon:hover:before, button.material-icon:hover:before, .material-icon.interactive:hover:before {
+a.material-icon:hover::before, button.material-icon:hover::before, .material-icon.interactive:hover::before {
     opacity: var(--opacity-hover);
     -ms-transform: scale(2);
     -webkit-transform: scale(2);
     transform: scale(2);
 }
 
-a.material-icon:active:before, button.material-icon:active:before, .material-icon.interactive:active:before {
+a.material-icon:active::before, button.material-icon:active::before, .material-icon.interactive:active::before {
     opacity: var(--opacity-pressed);
     -ms-transform: scale(2);
     -webkit-transform: scale(2);
     transform: scale(2);
 }
 
-a.material-icon:focus:before, button.material-icon:focus:before, .material-icon.interactive:focus:before {
+a.material-icon:focus::before, button.material-icon:focus::before, .material-icon.interactive:focus::before {
     opacity: var(--opacity-focus);
     -ms-transform: scale(2);
     -webkit-transform: scale(2);
@@ -474,12 +474,12 @@ a.material-icon:focus:before, button.material-icon:focus:before, .material-icon.
     box-sizing: inherit;
 }
 
-.clearfix:before, .clearfix:after {
+.clearfix::before, .clearfix::after {
     content: '';
     display: table;
 }
 
-.clearfix:after {
+.clearfix::after {
     clear: both;
 }
 
