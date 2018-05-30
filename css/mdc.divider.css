@@ -1,11 +1,10 @@
 .mdc-divider {
     display: block;
-    height: 1px;
     width: auto;
     clear: both;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-border);
+    border-top: solid 0.0625rem var(--bg-border);
 }
 
 .mdc-list-group > .mdc-divider.inset {
