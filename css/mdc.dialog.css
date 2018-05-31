@@ -31,7 +31,7 @@
 
 .mdc-dialog-container > .mdc-dialog {
     min-width: 17.5rem;
-    max-width: 42rem;
+    max-width: 35rem;
     width: 17.5rem;
     text-align: initial;
     border-radius: 0.25rem;
@@ -61,7 +61,6 @@
     font-size: 1.25rem;
     line-height: 2rem;
     font-weight: 500;
-    letter-spacing: 0.0125em;
     -ms-flex: 1 1;
     flex: 1 1;
     margin: 0;
@@ -72,9 +71,44 @@
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0.03125em;
     margin-top: 1.25rem;
     padding: 0 1.5rem 1.5rem;
+}
+
+.mdc-dialog-container > .mdc-dialog > .title,
+html[dir="ltr"] .mdc-dialog-container > .mdc-dialog > .title,
+html[dir] .mdc-button-group[dir="ltr"] > .mdc-dialog > .title,
+.mdc-dialog-container > .mdc-dialog > .body,
+html[dir="ltr"] .mdc-dialog-container > .mdc-dialog > .body,
+html[dir] .mdc-button-group[dir="ltr"] > .mdc-dialog > .body {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+html[dir="rtl"] .mdc-dialog-container > .mdc-dialog > .title,
+html[dir] .mdc-button-group[dir="rtl"] > .mdc-dialog > .title,
+html[dir="rtl"] .mdc-dialog-container > .mdc-dialog > .body,
+html[dir] .mdc-button-group[dir="rtl"] > .mdc-dialog > .body {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+.mdc-dialog-container > .mdc-dialog > .mdc-button-group {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.mdc-dialog-container > .mdc-dialog > .mdc-button-group,
+html[dir="ltr"] .mdc-dialog-container > .mdc-dialog > .mdc-button-group,
+html[dir] .mdc-button-group[dir="ltr"] > .mdc-dialog > .mdc-button-group {
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+html[dir="rtl"] .mdc-dialog-container > .mdc-dialog > .mdc-button-group,
+html[dir] .mdc-button-group[dir="rtl"] > .mdc-dialog > .mdc-button-group {
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
 }
 
 /* Custom breakpoint for dialogs only!! */
@@ -109,17 +143,5 @@
 @media (min-width: 40rem) {
     .mdc-dialog-container > .mdc-dialog {
         width: 35rem;
-    }
-}
-
-@media (min-width: 43.5rem) {
-    .mdc-dialog-container > .mdc-dialog {
-        width: 38.5rem;
-    }
-}
-
-@media (min-width: 47rem) {
-    .mdc-dialog-container > .mdc-dialog {
-        width: 42rem;
     }
 }

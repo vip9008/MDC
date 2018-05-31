@@ -1,3 +1,26 @@
+.mdc-button-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.mdc-button-group > .mdc-button + .mdc-button,
+html[dir="ltr"] .mdc-button-group > .mdc-button + .mdc-button,
+html[dir] .mdc-button-group[dir="ltr"] > .mdc-button + .mdc-button {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .mdc-button-group > .mdc-button + .mdc-button,
+html[dir] .mdc-button-group[dir="rtl"] > .mdc-button + .mdc-button {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
 a.mdc-button, button.mdc-button, .mdc-button {
     border: none;
     outline: none;

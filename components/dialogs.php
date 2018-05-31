@@ -487,14 +487,18 @@ $url = $prefix."components/dialogs.php";
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-6">
-                <button onclick="mdc_open_dialog('#dialog-1')" class="mdc-button btn-contained full-width bg-deep-purple-A700">Open test dialog</button>
+                <button onclick="mdc_open_dialog('#dialog-1')" class="mdc-button btn-contained full-width bg-deep-purple-A700">Alert dialog</button>
 
                 <div id="dialog-1" class="mdc-dialog-container">
                     <div class="mdc-dialog">
                         <div class="header">
-                            <div class="title">Dialog title</div>
+                            <div class="title">Dialog header</div>
                         </div>
-                        <div class="body">Titles should be succinct. They can wrap to a second line if necessary, and be truncated.</div>
+                        <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</div>
+                        <div class="mdc-button-group">
+                            <button onclick="mdc_close_dialog('#dialog-1')" class="mdc-button deep-purple-A700">Action 1</button>
+                            <button onclick="mdc_close_dialog('#dialog-1')" class="mdc-button deep-purple-A700">Action 2</button>
+                        </div>
                     </div>
                 </div>
             </div>
