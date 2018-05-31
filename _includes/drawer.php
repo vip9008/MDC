@@ -72,6 +72,10 @@
                     <div class="material-icon"></div>
                     <div class="text">Buttons</div>
                 </a>
+                <a href="<?= $prefix ?>components/dialogs.php" class="mdc-list-item">
+                    <div class="material-icon"></div>
+                    <div class="text">Dialogs</div>
+                </a>
                 <a href="<?= $prefix ?>components/dividers.php" class="mdc-list-item">
                     <div class="material-icon"></div>
                     <div class="text">Dividers</div>
