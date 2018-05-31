@@ -100,10 +100,10 @@
     --bg-cards: #424242;
     --bg-border: rgba(255, 255, 255, 0.12);
 
-    --input: rgba(255, 255, 255, 0.04);
-    --input-hover: rgba(255, 255, 255, 0.12);
-    --input-focus: rgba(255, 255, 255, 0.16);
-    --input-disabled: rgba(255, 255, 255, 0.02);
+    --input: rgba(255, 255, 255, 0.08);
+    --input-hover: rgba(255, 255, 255, 0.16);
+    --input-focus: rgba(255, 255, 255, 0.24);
+    --input-disabled: rgba(255, 255, 255, 0.04);
 
     --boolean: rgba(255, 255, 255, 0.3);
     --boolean-disabled: #424242;

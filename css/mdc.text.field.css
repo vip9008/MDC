@@ -4,7 +4,6 @@
     position: relative;
     min-height: 3.5rem;
     margin: 1rem 0 0.5rem;
-    overflow: hidden;
     min-width: 17.5rem;
 }
 
@@ -15,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 0.125rem;
-    background-color: var(--text-primary);
+    background-color: var(--bg-border);
     will-change: transform;
 
     transform: scale(0);
@@ -182,18 +181,6 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon {
     min-width: 19.5rem;
 }
 
-html[dir="ltr"] .mdc-text-field > .material-icon + .input,
-html[dir] *[dir="ltr"] .mdc-text-field > .material-icon + .input,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .material-icon + .input {
-    padding: 1.25rem 0.75rem 0 3rem;
-}
-
-html[dir="rtl"] .mdc-text-field > .material-icon + .input,
-html[dir] *[dir="rtl"] .mdc-text-field > .material-icon + .input,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon + .input {
-    padding: 1.25rem 3rem 0 0.75rem;
-}
-
 .mdc-text-field > .material-icon + .input + .label {
     left: 3rem;
     right: auto;
@@ -219,30 +206,19 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon + .input + .label {
     right: 0.75rem;
 }
 
-html[dir="ltr"] .mdc-text-field > .material-icon.trailing,
-html[dir] *[dir="ltr"] .mdc-text-field > .material-icon.trailing,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .material-icon.trailing {
-    left: auto;
-    right: 0.75rem;
-}
-
-html[dir="rtl"] .mdc-text-field > .material-icon.trailing,
-html[dir] *[dir="rtl"] .mdc-text-field > .material-icon.trailing,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon.trailing {
-    left: 0.75rem;
-    right: auto;
-}
-
-.mdc-text-field > .material-icon.trailing + .input {
-    padding: 1.25rem 3rem 0 0.75rem;
-}
-
+html[dir="rtl"] .mdc-text-field > .material-icon + .input,
+html[dir] *[dir="rtl"] .mdc-text-field > .material-icon + .input,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon + .input,
+.mdc-text-field > .material-icon.trailing + .input,
 html[dir="ltr"] .mdc-text-field > .material-icon.trailing + .input,
 html[dir] *[dir="ltr"] .mdc-text-field > .material-icon.trailing + .input,
 html[dir] *[dir] .mdc-text-field[dir="ltr"] > .material-icon.trailing + .input {
     padding: 1.25rem 3rem 0 0.75rem;
 }
 
+html[dir="ltr"] .mdc-text-field > .material-icon + .input,
+html[dir] *[dir="ltr"] .mdc-text-field > .material-icon + .input,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .material-icon + .input,
 html[dir="rtl"] .mdc-text-field > .material-icon.trailing + .input,
 html[dir] *[dir="rtl"] .mdc-text-field > .material-icon.trailing + .input,
 html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon.trailing + .input {
@@ -254,6 +230,9 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon.trailing + .input {
     right: auto;
 }
 
+html[dir="rtl"] .mdc-text-field > .material-icon.trailing,
+html[dir] *[dir="rtl"] .mdc-text-field > .material-icon.trailing,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon.trailing,
 html[dir="ltr"] .mdc-text-field > .material-icon.trailing + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field > .material-icon.trailing + .input + .label,
 html[dir] *[dir] .mdc-text-field[dir="ltr"] > .material-icon.trailing + .input + .label {
@@ -261,6 +240,9 @@ html[dir] *[dir] .mdc-text-field[dir="ltr"] > .material-icon.trailing + .input +
     right: auto;
 }
 
+html[dir="ltr"] .mdc-text-field > .material-icon.trailing,
+html[dir] *[dir="ltr"] .mdc-text-field > .material-icon.trailing,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .material-icon.trailing,
 html[dir="rtl"] .mdc-text-field > .material-icon.trailing + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field > .material-icon.trailing + .input + .label,
 html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon.trailing + .input + .label {
@@ -282,4 +264,195 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .material-icon.trailing + .input +
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
+}
+
+.mdc-text-field.outlined::after {
+    display: none;
+}
+
+.mdc-text-field.outlined > .input {
+    background-color: transparent;
+    border: 0.0625rem solid var(--initial-text-hint);
+    border-radius: 0.25rem;
+    padding: 0.75rem 0.8125rem;
+    will-change: border-color;
+    transition: border-color 0.15s cubic-bezier(0.4,0,.2,1);
+}
+
+.mdc-text-field.outlined > .material-icon + .input,
+html[dir="ltr"] .mdc-text-field.outlined > .material-icon + .input,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .material-icon + .input,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .material-icon + .input,
+html[dir="rtl"] .mdc-text-field.outlined > .material-icon.trailing + .input,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .material-icon.trailing + .input,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon.trailing + .input {
+    padding: 0.75rem 0.75rem 0.75rem 2.9375rem;
+}
+
+html[dir="rtl"] .mdc-text-field.outlined > .material-icon + .input,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .material-icon + .input,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon + .input,
+.mdc-text-field.outlined > .material-icon.trailing + .input,
+html[dir="ltr"] .mdc-text-field.outlined > .material-icon.trailing + .input,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .material-icon.trailing + .input,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .material-icon.trailing + .input {
+    padding: 0.75rem 2.9375rem 0.75rem 0.75rem;
+}
+
+.mdc-text-field.outlined > .input:hover {
+    border-color: var(--initial-text-secondary);
+}
+
+.mdc-text-field.outlined > .input:focus,
+.mdc-text-field.outlined.focus > .input {
+    border-color: transparent;
+}
+
+.mdc-text-field.outlined > .label {
+    width: auto;
+    max-width: calc(100% - 1.625rem);
+    left: 0.8125rem;
+    right: auto;
+    will-change: transform, color, left, right;
+    transition: transform 0.15s cubic-bezier(0.4,0,.2,1), color 0.15s cubic-bezier(0.4,0,.2,1), left 0.15s, right 0.15s;
+}
+
+.mdc-text-field.outlined > .material-icon + .input + .label {
+    width: auto;
+}
+
+html[dir="ltr"] .mdc-text-field.outlined > .label,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .label,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .label,
+.mdc-text-field.outlined > .material-icon + .input:focus + .label,
+html[dir="ltr"] .mdc-text-field.outlined > .material-icon + .input:focus + .label,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .material-icon + .input:focus + .label,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .material-icon + .input:focus + .label,
+.mdc-text-field.outlined.focus > .material-icon + .input + .label,
+html[dir="ltr"] .mdc-text-field.outlined.focus > .material-icon + .input + .label,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined.focus > .material-icon + .input + .label,
+html[dir] *[dir] .mdc-text-field.outlined.focus[dir="ltr"] > .material-icon + .input + .label,
+.mdc-text-field.outlined > .material-icon.trailing + .input + .label,
+html[dir="ltr"] .mdc-text-field.outlined > .material-icon.trailing + .input + .label,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .material-icon.trailing + .input + .label,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .material-icon.trailing + .input + .label {
+    left: 0.8125rem;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-text-field.outlined > .label,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .label,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .label,
+html[dir="rtl"] .mdc-text-field.outlined > .material-icon + .input:focus + .label,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .material-icon + .input:focus + .label,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon + .input:focus + .label,
+html[dir="rtl"] .mdc-text-field.outlined.focus > .material-icon + .input + .label,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined.focus > .material-icon + .input + .label,
+html[dir] *[dir] .mdc-text-field.outlined.focus[dir="rtl"] > .material-icon + .input + .label,
+.mdc-text-field.outlined > .material-icon.trailing + .input + .label,
+html[dir="rtl"] .mdc-text-field.outlined > .material-icon.trailing + .input + .label,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .material-icon.trailing + .input + .label,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon.trailing + .input + .label {
+    left: auto;
+    right: 0.8125rem;
+}
+
+.mdc-text-field.outlined > .input:focus + .label,
+.mdc-text-field.outlined.focus > .input + .label {
+    transform: translateY(-134%) scale(0.75);
+}
+
+.mdc-text-field.outlined > .outline {
+    position: absolute;
+    top: -0.0625rem;
+    left: -0.0625rem;
+    right: -0.0625rem;
+    height: 3.625rem;
+    margin: 0 0.625rem;
+    pointer-events: none;
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity 0.15s cubic-bezier(0.4,0,.2,1);
+    border-bottom: solid 0.125rem var(--initial-text-hint);
+}
+
+.mdc-text-field.outlined.active > .outline,
+.mdc-text-field.outlined.focus > .outline {
+    opacity: 1;
+}
+
+.mdc-text-field.outlined > .outline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.625rem;
+    bottom: -0.125rem;
+    width: 0.5rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+    border: solid 0.125rem var(--initial-text-hint);
+    border-right: none;
+}
+
+.mdc-text-field.outlined > .outline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -0.625rem;
+    bottom: -0.125rem;
+    width: 0.5rem;
+    border-radius: 0 0.25rem 0.25rem 0;
+    border: solid 0.125rem var(--initial-text-hint);
+    border-left: none;
+}
+
+.mdc-text-field.outlined > .outline > .top {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 100%;
+    border-top: solid 0.125rem var(--initial-text-hint);
+}
+
+html[dir="ltr"] .mdc-text-field.outlined > .outline > .top,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .outline > .top,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .outline > .top {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .mdc-text-field.outlined > .outline > .top,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .outline > .top,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top {
+    left: 0;
+    right: auto;
+}
+
+.mdc-text-field.outlined > .input:hover + .label + .outline,
+.mdc-text-field.outlined > .input:hover + .label + .outline > .top,
+.mdc-text-field.outlined > .input:hover + .label + .outline::before,
+.mdc-text-field.outlined > .input:hover + .label + .outline::after {
+    border-color: var(--initial-text-secondary);
+}
+
+.mdc-text-field.outlined > .input:focus + .label + .outline,
+.mdc-text-field.outlined > .input:focus + .label + .outline > .top,
+.mdc-text-field.outlined > .input:focus + .label + .outline::before,
+.mdc-text-field.outlined > .input:focus + .label + .outline::after {
+    border-color: var(--bg-border);
+}
+
+.mdc-text-field:not(.focus) > .input:hover[disabled],
+.mdc-text-field:not(.focus) > .input[disabled],
+.mdc-text-field > .input[disabled] + .label + .outline,
+.mdc-text-field > .input[disabled] + .label + .outline > .top,
+.mdc-text-field > .input[disabled] + .label + .outline::before,
+.mdc-text-field > .input[disabled] + .label + .outline::after,
+.mdc-text-field:not(.focus) > .input:hover:disabled,
+.mdc-text-field:not(.focus) > .input:disabled,
+.mdc-text-field > .input:disabled + .label + .outline,
+.mdc-text-field > .input:disabled + .label + .outline > .top,
+.mdc-text-field > .input:disabled + .label + .outline::before,
+.mdc-text-field > .input:disabled + .label + .outline::after {
+    border-color: var(--initial-text-divider) !important;
 }

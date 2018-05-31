@@ -230,10 +230,7 @@ $url = $prefix."components/dividers.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+                
                 <h4>Full-bleed dividers</h4>
                 <p class="text-secondary">Placing a divider inside any container will cover the whole available width.</p>
             </div>

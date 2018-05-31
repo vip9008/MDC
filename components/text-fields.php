@@ -44,27 +44,6 @@ $url = $prefix."components/text-fields.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
-
-                <div class="mdc-text-field orange">
-                    <input type="text" class="input">
-                    <label class="label">Default</label>
-                    <div class="help-block">Help text here</div>
-                </div>
-
-                <div class="mdc-text-field orange">
-                    <div class="material-icon">person</div>
-                    <input type="text" class="input">
-                    <label class="label">Default</label>
-                    <div class="help-block">Help text here</div>
-                </div>
-
-                <div class="mdc-text-field orange">
-                    <div class="material-icon trailing">person</div>
-                    <input type="text" class="input">
-                    <label class="label">Default</label>
-                    <div class="help-block">Help text here</div>
-                </div>
-
                 <h1 class="article_title">Text fields</h1>
                 <h5 class="text-secondary">Text fields let users enter and edit text.</h5>
 
@@ -260,7 +239,315 @@ $url = $prefix."components/text-fields.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
+                <h4>Input text</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfields-annotations-2.png"></figure>
+                <div class="space"></div>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <div class="space"></div>
+                <p class="text-secondary">Input text is text the user has entered into a text field.</p>
+                <div class="space"></div>
+
+                <h6>1. Input text</h6>
+                <p class="text-secondary">Input text is text entered by the user.</p>
+
+                <h6>2. Cursor</h6>
+                <p class="text-secondary">A cursor indicates the current location of text input in a field.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Assistive elements</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfields-annotations-3.png"></figure>
+                <div class="space"></div>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <div class="space"></div>
+                <p class="text-secondary">Assistive elements provide additional detail about text entered into text fields.</p>
+                <div class="space"></div>
+
+                <h6>1. Helper text</h6>
+                <p class="text-secondary">Helper text conveys additional guidance about the input field, such as how it will be used. It should only take up a single line, being persistently visible or visible only on focus.</p>
+
+                <h6>2. Error message</h6>
+                <p class="text-secondary">When text input isn’t accepted, an error message can display instructions on how to fix it. Error messages are displayed below the input line, replacing helper text until fixed.</p>
+
+                <h6>3. Icons</h6>
+                <p class="text-secondary">Icons can be used to message alerts as well. Pair them with error messages to provide redundant alerts, which are useful when you need to design for colorblind users.</p>
+
+                <h6>4. Character counter</h6>
+                <p class="text-secondary">Character or word counters should be used if there is a character or word limit. They display the ratio of characters used and the total character limit.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6>Error text</h6>
+                <p class="text-secondary">For text fields that validate their content (such as passwords), replace helper text with error text when applicable. Swapping helper text with error text helps prevent new lines of text from being introduced into a layout, thus bumping content to fit it.</p>
+                <ul class="text-secondary">
+                    <li>If only one error is possible, error text describes how to avoid the error</li>
+                    <li>If multiple errors are possible, error text describes how to avoid the most likely error</li>
+                </ul>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfields-anatomy-error-caution.png"></figure>
+                <p class="text-secondary">Long errors can wrap to multiple lines if there isn’t enough space to clearly describe the error. In this case, ensure padding between text fields is sufficient to prevent multi-lined errors from bumping layout content.</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Icons</h4>
+                <p class="text-secondary">Icons in text fields are optional. Text field icons can describe valid input methods (such as a microphone icon), provide affordances to access additional functionality (such as clearing the content of a field), and can express an error.</p>
+                <p class="text-secondary">Leading and trailing icons change their position based on LTR or RTL contexts.</p>
+                <div class="space"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfields-annotations-4.png"></figure>
+                <div class="space"></div>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <div class="space"></div>
+
+                <h6>1. Icon signifier</h6>
+                <p class="text-secondary">Icon signifiers can describe the type of input a text field requires, and be touch targets for nested components. For example, a calendar icon may be tapped to reveal a date picker.</p>
+
+                <h6>2. Valid or error icon</h6>
+                <p class="text-secondary">Iconography can indicate both valid and invalid inputs, making error states clear for colorblind users.</p>
+
+                <h6>3. Clear icon</h6>
+                <p class="text-secondary">Clear icons let users clear an entire input field. They appear only when input text is present.</p>
+
+                <h6>4. Voice input icon</h6>
+                <p class="text-secondary">A microphone icon signifies that users can input characters using voice.</p>
+
+                <h6>5. Dropdown icon</h6>
+                <p class="text-secondary">A dropdown arrow indicates that a text field has a nested selection component.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Filled text field</h1>
+                <div class="space"></div>
+
+                <h4>Usage</h4>
+                <p class="text-secondary">Filled text fields carry more visual emphasis, making them stand out when surrounded by other content and components.</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>States</h4>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfields-filled-states.png"></figure>
+                <p class="text-secondary">Filled text field states are inactive, activated, focused, hover, error, and disabled.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Outlined text field</h1>
+                <div class="space"></div>
+
+                <h4>Usage</h4>
+                <p class="text-secondary">Outlined text fields have less visual emphasis than filled text fields, which helps simplify layout in places like forms, where many text fields are placed together.</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>States</h4>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_text_fields/textfields-outline-states-enabled.png"></figure>
+                <p class="text-secondary">Outlined text field states are inactive, activated, focused, hover, error, and disabled.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Input types </h1>
+                <div class="space"></div>
+
+                <p class="text-secondary">Text fields can display user input in the following ways:</p>
+                <ul class="text-secondary">
+                    <li><b>Single line text fields</b> display only one line of text</li>
+                    <li><b>Multi-line text fields</b> grow to accommodate multiple lines of text</li>
+                    <li><b>Text areas</b> are fixed-height fields</li>
+                </ul>
+                <div class="space"></div>
+
+                <h6>Single-line fields</h6>
+                <p class="text-secondary">In single-line fields, as the cursor reaches the right field edge, text longer than the input line automatically scrolls left.</p>
+                <p class="text-secondary">Single-line fields are not suitable for collecting long responses. For those, use a multi-line text field or text area instead.</p>
+                <div class="space"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <h6>Multi-line fields</h6>
+                <p class="text-secondary">Multi-line text fields show all user input at once. Overflow text causes the text field to expand (shifting screen elements downward), and text wraps onto a new line.</p>
+                <p class="text-secondary">These fields initially appear as single-line fields, which is useful for compact layouts that need to be able to accomodate large amounts of text.</p>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <h6>Text areas</h6>
+                <p class="text-secondary">Text areas are taller than text fields and wrap overflow text onto a new line. They are a fixed height and scroll vertically when the cursor reaches the bottom of the field.</p>
+                <p class="text-secondary">The large initial size indicates that longer responses are possible and encouraged.</p>
+                <p class="text-secondary">These should be used instead of multi-line fields on the web. Ensure the height of a text area fits within <a href="https://material.io/devices" target="_blank">mobile screen sizes</a>.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Implementation</h1>
+                <div class="space"></div>
                 
+                <h4>Filled text field</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6">
+                <div class="mdc-text-field deep-purple-A700">
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+
+                <div class="mdc-text-field deep-purple-A700">
+                    <div class="material-icon">person</div>
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+
+                <div class="mdc-text-field deep-purple-A700">
+                    <div class="material-icon trailing">person</div>
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+            </div>
+            <div class="col xlarge-5 large-6 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-text-field deep-purple-A700">
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+
+<div class="mdc-text-field deep-purple-A700">
+    <div class="material-icon">person</div>
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+
+<div class="mdc-text-field deep-purple-A700">
+    <div class="material-icon trailing">person</div>
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col xlarge-8 medium-10">
+            <div class="mdc-divider"></div>
+        </div>
+    </div>
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h4>Outlined text field</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6">
+                <div class="mdc-text-field outlined deep-purple-A700">
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+
+                <div class="mdc-text-field outlined deep-purple-A700">
+                    <div class="material-icon">person</div>
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+
+                <div class="mdc-text-field outlined deep-purple-A700">
+                    <div class="material-icon trailing">person</div>
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+            </div>
+            <div class="col xlarge-5 large-6 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-text-field outlined deep-purple-A700">
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+
+<div class="mdc-text-field outlined deep-purple-A700">
+    <div class="material-icon">person</div>
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+
+<div class="mdc-text-field outlined deep-purple-A700">
+    <div class="material-icon trailing">person</div>
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+TEXT
+) ?></pre>
             </div>
         </div>
     </section>
