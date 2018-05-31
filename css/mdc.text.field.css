@@ -364,19 +364,28 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon.trailing +
 
 .mdc-text-field.outlined > .outline {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.5rem;
+    margin: 0 0.5rem;
+    pointer-events: none;
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity 0.15s cubic-bezier(0.4,0,.2,1);
+    border-bottom: solid 0.0625rem var(--initial-text-hint);
+}
+
+.mdc-text-field.outlined.active > .outline {
     top: -0.0625rem;
     left: -0.0625rem;
     right: -0.0625rem;
     height: 3.625rem;
     margin: 0 0.625rem;
-    pointer-events: none;
-    opacity: 0;
-    will-change: opacity;
-    transition: opacity 0.15s cubic-bezier(0.4,0,.2,1);
     border-bottom: solid 0.125rem var(--initial-text-hint);
+    opacity: 1;
 }
 
-.mdc-text-field.outlined.active > .outline,
 .mdc-text-field.outlined.focus > .outline {
     opacity: 1;
 }
@@ -385,10 +394,18 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon.trailing +
     content: '';
     position: absolute;
     top: 0;
+    left: -0.5rem;
+    bottom: -0.0625rem;
+    width: 0.4375rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+    border: solid 0.0625rem var(--initial-text-hint);
+    border-right: none;
+}
+
+.mdc-text-field.outlined.active > .outline::before {
     left: -0.625rem;
     bottom: -0.125rem;
     width: 0.5rem;
-    border-radius: 0.25rem 0 0 0.25rem;
     border: solid 0.125rem var(--initial-text-hint);
     border-right: none;
 }
@@ -397,10 +414,18 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon.trailing +
     content: '';
     position: absolute;
     top: 0;
+    right: -0.5rem;
+    bottom: -0.0625rem;
+    width: 0.4375rem;
+    border-radius: 0 0.25rem 0.25rem 0;
+    border: solid 0.0625rem var(--initial-text-hint);
+    border-left: none;
+}
+
+.mdc-text-field.outlined.active > .outline::after {
     right: -0.625rem;
     bottom: -0.125rem;
     width: 0.5rem;
-    border-radius: 0 0.25rem 0.25rem 0;
     border: solid 0.125rem var(--initial-text-hint);
     border-left: none;
 }
@@ -411,6 +436,10 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon.trailing +
     left: auto;
     right: 0;
     width: 100%;
+    border-top: solid 0.0625rem var(--initial-text-hint);
+}
+
+.mdc-text-field.outlined.active > .outline > .top {
     border-top: solid 0.125rem var(--initial-text-hint);
 }
 
