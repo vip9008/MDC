@@ -75,24 +75,6 @@
     padding: 0 1.5rem 1.5rem;
 }
 
-.mdc-dialog-container > .mdc-dialog > .title,
-html[dir="ltr"] .mdc-dialog-container > .mdc-dialog > .title,
-html[dir] .mdc-button-group[dir="ltr"] > .mdc-dialog > .title,
-.mdc-dialog-container > .mdc-dialog > .body,
-html[dir="ltr"] .mdc-dialog-container > .mdc-dialog > .body,
-html[dir] .mdc-button-group[dir="ltr"] > .mdc-dialog > .body {
-    margin-left: 0;
-    margin-right: 0.5rem;
-}
-
-html[dir="rtl"] .mdc-dialog-container > .mdc-dialog > .title,
-html[dir] .mdc-button-group[dir="rtl"] > .mdc-dialog > .title,
-html[dir="rtl"] .mdc-dialog-container > .mdc-dialog > .body,
-html[dir] .mdc-button-group[dir="rtl"] > .mdc-dialog > .body {
-    margin-left: 0.5rem;
-    margin-right: 0;
-}
-
 .mdc-dialog-container > .mdc-dialog > .mdc-button-group {
     -ms-flex-pack: end;
     justify-content: flex-end;
