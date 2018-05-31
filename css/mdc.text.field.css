@@ -359,7 +359,7 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon.trailing +
 
 .mdc-text-field.outlined > .input:focus + .label,
 .mdc-text-field.outlined.focus > .input + .label {
-    transform: translateY(-134%) scale(0.75);
+    transform: translateY(-140%) scale(0.75);
 }
 
 .mdc-text-field.outlined > .outline {
