@@ -67,7 +67,7 @@
     background-color: var(--input-focus);
 }
 
-.mdc-text-field > .input:focus {
+.mdc-text-field.active > .input {
     background-color: var(--input);
 }
 
@@ -127,7 +127,7 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label {
     transform-origin: right top;
 }
 
-.mdc-text-field > .input:focus + .label {
+.mdc-text-field.active > .input + .label {
     color: var(--text-primary);
     transform: translateY(-50%) scale(0.75);
 }
@@ -303,7 +303,7 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .material-icon.trailing +
     border-color: var(--initial-text-secondary);
 }
 
-.mdc-text-field.outlined > .input:focus,
+.mdc-text-field.outlined.active > .input,
 .mdc-text-field.outlined.focus > .input {
     border-color: transparent;
 }
@@ -324,10 +324,10 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .material-icon.trailing +
 html[dir="ltr"] .mdc-text-field.outlined > .label,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined > .label,
 html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .label,
-.mdc-text-field.outlined > .material-icon + .input:focus + .label,
-html[dir="ltr"] .mdc-text-field.outlined > .material-icon + .input:focus + .label,
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .material-icon + .input:focus + .label,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .material-icon + .input:focus + .label,
+.mdc-text-field.outlined.active > .material-icon + .input + .label,
+html[dir="ltr"] .mdc-text-field.outlined.active > .material-icon + .input + .label,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined.active > .material-icon + .input + .label,
+html[dir] *[dir] .mdc-text-field.outlined.active[dir="ltr"] > .material-icon + .input + .label,
 .mdc-text-field.outlined.focus > .material-icon + .input + .label,
 html[dir="ltr"] .mdc-text-field.outlined.focus > .material-icon + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined.focus > .material-icon + .input + .label,
@@ -343,9 +343,9 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .material-icon.trailing +
 html[dir="rtl"] .mdc-text-field.outlined > .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .label,
 html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .label,
-html[dir="rtl"] .mdc-text-field.outlined > .material-icon + .input:focus + .label,
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .material-icon + .input:focus + .label,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon + .input:focus + .label,
+html[dir="rtl"] .mdc-text-field.outlined.active > .material-icon + .input + .label,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined.active > .material-icon + .input + .label,
+html[dir] *[dir] .mdc-text-field.outlined.active[dir="rtl"] > .material-icon + .input + .label,
 html[dir="rtl"] .mdc-text-field.outlined.focus > .material-icon + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined.focus > .material-icon + .input + .label,
 html[dir] *[dir] .mdc-text-field.outlined.focus[dir="rtl"] > .material-icon + .input + .label,
@@ -357,7 +357,7 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .material-icon.trailing +
     right: 0.8125rem;
 }
 
-.mdc-text-field.outlined > .input:focus + .label,
+.mdc-text-field.outlined.active > .input + .label,
 .mdc-text-field.outlined.focus > .input + .label {
     transform: translateY(-140%) scale(0.75);
 }
@@ -464,10 +464,10 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top {
     border-color: var(--initial-text-secondary);
 }
 
-.mdc-text-field.outlined > .input:focus + .label + .outline,
-.mdc-text-field.outlined > .input:focus + .label + .outline > .top,
-.mdc-text-field.outlined > .input:focus + .label + .outline::before,
-.mdc-text-field.outlined > .input:focus + .label + .outline::after {
+.mdc-text-field.outlined.active > .input + .label + .outline,
+.mdc-text-field.outlined.active > .input + .label + .outline > .top,
+.mdc-text-field.outlined.active > .input + .label + .outline::before,
+.mdc-text-field.outlined.active > .input + .label + .outline::after {
     border-color: var(--bg-border);
 }
 
