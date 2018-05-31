@@ -1,0 +1,125 @@
+/* USING REM UNIT (BASE 16px) */
+
+.mdc-dialog-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: var(--z-axis-24-index);
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    will-change: opacity, visibility;
+    transition: opacity 0.2s cubic-bezier(0.4,0,.2,1), visibility 0.2s cubic-bezier(0.4,0,.2,1);
+    cursor: default;
+}
+
+.mdc-dialog-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mdc-dialog-container > .mdc-dialog {
+    min-width: 17.5rem;
+    max-width: 42rem;
+    width: 17.5rem;
+    text-align: initial;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    cursor: default;
+    background-color: var(--bg-cards);
+    box-shadow: var(--z-axis-24-shadow);
+    will-change: transform;
+    transition: transform 0.2s cubic-bezier(0.4,0,.2,1);
+}
+
+.mdc-dialog-container:not(.active) > .mdc-dialog {
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+}
+
+.mdc-dialog-container > .mdc-dialog > .header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0;
+}
+
+.mdc-dialog-container > .mdc-dialog > .header > .title {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.0125em;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    margin: 0;
+}
+
+.mdc-dialog-container > .mdc-dialog > .body {
+    color: var(--initial-text-secondary);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.03125em;
+    margin-top: 1.25rem;
+    padding: 0 1.5rem 1.5rem;
+}
+
+/* Custom breakpoint for dialogs only!! */
+/* MIN WIDTH = 17.5rem */
+/* MAX WIDTH = 3.5rem * 12 */
+/* width must be a multiple of 3.5rem */
+/* MIN MARGINS = 40 Left, 40 Right */
+@media (min-width: 26rem) {
+    .mdc-dialog-container > .mdc-dialog {
+        width: 21rem;
+    }
+}
+
+@media (min-width: 29.5rem) {
+    .mdc-dialog-container > .mdc-dialog {
+        width: 24.5rem;
+    }
+}
+
+@media (min-width: 33rem) {
+    .mdc-dialog-container > .mdc-dialog {
+        width: 28rem;
+    }
+}
+
+@media (min-width: 36.5rem) {
+    .mdc-dialog-container > .mdc-dialog {
+        width: 31.5rem;
+    }
+}
+
+@media (min-width: 40rem) {
+    .mdc-dialog-container > .mdc-dialog {
+        width: 35rem;
+    }
+}
+
+@media (min-width: 43.5rem) {
+    .mdc-dialog-container > .mdc-dialog {
+        width: 38.5rem;
+    }
+}
+
+@media (min-width: 47rem) {
+    .mdc-dialog-container > .mdc-dialog {
+        width: 42rem;
+    }
+}

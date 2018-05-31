@@ -71,6 +71,9 @@
 
     --boolean: rgba(0, 0, 0, 0.26);
     --boolean-disabled: #BDBDBD;
+
+    color: var(--text-primary);
+    border-color: var(--bg-border);
 }
 
 .md-theme-dark {
@@ -107,6 +110,9 @@
 
     --boolean: rgba(255, 255, 255, 0.3);
     --boolean-disabled: #424242;
+    
+    color: var(--text-primary);
+    border-color: var(--bg-border);
 }
 
 body {

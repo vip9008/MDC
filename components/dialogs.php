@@ -9,11 +9,14 @@ $css_files = [
     "css/mdc.nav.drawer.css",
     "css/mdc.top.app.bar.css",
     "css/mdc.list.css",
+    "css/mdc.button.css",
+    "css/mdc.dialog.css",
 ];
 $js_files = [
     "js/mdc.list.js",
     "js/mdc.nav.drawer.js",
     "js/mdc.top.app.bar.js",
+    "js/mdc.dialog.js",
 ];
 
 $head_title = "MDC v2";
@@ -484,6 +487,16 @@ $url = $prefix."components/dialogs.php";
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-6">
+                <button onclick="mdc_open_dialog('#dialog-1')" class="mdc-button btn-contained full-width bg-deep-purple-A700">Open test dialog</button>
+
+                <div id="dialog-1" class="mdc-dialog-container">
+                    <div class="mdc-dialog">
+                        <div class="header">
+                            <div class="title">Dialog title</div>
+                        </div>
+                        <div class="body">Titles should be succinct. They can wrap to a second line if necessary, and be truncated.</div>
+                    </div>
+                </div>
             </div>
             <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
