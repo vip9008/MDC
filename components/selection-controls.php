@@ -207,6 +207,158 @@ $url = $prefix."components/selection-controls.php";
                 <h4>Usage</h4>
             </div>
         </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <p class="text-secondary">Checkboxes allow the user to select one or more items from a set. Checkboxes can be used to turn an option on or off.</p>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_selection_controls/selectioncontrols-checkboxes-usage.png"></figure>
+                <p class="text-secondary">Selected and unselected checkboxes.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6>Parent and child checkboxes</h6>
+                <p class="text-secondary">Checkboxes can have a parent-child relationship with other checkboxes.</p>
+                <ul class="text-secondary">
+                    <li>When the parent checkbox is checked, all child checkboxes are checked</li>
+                    <li>If a parent checkbox is unchecked, all child checkboxes are unchecked</li>
+                    <li>If some, but not all, child checkboxes are checked, the parent checkbox becomes an indeterminate checkbox</li>
+                </ul>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>States</h4>
+                <p class="text-secondary">Checkboxes can be selected, unselected, or indeterminate. Checkboxes have enabled, hover, focused and pressed states.</p>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_selection_controls/selectioncontrols-checkboxes-states.png"></figure>
+                <p class="text-secondary">Checkbox states.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Radio buttons</h1>
+                <div class="space"></div>
+
+                <h4>Usage</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <p class="text-secondary">Radio buttons allow the user to select one option from a set. Use radio buttons when the user needs to see all available options. If available options can be collapsed, consider using a dropdown menu because it uses less space.</p>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_selection_controls/selectioncontrols-radio-usage.png"></figure>
+                <p class="text-secondary">Selected and unselected radio buttons</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>States</h4>
+                <p class="text-secondary">Radio buttons can be selected or unselected. Radio buttons have enabled, hover, focused and pressed states.</p>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_selection_controls/selectioncontrols-radio-states.png"></figure>
+                <p class="text-secondary">Radio button states.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Switches</h1>
+                <div class="space"></div>
+
+                <h4>Usage</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <p class="text-secondary">Switches toggle the state of a single setting on or off. They are the preferred way to adjust settings on mobile.</p>
+
+                <h6>State</h6>
+                <p class="text-secondary">A switch is successfully toggled when the user slides a switch thumb to the other side of the track, and the state of the switch changes.</p>
+
+                <h6>Text label</h6>
+                <p class="text-secondary">The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label.</p>
+                <p class="text-secondary">Avoid creating a switch that includes the text “on” and “off” within the graphic itself. The switch alone should be sufficient.</p>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_selection_controls/selectioncontrols-switches-usage.png"></figure>
+                <ol class="text-secondary">
+                    <li>Thumb</li>
+                    <li>Track</li> 
+                </lo>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Behavior</h4>
+                <p class="text-secondary">When a user toggles a switch, its corresponding action takes effect immediately. If a switch cannot be turned on, the switch will automatically turn back off.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6>Display processing status</h6>
+                <p class="text-secondary">Because a switch shows the actual status of something, sometimes there is a delay in its change of state. In such cases, a processing status animation can be used.</p>
+                <p class="text-secondary">A processing status is an animation on the thumb of the switch. For example, it can be used when a switch that controls a hardware feature experiences a delay before its final status can be confirmed.</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>States</h4>
+                <p class="text-secondary">Switches can be on or off. Switches have enabled, hover, focused, and pressed states.</p>
+                <p class="text-secondary">Display the outer radial reaction only on form factors that use touch, where interaction may obstruct the element completely.</p>
+                <p class="text-secondary">For desktop, the radial reaction isn’t needed.</p>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_selection_controls/selectioncontrols-switches-states.png"></figure>
+                <p class="text-secondary">Switch states.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Implementation</h1>
+                <div class="space"></div>
+                
+                <h4>Checkboxes</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6">
+            </div>
+            <div class="col xlarge-5 large-6 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+TEXT
+) ?></pre>
+            </div>
+        </div>
     </section>
 </div>
 
