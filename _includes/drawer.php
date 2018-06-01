@@ -80,6 +80,10 @@
                     <div class="material-icon"></div>
                     <div class="text">Dividers</div>
                 </a>
+                <a href="<?= $prefix ?>components/selection-controls.php" class="mdc-list-item">
+                    <div class="material-icon"></div>
+                    <div class="text">Selection controls</div>
+                </a>
                 <a href="<?= $prefix ?>components/lists.php" class="mdc-list-item">
                     <div class="material-icon"></div>
                     <div class="text">Lists</div>
