@@ -1,6 +1,7 @@
 /* USING REM UNIT (BASE 16px) */
 
-.mdc-checkbox {
+.mdc-checkbox,
+.mdc-radiobutton {
     display: inline-block;
     height: 2.5rem;
     width: 2.5rem;
@@ -15,16 +16,19 @@
     user-select: none;
 }
 
-.mdc-checkbox:not(.indeterminate):not(.checked) {
+.mdc-checkbox:not(.indeterminate):not(.checked),
+.mdc-radiobutton:not(.checked) {
     --main-color: var(--initial-main-color);
     --text-secondary: var(--initial-text-secondary);
 }
 
-.mdc-checkbox.disabled {
+.mdc-checkbox.disabled,
+.mdc-radiobutton.disabled {
     cursor: default;
 }
 
-.mdc-checkbox.disabled:not(.indeterminate) {
+.mdc-checkbox.disabled:not(.indeterminate),
+.mdc-radiobutton.disabled {
     --text-secondary: var(--initial-text-hint);
 }
 
@@ -32,7 +36,8 @@
     opacity: 0.38;
 }
 
-.mdc-checkbox::before {
+.mdc-checkbox::before,
+.mdc-radiobutton::before {
     position: absolute;
     top: 0;
     right: 0;
@@ -51,38 +56,42 @@
     transform: scale(0);
 }
 
-.mdc-checkbox.disabled::before {
+.mdc-checkbox.disabled::before,
+.mdc-radiobutton.disabled::before {
     display: none;
 }
 
-.mdc-checkbox:hover::before {
+.mdc-checkbox:hover::before,
+.mdc-radiobutton:hover::before {
     opacity: var(--opacity-hover);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
 }
 
-.mdc-checkbox:focus::before {
+.mdc-checkbox:focus::before,
+.mdc-radiobutton:focus::before {
     opacity: var(--opacity-focus);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
 }
 
-.mdc-checkbox:active::before {
+.mdc-checkbox:active::before,
+.mdc-radiobutton:active::before {
     opacity: var(--opacity-pressed);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
 }
 
-.mdc-checkbox::after {
+.mdc-checkbox::after,
+.mdc-radiobutton::after {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
     bottom: 0.5rem;
     left: 0.5rem;
-    content: 'check_box_outline_blank';
 
     font-family: 'Material Icons' !important;
     font-weight: normal;
@@ -102,10 +111,41 @@
     font-feature-settings: 'liga';
 }
 
+.mdc-checkbox::after {
+    content: 'check_box_outline_blank';
+}
+
 .mdc-checkbox.indeterminate::after {
     content: 'indeterminate_check_box';
 }
 
 .mdc-checkbox.checked::after {
     content: 'check_box';
+}
+
+.mdc-radiobutton::after {
+    content: 'radio_button_unchecked';
+}
+
+.mdc-radiobutton.checked::after {
+    content: 'radio_button_checked';
+}
+
+.mdc-radiobutton > input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.mdc-radiobutton > .input[disabled], .mdc-radiobutton > input:disabled {
+    cursor: default;
 }
