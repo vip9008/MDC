@@ -403,6 +403,66 @@ TEXT
 ) ?></pre>
             </div>
         </div>
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="mdc-list-group bg-cards example">
+                    <div class="mdc-list-item">
+                        <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                            <input type="hidden" value="0">
+                        </div>
+                        <div class="text">Dining</div>
+                    </div>
+                    <div class="mdc-list-item">
+                        <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                            <input type="hidden" value="1">
+                        </div>
+                        <div class="text">Education</div>
+                    </div>
+                    <div class="mdc-list-item">
+                        <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                            <input type="hidden" value="0" disabled>
+                        </div>
+                        <div class="text">Health</div>
+                    </div>
+                    <div class="mdc-list-item">
+                        <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                            <input type="hidden" value="1" disabled>
+                        </div>
+                        <div class="text">Sport</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-list-item">
+    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+        <input type="hidden" value="0">
+    </div>
+    <div class="text">Dining</div>
+</div>
+<div class="mdc-list-item">
+    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+        <input type="hidden" value="1">
+    </div>
+    <div class="text">Education</div>
+</div>
+<div class="mdc-list-item">
+    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+        <input type="hidden" value="0" disabled>
+    </div>
+    <div class="text">Health</div>
+</div>
+<div class="mdc-list-item">
+    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+        <input type="hidden" value="1" disabled>
+    </div>
+    <div class="text">Sport</div>
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
     </section>
 </div>
 

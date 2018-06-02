@@ -119,6 +119,30 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .material-icon {
     margin: 1rem 0 1rem 2rem;
 }
 
+.mdc-list-item > .mdc-checkbox {
+    margin: 0.5rem 1.5rem 0.5rem -0.5rem;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+}
+
+html[dir="ltr"] .mdc-list-item > .mdc-checkbox,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .mdc-checkbox {
+    margin: 0.5rem 1.5rem 0.5rem -0.5rem;
+}
+
+html[dir="rtl"] .mdc-list-item > .mdc-checkbox,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .mdc-checkbox {
+    margin: 0.5rem -0.5rem 0.5rem 1.5rem;
+}
+
 .mdc-list-item > .meta {
     font-size: 0.75rem;
     line-height: 1rem;
