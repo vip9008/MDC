@@ -422,9 +422,6 @@ a.material-icon::before, button.material-icon::before, .material-icon.interactiv
     -ms-transform: scale(0);
     -webkit-transform: scale(0);
     transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-transform: scale(0);
-    transform-delay: scale(0);
 }
 
 a.material-icon:hover::before, button.material-icon:hover::before, .material-icon.interactive:hover::before {

@@ -1,0 +1,111 @@
+/* USING REM UNIT (BASE 16px) */
+
+.mdc-checkbox {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    position: relative;
+    cursor: pointer;
+    color: var(--text-secondary);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.mdc-checkbox:not(.indeterminate):not(.checked) {
+    --main-color: var(--initial-main-color);
+    --text-secondary: var(--initial-text-secondary);
+}
+
+.mdc-checkbox.disabled {
+    cursor: default;
+}
+
+.mdc-checkbox.disabled:not(.indeterminate) {
+    --text-secondary: var(--initial-text-hint);
+}
+
+.mdc-checkbox.disabled.indeterminate {
+    opacity: 0.38;
+}
+
+.mdc-checkbox::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    opacity: 0;
+    border-radius: 100%;
+    z-index: 0;
+    background-color: var(--main-color);
+    will-change: opacity, transform, background-color;
+    transition: opacity 0.2s cubic-bezier(0.4,0,.2,1), transform 0.2s cubic-bezier(0.4,0,.2,1), background-color 0.2s cubic-bezier(0.4,0,.2,1);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.mdc-checkbox.disabled::before {
+    display: none;
+}
+
+.mdc-checkbox:hover::before {
+    opacity: var(--opacity-hover);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.mdc-checkbox:focus::before {
+    opacity: var(--opacity-focus);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.mdc-checkbox:active::before {
+    opacity: var(--opacity-pressed);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.mdc-checkbox::after {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    content: 'check_box_outline_blank';
+
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+
+.mdc-checkbox.indeterminate::after {
+    content: 'indeterminate_check_box';
+}
+
+.mdc-checkbox.checked::after {
+    content: 'check_box';
+}

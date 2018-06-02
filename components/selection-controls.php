@@ -9,11 +9,13 @@ $css_files = [
     "css/mdc.nav.drawer.css",
     "css/mdc.top.app.bar.css",
     "css/mdc.list.css",
+    "css/mdc.selection.control.css",
 ];
 $js_files = [
     "js/mdc.list.js",
     "js/mdc.nav.drawer.js",
     "js/mdc.top.app.bar.js",
+    "js/mdc.selection.control.js",
 ];
 
 $head_title = "MDC v2";
@@ -350,11 +352,53 @@ $url = $prefix."components/selection-controls.php";
             </div>
         </div>
         <div class="row">
-            <div class="col xlarge-3 large-4 medium-6">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="space"></div>
+
+                <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                    <input type="hidden" value="0">
+                </div>
+                <div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="-1">
+                    <input type="hidden" value="0">
+                </div>
+                <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                    <input type="hidden" value="1">
+                </div>
+
+                <div class=""></div>
+
+                <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                    <input type="hidden" value="0" disabled>
+                </div>
+                <div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="-1">
+                    <input type="hidden" value="0" disabled>
+                </div>
+                <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                    <input type="hidden" value="1" disabled>
+                </div>
             </div>
-            <div class="col xlarge-5 large-6 medium-10">
+            <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
+<div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+    <input type="hidden" value="0">
+</div>
+<div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="-1">
+    <input type="hidden" value="0">
+</div>
+<div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+    <input type="hidden" value="1">
+</div>
+
+<div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+    <input type="hidden" value="0" disabled>
+</div>
+<div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="-1">
+    <input type="hidden" value="0" disabled>
+</div>
+<div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+    <input type="hidden" value="1" disabled>
+</div>
 TEXT
 ) ?></pre>
             </div>
