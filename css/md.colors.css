@@ -30,8 +30,10 @@
     --input-focus: rgba(0, 0, 0, 0.16);
     --input-disabled: rgba(0, 0, 0, 0.02);
 
-    --boolean: rgba(0, 0, 0, 0.26);
-    --boolean-disabled: #BDBDBD;
+    --switch-rail-opacity: 0.32;
+    --switch-rail-opacity-0: 0.32;
+    --switch-disabled-opacity: 0.38;
+    --switch-color: #FFFFFF;
 
     color: var(--text-primary);
     border-color: var(--bg-border);
@@ -69,8 +71,9 @@
     --input-focus: rgba(0, 0, 0, 0.16);
     --input-disabled: rgba(0, 0, 0, 0.02);
 
-    --boolean: rgba(0, 0, 0, 0.26);
-    --boolean-disabled: #BDBDBD;
+    --switch-rail-opacity: 0.32;
+    --switch-rail-opacity-0: 0.32;
+    --switch-color: #FFFFFF;
 
     color: var(--text-primary);
     border-color: var(--bg-border);
@@ -108,8 +111,9 @@
     --input-focus: rgba(255, 255, 255, 0.24);
     --input-disabled: rgba(255, 255, 255, 0.04);
 
-    --boolean: rgba(255, 255, 255, 0.3);
-    --boolean-disabled: #424242;
+    --switch-rail-opacity: 0.38;
+    --switch-rail-opacity-0: 0.38;
+    --switch-color: #FAFAFA;
     
     color: var(--text-primary);
     border-color: var(--bg-border);
@@ -2970,11 +2974,15 @@ body {
 }
 
 .red-50, .red-100, .red-200, .red-300, .red-A100, .pink-50, .pink-100, .pink-200, .pink-A100, .purple-50, .purple-100, .purple-200, .purple-A100, .deep-purple-50, .deep-purple-100, .deep-purple-200, .deep-purple-A100, .indigo-50, .indigo-100, .indigo-200, .indigo-A100, .blue-50, .blue-100, .blue-200, .blue-300, .blue-400, .blue-A100, .light-blue-50, .light-blue-100, .light-blue-200, .light-blue-300, .light-blue-400, .light-blue, .light-blue-500, .light-blue-A100, .light-blue-A200, .light-blue-A400, .cyan-50, .cyan-100, .cyan-200, .cyan-300, .cyan-400, .cyan, .cyan-500, .cyan-600, .cyan-A100, .cyan-A200, .cyan-A400, .cyan-A700, .teal-50, .teal-100, .teal-200, .teal-300, .teal-400, .teal-A100, .teal-A200, .teal-A400, .teal-A700, .green-50, .green-100, .green-200, .green-300, .green-400, .green, .green-500, .green-A100, .green-A200, .green-A400, .green-A700, .light-green-50, .light-green-100, .light-green-200, .light-green-300, .light-green-400, .light-green, .light-green-500, .light-green-600, .light-green-A100, .light-green-A200, .light-green-A400, .light-green-A700, .lime-50, .lime-100, .lime-200, .lime-300, .lime-400, .lime, .lime-500, .lime-600, .lime-700, .lime-800, .lime-A100, .lime-A200, .lime-A400, .lime-A700, .yellow-50, .yellow-100, .yellow-200, .yellow-300, .yellow-400, .yellow, .yellow-500, .yellow-600, .yellow-700, .yellow-800, .yellow-900, .yellow-A100, .yellow-A200, .yellow-A400, .yellow-A700, .amber-50, .amber-100, .amber-200, .amber-300, .amber-400, .amber, .amber-500, .amber-600, .amber-700, .amber-800, .amber-900, .amber-A100, .amber-A200, .amber-A400, .amber-A700, .orange-50, .orange-100, .orange-200, .orange-300, .orange-400, .orange, .orange-500, .orange-600, .orange-700, .orange-A100, .orange-A200, .orange-A400, .orange-A700, .deep-orange-50, .deep-orange-100, .deep-orange-200, .deep-orange-300, .deep-orange-400, .deep-orange-A100, .deep-orange-A200, .brown-50, .brown-100, .brown-200, .grey-50, .grey-100, .grey-200, .grey-300, .grey-400, .grey, .grey-500, .blue-grey-50, .blue-grey-100, .blue-grey-200, .blue-grey-300, .white {
+    --switch-rail-opacity: 0.5;
+
     color: var(--text-primary);
     border-color: var(--bg-border);
 }
 
 .red-400, .red, .red-500, .red-600, .red-700, .red-800, .red-900, .red-A200, .red-A400, .red-A700, .pink-300, .pink-400, .pink, .pink-500, .pink-600, .pink-700, .pink-800, .pink-900, .pink-A200, .pink-A400, .pink-A700, .purple-300, .purple-400, .purple, .purple-500, .purple-600, .purple-700, .purple-800, .purple-900, .purple-A200, .purple-A400, .purple-A700, .deep-purple-300, .deep-purple-400, .deep-purple, .deep-purple-500, .deep-purple-600, .deep-purple-700, .deep-purple-800, .deep-purple-900, .deep-purple-A200, .deep-purple-A400, .deep-purple-A700, .indigo-300, .indigo-400, .indigo, .indigo-500, .indigo-600, .indigo-700, .indigo-800, .indigo-900, .indigo-A200, .indigo-A400, .indigo-A700, .blue, .blue-500, .blue-600, .blue-700, .blue-800, .blue-900, .blue-A200, .blue-A400, .blue-A700, .light-blue-600, .light-blue-700, .light-blue-800, .light-blue-900, .light-blue-A700, .cyan-700, .cyan-800, .cyan-900, .teal, .teal-500, .teal-600, .teal-700, .teal-800, .teal-900, .green-600, .green-700, .green-800, .green-900, .light-green-700, .light-green-800, .light-green-900, .lime-900, .orange-800, .orange-900, .deep-orange, .deep-orange-500, .deep-orange-600, .deep-orange-700, .deep-orange-800, .deep-orange-900, .deep-orange-A400, .deep-orange-A700, .brown-300, .brown-400, .brown, .brown-500, .brown-600, .brown-700, .brown-800, .brown-900, .grey-600, .grey-700, .grey-800, .grey-900, .blue-grey-400, .blue-grey, .blue-grey-500, .blue-grey-600, .blue-grey-700, .blue-grey-800, .blue-grey-900, .black {
+    --switch-rail-opacity: 0.5;
+    
     color: var(--text-primary);
     border-color: var(--bg-border);
 }
@@ -5050,11 +5058,10 @@ body {
     --initial-text-hint: rgba(0, 0, 0, 0.38);
     --initial-text-divider: rgba(0, 0, 0, 0.12);
 
-    --input: rgba(0, 0, 0, 0.06);
-    --input-hover: rgba(0, 0, 0, 0.07);
-    --input-disabled: rgba(0, 0, 0, 0.04);
-    --boolean: rgba(0, 0, 0, 0.26);
-    --boolean-disabled: #BDBDBD;
+    --input: rgba(0, 0, 0, 0.04);
+    --input-hover: rgba(0, 0, 0, 0.12);
+    --input-focus: rgba(0, 0, 0, 0.16);
+    --input-disabled: rgba(0, 0, 0, 0.02);
 
     color: var(--text-primary);
     background-color: var(--bg-cards);
@@ -5082,11 +5089,10 @@ body {
     --initial-text-hint: rgba(255, 255, 255, 0.5);
     --initial-text-divider: rgba(255, 255, 255, 0.12);
 
-    --input: rgba(255, 255, 255, 0.1);
-    --input-hover: rgba(255, 255, 255, 0.1);
-    --input-disabled: rgba(255, 255, 255, 0.06);
-    --boolean: rgba(255, 255, 255, 0.3);
-    --boolean-disabled: #424242;
+    --input: rgba(255, 255, 255, 0.08);
+    --input-hover: rgba(255, 255, 255, 0.16);
+    --input-focus: rgba(255, 255, 255, 0.24);
+    --input-disabled: rgba(255, 255, 255, 0.04);
 
     color: var(--text-primary);
     background-color: var(--bg-cards);

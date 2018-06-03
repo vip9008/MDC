@@ -31,10 +31,10 @@
                        0 0.125rem 0.0625rem -0.0625rem rgba(0, 0, 0, 0.12);
     --z-axis-2-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.2),
                        0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14),
-                       0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.12);;
+                       0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.12);
     --z-axis-3-shadow: 0 0625rem 0.5rem 0 rgba(0, 0, 0, 0.2),
                        0 0.1875rem 0.25rem 0 rgba(0, 0, 0, 0.14),
-                       0 0.1875rem 0.1875rem -0.125rem rgba(0, 0, 0, 0.12);;
+                       0 0.1875rem 0.1875rem -0.125rem rgba(0, 0, 0, 0.12);
     --z-axis-4-shadow: 0 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.2),
                        0 0.25rem 0.3125rem 0 rgba(0, 0, 0, 0.14),
                        0 0.0625rem 0.625rem 0 rgba(0, 0, 0, 0.12);

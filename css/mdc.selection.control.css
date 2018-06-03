@@ -23,7 +23,8 @@
 }
 
 .mdc-checkbox.disabled,
-.mdc-radiobutton.disabled {
+.mdc-radiobutton.disabled,
+.mdc-switch.disabled {
     cursor: default;
 }
 
@@ -32,12 +33,14 @@
     --text-secondary: var(--initial-text-hint);
 }
 
-.mdc-checkbox.disabled.indeterminate {
+.mdc-checkbox.disabled.indeterminate,
+.mdc-switch.disabled {
     opacity: 0.38;
 }
 
 .mdc-checkbox::before,
-.mdc-radiobutton::before {
+.mdc-radiobutton::before,
+.mdc-switch::before {
     position: absolute;
     top: 0;
     right: 0;
@@ -57,12 +60,14 @@
 }
 
 .mdc-checkbox.disabled::before,
-.mdc-radiobutton.disabled::before {
+.mdc-radiobutton.disabled::before,
+.mdc-switch.disabled::before {
     display: none;
 }
 
 .mdc-checkbox:hover::before,
-.mdc-radiobutton:hover::before {
+.mdc-radiobutton:hover::before,
+.mdc-switch:hover::before {
     opacity: var(--opacity-hover);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
@@ -70,7 +75,8 @@
 }
 
 .mdc-checkbox:focus::before,
-.mdc-radiobutton:focus::before {
+.mdc-radiobutton:focus::before,
+.mdc-switch:focus::before {
     opacity: var(--opacity-focus);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
@@ -78,7 +84,8 @@
 }
 
 .mdc-checkbox:active::before,
-.mdc-radiobutton:active::before {
+.mdc-radiobutton:active::before,
+.mdc-switch:active::before {
     opacity: var(--opacity-pressed);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
@@ -148,4 +155,118 @@
 
 .mdc-radiobutton > .input[disabled], .mdc-radiobutton > input:disabled {
     cursor: default;
+}
+
+.mdc-switch {
+    display: inline-block;
+    height: 2.5rem;
+    width: 3rem;
+    position: relative;
+    cursor: pointer;
+    padding: 0.8125rem 0.5625rem;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.mdc-switch:not(.checked) {
+    --main-color: var(--initial-main-color);
+    --switch-rail-opacity: var(--switch-rail-opacity-0);
+}
+
+.mdc-switch::before {
+    width: 2.5rem;
+    left: -0.25rem;
+    right: auto;
+    will-change: left, right, opacity, transform, background-color;
+    transition: left 0.2s cubic-bezier(0.4,0,.2,1), right 0.2s cubic-bezier(0.4,0,.2,1), opacity 0.2s, transform 0.2s, background-color 0.2s;
+}
+
+html[dir="ltr"] .mdc-switch::before,
+html[dir] *[dir="ltr"] > .mdc-switch::before {
+    left: -0.25rem;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-switch::before,
+html[dir] *[dir="rtl"] > .mdc-switch::before {
+    left: auto;
+    right: -0.25rem;
+}
+
+.mdc-switch.checked::before {
+    left: 0.75rem;
+    right: auto;
+}
+
+html[dir="ltr"] .mdc-switch.checked::before,
+html[dir] *[dir="ltr"] > .mdc-switch.checked::before {
+    left: 0.75rem;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-switch.checked::before,
+html[dir] *[dir="rtl"] > .mdc-switch.checked::before {
+    left: auto;
+    right: 0.75rem;
+}
+
+.mdc-switch::after {
+    content: '';
+    position: absolute;
+    top: 0.625rem;
+    left: 0.375rem;
+    right: auto;
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    box-shadow: var(--z-axis-2-shadow);
+    will-change: left, right, background-color;
+    transition: left 0.2s cubic-bezier(0.4,0,.2,1), right 0.2s cubic-bezier(0.4,0,.2,1), background-color 0.2s;
+}
+
+html[dir="ltr"] .mdc-switch::after,
+html[dir] *[dir="ltr"] > .mdc-switch::after {
+    left: 0.375rem;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-switch::after,
+html[dir] *[dir="rtl"] > .mdc-switch::after {
+    left: auto;
+    right: 0.375rem;
+}
+
+.mdc-switch.checked::after {
+    left: 1.375rem;
+    right: auto;
+}
+
+html[dir="ltr"] .mdc-switch.checked::after,
+html[dir] *[dir="ltr"] > .mdc-switch.checked::after {
+    left: 1.375rem;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-switch.checked::after,
+html[dir] *[dir="rtl"] > .mdc-switch.checked::after {
+    left: auto;
+    right: 1.375rem;
+}
+
+.mdc-switch:not(.checked)::after {
+    background-color: var(--switch-color);
+}
+
+.mdc-switch > .rail {
+    display: block;
+    height: 0.875rem;
+    border-radius: 0.875rem;
+    background-color: var(--main-color);
+    opacity: var(--switch-rail-opacity);
 }

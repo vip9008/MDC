@@ -573,6 +573,132 @@ TEXT
 ) ?></pre>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col xlarge-8 large-10 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+                
+                <h4>Switches</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="space"></div>
+
+                <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                    <div class="rail"></div>
+                    <input type="hidden" value="0">
+                </div>
+                <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                    <div class="rail"></div>
+                    <input type="hidden" value="1">
+                </div>
+
+                <div class=""></div>
+
+                <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                    <div class="rail"></div>
+                    <input type="hidden" value="0" disabled>
+                </div>
+                <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                    <div class="rail"></div>
+                    <input type="hidden" value="1" disabled>
+                </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-switch deep-purple-A700" tabindex="-1">
+    <div class="rail"></div>
+    <input type="hidden" value="0">
+</div>
+<div class="mdc-switch deep-purple-A700" tabindex="-1">
+    <div class="rail"></div>
+    <input type="hidden" value="1">
+</div>
+
+<div class="mdc-switch deep-purple-A700" tabindex="-1">
+    <div class="rail"></div>
+    <input type="hidden" value="0" disabled>
+</div>
+<div class="mdc-switch deep-purple-A700" tabindex="-1">
+    <div class="rail"></div>
+    <input type="hidden" value="1" disabled>
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="space"></div>
+
+                <div class="mdc-list-item">
+                    <div class="text">Dining</div>
+                    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                        <div class="rail"></div>
+                        <input type="hidden" value="0">
+                    </div>
+                </div>
+                <div class="mdc-list-item">
+                    <div class="text">Education</div>
+                    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                        <div class="rail"></div>
+                        <input type="hidden" value="1">
+                    </div>
+                </div>
+                <div class="mdc-list-item">
+                    <div class="text">Health</div>
+                    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                        <div class="rail"></div>
+                        <input type="hidden" value="0" disabled>
+                    </div>
+                </div>
+                <div class="mdc-list-item">
+                    <div class="text">Sport</div>
+                    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                        <div class="rail"></div>
+                        <input type="hidden" value="1" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-list-item">
+    <div class="text">Dining</div>
+    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+        <div class="rail"></div>
+        <input type="hidden" value="0">
+    </div>
+</div>
+<div class="mdc-list-item">
+    <div class="text">Education</div>
+    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+        <div class="rail"></div>
+        <input type="hidden" value="1">
+    </div>
+</div>
+<div class="mdc-list-item">
+    <div class="text">Health</div>
+    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+        <div class="rail"></div>
+        <input type="hidden" value="0" disabled>
+    </div>
+</div>
+<div class="mdc-list-item">
+    <div class="text">Sport</div>
+    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+        <div class="rail"></div>
+        <input type="hidden" value="1" disabled>
+    </div>
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
     </section>
 </div>
 

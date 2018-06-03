@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.mdc-checkbox').each(function() {
+    $('.mdc-checkbox, .mdc-switch').each(function() {
         if ($(this).children('input').prop('disabled')) {
             $(this).addClass('disabled');
         }
@@ -9,7 +9,7 @@ $(document).ready(function() {
         }
     });
     
-    $('body').on('click', '.mdc-checkbox', function(event) {
+    $('body').on('click', '.mdc-checkbox, .mdc-switch', function(event) {
         if ($(this).children('input').prop('disabled')) {
             return false;
         }
