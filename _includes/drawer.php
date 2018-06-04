@@ -93,8 +93,8 @@
                 </div>
             </div>
             <div class="mdc-dropdown">
-                <a href="<?= $prefix ?>components/buttons.php" class="mdc-list-item">
-                    <div class="text">Buttons</div>
+                <a href="<?= $prefix ?>usability/accessibility.php" class="mdc-list-item">
+                    <div class="text">Accessibility</div>
                 </a>
             </div>
         </div>
