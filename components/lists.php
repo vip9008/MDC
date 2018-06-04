@@ -621,7 +621,9 @@ TEXT
                         <div class="mdc-list-item interactive deep-purple-A700">
                             <div class="material-icon text-secondary">restaurant_menu</div>
                             <div class="text">Dining</div>
-                            <div class="meta material-icon">keyboard_arrow_down</div>
+                            <div class="meta material-icon">
+                                <div class="material-icon">keyboard_arrow_down</div>
+                            </div>
                         </div>
                         <div class="mdc-dropdown">
                             <div class="mdc-list-item">
@@ -646,7 +648,9 @@ TEXT
                         <div class="mdc-list-item interactive deep-purple-A700">
                             <div class="material-icon text-secondary">edit</div>
                             <div class="text">Education</div>
-                            <div class="meta material-icon">keyboard_arrow_down</div>
+                            <div class="meta material-icon">
+                                <div class="material-icon">keyboard_arrow_down</div>
+                            </div>
                         </div>
                         <div class="mdc-dropdown">
                             <div class="mdc-list-item">
@@ -667,7 +671,9 @@ TEXT
                         <div class="mdc-list-item interactive deep-purple-A700">
                             <div class="material-icon text-secondary">favorite</div>
                             <div class="text">Health</div>
-                            <div class="meta material-icon">keyboard_arrow_down</div>
+                            <div class="meta material-icon">
+                                <div class="material-icon">keyboard_arrow_down</div>
+                            </div>
                         </div>
                         <div class="mdc-dropdown">
                             <div class="mdc-list-item">
@@ -695,7 +701,9 @@ TEXT
             <div class="mdc-list-item interactive">
                 <div class="material-icon text-secondary">restaurant_menu</div>
                 <div class="text">Dining</div>
-                <div class="meta material-icon">keyboard_arrow_down</div>
+                <div class="meta material-icon">
+                    <div class="material-icon">keyboard_arrow_down</div>
+                </div>
             </div>
             <div class="mdc-dropdown">
                 <div class="mdc-list-item">

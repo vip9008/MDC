@@ -6,7 +6,9 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Environment</div>
-                <div class="meta material-icon">keyboard_arrow_down</div>
+                <div class="meta material-icon">
+                    <div class="material-icon">keyboard_arrow_down</div>
+                </div>
             </div>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>environment/elevation.php" class="mdc-list-item">
@@ -20,7 +22,9 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Color</div>
-                <div class="meta material-icon">keyboard_arrow_down</div>
+                <div class="meta material-icon">
+                    <div class="material-icon">keyboard_arrow_down</div>
+                </div>
             </div>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>color/the-color-system.php" class="mdc-list-item">
@@ -40,7 +44,9 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Typography</div>
-                <div class="meta material-icon">keyboard_arrow_down</div>
+                <div class="meta material-icon">
+                    <div class="material-icon">keyboard_arrow_down</div>
+                </div>
             </div>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>typography/the-type-system.php" class="mdc-list-item">
@@ -54,7 +60,9 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Components</div>
-                <div class="meta material-icon">keyboard_arrow_down</div>
+                <div class="meta material-icon">
+                    <div class="material-icon">keyboard_arrow_down</div>
+                </div>
             </div>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>components/buttons.php" class="mdc-list-item">
@@ -74,6 +82,19 @@
                 </a>
                 <a href="<?= $prefix ?>components/text-fields.php" class="mdc-list-item">
                     <div class="text">Text fields</div>
+                </a>
+            </div>
+        </div>
+        <div class="mdc-list-group collapsed">
+            <div class="mdc-list-item interactive <?= $primaryColor ?>">
+                <div class="text">Usability</div>
+                <div class="meta material-icon">
+                    <div class="material-icon">keyboard_arrow_down</div>
+                </div>
+            </div>
+            <div class="mdc-dropdown">
+                <a href="<?= $prefix ?>components/buttons.php" class="mdc-list-item">
+                    <div class="text">Buttons</div>
                 </a>
             </div>
         </div>

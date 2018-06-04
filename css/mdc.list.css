@@ -200,6 +200,11 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta.material-icon 
     padding-right: 1rem;
 }
 
+.mdc-list-item > .meta.material-icon > .material-icon {
+    will-change: transform;
+    transition: transform 365ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mdc-list-item > .meta > a,
 .mdc-list-item > .meta > button {
     margin: 0;
@@ -428,6 +433,10 @@ html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
 .mdc-list-group.collapsed > .mdc-list-item > .meta.material-icon,
 .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon {
     color: var(--initial-text-secondary);
+}
+
+.mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon {
+    transform: rotate(180deg);
 }
 
 .mdc-list-group.collapsed > .mdc-dropdown {
