@@ -395,9 +395,13 @@ $url = $prefix."components/lists.php";
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="text">Dining</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="text">Dining</div>
+        </div>
+        .
+        .
     </div>
     .
     .
@@ -428,10 +432,14 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="text">Dining</div>
-        <div class="meta material-icon">star</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="text">Dining</div>
+            <div class="meta material-icon">star</div>
+        </div>
+        .
+        .
     </div>
     .
     .
@@ -462,10 +470,14 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="material-icon">restaurant_menu</div>
-        <div class="text">Dining</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="material-icon">restaurant_menu</div>
+            <div class="text">Dining</div>
+        </div>
+        .
+        .
     </div>
     .
     .
@@ -499,11 +511,15 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="graphic material-icon">folder</div>
-        <div class="text">Photos</div>
-        <div class="meta material-icon">info</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="graphic material-icon">folder</div>
+            <div class="text">Photos</div>
+            <div class="meta material-icon">info</div>
+        </div>
+        .
+        .
     </div>
     .
     .
@@ -537,11 +553,15 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="graphic md-56" style="background-image: url('...');"></div>
-        <div class="text">Pencil</div>
-        <div class="meta">in stock</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="graphic md-56" style="background-image: url('...');"></div>
+            <div class="text">Pencil</div>
+            <div class="meta">in stock</div>
+        </div>
+        .
+        .
     </div>
     .
     .
@@ -575,11 +595,15 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="graphic md-100" style="background-image: url('...');"></div>
-        <div class="text">Crunchy Croissants</div>
-        <div class="meta">01</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="graphic md-100" style="background-image: url('...');"></div>
+            <div class="text">Crunchy Croissants</div>
+            <div class="meta">01</div>
+        </div>
+        .
+        .
     </div>
     .
     .
@@ -665,22 +689,25 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-group collapsed">
-        <div class="mdc-list-item interactive">
-            <div class="material-icon text-secondary">restaurant_menu</div>
-            <div class="text">Dining</div>
-            <div class="meta material-icon">keyboard_arrow_down</div>
-        </div>
-        <div class="mdc-dropdown">
-            <div class="mdc-list-item">
-                <div class="material-icon"></div>
-                <div class="text">Breakfast & brunch</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-group collapsed">
+            <div class="mdc-list-item interactive">
+                <div class="material-icon text-secondary">restaurant_menu</div>
+                <div class="text">Dining</div>
+                <div class="meta material-icon">keyboard_arrow_down</div>
             </div>
-            .
-            .
-            .
+            <div class="mdc-dropdown">
+                <div class="mdc-list-item">
+                    <div class="material-icon"></div>
+                    <div class="text">Breakfast & brunch</div>
+                </div>
+                .
+                .
+            </div>
         </div>
+        .
+        .
     </div>
     .
     .
@@ -728,12 +755,16 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item interactive">
-        <div class="text">
-            Search engine
-            <div class="secondary">Google</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item interactive">
+            <div class="text">
+                Search engine
+                <div class="secondary">Google</div>
+            </div>
         </div>
+        .
+        .
     </div>
     .
     .
@@ -770,12 +801,16 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="text">
-            <div class="overline">April 14</div>
-            Family camp
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="text">
+                <div class="overline">April 14</div>
+                Family camp
+            </div>
         </div>
+        .
+        .
     </div>
     .
     .
@@ -815,13 +850,17 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="text">
-            Pencil
-            <div class="secondary">in stock</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="text">
+                Pencil
+                <div class="secondary">in stock</div>
+            </div>
+            <div class="meta">$1.5</div>
         </div>
-        <div class="meta">$1.5</div>
+        .
+        .
     </div>
     .
     .
@@ -861,13 +900,17 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="material-icon">wifi</div>
-        <div class="text">
-            Wi-Fi
-            <div class="secondary">Main Office</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="material-icon">wifi</div>
+            <div class="text">
+                Wi-Fi
+                <div class="secondary">Main Office</div>
+            </div>
         </div>
+        .
+        .
     </div>
     .
     .
@@ -916,16 +959,20 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="graphic material-icon">folder</div>
-        <div class="text">
-            Photos
-            <div class="secondary">Jan 9, 2018</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="graphic material-icon">folder</div>
+            <div class="text">
+                Photos
+                <div class="secondary">Jan 9, 2018</div>
+            </div>
+            <div class="meta material-icon">
+                <button class="material-icon">info</button>
+            </div>
         </div>
-        <div class="meta material-icon">
-            <button class="material-icon">info</button>
-        </div>
+        .
+        .
     </div>
     .
     .
@@ -968,14 +1015,18 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="graphic md-56" style="background-image: url('...');"></div>
-        <div class="text">
-            Pencil
-            <div class="secondary">in stock</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="graphic md-56" style="background-image: url('...');"></div>
+            <div class="text">
+                Pencil
+                <div class="secondary">in stock</div>
+            </div>
+            <div class="meta">$1.5</div>
         </div>
-        <div class="meta">$1.5</div>
+        .
+        .
     </div>
     .
     .
@@ -1018,14 +1069,18 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group">
-    <div class="mdc-list-item">
-        <div class="graphic md-100" style="background-image: url('...');"></div>
-        <div class="text">
-            Crunchy Croissants
-            <div class="secondary">Breakfast delight</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-item">
+            <div class="graphic md-100" style="background-image: url('...');"></div>
+            <div class="text">
+                Crunchy Croissants
+                <div class="secondary">Breakfast delight</div>
+            </div>
+            <div class="meta">01</div>
         </div>
-        <div class="meta">01</div>
+        .
+        .
     </div>
     .
     .
@@ -1089,17 +1144,21 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group md-3line">
-    <div class="mdc-list-item interactive">
-        <div class="graphic material-icon">person</div>
-        <div class="text">
-            Summer BBQ
-            <div class="secondary">
-                <span class="text-primary">Ali Connors</span>
-                - I'll be in your neighborhood doing errands this weekend. Do you want ...
+<div class="mdc-list-container">
+    <div class="mdc-list-group md-3line">
+        <div class="mdc-list-item interactive">
+            <div class="graphic material-icon">person</div>
+            <div class="text">
+                Summer BBQ
+                <div class="secondary">
+                    <span class="text-primary">Ali Connors</span>
+                    - I'll be in your neighborhood doing errands this weekend. Do you want ...
+                </div>
             </div>
+            <div class="meta">15 mins</div>
         </div>
-        <div class="meta">15 mins</div>
+        .
+        .
     </div>
     .
     .
@@ -1142,14 +1201,18 @@ TEXT
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-list-group md-3line">
-    <div class="mdc-list-item">
-        <div class="graphic md-100" style="background-image: url('...');"></div>
-        <div class="text">
-            Crunchy Croissants
-            <div class="secondary">Buttery, flaky pastry named for its crecent shape.</div>
+<div class="mdc-list-container">
+    <div class="mdc-list-group md-3line">
+        <div class="mdc-list-item">
+            <div class="graphic md-100" style="background-image: url('...');"></div>
+            <div class="text">
+                Crunchy Croissants
+                <div class="secondary">Buttery, flaky pastry named for its crecent shape.</div>
+            </div>
+            <div class="meta">01</div>
         </div>
-        <div class="meta">01</div>
+        .
+        .
     </div>
     .
     .
