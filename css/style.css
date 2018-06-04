@@ -51,8 +51,18 @@ pre.html .hljs-string {
     border: solid 0.0625rem var(--initial-text-divider);
 }
 
-#mdc-nav-drawer .mdc-list-group > .mdc-dropdown > a.mdc-list-item > .material-icon {
-    margin: 0.75rem 2rem 0.75rem 0;
+#mdc-nav-drawer a.mdc-list-item:not(.active) {
+    --text-primary: var(--initial-text-primary);
+}
+
+#mdc-nav-drawer .mdc-list-group.expanded > .mdc-dropdown {
+    padding: 0.5rem 0 1rem;
+}
+
+#mdc-nav-drawer .mdc-list-group > .mdc-dropdown > a.mdc-list-item > .text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0.5rem 0;
 }
 
 .space {
