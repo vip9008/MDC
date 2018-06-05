@@ -96,6 +96,9 @@
                 <a href="<?= $prefix ?>usability/accessibility.php" class="mdc-list-item">
                     <div class="text">Accessibility</div>
                 </a>
+                <a href="<?= $prefix ?>usability/bidirectionality.php" class="mdc-list-item">
+                    <div class="text">Bidirectionality</div>
+                </a>
             </div>
         </div>
     </div>
