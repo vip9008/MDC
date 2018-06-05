@@ -133,5 +133,31 @@ $url = $prefix."typography/language-support.php";
         </div>
     </section>
 </div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Noto guidance</h1>
+                <div class="space"></div>
+
+                <p class="text-secondary">Noto is the default typeface for all languages not covered by Roboto. Derived from Droid, it’s designed to be visually harmonious across languages and scripts with compatible heights and stroke thicknesses.</p>
+                <p class="text-secondary">The family has 93 scripts defined in Unicode version 6.0.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Dense script considerations</h4>
+                <p class="text-secondary">Noto Chinese, Japanese, and Korean (CJK) have seven weights that match Roboto, with the same weight settings as English.</p>
+                <p class="text-secondary">Type sizes smaller than title styles should make adjustments to the Latin type scale.</p>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/typography_language_support/noto-dense.png"></figure>
+                <p class="text-secondary">Chinese and Japanese</p>
+                <div class="space"></div>
+            </div>
+        </div>
+    </section>
+</div>
+
 </body>
 </html>
