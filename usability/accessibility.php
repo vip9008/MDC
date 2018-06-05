@@ -248,6 +248,326 @@ $url = $prefix."usability/accessibility.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Layout and typography</h1>
                 <p class="text-secondary">Material Design’s touch target guidelines enable users who aren’t able to see the screen, or who have difficulty with small touch targets, to tap elements in your app.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Touch and pointer targets</h4>
+
+                <h6>Touch targets</h6>
+                <p class="text-secondary">Touch targets are the parts of the screen that respond to user input. They extend beyond the visual bounds of an element. For example, an icon may appear to be 24 x 24 dp, but the padding surrounding it comprises the full 48 x 48 dp touch target.</p>
+                <p class="text-secondary">Touch targets should be at least 48 x 48 dp. A touch target of this size results in a physical size of about 9mm, regardless of screen size. The recommended target size for touchscreen elements is 7-10mm. It may be appropriate to use larger touch targets to accommodate a larger spectrum of users.</p>
+                
+                <h6>Pointer targets</h6>
+                <p class="text-secondary">Pointer targets are similar to touch targets, but apply to the use of motion-tracking pointer devices such as a mouse or a stylus. Pointer targets should be at least 44 x 44 dp.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-layout1.png"></figure>
+                <p class="text-secondary">
+                    Avatar: 40dp<br>
+                    Icon:40dp<br>
+                    Touch target on both: 48dp
+                </p>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-layout2.png"></figure>
+                <p class="text-secondary">Touch targets</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6>Touch target spacing</h6>
+                <p class="text-secondary">In most cases, touch targets should be separated by 8dp of space or more to ensure balanced information density and usability.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-layout3.png"></figure>
+                <p class="text-secondary">
+                    Touch target height: 48dp<br>
+                    Button height: 36dp
+                </p>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-layout4.png"></figure>
+                <p class="text-secondary">Touch targets and buttons</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Layout</h4>
+
+                <h6>Responsive layouts</h6>
+                <p class="text-secondary">Flexible, responsive layouts help content scale in relation to the screen size. Content shouldn’t be truncated as a result of device type or resolution.</p>
+                
+                <h6>Grouping items</h6>
+                <p class="text-secondary">Keeping related items in proximity to one another is helpful for those who have low vision or have trouble focusing on the screen.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-layout5-do.png"></figure>
+                <p class="text-secondary">The slider value is in close proximity with the slider control.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Typography</h4>
+
+                <h6>Fonts</h6>
+                <p class="text-secondary">To improve readability, users might increase font size. Mobile devices and browsers include features to allow users to adjust font size system-wide. To enable system font size in an Android app, mark text and their associated containers to be measured in scaleable pixels (sp).</p>
+                <p class="text-secondary">Make sure to allot enough space for large and foreign language fonts. See <a href="<?= $prefix ?>typography/language-support.php">Line Height</a> for information on the recommended sizes of foreign language fonts.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Writing</h1>
+                <div class="space"></div>
+
+                <h4>Accessibility text</h4>
+                <p class="text-secondary">Clear and helpful accessibility text is one of the primary ways to make UIs more accessible. Accessibility text refers to text that is used by screen reader accessibility software, such as TalkBack on Android, VoiceOver on iOS, and JAWS on desktop. Screen readers read all text and elements (such as buttons) on screen aloud, including both visible and nonvisible alternative text.</p>
+
+                <h6>Visible and nonvisible text</h6>
+                <p class="text-secondary">Accessibility text includes both visible text (including labels for UI elements, text on buttons, links, and forms) and nonvisible descriptions that don’t appear on screen (such as alternative text for buttons with icons). Sometimes, an on-screen label may be overridden with accessibility text to provide more information to the user.</p>
+                <p class="text-secondary">Both visible and nonvisible text should be descriptive and meaningful, as some users navigate by using all headings or links on a screen. Test your app with a screen reader to identify areas that are missing or need better accessibility text.</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Be succinct</h4>
+                <p class="text-secondary">Keep content and accessibility text short and to the point. Screen reader users hear every UI element read aloud. The shorter the text, the faster the screen reader users can navigate it.</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Avoid stating control type or state</h4>
+                <p class="text-secondary">Screen readers may automatically announce a control’s type or state through a sound or by speaking the control name before or after the accessibility text.</p>
+                <div class="space"></div>
+
+                <h6>Developer note</h6>
+                <p class="text-secondary">If the control type or state isn’t being read correctly, the control’s accessibility role may be improperly set or be a custom control.</p>
+                <p class="text-secondary">Every element should have an associated accessibility role on a website or be coded to be announced properly. This means a button should be set as a button, and a checkbox as a checkbox, so that the control’s type or state is communicated correctly to the user.</p>
+
+                <h6>Native elements</h6>
+                <p class="text-secondary">If you extend or inherit from a native UI element, you will get the correct role. If not, you can override this information for accessibility on each platform <a href="https://www.w3.org/WAI/intro/aria" target="_blank">ARIA</a> for web, crosslink AccessibilityNodeInfo| https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo> for Android. On Android, set the class name field of the control’s AccessibilityNodeInfo to "android.widget.Button".</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Indicate what an element does</h4>
+                <p class="text-secondary">Use action verbs to indicate what an element or link does, not what an element looks like, so a visually impaired person can understand.</p>
+
+                <p class="text-secondary">Link text should:</p>
+                <ul class="text-secondary">
+                    <li>Specify what will happen if an action or link is tapped</li>
+                    <li>Avoid vague descriptions, such as “click here”</li>
+                </ul>
+
+                <p class="text-secondary">Ensure an element has the same description everywhere it’s used.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-writing-edit-do.png"></figure>
+                <p class="text-secondary">The description read aloud indicates the action represented by the icon.</p>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-writing-menu-do.png"></figure>
+                <p class="text-secondary">Accessible text for a navigation menu could be “Show navigation menu” and “Hide navigation menu” (preferred) or “Show main menu” and “Hide main menu” (acceptable).</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Elements with state changes</h4>
+                <p class="text-secondary">For icons that toggle between values or states, announce the icon according to how it is presented to the user.</p>
+                <ul class="text-secondary">
+                    <li>If the icon is a property of an item, make it a checkbox so that screen readers verbalize the current state, such as “on” or “off.”</li>
+                    <li>If the icon is an action, write the text label to specify the action that occurs if the icon is selected, such as “Add to wishlist.”</li>
+                </ul>
+                <p class="text-secondary">Elements are displayed based on how they should be used. For example, if a star icon represents the action of adding something to a wishlist, the app should verbally state “Add to wishlist” or “Remove from wishlist.”</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Don’t specify how to interact with a control</h4>
+                <p class="text-secondary">Don’t tell users how to physically interact with a control, as they may be navigating with a keyboard or other device, not with their fingers or a mouse. Accessibility software will describe the correct interaction for the user.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-writing-voicesearch-do.png"></figure>
+                <p class="text-secondary">The command “voice search” describes the user task (search) paired with the input method (voice).</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Hint speech</h4>
+                <p class="text-secondary">Hint speech provides extra information for actions that aren't clear. For example, Android's “double-tap to select” feature prompts the user to tap twice when landing on an item without taking action. Android TalkBack will also announce any custom actions associated with an element. Use hint speech sparingly and only for complex UI.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Sound and motion</h1>
+                <div class="space"></div>
+
+                <h4>Sound</h4>
+                <p class="text-secondary">Give visual alternatives to sound, and vice versa. Provide closed captions, a transcript, or other visual cues to critical audio elements and sound alerts.</p>
+                <p class="text-secondary">Allow users to navigate your app using sound by adding descriptive labels to UI elements. When using a screen reader such as TalkBack and navigating by touch exploration, labels are spoken aloud when users touch UI elements with their fingertips.</p>
+                <p class="text-secondary">The following sounds should be avoided:</p>
+                <ul class="text-secondary">
+                    <li>Unnecessary sounds that play over a screen reader, such as background music that autoplays when entering a web page. If there is background sound, ensure users can safely pause or stop it.</li>
+                    <li>Extra sounds added to native elements (as screen readers will be able to interpret native elements correctly).</li>
+                </ul>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Motion</h4>
+                <p class="text-secondary">Material Design uses motion to guide focus between views. Surfaces transform into focal points for the user to follow, and unimportant elements are removed.</p>
+                <p class="text-secondary">To allow users with motion and vision sensitivities to use interfaces comfortably, adhere to the Material Design motion guidance, which supports the following from the W3C:</p>
+                <ul class="text-secondary">
+                    <li>Enable content that moves, scrolls, or blinks automatically to be paused, stopped, or hidden if it lasts more than five seconds</li>
+                    <li>Limit flashing content to three times in a one-second period to meet <a href="https://www.w3.org/TR/WCAG20/#general-thresholddef" target="_blank">flash and red flash thresholds</a></li>
+                    <li>Avoid <a href="https://www.w3.org/TR/2015/NOTE-WCAG20-TECHS-20150226/G176" target="_blank">flashing large central regions of the screen</a></li>
+                </ul>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Timed controls</h4>
+                <p class="text-secondary">Controls in an app may be set to disappear after a certain amount of time. For example, five seconds after starting a video, playback controls may fade from the screen.</p>
+
+                <h6>High-priority controls</h6>
+                <p class="text-secondary">Avoid using timers on controls that perform high-priority functions, as users may not notice these controls if they fade away too quickly. For example, TalkBack reads controls out loud if they are focused on, and placing them on timers may prevent the controls from completing their task.</p>
+                <p class="text-secondary">For controls that enable other important functions, make sure that the user can turn on the controls again or perform the same function in other ways. Learn more in <b>Composition section</b>.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Implementing accessibility</h1>
+                <div class="space"></div>
+
+                <p class="text-secondary">By using standard platform controls and semantic HTML (on the web), your app will automatically contain the markup and code needed to work well with a platform’s assistive technology. Adapt your app to meet each platform's accessibility standards and assistive technology (including shortcuts and structure) to give users an efficient experience.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-implementation1-do.png"></figure>
+                <p class="text-secondary">Use native elements, such as the standard platform dialog.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <p class="text-secondary">Use scalable text and a spacious layout to accommodate users who may have large text, color correction, magnification, or other assistive settings turned on.</p>
+                <p class="text-secondary">Keyboard and mouse interfaces should have every task and all hover information accessible by keyboard-only.</p>
+                <ul class="text-secondary">
+                    <li>Use scalable text and a spacious layout to accommodate users who may have large text, color correction, magnification, or other assistive settings turned on.</li>
+                    <li>Keyboard and mouse interfaces should have every task and all hover information accessible by keyboard-only.</li>
+                    <li>Touch interfaces should allow screen readers and other assistive technology devices to read all parts of your interface. The text read aloud should be both meaningful and helpful.</li>
+                </ul>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-implementation3-do.png"></figure>
+                <p class="text-secondary">Scale your UI to work well with magnification and large text.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Label UI elements</h4>
+                <p class="text-secondary">Screen-reader users need to know which UI elements are tappable on-screen. To enable screen readers to read the names of components out loud, add the contentDescription attribute to components such as buttons, icons, and tabs containing icons that have no visible text. For web apps, add an add <a href="https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships" target="_blank">aria-label</a>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-labeling1.png"></figure>
+                <ol class="text-secondary">
+                    <li>Label the Search icon</li>
+                    <li>Label the Microphone icon</li>
+                </ol>
+            </div>
+            <div class="col xlarge-3 large-4 medium-6 small-4">
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-labeling2.png"></figure>
+                <ol class="text-secondary">
+                    <li>Label the Edit icon</li>
+                    <li>Label the Chat icon</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Help documentation</h4>
+                <p class="text-secondary">Any features with special accessibility considerations should be included in help documentation. Make help documentation relevant, accessible, and discoverable. As an example, review this guide on how to use a screen reader with <a href="https://support.google.com/drive/answer/6034939" target="_blank">Google Drive</a>.</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Testing and research</h4>
+                <p class="text-secondary">Following these accessibility guidelines will help improve the accessibility of your app, but does not guarantee a fully accessible experience. It is recommended that you also:</p>
+                <ul class="text-secondary">
+                    <li>Test your app for full task completion, beginning to end, with various assistive technologies turned on. For example, turn on Explore by Touch in TalkBack and change the speed at which text is spoken out loud.</li>
+                    <li>Have users with impairments test your app.</li>
+                    <li>Consider how individual elements should be accessible while also fitting together in a coherent user flow.</li>
+                    <li>Make sure the major tasks you want your users to complete are possible for everyone.</li>
+                </ul>
+                <p class="text-secondary">Talk to your users, particularly those who use assistive technology, to learn about their needs, what they want out of your app, which tools they use, and how they use them. Become familiar with these tools so you can give them the best experience.</p>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/usability_accessibility/accessibility-implementation5.png"></figure>
+                <p class="text-secondary">People use assistive technology in different ways.</p>
             </div>
         </div>
     </section>
