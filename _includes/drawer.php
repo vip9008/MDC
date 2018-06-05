@@ -55,6 +55,9 @@
                 <a href="<?= $prefix ?>typography/understanding-typography.php" class="mdc-list-item">
                     <div class="text">Understanding typography</div>
                 </a>
+                <a href="<?= $prefix ?>typography/language-support.php" class="mdc-list-item">
+                    <div class="text">Language support</div>
+                </a>
             </div>
         </div>
         <div class="mdc-list-group collapsed">
