@@ -60,6 +60,7 @@
 .mdc-dialog-container > .mdc-dialog > .header > .title {
     font-size: 1.25rem;
     line-height: 2rem;
+    letter-spacing: 0.0075em;
     font-weight: 500;
     -ms-flex: 1 1;
     flex: 1 1;
@@ -70,7 +71,7 @@
     color: var(--initial-text-secondary);
     font-size: 1rem;
     line-height: 1.5rem;
-    font-weight: 400;
+    letter-spacing: 0.03125rem;
     margin-top: 1.25rem;
     padding: 0 1.5rem 1.5rem;
 }
