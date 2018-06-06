@@ -315,6 +315,18 @@ html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
 }
 
 .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon {
+    transform: rotate(-180deg);
+}
+
+html[dir="ltr"] .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon,
+html[dir] .mdc-list-group.expanded[dir="ltr"] > .mdc-list-item > .meta.material-icon > .material-icon,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon {
+    transform: rotate(-180deg);
+}
+
+html[dir="rtl"] .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon,
+html[dir] .mdc-list-group.expanded[dir="rtl"] > .mdc-list-item > .meta.material-icon > .material-icon,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon {
     transform: rotate(180deg);
 }
 
