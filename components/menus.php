@@ -10,6 +10,7 @@ $css_files = [
     "css/mdc.top.app.bar.css",
     "css/mdc.list.css",
     "css/mdc.menu.css",
+    "css/mdc.button.css",
 ];
 $js_files = [
     "js/mdc.list.js",
@@ -400,6 +401,18 @@ $url = $prefix."components/menus.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6">
+                <div class="space"></div>
+                
+                <div class="mdc-menu-container">
+                    <button class="mdc-button btn-contained bg-deep-purple-A700 menu-button">Menu</button>
+                    <div class="mdc-list-container">
+                        <div class="mdc-list-group">
+                            <button class="mdc-list-item"><div class="text">Item 1</div></button>
+                            <button class="mdc-list-item"><div class="text">Item 2</div></button>
+                            <button class="mdc-list-item"><div class="text">Item 3</div></button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(

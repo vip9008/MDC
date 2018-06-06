@@ -1,0 +1,82 @@
+.mdc-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.mdc-menu-container .mdc-list-container {
+    background-color: var(--bg-cards);
+    z-index: var(--z-axis-8-index);
+    box-shadow: var(--z-axis-8-shadow);
+    min-width: 7rem;
+    max-width: 17.5rem;
+    border-radius: 0.25rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    will-change: transform, opacity;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 0;
+    right: auto;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+}
+
+html[dir="ltr"] .mdc-menu-container .mdc-list-container,
+html[dir] .mdc-menu-container[dir="ltr"] .mdc-list-container,
+html[dir="rtl"] .mdc-menu-container.reverse .mdc-list-container,
+html[dir] .mdc-menu-container.reverse[dir="rtl"] .mdc-list-container {
+    left: 0;
+    right: auto;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.mdc-menu-container.reverse .mdc-list-container,
+html[dir="ltr"] .mdc-menu-container.reverse .mdc-list-container,
+html[dir] .mdc-menu-container.reverse[dir="ltr"] .mdc-list-container,
+html[dir="rtl"] .mdc-menu-container .mdc-list-container,
+html[dir] .mdc-menu-container[dir="rtl"] .mdc-list-container {
+    left: auto;
+    right: 0;
+    -webkit-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+}
+
+.mdc-menu-container.bottom .mdc-list-container {
+    top: auto;
+    bottom: 0;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+}
+
+html[dir="ltr"] .mdc-menu-container.bottom .mdc-list-container,
+html[dir] .mdc-menu-container.bottom[dir="ltr"] .mdc-list-container,
+html[dir="rtl"] .mdc-menu-container.bottom.reverse .mdc-list-container,
+html[dir] .mdc-menu-container.bottom.reverse[dir="rtl"] .mdc-list-container {
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+}
+
+.mdc-menu-container.bottom.reverse .mdc-list-container,
+html[dir="ltr"] .mdc-menu-container.bottom.reverse .mdc-list-container,
+html[dir] .mdc-menu-container.bottom.reverse[dir="ltr"] .mdc-list-container,
+html[dir="rtl"] .mdc-menu-container.bottom .mdc-list-container,
+html[dir] .mdc-menu-container.bottom[dir="rtl"] .mdc-list-container {
+    -webkit-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+
+.mdc-menu-container:not(.active) .mdc-list-container {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}

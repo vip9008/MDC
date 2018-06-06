@@ -20,7 +20,7 @@
     visibility: hidden;
     opacity: 0;
     will-change: opacity, visibility;
-    transition: opacity 0.2s cubic-bezier(0.4,0,.2,1), visibility 0.2s cubic-bezier(0.4,0,.2,1);
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: default;
 }
 
@@ -40,7 +40,7 @@
     background-color: var(--bg-cards);
     box-shadow: var(--z-axis-24-shadow);
     will-change: transform;
-    transition: transform 0.2s cubic-bezier(0.4,0,.2,1);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mdc-dialog-container:not(.active) > .mdc-dialog {
