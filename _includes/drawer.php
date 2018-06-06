@@ -83,6 +83,9 @@
                 <a href="<?= $prefix ?>components/lists.php" class="mdc-list-item">
                     <div class="text">Lists</div>
                 </a>
+                <a href="<?= $prefix ?>components/menus.php" class="mdc-list-item">
+                    <div class="text">Menus</div>
+                </a>
                 <a href="<?= $prefix ?>components/text-fields.php" class="mdc-list-item">
                     <div class="text">Text fields</div>
                 </a>
