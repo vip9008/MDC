@@ -154,6 +154,133 @@ $url = $prefix."typography/language-support.php";
                 <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/typography_language_support/noto-dense.png"></figure>
                 <p class="text-secondary">Chinese and Japanese</p>
                 <div class="space"></div>
+
+                <p class="text-secondary">Line height is slightly larger than Latin-based characters.</p>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/typography_language_support/noto-pairing-dense.png"></figure>
+                <p class="text-secondary">Line height pairing, Chinese and Japanese</p>
+
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Tall script considerations</h4>
+                <p class="text-secondary">Noto supports tall scripts used in South and Southeast Asian and Middle Eastern languages, including Arabic, Hindi, and Thai. Use regular weight, as medium weight is unavailable in Noto. Avoid using the bold weight, as bold is too heavy.</p>
+                <p class="text-secondary">Type sizes smaller than title styles should make adjustments to the Latin type scale.</p>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/typography_language_support/noto-tall.png"></figure>
+                <p class="text-secondary">Thai and Devanagari</p>
+                <div class="space"></div>
+
+                <p class="text-secondary">Tall script line height is slightly larger than Latin-based characters.</p>
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/typography_language_support/noto-pairing-tall.png"></figure>
+                <p class="text-secondary">Line height pairing example, Thai and Devanagari</p>
+                <div class="space"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Language categories reference</h1>
+                <div class="space"></div>
+
+                <p class="text-secondary">For ease of internationalization, Google has categorized languages into three categories: English-like, tall, and dense.</p>
+                <p class="text-secondary">English-like: Latin (except Vietnamese), Greek, Cyrillic, Hebrew, Armenian, and Georgian.</p>
+                <p class="text-secondary">Tall: Language scripts that require extra line height to accommodate larger glyphs, including South and Southeast Asian and Middle Eastern languages, like Arabic, Hindi, Telugu, Thai, and Vietnamese.</p>
+                <p class="text-secondary">Dense: Language scripts that require extra line height to accommodate larger glyphs but have different metrics from tall scripts. Includes Chinese, Japanese, and Korean.</p>
+                <div class="space"></div>
+
+                <table class="bg-cards">
+                    <thead class="bg-app-bar">
+                        <tr>
+                            <th><b>Code</b></th>
+                            <th><b>Description</b></th>
+                            <th><b>Category</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>af</td><td>Afrikaans</td><td>English-like</td></tr>
+                        <tr><td>am</td><td>Amharic</td><td>English-like</td></tr>
+                        <tr><td>ar</td><td>Arabic (Modern Standard)</td><td>Tall</td></tr>
+                        <tr><td>az</td><td>Azerbaijani</td><td>English-like</td></tr>
+                        <tr><td>bg</td><td>Bulgarian</td><td>English-like</td></tr>
+                        <tr><td>bn</td><td>Bengali</td><td>Tall</td></tr>
+                        <tr><td>ca</td><td>Catalan</td><td>English-like</td></tr>
+                        <tr><td>cs</td><td>Czech</td><td>English-like</td></tr>
+                        <tr><td>cy</td><td>Welsh</td><td>English-like</td></tr>
+                        <tr><td>da</td><td>Danish</td><td>English-like</td></tr>
+                        <tr><td>de</td><td>German</td><td>English-like</td></tr>
+                        <tr><td>el</td><td>Greek</td><td>English-like</td></tr>
+                        <tr><td>en</td><td>English (US)</td><td>English-like</td></tr>
+                        <tr><td>en-GB</td><td>English (UK)</td><td>English-like</td></tr>
+                        <tr><td>es</td><td>Spanish (European)</td><td>English-like</td></tr>
+                        <tr><td>es-419</td><td>Spanish (Latin American)</td><td>English-like</td></tr>
+                        <tr><td>et</td><td>Estonian</td><td>English-like</td></tr>
+                        <tr><td>eu</td><td>Basque</td><td>English-like</td></tr>
+                        <tr><td>fa</td><td>Persian</td><td>Tall</td></tr>
+                        <tr><td>fi</td><td>Finnish</td><td>English-like</td></tr>
+                        <tr><td>fil</td><td>Filipino</td><td>English-like</td></tr>
+                        <tr><td>fr</td><td>French (European)</td><td>English-like</td></tr>
+                        <tr><td>fr-CA</td><td>French (Canadian)</td><td>English-like</td></tr>
+                        <tr><td>gl</td><td>Galician</td><td>English-like</td></tr>
+                        <tr><td>gu</td><td>Gujarati</td><td>Tall</td></tr>
+                        <tr><td>hi</td><td>Hindi</td><td>Tall</td></tr>
+                        <tr><td>hr</td><td>Croatian</td><td>English-like</td></tr>
+                        <tr><td>hu</td><td>Hungarian</td><td>English-like</td></tr>
+                        <tr><td>hy</td><td>Armenian</td><td>English-like</td></tr>
+                        <tr><td>id</td><td>Indonesian</td><td>English-like</td></tr>
+                        <tr><td>is</td><td>Icelandic</td><td>English-like</td></tr>
+                        <tr><td>it</td><td>Italian</td><td>English-like</td></tr>
+                        <tr><td>iw</td><td>Hebrew</td><td>English-like</td></tr>
+                        <tr><td>ja</td><td>Japanese</td><td>Dense</td></tr>
+                        <tr><td>ka</td><td>Georgian</td><td>English-like</td></tr>
+                        <tr><td>kk</td><td>Kazakh</td><td>English-like</td></tr>
+                        <tr><td>km</td><td>Khmer</td><td>Tall</td></tr>
+                        <tr><td>kn</td><td>Kannada</td><td>Tall</td></tr>
+                        <tr><td>ko</td><td>Korean</td><td>Dense</td></tr>
+                        <tr><td>ky</td><td>Kirghiz</td><td>English-like</td></tr>
+                        <tr><td>lo</td><td>Lao</td><td>Tall</td></tr>
+                        <tr><td>lt</td><td>Lithuanian</td><td>English-like</td></tr>
+                        <tr><td>lv</td><td>Latvian</td><td>English-like</td></tr>
+                        <tr><td>mk</td><td>Macedonian</td><td>English-like</td></tr>
+                        <tr><td>ml</td><td>Malayalam</td><td>Tall</td></tr>
+                        <tr><td>mn</td><td>Mongolian</td><td>English-like</td></tr>
+                        <tr><td>mr</td><td>Marathi</td><td>Tall</td></tr>
+                        <tr><td>ms</td><td>Malay</td><td>English-like</td></tr>
+                        <tr><td>my</td><td>Burmese (Myanmar)</td><td>Tall</td></tr>
+                        <tr><td>ne</td><td>Nepali</td><td>Tall</td></tr>
+                        <tr><td>nl</td><td>Dutch</td><td>English-like</td></tr>
+                        <tr><td>no</td><td>Norwegian (Bokmål)</td><td>English-like</td></tr>
+                        <tr><td>pa</td><td>Punjabi</td><td>Tall</td></tr>
+                        <tr><td>pl</td><td>Polish</td><td>English-like</td></tr>
+                        <tr><td>pt</td><td>Portuguese (Brazilian)</td><td>English-like</td></tr>
+                        <tr><td>pt-PT</td><td>Portuguese (European)</td><td>English-like</td></tr>
+                        <tr><td>ro</td><td>Romanian</td><td>English-like</td></tr>
+                        <tr><td>ru</td><td>Russian</td><td>English-like</td></tr>
+                        <tr><td>si</td><td>Sinhala</td><td>Tall</td></tr>
+                        <tr><td>sk</td><td>Slovak</td><td>English-like</td></tr>
+                        <tr><td>sl</td><td>Slovenian</td><td>English-like</td></tr>
+                        <tr><td>sq</td><td>Albanian</td><td>English-like</td></tr>
+                        <tr><td>sr</td><td>Serbian (Cyrillic)</td><td>English-like</td></tr>
+                        <tr><td>sr-Latn</td><td>Serbian (Latin)</td><td>English-like</td></tr>
+                        <tr><td>sv</td><td>Swedish</td><td>English-like</td></tr>
+                        <tr><td>sw</td><td>Swahili</td><td>English-like</td></tr>
+                        <tr><td>ta</td><td>Tamil</td><td>Tall</td></tr>
+                        <tr><td>te</td><td>Telugu</td><td>Tall</td></tr>
+                        <tr><td>th</td><td>Thai</td><td>Tall</td></tr>
+                        <tr><td>tr</td><td>Turkish</td><td>English-like</td></tr>
+                        <tr><td>uk</td><td>Ukrainian</td><td>English-like</td></tr>
+                        <tr><td>ur</td><td>Urdu</td><td>Tall</td></tr>
+                        <tr><td>uz</td><td>Uzbek</td><td>English-like</td></tr>
+                        <tr><td>vi</td><td>Vietnamese</td><td>Tall</td></tr>
+                        <tr><td>zh-CN</td><td>Chinese (Simplified, Mandarin)</td><td>Dense</td></tr>
+                        <tr><td>zh-HK</td><td>Chinese (Mandarin, Hong Kong)</td><td>Dense</td></tr>
+                        <tr><td>zh-TW</td><td>Chinese (Traditional, Mandarin)</td><td>Dense</td></tr>
+                        <tr><td>zu</td><td>Zulu</td><td>English-like</td></tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
