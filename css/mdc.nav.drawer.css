@@ -7,6 +7,10 @@
     z-index: var(--z-axis-0-index);
     border-right: solid 1px var(--bg-border);
     transition: all 0.3s;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 html[dir="ltr"] #mdc-nav-drawer {
@@ -33,6 +37,13 @@ html[dir="rtl"] #mdc-nav-drawer {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+#mdc-nav-drawer > .mdc-list-container {
+    -ms-flex: 0 0 auto;
+    flex: 1 1 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #mdc-nav-drawer .mdc-list-group:not(.expanded) > .mdc-list-item {
