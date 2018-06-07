@@ -2,6 +2,7 @@
     position: relative;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    max-width: 100%;
 }
 
 .mdc-menu-container .mdc-list-container {
@@ -82,22 +83,6 @@ html[dir] .mdc-menu-container.bottom[dir="rtl"] .mdc-list-container {
     opacity: 0;
 }
 
-.mdc-menu-container > .mdc-text-field > .material-icon.trailing {
-    will-change: transform;
-    transition: transform 365ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
-html[dir="ltr"] .mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
-html[dir] .mdc-menu-container[dir="ltr"] > .mdc-text-field.active > .material-icon.trailing {
-    transform: rotate(-180deg);
-}
-
-html[dir="rtl"] .mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
-html[dir] .mdc-menu-container[dir="rtl"] > .mdc-text-field.active > .material-icon.trailing {
-    transform: rotate(180deg);
-}
-
 .mdc-menu-container.select-menu .mdc-list-container {
     min-width: 100%;
 }
@@ -121,4 +106,26 @@ html[dir] .mdc-menu-container[dir="rtl"] > .mdc-text-field.active > .material-ic
     transition: all 0.2s;
     background-color: var(--initial-main-color);
     opacity: var(--opacity-hover);
+}
+
+.mdc-menu-container .mdc-list-container > .mdc-list-group + .mdc-list-group {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: solid 0.0625rem var(--initial-text-divider);
+}
+
+.mdc-menu-container > .mdc-text-field > .material-icon.trailing {
+    will-change: transform;
+    transition: transform 365ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
+html[dir="ltr"] .mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
+html[dir] .mdc-menu-container[dir="ltr"] > .mdc-text-field.active > .material-icon.trailing {
+    transform: rotate(-180deg);
+}
+
+html[dir="rtl"] .mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
+html[dir] .mdc-menu-container[dir="rtl"] > .mdc-text-field.active > .material-icon.trailing {
+    transform: rotate(180deg);
 }

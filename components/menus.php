@@ -397,12 +397,11 @@ $url = $prefix."components/menus.php";
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
                 
-                <h4>Full-bleed dividers</h4>
-                <p class="text-secondary">Placing a divider inside any container will cover the whole available width.</p>
+                <h4>Dropdown menu</h4>
             </div>
         </div>
         <div class="row">
-            <div class="col xlarge-3 large-4 medium-6">
+            <div class="col xlarge-2 large-3 medium-6">
                 <div class="space"></div>
 
                 <div class="mdc-menu-container">
@@ -413,8 +412,50 @@ $url = $prefix."components/menus.php";
                             <button class="mdc-list-item"><div class="text">Item 2</div></button>
                             <button class="mdc-list-item"><div class="text">Item 3</div></button>
                         </div>
+                        <div class="mdc-list-group">
+                            <button class="mdc-list-item"><div class="text">Item 4</div></button>
+                            <button class="mdc-list-item"><div class="text">Item 5</div></button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-menu-container">
+    <button class="menu-button ...">Menu</button>
+    <div class="mdc-list-container">
+        <div class="mdc-list-group">
+            <button class="mdc-list-item"><div class="text">Item 1</div></button>
+            .
+            .
+            .
+        </div>
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                
+                <p class="text-secondary">Menu can be closed using the javascript function <code>mdc_close_menu(mdc-menu-container)</code>. the parameter should be the menu container element or its css selector.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="space"></div>
+                
+                <h4>Exposed dropdown menu</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="space"></div>
+
+                <h6>Default menu</h6>
 
                 <div class="mdc-menu-container select-menu">
                     <div class="menu-button mdc-text-field deep-purple-A700">
@@ -448,9 +489,28 @@ $url = $prefix."components/menus.php";
                     </div>
                 </div>
             </div>
-            <div class="col xlarge-5 large-6 medium-10">
+            <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
+<div class="mdc-menu-container select-menu">
+    <div class="menu-button mdc-text-field deep-purple-A700">
+        <div class="material-icon trailing">arrow_drop_down</div>
+        <div class="input"></div>
+        <label class="label">Select menu</label>
+        <input type="hidden" class="select-value" name="select_menu_1">
+    </div>
+    <div class="mdc-list-container">
+        <div class="mdc-list-group">
+            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
+            .
+            .
+            .
+        </div>
+        .
+        .
+        .
+    </div>
+</div>
 TEXT
 ) ?></pre>
             </div>
