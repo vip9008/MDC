@@ -478,8 +478,53 @@ $url = $prefix."components/dialogs.php";
 <div class="container">
     <section>
         <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+            <div class="col xlarge-8 large-10 medium-12">
                 <h1 class="article_title">Implementation</h1>
+                <div class="space"></div>
+
+                <h6>Related components:</h6>
+                <ul class="text-secondary">
+                    <li><a href="<?= $prefix ?>components/buttons.php">Buttons</a></li>
+                </ul>
+                <div class="space"></div>
+
+                <h6>Javascript methods:</h6>
+                <table class="bg-cards methods-doc">
+                    <tr>
+                        <th class="bg-app-bar code" colspan="3">
+                            <b class="green">void</b>
+                            <b class="blue-grey-800">mdc_open_dialog</b>
+                            (
+                            <b class="deep-purple-A700">dialog_container</b>
+                            )
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A method to open the dialog. note that this method wont create a new dialog.</td>
+                    </tr>
+                    <tr>
+                        <td><b class="deep-purple-A700 code">dialog_container</b></td>
+                        <td class="code">String | jQuery | Element</td>
+                        <td>The dialog container. can be either a css selector string or a jQuery object or an element.</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-app-bar code" colspan="3">
+                            <b class="green">void</b>
+                            <b class="blue-grey-800">mdc_close_dialog</b>
+                            (
+                            <b class="deep-purple-A700">dialog_container</b>
+                            )
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A method to close the dialog.</td>
+                    </tr>
+                    <tr>
+                        <td><b class="deep-purple-A700 code">dialog_container</b></td>
+                        <td class="code">String | jQuery | Element</td>
+                        <td>The dialog container. can be either a css selector string or a jQuery object or an element.</td>
+                    </tr>
+                </table>
                 <div class="space"></div>
                 
                 <h4>Alert dialog</h4>
@@ -487,6 +532,8 @@ $url = $prefix."components/dialogs.php";
         </div>
         <div class="row">
             <div class="col xlarge-2 large-3 medium-6">
+                <div class="space"></div>
+
                 <button onclick="mdc_open_dialog('#dialog-1')" class="mdc-button btn-contained full-width bg-deep-purple-A700">Alert dialog</button>
 
                 <div id="dialog-1" class="mdc-dialog-container">
@@ -505,6 +552,18 @@ $url = $prefix."components/dialogs.php";
             <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
+<div id="dialog-1" class="mdc-dialog-container">
+    <div class="mdc-dialog">
+        <div class="header">
+            <div class="title">Dialog header</div>
+        </div>
+        <div class="body">...</div>
+        <div class="mdc-button-group">
+            <button class="mdc-button deep-purple-A700">Action 1</button>
+            <button class="mdc-button deep-purple-A700">Action 2</button>
+        </div>
+    </div>
+</div>
 TEXT
 ) ?></pre>
             </div>

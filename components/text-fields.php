@@ -433,8 +433,41 @@ $url = $prefix."components/text-fields.php";
 <div class="container">
     <section>
         <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+            <div class="col xlarge-8 large-10 medium-12">
                 <h1 class="article_title">Implementation</h1>
+                <div class="space"></div>
+
+                <h6>Javascript methods:</h6>
+                <table class="bg-cards methods-doc">
+                    <tr>
+                        <th class="bg-app-bar code" colspan="3">
+                            <b class="green">void</b>
+                            <b class="blue-grey-800">mdc_init_outlined_textfields</b>
+                            (
+                            )
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A method to initialize all outlined text fields. note that only outlined text fields needs to be initialized. this method is called on document ready.</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-app-bar code" colspan="3">
+                            <b class="green">void</b>
+                            <b class="blue-grey-800">mdc_init_field</b>
+                            (
+                            <b class="deep-purple-A700">outlined_text_field</b>
+                            )
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A method to initialize a specific outlined text field. useful for dynamic forms.</td>
+                    </tr>
+                    <tr>
+                        <td><b class="deep-purple-A700 code">outlined_text_field</b></td>
+                        <td class="code">String | jQuery | Element</td>
+                        <td>The outlined text field container. can be either a css selector string or a jQuery object or an element.</td>
+                    </tr>
+                </table>
                 <div class="space"></div>
                 
                 <h4>Filled text field</h4>

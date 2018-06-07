@@ -1,4 +1,4 @@
-function mdc_init_outlined_textfield() {
+function mdc_init_outlined_textfields() {
     $('.mdc-text-field.outlined').each(function() {
         if (!$(this).children('.outline').length) {
             $('<div class="outline"><div class="top"></div></div>').insertAfter($(this).children('.label'));
@@ -10,6 +10,16 @@ function mdc_init_outlined_textfield() {
     });
 }
 
+function mdc_init_field(outlined_text_field) {
+    if (!$(outlined_text_field).children('.outline').length) {
+        $('<div class="outline"><div class="top"></div></div>').insertAfter($(outlined_text_field).children('.label'));
+    }
+
+    var base_size = parseInt($('body').css('font-size'));
+    var label_width = ($(outlined_text_field).children('.label').width() * 0.75) / base_size;
+    $(outlined_text_field).children('.outline').children('.top').css('width', 'calc(100% - ' + (label_width + 0.5) + 'rem)');
+}
+
 $(document).ready(function() {
     $('.mdc-text-field').each(function() {
         if ($(this).children('.input').val()) {
@@ -19,7 +29,7 @@ $(document).ready(function() {
         }
     });
 
-    mdc_init_outlined_textfield();
+    mdc_init_outlined_textfields();
 
     $('body').on('change', '.mdc-text-field > .input', function() {
         if($(this).val()) {

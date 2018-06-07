@@ -316,9 +316,8 @@ $url = $prefix."components/lists.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h4>List controls</h4>
-                <h3 class="text-secondary">List controls display information and actions for list items.</h3>
-
-                <br>
+                <p class="text-secondary">List controls display information and actions for list items.</p>
+                <div class="space"></div>
 
                 <h6>Checkbox</h6>
                 <p class="text-secondary">A checkbox can either be a primary or secondary action.</p>
@@ -370,7 +369,6 @@ $url = $prefix."components/lists.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
-                <h3 class="text-secondary">Lists implementation support for web</h3>
             </div>
         </div>
         <div class="row">

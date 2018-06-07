@@ -347,6 +347,12 @@ $url = $prefix."components/selection-controls.php";
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
+
+                <h6>Related components:</h6>
+                <ul class="text-secondary">
+                    <li><a href="<?= $prefix ?>components/lists.php">Lists</a></li>
+                </ul>
+                <div class="space"></div>
                 
                 <h4>Checkboxes</h4>
             </div>

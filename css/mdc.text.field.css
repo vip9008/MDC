@@ -2,6 +2,8 @@
     will-change: transform, opacity;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     position: relative;
     min-height: 3.5rem;
     margin: 1rem 0 0.5rem;

@@ -149,3 +149,12 @@ ul.palette.text-colors {
 ul.palette.text-colors > li + li {
     border-top: solid 0.0625rem var(--initial-text-divider);
 }
+
+table.methods-doc .code {
+    font-family: Monaco, monospace !important;
+    white-space: nowrap;
+}
+
+table.methods-doc th.bg-app-bar {
+    font-size: 1.25rem;
+}
