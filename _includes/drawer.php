@@ -21,6 +21,19 @@
         </div>
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
+                <div class="text">Layout</div>
+                <div class="meta material-icon">
+                    <div class="material-icon">keyboard_arrow_down</div>
+                </div>
+            </div>
+            <div class="mdc-dropdown">
+                <a href="<?= $prefix ?>layout/understanding-layout.php" class="mdc-list-item">
+                    <div class="text">Understanding layout</div>
+                </a>
+            </div>
+        </div>
+        <div class="mdc-list-group collapsed">
+            <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Color</div>
                 <div class="meta material-icon">
                     <div class="material-icon">keyboard_arrow_down</div>

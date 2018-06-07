@@ -48,12 +48,8 @@ $url = $prefix."components/selection-controls.php";
                 <h1 class="article_title">Usage</h1>
                 <div class="space"></div>
                 <p class="text-secondary">Selection controls allow users to complete tasks that involve making choices such as selecting options, or switching settings on or off. Selection controls are found on screens that ask users to make decisions or declare preferences such as settings or dialogs.</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+
                 <h4>Principles</h4>
             </div>
         </div>
