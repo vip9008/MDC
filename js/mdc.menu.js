@@ -57,15 +57,17 @@ $(document).ready(function() {
     });
 
     $('body').on('click', '.mdc-menu-container.select-menu .mdc-list-container button.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container a.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container .mdc-list-item.interactive', function(event) {
+        var container = $(this).closest('.select-menu');
+
         if ($(this).hasClass('selected')) {
+            mdc_close_menu(container);
             return false;
         } else {
-            $(this).closest('.mdc-menu-container').find('.mdc-list-item').removeClass('selected');
+            $(container).find('.mdc-list-item').removeClass('selected');
         }
 
         var value = $(this).addClass('selected').attr('data-value');
         var text = $(this).children('.text').text();
-        var container = $(this).closest('.select-menu');
         var input = $(container).children('.mdc-text-field').children('.input');
 
         if ($(input).is('input')) {

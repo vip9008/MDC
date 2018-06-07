@@ -1,6 +1,7 @@
 .mdc-text-field {
     will-change: transform, opacity;
-    display: inline-block;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     position: relative;
     min-height: 3.5rem;
     margin: 1rem 0 0.5rem;

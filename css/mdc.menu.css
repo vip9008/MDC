@@ -1,6 +1,7 @@
 .mdc-menu-container {
     position: relative;
-    display: inline-block;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 }
 
 .mdc-menu-container .mdc-list-container {
@@ -15,7 +16,7 @@
     will-change: transform, opacity;
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
-    top: auto;
+    top: 100%;
     bottom: auto;
     left: 0;
     right: auto;
@@ -97,9 +98,16 @@ html[dir] .mdc-menu-container[dir="rtl"] > .mdc-text-field.active > .material-ic
     transform: rotate(180deg);
 }
 
-.mdc-menu-container > .mdc-text-field + .mdc-list-container {
-    margin-top: -0.75rem;
+.mdc-menu-container.select-menu .mdc-list-container {
     min-width: 100%;
+}
+
+.mdc-menu-container.select-menu:not(.bottom) .mdc-list-container {
+    top: 4.5rem;
+}
+
+.mdc-menu-container.select-menu:not(.bottom) > .mdc-text-field.outlined + .mdc-list-container {
+    margin-top: 0.0625rem;
 }
 
 .mdc-menu-container > .mdc-list-container .mdc-list-item.selected::after {

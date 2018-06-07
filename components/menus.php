@@ -417,10 +417,26 @@ $url = $prefix."components/menus.php";
                 </div>
 
                 <div class="mdc-menu-container select-menu">
+                    <div class="menu-button mdc-text-field deep-purple-A700">
+                        <div class="material-icon trailing">arrow_drop_down</div>
+                        <div class="input"></div>
+                        <label class="label">Select menu</label>
+                        <input type="hidden" class="select-value">
+                    </div>
+                    <div class="mdc-list-container">
+                        <div class="mdc-list-group">
+                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
+                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
+                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdc-menu-container select-menu">
                     <div class="menu-button mdc-text-field outlined deep-purple-A700">
                         <div class="material-icon trailing">arrow_drop_down</div>
                         <div class="input"></div>
-                        <label class="label">Label</label>
+                        <label class="label">Select menu</label>
                         <input type="hidden" class="select-value">
                     </div>
                     <div class="mdc-list-container">
