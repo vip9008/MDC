@@ -1,3 +1,25 @@
+<?php
+$initial_css_files = [
+    "css/md.grid.flex.css",
+    "css/md.colors.css",
+    "css/mdc.divider.css",
+    "css/mdc.nav.drawer.css",
+    "css/mdc.top.app.bar.css",
+    "css/mdc.list.css",
+    "css/mdc.menu.css",
+    "css/mdc.button.css",
+    "css/mdc.selection.control.css",
+];
+$initial_js_files = [
+    "js/mdc.nav.drawer.js",
+    "js/mdc.top.app.bar.js",
+    "js/mdc.list.js",
+    "js/mdc.menu.js",
+    "js/mdc.button.js",
+    "js/mdc.selection.control.js",
+];
+?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +30,27 @@
     <!-- Material Grid -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <?php foreach ($initial_css_files as $file) { ?>
+    <link href="<?= $prefix.$file ?>" rel="stylesheet">
+    <?php } ?>
+
     <?php foreach ($css_files as $file) { ?>
     <link href="<?= $prefix.$file ?>" rel="stylesheet">
     <?php } ?>
+
     <link href="<?= $prefix ?>css/style.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <?php foreach ($initial_js_files as $file) { ?>
+    <script src="<?= $prefix.$file ?>"></script>
+    <?php } ?>
+
     <?php foreach ($js_files as $file) { ?>
     <script src="<?= $prefix.$file ?>"></script>
     <?php } ?>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="<?= $prefix ?>js/script.js"></script>
     <script type="text/javascript">

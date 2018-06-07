@@ -3,21 +3,9 @@ $language = "en-US";
 $direction = "ltr";
 
 $css_files = [
-    "css/md.grid.flex.css",
-    "css/md.colors.css",
-    "css/mdc.divider.css",
-    "css/mdc.nav.drawer.css",
-    "css/mdc.top.app.bar.css",
-    "css/mdc.list.css",
-    "css/mdc.menu.css",
     "css/mdc.text.field.css",
-    "css/mdc.button.css",
 ];
 $js_files = [
-    "js/mdc.list.js",
-    "js/mdc.nav.drawer.js",
-    "js/mdc.top.app.bar.js",
-    "js/mdc.menu.js",
     "js/mdc.text.field.js",
 ];
 
@@ -409,6 +397,17 @@ $url = $prefix."components/menus.php";
                     <tr>
                         <th class="bg-app-bar code" colspan="3">
                             <b class="green">void</b>
+                            <b class="blue-grey-800">mdc_close_menus</b>
+                            (
+                            )
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A method to close all active menus.</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-app-bar code" colspan="3">
+                            <b class="green">void</b>
                             <b class="blue-grey-800">mdc_close_menu</b>
                             (
                             <b class="deep-purple-A700">menu_container</b>
@@ -416,7 +415,7 @@ $url = $prefix."components/menus.php";
                         </th>
                     </tr>
                     <tr>
-                        <td colspan="3">A method to close an opened menu.</td>
+                        <td colspan="3">A method to close a specific menu.</td>
                     </tr>
                     <tr>
                         <td><b class="deep-purple-A700 code">menu_container</b></td>

@@ -1,3 +1,7 @@
+function mdc_close_menus() {
+    $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
+}
+
 function mdc_close_menu(selector) {
     $(selector).removeClass('active').find('.menu-button').removeClass('active');
 }

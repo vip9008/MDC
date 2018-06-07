@@ -3,19 +3,9 @@ $language = "en-US";
 $direction = "ltr";
 
 $css_files = [
-    "css/md.grid.flex.css",
-    "css/md.colors.css",
-    "css/mdc.divider.css",
-    "css/mdc.nav.drawer.css",
-    "css/mdc.top.app.bar.css",
-    "css/mdc.list.css",
-    "css/mdc.button.css",
     "css/mdc.dialog.css",
 ];
 $js_files = [
-    "js/mdc.list.js",
-    "js/mdc.nav.drawer.js",
-    "js/mdc.top.app.bar.js",
     "js/mdc.dialog.js",
 ];
 

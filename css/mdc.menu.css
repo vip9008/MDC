@@ -6,7 +6,12 @@
 }
 
 .mdc-menu-container .mdc-list-container {
-    background-color: var(--bg-cards);
+    --text-primary: var(--initial-text-primary);
+    --text-secondary: var(--initial-text-secondary);
+    --text-hint: var(--initial-text-hint);
+    --text-divider: var(--initial-text-divider);
+    
+    background-color: var(--initial-bg-cards);
     z-index: var(--z-axis-8-index);
     box-shadow: var(--z-axis-8-shadow);
     min-width: 7rem;

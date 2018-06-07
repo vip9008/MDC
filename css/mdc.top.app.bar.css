@@ -86,6 +86,7 @@
     display: inline-flex;
     height: 3rem;
     margin: 0.5rem 0 0.5rem auto;
+    padding: 0.75rem 0;
 }
 
 html[dir="ltr"] #mdc-top-app-bar > .actions,
