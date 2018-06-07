@@ -7,15 +7,15 @@ function mdc_close_menu(selector) {
 }
 
 $(document).ready(function() {
-    $('html').on('click', function(event) {
+    $('html').on(md_click_event, function(event) {
         $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
     });
 
-    $('body').on('click', '.mdc-menu-container .mdc-list-container', function(event) {
+    $('body').on(md_click_event, '.mdc-menu-container .mdc-list-container', function(event) {
         event.stopPropagation();
     });
 
-    $('body').on('click', '.mdc-menu-container .menu-button', function(event) {
+    $('body').on(md_click_event, '.mdc-menu-container .menu-button', function(event) {
         event.stopPropagation();
 
         var menu_container = $(this).closest('.mdc-menu-container');
@@ -60,7 +60,7 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
-    $('body').on('click', '.mdc-menu-container.select-menu .mdc-list-container button.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container a.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container .mdc-list-item.interactive', function(event) {
+    $('body').on(md_click_event, '.mdc-menu-container.select-menu .mdc-list-container button.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container a.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container .mdc-list-item.interactive', function(event) {
         var container = $(this).closest('.select-menu');
 
         if ($(this).hasClass('selected')) {

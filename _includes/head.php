@@ -1,6 +1,6 @@
 <?php
 $initial_css_files = [
-    "css/md.grid.flex.css",
+    "css/md.grid.css",
     "css/md.colors.css",
     "css/mdc.divider.css",
     "css/mdc.nav.drawer.css",
@@ -11,6 +11,7 @@ $initial_css_files = [
     "css/mdc.selection.control.css",
 ];
 $initial_js_files = [
+    "js/md.grid.js",
     "js/mdc.nav.drawer.js",
     "js/mdc.top.app.bar.js",
     "js/mdc.list.js",

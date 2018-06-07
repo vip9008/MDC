@@ -9,7 +9,7 @@ $(document).ready(function() {
         }
     });
     
-    $('body').on('click', '.mdc-checkbox, .mdc-switch', function(event) {
+    $('body').on(md_click_event, '.mdc-checkbox, .mdc-switch', function(event) {
         if ($(this).children('input').prop('disabled')) {
             return false;
         }
