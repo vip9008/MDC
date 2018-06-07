@@ -22,7 +22,7 @@ $(document).ready(function() {
             return false;
         }
 
-        $('.mdc-menu-container.active').removeClass('active');
+        $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
 
         $(menu_container).removeClass('bottom reverse');
 
