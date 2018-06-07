@@ -247,6 +247,7 @@ html[dir="rtl"] pre, html[dir] pre[dir="rtl"] {
 }
 
 code {
+    white-space: nowrap;
     padding: 0 0.25rem;
     border: solid 0.0625rem var(--initial-text-divider);
 }
