@@ -19,7 +19,7 @@ $js_files = [
 $head_title = "MDC v2";
 
 $topAppBarColor = "bg-blue-grey-900";
-$topAppBarTitle = "Material Design v2";
+$topAppBarTitle = "Material Design v2 - Under Development";
 
 $primaryColor = "indigo";
 $accentColor = "blue";
