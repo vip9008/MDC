@@ -1,4 +1,4 @@
-function outlined_textfield_init() {
+function mdc_init_outlined_textfield() {
     $('.mdc-text-field.outlined').each(function() {
         if (!$(this).children('.outline').length) {
             $('<div class="outline"><div class="top"></div></div>').insertAfter($(this).children('.label'));
@@ -19,7 +19,7 @@ $(document).ready(function() {
         }
     });
 
-    outlined_textfield_init();
+    mdc_init_outlined_textfield();
 
     $('body').on('change', '.mdc-text-field > .input', function() {
         if($(this).val()) {
