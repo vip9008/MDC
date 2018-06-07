@@ -7,9 +7,21 @@
                 <button class="menu-button material-icon">more_vert</button>
                 <div class="mdc-list-container">
                     <div class="mdc-list-group">
-                        <button class="mdc-list-item" onclick="change_document_direction();">
-                            <div class="text">Change document direction</div>
-                        </button>
+                        <div class="mdc-list-item">
+                            <div class="text">RTL direction</div>
+                            <div id="dir_control" class="mdc-switch <?= $primaryColor ?>" tabindex="-1">
+                                <div class="rail"></div>
+                                <input type="hidden" value="0">
+                            </div>
+                        </div>
+
+                        <div class="mdc-list-item">
+                            <div class="text">Dark theme</div>
+                            <div id="theme_control" class="mdc-switch <?= $primaryColor ?>" tabindex="-1">
+                                <div class="rail"></div>
+                                <input type="hidden" value="0">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
