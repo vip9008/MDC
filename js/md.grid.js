@@ -1,6 +1,8 @@
 var md_click_event = (function() {
-    if ('ontouchstart' in document.documentElement === true)
+    if ('ontouchstart' in document.documentElement === true) {
         return 'touchstart';
-    else
+    }
+    else {
         return 'click';
-});
+    }
+})();
