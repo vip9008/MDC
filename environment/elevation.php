@@ -268,7 +268,7 @@ $url = $prefix."environment/elevation.php";
                             <span class="bold">Component</span>
                         </th>
                         <th>
-                            <span class="bold">Default elevation values (dp)</span>
+                            <span class="bold">Default elevation values (z-axis)</span>
                         </th>
                     </thead>
                     <tbody>

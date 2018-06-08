@@ -30,6 +30,9 @@
                 <a href="<?= $prefix ?>layout/understanding-layout.php" class="mdc-list-item">
                     <div class="text">Understanding layout</div>
                 </a>
+                <a href="<?= $prefix ?>layout/responsive-layout-grid.php" class="mdc-list-item">
+                    <div class="text">Responsive layout grid</div>
+                </a>
             </div>
         </div>
         <div class="mdc-list-group collapsed">
