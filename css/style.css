@@ -158,3 +158,19 @@ table.methods-doc .code {
 table.methods-doc th.bg-app-bar {
     font-size: 1.25rem;
 }
+
+.container.example {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 37.5rem;
+}
+
+.container-fluid.example {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container.example .col > .box, .container-fluid.example .col > .box {
+    height: 2rem;
+    border-radius: 0.25rem;
+}

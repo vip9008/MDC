@@ -536,10 +536,6 @@ html[dir] .container[dir="rtl"].align-start {
     flex-direction: row-reverse; 
 }
 
-.row.row-nested {
-    margin: 0 -0.5rem;
-}
-
 .col {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
@@ -863,10 +859,6 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
 @media (min-width: 720px) {
     .container, .container-fluid, .col {
         padding: 0 0.75rem;
-    }
-
-    .row.row-nested {
-        margin: 0 -0.75rem;
     }
 }
 

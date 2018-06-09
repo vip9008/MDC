@@ -278,6 +278,282 @@ $url = $prefix."layout/responsive-layout-grid.php";
     <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Grid Implementation</h1>
+                <div class="space"></div>
+
+                <h4>Containers</h4>
+                <p class="text-secondary">Containers are the most basic layout element and are required when using our <b>default grid system</b>. Choose from default container (fixed grids) or fluid container (fluid grids).</p>
+                <div class="space"></div>
+
+                <div class="container example bg-status-bar">
+                    <div class="row">
+                        <div class="col xsmall-3"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container">
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Default container for fixed grids.</p>
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row">
+                        <div class="col xsmall-3"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Fluid container for fluid grids.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Rows</h4>
+                <p class="text-secondary">Rows are wrappers for columns and should only contain columns inside.</p>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Row inside a fluid container (fluid grid).</p>
+                <div class="space"></div>
+
+                <h6>Columns vertical alignment</h6>
+                <p class="text-secondary">Columns can be aligned <b>vertically</b> inside a row at top, middle, or bottom. note that in order for this to work, row height should be greater than the contained columns.</p>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row col-align-top" style="height: 6rem;">
+                        <div class="col xsmall-3"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row col-align-top">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns vertically aligned at the top.</p>
+                <div class="space"></div>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row col-align-middle" style="height: 6rem;">
+                        <div class="col xsmall-3"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row col-align-middle">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns vertically aligned at the middle.</p>
+                <div class="space"></div>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row col-align-bottom" style="height: 6rem;">
+                        <div class="col xsmall-3"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row col-align-bottom">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns vertically aligned at the bottom.</p>
+                <div class="space"></div>
+
+                <h6>Columns horizontal alignment</h6>
+                <p class="text-secondary">Columns can be aligned <b>horizontally</b> inside a row. note that in order for this to work, the row should not be full of columns.</p>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row col-justify-start">
+                        <div class="col xsmall-1"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row col-justify-start">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns horizontally aligned at the start.</p>
+                <div class="space"></div>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row col-justify-center">
+                        <div class="col xsmall-1"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row col-justify-center">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns horizontally aligned at the center.</p>
+                <div class="space"></div>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row col-justify-end">
+                        <div class="col xsmall-1"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row col-justify-end">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns horizontally aligned at the end.</p>
+                <div class="space"></div>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row col-justify-around">
+                        <div class="col xsmall-1"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row col-justify-around">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns horizontally justified with space around each column.</p>
+                <div class="space"></div>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row col-justify-between">
+                        <div class="col xsmall-1"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row col-justify-between">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns horizontally justified with space between columns.</p>
+                <div class="space"></div>
+
+                <h6>Columns direction</h6>
+                <p class="text-secondary">The default direction of columns is from start to end, from <b>left to right in LTR direction</b> and from <b>right to left in RTL direction</b>. however, the direction can br reversed to be from end to start.</p>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row direction-reverse">
+                        <div class="col xsmall-1"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-1"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row direction-reverse">
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns horizontally justified with space between columns.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Columns</h4>
+                <p class="text-secondary"></p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">UI regions</h1>
                 <div class="space"></div>
 
