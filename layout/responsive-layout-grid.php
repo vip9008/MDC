@@ -518,7 +518,7 @@ TEXT
                 <div class="space"></div>
 
                 <h6>Columns direction</h6>
-                <p class="text-secondary">The default direction of columns is from start to end, from <b>left to right in LTR direction</b> and from <b>right to left in RTL direction</b>. however, the direction can br reversed to be from end to start.</p>
+                <p class="text-secondary">The default direction of columns is from start to end, from <b>left to right in LTR direction</b> and from <b>right to left in RTL direction</b>. however, the direction can br <b>reversed</b> to be from end to start.</p>
 
                 <div class="container-fluid example bg-status-bar">
                     <div class="row direction-reverse">
