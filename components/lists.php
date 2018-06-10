@@ -176,7 +176,7 @@ $url = $prefix."components/lists.php";
     <section>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure bg-white clearfix" style="padding-top: 1.5rem;">
+                <figure class="img_figure clearfix">
                     <img src="<?= $prefix ?>img/component_lists/content-action.png">
                 </figure>
                 <p class="text-secondary">The primary action takes up the majority of space.</p>
@@ -186,7 +186,7 @@ $url = $prefix."components/lists.php";
                 </ol>
             </div>
             <div class="col xlarge-3 large-4 medium-6 small-4">
-                <figure class="img_figure bg-white clearfix" style="padding-top: 1.5rem;">
+                <figure class="img_figure clearfix">
                     <img src="<?= $prefix ?>img/component_lists/content-hierarchy.png">
                 </figure>
                 <p class="text-secondary">Clear hierarchy is created by aligning the most distinguishing content on the left, with the least distinguishing on the right.</p>

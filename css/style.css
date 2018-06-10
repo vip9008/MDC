@@ -23,11 +23,11 @@ h1.article_title {
 
 .img_figure {
     margin: 1rem 0;
-    border: solid 0.0625rem var(--initial-text-divider);
 }
 
 .img_figure > img {
     float: left;
+    border: solid 0.0625rem var(--initial-text-divider);
 }
 
 pre, pre *, code, code * {
