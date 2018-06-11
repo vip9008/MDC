@@ -343,7 +343,7 @@ TEXT
                 <p class="text-secondary">Row inside a fluid container (fluid grid).</p>
                 <div class="space"></div>
 
-                <h6>Columns vertical alignment</h6>
+                <h6>Row items vertical alignment</h6>
                 <p class="text-secondary">Columns can be aligned <b>vertically</b> inside a row at top, middle, or bottom. note that in order for this to work, row height should be greater than the contained columns.</p>
 
                 <div class="container-fluid example bg-status-bar">
@@ -409,7 +409,7 @@ TEXT
                 <p class="text-secondary">Columns vertically aligned at the bottom.</p>
                 <div class="space"></div>
 
-                <h6>Columns horizontal alignment</h6>
+                <h6>Row items horizontal alignment</h6>
                 <p class="text-secondary">Columns can be aligned <b>horizontally</b> inside a row. note that in order for this to work, the row should not be full of columns.</p>
 
                 <div class="container-fluid example bg-status-bar">
@@ -517,7 +517,7 @@ TEXT
                 <p class="text-secondary">Columns horizontally justified with space between columns.</p>
                 <div class="space"></div>
 
-                <h6>Columns direction</h6>
+                <h6>Row items direction</h6>
                 <p class="text-secondary">The default direction of columns is from start to end, from <b>left to right in LTR direction</b> and from <b>right to left in RTL direction</b>. however, the direction can br <b>reversed</b> to be from end to start.</p>
 
                 <div class="container-fluid example bg-status-bar">
@@ -544,7 +544,102 @@ TEXT
                 <div class="space"></div>
 
                 <h4>Columns</h4>
-                <p class="text-secondary"></p>
+                <p class="text-secondary">We have 6 column classes based on material design breakpoints system (read breakpoints section). be aware of maximum column numbers in each breakpoint.</p>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row">
+                        <div class="col xsmall-1 small-3 medium-4"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-3 small-5 medium-4"><div class="box bg-<?= $accentColor ?>"></div></div>
+                        <div class="visible-xsmall visible-small visible-smallext" style="width: 100%; padding: 0.5rem;"></div>
+                        <div class="col xsmall-3 small-5 medium-4"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row">
+        <div class="col xsmall-1 small-3 medium-4">...</div>
+        <div class="col xsmall-3 small-5 medium-4">...</div>
+        <div class="col xsmall-3 small-5 medium-4">...</div>
+        .
+        .
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns with three different breakpoints. <b>xsmall</b>, <b>small</b>, and <b>medium</b>.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6>Auto sizing</h6>
+                <p class="text-secondary">Columns with auto size class will fill the available space but thier <b>width can't be less than 1 column</b>.</p>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row">
+                        <div class="col xsmall-auto medium-auto"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-3 medium-5"><div class="box bg-<?= $accentColor ?>"></div></div>
+                        <div class="visible-xsmall visible-small visible-smallext" style="width: 100%; padding: 0.5rem;"></div>
+                        <div class="col xsmall-auto medium-auto"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row">
+        <div class="col xsmall-auto medium-auto">...</div>
+        <div class="col xsmall-3 medium-5">...</div>
+        <div class="col xsmall-auto medium-auto">...</div>
+        .
+        .
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Columns with auto size class. note that on xsmall breakpoint the third columns wraps to a new row because the first row is filled with 4 columns.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6>Columns vertical aligning</h6>
+                <p class="text-secondary">Each Column can be optionally aligned vertically at <b>top</b>, <b>middle</b>, and <b>bottom</b>.</p>
+
+                <div class="container-fluid example bg-status-bar">
+                    <div class="row" style="height: 6rem;">
+                        <div class="col xsmall-auto align-top"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-auto align-middle"><div class="box bg-<?= $accentColor ?>"></div></div>
+                        <div class="col xsmall-auto align-bottom"><div class="box bg-<?= $accentColor ?>"></div></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="container-fluid">
+    <div class="row">
+        <div class="col xsmall-auto align-top">...</div>
+        <div class="col xsmall-auto align-middle">...</div>
+        <div class="col xsmall-auto align-bottom">...</div>
+        .
+        .
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+                <p class="text-secondary">Each column is aligned vertically.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
             </div>
         </div>
     </section>
