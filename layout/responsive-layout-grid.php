@@ -637,9 +637,6 @@ TEXT
 TEXT
 ) ?></pre>
                 <p class="text-secondary">Each column is aligned vertically.</p>
-
-                <div class="space"></div>
-                <div class="space"></div>
             </div>
         </div>
     </section>
