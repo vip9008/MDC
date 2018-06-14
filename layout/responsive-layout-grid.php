@@ -604,7 +604,7 @@ TEXT
 </div>
 TEXT
 ) ?></pre>
-                <p class="text-secondary">Columns with auto size class. note that on xsmall breakpoint the third columns wraps to a new row because the first row is filled with 4 columns.</p>
+                <p class="text-secondary">Columns with auto size class. note that on xsmall breakpoint the third column wraps to a new row because the first row is filled (maximum columns = 4).</p>
 
                 <div class="space"></div>
                 <div class="space"></div>
