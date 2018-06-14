@@ -71,17 +71,13 @@ $url = $prefix."components/selection-controls.php";
                 <p class="text-secondary">Selection controls make it easy to compare available options.</p>
             </div>
         </div>
-    </section>
 
-    <div class="row">
-        <div class="col xlarge-6 large-9 medium-12">
-            <div class="mdc-divider"></div>
-        </div>
-    </div>
-
-    <section>
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+                
                 <h4>Types</h4>
             </div>
         </div>
@@ -106,7 +102,7 @@ $url = $prefix."components/selection-controls.php";
                 <div class="mdc-divider"></div>
                 <div class="space"></div>
 
-                <h4>Types</h4>
+                <h4>When to use radio buttons</h4>
                 <p class="text-secondary">Use radio buttons to:</p>
                 <ul class="text-secondary">
                     <li>Select a single option from a list</li>

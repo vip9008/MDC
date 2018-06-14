@@ -93,14 +93,17 @@
                 <a href="<?= $prefix ?>components/dividers.php" class="mdc-list-item">
                     <div class="text">Dividers</div>
                 </a>
-                <a href="<?= $prefix ?>components/selection-controls.php" class="mdc-list-item">
-                    <div class="text">Selection controls</div>
-                </a>
                 <a href="<?= $prefix ?>components/lists.php" class="mdc-list-item">
                     <div class="text">Lists</div>
                 </a>
                 <a href="<?= $prefix ?>components/menus.php" class="mdc-list-item">
                     <div class="text">Menus</div>
+                </a>
+                <a href="<?= $prefix ?>components/progress-indicators.php" class="mdc-list-item">
+                    <div class="text">Progress indicators</div>
+                </a>
+                <a href="<?= $prefix ?>components/selection-controls.php" class="mdc-list-item">
+                    <div class="text">Selection controls</div>
                 </a>
                 <a href="<?= $prefix ?>components/text-fields.php" class="mdc-list-item">
                     <div class="text">Text fields</div>

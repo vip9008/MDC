@@ -1,6 +1,6 @@
 /* USING REM UNIT (BASE 16px) */
 
-.mdc-progress {
+.mdc-progress-track {
     padding: 0;
     margin: 0;
     height: 0.25rem;
@@ -10,7 +10,7 @@
     transition: height 0.2s;
 }
 
-.mdc-progress::before {
+.mdc-progress-track::before {
     content: '';
     display: block;
     position: absolute;
@@ -22,11 +22,11 @@
     background-color: var(--text-primary);
 }
 
-.mdc-progress.buffer::before {
+.mdc-progress-track.buffer::before {
     display: none;
 }
 
-.mdc-progress.buffer > .buffered {
+.mdc-progress-track.buffer > .buffered {
     float: left;
     height: 100%;
     width: 0;
@@ -34,14 +34,14 @@
     opacity: 0.32;
     background-color: var(--text-primary);
 }
-html[dir="ltr"] .mdc-progress.buffer > .buffered, html[dir] .mdc-progress.buffer[dir="ltr"] > .buffered {
+html[dir="ltr"] .mdc-progress-track.buffer > .buffered, html[dir] .mdc-progress-track.buffer[dir="ltr"] > .buffered {
     float: left;
 }
-html[dir="rtl"] .mdc-progress.buffer > .buffered, html[dir] .mdc-progress.buffer[dir="rtl"] > .buffered {
+html[dir="rtl"] .mdc-progress-track.buffer > .buffered, html[dir] .mdc-progress-track.buffer[dir="rtl"] > .buffered {
     float: right;
 }
 
-.mdc-progress.buffer > .buffer-bar {
+.mdc-progress-track.buffer > .buffer-indicator {
     float: left;
     height: 100%;
     opacity: 0.32;
@@ -54,23 +54,23 @@ html[dir="rtl"] .mdc-progress.buffer > .buffered, html[dir] .mdc-progress.buffer
     background-size: 0.625rem 0.625rem;
     background-position: 0 -1.4375rem;
 }
-html[dir="ltr"] .mdc-progress.buffer > .buffer-bar, html[dir] .mdc-progress.buffer[dir="ltr"] > .buffer-bar {
+html[dir="ltr"] .mdc-progress-track.buffer > .buffer-indicator, html[dir] .mdc-progress-track.buffer[dir="ltr"] > .buffer-indicator {
     float: left;
     -webkit-animation: buffer 3s infinite linear;
     animation: buffer 3s infinite linear;
 }
-html[dir="rtl"] .mdc-progress.buffer > .buffer-bar, html[dir] .mdc-progress.buffer[dir="rtl"] > .buffer-bar {
+html[dir="rtl"] .mdc-progress-track.buffer > .buffer-indicator, html[dir] .mdc-progress-track.buffer[dir="rtl"] > .buffer-indicator {
     float: right;
     -webkit-animation: buffer-rtl 3s infinite linear;
     animation: buffer-rtl 3s infinite linear;
 }
 
-.mdc-progress > .bar {
+.mdc-progress-track > .indicator {
     height: 100%;
     width: 0;
 }
 
-.mdc-progress.buffer > .bar {
+.mdc-progress-track.buffer > .indicator {
     position: absolute;
     top: 0;
     left: 0;
@@ -80,25 +80,26 @@ html[dir="rtl"] .mdc-progress.buffer > .buffer-bar, html[dir] .mdc-progress.buff
     transition: width 0.2s;
     background-color: var(--text-primary);
 }
-html[dir="ltr"] .mdc-progress.buffer > .bar, html[dir] .mdc-progress.buffer[dir="ltr"] > .bar {
+html[dir="ltr"] .mdc-progress-track.buffer > .indicator, html[dir] .mdc-progress-track.buffer[dir="ltr"] > .indicator {
     left: 0;
     right: auto;
 }
-html[dir="rtl"] .mdc-progress.buffer > .bar, html[dir] .mdc-progress.buffer[dir="rtl"] > .bar {
+html[dir="rtl"] .mdc-progress-track.buffer > .indicator, html[dir] .mdc-progress-track.buffer[dir="rtl"] > .indicator {
     left: auto;
     right: 0;
 }
 
-.mdc-progress > .determinate {
+.mdc-progress-track > .determinate {
     transition: width 0.2s;
+    background-color: var(--text-primary);
 }
 
-.mdc-progress > .indeterminate {
+.mdc-progress-track > .indeterminate {
     height: 0;
     width: 100%;
 }
 
-.mdc-progress > .indeterminate::before {
+.mdc-progress-track > .indeterminate::before {
     content: '';
     position: absolute;
     background-color: var(--text-primary);
@@ -109,20 +110,20 @@ html[dir="rtl"] .mdc-progress.buffer > .bar, html[dir] .mdc-progress.buffer[dir=
     -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
     animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
-html[dir="ltr"] .mdc-progress > .indeterminate::before, html[dir] .mdc-progress[dir="ltr"] > .indeterminate::before {
+html[dir="ltr"] .mdc-progress-track > .indeterminate::before, html[dir] .mdc-progress-track[dir="ltr"] > .indeterminate::before {
     left: 0;
     right: auto;
     -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
     animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
-html[dir="rtl"] .mdc-progress > .indeterminate::before, html[dir] .mdc-progress[dir="rtl"] > .indeterminate::before {
+html[dir="rtl"] .mdc-progress-track > .indeterminate::before, html[dir] .mdc-progress-track[dir="rtl"] > .indeterminate::before {
     left: auto;
     right: 0;
     -webkit-animation: indeterminate-rtl 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
     animation: indeterminate-rtl 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
 
-.mdc-progress > .indeterminate::after {
+.mdc-progress-track > .indeterminate::after {
     content: '';
     position: absolute;
     background-color: var(--text-primary);
@@ -135,7 +136,7 @@ html[dir="rtl"] .mdc-progress > .indeterminate::before, html[dir] .mdc-progress[
     -webkit-animation-delay: 1.15s;
     animation-delay: 1.15s;
 }
-html[dir="ltr"] .mdc-progress > .indeterminate::after, html[dir] .mdc-progress[dir="ltr"] > .indeterminate::after {
+html[dir="ltr"] .mdc-progress-track > .indeterminate::after, html[dir] .mdc-progress-track[dir="ltr"] > .indeterminate::after {
     left: 0;
     right: auto;
     -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
@@ -143,7 +144,7 @@ html[dir="ltr"] .mdc-progress > .indeterminate::after, html[dir] .mdc-progress[d
     -webkit-animation-delay: 1.15s;
     animation-delay: 1.15s;
 }
-html[dir="rtl"] .mdc-progress > .indeterminate::after, html[dir] .mdc-progress[dir="rtl"] > .indeterminate::after {
+html[dir="rtl"] .mdc-progress-track > .indeterminate::after, html[dir] .mdc-progress-track[dir="rtl"] > .indeterminate::after {
     left: auto;
     right: 0;
     -webkit-animation: indeterminate-short-rtl 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
