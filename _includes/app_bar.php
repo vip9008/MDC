@@ -2,7 +2,7 @@
     <button class="material-icon nav-icon">menu</button>
     <span class="title"><?= $topAppBarTitle ?></span>
     <div class="actions">
-        <div class="material-icon">
+        <div class="action-item">
             <div class="mdc-menu-container">
                 <button class="menu-button material-icon">more_vert</button>
                 <div class="mdc-list-container">
