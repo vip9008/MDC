@@ -6,7 +6,7 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Environment</div>
-                <div class="meta material-icon">
+                <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Layout</div>
-                <div class="meta material-icon">
+                <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Color</div>
-                <div class="meta material-icon">
+                <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Components</div>
-                <div class="meta material-icon">
+                <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Usability</div>
-                <div class="meta material-icon">
+                <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
             </div>
