@@ -94,7 +94,7 @@ a.mdc-list-item:active::before, button.mdc-list-item:active::before, .mdc-list-i
     color: var(--text-secondary);
 }
 
-.mdc-list-item > .material-icon {
+.mdc-list-item > .icon {
     margin: 1rem 2rem 1rem 0;
     width: 1.5rem;
     height: 1.5rem;
@@ -111,15 +111,15 @@ a.mdc-list-item:active::before, button.mdc-list-item:active::before, .mdc-list-i
 
 }
 
-html[dir="ltr"] .mdc-list-item > .material-icon,
-html[dir] *[dir="ltr"] .mdc-list-item > .material-icon,
-html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .material-icon {
+html[dir="ltr"] .mdc-list-item > .icon,
+html[dir] *[dir="ltr"] .mdc-list-item > .icon,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .icon {
     margin: 1rem 2rem 1rem 0;
 }
 
-html[dir="rtl"] .mdc-list-item > .material-icon,
-html[dir] *[dir="rtl"] .mdc-list-item > .material-icon,
-html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .material-icon {
+html[dir="rtl"] .mdc-list-item > .icon,
+html[dir] *[dir="rtl"] .mdc-list-item > .icon,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .icon {
     margin: 1rem 0 1rem 2rem;
 }
 
@@ -151,7 +151,7 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta {
     padding-right: 1.75rem;
 }
 
-.mdc-list-item > .meta.material-icon {
+.mdc-list-item > .meta.icon {
     margin: 0.75rem 0 0.75rem auto;
     padding-left: 1rem;
     width: 2.5rem;
@@ -160,21 +160,21 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta {
     align-self: center;
 }
 
-html[dir="ltr"] .mdc-list-item > .meta.material-icon,
-html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .meta.material-icon {
+html[dir="ltr"] .mdc-list-item > .meta.icon,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .meta.icon {
     margin: 0.75rem 0 0.75rem auto;
     padding: 0;
     padding-left: 1rem;
 }
 
-html[dir="rtl"] .mdc-list-item > .meta.material-icon,
-html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta.material-icon {
+html[dir="rtl"] .mdc-list-item > .meta.icon,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta.icon {
     margin: 0.75rem auto 0.75rem 0;
     padding: 0;
     padding-right: 1rem;
 }
 
-.mdc-list-item > .meta.material-icon > .material-icon {
+.mdc-list-item > .meta.icon > .material-icon {
     will-change: transform;
     transition: transform 365ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -252,7 +252,7 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .graphic.md-100 {
     margin: 0.5rem -1rem 0.5rem 1rem;
 }
 
-.mdc-list-item > .material-icon:not(.meta) + .text > .secondary {
+.mdc-list-item > .icon:not(.meta) + .text > .secondary {
     margin: 0.125rem 0;
 }
 
@@ -263,16 +263,16 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .graphic.md-100 {
     white-space: normal;
 }
 
-.md-3line > .mdc-list-item > .material-icon,
-.md-3line.mdc-list-item > .material-icon,
+.md-3line > .mdc-list-item > .icon,
+.md-3line.mdc-list-item > .icon,
 .md-3line > .mdc-list-item > .graphic,
 .md-3line.mdc-list-item > .graphic,
-html[dir] .md-3line > .mdc-list-item > .material-icon,
-html[dir] .md-3line.mdc-list-item > .material-icon,
+html[dir] .md-3line > .mdc-list-item > .icon,
+html[dir] .md-3line.mdc-list-item > .icon,
 html[dir] .md-3line > .mdc-list-item > .graphic,
 html[dir] .md-3line.mdc-list-item > .graphic,
-html[dir] .md-3line[dir] > .mdc-list-item > .material-icon,
-html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .material-icon,
+html[dir] .md-3line[dir] > .mdc-list-item > .icon,
+html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .icon,
 html[dir] .md-3line[dir] > .mdc-list-item > .graphic,
 html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
     margin-top: 1rem;
@@ -309,24 +309,24 @@ html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
     --text-divider: var(--initial-text-divider);
 }
 
-.mdc-list-group.collapsed > .mdc-list-item > .meta.material-icon,
-.mdc-list-group.expanded > .mdc-list-item > .meta.material-icon {
+.mdc-list-group.collapsed > .mdc-list-item > .meta.icon,
+.mdc-list-group.expanded > .mdc-list-item > .meta.icon {
     color: var(--initial-text-secondary);
 }
 
-.mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon {
+.mdc-list-group.expanded > .mdc-list-item > .meta.icon > .material-icon {
     transform: rotate(-180deg);
 }
 
-html[dir="ltr"] .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon,
-html[dir] .mdc-list-group.expanded[dir="ltr"] > .mdc-list-item > .meta.material-icon > .material-icon,
-html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon {
+html[dir="ltr"] .mdc-list-group.expanded > .mdc-list-item > .meta.icon > .material-icon,
+html[dir] .mdc-list-group.expanded[dir="ltr"] > .mdc-list-item > .meta.icon > .material-icon,
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-group.expanded > .mdc-list-item > .meta.icon > .material-icon {
     transform: rotate(-180deg);
 }
 
-html[dir="rtl"] .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon,
-html[dir] .mdc-list-group.expanded[dir="rtl"] > .mdc-list-item > .meta.material-icon > .material-icon,
-html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-group.expanded > .mdc-list-item > .meta.material-icon > .material-icon {
+html[dir="rtl"] .mdc-list-group.expanded > .mdc-list-item > .meta.icon > .material-icon,
+html[dir] .mdc-list-group.expanded[dir="rtl"] > .mdc-list-item > .meta.icon > .material-icon,
+html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-group.expanded > .mdc-list-item > .meta.icon > .material-icon {
     transform: rotate(180deg);
 }
 

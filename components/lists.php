@@ -406,15 +406,15 @@ TEXT
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item">
                         <div class="text">Dining</div>
-                        <div class="meta material-icon">star</div>
+                        <div class="meta icon material-icon">star</div>
                     </div>
                     <div class="mdc-list-item">
                         <div class="text">Education</div>
-                        <div class="meta material-icon">star</div>
+                        <div class="meta icon material-icon">star</div>
                     </div>
                     <div class="mdc-list-item">
                         <div class="text">Health</div>
-                        <div class="meta material-icon">star</div>
+                        <div class="meta icon material-icon">star</div>
                     </div>
                 </div>
             </div>
@@ -425,7 +425,7 @@ TEXT
     <div class="mdc-list-group">
         <div class="mdc-list-item">
             <div class="text">Dining</div>
-            <div class="meta material-icon">star</div>
+            <div class="meta icon material-icon">star</div>
         </div>
         .
         .
@@ -443,15 +443,15 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item">
-                        <div class="material-icon text-secondary">restaurant_menu</div>
+                        <div class="icon material-icon text-secondary">restaurant_menu</div>
                         <div class="text">Dining</div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="material-icon text-secondary">edit</div>
+                        <div class="icon material-icon text-secondary">edit</div>
                         <div class="text">Education</div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="material-icon text-secondary">favorite</div>
+                        <div class="icon material-icon text-secondary">favorite</div>
                         <div class="text">Health</div>
                     </div>
                 </div>
@@ -462,7 +462,7 @@ TEXT
 <div class="mdc-list-container">
     <div class="mdc-list-group">
         <div class="mdc-list-item">
-            <div class="material-icon">restaurant_menu</div>
+            <div class="icon material-icon">restaurant_menu</div>
             <div class="text">Dining</div>
         </div>
         .
@@ -483,17 +483,17 @@ TEXT
                     <div class="mdc-list-item">
                         <div class="graphic material-icon bg-grey-600">folder</div>
                         <div class="text">Photos</div>
-                        <div class="meta material-icon">info</div>
+                        <div class="meta icon material-icon">info</div>
                     </div>
                     <div class="mdc-list-item">
                         <div class="graphic material-icon bg-grey-600">folder</div>
                         <div class="text">Recipes</div>
-                        <div class="meta material-icon">info</div>
+                        <div class="meta icon material-icon">info</div>
                     </div>
                     <div class="mdc-list-item">
                         <div class="graphic material-icon bg-grey-600">folder</div>
                         <div class="text">Work</div>
-                        <div class="meta material-icon">info</div>
+                        <div class="meta icon material-icon">info</div>
                     </div>
                 </div>
             </div>
@@ -505,7 +505,7 @@ TEXT
         <div class="mdc-list-item">
             <div class="graphic material-icon">folder</div>
             <div class="text">Photos</div>
-            <div class="meta material-icon">info</div>
+            <div class="meta icon material-icon">info</div>
         </div>
         .
         .
@@ -608,73 +608,73 @@ TEXT
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-group collapsed">
                         <div class="mdc-list-item interactive deep-purple-A700">
-                            <div class="material-icon text-secondary">restaurant_menu</div>
+                            <div class="icon material-icon text-secondary">restaurant_menu</div>
                             <div class="text">Dining</div>
-                            <div class="meta material-icon">
+                            <div class="meta icon">
                                 <div class="material-icon">keyboard_arrow_down</div>
                             </div>
                         </div>
                         <div class="mdc-dropdown">
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Breakfast & brunch</div>
                             </div>
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">New American</div>
                             </div>
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Sushi bars</div>
                             </div>
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Filipino food</div>
                             </div>
                         </div>
                     </div>
                     <div class="mdc-list-group collapsed">
                         <div class="mdc-list-item interactive deep-purple-A700">
-                            <div class="material-icon text-secondary">edit</div>
+                            <div class="icon material-icon text-secondary">edit</div>
                             <div class="text">Education</div>
-                            <div class="meta material-icon">
+                            <div class="meta icon">
                                 <div class="material-icon">keyboard_arrow_down</div>
                             </div>
                         </div>
                         <div class="mdc-dropdown">
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Courses</div>
                             </div>
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Tutorials</div>
                             </div>
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Test marks</div>
                             </div>
                         </div>
                     </div>
                     <div class="mdc-list-group collapsed">
                         <div class="mdc-list-item interactive deep-purple-A700">
-                            <div class="material-icon text-secondary">favorite</div>
+                            <div class="icon material-icon text-secondary">favorite</div>
                             <div class="text">Health</div>
-                            <div class="meta material-icon">
+                            <div class="meta icon">
                                 <div class="material-icon">keyboard_arrow_down</div>
                             </div>
                         </div>
                         <div class="mdc-dropdown">
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Calories</div>
                             </div>
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Healthy food</div>
                             </div>
                             <div class="mdc-list-item">
-                                <div class="material-icon"></div>
+                                <div class="icon"></div>
                                 <div class="text">Work out</div>
                             </div>
                         </div>
@@ -688,15 +688,15 @@ TEXT
     <div class="mdc-list-group">
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive">
-                <div class="material-icon text-secondary">restaurant_menu</div>
+                <div class="icon material-icon text-secondary">restaurant_menu</div>
                 <div class="text">Dining</div>
-                <div class="meta material-icon">
+                <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
             </div>
             <div class="mdc-dropdown">
                 <div class="mdc-list-item">
-                    <div class="material-icon"></div>
+                    <div class="icon"></div>
                     <div class="text">Breakfast & brunch</div>
                 </div>
                 .
@@ -872,21 +872,21 @@ TEXT
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-item">
-                        <div class="material-icon deep-purple-A700">wifi</div>
+                        <div class="icon material-icon deep-purple-A700">wifi</div>
                         <div class="text">
                             Wi-Fi
                             <div class="secondary">Main Office</div>
                         </div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="material-icon text-secondary">bluetooth</div>
+                        <div class="icon material-icon text-secondary">bluetooth</div>
                         <div class="text">
                             Bluetooth
                             <div class="secondary">Off</div>
                         </div>
                     </div>
                     <div class="mdc-list-item">
-                        <div class="material-icon deep-purple-A700">location_searching</div>
+                        <div class="icon material-icon deep-purple-A700">location_searching</div>
                         <div class="text">
                             Location services
                             <div class="secondary">On</div>
@@ -900,7 +900,7 @@ TEXT
 <div class="mdc-list-container">
     <div class="mdc-list-group">
         <div class="mdc-list-item">
-            <div class="material-icon">wifi</div>
+            <div class="icon material-icon">wifi</div>
             <div class="text">
                 Wi-Fi
                 <div class="secondary">Main Office</div>
@@ -927,7 +927,7 @@ TEXT
                             Photos
                             <div class="secondary">Jan 9, 2018</div>
                         </div>
-                        <div class="meta material-icon">
+                        <div class="meta icon">
                             <button class="material-icon grey">info</button>
                         </div>
                     </div>
@@ -937,7 +937,7 @@ TEXT
                             Recipes
                             <div class="secondary">Jan 17, 2018</div>
                         </div>
-                        <div class="meta material-icon">
+                        <div class="meta icon">
                             <button class="material-icon grey">info</button>
                         </div>
                     </div>
@@ -947,7 +947,7 @@ TEXT
                             Work
                             <div class="secondary">Jan 28, 2018</div>
                         </div>
-                        <div class="meta material-icon">
+                        <div class="meta icon">
                             <button class="material-icon grey">info</button>
                         </div>
                     </div>
@@ -964,7 +964,7 @@ TEXT
                 Photos
                 <div class="secondary">Jan 9, 2018</div>
             </div>
-            <div class="meta material-icon">
+            <div class="meta icon">
                 <button class="material-icon">info</button>
             </div>
         </div>
