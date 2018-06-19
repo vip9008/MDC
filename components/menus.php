@@ -486,7 +486,7 @@ TEXT
 
                 <div class="mdc-menu-container select-menu">
                     <div class="menu-button mdc-text-field deep-purple-A700">
-                        <div class="material-icon trailing">arrow_drop_down</div>
+                        <div class="icon material-icon trailing">arrow_drop_down</div>
                         <div class="input"></div>
                         <label class="label">Select menu</label>
                         <input type="hidden" class="select-value">
@@ -502,7 +502,7 @@ TEXT
 
                 <div class="mdc-menu-container select-menu">
                     <div class="menu-button mdc-text-field outlined deep-purple-A700">
-                        <div class="material-icon trailing">arrow_drop_down</div>
+                        <div class="icon material-icon trailing">arrow_drop_down</div>
                         <div class="input"></div>
                         <label class="label">Select menu</label>
                         <input type="hidden" class="select-value">
@@ -521,7 +521,7 @@ TEXT
 <<<TEXT
 <div class="mdc-menu-container select-menu">
     <div class="menu-button mdc-text-field deep-purple-A700">
-        <div class="material-icon trailing">arrow_drop_down</div>
+        <div class="icon material-icon trailing">arrow_drop_down</div>
         <div class="input"></div>
         <label class="label">Select menu</label>
         <input type="hidden" class="select-value" name="select_menu_1">

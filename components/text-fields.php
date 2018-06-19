@@ -474,14 +474,14 @@ $url = $prefix."components/text-fields.php";
                 </div>
 
                 <div class="mdc-text-field deep-purple-A700">
-                    <div class="material-icon">person</div>
+                    <div class="icon material-icon">person</div>
                     <input type="text" class="input">
                     <label class="label">Label</label>
                     <div class="help-block">Help text</div>
                 </div>
 
                 <div class="mdc-text-field deep-purple-A700">
-                    <div class="material-icon trailing">person</div>
+                    <div class="icon material-icon trailing">person</div>
                     <input type="text" class="input">
                     <label class="label">Label</label>
                     <div class="help-block">Help text</div>
@@ -497,14 +497,14 @@ $url = $prefix."components/text-fields.php";
 </div>
 
 <div class="mdc-text-field deep-purple-A700">
-    <div class="material-icon">person</div>
+    <div class="icon material-icon">person</div>
     <input type="text" class="input">
     <label class="label">Label</label>
     <div class="help-block">Help text</div>
 </div>
 
 <div class="mdc-text-field deep-purple-A700">
-    <div class="material-icon trailing">person</div>
+    <div class="icon material-icon trailing">person</div>
     <input type="text" class="input">
     <label class="label">Label</label>
     <div class="help-block">Help text</div>
@@ -535,14 +535,14 @@ TEXT
                 </div>
 
                 <div class="mdc-text-field outlined deep-purple-A700">
-                    <div class="material-icon">person</div>
+                    <div class="icon material-icon">person</div>
                     <input type="text" class="input">
                     <label class="label">Label</label>
                     <div class="help-block">Help text</div>
                 </div>
 
                 <div class="mdc-text-field outlined deep-purple-A700">
-                    <div class="material-icon trailing">person</div>
+                    <div class="icon material-icon trailing">person</div>
                     <input type="text" class="input">
                     <label class="label">Label</label>
                     <div class="help-block">Help text</div>
@@ -558,14 +558,14 @@ TEXT
 </div>
 
 <div class="mdc-text-field outlined deep-purple-A700">
-    <div class="material-icon">person</div>
+    <div class="icon material-icon">person</div>
     <input type="text" class="input">
     <label class="label">Label</label>
     <div class="help-block">Help text</div>
 </div>
 
 <div class="mdc-text-field outlined deep-purple-A700">
-    <div class="material-icon trailing">person</div>
+    <div class="icon material-icon trailing">person</div>
     <input type="text" class="input">
     <label class="label">Label</label>
     <div class="help-block">Help text</div>
