@@ -46,6 +46,7 @@ html[dir="rtl"] #mdc-nav-drawer {
     overflow-y: auto;
 }
 
+#mdc-nav-drawer a.mdc-list-item:not(.active),
 #mdc-nav-drawer .mdc-list-group:not(.expanded) > .mdc-list-item {
     --text-primary: var(--initial-text-primary);
     --text-secondary: var(--initial-text-secondary);
