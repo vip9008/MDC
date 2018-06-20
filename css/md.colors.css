@@ -5057,7 +5057,8 @@ body {
 
 .bg-red-50, .bg-red-100, .bg-red-200, .bg-red-300, .bg-red-A100, .bg-pink-50, .bg-pink-100, .bg-pink-200, .bg-pink-A100, .bg-purple-50, .bg-purple-100, .bg-purple-200, .bg-purple-A100, .bg-deep-purple-50, .bg-deep-purple-100, .bg-deep-purple-200, .bg-deep-purple-A100, .bg-indigo-50, .bg-indigo-100, .bg-indigo-200, .bg-indigo-A100, .bg-blue-50, .bg-blue-100, .bg-blue-200, .bg-blue-300, .bg-blue-400, .bg-blue-A100, .bg-light-blue-50, .bg-light-blue-100, .bg-light-blue-200, .bg-light-blue-300, .bg-light-blue-400, .bg-light-blue, .bg-light-blue-500, .bg-light-blue-A100, .bg-light-blue-A200, .bg-light-blue-A400, .bg-cyan-50, .bg-cyan-100, .bg-cyan-200, .bg-cyan-300, .bg-cyan-400, .bg-cyan, .bg-cyan-500, .bg-cyan-600, .bg-cyan-A100, .bg-cyan-A200, .bg-cyan-A400, .bg-cyan-A700, .bg-teal-50, .bg-teal-100, .bg-teal-200, .bg-teal-300, .bg-teal-400, .bg-teal-A100, .bg-teal-A200, .bg-teal-A400, .bg-teal-A700, .bg-green-50, .bg-green-100, .bg-green-200, .bg-green-300, .bg-green-400, .bg-green, .bg-green-500, .bg-green-A100, .bg-green-A200, .bg-green-A400, .bg-green-A700, .bg-light-green-50, .bg-light-green-100, .bg-light-green-200, .bg-light-green-300, .bg-light-green-400, .bg-light-green, .bg-light-green-500, .bg-light-green-600, .bg-light-green-A100, .bg-light-green-A200, .bg-light-green-A400, .bg-light-green-A700, .bg-lime-50, .bg-lime-100, .bg-lime-200, .bg-lime-300, .bg-lime-400, .bg-lime, .bg-lime-500, .bg-lime-600, .bg-lime-700, .bg-lime-800, .bg-lime-A100, .bg-lime-A200, .bg-lime-A400, .bg-lime-A700, .bg-yellow-50, .bg-yellow-100, .bg-yellow-200, .bg-yellow-300, .bg-yellow-400, .bg-yellow, .bg-yellow-500, .bg-yellow-600, .bg-yellow-700, .bg-yellow-800, .bg-yellow-900, .bg-yellow-A100, .bg-yellow-A200, .bg-yellow-A400, .bg-yellow-A700, .bg-amber-50, .bg-amber-100, .bg-amber-200, .bg-amber-300, .bg-amber-400, .bg-amber, .bg-amber-500, .bg-amber-600, .bg-amber-700, .bg-amber-800, .bg-amber-900, .bg-amber-A100, .bg-amber-A200, .bg-amber-A400, .bg-amber-A700, .bg-orange-50, .bg-orange-100, .bg-orange-200, .bg-orange-300, .bg-orange-400, .bg-orange, .bg-orange-500, .bg-orange-600, .bg-orange-700, .bg-orange-A100, .bg-orange-A200, .bg-orange-A400, .bg-orange-A700, .bg-deep-orange-50, .bg-deep-orange-100, .bg-deep-orange-200, .bg-deep-orange-300, .bg-deep-orange-400, .bg-deep-orange-A100, .bg-deep-orange-A200, .bg-brown-50, .bg-brown-100, .bg-brown-200, .bg-grey-50, .bg-grey-100, .bg-grey-200, .bg-grey-300, .bg-grey-400, .bg-grey, .bg-grey-500, .bg-blue-grey-50, .bg-blue-grey-100, .bg-blue-grey-200, .bg-blue-grey-300, .bg-white {
     --main-color: #000000;
-    
+    --initial-main-color: #000000;
+
     --opacity-hover: 0.04;
     --opacity-focus: 0.12;
     --opacity-selected: 0.08;
@@ -5065,15 +5066,30 @@ body {
     --opacity-pressed: 0.16;
     --opacity-dragged: 0.08;
 
-    --text-primary: rgba(0, 0, 0, 0.87);
-    --text-secondary: rgba(0, 0, 0, 0.6);
-    --text-hint: rgba(0, 0, 0, 0.38);
-    --text-divider: rgba(0, 0, 0, 0.12);
+    --initial-text-primary: rgba(0, 0, 0, 0.87);
+    --initial-text-secondary: rgba(0, 0, 0, 0.6);
+    --initial-text-hint: rgba(0, 0, 0, 0.38);
+    --initial-text-divider: rgba(0, 0, 0, 0.12);
+
+    --text-primary: var(--initial-text-primary);
+    --text-secondary: var(--initial-text-secondary);
+    --text-hint: var(--initial-text-hint);
+    --text-divider: var(--initial-text-divider);
+
+    --initial-bg-status-bar: #E0E0E0;
+    --initial-bg-app-bar: #F5F5F5;
+    --initial-bg-main-content: #FAFAFA;
+    --initial-bg-cards: #FFFFFF;
+    --initial-bg-border: rgba(0, 0, 0, 0.12);
 
     --input: rgba(0, 0, 0, 0.04);
     --input-hover: rgba(0, 0, 0, 0.12);
     --input-focus: rgba(0, 0, 0, 0.16);
     --input-disabled: rgba(0, 0, 0, 0.02);
+
+    --switch-rail-opacity: 0.32;
+    --switch-rail-opacity-0: 0.32;
+    --switch-color: #FFFFFF;
 
     color: var(--text-primary);
     background-color: var(--bg-cards);
@@ -5082,7 +5098,8 @@ body {
 
 .bg-red-400, .bg-red, .bg-red-500, .bg-red-600, .bg-red-700, .bg-red-800, .bg-red-900, .bg-red-A200, .bg-red-A400, .bg-red-A700, .bg-pink-300, .bg-pink-400, .bg-pink, .bg-pink-500, .bg-pink-600, .bg-pink-700, .bg-pink-800, .bg-pink-900, .bg-pink-A200, .bg-pink-A400, .bg-pink-A700, .bg-purple-300, .bg-purple-400, .bg-purple, .bg-purple-500, .bg-purple-600, .bg-purple-700, .bg-purple-800, .bg-purple-900, .bg-purple-A200, .bg-purple-A400, .bg-purple-A700, .bg-deep-purple-300, .bg-deep-purple-400, .bg-deep-purple, .bg-deep-purple-500, .bg-deep-purple-600, .bg-deep-purple-700, .bg-deep-purple-800, .bg-deep-purple-900, .bg-deep-purple-A200, .bg-deep-purple-A400, .bg-deep-purple-A700, .bg-indigo-300, .bg-indigo-400, .bg-indigo, .bg-indigo-500, .bg-indigo-600, .bg-indigo-700, .bg-indigo-800, .bg-indigo-900, .bg-indigo-A200, .bg-indigo-A400, .bg-indigo-A700, .bg-blue, .bg-blue-500, .bg-blue-600, .bg-blue-700, .bg-blue-800, .bg-blue-900, .bg-blue-A200, .bg-blue-A400, .bg-blue-A700, .bg-light-blue-600, .bg-light-blue-700, .bg-light-blue-800, .bg-light-blue-900, .bg-light-blue-A700, .bg-cyan-700, .bg-cyan-800, .bg-cyan-900, .bg-teal, .bg-teal-500, .bg-teal-600, .bg-teal-700, .bg-teal-800, .bg-teal-900, .bg-green-600, .bg-green-700, .bg-green-800, .bg-green-900, .bg-light-green-700, .bg-light-green-800, .bg-light-green-900, .bg-lime-900, .bg-orange-800, .bg-orange-900, .bg-deep-orange, .bg-deep-orange-500, .bg-deep-orange-600, .bg-deep-orange-700, .bg-deep-orange-800, .bg-deep-orange-900, .bg-deep-orange-A400, .bg-deep-orange-A700, .bg-brown-300, .bg-brown-400, .bg-brown, .bg-brown-500, .bg-brown-600, .bg-brown-700, .bg-brown-800, .bg-brown-900, .bg-grey-600, .bg-grey-700, .bg-grey-800, .bg-grey-900, .bg-blue-grey-400, .bg-blue-grey, .bg-blue-grey-500, .bg-blue-grey-600, .bg-blue-grey-700, .bg-blue-grey-800, .bg-blue-grey-900, .bg-black {
     --main-color: #FFFFFF;
-    
+    --initial-main-color: #FFFFFF;
+
     --opacity-hover: 0.08;
     --opacity-focus: 0.24;
     --opacity-selected: 0.16;
@@ -5090,15 +5107,30 @@ body {
     --opacity-pressed: 0.32;
     --opacity-dragged: 0.16;
 
-    --text-primary: rgba(255, 255, 255, 1);
-    --text-secondary: rgba(255, 255, 255, 0.7);
-    --text-hint: rgba(255, 255, 255, 0.5);
-    --text-divider: rgba(255, 255, 255, 0.12);
+    --initial-text-primary: rgba(255, 255, 255, 1);
+    --initial-text-secondary: rgba(255, 255, 255, 0.7);
+    --initial-text-hint: rgba(255, 255, 255, 0.5);
+    --initial-text-divider: rgba(255, 255, 255, 0.12);
+
+    --text-primary: var(--initial-text-primary);
+    --text-secondary: var(--initial-text-secondary);
+    --text-hint: var(--initial-text-hint);
+    --text-divider: var(--initial-text-divider);
+
+    --initial-bg-status-bar: #000000;
+    --initial-bg-app-bar: #212121;
+    --initial-bg-main-content: #303030;
+    --initial-bg-cards: #424242;
+    --initial-bg-border: rgba(255, 255, 255, 0.12);
 
     --input: rgba(255, 255, 255, 0.08);
     --input-hover: rgba(255, 255, 255, 0.16);
     --input-focus: rgba(255, 255, 255, 0.24);
     --input-disabled: rgba(255, 255, 255, 0.04);
+
+    --switch-rail-opacity: 0.38;
+    --switch-rail-opacity-0: 0.38;
+    --switch-color: #FAFAFA;
 
     color: var(--text-primary);
     background-color: var(--bg-cards);

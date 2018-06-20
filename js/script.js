@@ -16,9 +16,11 @@ $(document).ready(function() {
     $('#theme_control').click(function () {
         if ($('body').hasClass('md-theme-dark')) {
             $('body').removeClass('md-theme-dark');
+            $('.md-theme-dark').removeClass('md-theme-dark').addClass('md-theme-light');
             $(this).removeClass('checked');
         } else {
             $('body').addClass('md-theme-dark');
+            $('.md-theme-light').removeClass('md-theme-light').addClass('md-theme-dark');
             $(this).addClass('checked');
         }
     });
