@@ -7,6 +7,10 @@
     border-top: solid 0.0625rem var(--bg-border);
 }
 
+.mdc-list-container > .mdc-divider {
+    margin: 0.5rem 0;
+}
+
 .mdc-list-group > .mdc-divider.inset {
     margin-left: 4.5rem;
 }
