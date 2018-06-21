@@ -150,7 +150,9 @@ h6 {
 }
 
 p, a, span {
-    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: 0.03125em;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -202,7 +204,8 @@ html[dir="rtl"] ol, html[dir] ol[dir="rtl"], html[dir="rtl"] ul, html[dir] ul[di
 
 ol li, ul li {
     font-size: 1rem;
-    line-height: 1.8;
+    letter-spacing: 0.03125em;
+    font-weight: 400;
     margin: 0 0 0.5rem;
     max-width: 40rem;
 }
@@ -262,6 +265,86 @@ section {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
+}
+
+.mdt-h1 {
+    font-size: 6rem;
+    letter-spacing: -0.015625em;
+    font-weight: 300;
+}
+
+.mdt-h2 {
+    font-size: 3.75rem;
+    letter-spacing: -0.0.008333em;
+    font-weight: 300;
+}
+
+.mdt-h3 {
+    font-size: 3rem;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.mdt-h4 {
+    font-size: 2.125rem;
+    letter-spacing: 0.007353em;
+    font-weight: 400;
+}
+
+.mdt-h5 {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.mdt-h6 {
+    font-size: 1.25rem;
+    letter-spacing: 0.0075em;
+    font-weight: 500;
+}
+
+.mdt-subtitle, .mdt-subtitle-1 {
+    font-size: 1rem;
+    letter-spacing: 0.009375em;
+    font-weight: 400;
+}
+
+.mdt-subtitle-2 {
+    font-size: 0.875rem;
+    letter-spacing: 0.007143em;
+    font-weight: 500;
+}
+
+.mdt-body, .mdt-body-1 {
+    font-size: 1rem;
+    letter-spacing: 0.03125em;
+    font-weight: 400;
+}
+
+.mdt-body-2 {
+    font-size: 0.875rem;
+    letter-spacing: 0.017857em;
+    font-weight: 400;
+}
+
+.mdt-button {
+    font-size: 0.875rem;
+    letter-spacing: 0.053571em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.mdt-caption {
+    font-size: 0.75rem;
+    letter-spacing: 0.033333em;
+    font-weight: 400;
+}
+
+.mdt-overline {
+    font-size: 0.625rem;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .text-left {
