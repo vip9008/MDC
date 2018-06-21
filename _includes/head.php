@@ -59,8 +59,8 @@ $initial_js_files = [
             $('#mdc-nav-drawer a.mdc-list-item[href="<?= $url ?>"]')
             .addClass('active bold')
             .closest('.mdc-list-group.collapsed')
-            .addClass('bold')
             .children('.mdc-list-item')
+            .addClass('active bold')
             .click();
         });
     </script>

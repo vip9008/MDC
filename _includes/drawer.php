@@ -60,7 +60,7 @@
         <div class="mdc-list-group collapsed">
             <div class="mdc-list-item interactive <?= $primaryColor ?>">
                 <div class="text">Typography</div>
-                <div class="meta material-icon">
+                <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
             </div>

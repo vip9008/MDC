@@ -54,7 +54,17 @@ html[dir="rtl"] #mdc-nav-drawer {
     --text-divider: var(--initial-text-divider);
 }
 
-#mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item::before {
+#mdc-nav-drawer > .mdc-list-container:not(.standard) .mdc-list-item::before {
+    top: 0.25rem;
+    right: 0.5rem;
+    bottom: 0.25rem;
+    left: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+#mdc-nav-drawer .mdc-list-container:not(.standard) > .mdc-list-item.active::before,
+#mdc-nav-drawer .mdc-list-container:not(.standard) > .mdc-list-group > .mdc-list-item.active::before,
+#mdc-nav-drawer .mdc-list-container.standard .mdc-list-group.expanded > .mdc-list-item::before {
     background-color: var(--main-color);
     opacity: var(--opacity-activated);
 }
