@@ -8,6 +8,18 @@
     border-top: solid 1px var(--initial-text-divider);
 }
 
+.mdc-list-subtitle {
+    color: var(--initial-text-secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.009375em;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0.75rem 1rem;
+}
+
 .mdc-list-item {
     display: -ms-flexbox;
     display: flex;
@@ -302,7 +314,7 @@ html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
     border-bottom: none;
 }
 
-.mdc-list-group.collapsed > .mdc-list-item {
+.mdc-list-group.collapsed > .mdc-list-item:not(.active) {
     --text-primary: var(--initial-text-primary);
     --text-secondary: var(--initial-text-secondary);
     --text-hint: var(--initial-text-hint);
