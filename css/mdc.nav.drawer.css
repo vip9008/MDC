@@ -81,6 +81,13 @@ html[dir="rtl"] #mdc-nav-drawer {
     overflow-y: auto;
 }
 
+#mdc-nav-drawer a.mdc-list-item:not(.active) {
+    --text-primary: var(--initial-text-primary);
+    --text-secondary: var(--initial-text-secondary);
+    --text-hint: var(--initial-text-hint);
+    --text-divider: var(--initial-text-divider);
+}
+
 #mdc-nav-drawer > .mdc-list-container:not(.standard) .mdc-list-item::before {
     top: 0.25rem;
     right: 0.5rem;
