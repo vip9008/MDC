@@ -53,8 +53,8 @@ pre.html .hljs-string {
 }
 
 #mdc-nav-drawer .mdc-list-item > .text {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 #mdc-nav-drawer a.mdc-list-item:not(.active) {
@@ -68,7 +68,7 @@ pre.html .hljs-string {
 #mdc-nav-drawer .mdc-list-group > .mdc-dropdown > a.mdc-list-item > .text {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    margin: 0.5rem;
+    margin: 0.5rem 1.5rem;
 }
 
 .space {

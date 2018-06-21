@@ -483,19 +483,26 @@ TEXT
                     <div class="mdc-list-item">
                         <div class="graphic material-icon bg-grey-600">folder</div>
                         <div class="text">Photos</div>
-                        <div class="meta icon material-icon">info</div>
+                        <div class="meta icon">
+                            <button class="material-icon">info</button>
+                        </div>
                     </div>
                     <div class="mdc-list-item">
                         <div class="graphic material-icon bg-grey-600">folder</div>
                         <div class="text">Recipes</div>
-                        <div class="meta icon material-icon">info</div>
+                        <div class="meta icon">
+                            <button class="material-icon">info</button>
+                        </div>
                     </div>
                     <div class="mdc-list-item">
                         <div class="graphic material-icon bg-grey-600">folder</div>
                         <div class="text">Work</div>
-                        <div class="meta icon material-icon">info</div>
+                        <div class="meta icon">
+                            <button class="material-icon">info</button>
+                        </div>
                     </div>
                 </div>
+                <p class="text-secondary">Secondary action only</p>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
@@ -505,7 +512,9 @@ TEXT
         <div class="mdc-list-item">
             <div class="graphic material-icon">folder</div>
             <div class="text">Photos</div>
-            <div class="meta icon material-icon">info</div>
+            <div class="meta icon">
+                <button class="material-icon">info</button>
+            </div>
         </div>
         .
         .
@@ -611,12 +620,18 @@ TEXT
                         <div class="mdc-list-item">
                             <div class="graphic material-icon bg-grey-600">folder</div>
                             <div class="text">Photos</div>
-                            <div class="meta icon material-icon">info</div>
+                            <button class="primary-action"></button>
+                            <div class="meta icon">
+                                <button class="material-icon">info</button>
+                            </div>
                         </div>
                         <div class="mdc-list-item">
                             <div class="graphic material-icon bg-grey-600">folder</div>
                             <div class="text">Recipes</div>
-                            <div class="meta icon material-icon">info</div>
+                            <button class="primary-action"></button>
+                            <div class="meta icon">
+                                <button class="material-icon">info</button>
+                            </div>
                         </div>
                     </div>
                     <div class="mdc-divider"></div>
@@ -625,10 +640,14 @@ TEXT
                         <div class="mdc-list-item">
                             <div class="graphic material-icon bg-grey-600">folder</div>
                             <div class="text">Work</div>
-                            <div class="meta icon material-icon">info</div>
+                            <button class="primary-action"></button>
+                            <div class="meta icon">
+                                <button class="material-icon">info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <p class="text-secondary">Primary and secondary actions</p>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
@@ -639,7 +658,10 @@ TEXT
         <div class="mdc-list-item">
             <div class="graphic material-icon">folder</div>
             <div class="text">Photos</div>
-            <div class="meta icon material-icon">info</div>
+            <button class="primary-action"></button>
+            <div class="meta icon">
+                <button class="material-icon">info</button>
+            </div>
         </div>
         .
         .
@@ -731,6 +753,7 @@ TEXT
                         </div>
                     </div>
                 </div>
+                <p class="text-secondary">Dropdown</p>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
@@ -799,6 +822,7 @@ TEXT
                         </div>
                     </div>
                 </div>
+                <p class="text-secondary">Primary action only</p>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
@@ -1003,6 +1027,7 @@ TEXT
                         </div>
                     </div>
                 </div>
+                <p class="text-secondary">Secondary action only</p>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
@@ -1034,37 +1059,38 @@ TEXT
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
-                    <div class="mdc-list-item interactive">
+                    <button class="mdc-list-item">
                         <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-1.png');"></div>
                         <div class="text">
                             Pencil
                             <div class="secondary">in stock</div>
                         </div>
                         <div class="meta">$1.5</div>
-                    </div>
-                    <div class="mdc-list-item interactive">
+                    </button>
+                    <button class="mdc-list-item">
                         <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-2.png');"></div>
                         <div class="text">
                             Rubberbands
                             <div class="secondary">in stock</div>
                         </div>
                         <div class="meta">$4.5</div>
-                    </div>
-                    <div class="mdc-list-item interactive">
+                    </button>
+                    <button class="mdc-list-item">
                         <div class="graphic md-56" style="background-image: url('<?= $prefix ?>img/component_lists/avatar-3.png');"></div>
                         <div class="text">
                             Rulers
                             <div class="secondary">only 1 in stock</div>
                         </div>
                         <div class="meta">$8.0</div>
-                    </div>
+                    </button>
                 </div>
+                <p class="text-secondary">Primary action only</p>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
 <div class="mdc-list-container">
-    <div class="mdc-list-group">
+    <button class="mdc-list-group">
         <div class="mdc-list-item">
             <div class="graphic md-56" style="background-image: url('...');"></div>
             <div class="text">
@@ -1075,7 +1101,7 @@ TEXT
         </div>
         .
         .
-    </div>
+    </button>
     .
     .
     .
@@ -1154,7 +1180,7 @@ TEXT
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group md-3line bg-cards example">
-                    <div class="mdc-list-item interactive">
+                    <a class="mdc-list-item" href="javascript: ;">
                         <div class="graphic material-icon bg-deep-purple-A700">person</div>
                         <div class="text">
                             Summer BBQ
@@ -1164,8 +1190,8 @@ TEXT
                             </div>
                         </div>
                         <div class="meta">15 mins</div>
-                    </div>
-                    <div class="mdc-list-item interactive">
+                    </a>
+                    <a class="mdc-list-item" href="javascript: ;">
                         <div class="graphic material-icon bg-deep-purple-A700">person</div>
                         <div class="text">
                             Birthday Gift
@@ -1175,8 +1201,8 @@ TEXT
                             </div>
                         </div>
                         <div class="meta">45 mins</div>
-                    </div>
-                    <div class="mdc-list-item interactive">
+                    </a>
+                    <a class="mdc-list-item" href="javascript: ;">
                         <div class="graphic material-icon bg-deep-purple-A700">person</div>
                         <div class="text">
                             Recipe to try
@@ -1186,7 +1212,7 @@ TEXT
                             </div>
                         </div>
                         <div class="meta">3 hrs</div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
@@ -1194,7 +1220,7 @@ TEXT
 <<<TEXT
 <div class="mdc-list-container">
     <div class="mdc-list-group md-3line">
-        <div class="mdc-list-item interactive">
+        <a class="mdc-list-item" href="...">
             <div class="graphic material-icon">person</div>
             <div class="text">
                 Summer BBQ
@@ -1204,7 +1230,7 @@ TEXT
                 </div>
             </div>
             <div class="meta">15 mins</div>
-        </div>
+        </a>
         .
         .
     </div>
@@ -1220,7 +1246,7 @@ TEXT
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group md-3line bg-cards example">
-                    <div class="mdc-list-item interactive">
+                    <div class="mdc-list-item">
                         <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-1.png');"></div>
                         <div class="text">
                             Crunchy Croissants
@@ -1228,7 +1254,7 @@ TEXT
                         </div>
                         <div class="meta">01</div>
                     </div>
-                    <div class="mdc-list-item interactive">
+                    <div class="mdc-list-item">
                         <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-2.png');"></div>
                         <div class="text">
                             Grilled Eggplant
@@ -1236,7 +1262,7 @@ TEXT
                         </div>
                         <div class="meta">02</div>
                     </div>
-                    <div class="mdc-list-item interactive">
+                    <div class="mdc-list-item">
                         <div class="graphic md-100" style="background-image: url('<?= $prefix ?>img/component_lists/thumb-3.png');"></div>
                         <div class="text">
                             Tngerine Salad

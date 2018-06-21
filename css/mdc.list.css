@@ -36,7 +36,7 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0;
     text-align: inherit;
     border: none;
     color: var(--text-primary);
@@ -54,7 +54,9 @@ a.mdc-list-item, button.mdc-list-item, .mdc-list-item.interactive {
     position: relative;
 }
 
-a.mdc-list-item::before, button.mdc-list-item::before, .mdc-list-item.interactive::before {
+a.mdc-list-item::before,
+button.mdc-list-item::before,
+.mdc-list-item.interactive::before {
     content: '';
     position: absolute;
     top: 0;
@@ -62,20 +64,47 @@ a.mdc-list-item::before, button.mdc-list-item::before, .mdc-list-item.interactiv
     bottom: 0;
     left: 0;
     z-index: 0;
+    will-change: opacity;
     transition: all 0.2s;
     background-color: var(--initial-main-color);
     opacity: 0;
 }
 
-a.mdc-list-item:hover::before, button.mdc-list-item:hover::before, .mdc-list-item.interactive:hover::before {
+.mdc-list-item > .primary-action {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+    will-change: opacity;
+    transition: all 0.2s;
+    background-color: var(--initial-main-color);
+    opacity: 0;
+}
+
+a.mdc-list-item:hover::before,
+button.mdc-list-item:hover::before,
+.mdc-list-item.interactive:hover::before,
+.mdc-list-item > .primary-action:hover {
     opacity: var(--opacity-hover);
 }
 
-a.mdc-list-item:focus::before, button.mdc-list-item:focus::before, .mdc-list-item.interactive:focus::before {
+a.mdc-list-item:focus::before,
+button.mdc-list-item:focus::before,
+.mdc-list-item.interactive:focus::before,
+.mdc-list-item > .primary-action:focus {
     opacity: var(--opacity-focus);
 }
 
-a.mdc-list-item:active::before, button.mdc-list-item:active::before, .mdc-list-item.interactive:active::before {
+a.mdc-list-item:active::before,
+button.mdc-list-item:active::before,
+.mdc-list-item.interactive:active::before,
+.mdc-list-item > .primary-action:active {
     opacity: var(--opacity-pressed);
 }
 
@@ -86,7 +115,7 @@ a.mdc-list-item:active::before, button.mdc-list-item:active::before, .mdc-list-i
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    margin: 0.75rem 0;
+    margin: 0.75rem 1rem;
 }
 
 .mdc-list-item > .text > .secondary {
@@ -113,9 +142,9 @@ a.mdc-list-item:active::before, button.mdc-list-item:active::before, .mdc-list-i
 }
 
 .mdc-list-item > .icon {
-    margin: 1rem 2rem 1rem 0;
+    margin: 1rem;
     width: 1.5rem;
-    height: 1.5rem;
+    height: auto;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-negative: 0;
@@ -129,27 +158,15 @@ a.mdc-list-item:active::before, button.mdc-list-item:active::before, .mdc-list-i
 
 }
 
-html[dir="ltr"] .mdc-list-item > .icon,
-html[dir] *[dir="ltr"] .mdc-list-item > .icon,
-html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .icon {
-    margin: 1rem 2rem 1rem 0;
-}
-
-html[dir="rtl"] .mdc-list-item > .icon,
-html[dir] *[dir="rtl"] .mdc-list-item > .icon,
-html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .icon {
-    margin: 1rem 0 1rem 2rem;
-}
-
 .mdc-list-item > .meta {
     font-size: 0.75rem;
     line-height: 1rem;
     letter-spacing: 0.033333em;
     white-space: nowrap;
     border: none;
-    margin: 1rem 0 1rem auto;
+    margin: 1rem 1rem 1rem auto;
     padding: 0;
-    padding-left: 1.75rem;
+    padding-left: 0.75rem;
     -webkit-align-self: flex-start;
     align-self: flex-start;
     color: var(--text-secondary);
@@ -157,22 +174,21 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .icon {
 
 html[dir="ltr"] .mdc-list-item > .meta,
 html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .meta {
-    margin: 1rem 0 1rem auto;
+    margin: 1rem 1rem 1rem auto;
     padding: 0;
-    padding-left: 1.75rem;
+    padding-left: 0.75rem;
 }
 
 html[dir="rtl"] .mdc-list-item > .meta,
 html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta {
-    margin: 1rem auto 1rem 0;
+    margin: 1rem auto 1rem 1rem;
     padding: 0;
-    padding-right: 1.75rem;
+    padding-right: 0.75rem;
 }
 
 .mdc-list-item > .meta.icon {
-    margin: 0.75rem 0 0.75rem auto;
-    padding-left: 1rem;
-    width: 2.5rem;
+    margin: 0.75rem 1rem 0.75rem auto;
+    padding-left: 0;
     font-size: 1.5rem;
     -webkit-align-self: center;
     align-self: center;
@@ -180,16 +196,16 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta {
 
 html[dir="ltr"] .mdc-list-item > .meta.icon,
 html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .meta.icon {
-    margin: 0.75rem 0 0.75rem auto;
+    margin: 0.75rem 1rem 0.75rem auto;
     padding: 0;
-    padding-left: 1rem;
+    padding-left: 0;
 }
 
 html[dir="rtl"] .mdc-list-item > .meta.icon,
 html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta.icon {
-    margin: 0.75rem auto 0.75rem 0;
+    margin: 0.75rem auto 0.75rem 1rem;
     padding: 0;
-    padding-right: 1rem;
+    padding-right: 0;
 }
 
 .mdc-list-item > .meta.icon > .material-icon {
@@ -211,7 +227,7 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta.icon {
 
 .mdc-list-item > .graphic {
     border-radius: 100%;
-    margin: 0.5rem 1rem 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 1rem;
     width: 2.5rem;
     height: 2.5rem;
     display: -ms-inline-flexbox;
@@ -233,12 +249,12 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta.icon {
 
 html[dir="ltr"] .mdc-list-item > .graphic,
 html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .graphic {
-    margin: 0.5rem 1rem 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 1rem;
 }
 
 html[dir="rtl"] .mdc-list-item > .graphic,
 html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .graphic {
-    margin: 0.5rem 0 0.5rem 1rem;
+    margin: 0.5rem 1rem 0.5rem 0;
 }
 
 .mdc-list-item > .graphic.md-40 {
@@ -255,19 +271,16 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .graphic {
 
 .mdc-list-item > .graphic.md-100 {
     border-radius: 0;
-    margin: 0.5rem 1rem 0.5rem -1rem;
+    margin: 0.5rem 0;
     width: 6.25rem;
     height: 3.5rem;
 }
 
 html[dir="ltr"] .mdc-list-item > .graphic.md-100,
-html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .graphic.md-100 {
-    margin: 0.5rem 1rem 0.5rem -1rem;
-}
-
+html[dir] .mdc-list-container[dir="ltr"] > .mdc-list-item > .graphic.md-100,
 html[dir="rtl"] .mdc-list-item > .graphic.md-100,
 html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .graphic.md-100 {
-    margin: 0.5rem -1rem 0.5rem 1rem;
+    margin: 0.5rem 0;
 }
 
 .mdc-list-item > .icon:not(.meta) + .text > .secondary {
