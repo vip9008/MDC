@@ -605,6 +605,57 @@ TEXT
         
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6">
+                <div class="mdc-list-container bg-cards example">
+                    <div class="mdc-list-group">
+                        <div class="mdc-list-subtitle">Label 1</div>
+                        <div class="mdc-list-item">
+                            <div class="graphic material-icon bg-grey-600">folder</div>
+                            <div class="text">Photos</div>
+                            <div class="meta icon material-icon">info</div>
+                        </div>
+                        <div class="mdc-list-item">
+                            <div class="graphic material-icon bg-grey-600">folder</div>
+                            <div class="text">Recipes</div>
+                            <div class="meta icon material-icon">info</div>
+                        </div>
+                    </div>
+                    <div class="mdc-divider"></div>
+                    <div class="mdc-list-group">
+                        <div class="mdc-list-subtitle">Label 1</div>
+                        <div class="mdc-list-item">
+                            <div class="graphic material-icon bg-grey-600">folder</div>
+                            <div class="text">Work</div>
+                            <div class="meta icon material-icon">info</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col xlarge-5 large-6 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-list-container">
+    <div class="mdc-list-group">
+        <div class="mdc-list-subtitle">Label 1</div>
+        <div class="mdc-list-item">
+            <div class="graphic material-icon">folder</div>
+            <div class="text">Photos</div>
+            <div class="meta icon material-icon">info</div>
+        </div>
+        .
+        .
+    </div>
+    <div class="mdc-divider"></div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6">
                 <div class="mdc-list-group bg-cards example">
                     <div class="mdc-list-group collapsed">
                         <div class="mdc-list-item interactive deep-purple-A700">

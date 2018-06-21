@@ -46,6 +46,7 @@ pre.html .hljs-string {
     color: var(--hljs-string);
 }
 
+.mdc-list-container.example,
 .mdc-list-group.example {
     margin: 1rem 0;
     border: solid 0.0625rem var(--initial-text-divider);

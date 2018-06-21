@@ -528,6 +528,25 @@ a.material-icon:focus::before, button.material-icon:focus::before, .material-ico
     transform: scale(2);
 }
 
+a.material-icon::after, button.material-icon::after, .material-icon.interactive::after {
+    content: '';
+    display: inline-block;
+    opacity: 0;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.75rem;
+    margin-left: -0.75rem;
+    transition: all 0.2s;
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
 .container, .container-fluid {
     margin: 0 auto;
     padding: 0 0.5rem;
