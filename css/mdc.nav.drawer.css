@@ -11,6 +11,8 @@
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 html[dir="ltr"] #mdc-nav-drawer {
@@ -25,21 +27,54 @@ html[dir="rtl"] #mdc-nav-drawer {
 
 #mdc-nav-drawer > .header {
     padding: 1rem;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#mdc-nav-drawer.fixed-header > .header {
+    border-bottom: solid 0.0625rem var(--initial-bg-border);
 }
 
 #mdc-nav-drawer > .header > .title {
     display: block;
     font-size: 1.25rem;
-    line-height: 2rem;
+    letter-spacing: 0.0075em;
     font-weight: 500;
-    letter-spacing: 0.0125em;
+    line-height: 2rem;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-#mdc-nav-drawer > .mdc-list-container {
+#mdc-nav-drawer > .header > .subtext {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: initial;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    letter-spacing: 0.007143em;
+    font-weight: 500;
+    color: var(--text-secondary);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#mdc-nav-drawer > .header > a.subtext,
+#mdc-nav-drawer > .header > button.subtext {
+    cursor: pointer;
+}
+
+#mdc-nav-drawer.fixed-header > .mdc-list-container {
     -ms-flex: 0 0 auto;
     flex: 1 1 auto;
     overflow-x: hidden;
@@ -61,6 +96,10 @@ html[dir="rtl"] #mdc-nav-drawer {
     opacity: var(--opacity-activated);
 }
 
+#mdc-nav-drawer .mdc-list-container:not(.standard) .mdc-list-group {
+    border: none;
+}
+
 #mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:hover::before {
     background-color: var(--initial-main-color);
     opacity: var(--opacity-hover);
@@ -74,6 +113,10 @@ html[dir="rtl"] #mdc-nav-drawer {
 #mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:focus::before {
     background-color: var(--initial-main-color);
     opacity: var(--opacity-focus);
+}
+
+#mdc-nav-drawer .mdc-list-group > .mdc-dropdown > .mdc-list-item:not(.active) {
+    color: var(--text-secondary);
 }
 
 #mdc-nav-drawer.modal {
@@ -198,7 +241,7 @@ html[dir="rtl"] #mdc-nav-drawer.permanent {
 }
 
 body:not(.mdc-top-app-bar-hidden) > #mdc-nav-drawer.clipped:not(.modal) {
-    padding-top: 4rem;
+    margin-top: 4rem;
 }
 
 body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
@@ -276,7 +319,7 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
     }
 
     body:not(.mdc-top-app-bar-hidden) > #mdc-nav-drawer.clipped:not(.modal) {
-        padding-top: 0;
+        margin-top: 0;
     }
 
     body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar,
