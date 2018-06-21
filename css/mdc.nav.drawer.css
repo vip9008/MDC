@@ -4,8 +4,8 @@
     top: 0;
     bottom: 0;
     background-color: var(--bg-app-bar);
-    z-index: var(--z-axis-0-index);
-    border-right: solid 1px var(--bg-border);
+    z-index: var(--z-axis-16-index);
+    border-right: solid 0.0625rem var(--bg-border);
     transition: all 0.3s;
     display: -ms-flexbox;
     display: flex;
@@ -17,11 +17,11 @@
 
 html[dir="ltr"] #mdc-nav-drawer {
     border-left: none;
-    border-right: solid 1px var(--bg-border);
+    border-right: solid 0.0625rem var(--bg-border);
 }
 
 html[dir="rtl"] #mdc-nav-drawer {
-    border-left: solid 1px var(--bg-border);
+    border-left: solid 0.0625rem var(--bg-border);
     border-right: none;
 }
 
@@ -182,7 +182,7 @@ body.mdc-drawer-modal > #mdc-nav-drawer.modal + .mdc-drawer-scrim {
     width: 16rem;
     left: -16rem;
     right: auto;
-    z-index: var(--z-axis-0-index);
+    z-index: var(--z-axis-16-index);
 }
 
 html[dir="ltr"] #mdc-nav-drawer.persistent {
@@ -227,7 +227,7 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer.persistent {
     width: 16rem;
     left: 0;
     right: auto;
-    z-index: var(--z-axis-0-index);
+    z-index: var(--z-axis-16-index);
 }
 
 html[dir="ltr"] #mdc-nav-drawer.permanent {
@@ -242,20 +242,21 @@ html[dir="rtl"] #mdc-nav-drawer.permanent {
 
 body:not(.mdc-top-app-bar-hidden) > #mdc-nav-drawer.clipped:not(.modal) {
     margin-top: 4rem;
+    z-index: var(--z-axis-0-index);
 }
 
 body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
-    margin-left: calc(16rem - 1px);
+    margin-left: 16rem;
 }
 
 html[dir="ltr"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
-    margin-left: calc(16rem - 1px);
+    margin-left: 16rem;
     margin-right: 0;
 }
 
 html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
     margin-left: 0;
-    margin-right: calc(16rem - 1px);
+    margin-right: 16rem;
 }
 
 #mdc-nav-drawer.permanent + .mdc-drawer-scrim + #mdc-top-app-bar > .nav-icon {
@@ -320,6 +321,7 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
 
     body:not(.mdc-top-app-bar-hidden) > #mdc-nav-drawer.clipped:not(.modal) {
         margin-top: 0;
+        z-index: var(--z-axis-16-index);
     }
 
     body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar,
