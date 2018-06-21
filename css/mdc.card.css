@@ -1,0 +1,26 @@
+.mdc-card {
+    width: 21.5rem;
+    max-width: 100%;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: var(--bg-cards);
+    position: relative;
+    z-index: var(--z-axis-1-index);
+    box-shadow: var(--z-axis-1-shadow);
+    will-change: box-shadow;
+    transition: box-shadow 0.3s;
+}
+
+.mdc-card.resting {
+    z-index: var(--z-axis-0-index);
+    box-shadow: 0 0 0 0.0625rem var(--initial-bg-border);
+}
+
+.mdc-card.raised:hover {
+    z-index: var(--z-axis-8-index);
+    box-shadow: var(--z-axis-8-shadow);
+}
+
+.mdc-card > .mdc-card-primary > .header {
+    margin: 1rem 1rem 0.625rem;
+}

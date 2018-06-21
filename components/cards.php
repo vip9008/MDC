@@ -372,6 +372,13 @@ $url = $prefix."components/cards.php";
         </div>
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6">
+                <div class="mdc-card" style="min-height: 150px; margin: 0.5rem 0;">
+                    <div class="mdc-card-primary">
+                        <div class="header">
+                            <h6>Title</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
