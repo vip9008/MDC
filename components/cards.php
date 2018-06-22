@@ -367,22 +367,112 @@ $url = $prefix."components/cards.php";
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
                 <h1 class="article_title">Implementation</h1>
+                <p class="text-secondary"><b>This section should not be read as prescriptive or exhaustive</b>. Cards have no singular layout, typographic, or image size. All cards should be designed to meet the needs of the content they present. This section shows a general variety of card layouts to help showcase that variety. <b>However</b>, these layouts are implemented and can be used without customization.</p>
+                <div class="space"></div>
+
+                <h6>Related components:</h6>
+                <ul class="text-secondary">
+                    <li><a href="<?= $prefix ?>components/buttons.php">Buttons</a></li>
+                </ul>
                 <div class="space"></div>
             </div>
         </div>
+
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6">
-                <div class="mdc-card" style="min-height: 150px; margin: 0.5rem 0;">
+                <div class="mdc-card" style="margin: 1rem 0;">
                     <div class="mdc-card-primary">
                         <div class="header">
-                            <h6>Title</h6>
+                            <div class="thumbnail" style="background-image: url('<?= $prefix ?>img/component_cards/thumb.jpg');"></div>
+                            <div class="title">
+                                Our Changing Planet
+                                <div class="subtitle">by Kurt Wagner</div>
+                            </div>
                         </div>
+                        <div class="media" style="background-image: url('<?= $prefix ?>img/component_cards/media.jpg');"></div>
+                        <div class="supporting-text">
+                            Visit ten places on our planet that are undergoing the biggest changes today.
+                        </div>
+                    </div>
+                    <div class="mdc-button-group">
+                        <button class="mdc-button deep-purple-A700">Read</button>
+                        <button class="mdc-button deep-purple-A700">Bookmark</button>
                     </div>
                 </div>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
+<div class="mdc-card">
+    <div class="mdc-card-primary">
+        <div class="header">
+            <div class="thumbnail" style="background-image: url('...');"></div>
+            <div class="title">
+                Our Changing Planet
+                <div class="subtitle">by Kurt Wagner</div>
+            </div>
+        </div>
+        <div class="media" style="background-image: url('...');"></div>
+        <div class="supporting-text">
+            ...
+        </div>
+    </div>
+    <div class="mdc-button-group">
+        <button class="mdc-button deep-purple-A700">Read</button>
+        <button class="mdc-button deep-purple-A700">Bookmark</button>
+    </div>
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6">
+                <div class="mdc-card" style="margin: 1rem 0;">
+                    <button class="mdc-card-primary">
+                        <div class="header">
+                            <div class="thumbnail" style="background-image: url('<?= $prefix ?>img/component_cards/thumb.jpg');"></div>
+                            <div class="title">
+                                Our Changing Planet
+                                <div class="subtitle">by Kurt Wagner</div>
+                            </div>
+                        </div>
+                        <div class="media" style="background-image: url('<?= $prefix ?>img/component_cards/media.jpg');"></div>
+                        <div class="supporting-text">
+                            Visit ten places on our planet that are undergoing the biggest changes today.
+                        </div>
+                    </button>
+                    <div class="mdc-button-group">
+                        <button class="mdc-button deep-purple-A700">Read</button>
+                        <button class="mdc-button deep-purple-A700">Bookmark</button>
+                    </div>
+                </div>
+
+                <p class="text-secondary">Card with primary action</p>
+            </div>
+            <div class="col xlarge-5 large-6 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-card">
+    <button class="mdc-card-primary">
+        <div class="header">
+            <div class="thumbnail" style="background-image: url('...');"></div>
+            <div class="title">
+                Our Changing Planet
+                <div class="subtitle">by Kurt Wagner</div>
+            </div>
+        </div>
+        <div class="media" style="background-image: url('...');"></div>
+        <div class="supporting-text">
+            ...
+        </div>
+    </button>
+    <div class="mdc-button-group">
+        <button class="mdc-button deep-purple-A700">Read</button>
+        <button class="mdc-button deep-purple-A700">Bookmark</button>
+    </div>
+</div>
 TEXT
 ) ?></pre>
             </div>

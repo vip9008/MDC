@@ -21,6 +21,118 @@
     box-shadow: var(--z-axis-8-shadow);
 }
 
+.mdc-card > .mdc-card-primary {
+    display: block;
+    padding: 0.00625rem 0;
+    margin: 0;
+    color: var(--text-primary);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mdc-card > a.mdc-card-primary,
+.mdc-card > button.mdc-card-primary {
+    cursor: pointer;
+    text-align: inherit;
+    text-decoration: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.mdc-card > a.mdc-card-primary::before,
+.mdc-card > button.mdc-card-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+    will-change: opacity;
+    transition: all 0.2s;
+    background-color: var(--initial-main-color);
+    opacity: 0;
+}
+
+.mdc-card > a.mdc-card-primary:hover::before,
+.mdc-card > button.mdc-card-primary:hover::before {
+    opacity: var(--opacity-hover);
+}
+
+.mdc-card > a.mdc-card-primary:focus::before,
+.mdc-card > button.mdc-card-primary:focus::before {
+    opacity: var(--opacity-focus);
+}
+
+.mdc-card > a.mdc-card-primary:active::before,
+.mdc-card > button.mdc-card-primary:active::before {
+    opacity: var(--opacity-pressed);
+}
+
 .mdc-card > .mdc-card-primary > .header {
-    margin: 1rem 1rem 0.625rem;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 1rem 1rem 0.75rem;
+}
+
+.mdc-card > .mdc-card-primary > .header > .thumbnail {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    margin-left: 0;
+    margin-right: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mdc-card > .mdc-card-primary > .header > .title {
+    font-size: 1.25rem;
+    letter-spacing: 0.0075em;
+    font-weight: 500;
+}
+
+.mdc-card > .mdc-card-primary > .header > .title > .subtitle {
+    font-size: 0.875rem;
+    letter-spacing: 0.007143em;
+    font-weight: 500;
+    margin-top: 0.1875rem;
+    color: var(--text-secondary);
+}
+
+.mdc-card > .mdc-card-primary > .media {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mdc-card > .mdc-card-primary > .media::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.mdc-card > .mdc-card-primary > .supporting-text {
+    margin: 1rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.017857em;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.mdc-card > .mdc-button-group {
+    padding: 0;
+    margin: 0.5rem;
 }
