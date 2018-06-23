@@ -383,22 +383,24 @@ $url = $prefix."components/cards.php";
                 <div class="mdc-card" style="margin: 1rem 0;">
                     <div class="mdc-card-primary">
                         <div class="header">
-                            <div class="thumbnail" style="background-image: url('<?= $prefix ?>img/component_cards/thumb.jpg');"></div>
                             <div class="title">
-                                Our Changing Planet
-                                <div class="subtitle">by Kurt Wagner</div>
+                                <h5>Title goes here</h5>
+                                <div class="mdt-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                             </div>
-                        </div>
-                        <div class="media" style="background-image: url('<?= $prefix ?>img/component_cards/media.jpg');"></div>
-                        <div class="supporting-text">
-                            Visit ten places on our planet that are undergoing the biggest changes today.
+                            <div class="thumbnail md-80" style="background-image: url('<?= $prefix ?>img/component_cards/thumb.jpg');"></div>
                         </div>
                     </div>
                     <div class="mdc-button-group">
-                        <button class="mdc-button deep-purple-A700">Read</button>
-                        <button class="mdc-button deep-purple-A700">Bookmark</button>
+                        <button class="mdc-button deep-purple-A700">Action 1</button>
+                        <button class="mdc-button deep-purple-A700">Action 2</button>
                     </div>
                 </div>
+                <p class="text-secondary">Thumbnail optional sizes:</p>
+                <ul class="text-secondary">
+                    <li>80x80 css class: <code>.thumbnail.md-80</code></li>
+                    <li>120x120 css class: <code>.thumbnail.md-120</code></li>
+                    <li>160x160 css class: <code>.thumbnail.md-160</code></li>
+                </ul>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
@@ -406,20 +408,16 @@ $url = $prefix."components/cards.php";
 <div class="mdc-card">
     <div class="mdc-card-primary">
         <div class="header">
-            <div class="thumbnail" style="background-image: url('...');"></div>
             <div class="title">
-                Our Changing Planet
-                <div class="subtitle">by Kurt Wagner</div>
+                <h5>Title goes here</h5>
+                <div class="mdt-subtitle-2">Lorem ipsum ...</div>
             </div>
-        </div>
-        <div class="media" style="background-image: url('...');"></div>
-        <div class="supporting-text">
-            ...
+            <div class="thumbnail md-80" style="background-image: url('...');"></div>
         </div>
     </div>
     <div class="mdc-button-group">
-        <button class="mdc-button deep-purple-A700">Read</button>
-        <button class="mdc-button deep-purple-A700">Bookmark</button>
+        <button class="mdc-button deep-purple-A700">Action 1</button>
+        <button class="mdc-button deep-purple-A700">Action 2</button>
     </div>
 </div>
 TEXT
@@ -432,23 +430,19 @@ TEXT
                 <div class="mdc-card" style="margin: 1rem 0;">
                     <button class="mdc-card-primary">
                         <div class="header">
-                            <div class="thumbnail" style="background-image: url('<?= $prefix ?>img/component_cards/thumb.jpg');"></div>
                             <div class="title">
-                                Our Changing Planet
-                                <div class="subtitle">by Kurt Wagner</div>
+                                <div class="mdt-overline">Overline</div>
+                                <h5>Title goes here</h5>
+                                <div class="mdt-subtitle-2">Lorem ipsum dolor sit amet, consectetur elit.</div>
                             </div>
-                        </div>
-                        <div class="media" style="background-image: url('<?= $prefix ?>img/component_cards/media.jpg');"></div>
-                        <div class="supporting-text">
-                            Visit ten places on our planet that are undergoing the biggest changes today.
+                            <div class="thumbnail md-80" style="background-image: url('<?= $prefix ?>img/component_cards/thumb.jpg');"></div>
                         </div>
                     </button>
                     <div class="mdc-button-group">
-                        <button class="mdc-button deep-purple-A700">Read</button>
-                        <button class="mdc-button deep-purple-A700">Bookmark</button>
+                        <button class="mdc-button deep-purple-A700">Action 1</button>
+                        <button class="mdc-button deep-purple-A700">Action 2</button>
                     </div>
                 </div>
-
                 <p class="text-secondary">Card with primary action</p>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
@@ -456,21 +450,62 @@ TEXT
 <<<TEXT
 <div class="mdc-card">
     <button class="mdc-card-primary">
+        .
+        .
+        .
+    </button>
+    <div class="mdc-button-group">
+        <button class="mdc-button deep-purple-A700">Action 1</button>
+        <button class="mdc-button deep-purple-A700">Action 2</button>
+    </div>
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6">
+                <div class="mdc-card" style="margin: 1rem 0;">
+                    <div class="mdc-card-primary">
+                        <div class="header">
+                            <div class="thumbnail" style="background-image: url('<?= $prefix ?>img/component_cards/thumb.jpg');"></div>
+                            <div class="title">
+                                <h6>Title goes here</h6>
+                                <div class="mdt-subtitle-2">Secondary line text</div>
+                            </div>
+                        </div>
+                        <div class="media" style="background-image: url('<?= $prefix ?>img/component_cards/media.jpg');"></div>
+                        <div class="supporting-text mdt-body-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </div>
+                    </div>
+                    <div class="mdc-button-group">
+                        <button class="mdc-button deep-purple-A700">Action 1</button>
+                        <button class="mdc-button deep-purple-A700">Action 2</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col xlarge-5 large-6 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-card">
+    <div class="mdc-card-primary">
         <div class="header">
             <div class="thumbnail" style="background-image: url('...');"></div>
             <div class="title">
-                Our Changing Planet
-                <div class="subtitle">by Kurt Wagner</div>
+                <h6>Title goes here</h6>
+                <div class="mdt-subtitle-2">Secondary line text</div>
             </div>
         </div>
-        <div class="media" style="background-image: url('...');"></div>
-        <div class="supporting-text">
-            ...
+        <div class="media" style="background-image: url('..."></div>
+        <div class="supporting-text mdt-body-2">
+            Lorem ipsum ...
         </div>
-    </button>
+    </div>
     <div class="mdc-button-group">
-        <button class="mdc-button deep-purple-A700">Read</button>
-        <button class="mdc-button deep-purple-A700">Bookmark</button>
+        <button class="mdc-button deep-purple-A700">Action 1</button>
+        <button class="mdc-button deep-purple-A700">Action 2</button>
     </div>
 </div>
 TEXT

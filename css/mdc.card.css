@@ -82,31 +82,97 @@
     position: relative;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin: 1rem 1rem 0.75rem;
+    margin: 0;
 }
 
 .mdc-card > .mdc-card-primary > .header > .thumbnail {
     width: 2.5rem;
     height: 2.5rem;
+    -ms-flex: 0 0 2.5rem;
+    flex: 0 0 2.5rem;
     border-radius: 100%;
-    margin-left: 0;
-    margin-right: 1rem;
+    margin: 1rem 0 1rem 1rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.mdc-card > .mdc-card-primary > .header > .title {
-    font-size: 1.25rem;
-    letter-spacing: 0.0075em;
-    font-weight: 500;
+html[dir="ltr"] .mdc-card > .mdc-card-primary > .header > .thumbnail,
+html[dir] .mdc-card[dir="ltr"] > .mdc-card-primary > .header > .thumbnail {
+    margin: 1rem 0 1rem 1rem;
 }
 
-.mdc-card > .mdc-card-primary > .header > .title > .subtitle {
-    font-size: 0.875rem;
-    letter-spacing: 0.007143em;
-    font-weight: 500;
-    margin-top: 0.1875rem;
+.mdc-card > .mdc-card-primary > .header > .title + .thumbnail,
+html[dir="ltr"] .mdc-card > .mdc-card-primary > .header > .title + .thumbnail,
+html[dir] .mdc-card[dir="ltr"] > .mdc-card-primary > .header > .title + .thumbnail {
+    margin: 1rem 1rem 1rem auto;
+}
+
+html[dir="rtl"] .mdc-card > .mdc-card-primary > .header > .thumbnail,
+html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary > .header > .thumbnail {
+    margin: 1rem 1rem 1rem 0;
+}
+
+html[dir="rtl"] .mdc-card > .mdc-card-primary > .header > .title + .thumbnail,
+html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary > .header > .title + .thumbnail {
+    margin: 1rem auto 1rem 1rem;
+}
+
+.mdc-card > .mdc-card-primary > .header > .thumbnail.md-80 {
+    width: 5rem;
+    height: 5rem;
+    -ms-flex: 0 0 5rem;
+    flex: 0 0 5rem;
+    border-radius: 0;
+}
+
+.mdc-card > .mdc-card-primary > .header > .thumbnail.md-120 {
+    width: 7.5rem;
+    height: 7.5rem;
+    -ms-flex: 0 0 7.5rem;
+    flex: 0 0 7.5rem;
+    border-radius: 0;
+}
+
+.mdc-card > .mdc-card-primary > .header > .thumbnail.md-160 {
+    width: 10rem;
+    height: 10rem;
+    -ms-flex: 0 0 10rem;
+    flex: 0 0 10rem;
+    border-radius: 0;
+}
+
+.mdc-card > .mdc-card-primary > .header > .title {
+    margin: 1rem 1rem 0.75rem;
+}
+
+.mdc-card > .mdc-card-primary > .header:last-child > .title,
+.mdc-card > .mdc-card-primary > .header:last-child > .thumbnail {
+    margin-bottom: 0 !important;
+}
+
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-overline {
+    margin: 0 0 0.8em;
+}
+
+.mdc-card > .mdc-card-primary > .header > .title > h1,
+.mdc-card > .mdc-card-primary > .header > .title > h2,
+.mdc-card > .mdc-card-primary > .header > .title > h3,
+.mdc-card > .mdc-card-primary > .header > .title > h4,
+.mdc-card > .mdc-card-primary > .header > .title > h5,
+.mdc-card > .mdc-card-primary > .header > .title > h6,
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-h1,
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-h2,
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-h3,
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-h4,
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-h5,
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-h6 {
+    margin: 0 0 0.15em;
+}
+
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-subtitle,
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-subtitle-1,
+.mdc-card > .mdc-card-primary > .header > .title > .mdt-subtitle-2 {
     color: var(--text-secondary);
 }
 
@@ -126,9 +192,6 @@
 
 .mdc-card > .mdc-card-primary > .supporting-text {
     margin: 1rem;
-    font-size: 0.875rem;
-    letter-spacing: 0.017857em;
-    font-weight: 400;
     color: var(--text-secondary);
 }
 
