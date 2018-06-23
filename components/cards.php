@@ -395,11 +395,11 @@ $url = $prefix."components/cards.php";
                         <button class="mdc-button deep-purple-A700">Action 2</button>
                     </div>
                 </div>
-                <p class="text-secondary">Thumbnail optional sizes:</p>
+                <p class="text-secondary">Thumbnail has 3 optional sizes:</p>
                 <ul class="text-secondary">
-                    <li>80x80 css class: <code>.thumbnail.md-80</code></li>
-                    <li>120x120 css class: <code>.thumbnail.md-120</code></li>
-                    <li>160x160 css class: <code>.thumbnail.md-160</code></li>
+                    <li>80x80: css class <code>.thumbnail.md-80</code></li>
+                    <li>120x120: css class <code>.thumbnail.md-120</code></li>
+                    <li>160x160: css class <code>.thumbnail.md-160</code></li>
                 </ul>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
@@ -485,6 +485,7 @@ TEXT
                         <button class="mdc-button deep-purple-A700">Action 2</button>
                     </div>
                 </div>
+                <p class="text-secondary">Default media aspect ratio is 16:9, as an option it can be 1:1 by using the css class <code>.media.md-1by1</code></p>
             </div>
             <div class="col xlarge-5 large-6 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(

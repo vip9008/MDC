@@ -181,13 +181,13 @@ html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary > .header > .title + .thumbna
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.mdc-card > .mdc-card-primary > .media::before {
-    content: '';
     display: block;
     width: 100%;
     padding-top: 56.25%;
+}
+
+.mdc-card > .mdc-card-primary > .media.md-1by1 {
+    padding-top: 100%;
 }
 
 .mdc-card > .mdc-card-primary > .supporting-text {
