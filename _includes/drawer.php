@@ -90,6 +90,9 @@
                 <a href="<?= $prefix ?>components/cards.php" class="mdc-list-item">
                     <div class="text">Cards</div>
                 </a>
+                <a href="<?= $prefix ?>components/data-tables.php" class="mdc-list-item">
+                    <div class="text">Data tables</div>
+                </a>
                 <a href="<?= $prefix ?>components/dialogs.php" class="mdc-list-item">
                     <div class="text">Dialogs</div>
                 </a>
