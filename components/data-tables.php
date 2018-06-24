@@ -418,6 +418,7 @@ $url = $prefix."components/data-tables.php";
 TEXT
 ) ?></pre>
                 <div class="space"></div>
+                <div class="space"></div>
             </div>
         </div>
 
@@ -519,6 +520,7 @@ TEXT
 TEXT
 ) ?></pre>
                 <div class="space"></div>
+                <div class="space"></div>
             </div>
         </div>
 
@@ -527,6 +529,11 @@ TEXT
                 <div class="mdc-data-table mdc-card">
                     <div class="header deep-purple-A700">
                         <div class="title">Nutritions</div>
+
+                        <div class="actions">
+                            <div class="action-item"><button class="material-icon">filter_list</button></div>
+                            <div class="action-item"><button class="material-icon">more_vert</button></div>
+                        </div>
                     </div>
                     <div class="table-container">
                     <table>
@@ -614,28 +621,25 @@ TEXT
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
 <div class="mdc-data-table mdc-card">
+    <div class="header">
+        <div class="title">Nutritions</div>
+
+        <div class="actions">
+            <div class="action-item"><button class="material-icon">filter_list</button></div>
+            <div class="action-item"><button class="material-icon">more_vert</button></div>
+        </div>
+    </div>
     <div class="table-container">
         <table>
-            <thead>
-                <tr>
-                    <th>
-                        <button class="column-sort">Dessert (100g serving)</button>
-                    </th>
-                    .
-                    .
-                    .
-                </tr>
-            </thead>
-            <tbody>
-                .
-                .
-                .
-            </tbody>
+            .
+            .
+            .
         </table>
     </div>
 </div>
 TEXT
 ) ?></pre>
+                <div class="space"></div>
                 <div class="space"></div>
             </div>
         </div>
