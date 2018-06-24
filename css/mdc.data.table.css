@@ -1,5 +1,6 @@
 .mdc-data-table {
-    overflow-x: auto;
+    overflow: hidden;
+    margin: 0 0 1rem;
 }
 
 .mdc-data-table > table {

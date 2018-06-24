@@ -8,6 +8,7 @@
     box-shadow: var(--z-axis-1-shadow);
     will-change: box-shadow;
     transition: box-shadow 0.3s;
+    margin: 0 0 1rem;
 }
 
 .mdc-card.resting {
