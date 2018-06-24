@@ -3,7 +3,12 @@
     margin: 0 0 1rem;
 }
 
-.mdc-data-table > table {
+.mdc-data-table > .table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mdc-data-table > .table-container > table {
     border: none;
     margin: 0;
     min-width: 100%;
@@ -12,20 +17,18 @@
     width: -webkit-max-content;
     width: -o-max-content;
     width: max-content;
-    overflow: hidden;
-    overflow-x: auto;
 }
 
-.mdc-data-table > table > thead > tr,
-.mdc-data-table > table > tbody > tr {
+.mdc-data-table > .table-container > table > thead > tr,
+.mdc-data-table > .table-container > table > tbody > tr {
     height: 3.0625rem;
 }
 
-.mdc-data-table > table > tbody > tr {
+.mdc-data-table > .table-container > table > tbody > tr {
     border-top: solid 0.0625rem var(--initial-bg-border);
 }
 
-.mdc-data-table > table > thead > tr > th {
+.mdc-data-table > .table-container > table > thead > tr > th {
     font-size: 0.75rem;
     font-weight: 500;
     line-height: 1.5rem;
@@ -35,20 +38,20 @@
     white-space: nowrap;
 }
 
-.mdc-data-table > table > thead > tr > th > .mdc-checkbox,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th > .mdc-checkbox,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th > .mdc-checkbox {
+.mdc-data-table > .table-container > table > thead > tr > th > .mdc-checkbox,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th > .mdc-checkbox,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th > .mdc-checkbox {
     float: left;
     margin: -0.5rem 0.25rem -0.5rem -0.5rem;
 }
 
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th > .mdc-checkbox,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th > .mdc-checkbox {
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th > .mdc-checkbox,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th > .mdc-checkbox {
     float: right;
     margin: -0.5rem -0.5rem -0.5rem 0.25rem;
 }
 
-.mdc-data-table > table > tbody > tr > td {
+.mdc-data-table > .table-container > table > tbody > tr > td {
     font-size: 0.875rem;
     font-weight: 400;
     border: none;
@@ -57,41 +60,41 @@ html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th > .mdc-checkbox {
     white-space: nowrap;
 }
 
-.mdc-data-table > table > thead > tr > th:first-child,
-.mdc-data-table > table > tbody > tr > td:first-child,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th:first-child,
-html[dir="ltr"] .mdc-data-table > table > tbody > tr > td:first-child,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th:first-child,
-html[dir] .mdc-data-table[dir="ltr"] > table > tbody > tr > td:first-child {
+.mdc-data-table > .table-container > table > thead > tr > th:first-child,
+.mdc-data-table > .table-container > table > tbody > tr > td:first-child,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th:first-child,
+html[dir="ltr"] .mdc-data-table > .table-container > table > tbody > tr > td:first-child,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th:first-child,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > tbody > tr > td:first-child {
     border-left: none;
     border-right: solid 0.0625rem var(--initial-bg-border);
 }
 
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th:first-child,
-html[dir="rtl"] .mdc-data-table > table > tbody > tr > td:first-child,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th:first-child,
-html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td:first-child {
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th:first-child,
+html[dir="rtl"] .mdc-data-table > .table-container > table > tbody > tr > td:first-child,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th:first-child,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > td:first-child {
     border-left: solid 0.0625rem var(--initial-bg-border);
     border-right: none;
 }
 
-.mdc-data-table > table > thead > tr > th.direction-reverse,
-.mdc-data-table > table > tbody > tr > td.direction-reverse,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th.direction-reverse,
-html[dir="ltr"] .mdc-data-table > table > tbody > tr > td.direction-reverse,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th.direction-reverse,
-html[dir] .mdc-data-table[dir="ltr"] > table > tbody > tr > td.direction-reverse {
+.mdc-data-table > .table-container > table > thead > tr > th.direction-reverse,
+.mdc-data-table > .table-container > table > tbody > tr > td.direction-reverse,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse,
+html[dir="ltr"] .mdc-data-table > .table-container > table > tbody > tr > td.direction-reverse,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th.direction-reverse,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > tbody > tr > td.direction-reverse {
     text-align: right;
 }
 
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th.direction-reverse,
-html[dir="rtl"] .mdc-data-table > table > tbody > tr > td.direction-reverse,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th.direction-reverse,
-html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td.direction-reverse {
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse,
+html[dir="rtl"] .mdc-data-table > .table-container > table > tbody > tr > td.direction-reverse,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th.direction-reverse,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > td.direction-reverse {
     text-align: left;
 }
 
-.mdc-data-table > table > tbody > tr > td > .cell-data {
+.mdc-data-table > .table-container > table > tbody > tr > td > .cell-data {
     display: block;
     position: relative;
     margin: 0;
@@ -102,7 +105,7 @@ html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td.direction-reverse
     color: var(--initial-text-primary);
 }
 
-.mdc-data-table > table > tbody > tr > td > .cell-data::before {
+.mdc-data-table > .table-container > table > tbody > tr > td > .cell-data::before {
     content: '';
     position: absolute;
     top: 0;
@@ -116,31 +119,31 @@ html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td.direction-reverse
     opacity: 0;
 }
 
-.mdc-data-table > table > tbody > tr.selected > td > .cell-data::before {
+.mdc-data-table > .table-container > table > tbody > tr.selected > td > .cell-data::before {
     background-color: var(--main-color);
     opacity: var(--opacity-selected);
 }
 
-.mdc-data-table > table > tbody > tr:hover > td > .cell-data::before,
-.mdc-data-table > table > tbody > tr.selected:hover > td > .cell-data::before {
+.mdc-data-table > .table-container > table > tbody > tr:hover > td > .cell-data::before,
+.mdc-data-table > .table-container > table > tbody > tr.selected:hover > td > .cell-data::before {
     opacity: var(--opacity-hover);
 }
 
-.mdc-data-table > table > tbody > tr > td > .cell-data > .mdc-checkbox,
-html[dir="ltr"] .mdc-data-table > table > tbody > tr > td > .cell-data > .mdc-checkbox,
-html[dir] .mdc-data-table[dir="ltr"] > table > tbody > tr > td > .cell-data > .mdc-checkbox {
+.mdc-data-table > .table-container > table > tbody > tr > td > .cell-data > .mdc-checkbox,
+html[dir="ltr"] .mdc-data-table > .table-container > table > tbody > tr > td > .cell-data > .mdc-checkbox,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > tbody > tr > td > .cell-data > .mdc-checkbox {
     float: left;
     margin: 0.25rem 0.25rem 0.25rem -0.5rem;
 }
 
-html[dir="rtl"] .mdc-data-table > table > tbody > tr > td > .cell-data > .mdc-checkbox,
-html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td > .cell-data > .mdc-checkbox {
+html[dir="rtl"] .mdc-data-table > .table-container > table > tbody > tr > td > .cell-data > .mdc-checkbox,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > td > .cell-data > .mdc-checkbox {
     float: right;
     margin: 0.25rem -0.5rem 0.25rem 0.25rem;
 }
 
-.mdc-data-table > table > thead > tr > th > a.column-sort,
-.mdc-data-table > table > thead > tr > th > button.column-sort {
+.mdc-data-table > .table-container > table > thead > tr > th > a.column-sort,
+.mdc-data-table > .table-container > table > thead > tr > th > button.column-sort {
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
@@ -155,41 +158,41 @@ html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td > .cell-data > .m
     text-decoration: none;
 }
 
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th > a.column-sort,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th > button.column-sort,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th > a.column-sort,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th > button.column-sort,
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th.direction-reverse > a.column-sort,
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th.direction-reverse > button.column-sort,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th.direction-reverse > a.column-sort,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th.direction-reverse > button.column-sort {
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th > a.column-sort,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th > button.column-sort,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th > a.column-sort,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th > button.column-sort,
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > a.column-sort,
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > button.column-sort,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th.direction-reverse > a.column-sort,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th.direction-reverse > button.column-sort {
     padding: 0 1.5rem 0 0;
 }
 
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th > a.column-sort,
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th > button.column-sort,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th > a.column-sort,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th > button.column-sort,
-.mdc-data-table > table > thead > tr > th.direction-reverse > a.column-sort,
-.mdc-data-table > table > thead > tr > th.direction-reverse > button.column-sort,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th.direction-reverse > a.column-sort,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th.direction-reverse > button.column-sort,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th.direction-reverse > a.column-sort,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th.direction-reverse > button.column-sort {
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th > a.column-sort,
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th > button.column-sort,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th > a.column-sort,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th > button.column-sort,
+.mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > a.column-sort,
+.mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > button.column-sort,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > a.column-sort,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > button.column-sort,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th.direction-reverse > a.column-sort,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th.direction-reverse > button.column-sort {
     padding: 0 0 0 1.5rem;
 }
 
-.mdc-data-table > table > thead > tr > th > a.column-sort:hover,
-.mdc-data-table > table > thead > tr > th > button.column-sort:hover,
-.mdc-data-table > table > thead > tr > th > a.column-sort.asc,
-.mdc-data-table > table > thead > tr > th > button.column-sort.asc,
-.mdc-data-table > table > thead > tr > th > a.column-sort.desc,
-.mdc-data-table > table > thead > tr > th > button.column-sort.desc {
+.mdc-data-table > .table-container > table > thead > tr > th > a.column-sort:hover,
+.mdc-data-table > .table-container > table > thead > tr > th > button.column-sort:hover,
+.mdc-data-table > .table-container > table > thead > tr > th > a.column-sort.asc,
+.mdc-data-table > .table-container > table > thead > tr > th > button.column-sort.asc,
+.mdc-data-table > .table-container > table > thead > tr > th > a.column-sort.desc,
+.mdc-data-table > .table-container > table > thead > tr > th > button.column-sort.desc {
     color: var(--text-primary);
 }
 
-.mdc-data-table > table > thead > tr > th > a.column-sort::before,
-.mdc-data-table > table > thead > tr > th > button.column-sort::before {
+.mdc-data-table > .table-container > table > thead > tr > th > a.column-sort::before,
+.mdc-data-table > .table-container > table > thead > tr > th > button.column-sort::before {
     content: 'arrow_downward';
     position: absolute;
     top: 50%;
@@ -218,47 +221,47 @@ html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th.direction-reverse
     font-feature-settings: 'liga';
 }
 
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th > a.column-sort::before,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th > button.column-sort::before,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th > a.column-sort::before,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th > button.column-sort::before,
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th.direction-reverse > a.column-sort::before,
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th.direction-reverse > button.column-sort::before,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th.direction-reverse > a.column-sort::before,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th.direction-reverse > button.column-sort::before {
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th > a.column-sort::before,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th > button.column-sort::before,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th > a.column-sort::before,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th > button.column-sort::before,
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > a.column-sort::before,
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > button.column-sort::before,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th.direction-reverse > a.column-sort::before,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th.direction-reverse > button.column-sort::before {
     left: auto;
     right: 0;
 }
 
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th > a.column-sort::before,
-html[dir="rtl"] .mdc-data-table > table > thead > tr > th > button.column-sort::before,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th > a.column-sort::before,
-html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th > button.column-sort::before,
-.mdc-data-table > table > thead > tr > th.direction-reverse > a.column-sort::before,
-.mdc-data-table > table > thead > tr > th.direction-reverse > button.column-sort::before,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th.direction-reverse > a.column-sort::before,
-html[dir="ltr"] .mdc-data-table > table > thead > tr > th.direction-reverse > button.column-sort::before,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th.direction-reverse > a.column-sort::before,
-html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th.direction-reverse > button.column-sort::before {
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th > a.column-sort::before,
+html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th > button.column-sort::before,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th > a.column-sort::before,
+html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th > button.column-sort::before,
+.mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > a.column-sort::before,
+.mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > button.column-sort::before,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > a.column-sort::before,
+html[dir="ltr"] .mdc-data-table > .table-container > table > thead > tr > th.direction-reverse > button.column-sort::before,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th.direction-reverse > a.column-sort::before,
+html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th.direction-reverse > button.column-sort::before {
     left: 0;
     right: auto;
 }
 
-.mdc-data-table > table > thead > tr > th > a.column-sort:hover::before,
-.mdc-data-table > table > thead > tr > th > button.column-sort:hover::before {
+.mdc-data-table > .table-container > table > thead > tr > th > a.column-sort:hover::before,
+.mdc-data-table > .table-container > table > thead > tr > th > button.column-sort:hover::before {
     opacity: 1;
 }
 
-.mdc-data-table > table > thead > tr > th > a.column-sort.asc::before,
-.mdc-data-table > table > thead > tr > th > button.column-sort.asc::before {
+.mdc-data-table > .table-container > table > thead > tr > th > a.column-sort.asc::before,
+.mdc-data-table > .table-container > table > thead > tr > th > button.column-sort.asc::before {
     opacity: 1;
     -ms-transform: scaleY(1);
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
 }
 
-.mdc-data-table > table > thead > tr > th > a.column-sort.desc::before,
-.mdc-data-table > table > thead > tr > th > button.column-sort.desc::before {
+.mdc-data-table > .table-container > table > thead > tr > th > a.column-sort.desc::before,
+.mdc-data-table > .table-container > table > thead > tr > th > button.column-sort.desc::before {
     opacity: 1;
     -ms-transform: scaleY(-1);
     -webkit-transform: scaleY(-1);
