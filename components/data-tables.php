@@ -3,6 +3,7 @@ $language = "en-US";
 $direction = "ltr";
 
 $css_files = [
+    "css/mdc.card.css",
     "css/mdc.data.table.css",
 ];
 $js_files = [
@@ -272,6 +273,7 @@ $url = $prefix."components/data-tables.php";
 
                 <h6>Related components:</h6>
                 <ul class="text-secondary">
+                    <li><a href="<?= $prefix ?>components/cards.php">Cards</a></li>
                     <li><a href="<?= $prefix ?>components/buttons.php">Buttons</a></li>
                 </ul>
                 <div class="space"></div>
@@ -288,11 +290,15 @@ $url = $prefix."components/data-tables.php";
                                     <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
                                         <input type="hidden" value="0">
                                     </div>
-                                    Dessert (100g serving)
+                                    <button class="column-sort">Dessert (100g serving)</button>
                                 </th>
-                                <th class="data-numbers">Calories</th>
-                                <th class="data-numbers">Protein (g)</th>
-                                <th class="data-numbers">Calcium (%)</th>
+                                <th class="direction-reverse">
+                                    <button class="column-sort">Calories</button>
+                                </th>
+                                <th class="direction-reverse">
+                                    <button class="column-sort asc">Protein (g)</button>
+                                </th>
+                                <th class="direction-reverse">Calcium (%)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -305,13 +311,13 @@ $url = $prefix."components/data-tables.php";
                                         Frozen yogurt
                                     </div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">159</div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">4.0</div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">14%</div>
                                 </td>
                             </tr>
@@ -324,13 +330,13 @@ $url = $prefix."components/data-tables.php";
                                         Ice cream sandwich
                                     </div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">237</div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">4.3</div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">8%</div>
                                 </td>
                             </tr>
@@ -343,27 +349,189 @@ $url = $prefix."components/data-tables.php";
                                         Eclair
                                     </div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">262</div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">6.0</div>
                                 </td>
-                                <td class="data-numbers">
+                                <td class="direction-reverse">
                                     <div class="cell-data">7%</div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+                <p class="text-secondary">Default data table with checkboxes.</p>
+
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
+<div class="mdc-data-table">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                        <input type="hidden" value="0">
+                    </div>
+                    <button class="column-sort">Dessert (100g serving)</button>
+                </th>
+                <th class="direction-reverse">
+                    <button class="column-sort">Calories</button>
+                </th>
+                <th class="direction-reverse">
+                    <button class="column-sort asc">Protein (g)</button>
+                </th>
+                <th class="direction-reverse">Calcium (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="deep-purple-A700">
+                <td>
+                    <div class="cell-data">
+                        <div class="mdc-checkbox" tabindex="-1">
+                            <input type="hidden" value="0">
+                        </div>
+                        Frozen yogurt
+                    </div>
+                </td>
+                <td class="direction-reverse">
+                    <div class="cell-data">159</div>
+                </td>
+                <td class="direction-reverse">
+                    <div class="cell-data">4.0</div>
+                </td>
+                <td class="direction-reverse">
+                    <div class="cell-data">14%</div>
+                </td>
+            </tr>
+            .
+            .
+            .
+        </tbody>
+    </table>
+</div>
 TEXT
 ) ?></pre>
+                <div class="space"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="mdc-data-table mdc-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                                        <input type="hidden" value="0">
+                                    </div>
+                                    <button class="column-sort">Dessert (100g serving)</button>
+                                </th>
+                                <th class="direction-reverse">
+                                    <button class="column-sort">Calories</button>
+                                </th>
+                                <th class="direction-reverse">Protein (g)</th>
+                                <th class="direction-reverse">
+                                    <button class="column-sort desc">Calcium (%)</button>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="deep-purple-A700">
+                                <td>
+                                    <div class="cell-data">
+                                        <div class="mdc-checkbox" tabindex="-1">
+                                            <input type="hidden" value="0">
+                                        </div>
+                                        Frozen yogurt
+                                    </div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">159</div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">4.0</div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">14%</div>
+                                </td>
+                            </tr>
+                            <tr class="deep-purple-A700">
+                                <td>
+                                    <div class="cell-data">
+                                        <div class="mdc-checkbox" tabindex="-1">
+                                            <input type="hidden" value="0">
+                                        </div>
+                                        Ice cream sandwich
+                                    </div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">237</div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">4.3</div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">8%</div>
+                                </td>
+                            </tr>
+                            <tr class="deep-purple-A700">
+                                <td>
+                                    <div class="cell-data">
+                                        <div class="mdc-checkbox" tabindex="-1">
+                                            <input type="hidden" value="0">
+                                        </div>
+                                        Eclair
+                                    </div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">262</div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">6.0</div>
+                                </td>
+                                <td class="direction-reverse">
+                                    <div class="cell-data">7%</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-secondary">Data table within a card.</p>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-data-table mdc-card">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                        <input type="hidden" value="0">
+                    </div>
+                    <button class="column-sort">Dessert (100g serving)</button>
+                </th>
+                <th class="direction-reverse">
+                    <button class="column-sort">Calories</button>
+                </th>
+                <th class="direction-reverse">Protein (g)</th>
+                <th class="direction-reverse">
+                    <button class="column-sort desc">Calcium (%)</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            .
+            .
+            .
+        </tbody>
+    </table>
+</div>
+TEXT
+) ?></pre>
+                <div class="space"></div>
             </div>
         </div>
     </section>
