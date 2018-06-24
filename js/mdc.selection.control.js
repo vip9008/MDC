@@ -16,11 +16,11 @@ $(document).ready(function() {
 
         if (parseInt($(this).children('input').val()) || $(this).hasClass('indeterminate')) {
             $(this).removeClass('checked indeterminate');
-            $(this).children('input').val(0);
+            $(this).children('input').val(0).trigger('change');
             return false;
         } else {
             $(this).addClass('checked');
-            $(this).children('input').val(1);
+            $(this).children('input').val(1).trigger('change');
             return true;
         }
     });

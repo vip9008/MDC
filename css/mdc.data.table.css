@@ -1,0 +1,124 @@
+.mdc-data-table > table {
+    border: none;
+    margin: 0;
+}
+
+.mdc-data-table > table > thead > tr,
+.mdc-data-table > table > tbody > tr {
+    height: 3.0625rem;
+}
+
+.mdc-data-table > table > tbody > tr {
+    border-top: solid 0.0625rem var(--initial-bg-border);
+}
+
+.mdc-data-table > table > thead > tr > th {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    border: none;
+    padding: 0.75rem 1rem;
+    color: var(--text-secondary);
+}
+
+.mdc-data-table > table > thead > tr > th > .mdc-checkbox,
+html[dir="ltr"] .mdc-data-table > table > thead > tr > th > .mdc-checkbox,
+html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th > .mdc-checkbox {
+    float: left;
+    margin: -0.5rem 0.25rem -0.5rem -0.5rem;
+}
+
+html[dir="rtl"] .mdc-data-table > table > thead > tr > th > .mdc-checkbox,
+html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th > .mdc-checkbox {
+    float: right;
+    margin: -0.5rem -0.5rem -0.5rem 0.25rem;
+}
+
+.mdc-data-table > table > tbody > tr > td {
+    font-size: 0.875rem;
+    font-weight: 400;
+    border: none;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+.mdc-data-table > table > thead > tr > th:first-child,
+.mdc-data-table > table > tbody > tr > td:first-child,
+html[dir="ltr"] .mdc-data-table > table > thead > tr > th:first-child,
+html[dir="ltr"] .mdc-data-table > table > tbody > tr > td:first-child,
+html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th:first-child,
+html[dir] .mdc-data-table[dir="ltr"] > table > tbody > tr > td:first-child {
+    border-left: none;
+    border-right: solid 0.0625rem var(--initial-bg-border);
+}
+
+html[dir="rtl"] .mdc-data-table > table > thead > tr > th:first-child,
+html[dir="rtl"] .mdc-data-table > table > tbody > tr > td:first-child,
+html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th:first-child,
+html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td:first-child {
+    border-left: solid 0.0625rem var(--initial-bg-border);
+    border-right: none;
+}
+
+.mdc-data-table > table > thead > tr > th.data-numbers,
+.mdc-data-table > table > tbody > tr > td.data-numbers,
+html[dir="ltr"] .mdc-data-table > table > thead > tr > th.data-numbers,
+html[dir="ltr"] .mdc-data-table > table > tbody > tr > td.data-numbers,
+html[dir] .mdc-data-table[dir="ltr"] > table > thead > tr > th.data-numbers,
+html[dir] .mdc-data-table[dir="ltr"] > table > tbody > tr > td.data-numbers {
+    text-align: right;
+}
+
+html[dir="rtl"] .mdc-data-table > table > thead > tr > th.data-numbers,
+html[dir="rtl"] .mdc-data-table > table > tbody > tr > td.data-numbers,
+html[dir] .mdc-data-table[dir="rtl"] > table > thead > tr > th.data-numbers,
+html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td.data-numbers {
+    text-align: left;
+}
+
+.mdc-data-table > table > tbody > tr > td > .cell-data {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 1rem;
+    text-align: inherit;
+    height: 3rem;
+    line-height: 3rem;
+    color: var(--initial-text-primary);
+}
+
+.mdc-data-table > table > tbody > tr > td > .cell-data::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    will-change: opacity;
+    transition: all 0.2s;
+    background-color: var(--initial-main-color);
+    opacity: 0;
+}
+
+.mdc-data-table > table > tbody > tr:hover > td > .cell-data::before {
+    opacity: var(--opacity-hover);
+}
+
+.mdc-data-table > table > tbody > tr.selected > td > .cell-data::before {
+    background-color: var(--main-color);
+    opacity: var(--opacity-selected);
+}
+
+.mdc-data-table > table > tbody > tr > td > .cell-data > .mdc-checkbox,
+html[dir="ltr"] .mdc-data-table > table > tbody > tr > td > .cell-data > .mdc-checkbox,
+html[dir] .mdc-data-table[dir="ltr"] > table > tbody > tr > td > .cell-data > .mdc-checkbox {
+    float: left;
+    margin: 0.25rem 0.25rem 0.25rem -0.5rem;
+}
+
+html[dir="rtl"] .mdc-data-table > table > tbody > tr > td > .cell-data > .mdc-checkbox,
+html[dir] .mdc-data-table[dir="rtl"] > table > tbody > tr > td > .cell-data > .mdc-checkbox {
+    float: right;
+    margin: 0.25rem -0.5rem 0.25rem 0.25rem;
+}

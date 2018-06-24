@@ -3,9 +3,10 @@ $language = "en-US";
 $direction = "ltr";
 
 $css_files = [
-    "css/mdc.card.css",
+    "css/mdc.data.table.css",
 ];
 $js_files = [
+    "js/mdc.data.table.js",
 ];
 
 $head_title = "MDC v2";
@@ -278,9 +279,87 @@ $url = $prefix."components/data-tables.php";
         </div>
 
         <div class="row">
-            <div class="col xlarge-3 large-4 medium-6">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="mdc-data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                                        <input type="hidden" value="0">
+                                    </div>
+                                    Dessert (100g serving)
+                                </th>
+                                <th class="data-numbers">Calories</th>
+                                <th class="data-numbers">Protein (g)</th>
+                                <th class="data-numbers">Calcium (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="deep-purple-A700">
+                                <td>
+                                    <div class="cell-data">
+                                        <div class="mdc-checkbox" tabindex="-1">
+                                            <input type="hidden" value="0">
+                                        </div>
+                                        Frozen yogurt
+                                    </div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">159</div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">4.0</div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">14%</div>
+                                </td>
+                            </tr>
+                            <tr class="deep-purple-A700">
+                                <td>
+                                    <div class="cell-data">
+                                        <div class="mdc-checkbox" tabindex="-1">
+                                            <input type="hidden" value="0">
+                                        </div>
+                                        Ice cream sandwich
+                                    </div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">237</div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">4.3</div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">8%</div>
+                                </td>
+                            </tr>
+                            <tr class="deep-purple-A700">
+                                <td>
+                                    <div class="cell-data">
+                                        <div class="mdc-checkbox" tabindex="-1">
+                                            <input type="hidden" value="0">
+                                        </div>
+                                        Eclair
+                                    </div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">262</div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">6.0</div>
+                                </td>
+                                <td class="data-numbers">
+                                    <div class="cell-data">7%</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="col xlarge-5 large-6 medium-10">
+        </div>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
 TEXT
