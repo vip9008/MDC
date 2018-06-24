@@ -218,6 +218,45 @@ $url = $prefix."components/data-tables.php";
 
                 <h4>Inline menus</h4>
                 <p class="text-secondary">Inline menus allow users to select from a predefined list of options. These menus can be directly embedded in a table.</p>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_data_tables/components-datatables-interaction11.png"></figure>
+                <p class="text-secondary">A table with inline menus.</p>
+                <div class="space"></div>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_data_tables/components-datatables-interaction12.png"></figure>
+                <p class="text-secondary">An expanded inline menu.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdc-divider"></div>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <h1 class="article_title">Tables within cards</h1>
+                <div class="space"></div>
+
+                <p class="text-secondary">Tables can be embedded within a card. At the bottom of each card, tools can be displayed for table navigation and data manipulation.</p>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_data_tables/components-datatables-card1.png"></figure>
+                <p class="text-secondary">Table card with header and footer.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Data table card headers</h4>
+                <p class="text-secondary">When tables in cards require actionable headers instead of titles, you can either:</p>
+                <ul class="text-secondary">
+                    <li>Display persistent actions</li>
+                    <li>Display a contextual header that indicates when items are selected</li>
+                </ul>
+
+                <figure class="img_figure clearfix"><img src="<?= $prefix ?>img/component_data_tables/components-datatables-card2.png"></figure>
+                <ol class="text-secondary">
+                    <li>Action buttons</li>
+                    <li>Colored header</li>
+                </ol>
             </div>
         </div>
     </section>
