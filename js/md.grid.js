@@ -34,3 +34,5 @@ function md_init()
 }
 
 var md_click_event = 'click';
+
+md_init();
