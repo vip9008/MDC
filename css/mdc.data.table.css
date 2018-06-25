@@ -198,6 +198,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > t
     transition: all 0.2s;
     background-color: var(--initial-main-color);
     opacity: 0;
+    pointer-events: none;
 }
 
 .mdc-data-table > .table-container > table > tbody > tr.selected > td > .cell-data::before {
