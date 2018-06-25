@@ -61,7 +61,7 @@ $initial_js_files = [
             .closest('.mdc-list-group.collapsed')
             .children('.mdc-list-item')
             .addClass('active bold')
-            .click();
+            .trigger(md_click_event);
         });
     </script>
 </head>

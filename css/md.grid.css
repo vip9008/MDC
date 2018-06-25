@@ -229,10 +229,28 @@ table th, table td {
     padding: 0.75rem 1.5rem;
     text-align: left;
 }
+
+.table-container {
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-bottom: 2.5rem;
+}
+
+.table-container > table {
+    margin: 0;
+    width: 100%;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;
+    width: max-content;
+}
+
 html[dir="ltr"] table th, html[dir="ltr"] table td,
 html[dir] table[dir="ltr"] th, html[dir] table[dir="ltr"] td {
     text-align: left;
 }
+
 html[dir="rtl"] table th, html[dir="rtl"] table td,
 html[dir] table[dir="rtl"] th, html[dir] table[dir="rtl"] td {
     text-align: right;
@@ -244,6 +262,7 @@ pre {
     padding: 1rem 1.5rem;
     border: solid 0.0625rem var(--initial-text-divider);
 }
+
 html[dir="ltr"] pre, html[dir] pre[dir="ltr"],
 html[dir="rtl"] pre, html[dir] pre[dir="rtl"] {
     direction: ltr;
@@ -254,6 +273,7 @@ code {
     padding: 0 0.25rem;
     border: solid 0.0625rem var(--initial-text-divider);
 }
+
 html[dir="ltr"] code, html[dir] code[dir="ltr"],
 html[dir="rtl"] code, html[dir] code[dir="rtl"] {
     direction: ltr;

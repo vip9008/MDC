@@ -393,36 +393,38 @@ $url = $prefix."components/menus.php";
                 <div class="space"></div>
 
                 <h6>Javascript methods:</h6>
-                <table class="bg-cards methods-doc">
-                    <tr>
-                        <th class="bg-app-bar code" colspan="3">
-                            <b class="green">void</b>
-                            <b class="blue-grey-800">mdc_close_menus</b>
-                            (
-                            )
-                        </th>
-                    </tr>
-                    <tr>
-                        <td colspan="3">A method to close all active menus.</td>
-                    </tr>
-                    <tr>
-                        <th class="bg-app-bar code" colspan="3">
-                            <b class="green">void</b>
-                            <b class="blue-grey-800">mdc_close_menu</b>
-                            (
-                            <b class="deep-purple-A700">menu_container</b>
-                            )
-                        </th>
-                    </tr>
-                    <tr>
-                        <td colspan="3">A method to close a specific menu.</td>
-                    </tr>
-                    <tr>
-                        <td><b class="deep-purple-A700 code">menu_container</b></td>
-                        <td class="code">String | jQuery | Element</td>
-                        <td>The menu container. can be either a css selector string or a jQuery object or an element.</td>
-                    </tr>
-                </table>
+                <div class="table-container">
+                    <table class="bg-cards methods-doc" style="width: auto; min-width: 45rem;">
+                        <tr>
+                            <th class="bg-app-bar code" colspan="3">
+                                <b class="green">void</b>
+                                <b class="blue-grey-800">mdc_close_menus</b>
+                                (
+                                )
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">A method to close all active menus.</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-app-bar code" colspan="3">
+                                <b class="green">void</b>
+                                <b class="blue-grey-800">mdc_close_menu</b>
+                                (
+                                <b class="deep-purple-A700">menu_container</b>
+                                )
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">A method to close a specific menu.</td>
+                        </tr>
+                        <tr>
+                            <td><b class="deep-purple-A700 code">menu_container</b></td>
+                            <td class="code">String | jQuery | Element</td>
+                            <td>The menu container. can be either a css selector string or a jQuery object or an element.</td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="space"></div>
                 
                 <h4>Dropdown menu</h4>

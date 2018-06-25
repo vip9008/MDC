@@ -192,6 +192,7 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .meta {
     font-size: 1.5rem;
     -webkit-align-self: center;
     align-self: center;
+    line-height: 1;
 }
 
 html[dir="ltr"] .mdc-list-item > .meta.icon,
