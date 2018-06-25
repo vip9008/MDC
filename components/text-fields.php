@@ -515,15 +515,72 @@ TEXT
 ) ?></pre>
             </div>
         </div>
-    </section>
-    <div class="row">
-        <div class="col xlarge-8 medium-10">
-            <div class="mdc-divider"></div>
-        </div>
-    </div>
-    <section>
+        
         <div class="row">
             <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
+                <h4>Standard text field</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-3 large-4 medium-6">
+                <div class="mdc-text-field standard deep-purple-A700">
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+
+                <div class="mdc-text-field standard deep-purple-A700">
+                    <div class="icon material-icon">person</div>
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+
+                <div class="mdc-text-field standard deep-purple-A700">
+                    <div class="icon material-icon trailing">person</div>
+                    <input type="text" class="input">
+                    <label class="label">Label</label>
+                    <div class="help-block">Help text</div>
+                </div>
+            </div>
+            <div class="col xlarge-5 large-6 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-text-field standard deep-purple-A700">
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+
+<div class="mdc-text-field standard deep-purple-A700">
+    <div class="icon material-icon">person</div>
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+
+<div class="mdc-text-field standard deep-purple-A700">
+    <div class="icon material-icon trailing">person</div>
+    <input type="text" class="input">
+    <label class="label">Label</label>
+    <div class="help-block">Help text</div>
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+
                 <h4>Outlined text field</h4>
             </div>
         </div>

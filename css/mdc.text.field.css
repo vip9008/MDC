@@ -272,6 +272,137 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     user-select: none;
 }
 
+.mdc-text-field.standard::after {
+    top: 3.0625rem;
+}
+
+.mdc-text-field.standard > .input {
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 3.1875rem;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.mdc-text-field.standard > .label {
+    top: 1.625rem;
+    right: auto;
+    left: auto;
+}
+
+html[dir="ltr"] .mdc-text-field.standard > .label,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .label,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .label,
+html[dir="rtl"] .mdc-text-field.standard > .label,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .label,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .label {
+    right: auto;
+    left: auto;
+}
+
+.mdc-text-field.standard.active > .input + .label,
+.mdc-text-field.standard.focus > .input + .label {
+    transform: translateY(-100%) scale(0.75);
+}
+
+.mdc-text-field.standard > .icon {
+    top: 1.4375rem;
+    left: 0;
+    right: auto;
+}
+
+html[dir="ltr"] .mdc-text-field.standard > .icon,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon {
+    left: 0;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-text-field.standard > .icon,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon {
+    left: auto;
+    right: 0;
+}
+
+.mdc-text-field.standard > .icon + .input {
+    padding: 1.25rem 0 0 2.25rem;
+    width: 18rem;
+}
+
+.mdc-text-field.standard > .icon + .input + .label {
+    left: 2.25rem;
+    right: auto;
+    width: calc(100% - 2.25rem);
+}
+
+html[dir="ltr"] .mdc-text-field.standard > .icon + .input + .label,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input + .label,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input + .label {
+    left: 2.25rem;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-text-field.standard > .icon + .input + .label,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input + .label,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input + .label {
+    left: auto;
+    right: 2.25rem;
+}
+
+.mdc-text-field.standard > .icon.trailing {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .mdc-text-field.standard > .icon + .input,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input,
+.mdc-text-field.standard > .icon.trailing + .input,
+html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input {
+    padding: 1.25rem 2.25rem 0 0;
+}
+
+html[dir="ltr"] .mdc-text-field.standard > .icon + .input,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input,
+html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input {
+    padding: 1.25rem 0 0 2.25rem;
+}
+
+.mdc-text-field.standard > .icon.trailing + .input + .label {
+    left: 0;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-text-field.standard > .icon.trailing,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing,
+html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input + .label,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input + .label,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input + .label {
+    left: 0;
+    right: auto;
+}
+
+html[dir="ltr"] .mdc-text-field.standard > .icon.trailing,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing,
+html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input + .label,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input + .label,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input + .label {
+    left: auto;
+    right: 0;
+}
+
+.mdc-text-field.standard > .help-block {
+    padding: 0.0625rem 0 0;
+}
+
 .mdc-text-field.outlined::after {
     display: none;
 }
