@@ -58,7 +58,7 @@ a.mdc-button, button.mdc-button, .mdc-button {
     user-select: none;
 }
 
-.mdc-button > .material-icon {
+.mdc-button > .icon {
     margin-left: 0;
     margin-right: 0.5rem;
     display: inline-block;
@@ -68,14 +68,14 @@ a.mdc-button, button.mdc-button, .mdc-button {
     vertical-align: middle;
 }
 
-html[dir="ltr"] .mdc-button > .material-icon,
-html[dir] .mdc-button[dir="ltr"] > .material-icon {
+html[dir="ltr"] .mdc-button > .icon,
+html[dir] .mdc-button[dir="ltr"] > .icon {
     margin-left: 0;
     margin-right: 0.5rem;
 }
 
-html[dir="rtl"] .mdc-button > .material-icon,
-html[dir] .mdc-button[dir="rtl"] > .material-icon {
+html[dir="rtl"] .mdc-button > .icon,
+html[dir] .mdc-button[dir="rtl"] > .icon {
     margin-left: 0.5rem;
     margin-right: 0;
 }
@@ -122,7 +122,7 @@ html[dir] .mdc-button[dir="rtl"] > .material-icon {
     display: none;
 }
 
-.mdc-button.disabled > .material-icon, .mdc-button[disabled] > .material-icon, .mdc-button:disabled > .material-icon {
+.mdc-button.disabled > .icon, .mdc-button[disabled] > .icon, .mdc-button:disabled > .icon {
     color: var(--initial-text-hint);
 }
 
@@ -130,26 +130,26 @@ html[dir] .mdc-button[dir="rtl"] > .material-icon {
     padding: 0 1rem;
 }
 
-.mdc-button.btn-outlined > .material-icon, .mdc-button.btn-contained > .material-icon, .mdc-button[class*="bg-"] > .material-icon {
+.mdc-button.btn-outlined > .icon, .mdc-button.btn-contained > .icon, .mdc-button[class*="bg-"] > .icon {
     margin-left: -0.25rem;
 }
 
-html[dir="ltr"] .mdc-button.btn-outlined > .material-icon,
-html[dir="ltr"] .mdc-button.btn-contained > .material-icon,
-html[dir="ltr"] .mdc-button[class*="bg-"] > .material-icon,
-html[dir] .mdc-button.btn-outlined[dir="ltr"] > .material-icon,
-html[dir] .mdc-button.btn-contained[dir="ltr"] > .material-icon,
-html[dir] .mdc-button[class*="bg-"][dir="ltr"] > .material-icon {
+html[dir="ltr"] .mdc-button.btn-outlined > .icon,
+html[dir="ltr"] .mdc-button.btn-contained > .icon,
+html[dir="ltr"] .mdc-button[class*="bg-"] > .icon,
+html[dir] .mdc-button.btn-outlined[dir="ltr"] > .icon,
+html[dir] .mdc-button.btn-contained[dir="ltr"] > .icon,
+html[dir] .mdc-button[class*="bg-"][dir="ltr"] > .icon {
     margin-left: -0.25rem;
     margin-right: 0.5rem;
 }
 
-html[dir="rtl"] .mdc-button.btn-outlined > .material-icon,
-html[dir="rtl"] .mdc-button.btn-contained > .material-icon,
-html[dir="rtl"] .mdc-button[class*="bg-"] > .material-icon,
-html[dir] .mdc-button.btn-outlined[dir="rtl"] > .material-icon,
-html[dir] .mdc-button.btn-contained[dir="rtl"] > .material-icon,
-html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .material-icon {
+html[dir="rtl"] .mdc-button.btn-outlined > .icon,
+html[dir="rtl"] .mdc-button.btn-contained > .icon,
+html[dir="rtl"] .mdc-button[class*="bg-"] > .icon,
+html[dir] .mdc-button.btn-outlined[dir="rtl"] > .icon,
+html[dir] .mdc-button.btn-contained[dir="rtl"] > .icon,
+html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
     margin-left: 0.5rem;
     margin-right: -0.25rem;
 }
@@ -189,7 +189,10 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .material-icon {
     overflow: hidden;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    vertical-align: middle;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     border: solid 0.0625rem var(--initial-text-divider);
 }
 
@@ -247,7 +250,7 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .material-icon {
     opacity: var(--opacity-pressed);
 }
 
-.mdc-toggle-buttons > .mdc-button > .material-icon {
+.mdc-toggle-buttons > .mdc-button > .icon {
     margin: 0;
     display: inline-block;
     width: 1.5rem;
@@ -256,8 +259,8 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .material-icon {
     vertical-align: middle;
 }
 
-html[dir] .mdc-toggle-buttons > .mdc-button > .material-icon,
-html[dir] .mdc-toggle-buttons[dir] > .mdc-button > .material-icon,
-html[dir] .mdc-toggle-buttons > .mdc-button[dir] > .material-icon {
+html[dir] .mdc-toggle-buttons > .mdc-button > .icon,
+html[dir] .mdc-toggle-buttons[dir] > .mdc-button > .icon,
+html[dir] .mdc-toggle-buttons > .mdc-button[dir] > .icon {
     margin: 0;
 }

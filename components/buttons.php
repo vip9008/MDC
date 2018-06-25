@@ -481,11 +481,11 @@ $url = $prefix."components/buttons.php";
                 </div>
                 <div class="btn-group-example">
                     <button class="mdc-button deep-purple-A700">
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                     <button class="mdc-button deep-purple-A700" disabled>
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                 </div>
@@ -497,11 +497,11 @@ $url = $prefix."components/buttons.php";
 <button class="mdc-button deep-purple-A700" disabled>Text</button>
 
 <button class="mdc-button deep-purple-A700">
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 <button class="mdc-button deep-purple-A700" disabled>
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 TEXT
@@ -530,11 +530,11 @@ TEXT
                 </div>
                 <div class="btn-group-example">
                     <button class="mdc-button btn-outlined deep-purple-A700">
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                     <button class="mdc-button btn-outlined deep-purple-A700" disabled>
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                 </div>
@@ -546,13 +546,13 @@ TEXT
                 </div>
                 <div class="btn-group-example">
                     <button class="mdc-button btn-outlined full-width deep-purple-A700">
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                 </div>
                 <div class="btn-group-example">
                     <button class="mdc-button btn-outlined full-width deep-purple-A700" disabled>
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                 </div>
@@ -564,11 +564,11 @@ TEXT
 <button class="mdc-button btn-outlined deep-purple-A700" disabled>Text</button>
 
 <button class="mdc-button btn-outlined deep-purple-A700">
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 <button class="mdc-button btn-outlined deep-purple-A700" disabled>
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 
@@ -576,11 +576,11 @@ TEXT
 <button class="mdc-button btn-outlined full-width deep-purple-A700" disabled>Text</button>
 
 <button class="mdc-button btn-outlined full-width deep-purple-A700">
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 <button class="mdc-button btn-outlined full-width deep-purple-A700" disabled>
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 TEXT
@@ -609,11 +609,11 @@ TEXT
                 </div>
                 <div class="btn-group-example">
                     <button class="mdc-button btn-contained bg-deep-purple-A700">
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                     <button class="mdc-button btn-contained bg-deep-purple-A700" disabled>
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                 </div>
@@ -625,13 +625,13 @@ TEXT
                 </div>
                 <div class="btn-group-example">
                     <button class="mdc-button btn-contained full-width bg-deep-purple-A700">
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                 </div>
                 <div class="btn-group-example">
                     <button class="mdc-button btn-contained full-width bg-deep-purple-A700" disabled>
-                        <div class="material-icon">favorite</div>
+                        <div class="icon material-icon">favorite</div>
                         Text
                     </button>
                 </div>
@@ -643,11 +643,11 @@ TEXT
 <button class="mdc-button btn-contained bg-deep-purple-A700" disabled>Text</button>
 
 <button class="mdc-button btn-contained bg-deep-purple-A700">
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 <button class="mdc-button btn-contained bg-deep-purple-A700" disabled>
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 
@@ -655,11 +655,11 @@ TEXT
 <button class="mdc-button btn-contained full-width bg-deep-purple-A700" disabled>Text</button>
 
 <button class="mdc-button btn-contained full-width bg-deep-purple-A700">
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 <button class="mdc-button btn-contained full-width bg-deep-purple-A700" disabled>
-    <div class="material-icon">favorite</div>
+    <div class="icon material-icon">favorite</div>
     Text
 </button>
 TEXT
@@ -684,16 +684,16 @@ TEXT
             <div class="col xlarge-2 large-3 medium-6">
                 <div class="btn-group-example toggle-buttons">
                     <div class="mdc-toggle-buttons">
-                        <button class="mdc-button"><div class="material-icon">format_italic</div></button>
-                        <button class="mdc-button active"><div class="material-icon">format_bold</div></button>
-                        <button class="mdc-button" disabled><div class="material-icon">format_underlined</div></button>
+                        <button class="mdc-button"><div class="icon material-icon">format_italic</div></button>
+                        <button class="mdc-button active"><div class="icon material-icon">format_bold</div></button>
+                        <button class="mdc-button" disabled><div class="icon material-icon">format_underlined</div></button>
                     </div>
                 </div>
                 <div class="btn-group-example toggle-buttons">
                     <div class="mdc-toggle-buttons deep-purple-A700">
-                        <button class="mdc-button"><div class="material-icon">format_italic</div></button>
-                        <button class="mdc-button active"><div class="material-icon">format_bold</div></button>
-                        <button class="mdc-button" disabled><div class="material-icon">format_underlined</div></button>
+                        <button class="mdc-button"><div class="icon material-icon">format_italic</div></button>
+                        <button class="mdc-button active"><div class="icon material-icon">format_bold</div></button>
+                        <button class="mdc-button" disabled><div class="icon material-icon">format_underlined</div></button>
                     </div>
                 </div>
             </div>
@@ -701,15 +701,15 @@ TEXT
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
 <div class="mdc-toggle-buttons">
-    <button class="mdc-button"><div class="material-icon">format_italic</div></button>
-    <button class="mdc-button active"><div class="material-icon">format_bold</div></button>
-    <button class="mdc-button" disabled><div class="material-icon">format_underlined</div></button>
+    <button class="mdc-button"><div class="icon material-icon">format_italic</div></button>
+    <button class="mdc-button active"><div class="icon material-icon">format_bold</div></button>
+    <button class="mdc-button" disabled><div class="icon material-icon">format_underlined</div></button>
 </div>
 
 <div class="mdc-toggle-buttons deep-purple-A700">
-    <button class="mdc-button"><div class="material-icon">format_italic</div></button>
-    <button class="mdc-button active"><div class="material-icon">format_bold</div></button>
-    <button class="mdc-button" disabled><div class="material-icon">format_underlined</div></button>
+    <button class="mdc-button"><div class="icon material-icon">format_italic</div></button>
+    <button class="mdc-button active"><div class="icon material-icon">format_bold</div></button>
+    <button class="mdc-button" disabled><div class="icon material-icon">format_underlined</div></button>
 </div>
 TEXT
 ) ?></pre>
