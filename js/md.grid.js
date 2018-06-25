@@ -5,7 +5,7 @@ function md_touch_handler(event)
         type = "";
     switch(event.type)
     {
-        case "touchstart": type = "click"; break;
+        case "touchstart": type = "mousedown"; break;
         case "touchmove":  type = "mousemove"; break;        
         case "touchend":   type = "mouseup";   break;
         default:           return;
