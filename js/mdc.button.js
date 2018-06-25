@@ -1,5 +1,7 @@
 $(document).ready(function() {
     $('body').on(md_click_event, '.mdc-toggle-buttons > .mdc-button', function(event) {
+        event.preventDefault();
+        
         if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
             return false;
         }

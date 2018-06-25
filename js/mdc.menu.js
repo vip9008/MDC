@@ -8,14 +8,18 @@ function mdc_close_menu(selector) {
 
 $(document).ready(function() {
     $('html').on(md_click_event, function(event) {
+        event.preventDefault();
+        
         $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
     });
 
     $('body').on(md_click_event, '.mdc-menu-container .mdc-list-container', function(event) {
+        event.preventDefault();
         event.stopPropagation();
     });
 
     $('body').on(md_click_event, '.mdc-menu-container .menu-button', function(event) {
+        event.preventDefault();
         event.stopPropagation();
 
         var menu_container = $(this).closest('.mdc-menu-container');
@@ -61,6 +65,8 @@ $(document).ready(function() {
     });
 
     $('body').on(md_click_event, '.mdc-menu-container.select-menu .mdc-list-container button.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container a.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container .mdc-list-item.interactive', function(event) {
+        event.preventDefault();
+        
         var container = $(this).closest('.select-menu');
 
         if ($(this).hasClass('selected')) {

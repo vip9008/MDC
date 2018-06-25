@@ -39,6 +39,8 @@ $(document).ready(function() {
     last_scroll_position = mdc_top_app_bar();
 
     $('body').on(md_click_event, '#mdc-top-app-bar > .nav-icon', function(event) {
+        event.preventDefault();
+        
         var css_class = 'mdc-drawer-expand';
         if ($('#mdc-nav-drawer').hasClass('modal')) {
             css_class = 'mdc-drawer-modal';

@@ -28,11 +28,18 @@ function md_touch_handler(event)
 function md_init() 
 {
     document.addEventListener("touchstart", md_touch_handler, true);
-    // document.addEventListener("touchmove", md_touch_handler, true);
-    // document.addEventListener("touchend", md_touch_handler, true);
-    // document.addEventListener("touchcancel", md_touch_handler, true);
+    document.addEventListener("touchmove", md_touch_handler, true);
+    document.addEventListener("touchend", md_touch_handler, true);
+    document.addEventListener("touchcancel", md_touch_handler, true);
 }
 
-var md_click_event = 'click';
+// md_init();
 
-md_init();
+var md_click_event = (function() {
+    if ('ontouchstart' in document.documentElement === true) {
+        return 'touchstart';
+    }
+    else {
+        return 'click';
+    }
+})();

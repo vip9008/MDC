@@ -10,6 +10,8 @@ $(document).ready(function() {
     });
     
     $('body').on(md_click_event, '.mdc-checkbox, .mdc-switch', function(event) {
+        event.preventDefault();
+        
         if ($(this).children('input').prop('disabled')) {
             return false;
         }
