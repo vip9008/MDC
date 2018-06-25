@@ -493,17 +493,21 @@ $url = $prefix."components/buttons.php";
             <div class="col xlarge-6 large-7 medium-12">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<button class="mdc-button deep-purple-A700">Text</button>
-<button class="mdc-button deep-purple-A700" disabled>Text</button>
+<div class="mdc-button-group">
+    <button class="mdc-button deep-purple-A700">Text</button>
+    <button class="mdc-button deep-purple-A700" disabled>Text</button>
+</div>
 
-<button class="mdc-button deep-purple-A700">
-    <div class="icon material-icon">favorite</div>
-    Text
-</button>
-<button class="mdc-button deep-purple-A700" disabled>
-    <div class="icon material-icon">favorite</div>
-    Text
-</button>
+<div class="mdc-button-group">
+    <button class="mdc-button deep-purple-A700">
+        <div class="icon material-icon">favorite</div>
+        Text
+    </button>
+    <button class="mdc-button deep-purple-A700" disabled>
+        <div class="icon material-icon">favorite</div>
+        Text
+    </button>
+</div>
 TEXT
 ) ?></pre>
             </div>
@@ -560,17 +564,21 @@ TEXT
             <div class="col xlarge-6 large-7 medium-12">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<button class="mdc-button btn-outlined deep-purple-A700">Text</button>
-<button class="mdc-button btn-outlined deep-purple-A700" disabled>Text</button>
+<div class="mdc-button-group">
+    <button class="mdc-button btn-outlined deep-purple-A700">Text</button>
+    <button class="mdc-button btn-outlined deep-purple-A700" disabled>Text</button>
+</div>
 
-<button class="mdc-button btn-outlined deep-purple-A700">
-    <div class="icon material-icon">favorite</div>
-    Text
-</button>
-<button class="mdc-button btn-outlined deep-purple-A700" disabled>
-    <div class="icon material-icon">favorite</div>
-    Text
-</button>
+<div class="mdc-button-group">
+    <button class="mdc-button btn-outlined deep-purple-A700">
+        <div class="icon material-icon">favorite</div>
+        Text
+    </button>
+    <button class="mdc-button btn-outlined deep-purple-A700" disabled>
+        <div class="icon material-icon">favorite</div>
+        Text
+    </button>
+</div>
 
 <button class="mdc-button btn-outlined full-width deep-purple-A700">Text</button>
 <button class="mdc-button btn-outlined full-width deep-purple-A700" disabled>Text</button>
@@ -639,17 +647,21 @@ TEXT
             <div class="col xlarge-6 large-7 medium-12">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<button class="mdc-button btn-contained bg-deep-purple-A700">Text</button>
-<button class="mdc-button btn-contained bg-deep-purple-A700" disabled>Text</button>
+<div class="mdc-button-group">
+    <button class="mdc-button btn-contained deep-purple-A700">Text</button>
+    <button class="mdc-button btn-contained deep-purple-A700" disabled>Text</button>
+</div>
 
-<button class="mdc-button btn-contained bg-deep-purple-A700">
-    <div class="icon material-icon">favorite</div>
-    Text
-</button>
-<button class="mdc-button btn-contained bg-deep-purple-A700" disabled>
-    <div class="icon material-icon">favorite</div>
-    Text
-</button>
+<div class="mdc-button-group">
+    <button class="mdc-button btn-contained deep-purple-A700">
+        <div class="icon material-icon">favorite</div>
+        Text
+    </button>
+    <button class="mdc-button btn-contained deep-purple-A700" disabled>
+        <div class="icon material-icon">favorite</div>
+        Text
+    </button>
+</div>
 
 <button class="mdc-button btn-contained full-width bg-deep-purple-A700">Text</button>
 <button class="mdc-button btn-contained full-width bg-deep-purple-A700" disabled>Text</button>
