@@ -71,8 +71,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .header > .actions > .action-item {
 }
 
 .mdc-data-table > .table-container {
-    max-width: 100%;
-    overflow-x: auto;
+    margin: 0;
 }
 
 .mdc-data-table > .table-container > table {
