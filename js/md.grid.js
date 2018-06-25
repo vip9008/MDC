@@ -27,10 +27,10 @@ function md_touch_handler(event)
 
 function md_init() 
 {
-    document.addEventListener("touchstart", touchHandler, true);
-    // document.addEventListener("touchmove", touchHandler, true);
-    // document.addEventListener("touchend", touchHandler, true);
-    // document.addEventListener("touchcancel", touchHandler, true);
+    document.addEventListener("touchstart", md_touch_handler, true);
+    // document.addEventListener("touchmove", md_touch_handler, true);
+    // document.addEventListener("touchend", md_touch_handler, true);
+    // document.addEventListener("touchcancel", md_touch_handler, true);
 }
 
 var md_click_event = 'click';
