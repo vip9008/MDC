@@ -8,8 +8,6 @@ function mdc_close_menu(selector) {
 
 $(document).ready(function() {
     $('html').on(md_click_event, function(event) {
-        event.preventDefault();
-        
         $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
     });
 
