@@ -77,7 +77,7 @@ $(document).ready(function() {
             mdc_close_menu(container);
             return false;
         } else {
-            $(container).find('.mdc-list-item').removeClass('selected');
+            $(container).find('.mdc-list-item.selected').removeClass('selected');
         }
 
         var value = $(this).addClass('selected').attr('data-value');
