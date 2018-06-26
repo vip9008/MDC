@@ -650,7 +650,7 @@ html[dir] .container[dir="rtl"].align-start {
 
 .row.direction-reverse {
     -webkit-flex-direction: row-reverse;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
 }
 
 .col {

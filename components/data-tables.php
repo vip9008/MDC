@@ -668,8 +668,20 @@ TEXT
                         </tbody>
                     </table>
                     </div>
+
+                    <div class="footer">
+                        <div class="pagination">
+                            <div class="link">
+                                <button class="icon material-icon">navigate_before</button>
+                            </div>
+                            <div class="link">
+                                <button class="icon material-icon">navigate_next</button>
+                            </div>
+                        </div>
+                        <div class="summary">1-10 of 100</div>
+                    </div>
                 </div>
-                <p class="text-secondary">Data table card with a header.</p>
+                <p class="text-secondary">Data table card with header and footer.</p>
 
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
@@ -688,6 +700,17 @@ TEXT
             .
             .
         </table>
+    </div>
+    <div class="footer">
+        <div class="pagination">
+            <div class="link">
+                <button class="icon material-icon">navigate_before</button>
+            </div>
+            <div class="link">
+                <button class="icon material-icon">navigate_next</button>
+            </div>
+        </div>
+        <div class="summary">1-10 of 100</div>
     </div>
 </div>
 TEXT

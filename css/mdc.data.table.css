@@ -411,3 +411,89 @@ html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > t
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
 }
+
+.mdc-data-table > .footer {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0 1rem;
+    text-align: inherit;
+    border-top: solid 0.0625rem var(--initial-bg-border);
+    color: var(--initial-text-secondary);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.mdc-data-table > .footer > .summary {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    margin: 1rem 0;
+    white-space: nowrap;
+}
+
+.mdc-data-table > .footer > .pagination {
+    margin-left: 1.25rem;
+    margin-right: 0;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 3.5rem;
+}
+
+html[dir="ltr"] .mdc-data-table > .footer > .pagination,
+html[dir] .mdc-data-table[dir="ltr"] > .footer > .pagination {
+    margin-left: 1.25rem;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .mdc-data-table > .footer > .pagination,
+html[dir] .mdc-data-table[dir="rtl"] > .footer > .pagination {
+    margin-left: 0;
+    margin-right: 1.25rem;
+}
+
+.mdc-data-table > .footer > .pagination > .link {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 1.5rem;
+}
+
+html[dir="ltr"] .mdc-data-table > .footer > .pagination > .link,
+html[dir] .mdc-data-table[dir="ltr"] > .footer > .pagination > .link {
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .mdc-data-table > .footer > .pagination > .link,
+html[dir] .mdc-data-table[dir="rtl"] > .footer > .pagination > .link {
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+.mdc-data-table > .footer > .pagination > .link > .icon {
+    color: var(--initial-text-hint);
+}
+
+.mdc-data-table > .footer > .pagination > .link > a.icon,
+.mdc-data-table > .footer > .pagination > .link > button.icon {
+    color: var(--initial-text-secondary);
+    text-decoration: none;
+}
