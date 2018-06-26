@@ -286,6 +286,11 @@ html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > t
     margin-right: 1.5rem;
 }
 
+.mdc-data-table > .table-container > table > tbody > tr > td > .cell-data.action-container > .actions > .action-item > .icon {
+    color: inherit;
+    text-decoration: none;
+}
+
 .mdc-data-table > .table-container > table > thead > tr > th > a.column-sort,
 .mdc-data-table > .table-container > table > thead > tr > th > button.column-sort {
     font-size: inherit;

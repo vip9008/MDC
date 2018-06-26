@@ -507,7 +507,7 @@ TEXT
                                     <div class="cell-data action-container">
                                         <div class="actions">
                                             <div class="action-item">
-                                                <button class="material-icon">edit</button>
+                                                <button class="icon material-icon">edit</button>
                                             </div>
                                         </div>
                                     </div>
@@ -557,7 +557,7 @@ TEXT
                         <div class="cell-data action-container">
                             <div class="actions">
                                 <div class="action-item">
-                                    <button class="material-icon">edit</button>
+                                    <button class="icon material-icon">edit</button>
                                 </div>
                             </div>
                         </div>
