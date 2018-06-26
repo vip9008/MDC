@@ -79,19 +79,20 @@
 .mdc-dialog-container > .mdc-dialog > .mdc-button-group {
     -ms-flex-pack: end;
     justify-content: flex-end;
+    padding-left: 1.25rem;
+    padding-right: 0.25rem;
 }
 
-.mdc-dialog-container > .mdc-dialog > .mdc-button-group,
 html[dir="ltr"] .mdc-dialog-container > .mdc-dialog > .mdc-button-group,
 html[dir] .mdc-button-group[dir="ltr"] > .mdc-dialog > .mdc-button-group {
-    padding-left: 1.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1.25rem;
+    padding-right: 0.25rem;
 }
 
 html[dir="rtl"] .mdc-dialog-container > .mdc-dialog > .mdc-button-group,
 html[dir] .mdc-button-group[dir="rtl"] > .mdc-dialog > .mdc-button-group {
-    padding-left: 0.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.25rem;
+    padding-right: 1.25rem;
 }
 
 /* Custom breakpoint for dialogs only!! */

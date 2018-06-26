@@ -6,19 +6,16 @@
     -ms-flex-align: center;
     align-items: center;
     padding: 0.5rem 0;
+    margin: 0 -0.25rem;
 }
 
-.mdc-button-group > .mdc-button + .mdc-button,
-html[dir="ltr"] .mdc-button-group > .mdc-button + .mdc-button,
-html[dir] .mdc-button-group[dir="ltr"] > .mdc-button + .mdc-button {
-    margin-left: 0.5rem;
-    margin-right: 0;
+.mdc-button-group > .mdc-button {
+    margin: 0 0.25rem;
 }
 
-html[dir="rtl"] .mdc-button-group > .mdc-button + .mdc-button,
-html[dir] .mdc-button-group[dir="rtl"] > .mdc-button + .mdc-button {
-    margin-left: 0;
-    margin-right: 0.5rem;
+.mdc-button-group.direction-reverse {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 a.mdc-button, button.mdc-button, .mdc-button {
