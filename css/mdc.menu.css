@@ -16,6 +16,7 @@
     box-shadow: var(--z-axis-8-shadow);
     min-width: 7rem;
     max-width: 17.5rem;
+    max-height: 15rem;
     border-radius: 0.25rem;
     overflow-x: hidden;
     overflow-y: auto;

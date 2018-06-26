@@ -1,7 +1,6 @@
 .mdc-card {
     max-width: 100%;
     border-radius: 0.25rem;
-    overflow: hidden;
     background-color: var(--bg-cards);
     position: relative;
     z-index: var(--z-axis-1-index);
@@ -9,6 +8,28 @@
     will-change: box-shadow;
     transition: box-shadow 0.3s;
     margin: 0 0 1rem;
+}
+
+.mdc-card::before {
+    content: '';
+    position: relative;
+    padding: 0;
+    margin: 0 0 -1px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    pointer-events: none;
+}
+
+.mdc-card::after {
+    content: '';
+    position: relative;
+    padding: 0;
+    margin: -1px 0 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    pointer-events: none;
 }
 
 .mdc-card.resting {
@@ -23,7 +44,6 @@
 
 .mdc-card > .mdc-card-primary {
     display: block;
-    padding: 0.00625rem 0;
     margin: 0;
     color: var(--text-primary);
 
@@ -32,6 +52,17 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.mdc-card > .mdc-card-primary::after {
+    content: '';
+    position: relative;
+    padding: 0;
+    margin: -1px 0 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    pointer-events: none;
 }
 
 .mdc-card > a.mdc-card-primary,
@@ -45,8 +76,8 @@
     appearance: none;
 }
 
-.mdc-card > a.mdc-card-primary::after,
-.mdc-card > button.mdc-card-primary::after {
+.mdc-card > a.mdc-card-primary::before,
+.mdc-card > button.mdc-card-primary::before {
     content: '';
     position: absolute;
     top: 0;
@@ -59,20 +90,22 @@
     transition: all 0.2s;
     background-color: var(--initial-main-color);
     opacity: 0;
+    z-index: 999999;
+    border-radius: 0.25rem;
 }
 
-.mdc-card > a.mdc-card-primary:hover::after,
-.mdc-card > button.mdc-card-primary:hover::after {
+.mdc-card > a.mdc-card-primary:hover::before,
+.mdc-card > button.mdc-card-primary:hover::before {
     opacity: var(--opacity-hover);
 }
 
-.mdc-card > a.mdc-card-primary:focus::after,
-.mdc-card > button.mdc-card-primary:focus::after {
+.mdc-card > a.mdc-card-primary:focus::before,
+.mdc-card > button.mdc-card-primary:focus::before {
     opacity: var(--opacity-focus);
 }
 
-.mdc-card > a.mdc-card-primary:active::after,
-.mdc-card > button.mdc-card-primary:active::after {
+.mdc-card > a.mdc-card-primary:active::before,
+.mdc-card > button.mdc-card-primary:active::before {
     opacity: var(--opacity-pressed);
 }
 
