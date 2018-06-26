@@ -5,10 +5,10 @@ function md_touch_handler(event)
         type = "";
     switch(event.type)
     {
-        case "touchstart": type = "mousedown"; break;
-        case "touchmove":  type = "mousemove"; break;        
-        case "touchend":   type = "mouseup";   break;
-        default:           return;
+        case "touchstart": type = "click"; break;
+        case "touchmove": type = "mousemove"; break;        
+        case "touchend": type = "mouseup"; event.preventDefault(); break;
+        default: return;
     }
 
     // initMouseEvent(type, canBubble, cancelable, view, clickCount, 
@@ -22,24 +22,25 @@ function md_touch_handler(event)
                                   false, false, false, 0, null);
 
     first.target.dispatchEvent(simulatedEvent);
-    event.preventDefault();
 }
 
 function md_init() 
 {
     document.addEventListener("touchstart", md_touch_handler, true);
-    document.addEventListener("touchmove", md_touch_handler, true);
+    // document.addEventListener("touchmove", md_touch_handler, true);
     document.addEventListener("touchend", md_touch_handler, true);
-    document.addEventListener("touchcancel", md_touch_handler, true);
+    // document.addEventListener("touchcancel", md_touch_handler, true);
 }
 
-// md_init();
+md_init();
 
-var md_click_event = (function() {
-    if ('ontouchstart' in document.documentElement === true) {
-        return 'touchstart';
-    }
-    else {
-        return 'click';
-    }
-})();
+// var md_click_event = (function() {
+//     if ('ontouchstart' in document.documentElement === true) {
+//         return 'touchstart';
+//     }
+//     else {
+//         return 'click';
+//     }
+// })();
+
+var md_click_event = 'click';
