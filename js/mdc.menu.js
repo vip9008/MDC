@@ -84,7 +84,7 @@ $(document).ready(function() {
         var text = $(this).children('.text').text();
         var input = $(container).children('.mdc-text-field').children('.input');
 
-        if ($(input).is('input')) {
+        if ($(input).prop("tagName").toLowerCase() == 'input') {
             $(input).val(text);
         } else {
             $(input).text(text);
