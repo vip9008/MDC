@@ -492,7 +492,6 @@ html[dir] *[dir] .mdc-text-field.outlined.active[dir="rtl"] > .icon + .input + .
 html[dir="rtl"] .mdc-text-field.outlined.focus > .icon + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined.focus > .icon + .input + .label,
 html[dir] *[dir] .mdc-text-field.outlined.focus[dir="rtl"] > .icon + .input + .label,
-.mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input + .label {
