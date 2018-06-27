@@ -22,7 +22,15 @@ function mdc_init_field(outlined_text_field) {
 
 $(document).ready(function() {
     $('.mdc-text-field').each(function() {
-        if ($(this).children('.input').val()) {
+        var value = '';
+
+        if ($(this).children('.input').prop("tagName").toLowerCase() == 'input') {
+            value = $(this).children('.input').val();
+        } else {
+            value = $(this).children('.input').text();
+        }
+
+        if (value.length) {
             $(this).addClass('focus');
         } else {
             $(this).removeClass('focus');

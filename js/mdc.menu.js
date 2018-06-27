@@ -11,12 +11,6 @@ $(document).ready(function() {
         $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
     });
 
-    $('.mdc-menu-container .menu-button > .input').each(function(i) {
-        if ($(this).val().length) {
-            $(this).parent('.menu-button').addClass('focus');
-        }
-    });
-
     $('body').on(md_click_event, '.mdc-menu-container .mdc-list-container', function(event) {
         event.preventDefault();
         event.stopPropagation();
