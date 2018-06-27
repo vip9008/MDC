@@ -76,6 +76,12 @@
     background-color: var(--input);
 }
 
+.mdc-text-field > div.input {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .mdc-text-field > .label {
     font-size: 1rem;
     letter-spacing: 0.03125rem;
