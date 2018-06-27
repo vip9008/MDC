@@ -44,7 +44,10 @@
 
 .mdc-card > .mdc-card-primary {
     display: block;
+    width: 100%;
+    padding: 0;
     margin: 0;
+    border: none;
     color: var(--text-primary);
 
     -webkit-touch-callout: none;
@@ -65,6 +68,7 @@
     pointer-events: none;
 }
 
+.mdc-card > .interactive.mdc-card-primary,
 .mdc-card > a.mdc-card-primary,
 .mdc-card > button.mdc-card-primary {
     cursor: pointer;
@@ -76,6 +80,7 @@
     appearance: none;
 }
 
+.mdc-card > .interactive.mdc-card-primary::before,
 .mdc-card > a.mdc-card-primary::before,
 .mdc-card > button.mdc-card-primary::before {
     content: '';
@@ -94,16 +99,19 @@
     border-radius: 0.25rem;
 }
 
+.mdc-card > .interactive.mdc-card-primary:hover::before,
 .mdc-card > a.mdc-card-primary:hover::before,
 .mdc-card > button.mdc-card-primary:hover::before {
     opacity: var(--opacity-hover);
 }
 
+.mdc-card > .interactive.mdc-card-primary:focus::before,
 .mdc-card > a.mdc-card-primary:focus::before,
 .mdc-card > button.mdc-card-primary:focus::before {
     opacity: var(--opacity-focus);
 }
 
+.mdc-card > .interactive.mdc-card-primary:active::before,
 .mdc-card > a.mdc-card-primary:active::before,
 .mdc-card > button.mdc-card-primary:active::before {
     opacity: var(--opacity-pressed);
