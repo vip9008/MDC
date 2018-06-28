@@ -32,7 +32,7 @@ function md_init()
     // document.addEventListener("touchcancel", md_touch_handler, true);
 }
 
-md_init();
+// md_init();
 
 // var md_click_event = (function() {
 //     if ('ontouchstart' in document.documentElement === true) {

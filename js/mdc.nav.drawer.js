@@ -4,8 +4,6 @@ $(document).ready(function() {
     }
     
     $('body').on(md_click_event, '.mdc-drawer-scrim', function(event) {
-        event.preventDefault();
-        
         $('body').removeClass('mdc-drawer-modal');
         $('#mdc-nav-drawer').removeClass('active');
     });
