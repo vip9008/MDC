@@ -134,4 +134,4 @@
         </div>
     </div>
 </nav>
-<div class="mdc-drawer-scrim"></div>
+<div class="mdc-drawer-scrim" tabindex="-1"></div>
