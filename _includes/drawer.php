@@ -111,6 +111,9 @@
                 <a href="<?= $prefix ?>components/selection-controls.php" class="mdc-list-item">
                     <div class="text">Selection controls</div>
                 </a>
+                <a href="<?= $prefix ?>components/snackbars.php" class="mdc-list-item">
+                    <div class="text">Snackbars</div>
+                </a>
                 <a href="<?= $prefix ?>components/text-fields.php" class="mdc-list-item">
                     <div class="text">Text fields</div>
                 </a>

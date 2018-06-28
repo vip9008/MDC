@@ -79,6 +79,7 @@
 .mdc-dialog-container > .mdc-dialog > .mdc-button-group {
     -ms-flex-pack: end;
     justify-content: flex-end;
+    margin: 0;
     padding-left: 1.25rem;
     padding-right: 0.25rem;
 }
