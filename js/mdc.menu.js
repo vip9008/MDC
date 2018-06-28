@@ -60,10 +60,6 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
-    $('body').on('blur', '.mdc-menu-container.select-menu .mdc-list-container', function (event) {
-        $(this).closest('.mdc-menu-container').removeClass('active');
-    });
-
     $('body').on(md_click_event, '.mdc-menu-container.select-menu .mdc-list-container button.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container a.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container .mdc-list-item.interactive', function(event) {
         var container = $(this).closest('.select-menu');
 
