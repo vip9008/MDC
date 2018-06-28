@@ -5,7 +5,7 @@
         <div class="action-item">
             <div class="mdc-menu-container">
                 <button class="menu-button material-icon">more_vert</button>
-                <div class="mdc-list-container md-theme-light">
+                <div class="mdc-list-container md-theme-light" tabindex="-1">
                     <div class="mdc-list-group">
                         <div class="mdc-list-item">
                             <div class="text">RTL direction</div>

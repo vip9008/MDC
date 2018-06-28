@@ -436,7 +436,7 @@ $url = $prefix."components/menus.php";
 
                 <div class="mdc-menu-container">
                     <button class="menu-button mdc-button btn-contained bg-deep-purple-A700">Menu</button>
-                    <div class="mdc-list-container">
+                    <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
                             <button class="mdc-list-item"><div class="text">Item 1</div></button>
                             <button class="mdc-list-item"><div class="text">Item 2</div></button>
@@ -454,7 +454,7 @@ $url = $prefix."components/menus.php";
 <<<TEXT
 <div class="mdc-menu-container">
     <button class="menu-button ...">Menu</button>
-    <div class="mdc-list-container">
+    <div class="mdc-list-container" tabindex="-1">
         <div class="mdc-list-group">
             <button class="mdc-list-item"><div class="text">Item 1</div></button>
             .
@@ -493,7 +493,7 @@ TEXT
                         <label class="label">Select menu</label>
                         <input type="hidden" class="select-value">
                     </div>
-                    <div class="mdc-list-container">
+                    <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
                             <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
                             <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
@@ -509,7 +509,7 @@ TEXT
                         <label class="label">Select menu</label>
                         <input type="hidden" class="select-value">
                     </div>
-                    <div class="mdc-list-container">
+                    <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
                             <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
                             <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
@@ -528,7 +528,7 @@ TEXT
         <label class="label">Select menu</label>
         <input type="hidden" class="select-value" name="select_menu_1">
     </div>
-    <div class="mdc-list-container">
+    <div class="mdc-list-container" tabindex="-1">
         <div class="mdc-list-group">
             <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
             .
