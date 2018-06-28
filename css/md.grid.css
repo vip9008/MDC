@@ -661,7 +661,7 @@ html[dir] .container[dir="rtl"].align-start {
     position: relative;
     min-height: 1px;
     padding: 0 0.5rem;
-    width: auto;
+    width: 100%;
     max-width: 100%;
     
     -ms-flex-preferred-size: 1;
