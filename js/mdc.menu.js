@@ -56,7 +56,7 @@ $(document).ready(function() {
             }
         }
 
-        $(menu_container).addClass('active').find('.mdc-list-container').focus();
+        $(menu_container).addClass('active').find('.mdc-list-container');
         $(this).addClass('active');
     });
 
