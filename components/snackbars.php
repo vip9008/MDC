@@ -272,14 +272,173 @@ $url = $prefix."components/snackbars.php";
                     <li><a href="<?= $prefix ?>components/buttons.php">Buttons</a></li>
                 </ul>
                 <div class="space"></div>
+
+                <h6>Javascript methods:</h6>
+                <div class="table-container">
+                    <table class="bg-cards methods-doc" style="width: auto; min-width: 45rem;">
+                        <tbody><tr>
+                            <th class="bg-app-bar code" colspan="3">
+                                <b class="green">void</b>
+                                <b class="blue-grey-800">mdc_activate_snackbars</b>
+                                (
+                                <b class="deep-purple-A700">seconds</b> = <b class="blue-900">4.0</b>
+                                )
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">A method to run all snackbars sequentially.</td>
+                        </tr>
+                        <tr>
+                            <td><b class="deep-purple-A700 code">seconds</b></td>
+                            <td class="code">float</td>
+                            <td>Time in seconds before removing an active snackbar. cannot be less than 4 or more than 10.</td>
+                        </tr>
+                    </tbody></table>
+                </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col xlarge-2 large-3 medium-6">
+                <div class="mdc-button-group" style="margin-top: 1rem;">
+                    <button  onclick="mdc_snackbar_example(1, '')" class="mdc-button btn-contained full-width bg-deep-purple-A700 mdc-snackbar-example">Run Snackbar</button>
+                </div>
+                <p class="text-secondary">Default snackbar.</p>
             </div>
             <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
+<div id="mdc-snackbars">
+    <div class="mdc-snackbar">
+        <div class="text">
+            Photo saved to your favorites
+        </div>
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="mdc-button-group" style="margin-top: 1rem;">
+                    <button  onclick="mdc_snackbar_example(2, '')" class="mdc-button btn-contained full-width bg-deep-purple-A700 mdc-snackbar-example">Run Snackbar</button>
+                </div>
+                <p class="text-secondary">Default snackbar with action.</p>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div id="mdc-snackbars">
+    <div class="mdc-snackbar">
+        <div class="text">
+            Your photo has been archived.
+        </div>
+        <div class="mdc-button-group">
+            <button class="mdc-button blue">Undo</button>
+        </div>
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="mdc-button-group" style="margin-top: 1rem;">
+                    <button  onclick="mdc_snackbar_example(3, '')" class="mdc-button btn-contained full-width bg-deep-purple-A700 mdc-snackbar-example">Run Snackbar</button>
+                </div>
+                <p class="text-secondary">Default snackbar with long action.</p>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div id="mdc-snackbars">
+    <div class="mdc-snackbar stacked">
+        ...
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-6 large-9 medium-12">
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Snackbars styling options</h4>
+                <div class="space"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="mdc-button-group" style="margin-top: 1rem;">
+                    <button  onclick="mdc_snackbar_example(2, 'position-start')" class="mdc-button btn-contained full-width bg-deep-purple-A700 mdc-snackbar-example">Run Snackbar</button>
+                </div>
+                <p class="text-secondary">Snackbars positioned at the edge of the screen.</p>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div id="mdc-snackbars" class="position-start">
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="mdc-button-group" style="margin-top: 1rem;">
+                    <button  onclick="mdc_snackbar_example(2, 'standard')" class="mdc-button btn-contained full-width bg-deep-purple-A700 mdc-snackbar-example">Run Snackbar</button>
+                </div>
+                <p class="text-secondary">Standard snackbars</p>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div id="mdc-snackbars" class="standard">
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="mdc-button-group" style="margin-top: 1rem;">
+                    <button  onclick="mdc_snackbar_example(2, 'position-start standard')" class="mdc-button btn-contained full-width bg-deep-purple-A700 mdc-snackbar-example">Run Snackbar</button>
+                </div>
+                <p class="text-secondary">Standard snackbars positioned at the edge of the screen.</p>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div id="mdc-snackbars" class="position-start standard">
+    .
+    .
+    .
+</div>
 TEXT
 ) ?></pre>
             </div>
@@ -287,16 +446,67 @@ TEXT
     </section>
 </div>
 
-<div id="mdc-snackbars" class="position-start standard">
-    <div class="mdc-snackbar stacked">
+<div id="mdc-snackbars"></div>
+
+<div id="snackbar-examples" class="hidden">
+
+<div class="example-1">
+    <div class="mdc-snackbar">
         <div class="text">
-            Single-line message here
-        </div>
-        <div class="mdc-button-group">
-            <button class="mdc-button blue">Button</button>
+            Photo saved to your favorites.
         </div>
     </div>
 </div>
+
+<div class="example-2">
+    <div class="mdc-snackbar">
+        <div class="text">
+            Your photo has been archived.
+        </div>
+        <div class="mdc-button-group">
+            <button class="mdc-button blue" onclick="mdc_enable_ex_snackbars()">Undo</button>
+        </div>
+    </div>
+</div>
+
+<div class="example-3">
+    <div class="mdc-snackbar stacked">
+        <div class="text">
+            This item already has the label "travel". You can add a new label.
+        </div>
+        <div class="mdc-button-group">
+            <button class="mdc-button blue" onclick="mdc_enable_ex_snackbars()">Add a new label</button>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+    var mdc_example_snackbar_timeout;
+
+    function mdc_snackbar_example(num, snackbars_class) {
+        var delay = 4;
+
+        $('#mdc-snackbars').removeClass('position-start standard').addClass(snackbars_class);
+
+        $('#mdc-snackbars').html($('#snackbar-examples > .example-'+num).html()).delay(100).queue(function(next) {
+            mdc_activate_snackbars(delay);
+            next();
+        });
+
+        $('button.mdc-snackbar-example').prop("disabled", true);
+
+        mdc_example_snackbar_timeout = setTimeout(function() {
+            $('button.mdc-snackbar-example').removeAttr("disabled");
+        }, (delay + 0.5) * 1000);
+    }
+
+    function mdc_enable_ex_snackbars() {
+        clearTimeout(mdc_example_snackbar_timeout);
+        $('button.mdc-snackbar-example').removeAttr("disabled");
+    }
+</script>
 
 </body>
 </html>
