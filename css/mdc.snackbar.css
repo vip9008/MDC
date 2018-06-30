@@ -135,7 +135,7 @@ html[dir] #mdc-snackbars[dir="rtl"] > .mdc-snackbar.stacked .mdc-button-group {
     margin-bottom: 0.5rem;
 }
 
-.mdc-snackbar.stacked .mdc-button-group .mdc-button {
+.mdc-snackbar .mdc-button-group .mdc-button {
     margin: 0;
 }
 
