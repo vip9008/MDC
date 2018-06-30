@@ -81,6 +81,12 @@ html[dir] #mdc-snackbars.position-start[dir="rtl"] {
     transform: scale(0.6);
 }
 
+#mdc-snackbars > .mdc-snackbar + .mdc-snackbar {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
 #mdc-snackbars.standard > .mdc-snackbar {
     border-radius: 0;
     margin-bottom: 0;
