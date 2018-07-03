@@ -497,6 +497,13 @@ html[dir] .mdc-data-table[dir="rtl"] > .footer > .pagination > .link {
     color: var(--initial-text-hint);
 }
 
+html[dir="rtl"] .mdc-data-table > .footer > .pagination > .link > .icon,
+html[dir] .mdc-data-table[dir="rtl"] > .footer > .pagination > .link > .icon {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .mdc-data-table > .footer > .pagination > .link > a.icon,
 .mdc-data-table > .footer > .pagination > .link > button.icon {
     color: var(--initial-text-secondary);
