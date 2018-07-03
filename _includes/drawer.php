@@ -1,15 +1,15 @@
 <nav id="mdc-nav-drawer" class="permanent clipped">
     <div class="mdc-list-container">
-        <a href="<?= $prefix ?>index.php" class="mdc-list-item interactive <?= $primaryColor ?>">
+        <a href="<?= $prefix ?>index.php" class="mdc-list-item <?= $primaryColor ?>">
             <div class="text">Introduction</div>
         </a>
         <div class="mdc-list-group collapsed">
-            <div class="mdc-list-item interactive <?= $primaryColor ?>">
+            <button class="mdc-list-item <?= $primaryColor ?>">
                 <div class="text">Environment</div>
                 <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
-            </div>
+            </button>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>environment/elevation.php" class="mdc-list-item">
                     <div class="text">Elevation</div>
@@ -20,12 +20,12 @@
             </div>
         </div>
         <div class="mdc-list-group collapsed">
-            <div class="mdc-list-item interactive <?= $primaryColor ?>">
+            <button class="mdc-list-item <?= $primaryColor ?>">
                 <div class="text">Layout</div>
                 <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
-            </div>
+            </button>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>layout/understanding-layout.php" class="mdc-list-item">
                     <div class="text">Understanding layout</div>
@@ -36,12 +36,12 @@
             </div>
         </div>
         <div class="mdc-list-group collapsed">
-            <div class="mdc-list-item interactive <?= $primaryColor ?>">
+            <button class="mdc-list-item <?= $primaryColor ?>">
                 <div class="text">Color</div>
                 <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
-            </div>
+            </button>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>color/the-color-system.php" class="mdc-list-item">
                     <div class="text">The color system</div>
@@ -58,12 +58,12 @@
             </div>
         </div>
         <div class="mdc-list-group collapsed">
-            <div class="mdc-list-item interactive <?= $primaryColor ?>">
+            <button class="mdc-list-item <?= $primaryColor ?>">
                 <div class="text">Typography</div>
                 <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
-            </div>
+            </button>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>typography/the-type-system.php" class="mdc-list-item">
                     <div class="text">The type system</div>
@@ -77,12 +77,12 @@
             </div>
         </div>
         <div class="mdc-list-group collapsed">
-            <div class="mdc-list-item interactive <?= $primaryColor ?>">
+            <button class="mdc-list-item <?= $primaryColor ?>">
                 <div class="text">Components</div>
                 <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
-            </div>
+            </button>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>components/buttons.php" class="mdc-list-item">
                     <div class="text">Buttons</div>
@@ -120,12 +120,12 @@
             </div>
         </div>
         <div class="mdc-list-group collapsed">
-            <div class="mdc-list-item interactive <?= $primaryColor ?>">
+            <button class="mdc-list-item <?= $primaryColor ?>">
                 <div class="text">Usability</div>
                 <div class="meta icon">
                     <div class="material-icon">keyboard_arrow_down</div>
                 </div>
-            </div>
+            </button>
             <div class="mdc-dropdown">
                 <a href="<?= $prefix ?>usability/accessibility.php" class="mdc-list-item">
                     <div class="text">Accessibility</div>

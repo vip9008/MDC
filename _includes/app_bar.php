@@ -9,18 +9,18 @@
                     <div class="mdc-list-group">
                         <div class="mdc-list-item">
                             <div class="text">RTL direction</div>
-                            <div id="dir_control" class="mdc-switch <?= $primaryColor ?>" tabindex="-1">
+                            <button id="dir_control" class="mdc-switch <?= $primaryColor ?>">
                                 <div class="rail"></div>
                                 <input type="hidden" value="0">
-                            </div>
+                            </button>
                         </div>
 
                         <div class="mdc-list-item">
                             <div class="text">Dark theme</div>
-                            <div id="theme_control" class="mdc-switch <?= $primaryColor ?>" tabindex="-1">
+                            <button id="theme_control" class="mdc-switch <?= $primaryColor ?>">
                                 <div class="rail"></div>
                                 <input type="hidden" value="0">
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
