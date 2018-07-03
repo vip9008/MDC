@@ -6,9 +6,11 @@
                 <p class="text-secondary">Built by <a href="https://github.com/vip9008" target="_blank">Hussain Almoamen</a> using Material Guidlines. This project is not supported or maintained by Google. Please visit <a href="https://material.io" target="_blank">material.io</a> for more information about Material Design.</p>
 
                 <p><a class="text-primary" href="https://github.com/vip9008/MDC" target="_blank">Github</a> / <a class="text-primary" href="https://github.com/vip9008/yii2-MDC" target="_blank">yii2-MDC</a></p>
+            </div>
 
+            <div class="col medium-12">
                 <div class="mdc-divider"></div>
-
+                
                 <div class="mdc-list-item">
                     <div class="graphic md-56" style="margin: 0.5rem 0;">
                         <?php include "{$prefix}img/ha_logo.svg" ?>
