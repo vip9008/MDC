@@ -390,5 +390,8 @@ $url = $prefix."typography/understanding-typography.php";
         </div>
     </section>
 </div>
+
+<?php include $prefix."_includes/footer.php"; ?>
+
 </body>
 </html>

@@ -508,5 +508,7 @@ TEXT
     }
 </script>
 
+<?php include $prefix."_includes/footer.php"; ?>
+
 </body>
 </html>

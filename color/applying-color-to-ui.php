@@ -309,5 +309,7 @@ $url = $prefix."color/applying-color-to-ui.php";
     </section>
 </div>
 
+<?php include $prefix."_includes/footer.php"; ?>
+
 </body>
 </html>

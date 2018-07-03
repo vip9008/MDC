@@ -563,5 +563,7 @@ TEXT
     </section>
 </div>
 
+<?php include $prefix."_includes/footer.php"; ?>
+
 </body>
 </html>

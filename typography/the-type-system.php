@@ -272,5 +272,7 @@ $url = $prefix."typography/the-type-system.php";
     </section>
 </div>
 
+<?php include $prefix."_includes/footer.php"; ?>
+
 </body>
 </html>

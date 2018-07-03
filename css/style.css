@@ -175,3 +175,7 @@ table.methods-doc th.bg-app-bar {
     height: 2rem;
     border-radius: 0.25rem;
 }
+
+.footer-section {
+    padding: 3rem 0 2rem;
+}

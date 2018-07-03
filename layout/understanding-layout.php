@@ -144,5 +144,7 @@ $url = $prefix."layout/understanding-layout.php";
     </section>
 </div>
 
+<?php include $prefix."_includes/footer.php"; ?>
+
 </body>
 </html>
