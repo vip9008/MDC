@@ -278,6 +278,10 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     user-select: none;
 }
 
+.mdc-text-field.standard {
+    min-height: 3.1875rem;
+}
+
 .mdc-text-field.standard::after {
     top: 3.0625rem;
 }

@@ -101,6 +101,10 @@ html[dir] .mdc-menu-container.bottom[dir="rtl"] .mdc-list-container {
     margin-top: 0.0625rem;
 }
 
+.mdc-menu-container.select-menu:not(.bottom) > .mdc-text-field.standard + .mdc-list-container {
+    margin-top: -0.3125rem;
+}
+
 .mdc-menu-container > .mdc-list-container .mdc-list-item.selected::after {
     content: '';
     position: absolute;
