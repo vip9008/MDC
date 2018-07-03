@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    background-color: var(--bg-app-bar);
+    background-color: var(--bg-main-content);
     z-index: var(--z-axis-16-index);
     border-right: solid 0.0625rem var(--bg-border);
     transition: all 0.3s;
