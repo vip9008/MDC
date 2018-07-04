@@ -203,11 +203,20 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
     font-weight: normal;
     text-transform: none;
     padding: 0.6875rem;
-
+    margin: 0;
 }
 
-.mdc-toggle-buttons > .mdc-button + .mdc-button {
+.mdc-toggle-buttons > .mdc-button + .mdc-button,
+html[dir="ltr"] .mdc-toggle-buttons > .mdc-button + .mdc-button,
+html[dir] .mdc-toggle-buttons[dir="ltr"] > .mdc-button + .mdc-button {
     border-left: solid 0.0625rem var(--initial-text-divider);
+    border-right: none;
+}
+
+html[dir="rtl"] .mdc-toggle-buttons > .mdc-button + .mdc-button,
+html[dir] .mdc-toggle-buttons[dir="rtl"] > .mdc-button + .mdc-button {
+    border-left: none;
+    border-right: solid 0.0625rem var(--initial-text-divider);
 }
 
 .mdc-toggle-buttons > .mdc-button:focus::before {
