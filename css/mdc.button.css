@@ -9,7 +9,8 @@
     margin: 0 -0.25rem;
 }
 
-.mdc-button-group > .mdc-button {
+.mdc-button-group > .mdc-button,
+.mdc-button-group > .mdc-toggle-buttons {
     margin: 0 0.25rem;
 }
 
