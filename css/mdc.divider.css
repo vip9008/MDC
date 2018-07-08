@@ -4,7 +4,7 @@
     clear: both;
     margin: 0;
     padding: 0;
-    border-top: solid 0.0625rem var(--bg-border);
+    border-top: solid 0.0625rem var(--initial-bg-border);
 }
 
 .mdc-list-container > .mdc-divider {
