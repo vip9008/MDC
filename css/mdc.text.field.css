@@ -137,7 +137,8 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label {
     transform-origin: right top;
 }
 
-.mdc-text-field.active > .input + .label {
+.mdc-text-field.active > .input + .label,
+.mdc-text-field > .input:focus + .label {
     color: var(--text-primary);
     transform: translateY(-50%) scale(0.75);
 }
@@ -311,7 +312,8 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .label {
 }
 
 .mdc-text-field.standard.active > .input + .label,
-.mdc-text-field.standard.focus > .input + .label {
+.mdc-text-field.standard.focus > .input + .label,
+.mdc-text-field.standard > .input:focus + .label {
     transform: translateY(-100%) scale(0.75);
 }
 
@@ -504,7 +506,8 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
 }
 
 .mdc-text-field.outlined.active > .input + .label,
-.mdc-text-field.outlined.focus > .input + .label {
+.mdc-text-field.outlined.focus > .input + .label,
+.mdc-text-field.outlined > .input:focus + .label {
     transform: translateY(-140%) scale(0.75);
 }
 
