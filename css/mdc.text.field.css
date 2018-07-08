@@ -72,6 +72,27 @@
     background-color: var(--input-focus);
 }
 
+.mdc-text-field > .input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 3rem var(--input) inset,
+                        0 0 0 3rem var(--initial-bg-cards) inset !important;
+    box-shadow: 0 0 0 3rem var(--input) inset,
+                0 0 0 3rem var(--initial-bg-cards) inset !important;
+}
+
+.mdc-text-field > .input:hover:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 3rem var(--input-hover) inset,
+                        0 0 0 3rem var(--initial-bg-cards) inset !important;
+    box-shadow: 0 0 0 3rem var(--input-hover) inset,
+                0 0 0 3rem var(--initial-bg-cards) inset !important;
+}
+
+.mdc-text-field > .input:active:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 3rem var(--input-focus) inset,
+                        0 0 0 3rem var(--initial-bg-cards) inset !important;
+    box-shadow: 0 0 0 3rem var(--input-focus) inset,
+                0 0 0 3rem var(--initial-bg-cards) inset !important;
+}
+
 .mdc-text-field.active > .input {
     background-color: var(--input);
 }
@@ -453,7 +474,8 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input {
 }
 
 .mdc-text-field.outlined.active > .input,
-.mdc-text-field.outlined.focus > .input {
+.mdc-text-field.outlined.focus > .input,
+.mdc-text-field.outlined > .input:focus {
     border-color: transparent;
 }
 
@@ -535,7 +557,8 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
     opacity: 1;
 }
 
-.mdc-text-field.outlined.focus > .outline {
+.mdc-text-field.outlined.focus > .outline,
+.mdc-text-field.outlined > .input:focus + .label + .outline {
     opacity: 1;
 }
 
