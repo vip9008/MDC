@@ -196,6 +196,12 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label {
     user-select: none;
 }
 
+.mdc-text-field > a.icon, .mdc-text-field > button.icon {
+    cursor: pointer;
+    pointer-events: all;
+    color: var(--text-secondary);
+}
+
 html[dir="ltr"] .mdc-text-field > .icon,
 html[dir] *[dir="ltr"] .mdc-text-field > .icon,
 html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon {
