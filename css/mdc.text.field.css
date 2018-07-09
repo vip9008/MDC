@@ -197,6 +197,8 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label {
 }
 
 .mdc-text-field > a.icon, .mdc-text-field > button.icon {
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     pointer-events: all;
     color: var(--text-secondary);
