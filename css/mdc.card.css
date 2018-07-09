@@ -236,7 +236,21 @@ html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary .header > .title + .thumbnail
     color: var(--text-secondary);
 }
 
+.mdc-card > .mdc-card-primary:first-child,
+.mdc-card > .mdc-card-primary .header:first-child,
+.mdc-card > .mdc-card-primary .media:first-child,
+.mdc-card > .mdc-card-primary .supporting-text:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
 .mdc-card > .mdc-button-group {
     padding: 0;
     margin: 0.5rem 0.25rem;
+}
+
+.mdc-card > .mdc-card-primary:last-child,
+.mdc-card > .mdc-button-group:last-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
 }
