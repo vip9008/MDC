@@ -342,48 +342,48 @@ $url = $prefix."components/selection-controls.php";
             <div class="col xlarge-2 large-3 medium-6">
                 <div class="space"></div>
 
-                <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                <div class="mdc-checkbox deep-purple-A700" tabindex="0">
                     <input type="hidden" value="0">
                 </div>
-                <div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="-1">
+                <div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="0">
                     <input type="hidden" value="0">
                 </div>
-                <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                <div class="mdc-checkbox deep-purple-A700" tabindex="0">
                     <input type="hidden" value="1">
                 </div>
 
                 <div class=""></div>
 
-                <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                <div class="mdc-checkbox deep-purple-A700" tabindex="0">
                     <input type="hidden" value="0" disabled>
                 </div>
-                <div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="-1">
+                <div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="0">
                     <input type="hidden" value="0" disabled>
                 </div>
-                <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                <div class="mdc-checkbox deep-purple-A700" tabindex="0">
                     <input type="hidden" value="1" disabled>
                 </div>
             </div>
             <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+<div class="mdc-checkbox deep-purple-A700" tabindex="0">
     <input type="hidden" value="0">
 </div>
-<div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="-1">
+<div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="0">
     <input type="hidden" value="0">
 </div>
-<div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+<div class="mdc-checkbox deep-purple-A700" tabindex="0">
     <input type="hidden" value="1">
 </div>
 
-<div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+<div class="mdc-checkbox deep-purple-A700" tabindex="0">
     <input type="hidden" value="0" disabled>
 </div>
-<div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="-1">
+<div class="mdc-checkbox deep-purple-A700 indeterminate" tabindex="0">
     <input type="hidden" value="0" disabled>
 </div>
-<div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+<div class="mdc-checkbox deep-purple-A700" tabindex="0">
     <input type="hidden" value="1" disabled>
 </div>
 TEXT
@@ -395,25 +395,25 @@ TEXT
                 <div class="space"></div>
                 
                 <div class="mdc-list-item">
-                    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                    <div class="mdc-checkbox deep-purple-A700" tabindex="0">
                         <input type="hidden" value="0">
                     </div>
                     <div class="text">Dining</div>
                 </div>
                 <div class="mdc-list-item">
-                    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                    <div class="mdc-checkbox deep-purple-A700" tabindex="0">
                         <input type="hidden" value="1">
                     </div>
                     <div class="text">Education</div>
                 </div>
                 <div class="mdc-list-item">
-                    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                    <div class="mdc-checkbox deep-purple-A700" tabindex="0">
                         <input type="hidden" value="0" disabled>
                     </div>
                     <div class="text">Health</div>
                 </div>
                 <div class="mdc-list-item">
-                    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+                    <div class="mdc-checkbox deep-purple-A700" tabindex="0">
                         <input type="hidden" value="1" disabled>
                     </div>
                     <div class="text">Sport</div>
@@ -423,25 +423,25 @@ TEXT
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
 <div class="mdc-list-item">
-    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+    <div class="mdc-checkbox deep-purple-A700" tabindex="0">
         <input type="hidden" value="0">
     </div>
     <div class="text">Dining</div>
 </div>
 <div class="mdc-list-item">
-    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+    <div class="mdc-checkbox deep-purple-A700" tabindex="0">
         <input type="hidden" value="1">
     </div>
     <div class="text">Education</div>
 </div>
 <div class="mdc-list-item">
-    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+    <div class="mdc-checkbox deep-purple-A700" tabindex="0">
         <input type="hidden" value="0" disabled>
     </div>
     <div class="text">Health</div>
 </div>
 <div class="mdc-list-item">
-    <div class="mdc-checkbox deep-purple-A700" tabindex="-1">
+    <div class="mdc-checkbox deep-purple-A700" tabindex="0">
         <input type="hidden" value="1" disabled>
     </div>
     <div class="text">Sport</div>
@@ -464,36 +464,36 @@ TEXT
             <div class="col xlarge-2 large-3 medium-6">
                 <div class="space"></div>
 
-                <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+                <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
                     <input type="radio" name="radio_1" value="val_1">
                 </div>
-                <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+                <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
                     <input type="radio" name="radio_1" value="val_2" checked>
                 </div>
 
                 <div class=""></div>
                 
-                <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+                <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
                     <input type="radio" name="radio_2" value="val_1" disabled>
                 </div>
-                <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+                <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
                     <input type="radio" name="radio_2" value="val_2" disabled checked>
                 </div>
             </div>
             <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+<div class="mdc-radiobutton deep-purple-A700" tabindex="0">
     <input type="radio" name="radio_1" value="val_1">
 </div>
-<div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+<div class="mdc-radiobutton deep-purple-A700" tabindex="0">
     <input type="radio" name="radio_1" value="val_2" checked>
 </div>
 
-<div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+<div class="mdc-radiobutton deep-purple-A700" tabindex="0">
     <input type="radio" name="radio_2" value="val_1" disabled>
 </div>
-<div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+<div class="mdc-radiobutton deep-purple-A700" tabindex="0">
     <input type="radio" name="radio_2" value="val_2" disabled checked>
 </div>
 TEXT
@@ -505,25 +505,25 @@ TEXT
                 <div class="space"></div>
 
                 <div class="mdc-list-item">
-                    <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+                    <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
                         <input type="radio" name="radio_3" value="val_1">
                     </div>
                     <div class="text">Dining</div>
                 </div>
                 <div class="mdc-list-item">
-                    <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+                    <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
                         <input type="radio" name="radio_3" value="val_1" checked>
                     </div>
                     <div class="text">Education</div>
                 </div>
                 <div class="mdc-list-item">
-                    <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+                    <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
                         <input type="radio" name="radio_4" value="val_1" disabled>
                     </div>
                     <div class="text">Health</div>
                 </div>
                 <div class="mdc-list-item">
-                    <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+                    <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
                         <input type="radio" name="radio_4" value="val_1" disabled checked>
                     </div>
                     <div class="text">Sport</div>
@@ -533,25 +533,25 @@ TEXT
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
 <div class="mdc-list-item">
-    <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+    <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
         <input type="radio" name="radio_3" value="val_1">
     </div>
     <div class="text">Dining</div>
 </div>
 <div class="mdc-list-item">
-    <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+    <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
         <input type="radio" name="radio_3" value="val_1" checked>
     </div>
     <div class="text">Education</div>
 </div>
 <div class="mdc-list-item">
-    <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+    <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
         <input type="radio" name="radio_4" value="val_1" disabled>
     </div>
     <div class="text">Health</div>
 </div>
 <div class="mdc-list-item">
-    <div class="mdc-radiobutton deep-purple-A700" tabindex="-1">
+    <div class="mdc-radiobutton deep-purple-A700" tabindex="0">
         <input type="radio" name="radio_4" value="val_1" disabled checked>
     </div>
     <div class="text">Sport</div>
@@ -574,22 +574,22 @@ TEXT
             <div class="col xlarge-2 large-3 medium-6">
                 <div class="space"></div>
 
-                <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                <div class="mdc-switch deep-purple-A700" tabindex="0">
                     <div class="rail"></div>
                     <input type="hidden" value="0">
                 </div>
-                <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                <div class="mdc-switch deep-purple-A700" tabindex="0">
                     <div class="rail"></div>
                     <input type="hidden" value="1">
                 </div>
 
                 <div class=""></div>
 
-                <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                <div class="mdc-switch deep-purple-A700" tabindex="0">
                     <div class="rail"></div>
                     <input type="hidden" value="0" disabled>
                 </div>
-                <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                <div class="mdc-switch deep-purple-A700" tabindex="0">
                     <div class="rail"></div>
                     <input type="hidden" value="1" disabled>
                 </div>
@@ -597,20 +597,20 @@ TEXT
             <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-<div class="mdc-switch deep-purple-A700" tabindex="-1">
+<div class="mdc-switch deep-purple-A700" tabindex="0">
     <div class="rail"></div>
     <input type="hidden" value="0">
 </div>
-<div class="mdc-switch deep-purple-A700" tabindex="-1">
+<div class="mdc-switch deep-purple-A700" tabindex="0">
     <div class="rail"></div>
     <input type="hidden" value="1">
 </div>
 
-<div class="mdc-switch deep-purple-A700" tabindex="-1">
+<div class="mdc-switch deep-purple-A700" tabindex="0">
     <div class="rail"></div>
     <input type="hidden" value="0" disabled>
 </div>
-<div class="mdc-switch deep-purple-A700" tabindex="-1">
+<div class="mdc-switch deep-purple-A700" tabindex="0">
     <div class="rail"></div>
     <input type="hidden" value="1" disabled>
 </div>
@@ -624,28 +624,28 @@ TEXT
 
                 <div class="mdc-list-item">
                     <div class="text">Dining</div>
-                    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                    <div class="mdc-switch deep-purple-A700" tabindex="0">
                         <div class="rail"></div>
                         <input type="hidden" value="0">
                     </div>
                 </div>
                 <div class="mdc-list-item">
                     <div class="text">Education</div>
-                    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                    <div class="mdc-switch deep-purple-A700" tabindex="0">
                         <div class="rail"></div>
                         <input type="hidden" value="1">
                     </div>
                 </div>
                 <div class="mdc-list-item">
                     <div class="text">Health</div>
-                    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                    <div class="mdc-switch deep-purple-A700" tabindex="0">
                         <div class="rail"></div>
                         <input type="hidden" value="0" disabled>
                     </div>
                 </div>
                 <div class="mdc-list-item">
                     <div class="text">Sport</div>
-                    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+                    <div class="mdc-switch deep-purple-A700" tabindex="0">
                         <div class="rail"></div>
                         <input type="hidden" value="1" disabled>
                     </div>
@@ -656,28 +656,28 @@ TEXT
 <<<TEXT
 <div class="mdc-list-item">
     <div class="text">Dining</div>
-    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+    <div class="mdc-switch deep-purple-A700" tabindex="0">
         <div class="rail"></div>
         <input type="hidden" value="0">
     </div>
 </div>
 <div class="mdc-list-item">
     <div class="text">Education</div>
-    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+    <div class="mdc-switch deep-purple-A700" tabindex="0">
         <div class="rail"></div>
         <input type="hidden" value="1">
     </div>
 </div>
 <div class="mdc-list-item">
     <div class="text">Health</div>
-    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+    <div class="mdc-switch deep-purple-A700" tabindex="0">
         <div class="rail"></div>
         <input type="hidden" value="0" disabled>
     </div>
 </div>
 <div class="mdc-list-item">
     <div class="text">Sport</div>
-    <div class="mdc-switch deep-purple-A700" tabindex="-1">
+    <div class="mdc-switch deep-purple-A700" tabindex="0">
         <div class="rail"></div>
         <input type="hidden" value="1" disabled>
     </div>
