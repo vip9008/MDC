@@ -120,9 +120,9 @@ $(document).ready(function() {
             $(this).find('.mdc-list-container .mdc-list-item').removeClass('hidden').removeClass('visible');
             var selected = $(this).find('.mdc-list-container .mdc-list-item.selected');
             if ($(selected).length) {
-                $(field).children('.input').val($(selected).children('.text').text());
+                $(field).children('.input').val($(selected).children('.text').text()).trigger('change');
             } else {
-                $(field).children('.input').val('');
+                $(field).children('.input').val('').trigger('change');
             }
 
             return;
