@@ -480,6 +480,7 @@ TEXT
                 <h4>Exposed dropdown menu</h4>
             </div>
         </div>
+
         <div class="row">
             <div class="col xlarge-2 large-3 medium-6">
                 <div class="space"></div>
@@ -550,6 +551,90 @@ TEXT
             .
             .
             .
+        </div>
+        .
+        .
+        .
+    </div>
+</div>
+TEXT
+) ?></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xlarge-2 large-3 medium-6">
+                <div class="space"></div>
+
+                <h6>Searchable menu</h6>
+
+                <div class="mdc-menu-container select-menu">
+                    <div class="menu-button mdc-searchable mdc-text-field deep-purple-A700">
+                        <div class="icon material-icon trailing">arrow_drop_down</div>
+                        <input type="text" class="input">
+                        <label class="label">Select menu</label>
+                        <input type="hidden" class="select-value">
+                    </div>
+                    <div class="mdc-list-container" tabindex="-1">
+                        <div class="mdc-list-group">
+                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
+                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
+                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <div class="mdc-list-item mdc-error-message"><div class="text text-hint">Can't find any item!</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdc-menu-container select-menu">
+                    <div class="menu-button mdc-searchable mdc-text-field outlined deep-purple-A700">
+                        <div class="icon material-icon trailing">arrow_drop_down</div>
+                        <input type="text" class="input">
+                        <label class="label">Select menu</label>
+                        <input type="hidden" class="select-value">
+                    </div>
+                    <div class="mdc-list-container" tabindex="-1">
+                        <div class="mdc-list-group">
+                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
+                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
+                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <div class="mdc-list-item mdc-error-message"><div class="text text-hint">Can't find any item!</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdc-menu-container select-menu">
+                    <div class="menu-button mdc-searchable mdc-text-field standard deep-purple-A700">
+                        <div class="icon material-icon trailing">arrow_drop_down</div>
+                        <input type="text" class="input">
+                        <label class="label">Select menu</label>
+                        <input type="hidden" class="select-value">
+                    </div>
+                    <div class="mdc-list-container" tabindex="-1">
+                        <div class="mdc-list-group">
+                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
+                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
+                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <div class="mdc-list-item mdc-error-message"><div class="text text-hint">Can't find any item!</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col xlarge-6 large-7 medium-10">
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-menu-container select-menu">
+    <div class="menu-button mdc-searchable mdc-text-field deep-purple-A700">
+        <div class="icon material-icon trailing">arrow_drop_down</div>
+        <input type="text" class="input">
+        <label class="label">Select menu</label>
+        <input type="hidden" class="select-value" name="select_menu_2">
+    </div>
+    <div class="mdc-list-container" tabindex="-1">
+        <div class="mdc-list-group">
+            .
+            .
+            .
+            <div class="mdc-list-item mdc-error-message"><div class="text text-hint">Can't find any item!</div></div>
         </div>
         .
         .

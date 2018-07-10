@@ -11,6 +11,10 @@
     max-width: 100%;
 }
 
+.mdc-text-field.full-width {
+    width: 100%;
+}
+
 .mdc-text-field::after {
     content: '';
     position: absolute;

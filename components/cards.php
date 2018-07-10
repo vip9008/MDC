@@ -499,7 +499,7 @@ TEXT
                 <div class="mdt-subtitle-2">Secondary line text</div>
             </div>
         </div>
-        <div class="media" style="background-image: url('..."></div>
+        <div class="media" style="background-image: url('...');"></div>
         <div class="supporting-text mdt-body-2">
             Lorem ipsum ...
         </div>

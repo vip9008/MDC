@@ -1,14 +1,16 @@
 function mdc_close_menus() {
-    $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
+    $('.mdc-menu-container.active').each(function() {
+        mdc_close_menu($(this));
+    });
 }
 
 function mdc_close_menu(selector) {
-    $(selector).removeClass('active').find('.menu-button').removeClass('active');
+    $(selector).trigger('mdcMenuClose').removeClass('active').find('.menu-button').removeClass('active');
 }
 
 $(document).ready(function() {
     $('html').on(md_click_event, function(event) {
-        $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
+        mdc_close_menus();
     });
 
     $('body').on(md_click_event, '.mdc-menu-container .mdc-list-container', function(event) {
@@ -21,12 +23,15 @@ $(document).ready(function() {
         var menu_container = $(this).closest('.mdc-menu-container');
 
         if ($(menu_container).hasClass('active')) {
-            $(menu_container).removeClass('active');
-            $(this).removeClass('active');
+            if ($(this).hasClass('mdc-text-field') && ($(this).hasClass('mdc-searchable') || $(this).hasClass('mdc-editable'))) {
+                return false;
+            }
+
+            mdc_close_menu(menu_container);
             return false;
         }
 
-        $('.mdc-menu-container.active').removeClass('active').find('.menu-button').removeClass('active');
+        mdc_close_menus();
 
         $(menu_container).removeClass('bottom reverse');
 
@@ -60,6 +65,24 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+    $('body').on('keyup', '.mdc-menu-container.select-menu .mdc-text-field.mdc-searchable > .input', function(event) {
+        var filter = $(this).val().toUpperCase().replace("'", '');
+        var found = false;
+        $(this).closest('.select-menu').find('.mdc-list-container .mdc-list-item').each(function() {
+            if ($(this).children('.text').text().toUpperCase().replace("'", '').indexOf(filter) > -1) {
+                $(this).removeClass('hidden');
+                found = true;
+            } else {
+                $(this).addClass('hidden');
+            }
+        });
+        if (!found) {
+            $(this).closest('.select-menu').find('.mdc-list-container .mdc-error-message').addClass('visible');
+        } else {
+            $(this).closest('.select-menu').find('.mdc-list-container .mdc-error-message').removeClass('visible');
+        }
+    });
+
     $('body').on(md_click_event, '.mdc-menu-container.select-menu .mdc-list-container button.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container a.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container .mdc-list-item.interactive', function(event) {
         var container = $(this).closest('.select-menu');
 
@@ -72,7 +95,7 @@ $(document).ready(function() {
 
         var value = $(this).addClass('selected').attr('data-value');
         var text = $(this).children('.text').text();
-        var input = $(container).children('.mdc-text-field').children('.input');
+        var input = $(container).find('.mdc-text-field').children('.input');
 
         if ($(input).prop("tagName").toLowerCase() == 'input') {
             $(input).val(text);
@@ -81,12 +104,28 @@ $(document).ready(function() {
         }
 
         if (text.length) {
-            $(container).children('.mdc-text-field').addClass('focus');
+            $(container).find('.mdc-text-field').addClass('focus');
         } else {
-            $(container).children('.mdc-text-field').removeClass('focus');
+            $(container).find('.mdc-text-field').removeClass('focus');
         }
 
-        $(container).children('.mdc-text-field').children('.select-value').val(value);
+        $(container).find('.mdc-text-field').children('.select-value').val(value);
         mdc_close_menu(container);
+    });
+
+    $('body').on('mdcMenuClose', '.mdc-menu-container.select-menu', function(event) {
+        var field = $(this).find('.mdc-text-field');
+
+        if ($(field).hasClass('mdc-searchable')) {
+            $(this).find('.mdc-list-container .mdc-list-item').removeClass('hidden').removeClass('visible');
+            var selected = $(this).find('.mdc-list-container .mdc-list-item.selected');
+            if ($(selected).length) {
+                $(field).children('.input').val($(selected).children('.text').text());
+            } else {
+                $(field).children('.input').val('');
+            }
+
+            return;
+        }
     });
 });
