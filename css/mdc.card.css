@@ -3,7 +3,7 @@
     border-radius: 0.25rem;
     background-color: var(--bg-cards);
     position: relative;
-    z-index: var(--z-axis-1-index);
+    /*z-index: var(--z-axis-1-index);*/
     box-shadow: var(--z-axis-1-shadow);
     will-change: box-shadow;
     transition: box-shadow 0.3s;
