@@ -46,7 +46,6 @@ html[dir] #mdc-snackbars.position-start[dir="rtl"] {
 }
 
 #mdc-snackbars > .mdc-snackbar {
-    width: 21.5rem;
     max-width: 100%;
     margin: 0 auto 1.5rem;
     padding: 0 0.5rem;

@@ -1,0 +1,69 @@
+#mdc-banners {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 5.75rem;
+    z-index: var(--z-axis-1-index);
+}
+
+#mdc-banners > .banners-container {
+    position: fixed;
+    width: inherit;
+    background-color: var(--bg-cards);
+    border-bottom: solid 0.0625rem var(--bg-border);
+}
+
+#mdc-banners > .banners-container .mdc-banner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    pointer-events: all;
+    will-change: opacity, visibility, transform;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#mdc-banners > .banners-container .mdc-banner .text {
+    width: 100%;
+    font-size: 0.875rem;
+    letter-spacing: 0.017857em;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin: 1rem 0;
+    color: var(--text-secondary);
+}
+
+#mdc-banners > .banners-container .mdc-banner .mdc-button-group {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    padding: 0;
+    margin: 0.5rem -0.25rem;
+}
+
+@media (max-width: 44.9375rem) {
+    
+}
+
+@media (max-width: 719px) {
+    #mdc-banners > .banners-container .mdc-banner {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}

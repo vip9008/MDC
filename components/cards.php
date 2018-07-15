@@ -25,7 +25,7 @@ $url = $prefix."components/cards.php";
 
 <?php include $prefix."_includes/head.php"; ?>
 
-<body>
+<body class="mdc-drawer-expand">
 
 <?php include $prefix."_includes/drawer.php"; ?>
 <?php include $prefix."_includes/app_bar.php"; ?>

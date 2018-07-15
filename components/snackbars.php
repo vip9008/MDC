@@ -26,7 +26,7 @@ $url = $prefix."components/snackbars.php";
 
 <?php include $prefix."_includes/head.php"; ?>
 
-<body>
+<body class="mdc-drawer-expand">
 
 <?php include $prefix."_includes/drawer.php"; ?>
 <?php include $prefix."_includes/app_bar.php"; ?>
@@ -57,7 +57,7 @@ $url = $prefix."components/snackbars.php";
                 <p class="text-secondary">Only one snackbar may be displayed at a time.</p>
 
                 <h6>Actions</h6>
-                <p class="text-secondary">A snackbar can contain a single action. Because they disappear automatically, the action shouldn’t be “Dismiss” or “Cancel.”</p>
+                <p class="text-secondary">A snackbar can contain a single action. Because they disappear automatically, the action shouldn’t be “Dismiss” or “Cancel”.</p>
 
                 <div class="space"></div>
                 <div class="space"></div>

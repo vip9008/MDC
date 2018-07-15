@@ -84,6 +84,9 @@
                 </div>
             </button>
             <div class="mdc-dropdown">
+                <a href="<?= $prefix ?>components/banners.php" class="mdc-list-item">
+                    <div class="text">Banners</div>
+                </a>
                 <a href="<?= $prefix ?>components/buttons.php" class="mdc-list-item">
                     <div class="text">Buttons</div>
                 </a>
