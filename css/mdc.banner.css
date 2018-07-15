@@ -1,20 +1,26 @@
 #mdc-banners {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    height: 5.75rem;
-    z-index: var(--z-axis-1-index);
-}
-
-#mdc-banners > .banners-container {
     position: fixed;
-    width: inherit;
+    left: 0;
+    right: 0;
     background-color: var(--bg-cards);
     border-bottom: solid 0.0625rem var(--bg-border);
+    z-index: 10;
 }
 
-#mdc-banners > .banners-container .mdc-banner {
+body.mdc-drawer-expand #mdc-banners,
+html[dir="ltr"] body.mdc-drawer-expand #mdc-banners,
+html[dir] body.mdc-drawer-expand #mdc-banners[dir="ltr"] {
+    margin-left: 16rem;
+    margin-right: 0;
+}
+
+html[dir="rtl"] body.mdc-drawer-expand #mdc-banners,
+html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
+    margin-left: 0;
+    margin-right: 16rem;
+}
+
+#mdc-banners .mdc-banner {
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -38,7 +44,7 @@
     user-select: none;
 }
 
-#mdc-banners > .banners-container .mdc-banner .text {
+#mdc-banners .mdc-banner .text {
     width: 100%;
     font-size: 0.875rem;
     letter-spacing: 0.017857em;
@@ -48,7 +54,7 @@
     color: var(--text-secondary);
 }
 
-#mdc-banners > .banners-container .mdc-banner .mdc-button-group {
+#mdc-banners .mdc-banner .mdc-button-group {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -ms-flex-item-align: end;
@@ -62,7 +68,16 @@
 }
 
 @media (max-width: 719px) {
-    #mdc-banners > .banners-container .mdc-banner {
+    body.mdc-drawer-expand #mdc-banners,
+    html[dir="ltr"] body.mdc-drawer-expand #mdc-banners,
+    html[dir] body.mdc-drawer-expand #mdc-banners[dir="ltr"],
+    html[dir="rtl"] body.mdc-drawer-expand #mdc-banners,
+    html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #mdc-banners .mdc-banner {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }

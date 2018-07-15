@@ -32,16 +32,14 @@ $url = $prefix."components/banners.php";
 <?php include $prefix."_includes/app_bar.php"; ?>
 
 <div id="mdc-banners">
-    <div class="banners-container">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="mdc-banner">
-                        <div class="text">Banner implementation support for each platform is indicated below.</div>
-                        <div class="mdc-button-group">
-                            <button class="mdc-button deep-purple-A700">Action</button>
-                            <button class="mdc-button deep-purple-A700">Action</button>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="mdc-banner">
+                    <div class="text">Banner implementation support for each platform is indicated below.</div>
+                    <div class="mdc-button-group">
+                        <button class="mdc-button deep-purple-A700">Action</button>
+                        <button class="mdc-button deep-purple-A700">Action</button>
                     </div>
                 </div>
             </div>
