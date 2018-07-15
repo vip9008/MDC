@@ -33,15 +33,14 @@ $url = $prefix."components/banners.php";
 
 <div id="mdc-banners">
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="mdc-banner">
-                    <div class="text">Banner implementation support for each platform is indicated below.</div>
-                    <div class="mdc-button-group">
-                        <button class="mdc-button deep-purple-A700">Action</button>
-                        <button class="mdc-button deep-purple-A700">Action</button>
-                    </div>
-                </div>
+        <div class="mdc-banner">
+            <div class="text">
+                <div class="graphic bg-deep-purple-A700"></div>
+                <div class="body">Banner implementation support for each platform is indicated below.</div>
+            </div>
+            <div class="mdc-button-group">
+                <button class="mdc-button deep-purple-A700">Action</button>
+                <button class="mdc-button deep-purple-A700">Action</button>
             </div>
         </div>
     </div>
