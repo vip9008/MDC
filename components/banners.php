@@ -33,16 +33,6 @@ $url = $prefix."components/banners.php";
 
 <div id="mdc-banners">
     <div class="container">
-        <div class="mdc-banner">
-            <div class="text">
-                <div class="graphic bg-deep-purple-A700"></div>
-                <div class="body">Banner implementation support for each platform is indicated below.</div>
-            </div>
-            <div class="mdc-button-group">
-                <button class="mdc-button deep-purple-A700">Action</button>
-                <button class="mdc-button deep-purple-A700">Action</button>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -290,35 +280,67 @@ $url = $prefix."components/banners.php";
                         <tbody><tr>
                             <th class="bg-app-bar code" colspan="3">
                                 <b class="green">void</b>
-                                <b class="blue-grey-800">mdc_activate_snackbars</b>
+                                <b class="blue-grey-800">mdc_activate_banners</b>
                                 (
-                                <b class="deep-purple-A700">seconds</b> = <b class="blue-900">4.0</b>
                                 )
                             </th>
                         </tr>
                         <tr>
-                            <td colspan="3">A method to run all snackbars sequentially.</td>
-                        </tr>
-                        <tr>
-                            <td><b class="deep-purple-A700 code">seconds</b></td>
-                            <td class="code">float</td>
-                            <td>Time in seconds before removing an active snackbar. cannot be less than 4 or more than 10.</td>
+                            <td colspan="3">A method to run all banners sequentially. Only one banner is active at a time. Calling this method again will remove the currently active banner and activate the next one. Clicking on a button inside the banners will call this method by default.</td>
                         </tr>
                     </tbody></table>
                 </div>
+                <div class="space"></div>
+
+                <p class="text-secondary">Note: banner items should be wraped inside <code>.container</code> or <code>.container-fluid</code> depending on your layout to align banner items perfectly with the page content.</p>
+                <p class="text-secondary">Note: banners placement should be at the top of the content. other placement options are not supported yet.</p>
+                <p class="text-secondary yellow-700">Caution: only a maximum of 3 lines of text will be visible at all times. keep the text as short as possible to avoid it from being cut.</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col xlarge-2 large-3 medium-6">
-                <div class="mdc-button-group" style="margin-top: 1rem;">
-                    <button  onclick="mdc_snackbar_example(1, '')" class="mdc-button btn-contained full-width bg-deep-purple-A700 mdc-snackbar-example">Run Snackbar</button>
+            <div class="col xlarge-8 large-10 medium-10">
+                <div class="mdc-button-group">
+                    <button onclick="mdc_banners_example()" class="mdc-button btn-contained bg-deep-purple-A700">Run Banners</button>
                 </div>
-                <p class="text-secondary">Default snackbar.</p>
-            </div>
-            <div class="col xlarge-6 large-7 medium-10">
+
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
+<div id="mdc-banners">
+    <div class="container">
+        <div class="mdc-banner">
+            <div class="text">
+                <div class="body">...</div>
+            </div>
+            <div class="mdc-button-group">
+                <button class="mdc-button deep-purple-A700">Dismiss</button>
+            </div>
+        </div>
+
+        <div class="mdc-banner">
+            <div class="text">
+                <div class="body">...</div>
+            </div>
+            <div class="mdc-button-group">
+                <button class="mdc-button deep-purple-A700">Action</button>
+                <button class="mdc-button deep-purple-A700">Dismiss</button>
+            </div>
+        </div>
+
+        <div class="mdc-banner">
+            <div class="text">
+                <div class="graphic bg-deep-purple-A700"><div class="material-icon">pets</div></div>
+                <div class="body">...</div>
+            </div>
+            <div class="mdc-button-group">
+                <button class="mdc-button deep-purple-A700">Dismiss</button>
+            </div>
+        </div>
+        .
+        .
+        .
+    </div>
+</div>
 TEXT
 ) ?></pre>
             </div>
@@ -327,20 +349,43 @@ TEXT
 </div>
 
 <div id="banner-examples" class="hidden">
-
-<div class="example-1">
     <div class="mdc-banner">
         <div class="text">
-            Photo saved to your favorites.
+            <div class="body">Banners must remain on screen until dismissed by the user.</div>
+        </div>
+        <div class="mdc-button-group">
+            <button class="mdc-button deep-purple-A700">Dismiss</button>
+        </div>
+    </div>
+
+    <div class="mdc-banner">
+        <div class="text">
+            <div class="body">Banners must remain on screen until dismissed by the user. Banner text should be as short as possible.</div>
+        </div>
+        <div class="mdc-button-group">
+            <button class="mdc-button deep-purple-A700">Action</button>
+            <button class="mdc-button deep-purple-A700">Dismiss</button>
+        </div>
+    </div>
+
+    <div class="mdc-banner">
+        <div class="text">
+            <div class="graphic bg-deep-purple-A700"><div class="material-icon">pets</div></div>
+            <div class="body">Banners must remain on screen until dismissed by the user. Banner text should be as short as possible.</div>
+        </div>
+        <div class="mdc-button-group">
+            <button class="mdc-button deep-purple-A700">Dismiss</button>
         </div>
     </div>
 </div>
 
-</div>
-
 <script type="text/javascript">
-    function mdc_banner_example(num, banners_class) {
-        
+    function mdc_banners_example() {
+        if (!$('#mdc-banners .mdc-banner').length) {
+            $('#mdc-banners .container').html($('#banner-examples').html());
+        }
+
+        mdc_activate_banners();
     }
 </script>
 
