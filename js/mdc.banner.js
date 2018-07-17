@@ -22,6 +22,7 @@ function mdc_activate_banners() {
 
 $(document).ready(function() {
     $('body').on(md_click_event, '#mdc-banners .mdc-banner.active .mdc-button-group .mdc-button', function(event) {
+        event.stopPropagation();
         mdc_activate_banners();
     });
 });
