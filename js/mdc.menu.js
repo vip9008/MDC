@@ -61,7 +61,7 @@ $(document).ready(function() {
             }
         }
 
-        $(menu_container).addClass('active').find('.mdc-list-container');
+        $(menu_container).addClass('active');
         $(this).addClass('active');
     });
 
