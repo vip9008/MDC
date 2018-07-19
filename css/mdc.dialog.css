@@ -35,7 +35,6 @@
     width: 17.5rem;
     text-align: initial;
     border-radius: 0.25rem;
-    overflow: hidden;
     cursor: default;
     background-color: var(--bg-cards);
     box-shadow: var(--z-axis-24-shadow);
