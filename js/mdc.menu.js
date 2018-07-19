@@ -94,7 +94,7 @@ $(document).ready(function() {
         }
 
         var value = $(this).addClass('selected').attr('data-value');
-        var text = $(this).children('.text').text();
+        var text = $(this).attr('data-label');
         var input = $(container).find('.mdc-text-field').children('.input');
 
         if ($(input).prop("tagName").toLowerCase() == 'input') {
@@ -120,7 +120,7 @@ $(document).ready(function() {
             $(this).find('.mdc-list-container .mdc-list-item').removeClass('hidden').removeClass('visible');
             var selected = $(this).find('.mdc-list-container .mdc-list-item.selected');
             if ($(selected).length) {
-                $(field).children('.input').val($(selected).children('.text').text()).trigger('change');
+                $(field).children('.input').val($(selected).attr('data-label')).trigger('change');
             } else {
                 $(field).children('.input').val('').trigger('change');
             }

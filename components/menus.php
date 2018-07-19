@@ -496,9 +496,15 @@ TEXT
                     </div>
                     <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
-                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
-                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
-                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <button class="mdc-list-item" data-value="val_1" data-label="item_1">
+                                <div class="text">Item 1</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_2" data-label="item_2">
+                                <div class="text">Item 2</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_3" data-label="item_3">
+                                <div class="text">Item 3</div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -512,9 +518,15 @@ TEXT
                     </div>
                     <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
-                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
-                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
-                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <button class="mdc-list-item" data-value="val_1" data-label="item_1">
+                                <div class="text">Item 1</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_2" data-label="item_2">
+                                <div class="text">Item 2</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_3" data-label="item_3">
+                                <div class="text">Item 3</div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -528,9 +540,15 @@ TEXT
                     </div>
                     <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
-                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
-                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
-                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <button class="mdc-list-item" data-value="val_1" data-label="item_1">
+                                <div class="text">Item 1</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_2" data-label="item_2">
+                                <div class="text">Item 2</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_3" data-label="item_3">
+                                <div class="text">Item 3</div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -547,7 +565,9 @@ TEXT
     </div>
     <div class="mdc-list-container" tabindex="-1">
         <div class="mdc-list-group">
-            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
+            <button class="mdc-list-item" data-value="val_1" data-label="item_1">
+                <div class="text">Item 1</div>
+            </button>
             .
             .
             .
@@ -577,9 +597,15 @@ TEXT
                     </div>
                     <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
-                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
-                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
-                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <button class="mdc-list-item" data-value="val_1" data-label="item_1">
+                                <div class="text">Item 1</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_2" data-label="item_2">
+                                <div class="text">Item 2</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_3" data-label="item_3">
+                                <div class="text">Item 3</div>
+                            </button>
                             <div class="mdc-list-item mdc-error-message"><div class="text text-hint">Can't find any item!</div></div>
                         </div>
                     </div>
@@ -594,9 +620,15 @@ TEXT
                     </div>
                     <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
-                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
-                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
-                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <button class="mdc-list-item" data-value="val_1" data-label="item_1">
+                                <div class="text">Item 1</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_2" data-label="item_2">
+                                <div class="text">Item 2</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_3" data-label="item_3">
+                                <div class="text">Item 3</div>
+                            </button>
                             <div class="mdc-list-item mdc-error-message"><div class="text text-hint">Can't find any item!</div></div>
                         </div>
                     </div>
@@ -611,9 +643,15 @@ TEXT
                     </div>
                     <div class="mdc-list-container" tabindex="-1">
                         <div class="mdc-list-group">
-                            <button class="mdc-list-item" data-value="val_1"><div class="text">Item 1</div></button>
-                            <button class="mdc-list-item" data-value="val_2"><div class="text">Item 2</div></button>
-                            <button class="mdc-list-item" data-value="val_3"><div class="text">Item 3</div></button>
+                            <button class="mdc-list-item" data-value="val_1" data-label="item_1">
+                                <div class="text">Item 1</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_2" data-label="item_2">
+                                <div class="text">Item 2</div>
+                            </button>
+                            <button class="mdc-list-item" data-value="val_3" data-label="item_3">
+                                <div class="text">Item 3</div>
+                            </button>
                             <div class="mdc-list-item mdc-error-message"><div class="text text-hint">Can't find any item!</div></div>
                         </div>
                     </div>
