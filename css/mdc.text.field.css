@@ -304,6 +304,7 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     color: var(--initial-text-hint);
     cursor: default;
     pointer-events: none;
+    word-break: break-word;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
