@@ -3,7 +3,7 @@ $language = "en-US";
 $direction = "ltr";
 
 $css_files = [
-    'mdc.image.list.css',
+    'css/mdc.image.list.css',
 ];
 $js_files = [
 ];
@@ -266,9 +266,15 @@ $url = $prefix."components/image-lists.php";
                 <div class="space"></div>
 
                 <h4>TYPE</h4>
-                .
-                .
-                .
+                
+                <div class="mdc-image-list">
+                    <div class="list-item bg-black">vkldsnvdk</div>
+                    <div class="list-item bg-black">vkldsnvdk</div>
+                    <div class="list-item bg-black">vkldsnvdk</div>
+                    <div class="list-item bg-black">vkldsnvdk</div>
+                    <div class="list-item bg-black">vkldsnvdk</div>
+                    <div class="list-item bg-black">vkldsnvdk</div>
+                </div>
 
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
