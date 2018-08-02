@@ -1,0 +1,12 @@
+.mdc-image-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mdc-image-list .list-item {
+    width: calc(100% / 5 - 0.2rem);
+}

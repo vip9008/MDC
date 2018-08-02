@@ -3,6 +3,7 @@ $language = "en-US";
 $direction = "ltr";
 
 $css_files = [
+    'mdc.image.list.css',
 ];
 $js_files = [
 ];
