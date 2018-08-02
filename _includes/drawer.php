@@ -102,6 +102,9 @@
                 <a href="<?= $prefix ?>components/dividers.php" class="mdc-list-item">
                     <div class="text">Dividers</div>
                 </a>
+                <a href="<?= $prefix ?>components/image-lists.php" class="mdc-list-item">
+                    <div class="text">Image lists</div>
+                </a>
                 <a href="<?= $prefix ?>components/lists.php" class="mdc-list-item">
                     <div class="text">Lists</div>
                 </a>
