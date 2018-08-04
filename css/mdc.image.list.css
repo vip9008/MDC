@@ -15,4 +15,12 @@
 
 .mdc-image-list .list-item .image {
     padding-top: 100%;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mdc-image-list.md-ratio-hd .list-item .image {
+    padding-top: 56.25%;
 }

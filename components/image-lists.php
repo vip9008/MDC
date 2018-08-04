@@ -265,15 +265,27 @@ $url = $prefix."components/image-lists.php";
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
 
-                <h4>TYPE</h4>
+                <h4>Standard image list</h4>
                 
-                <div class="mdc-image-list">
-                    <div class="list-item bg-black">vkldsnvdk</div>
-                    <div class="list-item bg-black">vkldsnvdk</div>
-                    <div class="list-item bg-black">vkldsnvdk</div>
-                    <div class="list-item bg-black">vkldsnvdk</div>
-                    <div class="list-item bg-black">vkldsnvdk</div>
-                    <div class="list-item bg-black">vkldsnvdk</div>
+                <div class="mdc-image-list md-ratio-hd">
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-3.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-3.jpg');"></div>
+                    </div>
                 </div>
 
 <pre class="bg-app-bar html"><?= htmlspecialchars(
