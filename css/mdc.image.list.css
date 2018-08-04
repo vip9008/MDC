@@ -8,9 +8,9 @@
 }
 
 .mdc-image-list .list-item {
-    width: calc(100% / 5 - 0.2rem);
+    width: calc(100% / 5 - 0.25rem);
 }
 
-.mdc-image-list .list-item + .list-item {
+.mdc-image-list .list-item {
     margin: 0.125rem;
 }
