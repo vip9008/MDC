@@ -3,14 +3,16 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: -0.125rem;
     padding: 0;
 }
 
 .mdc-image-list .list-item {
     width: calc(100% / 5 - 0.25rem);
+    margin: 0.125rem;
+    position: relative;
 }
 
-.mdc-image-list .list-item {
-    margin: 0.125rem;
+.mdc-image-list .list-item .image {
+    padding-top: 100%;
 }
