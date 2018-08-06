@@ -455,7 +455,7 @@ $url = $prefix."usability/bidirectionality.php";
         <div class="row">
             <div class="col xlarge-3 large-4 medium-6">
                 <h4>LTR</h4>
-                <p class="text-secondary">Every element and component is in LTR by default but it is always a good idea to specify your application language and direction in the root element using <code>[lang="en-US"]</code> and <code>[dir="ltr"]</code> respectively.</p>
+                <p class="text-secondary">Every element and component is in LTR by default but it is always a good idea to specify your application language and direction in the root element using <code class="hljs-css-selector-attr">[lang="en-US"]</code> and <code class="hljs-css-selector-attr">[dir="ltr"]</code> respectively.</p>
             </div>
             <div class="col xlarge-6 large-7 medium-10">
 <pre class="bg-app-bar html"><?= htmlspecialchars(

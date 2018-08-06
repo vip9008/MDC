@@ -1,19 +1,40 @@
 :root {
-    --hljs-name: #E53935;
-    --hljs-attr: #0277BD;
-    --hljs-string: #00838F;
+    --hljs-html-meta: #ff5370;
+    --hljs-html-name: #ff5370;
+    --hljs-html-attr: #ffb62b;
+    --hljs-html-string: #91b859;
+
+    --hljs-css-tag: #ff5370;
+    --hljs-css-class: #ffb62b;
+    --hljs-css-selector-attr: #7c4eff;
+    --hljs-css-attribute: #8796b0;
+    --hljs-css-number: #f76d47;
 }
 
 .md-theme-light {
-    --hljs-name: #E53935;
-    --hljs-attr: #0277BD;
-    --hljs-string: #00838F;
+    --hljs-html-meta: #ff5370;
+    --hljs-html-name: #ff5370;
+    --hljs-html-attr: #ffb62b;
+    --hljs-html-string: #91b859;
+
+    --hljs-css-tag: #ff5370;
+    --hljs-css-class: #ffb62b;
+    --hljs-css-selector-attr: #7c4eff;
+    --hljs-css-attribute: #8796b0;
+    --hljs-css-number: #f76d47;
 }
 
 .md-theme-dark {
-    --hljs-name: #EF9A9A;
-    --hljs-attr: #29B6F6;
-    --hljs-string: #26C6DA;
+    --hljs-html-meta: #f07178;
+    --hljs-html-name: #f07178;
+    --hljs-html-attr: #ffcb6b;
+    --hljs-html-string: #c3e88d;
+
+    --hljs-css-tag: #f07178;
+    --hljs-css-class: #ffcb6b;
+    --hljs-css-selector-attr: #c792ea;
+    --hljs-css-attribute: #b2ccd6;
+    --hljs-css-number: #f78c6b;
 }
 
 h1.article_title {
@@ -34,16 +55,40 @@ pre, pre *, code, code * {
     font-family: Monaco, monospace !important;
 }
 
-pre.html .hljs-name {
-    color: var(--hljs-name);
+pre.html .hljs-meta, .hljs-html-meta {
+    color: var(--hljs-html-meta);
 }
 
-pre.html .hljs-attr {
-    color: var(--hljs-attr);
+pre.html .hljs-name, .hljs-html-name {
+    color: var(--hljs-html-name);
 }
 
-pre.html .hljs-string {
-    color: var(--hljs-string);
+pre.html .hljs-attr, .hljs-html-attr {
+    color: var(--hljs-html-attr);
+}
+
+pre.html .hljs-string, .hljs-html-string {
+    color: var(--hljs-html-string);
+}
+
+pre.css .hljs-selector-tag, .hljs-css-tag {
+    color: var(--hljs-css-tag);
+}
+
+pre.css .hljs-selector-class, .hljs-css-class {
+    color: var(--hljs-css-class);
+}
+
+pre.css .hljs-selector-attr, .hljs-css-selector-attr {
+    color: var(--hljs-css-selector-attr);
+}
+
+pre.css .hljs-attribute, .hljs-css-attribute {
+    color: var(--hljs-css-attribute);
+}
+
+pre.css .hljs-number, .hljs-css-number {
+    color: var(--hljs-css-number);
 }
 
 .mdc-list-container.example,

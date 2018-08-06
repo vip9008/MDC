@@ -292,7 +292,7 @@ $url = $prefix."components/banners.php";
                 </div>
                 <div class="space"></div>
 
-                <p class="text-secondary">Note: banner items should be wraped inside <code>.container</code> or <code>.container-fluid</code> depending on your layout to align banner items perfectly with the page content.</p>
+                <p class="text-secondary">Note: banner items should be wraped inside <code class="hljs-css-class">.container</code> or <code class="hljs-css-class">.container-fluid</code> depending on your layout to align banner items perfectly with the page content.</p>
                 <p class="text-secondary">Note: banners placement should be at the top of the content. other placement options are not supported yet.</p>
                 <p class="text-secondary yellow-700">Caution: only a maximum of 3 lines of text will be visible at all times. keep the text as short as possible to avoid it from being cut.</p>
             </div>

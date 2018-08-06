@@ -261,13 +261,21 @@ $url = $prefix."components/image-lists.php";
 <div class="container">
     <section>
         <div class="row">
-            <div class="col xlarge-8 large-10 medium-12">
+            <div class="col">
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
 
+                <p class="text-secondary">By default, each row will show <b>five</b> list items on <code>.medium</code> and above, <b>four</b> list items on <code>.smallext</code>, <b>three</b> list items on <code>.small</code>, and <b>two</b> list items on <code>.xsmall</code>. Please refer to <a href="<?= $prefix ?>layout/responsive-layout-grid.php">Breakpoint system</a> for more information.</p>
+
+                <p class="text-secondary green-600">Default padding is 8 dp and the following padding values are available: 1, 2, 4, 8, 16, 20, 24, 32 dp.</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
                 <h4>Standard image list</h4>
+                <div class="space"></div>
                 
-                <div class="mdc-image-list md-ratio-hd">
+                <div class="mdc-image-list">
                     <div class="list-item">
                         <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
                     </div>
@@ -282,17 +290,391 @@ $url = $prefix."components/image-lists.php";
                     </div>
                     <div class="list-item">
                         <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
-                    </div>
-                    <div class="list-item">
-                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-3.jpg');"></div>
                     </div>
                 </div>
 
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
-.
-.
-.
+<div class="mdc-image-list">
+    <div class="list-item">
+        <div class="image" style="background-image: url('...');"></div>
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6 class="text-secondary">16:9 image ratio</h6>
+                <div class="space"></div>
+
+                <div class="mdc-image-list md-16by9">
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-3.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-image-list md-16by9">
+    ...
+</div>
+TEXT
+) ?></pre>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6 class="text-secondary">Supporting text and iconography</h6>
+                <div class="space"></div>
+
+                <div class="mdc-image-list md-16by9">
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-3.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-image-list">
+    <div class="list-item">
+        <div class="image" style="background-image: url('...');"></div>
+        <div class="support">
+            <div class="text">...</div>
+            <div class="icon">...</div>
+        </div>
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h6 class="text-secondary">Overlay supporting text and iconography</h6>
+                <div class="space"></div>
+
+                <div class="mdc-image-list md-16by9 overlay-support">
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-3.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                        <div class="support">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-image-list overlay-support">
+    ...
+</div>
+TEXT
+) ?></pre>
+
+                <div class="space"></div>
+                <p class="text-secondary">Background color classes can be added to each supporting element. Please refer to <a href="<?= $prefix ?>color/the-color-system.php">The color system</a>.</p>
+
+                <div class="mdc-image-list md-16by9 overlay-support">
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                        <div class="support bg-deep-purple-900">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                        <div class="support bg-red-900">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-3.jpg');"></div>
+                        <div class="support bg-orange-900">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-1.jpg');"></div>
+                        <div class="support bg-deep-purple-900">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-2.jpg');"></div>
+                        <div class="support bg-red-900">
+                            <div class="text">Title here</div>
+                            <div class="icon">
+                                <div class="material-icon">star_outline</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-image-list overlay-support">
+    <div class="list-item">
+        ...
+        <div class="support bg-red-900">
+            ...
+        </div>
+    </div>
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+
+                <div class="space"></div>
+                <p class="text-secondary">Text protection opacity can be customized by changing the CSS variable <code class="hljs-css-attribute">--protection-opacity</code> for the support element. Defaults to <code class="hljs-css-number">0.6</code>.</p>
+
+<pre class="bg-app-bar css"><?= htmlspecialchars(
+<<<TEXT
+.mdc-image-list .list-item .support {
+    --protection-opacity: 0.6;
+}
+TEXT
+) ?></pre>
+
+                <div class="space"></div>
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Woven image list</h4>
+                <div class="space"></div>
+                
+                <div class="mdc-image-list mdc-style-woven md-32">
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-4.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-5.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-6.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-7.jpg');"></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image" style="background-image: url('<?= $prefix ?>img/component_image_lists/thumb-4.jpg');"></div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-image-list mdc-style-woven">
+    .
+    .
+    .
+</div>
+TEXT
+) ?></pre>
+
+                <div class="space"></div>
+                <div class="space"></div>
+                <div class="mdc-divider"></div>
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <h4>Masonry image list</h4>
+                <div class="space"></div>
+                
+                <div class="mdc-image-list mdc-style-masonry md-32">
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-4.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-5.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-6.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-7.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-4.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-5.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-6.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-7.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-4.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-5.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-6.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-7.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-4.jpg">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="image">
+                            <img src="<?= $prefix ?>img/component_image_lists/thumb-5.jpg">
+                        </div>
+                    </div>
+                </div>
+
+<pre class="bg-app-bar html"><?= htmlspecialchars(
+<<<TEXT
+<div class="mdc-image-list mdc-style-masonry">
+    .
+    .
+    .
+</div>
 TEXT
 ) ?></pre>
             </div>
