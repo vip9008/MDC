@@ -671,6 +671,11 @@ TEXT
 <pre class="bg-app-bar html"><?= htmlspecialchars(
 <<<TEXT
 <div class="mdc-image-list mdc-style-masonry">
+    <div class="list-item">
+        <div class="image">
+            <img src="...">
+        </div>
+    </div>
     .
     .
     .
