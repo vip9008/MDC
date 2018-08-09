@@ -53,6 +53,7 @@ h1.article_title {
 
 pre, pre *, code, code * {
     font-family: Monaco, monospace !important;
+    font-weight: bold;
 }
 
 pre.html .hljs-meta, .hljs-html-meta {
