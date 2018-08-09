@@ -371,7 +371,7 @@ $url = $prefix."components/sheets-side.php";
         <div class="row">
             <div class="col xlarge-2 large-3 medium-6">
                 <div class="mdc-button-group" style="margin-top: 1rem;">
-                    <button  onclick="open_example_sheet('fixed');" class="mdc-button btn-contained full-width bg-deep-purple-A700">Open sheet</button>
+                    <button  onclick="open_example_sheet('fixed');" class="mdc-button btn-contained full-width bg-deep-purple-A700 side-sheet-example">Open sheet</button>
                 </div>
             </div>
             <div class="col xlarge-6 large-7 medium-10">
@@ -404,7 +404,7 @@ TEXT
         <div class="row">
             <div class="col xlarge-2 large-3 medium-6">
                 <div class="mdc-button-group" style="margin-top: 1rem;">
-                    <button  onclick="open_example_sheet('');" class="mdc-button btn-contained full-width bg-deep-purple-A700">Open sheet</button>
+                    <button  onclick="open_example_sheet('');" class="mdc-button btn-contained full-width bg-deep-purple-A700 side-sheet-example">Open sheet</button>
                 </div>
             </div>
             <div class="col xlarge-6 large-7 medium-10">
@@ -431,7 +431,7 @@ TEXT
         <div class="row">
             <div class="col xlarge-2 large-3 medium-6">
                 <div class="mdc-button-group" style="margin-top: 1rem;">
-                    <button  onclick="open_example_sheet('modal');" class="mdc-button btn-contained full-width bg-deep-purple-A700">Open sheet</button>
+                    <button  onclick="open_example_sheet('modal');" class="mdc-button btn-contained full-width bg-deep-purple-A700 side-sheet-example">Open sheet</button>
                 </div>
             </div>
             <div class="col xlarge-6 large-7 medium-10">
@@ -450,8 +450,25 @@ TEXT
     </section>
 </div>
 
+<div id="example-sheet" class="mdc-sheets-side">
+    <div class="header">
+        <div class="title">Side sheet title</div>
+        <div class="close-action">
+            <button onclick="close_example();" class="material-icon">close</button>
+        </div>
+    </div>
+    <div class="body">
+        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus odio ac facilisis varius. Aliquam a felis in erat facilisis rutrum sit amet non velit. Aliquam quis enim nisi. Proin quis vulputate lectus. Praesent ac sem vel augue semper tincidunt. Quisque eget est turpis. Praesent laoreet turpis ac tortor mattis, nec pellentesque ipsum iaculis. Pellentesque turpis lorem, scelerisque id semper eu, volutpat nec risus. In hac habitasse platea dictumst. Donec hendrerit tristique tincidunt. Mauris nec elementum tortor, eget sodales urna. Ut dapibus et diam a pretium. Phasellus tristique eu risus vitae accumsan.</p>
+
+        <p class="text-secondary">Quisque semper, urna vel elementum ornare, elit nisi blandit risus, sed tempus sem tellus eget leo. Integer aliquet convallis accumsan. Quisque vel consectetur lectus. Proin diam tortor, viverra quis sapien eu, cursus pulvinar eros. In in sem vulputate, lacinia nulla et, eleifend ex. Vestibulum euismod lacus eu cursus dapibus. Vestibulum gravida tincidunt metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In suscipit velit ligula, eu hendrerit est maximus et. Curabitur malesuada massa eget volutpat lobortis. Mauris vel ultrices tellus. Nulla tincidunt lorem eu enim sollicitudin laoreet. Phasellus sed odio eget purus vulputate faucibus id nec eros.</p>
+    </div>
+</div>
+<div onclick="close_example();" class="mdc-sheets-side-scrim" tabindex="-1"></div>
+
 <script type="text/javascript">
     function open_example_sheet(option) {
+        $('.mdc-button.side-sheet-example').prop("disabled", true);
+
         if (option != 'fixed') {
             $('#example-sheet').removeClass('fixed');
         }
@@ -464,22 +481,11 @@ TEXT
 
         mdc_sheets_side_open('#example-sheet');
     }
+
+    function close_example() {
+        $('.mdc-button.side-sheet-example').removeAttr("disabled");
+    }
 </script>
-
-<div id="example-sheet" class="mdc-sheets-side">
-    <div class="header">
-        <div class="title">Side sheet title</div>
-        <div class="close-action">
-            <button class="material-icon">close</button>
-        </div>
-    </div>
-    <div class="body">
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus odio ac facilisis varius. Aliquam a felis in erat facilisis rutrum sit amet non velit. Aliquam quis enim nisi. Proin quis vulputate lectus. Praesent ac sem vel augue semper tincidunt. Quisque eget est turpis. Praesent laoreet turpis ac tortor mattis, nec pellentesque ipsum iaculis. Pellentesque turpis lorem, scelerisque id semper eu, volutpat nec risus. In hac habitasse platea dictumst. Donec hendrerit tristique tincidunt. Mauris nec elementum tortor, eget sodales urna. Ut dapibus et diam a pretium. Phasellus tristique eu risus vitae accumsan.</p>
-
-        <p class="text-secondary">Quisque semper, urna vel elementum ornare, elit nisi blandit risus, sed tempus sem tellus eget leo. Integer aliquet convallis accumsan. Quisque vel consectetur lectus. Proin diam tortor, viverra quis sapien eu, cursus pulvinar eros. In in sem vulputate, lacinia nulla et, eleifend ex. Vestibulum euismod lacus eu cursus dapibus. Vestibulum gravida tincidunt metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In suscipit velit ligula, eu hendrerit est maximus et. Curabitur malesuada massa eget volutpat lobortis. Mauris vel ultrices tellus. Nulla tincidunt lorem eu enim sollicitudin laoreet. Phasellus sed odio eget purus vulputate faucibus id nec eros.</p>
-    </div>
-</div>
-<div class="mdc-sheets-side-scrim" tabindex="-1"></div>
 
 <?php include $prefix."_includes/footer.php"; ?>
 
