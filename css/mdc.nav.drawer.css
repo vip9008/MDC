@@ -202,20 +202,6 @@ html[dir="rtl"] #mdc-nav-drawer.persistent {
     right: -16rem;
 }
 
-body.mdc-drawer-expand {
-    margin-left: 16rem;
-}
-
-html[dir="ltr"] body.mdc-drawer-expand {
-    margin-left: 16rem;
-    margin-right: 0;
-}
-
-html[dir="rtl"] body.mdc-drawer-expand {
-    margin-left: 0;
-    margin-right: 16rem;
-}
-
 body.mdc-drawer-expand > #mdc-nav-drawer.persistent {
     left: 0;
 }
@@ -270,6 +256,19 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
     display: none;
 }
 
+@media (min-width: 720px) {
+    html:not([dir]) body.mdc-drawer-expand,
+    html[dir="ltr"] body.mdc-drawer-expand {
+        margin-left: 16rem !important;
+        margin-right: 0;
+    }
+
+    html[dir="rtl"] body.mdc-drawer-expand {
+        margin-left: 0;
+        margin-right: 16rem !important;
+    }
+}
+
 @media (max-width: 719px) {
     #mdc-nav-drawer.persistent,
     #mdc-nav-drawer.permanent {
@@ -308,10 +307,6 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
     html[dir="rtl"] #mdc-nav-drawer.active.permanent {
         left: auto;
         right: 0;
-    }
-
-    body.mdc-drawer-expand, html[dir] body.mdc-drawer-expand {
-        margin: 0;
     }
 
     #mdc-nav-drawer.active.persistent + .mdc-drawer-scrim,

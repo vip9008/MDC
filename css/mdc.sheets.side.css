@@ -1,0 +1,196 @@
+body {
+    transition: margin 0.3s;
+}
+
+.mdc-sheets-side {
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    bottom: 0;
+    left: auto;
+    width: 20rem;
+    max-width: calc(100% - 3.5rem);
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--bg-cards);
+    z-index: var(--z-axis-8-index);
+    box-shadow: var(--z-axis-8-shadow);
+    border-left: solid 0.0625rem var(--bg-border);
+    will-change: top, right, left;
+    transition: top 0.3s, right 0.3s, left 0.3s;
+}
+
+.mdc-sheets-side:not(.active) {
+    box-shadow: var(--z-axis-0-shadow) !important;
+}
+
+html[dir="ltr"] .mdc-sheets-side {
+    border-right: none;
+    border-left: solid 0.0625rem var(--bg-border);
+    right: -20rem;
+    left: auto;
+}
+
+html[dir="rtl"] .mdc-sheets-side {
+    border-right: solid 0.0625rem var(--bg-border);
+    border-left: none;
+    right: auto;
+    left: -20rem;
+}
+
+.mdc-sheets-side.active,
+html[dir="ltr"] .mdc-sheets-side.active {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .mdc-sheets-side.active {
+    right: auto;
+    left: 0;
+}
+
+.mdc-sheets-side.fixed {
+    z-index: var(--z-axis-0-index);
+    box-shadow: var(--z-axis-0-shadow);
+}
+
+body.mdc-top-app-bar-visible .mdc-sheets-side.fixed {
+    top: 4rem;
+}
+
+.mdc-sheets-side.modal {
+    z-index: var(--z-axis-16-index);
+    box-shadow: var(--z-axis-16-shadow);
+}
+
+.mdc-sheets-side .header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 4rem;
+    padding: 0 1rem;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mdc-sheets-side .header .title {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: 0.0125em;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mdc-sheets-side .header .close-action {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 4rem;
+    margin: 0 0 0 auto;
+    padding-left: 1rem;
+}
+
+html[dir="ltr"] .mdc-sheets-side .header .close-action {
+    margin: 0 0 0 auto;
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+html[dir="rtl"] .mdc-sheets-side .header .close-action {
+    margin: 0 auto 0 0;
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+.mdc-sheets-side .body {
+    padding: 0 1rem 1.25rem;
+}
+
+/*.mdc-sheets-side .body {
+    padding: 1.25rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mdc-sheets-side .header + .body {
+    margin-top: 4rem;
+}*/
+
+.mdc-sheets-side-scrim {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: calc(var(--z-axis-16-index) - 1);
+}
+
+.mdc-sheets-side.modal.active + .mdc-sheets-side-scrim {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+@media (min-width: 1280px) {
+    html:not([dir]) body.mdc-sheets-side-fixed,
+    html[dir="ltr"] body.mdc-sheets-side-fixed {
+        margin-right: 20rem !important;
+        margin-left: 0;
+    }
+
+    html[dir="rtl"] body.mdc-sheets-side-fixed {
+        margin-right: 0;
+        margin-left: 20rem !important;
+    }
+}
+
+@media (max-width: 1279px) {
+    .mdc-sheets-side:not(.modal) {
+        top: 0 !important;
+        z-index: var(--z-axis-8-index) !important;
+        box-shadow: var(--z-axis-8-shadow) !important;
+    }
+}
+
+@media (max-width: 1023px) {
+    .mdc-sheets-side:not(.modal) {
+        z-index: var(--z-axis-16-index) !important;
+        box-shadow: var(--z-axis-16-shadow) !important;
+    }
+
+    .mdc-sheets-side.active + .mdc-sheets-side-scrim {
+        visibility: visible;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 719px) {
+    .mdc-sheets-side .header {
+        height: 3.5rem;
+    }
+}

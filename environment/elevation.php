@@ -277,7 +277,7 @@ $url = $prefix."environment/elevation.php";
                             <td>24</td>
                         </tr>
                         <tr>
-                            <td>Modal bottom sheet</p><p>Modal side sheet</td>
+                            <td>Modal bottom sheet<br>Modal side sheet</td>
                             <td>16</td>
                         </tr>
                         <tr>
@@ -289,7 +289,7 @@ $url = $prefix."environment/elevation.php";
                             <td>12</td>
                         </tr>
                         <tr>
-                            <td>Standard bottom sheet</p><p>Standard side sheet</td>
+                            <td>Standard bottom sheet<br>Standard side sheet</td>
                             <td>8</td>
                         </tr>
                         <tr>
