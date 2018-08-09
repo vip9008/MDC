@@ -318,7 +318,7 @@ $url = $prefix."components/sheets-side.php";
 <div class="container">
     <section>
         <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+            <div class="col xlarge-8 large-10 medium-12">
                 <h1 class="article_title">Implementation</h1>
                 <div class="space"></div>
 
@@ -331,7 +331,7 @@ $url = $prefix."components/sheets-side.php";
                                     <b class="green">void</b>
                                     <b class="blue-grey-800">mdc_sheets_side_open</b>
                                     (
-                                    <b class="deep-purple-A700">sheet</b>
+                                    <b class="deep-purple-A700">sheet_container</b>
                                     )
                                 </th>
                             </tr>
@@ -339,7 +339,7 @@ $url = $prefix."components/sheets-side.php";
                                 <td colspan="3">A method to open the sheet.</td>
                             </tr>
                             <tr>
-                                <td><b class="deep-purple-A700 code">sheet</b></td>
+                                <td><b class="deep-purple-A700 code">sheet_container</b></td>
                                 <td class="code">String | jQuery | Element</td>
                                 <td>The sheet container. can be either a css selector string or a jQuery object or an element.</td>
                             </tr>
@@ -348,7 +348,7 @@ $url = $prefix."components/sheets-side.php";
                                     <b class="green">void</b>
                                     <b class="blue-grey-800">mdc_sheets_side_close</b>
                                     (
-                                    <b class="deep-purple-A700">sheet</b>
+                                    <b class="deep-purple-A700">sheet_container</b>
                                     )
                                 </th>
                             </tr>
@@ -356,7 +356,7 @@ $url = $prefix."components/sheets-side.php";
                                 <td colspan="3">A method to close the sheet.</td>
                             </tr>
                             <tr>
-                                <td><b class="deep-purple-A700 code">sheet</b></td>
+                                <td><b class="deep-purple-A700 code">sheet_container</b></td>
                                 <td class="code">String | jQuery | Element</td>
                                 <td>The sheet container. can be either a css selector string or a jQuery object or an element.</td>
                             </tr>
@@ -395,7 +395,7 @@ TEXT
         </div>
 
         <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+            <div class="col xlarge-8 large-10 medium-12">
                 <div class="space"></div>
 
                 <h4>Above content side sheet</h4>
@@ -422,7 +422,7 @@ TEXT
         </div>
 
         <div class="row">
-            <div class="col xlarge-6 large-9 medium-12">
+            <div class="col xlarge-8 large-10 medium-12">
                 <div class="space"></div>
 
                 <h4>Modal side sheet</h4>
