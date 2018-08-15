@@ -720,8 +720,10 @@ html[dir] .container[dir="rtl"].align-start {
 
 .col.xsmall-auto {
     min-width: 25%;
-    flex: 1 1;
-    max-width: 1 1;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
 }
 
 .col.xsmall-1 {
@@ -830,8 +832,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
 
     .col.small-auto {
         min-width: 12.5%;
-        flex: 1 1;
-        max-width: 1 1;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
     }
 
     .col.small-1 {
@@ -1028,8 +1032,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
 
     .col.smallext-auto {
         min-width: 8.33333333%;
-        flex: 1 1;
-        max-width: 1 1;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
     }
 
     .col.smallext-1 {
@@ -1300,8 +1306,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
 
     .col.medium-auto {
         min-width: 8.33333333%;
-        flex: 1 1;
-        max-width: 1 1;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
     }
 
     .col.medium-1 {
@@ -1572,8 +1580,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
 
     .col.large-auto {
         min-width: 8.33333333%;
-        flex: 1 1;
-        max-width: 1 1;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
     }
 
     .col.large-1 {
@@ -1848,8 +1858,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
 
     .col.xlarge-auto {
         min-width: 8.33333333%;
-        flex: 1 1;
-        max-width: 1 1;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
     }
 
     .col.xlarge-1 {
