@@ -518,6 +518,7 @@ a.material-icon, button.material-icon, .material-icon.interactive {
     padding: 0;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 a.material-icon::before, button.material-icon::before, .material-icon.interactive::before {
@@ -723,7 +724,13 @@ html[dir] .container[dir="rtl"].align-start {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
-    max-width: none;
+}
+
+.col.xsmall-auto.fill-space {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
 .col.xsmall-1 {
@@ -835,7 +842,13 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
         width: auto;
-        max-width: none;
+    }
+
+    .col.small-auto.fill-space {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
     }
 
     .col.small-1 {
@@ -1035,7 +1048,13 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
         width: auto;
-        max-width: none;
+    }
+
+    .col.smallext-auto.fill-space {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
     }
 
     .col.smallext-1 {
@@ -1312,6 +1331,13 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         max-width: none;
     }
 
+    .col.medium-auto.fill-space {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+
     .col.medium-1 {
         -ms-flex: 0 0 8.33333333%;
         flex: 0 0 8.33333333%;
@@ -1584,6 +1610,13 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         flex: 0 0 auto;
         width: auto;
         max-width: none;
+    }
+
+    .col.large-auto.fill-space {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
     }
 
     .col.large-1 {
@@ -1862,6 +1895,13 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         flex: 0 0 auto;
         width: auto;
         max-width: none;
+    }
+
+    .col.xlarge-auto.fill-space {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
     }
 
     .col.xlarge-1 {
