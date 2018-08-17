@@ -726,7 +726,7 @@ html[dir] .container[dir="rtl"].align-start {
     width: auto;
 }
 
-.col.xsmall-auto.fill-space {
+.col.xsmall-auto.xsmall-fill-space {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
@@ -844,7 +844,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         width: auto;
     }
 
-    .col.small-auto.fill-space {
+    .col.small-auto.small-fill-space {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
         -ms-flex-positive: 1;
@@ -1050,7 +1050,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         width: auto;
     }
 
-    .col.smallext-auto.fill-space {
+    .col.smallext-auto.smallext-fill-space {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
         -ms-flex-positive: 1;
@@ -1331,7 +1331,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         max-width: none;
     }
 
-    .col.medium-auto.fill-space {
+    .col.medium-auto.medium-fill-space {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
         -ms-flex-positive: 1;
@@ -1612,7 +1612,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         max-width: none;
     }
 
-    .col.large-auto.fill-space {
+    .col.large-auto.large-fill-space {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
         -ms-flex-positive: 1;
@@ -1897,7 +1897,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         max-width: none;
     }
 
-    .col.xlarge-auto.fill-space {
+    .col.xlarge-auto.xlarge-fill-space {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
         -ms-flex-positive: 1;
