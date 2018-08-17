@@ -844,7 +844,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         width: auto;
     }
 
-    .col.small-auto.small-fill-space {
+    .col.small-fill-space {
         min-width: 12.5%;
         -ms-flex: 1 0 0;
         flex: 1 0 0;
@@ -1050,7 +1050,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         width: auto;
     }
 
-    .col.smallext-auto.smallext-fill-space {
+    .col.smallext-fill-space {
         min-width: 8.33333333%;
         -ms-flex: 1 0 0;
         flex: 1 0 0;
@@ -1331,7 +1331,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         max-width: none;
     }
 
-    .col.medium-auto.medium-fill-space {
+    .col.medium-fill-space {
         min-width: 8.33333333%;
         -ms-flex: 1 0 0;
         flex: 1 0 0;
@@ -1612,7 +1612,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         max-width: none;
     }
 
-    .col.large-auto.large-fill-space {
+    .col.large-fill-space {
         min-width: 8.33333333%;
         -ms-flex: 1 0 0;
         flex: 1 0 0;
@@ -1897,7 +1897,7 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
         max-width: none;
     }
 
-    .col.xlarge-auto.xlarge-fill-space {
+    .col.xlarge-fill-space {
         min-width: 8.33333333%;
         -ms-flex: 1 0 0;
         flex: 1 0 0;
