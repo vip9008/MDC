@@ -44,6 +44,7 @@ a.mdc-button, button.mdc-button, .mdc-button {
     overflow: hidden;
     vertical-align: middle;
     transition: all 0.2s;
+    white-space: nowrap;
 
     -webkit-appearance: none;
     -moz-appearance: none;
