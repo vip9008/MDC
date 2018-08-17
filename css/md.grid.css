@@ -726,11 +726,11 @@ html[dir] .container[dir="rtl"].align-start {
     width: auto;
 }
 
-.col.xsmall-auto.xsmall-fill-space {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+.col.xsmall-fill-space {
+    min-width: 25%;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+    width: auto;
 }
 
 .col.xsmall-1 {
@@ -845,10 +845,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
     }
 
     .col.small-auto.small-fill-space {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
+        min-width: 12.5%;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0;
+        width: auto;
     }
 
     .col.small-1 {
@@ -1051,10 +1051,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
     }
 
     .col.smallext-auto.smallext-fill-space {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
+        min-width: 8.33333333%;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0;
+        width: auto;
     }
 
     .col.smallext-1 {
@@ -1332,10 +1332,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
     }
 
     .col.medium-auto.medium-fill-space {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
+        min-width: 8.33333333%;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0;
+        width: auto;
     }
 
     .col.medium-1 {
@@ -1613,10 +1613,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
     }
 
     .col.large-auto.large-fill-space {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
+        min-width: 8.33333333%;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0;
+        width: auto;
     }
 
     .col.large-1 {
@@ -1898,10 +1898,10 @@ html[dir="rtl"] .col.xsmall-offset-3, html[dir] .row[dir="rtl"] .col.xsmall-offs
     }
 
     .col.xlarge-auto.xlarge-fill-space {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
+        min-width: 8.33333333%;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0;
+        width: auto;
     }
 
     .col.xlarge-1 {

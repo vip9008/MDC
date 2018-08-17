@@ -577,7 +577,7 @@ TEXT
                 <div class="space"></div>
 
                 <h6>Auto sizing</h6>
-                <p class="text-secondary">Columns with auto size class will be the same size as their content and their <b>width can't be less than 1 column</b>.</p>
+                <p class="text-secondary">Columns with auto size classes will take the same size as their content and their <b>width can't be less than 1 column</b>.</p>
 
                 <div class="container-fluid example bg-status-bar">
                     <div class="row">
@@ -608,14 +608,14 @@ TEXT
 
                 <div class="space"></div>
 
-                <p class="text-secondary">To fill the available empty space you can use <b>fill-space classes</b> on an auto sized column.</p>
+                <p class="text-secondary">To fill the available empty space you can use <b>fill-space classes</b>.</p>
 
                 <div class="container-fluid example bg-status-bar">
                     <div class="row">
                         <div class="col xsmall-auto medium-auto"><div class="box bg-<?= $accentColor ?>"></div></div>
                         <div class="col xsmall-3 medium-5"><div class="box bg-<?= $accentColor ?>"></div></div>
                         <div class="visible-xsmall visible-small visible-smallext" style="width: 100%; padding: 0.5rem;"></div>
-                        <div class="col xsmall-auto xsmall-fill-space medium-auto medium-fill-space"><div class="box bg-<?= $primaryColor ?>"></div></div>
+                        <div class="col xsmall-fill-space medium-fill-space"><div class="box bg-<?= $primaryColor ?>"></div></div>
                     </div>
                 </div>
 
@@ -625,7 +625,7 @@ TEXT
     <div class="row">
         <div class="col xsmall-auto medium-auto">...</div>
         <div class="col xsmall-3 medium-5">...</div>
-        <div class="col xsmall-auto xsmall-fill-space medium-auto medium-fill-space">...</div>
+        <div class="col xsmall-fill-space medium-fill-space">...</div>
         .
         .
     </div>
@@ -635,7 +635,7 @@ TEXT
 </div>
 TEXT
 ) ?></pre>
-                <p class="text-secondary yellow-700">Note: for <b>fill-space classes</b> to work the column must have an auto size class.</p>
+                <p class="text-secondary">Column with fill-space class.</p>
 
                 <div class="space"></div>
                 <div class="space"></div>
