@@ -579,6 +579,7 @@ a.material-icon::after, button.material-icon::after, .material-icon.interactive:
 .container, .container-fluid {
     margin: 0 auto;
     padding: 0 0.5rem;
+    width: 100%;
     max-width: 100%;
 }
 
