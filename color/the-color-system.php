@@ -249,7 +249,7 @@ $url = $prefix."color/the-color-system.php";
                 <p class="text-secondary">These palettes provide additional ways to use your primary and secondary colors, by providing lighter and darker options to separate surfaces and provide colors that meet accessibility standards.</p>
 
                 <a class="mdc-button bg-<?= $primaryColor ?>" href="https://material.io/tools/color" target="_blank">
-                    <div class="material-icon">launch</div>
+                    <div class="icon material-icon">launch</div>
                     Material palette generator
                 </a>
 
