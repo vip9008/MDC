@@ -244,13 +244,17 @@ html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary .header > .title + .thumbnail
     border-top-right-radius: 0.25rem;
 }
 
-.mdc-card > .mdc-button-group {
-    padding: 0;
-    margin: 0.5rem 0.25rem;
-}
-
 .mdc-card > .mdc-card-primary:last-child,
 .mdc-card > .mdc-button-group:last-child {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
+}
+
+.mdc-card > .mdc-button-group {
+    padding: 0;
+    margin: 0.25rem 0.25rem;
+}
+
+.mdc-card > .mdc-button-group > .mdc-button, .mdc-card > .mdc-button-group > .mdc-toggle-buttons {
+    margin: 0.25rem 0.25rem;
 }
