@@ -144,35 +144,35 @@ body {
 }
 
 .text-primary {
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
 }
 
 .text-secondary {
-    color: var(--text-secondary);
+    color: var(--text-secondary) !important;
 }
 
 .text-hint {
-    color: var(--text-hint);
+    color: var(--text-hint) !important;
 }
 
 .text-divider {
-    color: var(--text-divider);
+    color: var(--text-divider) !important;
 }
 
 .bg-status-bar {
-    background-color: var(--bg-status-bar);
+    background-color: var(--bg-status-bar) !important;
 }
 
 .bg-app-bar {
-    background-color: var(--bg-app-bar);
+    background-color: var(--bg-app-bar) !important;
 }
 
 .bg-main-content {
-    background-color: var(--bg-main-content);
+    background-color: var(--bg-main-content) !important;
 }
 
 .bg-cards {
-    background-color: var(--bg-cards);
+    background-color: var(--bg-cards) !important;
 }
 
 .red-50 {
