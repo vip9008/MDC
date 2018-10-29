@@ -1,6 +1,7 @@
 :root {
     --main-color: #000000;
     --initial-main-color: #000000;
+    --error-color: #B00020;
 
     --opacity-hover: 0.04;
     --opacity-focus: 0.12;
@@ -48,6 +49,7 @@
 .md-theme-light {
     --main-color: #000000;
     --initial-main-color: #000000;
+    --error-color: #B00020;
 
     --opacity-hover: 0.04;
     --opacity-focus: 0.12;
@@ -94,6 +96,7 @@
 .md-theme-dark {
     --main-color: #FFFFFF;
     --initial-main-color: #FFFFFF;
+    --error-color: #FF3159;
 
     --opacity-hover: 0.08;
     --opacity-focus: 0.24;
