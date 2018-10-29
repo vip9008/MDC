@@ -161,13 +161,13 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label {
     transform-origin: right top;
 }
 
-.mdc-text-field.active > .input + .label,
+.mdc-text-field.active > .label,
 .mdc-text-field > .input:focus + .label {
     color: var(--text-primary);
     transform: translateY(-50%) scale(0.75);
 }
 
-.mdc-text-field.focus > .input + .label {
+.mdc-text-field.focus > .label {
     transform: translateY(-50%) scale(0.75);
 }
 
@@ -296,6 +296,7 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     right: 0.75rem;
 }
 
+.mdc-text-field > .hint-block,
 .mdc-text-field > .help-block {
     padding: 0.0625rem 0.75rem 0;
     font-size: 0.75rem;
@@ -311,6 +312,12 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
+}
+
+.mdc-text-field.active > .hint-block
+.mdc-text-field.focus > .hint-block
+.mdc-text-field > .input:focus + .label + .hint-block {
+    color: var(--text-primary);
 }
 
 .mdc-text-field.standard {
@@ -345,8 +352,8 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .label {
     left: auto;
 }
 
-.mdc-text-field.standard.active > .input + .label,
-.mdc-text-field.standard.focus > .input + .label,
+.mdc-text-field.standard.active > .label,
+.mdc-text-field.standard.focus > .label,
 .mdc-text-field.standard > .input:focus + .label {
     transform: translateY(-100%) scale(0.75);
 }
@@ -445,6 +452,7 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
     right: 0;
 }
 
+.mdc-text-field.standard > .hint-block,
 .mdc-text-field.standard > .help-block {
     padding: 0.0625rem 0 0;
 }
@@ -540,8 +548,8 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
     right: 0.8125rem;
 }
 
-.mdc-text-field.outlined.active > .input + .label,
-.mdc-text-field.outlined.focus > .input + .label,
+.mdc-text-field.outlined.active > .label,
+.mdc-text-field.outlined.focus > .label,
 .mdc-text-field.outlined > .input:focus + .label {
     transform: translateY(-140%) scale(0.75);
 }
@@ -649,10 +657,10 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top {
     border-color: var(--initial-text-secondary);
 }
 
-.mdc-text-field.outlined.active > .input + .label + .outline,
-.mdc-text-field.outlined.active > .input + .label + .outline > .top,
-.mdc-text-field.outlined.active > .input + .label + .outline::before,
-.mdc-text-field.outlined.active > .input + .label + .outline::after {
+.mdc-text-field.outlined.active > .outline,
+.mdc-text-field.outlined.active > .outline > .top,
+.mdc-text-field.outlined.active > .outline::before,
+.mdc-text-field.outlined.active > .outline::after {
     border-color: var(--bg-border);
 }
 
