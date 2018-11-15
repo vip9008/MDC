@@ -1,0 +1,77 @@
+:root {
+    --nano-pane-color: rgba(0, 0, 0, 0.12);
+    --nano-slider-color: rgba(0, 0, 0, 0.38);
+}
+
+.md-theme-light {
+    --nano-pane-color: rgba(0, 0, 0, 0.12);
+    --nano-slider-color: rgba(0, 0, 0, 0.38);
+}
+
+.md-theme-dark {
+    --nano-pane-color: rgba(255, 255, 255, 0.12);
+    --nano-slider-color: rgba(255, 255, 255, 0.5);
+}
+
+.nano {
+    position : relative;
+    width: 100%;
+    height : 100%;
+    overflow : hidden;
+}
+
+.nano > .nano-content {
+    position: absolute;
+    overflow: scroll;
+    overflow-x: hidden;
+    top : 0;
+    right : 0;
+    bottom: 0;
+    left: 0;
+}
+
+.nano > .nano-content:focus {
+    outline: thin dotted;
+}
+
+.nano > .nano-content::-webkit-scrollbar {
+    display: none;
+}
+
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+    display: block;
+}
+
+.nano > .nano-pane {
+    background: var(--nano-pane-color);
+    position : absolute;
+    width: 0.25rem;
+    right: 0;
+    top: 0;
+    bottom : 0;
+    visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+    opacity: 0;
+    -webkit-transition: .2s;
+    -moz-transition : .2s;
+    -o-transition : .2s;
+    transition: .2s;
+    -moz-border-radius: 0.125rem;
+    -webkit-border-radius : 0.125rem;
+    border-radius : 0.125rem;
+}
+
+.nano > .nano-pane > .nano-slider {
+    background: var(--nano-slider-color);
+    position: relative;
+    margin: 0;
+    -moz-border-radius: inherit;
+    -webkit-border-radius : inherit;
+    border-radius : inherit;
+}
+
+.nano.visible-scrollbar > .nano-pane,
+.nano:hover > .nano-pane,
+.nano-pane.active,
+.nano-pane.flashed {
+    opacity: 1;
+}

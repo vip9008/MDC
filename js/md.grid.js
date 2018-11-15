@@ -44,3 +44,14 @@ function md_init()
 // })();
 
 var md_click_event = 'click';
+
+function nano_scoller_init(selector) {
+    $(selector).nanoScroller({
+        iOSNativeScrolling: true,
+        preventPageScrolling: true
+    });
+}
+
+$(document).ready(function() {
+    nano_scoller_init(".nano");
+});

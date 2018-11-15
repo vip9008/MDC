@@ -25,7 +25,7 @@ html[dir="rtl"] #mdc-nav-drawer {
     border-right: none;
 }
 
-#mdc-nav-drawer > .header {
+#mdc-nav-drawer .header {
     padding: 1rem;
 
     -webkit-touch-callout: none;
@@ -35,11 +35,11 @@ html[dir="rtl"] #mdc-nav-drawer {
     user-select: none;
 }
 
-#mdc-nav-drawer.fixed-header > .header {
+#mdc-nav-drawer.fixed-header .header {
     border-bottom: solid 0.0625rem var(--initial-bg-border);
 }
 
-#mdc-nav-drawer > .header > .title {
+#mdc-nav-drawer .header > .title {
     display: block;
     font-size: 1.25rem;
     letter-spacing: 0.0075em;
@@ -51,7 +51,7 @@ html[dir="rtl"] #mdc-nav-drawer {
     overflow: hidden;
 }
 
-#mdc-nav-drawer > .header > .subtext {
+#mdc-nav-drawer .header > .subtext {
     padding: 0;
     margin: 0;
     display: block;
@@ -69,12 +69,12 @@ html[dir="rtl"] #mdc-nav-drawer {
     overflow: hidden;
 }
 
-#mdc-nav-drawer > .header > a.subtext,
-#mdc-nav-drawer > .header > button.subtext {
+#mdc-nav-drawer .header > a.subtext,
+#mdc-nav-drawer .header > button.subtext {
     cursor: pointer;
 }
 
-#mdc-nav-drawer.fixed-header > .mdc-list-container {
+#mdc-nav-drawer.fixed-header .mdc-list-container {
     -ms-flex: 0 0 auto;
     flex: 1 1 auto;
     overflow-x: hidden;
@@ -88,7 +88,7 @@ html[dir="rtl"] #mdc-nav-drawer {
     --text-divider: var(--initial-text-divider);
 }
 
-#mdc-nav-drawer > .mdc-list-container:not(.standard) .mdc-list-item::before {
+#mdc-nav-drawer .mdc-list-container:not(.standard) .mdc-list-item::before {
     top: 0.25rem;
     right: 0.5rem;
     bottom: 0.25rem;
