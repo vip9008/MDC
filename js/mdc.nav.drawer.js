@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     $('body').on(md_click_event, '#mdc-nav-drawer > .nano .mdc-list-group.collapsed > .mdc-list-item', function(event) {
         setTimeout(function() {
-            nano_scoller_init("#mdc-nav-drawer.nano");
+            nano_scoller_init("#mdc-nav-drawer > .nano");
         }, 300);
     });
 
