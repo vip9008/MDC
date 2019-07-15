@@ -37,6 +37,16 @@ $(document).ready(function() {
         }
     });
 
+    $('.mdc-text-area').each(function() {
+        var value = $(this).children('.input').val();
+
+        if (value.length) {
+            $(this).addClass('focus');
+        } else {
+            $(this).removeClass('focus');
+        }
+    });
+
     mdc_init_outlined_textfields();
 
     $('body').on('change', '.mdc-text-field > .input', function() {
@@ -47,11 +57,31 @@ $(document).ready(function() {
         }
     });
 
+    $('body').on('change', '.mdc-text-area > .input > textarea', function() {
+        if($(this).val()) {
+            $(this).parent('.input').parent('.mdc-text-area').addClass('focus');
+        } else {
+            $(this).parent('.input').parent('.mdc-text-area').removeClass('focus');
+        }
+    });
+
     $('body').on('focus', '.mdc-text-field > .input', function() {
         $(this).parent('.mdc-text-field').addClass('active');
     });
 
+    $('body').on('focus', '.mdc-text-area > .input > textarea', function() {
+        $(this).parent('.input').parent('.mdc-text-area').addClass('active');
+    });
+
+    $('body').on(md_click_event + ' focus', '.mdc-text-area > .input', function() {
+        $(this).children('textarea').focus();
+    });
+
     $('body').on('blur', '.mdc-text-field > .input', function() {
         $(this).parent('.mdc-text-field').removeClass('active');
+    });
+
+    $('body').on('blur', '.mdc-text-area > .input > textarea', function() {
+        $(this).parent('.input').parent('.mdc-text-area').removeClass('active');
     });
 });

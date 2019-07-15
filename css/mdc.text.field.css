@@ -11,7 +11,23 @@
     max-width: 100%;
 }
 
-.mdc-text-field.full-width {
+.mdc-text-area {
+    --number-of-lines: 4;
+
+    will-change: transform, opacity;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 3.5rem;
+    margin: 1rem 0 0.5rem;
+    width: 17.5rem;
+    max-width: 100%;
+}
+
+.mdc-text-field.full-width,
+.mdc-text-area.full-width {
     width: 100%;
 }
 
@@ -32,11 +48,30 @@
     transform-origin: center center;
 }
 
-.mdc-text-field.active::after {
+.mdc-text-area > .input::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--bg-border);
+    will-change: transform;
+
+    transform: scale(0);
+    transition: transform 0.15s cubic-bezier(0.4,0,.2,1);
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.mdc-text-field.active::after,
+.mdc-text-area.active > .input::after {
     transform: scale(1);
 }
 
-.mdc-text-field.has-error {
+.mdc-text-field.has-error,
+.mdc-text-area.has-error {
     --text-primary: var(--error-color);
     --bg-border: var(--error-color);
 }
@@ -71,37 +106,103 @@
     transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
 }
 
-.mdc-text-field > .input:hover {
+.mdc-text-area > .input {
+    text-decoration: inherit;
+    text-transform: inherit;
+    padding: 1.5rem 0 0;
+    min-width: 100%;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+}
+
+.mdc-text-area > .input > textarea {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    min-height: 7.0625rem;
+    height: calc(1.75rem * var(--number-of-lines) + 0.0625rem); /*1.75 * LINES_NUMBER + .0625 rem*/
+    font-weight: 400;
+    letter-spacing: 0.009375em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    padding: 0 0.75rem;
+    width: 100%;
+    border: none;
+    border-bottom: 0.0625rem solid var(--initial-text-hint);
+    background: none;
+    background-color: var(--input);
+    color: var(--initial-text-primary);
+    resize: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    will-change: background-color;
+
+    -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+    -o-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+    transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+}
+
+.mdc-text-area > .input::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+    background-color: var(--input);
+    cursor: text;
+
+    -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+    -o-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+    transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+}
+
+.mdc-text-field > .input:hover,
+.mdc-text-area > .input:hover::before,
+.mdc-text-area > .input:hover > textarea {
     background-color: var(--input-hover);
     border-bottom-color: var(--initial-text-secondary);
 }
 
-.mdc-text-field > .input:active {
+.mdc-text-field > .input:active,
+.mdc-text-area > .input:active::before,
+.mdc-text-area > .input:active > textarea {
     background-color: var(--input-focus);
 }
 
-.mdc-text-field > .input:-webkit-autofill {
+.mdc-text-field > .input:-webkit-autofill,
+.mdc-text-area > .input > textarea:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
     box-shadow: 0 0 0 3rem var(--input) inset,
                 0 0 0 3rem var(--initial-bg-cards) inset !important;
 }
 
-.mdc-text-field > .input:hover:-webkit-autofill {
+.mdc-text-field > .input:hover:-webkit-autofill,
+.mdc-text-area > .input > textarea:hover:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input-hover) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
     box-shadow: 0 0 0 3rem var(--input-hover) inset,
                 0 0 0 3rem var(--initial-bg-cards) inset !important;
 }
 
-.mdc-text-field > .input:active:-webkit-autofill {
+.mdc-text-field > .input:active:-webkit-autofill,
+.mdc-text-area > .input > textarea:active:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input-focus) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
     box-shadow: 0 0 0 3rem var(--input-focus) inset,
                 0 0 0 3rem var(--initial-bg-cards) inset !important;
 }
 
-.mdc-text-field.active > .input {
+.mdc-text-field.active > .input,
+.mdc-text-area.active > .input::before,
+.mdc-text-area.active > .input > textarea {
     background-color: var(--input);
 }
 
@@ -111,7 +212,8 @@
     overflow: hidden;
 }
 
-.mdc-text-field > .label {
+.mdc-text-field > .label,
+.mdc-text-area > .label {
     font-size: 1rem;
     letter-spacing: 0.03125rem;
     text-decoration: inherit;
@@ -145,8 +247,11 @@
 }
 
 html[dir="ltr"] .mdc-text-field > .label,
+html[dir="ltr"] .mdc-text-area > .label,
 html[dir] *[dir="ltr"] .mdc-text-field > .label,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .label {
+html[dir] *[dir="ltr"] .mdc-text-area > .label,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .label,
+html[dir] *[dir] .mdc-text-area[dir="ltr"] > .label {
     left: 0.75rem;
     right: auto;
 
@@ -156,8 +261,11 @@ html[dir] *[dir] .mdc-text-field[dir="ltr"] > .label {
 }
 
 html[dir="rtl"] .mdc-text-field > .label,
+html[dir="rtl"] .mdc-text-area > .label,
 html[dir] *[dir="rtl"] .mdc-text-field > .label,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label {
+html[dir] *[dir="rtl"] .mdc-text-area > .label,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label,
+html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
     left: auto;
     right: 0.75rem;
 
@@ -167,22 +275,27 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label {
 }
 
 .mdc-text-field.active > .label,
-.mdc-text-field > .input:focus + .label {
+.mdc-text-area.active > .label,
+.mdc-text-field > .input:focus + .label,
+.mdc-text-area > .input > textarea:focus + .label {
     color: var(--text-primary);
     transform: translateY(-50%) scale(0.75);
 }
 
-.mdc-text-field.focus > .label {
+.mdc-text-field.focus > .label,
+.mdc-text-area.focus > .label {
     transform: translateY(-50%) scale(0.75);
 }
 
-.mdc-text-field > .input[disabled], .mdc-text-field > .input:disabled {
+.mdc-text-field > .input[disabled], .mdc-text-field > .input:disabled,
+.mdc-text-field > .input.disabled {
     background-color: var(--input-disabled);
     color: var(--initial-text-secondary);
     border-bottom-color: var(--initial-text-divider);
 }
 
-.mdc-text-field > .input[disabled] + .label, .mdc-text-field > .input:disabled + .label {
+.mdc-text-field > .input[disabled] + .label, .mdc-text-field > .input:disabled + .label,
+.mdc-text-field > .input.disabled + .label {
     color: var(--initial-text-hint);
 }
 
@@ -302,7 +415,9 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
 }
 
 .mdc-text-field > .hint-block,
-.mdc-text-field > .help-block {
+.mdc-text-area > .hint-block,
+.mdc-text-field > .help-block,
+.mdc-text-area > .help-block {
     padding: 0.0625rem 0.75rem 0;
     font-size: 0.75rem;
     line-height: 1.25rem;
@@ -320,12 +435,14 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
 }
 
 .mdc-text-field.active > .hint-block,
-.mdc-text-field > .input:focus + .label + .hint-block {
+.mdc-text-area.active > .hint-block {
     color: var(--text-primary);
 }
 
 .mdc-text-field.has-error > .hint-block,
-.mdc-text-field.has-error > .help-block {
+.mdc-text-area.has-error > .hint-block,
+.mdc-text-field.has-error > .help-block,
+.mdc-text-area.has-error > .help-block {
     color: var(--error-color);
 }
 
