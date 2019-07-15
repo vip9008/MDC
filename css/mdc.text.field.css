@@ -787,7 +787,7 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top {
 .mdc-text-field.outlined.active > .outline > .top,
 .mdc-text-field.outlined.active > .outline::before,
 .mdc-text-field.outlined.active > .outline::after {
-    border-color: var(--bg-border);
+    border-color: var(--bg-border) !important;
 }
 
 .mdc-text-field:not(.focus) > .input:hover[disabled],
