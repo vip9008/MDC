@@ -25,11 +25,19 @@
     overflow: scroll;
     overflow-x: hidden;
     top : 0;
-    right : 0;
     bottom: 0;
+    right: 0;
     left: 0;
 }
+/*
+html[dir="ltr"] .nano > .nano-content {
+    right: -5px;
+}
 
+html[dir="rtl"] .nano > .nano-content {
+    left: -5px;
+}
+*/
 .nano > .nano-content:focus {
     outline: thin dotted;
 }
@@ -47,6 +55,7 @@
     position : absolute;
     width: 0.25rem;
     right: 0;
+    left: auto;
     top: 0;
     bottom : 0;
     visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
@@ -58,6 +67,16 @@
     -moz-border-radius: 0.125rem;
     -webkit-border-radius : 0.125rem;
     border-radius : 0.125rem;
+}
+
+html[dir="ltr"] .nano > .nano-pane {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .nano > .nano-pane {
+    right: auto;
+    left: 0;
 }
 
 .nano > .nano-pane > .nano-slider {
