@@ -20,7 +20,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
-    min-height: 3.5rem;
     margin: 1rem 0 0.5rem;
     width: 17.5rem;
     max-width: 100%;
@@ -51,7 +50,7 @@
 .mdc-text-area > .input::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -0.0625rem;
     left: 0;
     width: 100%;
     height: 0.125rem;
@@ -116,12 +115,25 @@
     position: relative;
     line-height: 0;
     font-size: 0;
+    background-color: var(--input);
+    border-radius: 0.25rem 0.25rem 0 0;
+    will-change: background-color;
+    cursor: text;
+    border-bottom: 0.0625rem solid var(--initial-text-hint);
+
+    -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+    -o-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+    transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+}
+
+.mdc-text-area > .input.disabled {
+    cursor: default;
 }
 
 .mdc-text-area > .input > textarea {
     font-size: 1rem;
     line-height: 1.75rem;
-    min-height: 7.0625rem;
+    min-height: 7rem;
     height: calc(1.75rem * var(--number-of-lines) + 0.0625rem); /*1.75 * LINES_NUMBER + .0625 rem*/
     font-weight: 400;
     letter-spacing: 0.009375em;
@@ -130,49 +142,27 @@
     padding: 0 0.75rem;
     width: 100%;
     border: none;
-    border-bottom: 0.0625rem solid var(--initial-text-hint);
     background: none;
-    background-color: var(--input);
     color: var(--initial-text-primary);
     resize: none;
 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    will-change: background-color;
-
-    -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
-    -o-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
-    transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
 }
 
-.mdc-text-area > .input::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1.5rem;
-    border-radius: 0.25rem 0.25rem 0 0;
-    background-color: var(--input);
-    cursor: text;
-
-    -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
-    -o-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
-    transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
+.mdc-text-field > .input:hover {
+    background-color: var(--input-hover);
+    border-bottom-color: var(--initial-text-secondary);
 }
 
-.mdc-text-field > .input:hover,
-.mdc-text-area > .input:hover::before,
-.mdc-text-area > .input:hover > textarea {
+.mdc-text-area > .input:hover {
     background-color: var(--input-hover);
     border-bottom-color: var(--initial-text-secondary);
 }
 
 .mdc-text-field > .input:active,
-.mdc-text-area > .input:active::before,
-.mdc-text-area > .input:active > textarea {
+.mdc-text-area > .input:active {
     background-color: var(--input-focus);
 }
 
@@ -201,8 +191,7 @@
 }
 
 .mdc-text-field.active > .input,
-.mdc-text-area.active > .input::before,
-.mdc-text-area.active > .input > textarea {
+.mdc-text-area.active > .input, {
     background-color: var(--input);
 }
 
@@ -275,9 +264,8 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
 }
 
 .mdc-text-field.active > .label,
-.mdc-text-area.active > .label,
 .mdc-text-field > .input:focus + .label,
-.mdc-text-area > .input > textarea:focus + .label {
+.mdc-text-area.active > .label {
     color: var(--text-primary);
     transform: translateY(-50%) scale(0.75);
 }
@@ -287,15 +275,23 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
     transform: translateY(-50%) scale(0.75);
 }
 
-.mdc-text-field > .input[disabled], .mdc-text-field > .input:disabled,
-.mdc-text-field > .input.disabled {
+.mdc-text-field > .input[disabled], .mdc-text-field > .input:disabled {
     background-color: var(--input-disabled);
     color: var(--initial-text-secondary);
     border-bottom-color: var(--initial-text-divider);
 }
 
+.mdc-text-area > .input.disabled {
+    background-color: var(--input-disabled);
+}
+
+.mdc-text-area > .input.disabled > textarea {
+    color: var(--initial-text-secondary);
+    border-bottom-color: var(--initial-text-divider);
+}
+
 .mdc-text-field > .input[disabled] + .label, .mdc-text-field > .input:disabled + .label,
-.mdc-text-field > .input.disabled + .label {
+.mdc-text-area > .input.disabled + .label {
     color: var(--initial-text-hint);
 }
 
@@ -462,6 +458,16 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     border-radius: 0;
 }
 
+.mdc-text-area.standard > .input {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.mdc-text-area.standard > .input > textarea {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .mdc-text-field.standard > .label {
     top: 1.625rem;
     right: auto;
@@ -473,7 +479,13 @@ html[dir] *[dir="ltr"] .mdc-text-field.standard > .label,
 html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .label,
 html[dir="rtl"] .mdc-text-field.standard > .label,
 html[dir] *[dir="rtl"] .mdc-text-field.standard > .label,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .label {
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .label,
+html[dir="ltr"] .mdc-text-area.standard > .label,
+html[dir] *[dir="ltr"] .mdc-text-area.standard > .label,
+html[dir] *[dir] .mdc-text-area.standard[dir="ltr"] > .label,
+html[dir="rtl"] .mdc-text-area.standard > .label,
+html[dir] *[dir="rtl"] .mdc-text-area.standard > .label,
+html[dir] *[dir] .mdc-text-area.standard[dir="rtl"] > .label {
     right: auto;
     left: auto;
 }
@@ -482,6 +494,11 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .label {
 .mdc-text-field.standard.focus > .label,
 .mdc-text-field.standard > .input:focus + .label {
     transform: translateY(-100%) scale(0.75);
+}
+
+.mdc-text-area.standard.active > .label,
+.mdc-text-area.standard.focus > .label {
+    transform: translateY(-68%) scale(0.75);
 }
 
 .mdc-text-field.standard > .icon {
@@ -579,11 +596,14 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
 }
 
 .mdc-text-field.standard > .hint-block,
-.mdc-text-field.standard > .help-block {
+.mdc-text-field.standard > .help-block,
+.mdc-text-area.standard > .hint-block,
+.mdc-text-area.standard > .help-block {
     padding: 0.0625rem 0 0;
 }
 
-.mdc-text-field.outlined::after {
+.mdc-text-field.outlined::after,
+.mdc-text-area.outlined > .input::after {
     display: none;
 }
 
@@ -594,6 +614,19 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
     padding: 0.75rem 0.8125rem;
     will-change: border-color;
     transition: border-color 0.15s cubic-bezier(0.4,0,.2,1);
+}
+
+.mdc-text-area.outlined > .input {
+    background-color: transparent;
+    border: 0.0625rem solid var(--initial-text-hint);
+    border-radius: 0.25rem;
+    padding: 0.75rem 0 0;
+    will-change: border-color;
+    transition: border-color 0.15s cubic-bezier(0.4,0,.2,1);
+}
+
+.mdc-text-area.outlined > .input > textarea {
+    padding: 0 0.8125rem 0.75rem;
 }
 
 .mdc-text-field.outlined > .icon + .input,
@@ -616,17 +649,21 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input {
     padding: 0.75rem 2.9375rem 0.75rem 0.75rem;
 }
 
-.mdc-text-field.outlined > .input:hover {
+.mdc-text-field.outlined > .input:hover,
+.mdc-text-area.outlined > .input:hover {
     border-color: var(--initial-text-secondary);
 }
 
 .mdc-text-field.outlined.active > .input,
 .mdc-text-field.outlined.focus > .input,
-.mdc-text-field.outlined > .input:focus {
+.mdc-text-field.outlined > .input:focus,
+.mdc-text-area.outlined.active > .input,
+.mdc-text-area.outlined.focus > .input {
     border-color: transparent;
 }
 
-.mdc-text-field.outlined > .label {
+.mdc-text-field.outlined > .label,
+.mdc-text-area.outlined > .label {
     width: auto;
     max-width: calc(100% - 1.625rem);
     left: 0.8125rem;
@@ -653,7 +690,10 @@ html[dir] *[dir] .mdc-text-field.outlined.focus[dir="ltr"] > .icon + .input + .l
 .mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input + .label {
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input + .label,
+html[dir="ltr"] .mdc-text-area.outlined > .label,
+html[dir] *[dir="ltr"] .mdc-text-area.outlined > .label,
+html[dir] *[dir] .mdc-text-area.outlined[dir="ltr"] > .label {
     left: 0.8125rem;
     right: auto;
 }
@@ -669,14 +709,19 @@ html[dir] *[dir="rtl"] .mdc-text-field.outlined.focus > .icon + .input + .label,
 html[dir] *[dir] .mdc-text-field.outlined.focus[dir="rtl"] > .icon + .input + .label,
 html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input + .label {
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input + .label,
+html[dir="rtl"] .mdc-text-area.outlined > .label,
+html[dir] *[dir="rtl"] .mdc-text-area.outlined > .label,
+html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     left: auto;
     right: 0.8125rem;
 }
 
 .mdc-text-field.outlined.active > .label,
 .mdc-text-field.outlined.focus > .label,
-.mdc-text-field.outlined > .input:focus + .label {
+.mdc-text-field.outlined > .input:focus + .label,
+.mdc-text-area.outlined.active > .label,
+.mdc-text-area.outlined.focus > .label {
     transform: translateY(-140%) scale(0.75);
 }
 
@@ -704,12 +749,38 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
     opacity: 1;
 }
 
-.mdc-text-field.outlined.focus > .outline,
-.mdc-text-field.outlined > .input:focus + .label + .outline {
+.mdc-text-area.outlined > .input > .outline {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.0625rem;
+    right: 0.0625rem;
+    margin: 0 0.5rem;
+    pointer-events: none;
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity 0.15s cubic-bezier(0.4,0,.2,1);
+    border-bottom: solid 0.0625rem var(--initial-text-hint);
+}
+
+.mdc-text-area.outlined.active > .input > .outline {
+    top: -0.0625rem;
+    bottom: -0.0625rem;
+    left: -0.0625rem;
+    right: -0.0625rem;
+    margin: 0 0.625rem;
+    border-bottom: solid 0.125rem var(--initial-text-hint);
     opacity: 1;
 }
 
-.mdc-text-field.outlined > .outline::before {
+.mdc-text-field.outlined.focus > .outline,
+.mdc-text-field.outlined > .input:focus + .label + .outline,
+.mdc-text-area.outlined.focus > .input > .outline {
+    opacity: 1;
+}
+
+.mdc-text-field.outlined > .outline::before,
+.mdc-text-area.outlined > .input > .outline::before {
     content: '';
     position: absolute;
     top: 0;
@@ -721,7 +792,8 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
     border-right: none;
 }
 
-.mdc-text-field.outlined.active > .outline::before {
+.mdc-text-field.outlined.active > .outline::before,
+.mdc-text-area.outlined.active > .input > .outline::before {
     left: -0.625rem;
     bottom: -0.125rem;
     width: 0.5rem;
@@ -729,7 +801,8 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
     border-right: none;
 }
 
-.mdc-text-field.outlined > .outline::after {
+.mdc-text-field.outlined > .outline::after,
+.mdc-text-area.outlined > .input > .outline::after {
     content: '';
     position: absolute;
     top: 0;
@@ -741,7 +814,8 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
     border-left: none;
 }
 
-.mdc-text-field.outlined.active > .outline::after {
+.mdc-text-field.outlined.active > .outline::after,
+.mdc-text-area.outlined.active > .input > .outline::after {
     right: -0.625rem;
     bottom: -0.125rem;
     width: 0.5rem;
@@ -749,7 +823,8 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
     border-left: none;
 }
 
-.mdc-text-field.outlined > .outline > .top {
+.mdc-text-field.outlined > .outline > .top,
+.mdc-text-area.outlined > .input > .outline > .top {
     position: absolute;
     top: 0;
     left: auto;
@@ -758,20 +833,27 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input +
     border-top: solid 0.0625rem var(--initial-text-hint);
 }
 
-.mdc-text-field.outlined.active > .outline > .top {
+.mdc-text-field.outlined.active > .outline > .top,
+.mdc-text-area.outlined.active > .input > .outline > .top {
     border-top: solid 0.125rem var(--initial-text-hint);
 }
 
 html[dir="ltr"] .mdc-text-field.outlined > .outline > .top,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined > .outline > .top,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .outline > .top {
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .outline > .top,
+html[dir="ltr"] .mdc-text-area.outlined > .input > .outline > .top,
+html[dir] *[dir="ltr"] .mdc-text-area.outlined > .input > .outline > .top,
+html[dir] *[dir] .mdc-text-area.outlined[dir="ltr"] > .input > .outline > .top {
     left: auto;
     right: 0;
 }
 
 html[dir="rtl"] .mdc-text-field.outlined > .outline > .top,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .outline > .top,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top {
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top,
+html[dir="rtl"] .mdc-text-area.outlined > .input > .outline > .top,
+html[dir] *[dir="rtl"] .mdc-text-area.outlined > .input > .outline > .top,
+html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
     left: 0;
     right: auto;
 }
@@ -779,14 +861,22 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top {
 .mdc-text-field.outlined > .input:hover + .label + .outline,
 .mdc-text-field.outlined > .input:hover + .label + .outline > .top,
 .mdc-text-field.outlined > .input:hover + .label + .outline::before,
-.mdc-text-field.outlined > .input:hover + .label + .outline::after {
+.mdc-text-field.outlined > .input:hover + .label + .outline::after,
+.mdc-text-area.outlined > .input:hover > .outline,
+.mdc-text-area.outlined > .input:hover > .outline > .top,
+.mdc-text-area.outlined > .input:hover > .outline::before,
+.mdc-text-area.outlined > .input:hover > .outline::after {
     border-color: var(--initial-text-secondary);
 }
 
 .mdc-text-field.outlined.active > .outline,
 .mdc-text-field.outlined.active > .outline > .top,
 .mdc-text-field.outlined.active > .outline::before,
-.mdc-text-field.outlined.active > .outline::after {
+.mdc-text-field.outlined.active > .outline::after,
+.mdc-text-area.outlined.active > .input > .outline,
+.mdc-text-area.outlined.active > .input > .outline > .top,
+.mdc-text-area.outlined.active > .input > .outline::before,
+.mdc-text-area.outlined.active > .input > .outline::after {
     border-color: var(--bg-border) !important;
 }
 
@@ -801,6 +891,12 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top {
 .mdc-text-field > .input:disabled + .label + .outline,
 .mdc-text-field > .input:disabled + .label + .outline > .top,
 .mdc-text-field > .input:disabled + .label + .outline::before,
-.mdc-text-field > .input:disabled + .label + .outline::after {
+.mdc-text-field > .input:disabled + .label + .outline::after,
+.mdc-text-area:not(.focus) > .input.disabled:hover,
+.mdc-text-area:not(.focus) > .input.disabled,
+.mdc-text-area > .input.disabled > .outline,
+.mdc-text-area > .input.disabled > .outline > .top,
+.mdc-text-area > .input.disabled > .outline::before,
+.mdc-text-area > .input.disabled > .outline::after {
     border-color: var(--initial-text-divider) !important;
 }

@@ -1,23 +1,25 @@
-function mdc_init_outlined_textfields() {
-    $('.mdc-text-field.outlined').each(function() {
-        if (!$(this).children('.outline').length) {
-            $('<div class="outline"><div class="top"></div></div>').insertAfter($(this).children('.label'));
-        }
-
-        var base_size = parseInt($('body').css('font-size'));
-        var label_width = ($(this).children('.label').width() * 0.75) / base_size;
-        $(this).children('.outline').children('.top').css('width', 'calc(100% - ' + (label_width + 0.5) + 'rem)');
+function mdc_outlined_fields_init() {
+    $('.mdc-text-field.outlined, .mdc-text-area.outlined').each(function() {
+        mdc_outlined_field_init(this);
     });
 }
 
-function mdc_init_field(outlined_text_field) {
-    if (!$(outlined_text_field).children('.outline').length) {
-        $('<div class="outline"><div class="top"></div></div>').insertAfter($(outlined_text_field).children('.label'));
+function mdc_outlined_field_init(outlined_text_field) {
+    var container = $(outlined_text_field);
+    var target = $(container).children('.label');
+
+    if ($(outlined_text_field).hasClass('mdc-text-area')) {
+        container = $(outlined_text_field).children('.input');
+        target = $(container).children('textarea');
+    }
+
+    if (!$(container).children('.outline').length) {
+        $('<div class="outline"><div class="top"></div></div>').insertAfter($(target));
     }
 
     var base_size = parseInt($('body').css('font-size'));
     var label_width = ($(outlined_text_field).children('.label').width() * 0.75) / base_size;
-    $(outlined_text_field).children('.outline').children('.top').css('width', 'calc(100% - ' + (label_width + 0.5) + 'rem)');
+    $(container).children('.outline').children('.top').css('width', 'calc(100% - ' + (label_width + 0.5) + 'rem)');
 }
 
 $(document).ready(function() {
@@ -38,16 +40,20 @@ $(document).ready(function() {
     });
 
     $('.mdc-text-area').each(function() {
-        var value = $(this).children('.input').val();
+        var value = $(this).children('.input').children('textarea').val();
 
         if (value.length) {
             $(this).addClass('focus');
         } else {
             $(this).removeClass('focus');
         }
+
+        if ($(this).children('.input').hasClass('disabled')) {
+            $(this).children('.input').children('textarea').prop('disabled', true);
+        }
     });
 
-    mdc_init_outlined_textfields();
+    mdc_outlined_fields_init();
 
     $('body').on('change', '.mdc-text-field > .input', function() {
         if($(this).val()) {
@@ -69,12 +75,13 @@ $(document).ready(function() {
         $(this).parent('.mdc-text-field').addClass('active');
     });
 
-    $('body').on('focus', '.mdc-text-area > .input > textarea', function() {
+    $('body').on('focus', '.mdc-text-area > .input > textarea', function(event) {
+        event.stopPropagation();
         $(this).parent('.input').parent('.mdc-text-area').addClass('active');
     });
 
     $('body').on(md_click_event + ' focus', '.mdc-text-area > .input', function() {
-        $(this).children('textarea').focus();
+        $(this).children('textarea').trigger('focus');
     });
 
     $('body').on('blur', '.mdc-text-field > .input', function() {
