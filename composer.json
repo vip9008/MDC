@@ -1,0 +1,24 @@
+{
+    "name": "vip9008/mdc",
+    "description": "Material Design Components for yii2 framework.",
+    "type": "library",
+    "keywords": ["HTML", "CSS", "JS", "library", "extension", "MDC", "Material", "Google"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Hussain Almoamen",
+            "email": "Almoamen.M.H@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "vip9008\\MD_Assets\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:vip9008/MDC.git"
+        }
+    ]
+}
