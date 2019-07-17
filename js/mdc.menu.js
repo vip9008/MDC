@@ -65,10 +65,11 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
-    $('body').on('keyup', '.mdc-menu-container.select-menu .mdc-text-field.mdc-searchable > .input', function(event) {
+    $('body').on('keyup', '.mdc-menu-container.select-menu .mdc-text-field.mdc-searchable > .input > input', function(event) {
         var filter = $(this).val().toUpperCase().replace("'", '');
         var found = false;
-        $(this).closest('.select-menu').find('.mdc-list-container .mdc-list-item').each(function() {
+        var container = $(this).closest('.select-menu');
+        $(container).find('.mdc-list-container .mdc-list-item').each(function() {
             if ($(this).children('.text').text().toUpperCase().replace("'", '').indexOf(filter) > -1) {
                 $(this).removeClass('hidden');
                 found = true;
@@ -77,9 +78,9 @@ $(document).ready(function() {
             }
         });
         if (!found) {
-            $(this).closest('.select-menu').find('.mdc-list-container .mdc-error-message').addClass('visible');
+            $(container).find('.mdc-list-container .mdc-error-message').addClass('visible');
         } else {
-            $(this).closest('.select-menu').find('.mdc-list-container .mdc-error-message').removeClass('visible');
+            $(container).find('.mdc-list-container .mdc-error-message').removeClass('visible');
         }
     });
 
@@ -95,7 +96,7 @@ $(document).ready(function() {
 
         var value = $(this).addClass('selected').attr('data-value');
         var text = $(this).attr('data-label');
-        var input = $(container).find('.mdc-text-field').children('.input');
+        var input = $(container).find('.mdc-text-field').children('.input').children().first();
 
         if ($(input).prop("tagName").toLowerCase() == 'input') {
             $(input).val(text);
@@ -120,9 +121,9 @@ $(document).ready(function() {
             $(this).find('.mdc-list-container .mdc-list-item').removeClass('hidden').removeClass('visible');
             var selected = $(this).find('.mdc-list-container .mdc-list-item.selected');
             if ($(selected).length) {
-                $(field).children('.input').val($(selected).attr('data-label')).trigger('change');
+                $(field).children('.input').children('input').val($(selected).attr('data-label')).trigger('change');
             } else {
-                $(field).children('.input').val('').trigger('change');
+                $(field).children('.input').children('input').val('').trigger('change');
             }
 
             return;

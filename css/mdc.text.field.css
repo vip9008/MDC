@@ -62,7 +62,6 @@
     background-color: var(--input);
     border-radius: 0.25rem 0.25rem 0 0;
     will-change: background-color;
-    cursor: text;
     border-bottom: 0.0625rem solid var(--initial-text-hint);
 
     -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
@@ -72,6 +71,7 @@
 
 .mdc-text-area > .input {
     padding: 1.5rem 0 0;
+    cursor: text;
 }
 
 .mdc-text-field > .input.disabled,
