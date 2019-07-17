@@ -5,16 +5,10 @@ function mdc_outlined_fields_init() {
 }
 
 function mdc_outlined_field_init(outlined_text_field) {
-    var container = $(outlined_text_field);
-    var target = $(container).children('.label');
-
-    if ($(outlined_text_field).hasClass('mdc-text-area')) {
-        container = $(outlined_text_field).children('.input');
-        target = $(container).children('textarea');
-    }
+    var container = $(outlined_text_field).children('.input');
 
     if (!$(container).children('.outline').length) {
-        $('<div class="outline"><div class="top"></div></div>').insertAfter($(target));
+        $(container).append('<div class="outline"><div class="top"></div></div>');
     }
 
     var base_size = parseInt($('body').css('font-size'));
@@ -26,16 +20,20 @@ $(document).ready(function() {
     $('.mdc-text-field').each(function() {
         var value = '';
 
-        if ($(this).children('.input').prop("tagName").toLowerCase() == 'input') {
-            value = $(this).children('.input').val();
+        if ($(this).children('.input').children('input').length) {
+            value = $(this).children('.input').children('input').val();
         } else {
-            value = $(this).children('.input').text();
+            value = $(this).children('.input').children('div').first().text();
         }
 
         if (value.length) {
             $(this).addClass('focus');
         } else {
             $(this).removeClass('focus');
+        }
+
+        if ($(this).children('.input').hasClass('disabled') && $(this).children('.input').children('input').length) {
+            $(this).children('.input').children('input').prop('disabled', true);
         }
     });
 
@@ -55,11 +53,11 @@ $(document).ready(function() {
 
     mdc_outlined_fields_init();
 
-    $('body').on('change', '.mdc-text-field > .input', function() {
+    $('body').on('change', '.mdc-text-field > .input > input', function() {
         if($(this).val()) {
-            $(this).parent('.mdc-text-field').addClass('focus');
+            $(this).parent('.input').parent('.mdc-text-field').addClass('focus');
         } else {
-            $(this).parent('.mdc-text-field').removeClass('focus');
+            $(this).parent('.input').parent('.mdc-text-field').removeClass('focus');
         }
     });
 
@@ -71,8 +69,8 @@ $(document).ready(function() {
         }
     });
 
-    $('body').on('focus', '.mdc-text-field > .input', function() {
-        $(this).parent('.mdc-text-field').addClass('active');
+    $('body').on('focus', '.mdc-text-field > .input > input', function() {
+        $(this).parent('.input').parent('.mdc-text-field').addClass('active');
     });
 
     $('body').on('focus', '.mdc-text-area > .input > textarea', function(event) {
@@ -84,8 +82,8 @@ $(document).ready(function() {
         $(this).children('textarea').trigger('focus');
     });
 
-    $('body').on('blur', '.mdc-text-field > .input', function() {
-        $(this).parent('.mdc-text-field').removeClass('active');
+    $('body').on('blur', '.mdc-text-field > .input > input', function() {
+        $(this).parent('.input').parent('.mdc-text-field').removeClass('active');
     });
 
     $('body').on('blur', '.mdc-text-area > .input > textarea', function() {

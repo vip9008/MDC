@@ -1,3 +1,4 @@
+.mdc-text-area,
 .mdc-text-field {
     will-change: transform, opacity;
     display: -ms-inline-flexbox;
@@ -5,7 +6,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
-    min-height: 3.5rem;
     margin: 1rem 0 0.5rem;
     width: 17.5rem;
     max-width: 100%;
@@ -13,16 +13,6 @@
 
 .mdc-text-area {
     --number-of-lines: 4;
-
-    will-change: transform, opacity;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    position: relative;
-    margin: 1rem 0 0.5rem;
-    width: 17.5rem;
-    max-width: 100%;
 }
 
 .mdc-text-field.full-width,
@@ -30,23 +20,7 @@
     width: 100%;
 }
 
-.mdc-text-field::after {
-    content: '';
-    position: absolute;
-    top: 3.375rem;
-    left: 0;
-    width: 100%;
-    height: 0.125rem;
-    background-color: var(--bg-border);
-    will-change: transform;
-
-    transform: scale(0);
-    transition: transform 0.15s cubic-bezier(0.4,0,.2,1);
-    -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-}
-
+.mdc-text-field > .input::::after
 .mdc-text-area > .input::after {
     content: '';
     position: absolute;
@@ -64,7 +38,7 @@
     transform-origin: center center;
 }
 
-.mdc-text-field.active::after,
+.mdc-text-field.active > .input::after,
 .mdc-text-area.active > .input::after {
     transform: scale(1);
 }
@@ -75,40 +49,10 @@
     --bg-border: var(--error-color);
 }
 
-.mdc-text-field > .input {
-    font-size: 1rem;
-    line-height: 1.75rem;
-    font-weight: 400;
-    letter-spacing: 0.009375em;
-    text-decoration: inherit;
-    text-transform: inherit;
-    width: 100%;
-    min-width: 100%;
-    min-height: 3.5rem;
-    padding: 1.25rem 0.75rem 0;
-    border: none;
-    border-bottom: 0.0625rem solid var(--initial-text-hint);
-    border-radius: 0.25rem 0.25rem 0 0;
-    background: none;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    background-color: var(--input);
-    color: var(--initial-text-primary);
-
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    will-change: background-color;
-
-    -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
-    -o-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
-    transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
-}
-
+.mdc-text-field > .input,
 .mdc-text-area > .input {
     text-decoration: inherit;
     text-transform: inherit;
-    padding: 1.5rem 0 0;
     min-width: 100%;
     -ms-flex-item-align: end;
     align-self: flex-end;
@@ -126,36 +70,46 @@
     transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
 }
 
+.mdc-text-area > .input {
+    padding: 1.5rem 0 0;
+}
+
+.mdc-text-field > .input.disabled,
 .mdc-text-area > .input.disabled {
     cursor: default;
 }
 
+.mdc-text-field > .input > input,
+.mdc-text-field > .input > div:not(.outline),
 .mdc-text-area > .input > textarea {
     font-size: 1rem;
     line-height: 1.75rem;
-    min-height: 7rem;
-    height: calc(1.75rem * var(--number-of-lines) + 0.0625rem); /*1.75 * LINES_NUMBER + .0625 rem*/
+    min-height: 3.5rem;
+    height: 3.5rem;
     font-weight: 400;
     letter-spacing: 0.009375em;
     text-decoration: inherit;
     text-transform: inherit;
-    padding: 0 0.75rem;
+    padding: 1.25rem 0.75rem 0;
+    min-width: 100%;
     width: 100%;
     border: none;
     background: none;
     color: var(--initial-text-primary);
-    resize: none;
 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-.mdc-text-field > .input:hover {
-    background-color: var(--input-hover);
-    border-bottom-color: var(--initial-text-secondary);
+.mdc-text-area > .input > textarea {
+    min-height: 7rem;
+    height: calc(1.75rem * var(--number-of-lines) + 0.0625rem); /*1.75 * LINES_NUMBER + .0625 rem*/
+    padding: 0 0.75rem;
+    resize: none;
 }
 
+.mdc-text-field > .input:hover,
 .mdc-text-area > .input:hover {
     background-color: var(--input-hover);
     border-bottom-color: var(--initial-text-secondary);
@@ -166,7 +120,7 @@
     background-color: var(--input-focus);
 }
 
-.mdc-text-field > .input:-webkit-autofill,
+.mdc-text-field > .input > input:-webkit-autofill,
 .mdc-text-area > .input > textarea:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
@@ -174,7 +128,7 @@
                 0 0 0 3rem var(--initial-bg-cards) inset !important;
 }
 
-.mdc-text-field > .input:hover:-webkit-autofill,
+.mdc-text-field > .input > input:hover:-webkit-autofill,
 .mdc-text-area > .input > textarea:hover:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input-hover) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
@@ -182,7 +136,7 @@
                 0 0 0 3rem var(--initial-bg-cards) inset !important;
 }
 
-.mdc-text-field > .input:active:-webkit-autofill,
+.mdc-text-field > .input > input:active:-webkit-autofill,
 .mdc-text-area > .input > textarea:active:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input-focus) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
@@ -195,7 +149,7 @@
     background-color: var(--input);
 }
 
-.mdc-text-field > div.input {
+.mdc-text-field > .input > div:not(.outline) {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -264,7 +218,6 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
 }
 
 .mdc-text-field.active > .label,
-.mdc-text-field > .input:focus + .label,
 .mdc-text-area.active > .label {
     color: var(--text-primary);
     transform: translateY(-50%) scale(0.75);
@@ -275,22 +228,19 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
     transform: translateY(-50%) scale(0.75);
 }
 
-.mdc-text-field > .input[disabled], .mdc-text-field > .input:disabled {
-    background-color: var(--input-disabled);
-    color: var(--initial-text-secondary);
-    border-bottom-color: var(--initial-text-divider);
-}
-
+.mdc-text-field > .input.disabled,
 .mdc-text-area > .input.disabled {
     background-color: var(--input-disabled);
 }
 
+.mdc-text-field > .input.disabled > input,
+.mdc-text-field > .input.disabled > div,
 .mdc-text-area > .input.disabled > textarea {
     color: var(--initial-text-secondary);
     border-bottom-color: var(--initial-text-divider);
 }
 
-.mdc-text-field > .input[disabled] + .label, .mdc-text-field > .input:disabled + .label,
+.mdc-text-field > .input.disabled + .label,
 .mdc-text-area > .input.disabled + .label {
     color: var(--initial-text-hint);
 }
@@ -336,9 +286,9 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon {
     right: 0.75rem;
 }
 
-.mdc-text-field > .icon + .input {
+.mdc-text-field > .icon + .input > input,
+.mdc-text-field > .icon + .input > div:not(.outline) {
     padding: 1.25rem 0.75rem 0 3rem;
-    width: 19.5rem;
 }
 
 .mdc-text-field > .icon + .input + .label {
@@ -366,22 +316,35 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input + .label {
     right: 0.75rem;
 }
 
-html[dir="rtl"] .mdc-text-field > .icon + .input,
-html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input,
-.mdc-text-field > .icon.trailing + .input,
-html[dir="ltr"] .mdc-text-field > .icon.trailing + .input,
-html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input {
+html[dir="rtl"] .mdc-text-field > .icon + .input > input,
+html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input > input,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input > input,
+.mdc-text-field > .icon.trailing + .input > input,
+html[dir="ltr"] .mdc-text-field > .icon.trailing + .input > input,
+html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input > input,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input > input,
+html[dir="rtl"] .mdc-text-field > .icon + .input > div:not(.outline),
+html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input > div:not(.outline),
+.mdc-text-field > .icon.trailing + .input > div:not(.outline),
+html[dir="ltr"] .mdc-text-field > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input > div:not(.outline) {
     padding: 1.25rem 3rem 0 0.75rem;
 }
 
-html[dir="ltr"] .mdc-text-field > .icon + .input,
-html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input,
-html[dir="rtl"] .mdc-text-field > .icon.trailing + .input,
-html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input {
+html[dir="ltr"] .mdc-text-field > .icon + .input > input,
+html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input > input,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input > input,
+html[dir="rtl"] .mdc-text-field > .icon.trailing + .input > input,
+html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input > input,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input > input,
+html[dir="ltr"] .mdc-text-field > .icon + .input > div:not(.outline),
+html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input > div:not(.outline),
+html[dir="rtl"] .mdc-text-field > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input > div:not(.outline) {
     padding: 1.25rem 0.75rem 0 3rem;
 }
 
@@ -442,27 +405,14 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     color: var(--error-color);
 }
 
-.mdc-text-field.standard {
-    min-height: 3.1875rem;
-}
-
-.mdc-text-field.standard::after {
-    top: 3.0625rem;
-}
-
-.mdc-text-field.standard > .input {
-    padding-left: 0;
-    padding-right: 0;
-    min-height: 3.1875rem;
-    background-color: transparent;
-    border-radius: 0;
-}
-
+.mdc-text-field.standard > .input,
 .mdc-text-area.standard > .input {
     background-color: transparent;
     border-radius: 0;
 }
 
+.mdc-text-field.standard > .input > input,
+.mdc-text-field.standard > .input > div:not(.outline),
 .mdc-text-area.standard > .input > textarea {
     padding-left: 0;
     padding-right: 0;
@@ -521,9 +471,9 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon {
     right: 0;
 }
 
-.mdc-text-field.standard > .icon + .input {
+.mdc-text-field.standard > .icon + .input > input,
+.mdc-text-field.standard > .icon + .input > div:not(.outline) {
     padding: 1.25rem 0 0 2.25rem;
-    width: 18rem;
 }
 
 .mdc-text-field.standard > .icon + .input + .label {
@@ -551,22 +501,35 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input + .label {
     right: 0;
 }
 
-html[dir="rtl"] .mdc-text-field.standard > .icon + .input,
-html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input,
-.mdc-text-field.standard > .icon.trailing + .input,
-html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input,
-html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input {
+html[dir="rtl"] .mdc-text-field.standard > .icon + .input > input,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input > input,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input > input,
+.mdc-text-field.standard > .icon.trailing + .input > input,
+html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > input,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > input,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input > input,
+html[dir="rtl"] .mdc-text-field.standard > .icon + .input > div:not(.outline),
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input > div:not(.outline),
+.mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
+html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input > div:not(.outline) {
     padding: 1.25rem 2.25rem 0 0;
 }
 
-html[dir="ltr"] .mdc-text-field.standard > .icon + .input,
-html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input,
-html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input,
-html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input {
+html[dir="ltr"] .mdc-text-field.standard > .icon + .input > input,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input > input,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input > input,
+html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > input,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > input,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input > input,
+html[dir="ltr"] .mdc-text-field.standard > .icon + .input > div:not(.outline),
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input > div:not(.outline),
+html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input > div:not(.outline) {
     padding: 1.25rem 0 0 2.25rem;
 }
 
@@ -602,50 +565,64 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
     padding: 0.0625rem 0 0;
 }
 
-.mdc-text-field.outlined::after,
+.mdc-text-field.outlined > .input::after,
 .mdc-text-area.outlined > .input::after {
     display: none;
 }
 
-.mdc-text-field.outlined > .input {
+.mdc-text-field.outlined > .input,
+.mdc-text-area.outlined > .input {
     background-color: transparent;
     border: 0.0625rem solid var(--initial-text-hint);
     border-radius: 0.25rem;
-    padding: 0.75rem 0.8125rem;
     will-change: border-color;
     transition: border-color 0.15s cubic-bezier(0.4,0,.2,1);
 }
 
 .mdc-text-area.outlined > .input {
-    background-color: transparent;
-    border: 0.0625rem solid var(--initial-text-hint);
-    border-radius: 0.25rem;
     padding: 0.75rem 0 0;
-    will-change: border-color;
-    transition: border-color 0.15s cubic-bezier(0.4,0,.2,1);
+}
+
+.mdc-text-field.outlined > .input > input,
+.mdc-text-field.outlined > .input > div:not(.outline) {
+    padding: 0.75rem 0.8125rem;
 }
 
 .mdc-text-area.outlined > .input > textarea {
     padding: 0 0.8125rem 0.75rem;
 }
 
-.mdc-text-field.outlined > .icon + .input,
-html[dir="ltr"] .mdc-text-field.outlined > .icon + .input,
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input,
-html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input,
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input {
+.mdc-text-field.outlined > .icon + .input > input,
+html[dir="ltr"] .mdc-text-field.outlined > .icon + .input > input,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input > input,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input > input,
+html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > input,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > input,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input > input,
+.mdc-text-field.outlined > .icon + .input > div:not(.outline),
+html[dir="ltr"] .mdc-text-field.outlined > .icon + .input > div:not(.outline),
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input > div:not(.outline),
+html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input > div:not(.outline) {
     padding: 0.75rem 0.75rem 0.75rem 2.9375rem;
 }
 
-html[dir="rtl"] .mdc-text-field.outlined > .icon + .input,
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input,
-.mdc-text-field.outlined > .icon.trailing + .input,
-html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input,
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input {
+html[dir="rtl"] .mdc-text-field.outlined > .icon + .input > input,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input > input,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input > input,
+.mdc-text-field.outlined > .icon.trailing + .input > input,
+html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > input,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > input,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input > input,
+html[dir="rtl"] .mdc-text-field.outlined > .icon + .input > div:not(.outline),
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input > div:not(.outline),
+.mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
+html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input > div:not(.outline) {
     padding: 0.75rem 2.9375rem 0.75rem 0.75rem;
 }
 
@@ -656,7 +633,6 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input {
 
 .mdc-text-field.outlined.active > .input,
 .mdc-text-field.outlined.focus > .input,
-.mdc-text-field.outlined > .input:focus,
 .mdc-text-area.outlined.active > .input,
 .mdc-text-area.outlined.focus > .input {
     border-color: transparent;
@@ -719,36 +695,12 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
 
 .mdc-text-field.outlined.active > .label,
 .mdc-text-field.outlined.focus > .label,
-.mdc-text-field.outlined > .input:focus + .label,
 .mdc-text-area.outlined.active > .label,
 .mdc-text-area.outlined.focus > .label {
     transform: translateY(-140%) scale(0.75);
 }
 
-.mdc-text-field.outlined > .outline {
-    position: absolute;
-    top: 0;
-    left: 0.0625rem;
-    right: 0.0625rem;
-    height: 3.5rem;
-    margin: 0 0.5rem;
-    pointer-events: none;
-    opacity: 0;
-    will-change: opacity;
-    transition: opacity 0.15s cubic-bezier(0.4,0,.2,1);
-    border-bottom: solid 0.0625rem var(--initial-text-hint);
-}
-
-.mdc-text-field.outlined.active > .outline {
-    top: -0.0625rem;
-    left: -0.0625rem;
-    right: -0.0625rem;
-    height: 3.625rem;
-    margin: 0 0.625rem;
-    border-bottom: solid 0.125rem var(--initial-text-hint);
-    opacity: 1;
-}
-
+.mdc-text-field.outlined > .input > .outline,
 .mdc-text-area.outlined > .input > .outline {
     position: absolute;
     top: 0;
@@ -763,6 +715,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     border-bottom: solid 0.0625rem var(--initial-text-hint);
 }
 
+.mdc-text-field.outlined.active > .input > .outline,
 .mdc-text-area.outlined.active > .input > .outline {
     top: -0.0625rem;
     bottom: -0.0625rem;
@@ -773,13 +726,12 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     opacity: 1;
 }
 
-.mdc-text-field.outlined.focus > .outline,
-.mdc-text-field.outlined > .input:focus + .label + .outline,
+.mdc-text-field.outlined.focus > .input > .outline,
 .mdc-text-area.outlined.focus > .input > .outline {
     opacity: 1;
 }
 
-.mdc-text-field.outlined > .outline::before,
+.mdc-text-field.outlined > .input > .outline::before,
 .mdc-text-area.outlined > .input > .outline::before {
     content: '';
     position: absolute;
@@ -792,7 +744,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     border-right: none;
 }
 
-.mdc-text-field.outlined.active > .outline::before,
+.mdc-text-field.outlined.active > .input > .outline::before,
 .mdc-text-area.outlined.active > .input > .outline::before {
     left: -0.625rem;
     bottom: -0.125rem;
@@ -801,7 +753,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     border-right: none;
 }
 
-.mdc-text-field.outlined > .outline::after,
+.mdc-text-field.outlined > .input > .outline::after,
 .mdc-text-area.outlined > .input > .outline::after {
     content: '';
     position: absolute;
@@ -814,7 +766,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     border-left: none;
 }
 
-.mdc-text-field.outlined.active > .outline::after,
+.mdc-text-field.outlined.active > .input > .outline::after,
 .mdc-text-area.outlined.active > .input > .outline::after {
     right: -0.625rem;
     bottom: -0.125rem;
@@ -823,7 +775,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     border-left: none;
 }
 
-.mdc-text-field.outlined > .outline > .top,
+.mdc-text-field.outlined > .input > .outline > .top,
 .mdc-text-area.outlined > .input > .outline > .top {
     position: absolute;
     top: 0;
@@ -833,14 +785,14 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     border-top: solid 0.0625rem var(--initial-text-hint);
 }
 
-.mdc-text-field.outlined.active > .outline > .top,
+.mdc-text-field.outlined.active > .input > .outline > .top,
 .mdc-text-area.outlined.active > .input > .outline > .top {
     border-top: solid 0.125rem var(--initial-text-hint);
 }
 
-html[dir="ltr"] .mdc-text-field.outlined > .outline > .top,
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .outline > .top,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .outline > .top,
+html[dir="ltr"] .mdc-text-field.outlined > .input > .outline > .top,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .input > .outline > .top,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .input > .outline > .top,
 html[dir="ltr"] .mdc-text-area.outlined > .input > .outline > .top,
 html[dir] *[dir="ltr"] .mdc-text-area.outlined > .input > .outline > .top,
 html[dir] *[dir] .mdc-text-area.outlined[dir="ltr"] > .input > .outline > .top {
@@ -848,9 +800,9 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="ltr"] > .input > .outline > .top {
     right: 0;
 }
 
-html[dir="rtl"] .mdc-text-field.outlined > .outline > .top,
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .outline > .top,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .outline > .top,
+html[dir="rtl"] .mdc-text-field.outlined > .input > .outline > .top,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .input > .outline > .top,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .input > .outline > .top,
 html[dir="rtl"] .mdc-text-area.outlined > .input > .outline > .top,
 html[dir] *[dir="rtl"] .mdc-text-area.outlined > .input > .outline > .top,
 html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
@@ -858,10 +810,10 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
     right: auto;
 }
 
-.mdc-text-field.outlined > .input:hover + .label + .outline,
-.mdc-text-field.outlined > .input:hover + .label + .outline > .top,
-.mdc-text-field.outlined > .input:hover + .label + .outline::before,
-.mdc-text-field.outlined > .input:hover + .label + .outline::after,
+.mdc-text-field.outlined > .input:hover > .outline,
+.mdc-text-field.outlined > .input:hover > .outline > .top,
+.mdc-text-field.outlined > .input:hover > .outline::before,
+.mdc-text-field.outlined > .input:hover > .outline::after,
 .mdc-text-area.outlined > .input:hover > .outline,
 .mdc-text-area.outlined > .input:hover > .outline > .top,
 .mdc-text-area.outlined > .input:hover > .outline::before,
@@ -869,10 +821,10 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
     border-color: var(--initial-text-secondary);
 }
 
-.mdc-text-field.outlined.active > .outline,
-.mdc-text-field.outlined.active > .outline > .top,
-.mdc-text-field.outlined.active > .outline::before,
-.mdc-text-field.outlined.active > .outline::after,
+.mdc-text-field.outlined.active > .input > .outline,
+.mdc-text-field.outlined.active > .input > .outline > .top,
+.mdc-text-field.outlined.active > .input > .outline::before,
+.mdc-text-field.outlined.active > .input > .outline::after,
 .mdc-text-area.outlined.active > .input > .outline,
 .mdc-text-area.outlined.active > .input > .outline > .top,
 .mdc-text-area.outlined.active > .input > .outline::before,
@@ -880,23 +832,12 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
     border-color: var(--bg-border) !important;
 }
 
-.mdc-text-field:not(.focus) > .input:hover[disabled],
-.mdc-text-field:not(.focus) > .input[disabled],
-.mdc-text-field > .input[disabled] + .label + .outline,
-.mdc-text-field > .input[disabled] + .label + .outline > .top,
-.mdc-text-field > .input[disabled] + .label + .outline::before,
-.mdc-text-field > .input[disabled] + .label + .outline::after,
-.mdc-text-field:not(.focus) > .input:hover:disabled,
-.mdc-text-field:not(.focus) > .input:disabled,
-.mdc-text-field > .input:disabled + .label + .outline,
-.mdc-text-field > .input:disabled + .label + .outline > .top,
-.mdc-text-field > .input:disabled + .label + .outline::before,
-.mdc-text-field > .input:disabled + .label + .outline::after,
-.mdc-text-area:not(.focus) > .input.disabled:hover,
-.mdc-text-area:not(.focus) > .input.disabled,
-.mdc-text-area > .input.disabled > .outline,
-.mdc-text-area > .input.disabled > .outline > .top,
-.mdc-text-area > .input.disabled > .outline::before,
-.mdc-text-area > .input.disabled > .outline::after {
+.mdc-text-field > .input.disabled,
+.mdc-text-area > .input.disabled {
     border-color: var(--initial-text-divider) !important;
+}
+
+.mdc-text-field > .input.disabled > .outline,
+.mdc-text-area > .input.disabled > .outline {
+    display: none;
 }
