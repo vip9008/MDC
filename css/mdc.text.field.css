@@ -1,6 +1,4 @@
-.mdc-text-area,
-.mdc-text-field {
-    will-change: transform, opacity;
+.mdc-text-area, .mdc-text-field {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
@@ -79,9 +77,8 @@
     cursor: default;
 }
 
-.mdc-text-field > .input > input,
-.mdc-text-field > .input > div:not(.outline),
-.mdc-text-area > .input > textarea {
+.mdc-text-field > .input > .input-element,
+.mdc-text-area > .input > .input-element {
     font-size: 1rem;
     line-height: 1.75rem;
     min-height: 3.5rem;
@@ -102,7 +99,7 @@
     appearance: none;
 }
 
-.mdc-text-area > .input > textarea {
+.mdc-text-area > .input > .input-element {
     min-height: 7rem;
     height: calc(1.75rem * var(--number-of-lines) + 0.0625rem); /*1.75 * LINES_NUMBER + .0625 rem*/
     padding: 0 0.75rem;
@@ -120,24 +117,24 @@
     background-color: var(--input-focus);
 }
 
-.mdc-text-field > .input > input:-webkit-autofill,
-.mdc-text-area > .input > textarea:-webkit-autofill {
+.mdc-text-field > .input > .input-element:-webkit-autofill,
+.mdc-text-area > .input > .input-element:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
     box-shadow: 0 0 0 3rem var(--input) inset,
                 0 0 0 3rem var(--initial-bg-cards) inset !important;
 }
 
-.mdc-text-field > .input > input:hover:-webkit-autofill,
-.mdc-text-area > .input > textarea:hover:-webkit-autofill {
+.mdc-text-field > .input > .input-element:hover:-webkit-autofill,
+.mdc-text-area > .input > .input-element:hover:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input-hover) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
     box-shadow: 0 0 0 3rem var(--input-hover) inset,
                 0 0 0 3rem var(--initial-bg-cards) inset !important;
 }
 
-.mdc-text-field > .input > input:active:-webkit-autofill,
-.mdc-text-area > .input > textarea:active:-webkit-autofill {
+.mdc-text-field > .input > .input-element:active:-webkit-autofill,
+.mdc-text-area > .input > .input-element:active:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input-focus) inset,
                         0 0 0 3rem var(--initial-bg-cards) inset !important;
     box-shadow: 0 0 0 3rem var(--input-focus) inset,
@@ -149,7 +146,7 @@
     background-color: var(--input);
 }
 
-.mdc-text-field > .input > div:not(.outline) {
+.mdc-text-field > .input > .input-element {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -286,8 +283,8 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon {
     right: 0.75rem;
 }
 
-.mdc-text-field > .icon + .input > input,
-.mdc-text-field > .icon + .input > div:not(.outline) {
+.mdc-text-field > .icon + .input > .input-element,
+.mdc-text-field > .icon + .input > .input-element {
     padding: 1.25rem 0.75rem 0 3rem;
 }
 
@@ -316,35 +313,22 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input + .label {
     right: 0.75rem;
 }
 
-html[dir="rtl"] .mdc-text-field > .icon + .input > input,
-html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input > input,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input > input,
-.mdc-text-field > .icon.trailing + .input > input,
-html[dir="ltr"] .mdc-text-field > .icon.trailing + .input > input,
-html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input > input,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input > input,
-html[dir="rtl"] .mdc-text-field > .icon + .input > div:not(.outline),
-html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input > div:not(.outline),
-.mdc-text-field > .icon.trailing + .input > div:not(.outline),
-html[dir="ltr"] .mdc-text-field > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input > div:not(.outline) {
+html[dir="rtl"] .mdc-text-field > .icon + .input > .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input > .input-element,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input > .input-element,
+.mdc-text-field > .icon.trailing + .input > .input-element,
+html[dir="ltr"] .mdc-text-field > .icon.trailing + .input > .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input > .input-element,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input > .input-element {
     padding: 1.25rem 3rem 0 0.75rem;
 }
 
-html[dir="ltr"] .mdc-text-field > .icon + .input > input,
-html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input > input,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input > input,
-html[dir="rtl"] .mdc-text-field > .icon.trailing + .input > input,
-html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input > input,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input > input,
-html[dir="ltr"] .mdc-text-field > .icon + .input > div:not(.outline),
-html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input > div:not(.outline),
-html[dir="rtl"] .mdc-text-field > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input > div:not(.outline) {
+html[dir="ltr"] .mdc-text-field > .icon + .input > .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input > .input-element,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input > .input-element,
+html[dir="rtl"] .mdc-text-field > .icon.trailing + .input > .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input > .input-element,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input > .input-element {
     padding: 1.25rem 0.75rem 0 3rem;
 }
 
@@ -411,9 +395,8 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     border-radius: 0;
 }
 
-.mdc-text-field.standard > .input > input,
-.mdc-text-field.standard > .input > div:not(.outline),
-.mdc-text-area.standard > .input > textarea {
+.mdc-text-field.standard > .input > .input-element,
+.mdc-text-area.standard > .input > .input-element {
     padding-left: 0;
     padding-right: 0;
 }
@@ -471,8 +454,7 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon {
     right: 0;
 }
 
-.mdc-text-field.standard > .icon + .input > input,
-.mdc-text-field.standard > .icon + .input > div:not(.outline) {
+.mdc-text-field.standard > .icon + .input > .input-element {
     padding: 1.25rem 0 0 2.25rem;
 }
 
@@ -501,35 +483,22 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input + .label {
     right: 0;
 }
 
-html[dir="rtl"] .mdc-text-field.standard > .icon + .input > input,
-html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input > input,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input > input,
-.mdc-text-field.standard > .icon.trailing + .input > input,
-html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > input,
-html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > input,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input > input,
-html[dir="rtl"] .mdc-text-field.standard > .icon + .input > div:not(.outline),
-html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input > div:not(.outline),
-.mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
-html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input > div:not(.outline) {
+html[dir="rtl"] .mdc-text-field.standard > .icon + .input > .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input > .input-element,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input > .input-element,
+.mdc-text-field.standard > .icon.trailing + .input > .input-element,
+html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > .input-element,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input > .input-element {
     padding: 1.25rem 2.25rem 0 0;
 }
 
-html[dir="ltr"] .mdc-text-field.standard > .icon + .input > input,
-html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input > input,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input > input,
-html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > input,
-html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > input,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input > input,
-html[dir="ltr"] .mdc-text-field.standard > .icon + .input > div:not(.outline),
-html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input > div:not(.outline),
-html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input > div:not(.outline) {
+html[dir="ltr"] .mdc-text-field.standard > .icon + .input > .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input > .input-element,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input > .input-element,
+html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > .input-element,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input > .input-element {
     padding: 1.25rem 0 0 2.25rem;
 }
 
@@ -583,46 +552,31 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
     padding: 0.75rem 0 0;
 }
 
-.mdc-text-field.outlined > .input > input,
-.mdc-text-field.outlined > .input > div:not(.outline) {
+.mdc-text-field.outlined > .input > .input-element {
     padding: 0.75rem 0.8125rem;
 }
 
-.mdc-text-area.outlined > .input > textarea {
+.mdc-text-area.outlined > .input > .input-element {
     padding: 0 0.8125rem 0.75rem;
 }
 
-.mdc-text-field.outlined > .icon + .input > input,
-html[dir="ltr"] .mdc-text-field.outlined > .icon + .input > input,
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input > input,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input > input,
-html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > input,
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > input,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input > input,
-.mdc-text-field.outlined > .icon + .input > div:not(.outline),
-html[dir="ltr"] .mdc-text-field.outlined > .icon + .input > div:not(.outline),
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input > div:not(.outline),
-html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input > div:not(.outline) {
+.mdc-text-field.outlined > .icon + .input > .input-element,
+html[dir="ltr"] .mdc-text-field.outlined > .icon + .input > .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input > .input-element,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input > .input-element,
+html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > .input-element,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input > .input-element {
     padding: 0.75rem 0.75rem 0.75rem 2.9375rem;
 }
 
-html[dir="rtl"] .mdc-text-field.outlined > .icon + .input > input,
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input > input,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input > input,
-.mdc-text-field.outlined > .icon.trailing + .input > input,
-html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > input,
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > input,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input > input,
-html[dir="rtl"] .mdc-text-field.outlined > .icon + .input > div:not(.outline),
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input > div:not(.outline),
-.mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
-html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > div:not(.outline),
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input > div:not(.outline) {
+html[dir="rtl"] .mdc-text-field.outlined > .icon + .input > .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input > .input-element,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input > .input-element,
+.mdc-text-field.outlined > .icon.trailing + .input > .input-element,
+html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > .input-element,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input > .input-element {
     padding: 0.75rem 2.9375rem 0.75rem 0.75rem;
 }
 
