@@ -1,0 +1,37 @@
+.mdc-tooltip {
+    --text-color: white;
+    --background-color: rgba(97, 97, 97, 0.9);
+
+    position: fixed;
+    font-size: 0.625rem;
+    line-height: 1.5rem;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    pointer-events: none;
+    cursor: default;
+    z-index: var(--z-axis-24-index);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    will-change: opacity, transform;
+    transition: opacity 75ms cubic-bezier(0.4, 0, 0.2, 1), transform 75ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mdc-tooltip.active {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 719px) {
+    .mdc-tooltip {
+        font-size: 0.875rem;
+        line-height: 2rem;
+        padding: 0 1rem;
+    }
+}

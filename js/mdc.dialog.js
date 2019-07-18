@@ -6,6 +6,6 @@ function mdc_close_dialog(selector) {
     $(selector).removeClass('active');
 }
 
-$(document).ready(function() {
+// $(document).ready(function() {
     
-});
+// });
