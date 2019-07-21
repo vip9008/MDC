@@ -1,12 +1,46 @@
+.mdc-form {
+    display: block;
+    margin: 0 -0.5rem;
+}
+
+.mdc-form > * {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.mdc-form > .mdc-button-group {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.mdc-form.inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: start;
+    align-items: start;
+}
+
 .mdc-text-area, .mdc-text-field {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: block;
     position: relative;
-    margin: 1rem 0 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     width: 17.5rem;
     max-width: 100%;
+}
+
+.mdc-form.inline .mdc-text-area,
+.mdc-form.inline .mdc-text-field {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: start;
+    align-items: start;
 }
 
 .mdc-text-area {
@@ -16,35 +50,6 @@
 .mdc-text-field.full-width,
 .mdc-text-area.full-width {
     width: 100%;
-}
-
-.mdc-text-field > .input::::after
-.mdc-text-area > .input::after {
-    content: '';
-    position: absolute;
-    bottom: -0.0625rem;
-    left: 0;
-    width: 100%;
-    height: 0.125rem;
-    background-color: var(--bg-border);
-    will-change: transform;
-
-    transform: scale(0);
-    transition: transform 0.15s cubic-bezier(0.4,0,.2,1);
-    -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-}
-
-.mdc-text-field.active > .input::after,
-.mdc-text-area.active > .input::after {
-    transform: scale(1);
-}
-
-.mdc-text-field.has-error,
-.mdc-text-area.has-error {
-    --text-primary: var(--error-color);
-    --bg-border: var(--error-color);
 }
 
 .mdc-text-field > .input,
@@ -117,6 +122,35 @@
     background-color: var(--input-focus);
 }
 
+.mdc-text-field > .input::after,
+.mdc-text-area > .input::after {
+    content: '';
+    position: absolute;
+    bottom: -0.0625rem;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--bg-border);
+    will-change: transform;
+
+    transform: scale(0);
+    transition: transform 0.15s cubic-bezier(0.4,0,.2,1);
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.mdc-text-field.active > .input::after,
+.mdc-text-area.active > .input::after {
+    transform: scale(1);
+}
+
+.mdc-text-field.has-error,
+.mdc-text-area.has-error {
+    --text-primary: var(--error-color);
+    --bg-border: var(--error-color);
+}
+
 .mdc-text-field > .input > .input-element:-webkit-autofill,
 .mdc-text-area > .input > .input-element:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 3rem var(--input) inset,
@@ -142,7 +176,7 @@
 }
 
 .mdc-text-field.active > .input,
-.mdc-text-area.active > .input, {
+.mdc-text-area.active > .input {
     background-color: var(--input);
 }
 
