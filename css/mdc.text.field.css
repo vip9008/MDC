@@ -151,28 +151,22 @@
     --bg-border: var(--error-color);
 }
 
+@-webkit-keyframes autofill {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes autofill {
+    to {
+        background: transparent;
+    }
+}
+
 .mdc-text-field > .input > .input-element:-webkit-autofill,
 .mdc-text-area > .input > .input-element:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 3rem var(--input) inset,
-                        0 0 0 3rem var(--initial-bg-cards) inset !important;
-    box-shadow: 0 0 0 3rem var(--input) inset,
-                0 0 0 3rem var(--initial-bg-cards) inset !important;
-}
-
-.mdc-text-field > .input > .input-element:hover:-webkit-autofill,
-.mdc-text-area > .input > .input-element:hover:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 3rem var(--input-hover) inset,
-                        0 0 0 3rem var(--initial-bg-cards) inset !important;
-    box-shadow: 0 0 0 3rem var(--input-hover) inset,
-                0 0 0 3rem var(--initial-bg-cards) inset !important;
-}
-
-.mdc-text-field > .input > .input-element:active:-webkit-autofill,
-.mdc-text-area > .input > .input-element:active:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 3rem var(--input-focus) inset,
-                        0 0 0 3rem var(--initial-bg-cards) inset !important;
-    box-shadow: 0 0 0 3rem var(--input-focus) inset,
-                0 0 0 3rem var(--initial-bg-cards) inset !important;
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
 }
 
 .mdc-text-field.active > .input,
