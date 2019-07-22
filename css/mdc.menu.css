@@ -98,15 +98,11 @@ html[dir] .mdc-menu-container.bottom[dir="rtl"] .mdc-list-container {
 }
 
 .mdc-menu-container.select-menu:not(.bottom) .mdc-list-container {
-    top: 4.5rem;
+    top: 4.5625rem;
 }
 
 .mdc-menu-container.select-menu:not(.bottom) > .mdc-text-field.outlined + .mdc-list-container {
     margin-top: 0.0625rem;
-}
-
-.mdc-menu-container.select-menu:not(.bottom) > .mdc-text-field.standard + .mdc-list-container {
-    margin-top: -0.3125rem;
 }
 
 .mdc-menu-container > .mdc-list-container .mdc-list-item.selected::after {
