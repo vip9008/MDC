@@ -38,7 +38,7 @@ $(document).ready(function() {
     $('body').on('change', '.mdc-radiobutton > input', function(event) {
         if ($(this).prop('checked')) {
             var name = $(this).attr('name');
-            $('input[name='+name+']:radio').parent().removeClass('checked');
+            $("input[name='"+name+"']:radio").parent().removeClass('checked');
             $(this).parent().addClass('checked');
         }
     });
