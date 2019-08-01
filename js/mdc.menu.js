@@ -63,6 +63,8 @@ $(document).ready(function() {
 
         $(menu_container).addClass('active');
         $(this).addClass('active');
+
+        return false;
     });
 
     $('body').on('keyup', '.mdc-menu-container.select-menu .mdc-text-field.mdc-searchable > .input > input', function(event) {
