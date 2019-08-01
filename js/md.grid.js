@@ -53,19 +53,5 @@ function nano_scoller_init(selector) {
 }
 
 $(document).ready(function() {
-    $('body')
-    .on('touchstart', '*', function (event) {
-        $(this).data('touch-moved', '0');
-    })
-    .on('touchmove', '*', function (event) {
-        $(this).data('touch-moved', '1');
-    })
-    .on('touchend', '*', function (event) {
-        if($(this).data('touch-moved') == 0){
-            event.preventDefault();
-            $(this).trigger('click');
-        }
-    });
-
     nano_scoller_init(".nano");
 });
