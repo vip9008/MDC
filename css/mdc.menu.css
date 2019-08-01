@@ -9,6 +9,16 @@
     width: 100%;
 }
 
+.mdc-menu-container.has-error {
+    --text-primary: var(--error-color);
+    --bg-border: var(--error-color);
+}
+
+.mdc-menu-container.has-error > .mdc-text-field > .hint-block,
+.mdc-menu-container.has-error > .mdc-text-field > .help-block {
+    color: var(--error-color);
+}
+
 .mdc-menu-container .mdc-list-container {
     --text-primary: var(--initial-text-primary);
     --text-secondary: var(--initial-text-secondary);
