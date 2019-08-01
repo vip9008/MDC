@@ -93,6 +93,13 @@ html[dir] .mdc-menu-container.bottom[dir="rtl"] .mdc-list-container {
     opacity: 0;
 }
 
+.mdc-menu-container.select-menu > .menu-button {
+    background: transparent;
+    padding: 0;
+    text-align: inherit;
+    text-align: unset;
+}
+
 .mdc-menu-container.select-menu .mdc-list-container {
     min-width: 100%;
 }
