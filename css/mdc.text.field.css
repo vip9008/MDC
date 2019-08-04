@@ -2,11 +2,6 @@
     display: block;
 }
 
-.mdc-form > .mdc-button-group {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
 .mdc-form.inline {
     display: -ms-flexbox;
     display: flex;
