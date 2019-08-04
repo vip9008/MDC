@@ -1,11 +1,5 @@
 .mdc-form {
     display: block;
-    margin: 0 -0.5rem;
-}
-
-.mdc-form > * {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 }
 
 .mdc-form > .mdc-button-group {
