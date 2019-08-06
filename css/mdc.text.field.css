@@ -1,7 +1,3 @@
-.mdc-form {
-    display: block;
-}
-
 .mdc-form.inline {
     display: -ms-flexbox;
     display: flex;
