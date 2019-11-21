@@ -13,6 +13,14 @@ $(document).ready(function() {
         mdc_close_menus();
     });
 
+    $(window).resize(function(event) {
+        mdc_close_menus();
+    });
+
+    $(window).scroll(function(event) {
+        mdc_close_menus();
+    });
+
     $('body').on(md_click_event, '.mdc-menu-container .mdc-list-container', function(event) {
         event.stopPropagation();
     });
@@ -33,7 +41,7 @@ $(document).ready(function() {
 
         mdc_close_menus();
 
-        $(menu_container).removeClass('bottom reverse');
+        $(menu_container).removeClass('bottom reverse').find('.mdc-list-container').removeAttr('style');
 
         if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
             return false;
@@ -47,19 +55,47 @@ $(document).ready(function() {
         var menu_width = $(menu).outerWidth();
         var menu_position = $(menu)[0].getBoundingClientRect();
 
+        var position = {
+            top: "auto",
+            right: "auto",
+            bottom: "auto",
+            left: "auto",
+            width: "auto",
+            minWidth: "auto",
+            position: "fixed"
+        };
+
         if ((menu_position.top + menu_height) > viewport_height) {
             $(menu_container).addClass('bottom');
+            position.bottom = "16px";
+        } else {
+            position.top = menu_position.top + "px";
         }
 
-        if (parseInt($(menu).css('left')) == 0) {
+        position.width = menu_width;
+
+        if (parseInt($(menu).css('left')) === 0) {
+            // position.left = menu_position.left + "px";
+            // position.right = "auto";
             if ((menu_position.left + menu_width) > viewport_width) {
                 $(menu_container).addClass('reverse');
+                position.right = "16px";
+                position.left = "auto";
             }
         } else {
+            // position.right = (viewport_width - menu_position.left) + "px";
+            // position.left = "auto";
             if ((menu_position.right - menu_width) < 0) {
                 $(menu_container).addClass('reverse');
+                position.left = "16px";
+                position.right = "auto";
             }
         }
+
+        console.log(menu_position);
+        console.log(viewport_width);
+
+        $(menu).css(position);
 
         $(menu_container).addClass('active');
         $(this).addClass('active');
