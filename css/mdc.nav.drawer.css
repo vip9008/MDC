@@ -256,7 +256,7 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
     display: none;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 960px) {
     html:not([dir]) body.mdc-drawer-expand,
     html[dir="ltr"] body.mdc-drawer-expand {
         margin-left: 16rem !important;
@@ -269,7 +269,7 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
     }
 }
 
-@media (max-width: 719px) {
+@media (max-width: 959px) {
     #mdc-nav-drawer.persistent,
     #mdc-nav-drawer.permanent {
         width: calc(100% - 3.5rem);
