@@ -52,7 +52,7 @@ $(document).ready(function() {
 
         var menu = $(menu_container).find('.mdc-list-container');
         var menu_height = $(menu).outerHeight();
-        var menu_width = $(menu).outerWidth();
+        var menu_width = $(this).hasClass('mdc-text-field') ? $(this).outerWidth() : $(menu).outerWidth();
         var menu_position = $(menu)[0].getBoundingClientRect();
 
         var position = {
@@ -62,38 +62,36 @@ $(document).ready(function() {
             left: "auto",
             width: "auto",
             minWidth: "auto",
+            maxWidth: "none",
             position: "fixed"
         };
 
         if ((menu_position.top + menu_height) > viewport_height) {
             $(menu_container).addClass('bottom');
-            position.bottom = "16px";
+            position.bottom = 16;
         } else {
-            position.top = menu_position.top + "px";
+            position.top = menu_position.top;
         }
 
         position.width = menu_width;
 
         if (parseInt($(menu).css('left')) === 0) {
-            // position.left = menu_position.left + "px";
+            // position.left = menu_position.left;
             // position.right = "auto";
             if ((menu_position.left + menu_width) > viewport_width) {
                 $(menu_container).addClass('reverse');
-                position.right = "16px";
+                position.right = 16;
                 position.left = "auto";
             }
         } else {
-            // position.right = (viewport_width - menu_position.left) + "px";
+            // position.right = viewport_width - menu_position.left;
             // position.left = "auto";
             if ((menu_position.right - menu_width) < 0) {
                 $(menu_container).addClass('reverse');
-                position.left = "16px";
+                position.left = 16;
                 position.right = "auto";
             }
         }
-
-        console.log(menu_position);
-        console.log(viewport_width);
 
         $(menu).css(position);
 
