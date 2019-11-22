@@ -5,6 +5,10 @@ $(document).ready(function() {
         var val = $(this).children('input').val();
         var percent = (val - min) / (max-min) * 100;
         $(this).children('.highlight').width(percent + "%");
+
+        if ($(this).hasClass('discrete')) {
+            $(this).children('.highlight').html('<div class="value">'+val+'</div>');
+        }
     });
 
     $('body').on('input', '.mdc-slider > input', function(event) {
@@ -17,5 +21,9 @@ $(document).ready(function() {
         var val = $(this).val();
         var percent = (val - min) / (max-min) * 100;
         $(this).siblings('.highlight').width(percent + "%");
+
+        if ($(this).parent('.mdc-slider').hasClass('discrete')) {
+            $(this).siblings('.highlight').children('.value').text(val);
+        }
     });
 });
