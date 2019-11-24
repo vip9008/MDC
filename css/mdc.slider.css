@@ -15,8 +15,7 @@
 }
 
 .mdc-slider.disabled {
-    --main-color: var(--initial-main-color);
-    opacity: var(--switch-rail-opacity);
+    --main-color: var(--slider-disabled-color);
 }
 
 .mdc-slider.full-width {
