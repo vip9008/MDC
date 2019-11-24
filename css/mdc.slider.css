@@ -49,7 +49,7 @@
     z-index: -1;
     background: linear-gradient(90deg, var(--main-color) 0.125rem, transparent 0);
     background-position: center left;
-    background-size: var(--slider-point) 0.125rem;
+    background-size: calc(var(--slider-point) - 0.1%) 0.125rem;
 }
 
 .mdc-slider > input {
