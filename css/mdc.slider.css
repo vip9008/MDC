@@ -9,13 +9,18 @@
     font-size: 0;
 }
 
-.mdc-slider.full-width {
-    width: auto;
-}
-
 .mdc-slider.discrete {
     --value-bg: rgba(0, 0, 0, 0.54);
     --value-color: white;
+}
+
+.mdc-slider.disabled {
+    --main-color: var(--initial-main-color);
+    opacity: var(--switch-rail-opacity);
+}
+
+.mdc-slider.full-width {
+    width: auto;
 }
 
 .mdc-slider::before {
@@ -64,8 +69,7 @@
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 100%;
-    background: var(--main-color);
-    box-shadow: var(--z-axis-1-shadow);
+    background: transparent;
     cursor: pointer;
 }
 
@@ -73,9 +77,16 @@
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 100%;
-    background: var(--main-color);
-    box-shadow: var(--z-axis-1-shadow);
+    background: transparent;
     cursor: pointer;
+}
+
+.mdc-slider.disabled > input::-webkit-slider-thumb {
+    cursor: default;
+}
+
+.mdc-slider.disabled > input::-moz-range-thumb {
+    cursor: default;
 }
 
 .mdc-slider > .highlight {
@@ -161,6 +172,31 @@ html[dir] *[dir="rtl"] > .mdc-slider > .highlight::before {
     transform: scale(1);
 }
 
+.mdc-slider > .highlight::after {
+    content: '';
+    position: absolute;
+    top: -0.3125rem;
+    right: -0.375rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    box-shadow: var(--z-axis-1-shadow);
+    pointer-events: none;
+}
+
+html[dir="ltr"] .mdc-slider > .highlight::after,
+html[dir] *[dir="ltr"] > .mdc-slider > .highlight::after {
+    left: auto;
+    right: -0.375rem;
+}
+
+html[dir="rtl"] .mdc-slider > .highlight::after,
+html[dir] *[dir="rtl"] > .mdc-slider > .highlight::after {
+    left: -0.375rem;
+    right: auto;
+}
+
 .mdc-slider.discrete > .highlight > .value {
     position: absolute;
     top: -2rem;
@@ -196,6 +232,10 @@ html[dir] *[dir="rtl"] > .mdc-slider.discrete > .highlight > .value {
     -ms-transform: translateX(-50%) scale(0);
     -webkit-transform: translateX(-50%) scale(0);
     transform: translateX(-50%) scale(0);
+}
+
+.mdc-slider.disabled > .highlight > .value {
+    display: none;
 }
 
 .mdc-slider.discrete > .highlight > .value::before {

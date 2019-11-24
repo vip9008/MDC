@@ -14,12 +14,12 @@ function mdc_slider_update(selector) {
 }
 
 function mdc_slider_enable(selector) {
-    $(selector).children('input').prop('disabled', true);
+    $(selector).children('input').prop('disabled', false);
     $(selector).removeClass('disabled');
 }
 
 function mdc_slider_disable(selector) {
-    $(selector).children('input').prop('disabled', false);
+    $(selector).children('input').prop('disabled', true);
     $(selector).addClass('disabled');
 }
 
@@ -30,8 +30,8 @@ $(document).ready(function() {
             $(this).children('.highlight').html('<div class="value">' + val + '</div>');
         }
 
-        if ($(this).children('input').prop('disabled')) {
-            $(this).addClass('disabled');
+        if ($(this).hasClass('disabled') || $(this).children('input').prop('disabled')) {
+            mdc_slider_disable(this);
         }
 
         mdc_slider_update($(this).children('input'));

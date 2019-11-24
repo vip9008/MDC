@@ -38,6 +38,7 @@
     --input-disabled: rgba(0, 0, 0, 0.02);
 
     --switch-rail-opacity: 0.32;
+    --switch-rail-opacity-0: 0.32;
     --switch-disabled-opacity: 0.38;
     --switch-color: #FFFFFF;
 
@@ -85,6 +86,7 @@
     --input-disabled: rgba(0, 0, 0, 0.02);
 
     --switch-rail-opacity: 0.32;
+    --switch-rail-opacity-0: 0.32;
     --switch-color: #FFFFFF;
 
     color: var(--text-primary);
@@ -131,6 +133,7 @@
     --input-disabled: rgba(255, 255, 255, 0.04);
 
     --switch-rail-opacity: 0.38;
+    --switch-rail-opacity-0: 0.38;
     --switch-color: #FAFAFA;
     
     color: var(--text-primary);
@@ -5088,6 +5091,7 @@ body {
     --input-disabled: rgba(0, 0, 0, 0.02);
 
     --switch-rail-opacity: 0.32;
+    --switch-rail-opacity-0: 0.32;
     --switch-color: #FFFFFF;
 
     color: var(--text-primary);
@@ -5128,6 +5132,7 @@ body {
     --input-disabled: rgba(255, 255, 255, 0.04);
 
     --switch-rail-opacity: 0.38;
+    --switch-rail-opacity-0: 0.38;
     --switch-color: #FAFAFA;
 
     color: var(--text-primary);
