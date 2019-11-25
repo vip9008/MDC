@@ -2,8 +2,110 @@
     padding: 1rem 0 0.5rem;
     background-color: var(--initial-bg-cards);
     box-shadow: var(--z-axis-2-shadow);
+    border-radius: 0.125rem;
+    width: 16rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .mdc-datepicker > .mdc-calendar-controls {
+    color: var(--initial-text-secondary);
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     margin-bottom: 0.75rem;
+}
+
+.mdc-datepicker > .mdc-calendar-controls > .selected-month {
+    font-size: 0.875rem;
+    letter-spacing: 0.007143em;
+    font-weight: 500;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+.mdc-datepicker > .mdc-calendar-controls > .month-controls {
+    display: -ms-flexbox;
+    display: flex;
+    width: 4.5rem;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 0.5rem 0 auto;
+}
+
+.mdc-datepicker > table.month-days {
+    margin: 0 1rem;
+    width: auto;
+}
+
+.mdc-datepicker > table.month-days th {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--initial-text-secondary);
+    text-transform: uppercase;
+    line-height: 1.75rem;
+    padding: 0;
+    border: none;
+    width: 2rem;
+}
+
+.mdc-datepicker > table.month-days td {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.75rem;
+    padding: 0;
+    border: none;
+    width: 2rem;
+}
+
+.mdc-datepicker > table.month-days td > .month-day {
+    margin: 0.125rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 100%;
+    color: var(--initial-text-primary);
+    position: relative;
+    cursor: pointer;
+    will-change: background-color, color;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mdc-datepicker > table.month-days td > .month-day.active {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.mdc-datepicker > table.month-days td > .month-day::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+    pointer-events: none;
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity 0.3s;
+    border: solid 0.0625rem var(--initial-text-secondary);
+}
+
+.mdc-datepicker > table.month-days td > .month-day:hover::before {
+    opacity: 1;
+}
+
+.mdc-datepicker > table.month-days td > .month-day.active::before {
+    display: none;
 }

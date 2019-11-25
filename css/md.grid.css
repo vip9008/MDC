@@ -562,6 +562,29 @@ a.material-icon:focus::before, button.material-icon:focus::before, .material-ico
     transform: scale(2);
 }
 
+
+
+a.material-icon.dense:hover::before, button.material-icon.dense:hover::before, .material-icon.dense.interactive:hover::before {
+    opacity: var(--opacity-hover);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+a.material-icon.dense:active::before, button.material-icon.dense:active::before, .material-icon.dense.interactive:active::before {
+    opacity: var(--opacity-pressed);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+a.material-icon.dense:focus::before, button.material-icon.dense:focus::before, .material-icon.dense.interactive:focus::before {
+    opacity: var(--opacity-focus);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
 a.material-icon::after, button.material-icon::after, .material-icon.interactive::after {
     content: '';
     display: inline-block;
