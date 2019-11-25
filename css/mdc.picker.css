@@ -1,0 +1,9 @@
+.mdc-datepicker {
+    padding: 1rem 0 0.5rem;
+    background-color: var(--initial-bg-cards);
+    box-shadow: var(--z-axis-2-shadow);
+}
+
+.mdc-datepicker > .mdc-calendar-controls {
+    margin-bottom: 0.75rem;
+}
