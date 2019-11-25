@@ -31,7 +31,7 @@
     margin-top: -0.0625rem;
     height: 0.125rem;
     background-color: var(--main-color);
-    opacity: var(--switch-rail-opacity);
+    opacity: var(--switch-rail-opacity-0);
     pointer-events: none;
     border-radius: 0.125rem;
 }
@@ -100,7 +100,7 @@
 }
 
 .mdc-slider.discrete > .highlight {
-    background: linear-gradient(90deg, rgba(255, 255, 255, var(--switch-rail-opacity)) 0.125rem, var(--main-color) 0);
+    background: linear-gradient(90deg, rgba(255, 255, 255, var(--switch-rail-opacity-0)) 0.125rem, var(--main-color) 0);
     background-position: center left;
 }
 
