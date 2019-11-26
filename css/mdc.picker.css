@@ -1,9 +1,42 @@
+.mdc-datepicker-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: var(--z-axis-24-index);
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    will-change: opacity, visibility;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mdc-datepicker-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
 .mdc-datepicker {
-    padding: 1rem 0 0.5rem;
     background-color: var(--initial-bg-cards);
-    box-shadow: var(--z-axis-2-shadow);
-    border-radius: 0.125rem;
-    width: 16rem;
+    box-shadow: var(--z-axis-24-shadow);
+    border-radius: 0.25rem;
+    width: 20.5rem;
+    overflow: hidden;
+    will-change: transform;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -11,7 +44,19 @@
     user-select: none;
 }
 
+.mdc-datepicker-container:not(.active) > .mdc-datepicker {
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+}
+
+.mdc-datepicker::before, .mdc-datepicker::after {
+    content: '';
+    display: table;
+}
+
 .mdc-datepicker > .mdc-calendar-controls {
+    margin: 1rem 0;
     color: var(--initial-text-secondary);
     display: -ms-flexbox;
     display: flex;
@@ -20,7 +65,6 @@
     align-items: center;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-bottom: 0.75rem;
 }
 
 .mdc-datepicker > .mdc-calendar-controls > .selected-month {
@@ -41,7 +85,7 @@
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 0 0.5rem 0 auto;
+    margin: 0 1.5rem 0 auto;
 }
 
 .mdc-datepicker > table.month-days {
@@ -71,6 +115,7 @@
 }
 
 .mdc-datepicker > table.month-days td > .month-day {
+    padding: 0;
     margin: 0.125rem;
     width: 1.75rem;
     height: 1.75rem;
@@ -108,4 +153,12 @@
 
 .mdc-datepicker > table.month-days td > .month-day.active::before {
     display: none;
+}
+
+.mdc-datepicker > .mdc-button-group {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin: 0;
+    padding-left: 1.25rem;
+    padding-right: 0.25rem;
 }
