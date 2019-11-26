@@ -84,7 +84,7 @@
 
 .mdc-datepicker > table.month-days td > .month-day.active {
     background-color: var(--main-color);
-    color: white;
+    color: var(--fg-primary);
 }
 
 .mdc-datepicker > table.month-days td > .month-day::before {
