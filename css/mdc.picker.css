@@ -286,6 +286,10 @@
         margin-top: 3.125rem;
     }
 
+    .mdc-datepicker > .header > .selected-date > span {
+        display: block;
+    }
+
     .mdc-datepicker > .mdc-calendar-controls {
         margin-bottom: 0.5rem;
     }

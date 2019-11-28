@@ -10,14 +10,14 @@
             var yearsList = '';
             for (var i = options.startDate.getFullYear(); i <= options.endDate.getFullYear(); i++) {
                 var thisYear = options.currentMonth.getFullYear();
-                yearsList += '<div class="year-box"><button class="year-'+ i + (i == thisYear ? ' active' : '') + '">' + i + '</button></div>';
+                yearsList += '<div class="year-box"><button class="year-'+ i + (i == thisYear ? ' active' : '') + '" data-year="' + i + '">' + i + '</button></div>';
             }
 
-            var pickerHTML = '<div class="mdc-datepicker-container active">' +
+            var pickerHTML = '<div class="mdc-datepicker-container">' +
                                 '<div class="mdc-datepicker ' + options.color + '">' +
                                     '<div class="header">' +
                                         '<div class="label">' + options.label + '</div>' +
-                                        '<div class="selected-date">' + dateFormat(options.selectedDate, 'EEE, MMM d') + '</div>' +
+                                        '<div class="selected-date">' + dateFormat(options.selectedDate, '<span>EEE, </span>MMM d') + '</div>' +
                                     '</div>' +
                                     '<div class="mdc-calendar-controls">' +
                                         '<div class="selected-month">' + dateFormat(options.currentMonth, 'MMMM yyyy') + '</div>' +
@@ -32,7 +32,7 @@
                                         '<div class="nano-content">' + yearsList + '</div>' +
                                     '</div>' +
                                     '<div class="mdc-button-group">' +
-                                        '<button class="mdc-button ' + options.color + '">Cancel</button>' +
+                                        '<button class="mdc-button close-picker ' + options.color + '">Cancel</button>' +
                                         '<button class="mdc-button ' + options.color + '">OK</button>' +
                                     '</div>' +
                                 '</div>'+
@@ -111,6 +111,23 @@
         }
     }
 
+    $.fn.mdcDatePicker.changeYear = function (year) {
+        var options = $.fn.mdcDatePicker.defaults;
+        options.currentMonth = new Date(year, options.currentMonth.getMonth(), options.currentMonth.getDate());
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .selected-month').text(dateFormat(options.currentMonth, 'MMMM yyyy'));
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > table.month-days').replaceWith(renderMonth(options.currentMonth, options.selectedDate));
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .years-list .year-box > button.active').removeClass('active');
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .years-list .year-box > button.year-' + year).addClass('active');
+    }
+
+    $.fn.mdcDatePicker.selectDate = function (dateString) {
+        var options = $.fn.mdcDatePicker.defaults;
+        options.selectedDate = new Date(dateString);
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .header > .selected-date').html(dateFormat(options.selectedDate, '<span>EEE, </span>MMM d'));
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > table.month-days td > .month-day.active').removeClass('active');
+        $.fn.mdcDatePicker.container.find(".mdc-datepicker > table.month-days td > .month-day[data-date='" + dateString + "']").addClass('active');
+    }
+
     function compareDates(date1, date2) {
         if (date1.getFullYear() == date2.getFullYear() && date1.getMonth() == date2.getMonth() && date1.getDate() == date2.getDate()) {
             return true;
@@ -174,5 +191,24 @@ $(document).ready(function() {
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-calendar-controls > .month-controls > .next', function(event) {
         $(this).closest('.mdc-datepicker-container').mdcDatePicker.changeMonth(1);
+    });
+
+    $('body').on(md_click_event, '.mdc-datepicker-container .years-list .year-box > button', function(event) {
+        if ($(this).hasClass('active')) {
+            return;
+        }
+        $(this).closest('.mdc-datepicker-container').mdcDatePicker.changeYear($(this).attr('data-year'));
+        $(this).closest('.mdc-datepicker-container').children('.mdc-datepicker').removeClass('show-years');
+    });
+
+    $('body').on(md_click_event, '.mdc-datepicker-container table.month-days td > .month-day', function(event) {
+        if ($(this).hasClass('active')) {
+            return;
+        }
+        $(this).closest('.mdc-datepicker-container').mdcDatePicker.selectDate($(this).attr('data-date'));
+    });
+
+    $('body').on(md_click_event, '.mdc-datepicker-container .mdc-button-group > .mdc-button.close-picker', function(event) {
+        $(this).closest('.mdc-datepicker-container').removeClass('active');
     });
 });
