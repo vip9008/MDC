@@ -175,7 +175,12 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.mdc-datepicker > table.month-days td > .month-day.active {
+.mdc-datepicker > table.month-days td > .month-day.disabled {
+    cursor: default;
+    color: var(--initial-text-hint);
+}
+
+.mdc-datepicker > table.month-days td > .month-day.active:not(.disabled) {
     background-color: var(--main-color);
     color: var(--fg-primary);
     font-weight: 500;
@@ -203,9 +208,22 @@
     right: 0;
     left: 0;
     bottom: 3.25rem;
-    padding: 0 1.25rem;
+    width: 20.5rem;
+    height: 17.5rem;
     border-bottom: solid 0.0625rem var(--initial-text-divider);
     background-color: var(--initial-bg-cards);
+    will-change: visibility, opacity, transform;
+    transition: visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mdc-datepicker:not(.show-years) > .years-list {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20%);
+}
+
+.mdc-datepicker > .years-list > .nano-content {
+    padding: 0 1.25rem;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-box-sizing: inherit;
@@ -215,17 +233,15 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    will-change: visibility, opacity, transform;
-    transition: visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mdc-datepicker > .years-list > .year-box {
+.mdc-datepicker > .years-list > .nano-content > .year-box {
     margin: 0;
     width: 6rem;
     height: 3.25rem;
 }
 
-.mdc-datepicker > .years-list > .year-box > button {
+.mdc-datepicker > .years-list > .nano-content > .year-box > button {
     margin: 0.5rem 0.75rem;
     width: 4.5rem;
     height: 2.25rem;
@@ -239,16 +255,10 @@
     cursor: pointer;
 }
 
-.mdc-datepicker > .years-list > .year-box > button.active {
+.mdc-datepicker > .years-list > .nano-content > .year-box > button.active {
     background-color: var(--main-color);
     color: var(--fg-primary);
     font-weight: 500;
-}
-
-.mdc-datepicker:not(.show-years) > .years-list {
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-20%);
 }
 
 .mdc-datepicker > .mdc-button-group {
@@ -292,6 +302,22 @@
 
     .mdc-datepicker > table.month-days td > .month-day {
         margin: 0 0.25rem;
+    }
+
+    .mdc-datepicker > .years-list {
+        top: 3rem;
+        left: 10.5rem;
+        width: 21.5rem;
+        height: 14.75rem;
+    }
+
+    .mdc-datepicker > .years-list > .nano-content > .year-box {
+        width: 4.75rem;
+        height: 2.75rem;
+    }
+
+    .mdc-datepicker > .years-list > .nano-content > .year-box > button {
+        margin: 0.25rem 0.125rem;
     }
 
     .mdc-datepicker > .mdc-button-group {
