@@ -83,7 +83,7 @@
             }
         }
         for (var i = (startingDay + monthDays + 1); i <= 42; i++) {
-            monthDaysHTML += '<td><div class="month-day disabled"></div></td>';
+            monthDaysHTML += '<td></td>';
             if (i % 7 == 0 && i != 42) {
                 monthDaysHTML += '</tr><tr>';
             }
@@ -152,20 +152,20 @@
         var F = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     
         var string = format;
+        // day of month with leading 0
+        string = string.replace('dd', (monthDay < 10 ? '0' + monthDay.toString() : monthDay.toString()));
+        // day of month
+        string = string.replace('d', monthDay.toString());
         // year number
         string = string.replace('yyyy', year);
-        // day of week (3 letters)
-        string = string.replace('EEE', D[weekDay]);
         // month full name
         string = string.replace('MMMM', F[monthIndex]);
         // month name (3 letters)
         string = string.replace('MMM', M[monthIndex]);
         // month number with leading 0
         string = string.replace('MM', (monthIndex + 1 < 10 ? '0' + (monthIndex + 1).toString() : (monthIndex + 1).toString()));
-        // day of month with leading 0
-        string = string.replace('dd', (monthDay < 10 ? '0' + monthDay.toString() : monthDay.toString()));
-        // day of month
-        string = string.replace('d', monthDay.toString());
+        // day of week (3 letters)
+        string = string.replace('EEE', D[weekDay]);
     
         return string;
     }
@@ -201,8 +201,8 @@ $(document).ready(function() {
         $(this).closest('.mdc-datepicker-container').children('.mdc-datepicker').removeClass('show-years');
     });
 
-    $('body').on(md_click_event, '.mdc-datepicker-container table.month-days td > .month-day', function(event) {
-        if ($(this).hasClass('active')) {
+    $('body').on(md_click_event, '.mdc-datepicker-container table.month-days td > button.month-day', function(event) {
+        if ($(this).hasClass('active') || $(this).hasClass('disabled')) {
             return;
         }
         $(this).closest('.mdc-datepicker-container').mdcDatePicker.selectDate($(this).attr('data-date'));

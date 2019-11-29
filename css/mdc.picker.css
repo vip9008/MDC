@@ -155,10 +155,10 @@
 .mdc-datepicker > table.month-days td {
     font-size: 0.75rem;
     text-align: center;
-    line-height: 2.25rem;
     padding: 0;
     border: none;
     width: 2.75rem;
+    height: 2.5rem;
 }
 
 .mdc-datepicker > table.month-days td > .month-day {
@@ -167,6 +167,7 @@
     margin: 0.125rem 0.25rem;
     width: 2.25rem;
     height: 2.25rem;
+    line-height: 2.25rem;
     border-radius: 100%;
     color: var(--initial-text-primary);
     position: relative;
@@ -302,10 +303,6 @@
     .mdc-datepicker > table.month-days th {
         line-height: 1.75rem;
         padding: 0 0.25rem;
-    }
-
-    .mdc-datepicker > table.month-days td > .month-day {
-        margin: 0 0.25rem;
     }
 
     .mdc-datepicker > .years-list {
