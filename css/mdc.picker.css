@@ -176,6 +176,7 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+.mdc-datepicker > table.month-days td > div.month-day,
 .mdc-datepicker > table.month-days td > .month-day.disabled {
     cursor: default;
     color: var(--initial-text-hint);
@@ -225,6 +226,8 @@
 
 .mdc-datepicker > .years-list > .nano-content {
     padding: 0 1.25rem;
+    bottom: auto;
+    max-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-box-sizing: inherit;
@@ -309,7 +312,7 @@
         top: 3rem;
         left: 10.5rem;
         width: 21.5rem;
-        height: 14.75rem;
+        height: 16.25rem;
     }
 
     .mdc-datepicker > .years-list > .nano-content > .year-box {

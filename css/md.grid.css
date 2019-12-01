@@ -521,6 +521,13 @@ a.material-icon, button.material-icon, .material-icon.interactive {
     text-decoration: none;
 }
 
+a.material-icon.disabled, a.material-icon[disabled], a.material-icon:disabled,
+button.material-icon.disabled, button.material-icon[disabled], button.material-icon:disabled,
+.material-icon.interactive.disabled, .material-icon.interactive[disabled], .material-icon.interactive:disabled {
+    color: var(--initial-text-hint);
+    cursor: default;
+}
+
 a.material-icon::before, button.material-icon::before, .material-icon.interactive::before {
     content: '';
     display: inline-block;
@@ -562,8 +569,6 @@ a.material-icon:focus::before, button.material-icon:focus::before, .material-ico
     transform: scale(2);
 }
 
-
-
 a.material-icon.dense:hover::before, button.material-icon.dense:hover::before, .material-icon.dense.interactive:hover::before {
     opacity: var(--opacity-hover);
     -ms-transform: scale(1.5);
@@ -585,18 +590,10 @@ a.material-icon.dense:focus::before, button.material-icon.dense:focus::before, .
     transform: scale(1.5);
 }
 
-a.material-icon::after, button.material-icon::after, .material-icon.interactive::after {
-    content: '';
-    display: inline-block;
-    opacity: 0;
-    position: absolute;
-    height: 3rem;
-    width: 3rem;
-    top: 50%;
-    left: 50%;
-    margin-top: -1.5rem;
-    margin-left: -1.5rem;
-    transition: all 0.2s;
+a.material-icon.disabled::before, a.material-icon[disabled]::before, a.material-icon:disabled::before,
+button.material-icon.disabled::before, button.material-icon[disabled]::before, button.material-icon:disabled::before,
+.material-icon.interactive.disabled::before, .material-icon.interactive[disabled]::before, .material-icon.interactive:disabled::before {
+    display: none;
 }
 
 .container, .container-fluid {
