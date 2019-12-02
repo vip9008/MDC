@@ -22,6 +22,11 @@
                 options.selectedDate = new Date(options.selectedDate);
             }
 
+            if (getDateNumber(options.selectedDate) > getDateNumber(options.endDate) || getDateNumber(options.selectedDate) < getDateNumber(options.startDate)) {
+                options.selectedDate = new Date(dateFormat(options.endDate, 'yyyy-MM-dd'));
+                options.currentMonth = new Date(dateFormat(options.endDate, 'yyyy-MM-01'));
+            }
+
             var yearsList = '';
             for (var i = options.startDate.getFullYear(); i <= options.endDate.getFullYear(); i++) {
                 var thisYear = options.currentMonth.getFullYear();
@@ -59,18 +64,26 @@
         });
     };
     // default options
-    var selectedDate = new Date();
+    var d = new Date();
     $.fn.mdcDatePicker.defaults = {
-        startDate: new Date(selectedDate.getFullYear() - 100, selectedDate.getMonth(), 1),
-        endDate: new Date(selectedDate.getFullYear() + 100, selectedDate.getMonth() + 1, 0),
-        selectedDate: selectedDate,
-        currentMonth: selectedDate,
+        startDate: new Date(d.getFullYear() - 100, d.getMonth(), 1),
+        endDate: new Date(d.getFullYear() + 100, d.getMonth() + 1, 0),
+        selectedDate: new Date(),
+        currentMonth: new Date(),
         dateFormat: 'dd/MM/yyyy',
         color: 'purple-900',
         label: 'Select a date'
     };
 
     $.fn.mdcDatePicker.container = $('<div />');
+
+    function getDateNumber(date) {
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+
+        return parseInt(year.toString() + month.toString().padStart(2, '0') + day.toString().padStart(2, '0'));
+    }
 
     function renderMonth(date, selectedDate, start, end) {
         var monthDaysHTML = '<tr>';
@@ -133,46 +146,8 @@
 
     function updateCalendar() {
         var options = $.fn.mdcDatePicker.defaults;
-        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .selected-month').text(dateFormat(options.currentMonth, 'MMMM yyyy'));
-        $.fn.mdcDatePicker.container.find('.mdc-datepicker > table.month-days').replaceWith(renderMonth(options.currentMonth, options.selectedDate, options.startDate, options.endDate));
-        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .years-list .year-box > button.active').removeClass('active');
-        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .years-list .year-box > button.year-' + options.currentMonth.getFullYear()).addClass('active');
-    }
-
-    $.fn.mdcDatePicker.changeMonth = function (direction) {
-        var options = $.fn.mdcDatePicker.defaults;
-        if (!canChangeMonth(options.currentMonth.getFullYear(), options.currentMonth.getMonth() + direction, options.startDate, options.endDate)) {
-            return;
-        }
-
-        if (options.currentMonth.getFullYear() == options.startDate.getFullYear() && options.currentMonth.getMonth() + direction == options.startDate.getMonth()) {
-            $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .month-controls > .prev').prop('disabled', true);
-        } else {
-            $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .month-controls > .prev').prop('disabled', false);
-        }
-
-        if (options.currentMonth.getFullYear() == options.endDate.getFullYear() && options.currentMonth.getMonth() + direction == options.endDate.getMonth()) {
-            $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .month-controls > .next').prop('disabled', true);
-        } else {
-            $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .month-controls > .next').prop('disabled', false);
-        }
-
-        options.currentMonth = new Date(options.currentMonth.getFullYear(), options.currentMonth.getMonth() + direction, options.currentMonth.getDate());
-        updateCalendar();
-    }
-
-    $.fn.mdcDatePicker.changeYear = function (year) {
-        var options = $.fn.mdcDatePicker.defaults;
+        var year = options.currentMonth.getFullYear();
         var month = options.currentMonth.getMonth();
-        if (year == options.startDate.getFullYear() && month < options.startDate.getMonth()) {
-            month = options.startDate.getMonth();
-        }
-        if (year == options.endDate.getFullYear() && month > options.endDate.getMonth()) {
-            month = options.endDate.getMonth();
-        }
-        if (!canChangeMonth(year, month, options.startDate, options.endDate)) {
-            return;
-        }
 
         if (year == options.startDate.getFullYear() && month == options.startDate.getMonth()) {
             $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .month-controls > .prev').prop('disabled', true);
@@ -186,16 +161,46 @@
             $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .month-controls > .next').prop('disabled', false);
         }
 
-        options.currentMonth = new Date(year, month, options.currentMonth.getDate());
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .mdc-calendar-controls > .selected-month').text(dateFormat(options.currentMonth, 'MMMM yyyy'));
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > table.month-days').replaceWith(renderMonth(options.currentMonth, options.selectedDate, options.startDate, options.endDate));
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .years-list .year-box > button.active').removeClass('active');
+        $.fn.mdcDatePicker.container.find('.mdc-datepicker > .years-list .year-box > button.year-' + options.currentMonth.getFullYear()).addClass('active');
+    }
+
+    $.fn.mdcDatePicker.changeMonth = function (x) {
+        var options = $.fn.mdcDatePicker.defaults;
+        var month = options.currentMonth.getMonth() + x;
+        if (!canChangeMonth(options.currentMonth.getFullYear(), month, options.startDate, options.endDate)) {
+            return;
+        }
+        options.currentMonth = new Date(options.currentMonth.getFullYear(), month, 1);
+        updateCalendar();
+    }
+
+    $.fn.mdcDatePicker.setYear = function (year) {
+        var options = $.fn.mdcDatePicker.defaults;
+        var month = options.currentMonth.getMonth();
+        if (year == options.startDate.getFullYear() && month < options.startDate.getMonth()) {
+            month = options.startDate.getMonth();
+        }
+        if (year == options.endDate.getFullYear() && month > options.endDate.getMonth()) {
+            month = options.endDate.getMonth();
+        }
+        if (!canChangeMonth(year, month, options.startDate, options.endDate)) {
+            return;
+        }
+
+        options.currentMonth = new Date(year, month, 1);
         updateCalendar();
     }
 
     $.fn.mdcDatePicker.selectDate = function (dateString) {
         var options = $.fn.mdcDatePicker.defaults;
         options.selectedDate = new Date(dateString);
+        var dateAttr = dateFormat(options.selectedDate, 'yyyy-MM-dd');
         $.fn.mdcDatePicker.container.find('.mdc-datepicker > .header > .selected-date').html(dateFormat(options.selectedDate, '<span>EEE, </span>MMM d'));
         $.fn.mdcDatePicker.container.find('.mdc-datepicker > table.month-days td > .month-day.active').removeClass('active');
-        $.fn.mdcDatePicker.container.find(".mdc-datepicker > table.month-days td > .month-day[data-date='" + dateString + "']").addClass('active');
+        $.fn.mdcDatePicker.container.find(".mdc-datepicker > table.month-days td > .month-day[data-date='" + dateAttr + "']").addClass('active');
     }
 
     $.fn.mdcDatePicker.getSelectedDate = function () {
@@ -204,7 +209,7 @@
 
     $.fn.mdcDatePicker.close = function () {
         var options = $.fn.mdcDatePicker.defaults;
-        options.currentMonth = options.selectedDate;
+        options.currentMonth = new Date(dateFormat(options.selectedDate, 'yyyy-MM-01'));
         $.fn.mdcDatePicker.container.removeClass('active');
     }
 
@@ -250,18 +255,31 @@
         var F = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     
         var string = format;
-        // day of month with leading 0
-        string = string.replace('dd', (monthDay < 10 ? '0' + monthDay.toString() : monthDay.toString()));
-        // day of month
-        string = string.replace('d', monthDay.toString());
+
+        if (string.indexOf('dd') > -1) {
+            // day of month with leading 0
+            string = string.replace('dd', monthDay.toString().padStart(2, '0'));
+        } else if (string.indexOf('d') > -1) {
+            // day of month
+            string = string.replace('d', monthDay.toString());
+        }
+
+        if (string.indexOf('MMMM') > -1) {
+            // month full name
+            string = string.replace('MMMM', F[monthIndex]);
+        } else if (string.indexOf('MMM') > -1) {
+            // month name (3 letters)
+            string = string.replace('MMM', M[monthIndex]);
+        } else if (string.indexOf('MM') > -1) {
+            // month number with leading 0
+            string = string.replace('MM', (monthIndex + 1).toString().padStart(2, '0'));
+        } else if (string.indexOf('M') > -1) {
+            // month number with leading 0
+            string = string.replace('M', (monthIndex + 1).toString());
+        }
+
         // year number
         string = string.replace('yyyy', year);
-        // month full name
-        string = string.replace('MMMM', F[monthIndex]);
-        // month name (3 letters)
-        string = string.replace('MMM', M[monthIndex]);
-        // month number with leading 0
-        string = string.replace('MM', (monthIndex + 1 < 10 ? '0' + (monthIndex + 1).toString() : (monthIndex + 1).toString()));
         // day of week (3 letters)
         string = string.replace('EEE', D[weekDay]);
     
@@ -307,7 +325,7 @@ $(document).ready(function() {
         if ($(this).hasClass('active')) {
             return;
         }
-        $(this).closest('.has-datepicker').mdcDatePicker.changeYear($(this).attr('data-year'));
+        $(this).closest('.has-datepicker').mdcDatePicker.setYear($(this).attr('data-year'));
         $(this).closest('.mdc-datepicker').removeClass('show-years');
     });
 
