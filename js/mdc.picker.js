@@ -52,8 +52,8 @@
                                         '<div class="nano-content">' + yearsList + '</div>' +
                                     '</div>' +
                                     '<div class="mdc-button-group">' +
-                                        '<button class="mdc-button close-picker ' + options.color + '">Cancel</button>' +
-                                        '<button class="mdc-button confirm-date ' + options.color + '">OK</button>' +
+                                        '<button class="mdc-button close-picker">Cancel</button>' +
+                                        '<button class="mdc-button confirm-date">OK</button>' +
                                     '</div>' +
                                 '</div>'+
                             '</div>';
