@@ -312,7 +312,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
     padding-right: 1.25rem;
 }
 
-@media (min-width: 576px) and (min-height: 424px) {
+@media (min-width: 544px) and (min-height: 424px) {
     .mdc-datepicker {
         padding-left: 10.5rem;
     }
