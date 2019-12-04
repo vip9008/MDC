@@ -99,6 +99,18 @@
     margin-right: 0.25rem;
 }
 
+html[dir="ltr"] .mdc-datepicker > .mdc-calendar-controls > .selected-month,
+html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .mdc-calendar-controls > .selected-month {
+    margin-left: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+html[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > .selected-month,
+html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > .selected-month {
+    margin-left: 0.25rem;
+    margin-right: 1.5rem;
+}
+
 .mdc-datepicker > .mdc-calendar-controls > .toggle-years {
     cursor: pointer;
     will-change: transform;
@@ -120,6 +132,21 @@
     margin: 0 1.5rem 0 auto;
     will-change: visibility, opacity, transform;
     transition: visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html[dir="ltr"] .mdc-datepicker > .mdc-calendar-controls > .month-controls,
+html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .mdc-calendar-controls > .month-controls {
+    margin: 0 1.5rem 0 auto;
+}
+
+html[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > .month-controls,
+html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > .month-controls {
+    margin: 0 auto 0 1.5rem;
+}
+
+html[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > .month-controls > button,
+html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > .month-controls > button {
+    transform: rotate(180deg);
 }
 
 .mdc-datepicker.show-years > .mdc-calendar-controls > .month-controls {
@@ -273,9 +300,33 @@
     padding-right: 0.25rem;
 }
 
-@media (min-width: 960px) {
+html[dir="ltr"] .mdc-datepicker > .mdc-button-group,
+html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .mdc-button-group {
+    padding-left: 1.25rem;
+    padding-right: 0.25rem;
+}
+
+html[dir="rtl"] .mdc-datepicker > .mdc-button-group,
+html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
+    padding-left: 0.25rem;
+    padding-right: 1.25rem;
+}
+
+@media (min-width: 576px) and (min-height: 424px) {
     .mdc-datepicker {
         padding-left: 10.5rem;
+    }
+
+    html[dir="ltr"] .mdc-datepicker,
+    html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker {
+        padding-left: 10.5rem;
+        padding-right: 0;
+    }
+    
+    html[dir="rtl"] .mdc-datepicker,
+    html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker {
+        padding-left: 0;
+        padding-right: 10.5rem;
     }
 
     .mdc-datepicker > .header {
@@ -284,6 +335,18 @@
         top: 0;
         left: 0;
         bottom: 0;
+    }
+
+    html[dir="ltr"] .mdc-datepicker > .header,
+    html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .header {
+        left: 0;
+        right: auto;
+    }
+    
+    html[dir="rtl"] .mdc-datepicker > .header,
+    html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .header {
+        left: auto;
+        right: 0;
     }
 
     .mdc-datepicker > .header > .selected-date {
@@ -313,6 +376,18 @@
         left: 10.5rem;
         width: 21.5rem;
         height: 16.25rem;
+    }
+
+    html[dir="ltr"] .mdc-datepicker > .years-list,
+    html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .years-list {
+        left: 10.5rem;
+        right: auto;
+    }
+    
+    html[dir="rtl"] .mdc-datepicker > .years-list,
+    html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .years-list {
+        left: auto;
+        right: 10.5rem;
     }
 
     .mdc-datepicker > .years-list > .nano-content > .year-box {

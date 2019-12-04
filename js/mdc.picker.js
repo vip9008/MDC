@@ -126,8 +126,9 @@
                 monthDaysHTML += '</tr><tr>';
             }
         }
+        var c = 0;
         for (var i = (startingDay + monthDays + 1); i <= 42; i++) {
-            monthDaysHTML += '<td></td>';
+            monthDaysHTML += '<td><div class="month-day disabled">' + (++c) + '</div></td>';
             if (i % 7 == 0 && i != 42) {
                 monthDaysHTML += '</tr><tr>';
             }
@@ -210,7 +211,7 @@
     $.fn.mdcDatePicker.close = function () {
         var options = $.fn.mdcDatePicker.defaults;
         options.currentMonth = new Date(dateFormat(options.selectedDate, 'yyyy-MM-01'));
-        $.fn.mdcDatePicker.container.removeClass('active');
+        $.fn.mdcDatePicker.container.removeClass('active').children('.mdc-datepicker').removeClass('show-years');
     }
 
     $.fn.mdcDatePicker.open = function () {
@@ -322,11 +323,11 @@ $(document).ready(function() {
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .years-list .year-box > button', function(event) {
+        $(this).closest('.mdc-datepicker').removeClass('show-years');
         if ($(this).hasClass('active')) {
             return;
         }
         $(this).closest('.has-datepicker').mdcDatePicker.setYear($(this).attr('data-year'));
-        $(this).closest('.mdc-datepicker').removeClass('show-years');
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container table.month-days td > button.month-day', function(event) {
@@ -343,6 +344,6 @@ $(document).ready(function() {
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-button-group > .mdc-button.confirm-date', function(event) {
         var date = $(this).closest('.has-datepicker').mdcDatePicker.getSelectedDate();
         $(this).closest('.has-datepicker').find('input.datepicker-input').val(date).trigger('change');
-        $(this).closest('.mdc-datepicker-container').removeClass('active');
+        $(this).closest('.has-datepicker').mdcDatePicker.close();
     });
 });
