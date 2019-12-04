@@ -312,7 +312,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
     padding-right: 1.25rem;
 }
 
-@media (min-width: 576px) and (min-height: 424px) {
+@media (orientation: landscape) {
     .mdc-datepicker {
         padding-left: 10.5rem;
     }
@@ -401,5 +401,17 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
 
     .mdc-datepicker > .mdc-button-group {
         padding-top: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .mdc-datepicker {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-height: 460px) {
+    .mdc-datepicker {
+        transform: scale(0.8);
     }
 }
