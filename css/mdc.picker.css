@@ -514,6 +514,16 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
         padding: 0.25rem 1.25rem 0 0.75rem;
     }
 
+    html[dir="ltr"] .mdc-datepicker > .years-list > .nano-content,
+    html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .years-list > .nano-content {
+        padding: 0.25rem 1.25rem 0 0.75rem;
+    }
+
+    html[dir="rtl"] .mdc-datepicker > .years-list > .nano-content,
+    html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .years-list > .nano-content {
+        padding: 0.25rem 0.75rem 0 1.25rem;
+    }
+
     .mdc-datepicker > .years-list > .nano-content > .year-box {
         width: 3.5rem;
         height: 2rem;
@@ -534,14 +544,14 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
 
     html[dir="ltr"] .mdc-datepicker > .years-list > .nano-pane,
     html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .years-list > .nano-pane {
-        right: 0.5rem;
         left: auto;
+        right: 0.5rem;
     }
 
     html[dir="rtl"] .mdc-datepicker > .years-list > .nano-pane,
     html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .years-list > .nano-pane {
-        right: 0.5rem;
-        left: auto;
+        left: 0.5rem;
+        right: auto;
     }
 
     .mdc-datepicker > .mdc-button-group {

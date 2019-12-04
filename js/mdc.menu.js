@@ -41,14 +41,15 @@ $(document).ready(function() {
 
         mdc_close_menus();
 
-        $(menu_container).removeClass('bottom reverse').find('.mdc-list-container').removeAttr('style');
+        // $(menu_container).removeClass('bottom reverse').find('.mdc-list-container').removeAttr('style');
+        $(menu_container).find('.mdc-list-container').removeAttr('style');
 
         if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
             return false;
         }
 
-        var viewport_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        var viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
+        var viewport_height = document.documentElement.clientHeight || document.body.clientHeight;
 
         var menu = $(menu_container).find('.mdc-list-container');
         var menu_height = $(menu).outerHeight();
@@ -67,7 +68,7 @@ $(document).ready(function() {
         };
 
         if ((menu_position.top + menu_height) > viewport_height) {
-            $(menu_container).addClass('bottom');
+            // $(menu_container).addClass('bottom');
             position.bottom = 16;
         } else {
             position.top = menu_position.top;
@@ -75,19 +76,19 @@ $(document).ready(function() {
 
         position.width = menu_width;
 
-        if (parseInt($(menu).css('left')) === 0) {
-            // position.left = menu_position.left;
-            // position.right = "auto";
+        if ($(menu).css('direction') == 'ltr') {
+            position.left = menu_position.left;
+            position.right = "auto";
             if ((menu_position.left + menu_width) > viewport_width) {
-                $(menu_container).addClass('reverse');
+                // $(menu_container).addClass('reverse');
                 position.right = 16;
                 position.left = "auto";
             }
         } else {
-            // position.right = viewport_width - menu_position.left;
-            // position.left = "auto";
+            position.right = viewport_width - menu_position.right;
+            position.left = "auto";
             if ((menu_position.right - menu_width) < 0) {
-                $(menu_container).addClass('reverse');
+                // $(menu_container).addClass('reverse');
                 position.left = 16;
                 position.right = "auto";
             }

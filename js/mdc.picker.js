@@ -61,7 +61,7 @@
             $.fn.mdcDatePicker.container = $(pickerHTML).appendTo(container);
             $.fn.mdcDatePicker.defaults = options;
             
-            var viewport_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
             if (viewport_width >= 960) {
                 $.fn.mdcDatePicker.container.addClass('inline');
             }
@@ -223,16 +223,16 @@
     $.fn.mdcDatePicker.close = function () {
         var options = $.fn.mdcDatePicker.defaults;
         options.currentMonth = new Date(dateFormat(options.selectedDate, 'yyyy-MM-01'));
-        $.fn.mdcDatePicker.container.removeClass('active').removeAttr('style').children('.mdc-datepicker').removeClass('show-years');
+        $.fn.mdcDatePicker.container.removeClass('active').children('.mdc-datepicker').removeClass('show-years');
     }
 
     $.fn.mdcDatePicker.open = function () {
         // var options = $.fn.mdcDatePicker.defaults;
         updateCalendar();
-        $.fn.mdcDatePicker.container.addClass('active');
+        $.fn.mdcDatePicker.container.addClass('active').removeAttr('style');
         if ($.fn.mdcDatePicker.container.hasClass('inline')) {
-            var viewport_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            var viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
+            var viewport_height = document.documentElement.clientHeight || document.body.clientHeight;
 
             var menu_height = 280;
             var menu_width = 256;
@@ -252,7 +252,7 @@
                 position.top = menu_position.top;
             }
 
-            if (parseInt($.fn.mdcDatePicker.container.css('left')) === 0) {
+            if ($.fn.mdcDatePicker.container.css('direction') == 'ltr') {
                 position.left = menu_position.left;
                 position.right = "auto";
                 if ((menu_position.left + menu_width) > viewport_width) {
@@ -260,7 +260,7 @@
                     position.left = "auto";
                 }
             } else {
-                position.right = viewport_width - menu_position.right - 16;
+                position.right = viewport_width - menu_position.right;
                 position.left = "auto";
                 if ((menu_position.right - menu_width) < 0) {
                     position.left = 16;
@@ -350,7 +350,7 @@ $(document).ready(function() {
     });
 
     $(window).resize(function(event) {
-        var viewport_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
         if (viewport_width >= 960) {
             $('.mdc-datepicker-container').addClass('inline');
         } else {
@@ -410,6 +410,9 @@ $(document).ready(function() {
             return;
         }
         $(this).closest('.has-datepicker').mdcDatePicker.selectDate($(this).attr('data-date'));
+        if ($(this).closest('.mdc-datepicker-container').hasClass('inline')) {
+            $(this).closest('.mdc-datepicker-container').find('.mdc-button-group > .mdc-button.confirm-date').trigger('click');
+        }
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-button-group > .mdc-button.close-picker', function(event) {
