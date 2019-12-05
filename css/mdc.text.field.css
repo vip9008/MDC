@@ -8,6 +8,9 @@
 }
 
 .mdc-text-area, .mdc-text-field {
+    --border-size: 1px;
+    --focus-border-size: 2px;
+
     display: block;
     position: relative;
     margin-top: 1rem;
@@ -50,7 +53,7 @@
     background-color: var(--input);
     border-radius: 0.25rem 0.25rem 0 0;
     will-change: background-color;
-    border-bottom: 0.0625rem solid var(--initial-text-hint);
+    border-bottom: var(--border-size) solid var(--initial-text-hint);
 
     -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
     -o-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
@@ -92,7 +95,7 @@
 .mdc-text-area > .input > .input-element {
     line-height: 1.75rem;
     min-height: 7rem;
-    height: calc(1.75rem * var(--number-of-lines) + 0.0625rem); /*1.75 * LINES_NUMBER + .0625 rem*/
+    height: calc(1.75rem * var(--number-of-lines) + var(--border-size)); /*1.75 * LINES_NUMBER + .0625 rem*/
     padding: 0 0.75rem;
     resize: none;
 }
@@ -112,10 +115,10 @@
 .mdc-text-area > .input::after {
     content: '';
     position: absolute;
-    bottom: -0.0625rem;
+    bottom: calc(var(--border-size) * -1);
     left: 0;
     width: 100%;
-    height: 0.125rem;
+    height: var(--focus-border-size);
     background-color: var(--bg-border);
     will-change: transform;
 
@@ -556,7 +559,7 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
 .mdc-text-field.outlined > .input,
 .mdc-text-area.outlined > .input {
     background-color: transparent;
-    border: 0.0625rem solid var(--initial-text-hint);
+    border: var(--border-size) solid var(--initial-text-hint);
     border-radius: 0.25rem;
     will-change: border-color;
     transition: border-color 0.15s cubic-bezier(0.4,0,.2,1);
@@ -639,7 +642,7 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input +
 html[dir="ltr"] .mdc-text-area.outlined > .label,
 html[dir] *[dir="ltr"] .mdc-text-area.outlined > .label,
 html[dir] *[dir] .mdc-text-area.outlined[dir="ltr"] > .label {
-    left: 0.8125rem;
+    left: calc(0.8rem + var(--focus-border-size));
     right: auto;
 }
 
@@ -659,7 +662,7 @@ html[dir="rtl"] .mdc-text-area.outlined > .label,
 html[dir] *[dir="rtl"] .mdc-text-area.outlined > .label,
 html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     left: auto;
-    right: 0.8125rem;
+    right: calc(0.8rem + var(--focus-border-size));
 }
 
 .mdc-text-field.outlined.active > .label,
@@ -674,24 +677,24 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0.0625rem;
-    right: 0.0625rem;
+    left: var(--border-size);
+    right: var(--border-size);
     margin: 0 0.5rem;
     pointer-events: none;
     opacity: 0;
     will-change: opacity;
     transition: opacity 0.15s cubic-bezier(0.4,0,.2,1);
-    border-bottom: solid 0.0625rem var(--initial-text-hint);
+    border-bottom: solid var(--border-size) var(--initial-text-hint);
 }
 
 .mdc-text-field.outlined.active > .input > .outline,
 .mdc-text-area.outlined.active > .input > .outline {
-    top: -0.0625rem;
-    bottom: -0.0625rem;
-    left: -0.0625rem;
-    right: -0.0625rem;
-    margin: 0 0.625rem;
-    border-bottom: solid 0.125rem var(--initial-text-hint);
+    top: calc(var(--border-size) * -1);
+    bottom: calc(var(--border-size) * -1);
+    left: calc(var(--border-size) * -1);
+    right: calc(var(--border-size) * -1);
+    margin: 0 calc(0.5rem + var(--focus-border-size));
+    border-bottom: solid var(--focus-border-size) var(--initial-text-hint);
     opacity: 1;
 }
 
@@ -706,19 +709,19 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     position: absolute;
     top: 0;
     left: -0.5rem;
-    bottom: -0.0625rem;
+    bottom: calc(var(--border-size) * -1);
     width: 0.4375rem;
     border-radius: 0.25rem 0 0 0.25rem;
-    border: solid 0.0625rem var(--initial-text-hint);
+    border: solid var(--border-size) var(--initial-text-hint);
     border-right: none;
 }
 
 .mdc-text-field.outlined.active > .input > .outline::before,
 .mdc-text-area.outlined.active > .input > .outline::before {
-    left: -0.625rem;
-    bottom: -0.125rem;
+    left: calc(-0.5rem - var(--focus-border-size));
+    bottom: calc(var(--focus-border-size) * -1);
     width: 0.5rem;
-    border: solid 0.125rem var(--initial-text-hint);
+    border: solid var(--focus-border-size) var(--initial-text-hint);
     border-right: none;
 }
 
@@ -728,19 +731,19 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     position: absolute;
     top: 0;
     right: -0.5rem;
-    bottom: -0.0625rem;
+    bottom: calc(var(--border-size) * -1);
     width: 0.4375rem;
     border-radius: 0 0.25rem 0.25rem 0;
-    border: solid 0.0625rem var(--initial-text-hint);
+    border: solid var(--border-size) var(--initial-text-hint);
     border-left: none;
 }
 
 .mdc-text-field.outlined.active > .input > .outline::after,
 .mdc-text-area.outlined.active > .input > .outline::after {
-    right: -0.625rem;
-    bottom: -0.125rem;
+    right: calc(-0.5rem - var(--focus-border-size));
+    bottom: calc(var(--focus-border-size) * -1);
     width: 0.5rem;
-    border: solid 0.125rem var(--initial-text-hint);
+    border: solid var(--focus-border-size) var(--initial-text-hint);
     border-left: none;
 }
 
@@ -751,12 +754,12 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     left: auto;
     right: 0;
     width: 100%;
-    border-top: solid 0.0625rem var(--initial-text-hint);
+    border-top: solid var(--border-size) var(--initial-text-hint);
 }
 
 .mdc-text-field.outlined.active > .input > .outline > .top,
 .mdc-text-area.outlined.active > .input > .outline > .top {
-    border-top: solid 0.125rem var(--initial-text-hint);
+    border-top: solid var(--focus-border-size) var(--initial-text-hint);
 }
 
 html[dir="ltr"] .mdc-text-field.outlined > .input > .outline > .top,
