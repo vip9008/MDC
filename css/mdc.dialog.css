@@ -40,7 +40,7 @@
     cursor: default;
     background-color: var(--bg-cards);
     box-shadow: var(--z-axis-24-shadow);
-    will-change: transform;
+    /* will-change: transform; */
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
