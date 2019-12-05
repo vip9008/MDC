@@ -1,12 +1,12 @@
 /* USING REM UNIT (BASE 16px) */
 
 .mdc-dialog-container {
-    display: -ms-flexbox;
+    /* display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: center; */
     position: fixed;
     top: 0;
     right: 0;
@@ -32,6 +32,9 @@
 }
 
 .mdc-dialog-container > .mdc-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
     min-width: 17.5rem;
     max-width: 35rem;
     width: 17.5rem;
@@ -40,14 +43,17 @@
     cursor: default;
     background-color: var(--bg-cards);
     box-shadow: var(--z-axis-24-shadow);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     will-change: transform;
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mdc-dialog-container:not(.active) > .mdc-dialog {
-    -ms-transform: scale(1.12);
-    -webkit-transform: scale(1.12);
-    transform: scale(1.12);
+    -ms-transform: translate(-50%, -50%), scale(1.12);
+    -webkit-transform: translate(-50%, -50%), scale(1.12);
+    transform: translate(-50%, -50%), scale(1.12);
 }
 
 .mdc-dialog-container > .mdc-dialog > .header {
