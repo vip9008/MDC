@@ -361,7 +361,11 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function(event) {
-        $('.mdc-datepicker-container.inline.active').mdcDatePicker.close();
+        $('.mdc-datepicker-container.active').each(function() {
+            if ($(this).hasClass('inline')) {
+                $(this).mdcDatePicker.close();
+            }
+        });
     });
 
     $('body').on(md_click_event, '.has-datepicker', function(event) {
