@@ -1,21 +1,36 @@
 .mdc-fab {
     position: fixed;
     display: inline-block;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: var(--z-axis-6-index);
+    z-index: var(--z-axis-12-index);
+    right: 0;
+    bottom: 0;
+}
+
+html[dir="ltr"] .mdc-fab,
+html[dir] .mdc-fab[dir="ltr"] {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .mdc-fab,
+html[dir] .mdc-fab[dir="rtl"] {
+    right: auto;
+    left: 0;
 }
 
 .mdc-fab > .mdc-fab-button {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
     border: none;
     outline: none;
     border-radius: 3.5rem;
     color: var(--text-primary);
     cursor: pointer;
+    z-index: var(--z-axis-6-index);
     box-shadow: var(--z-axis-6-shadow);
     display: -ms-inline-flexbox;
     display: inline-flex;
-    position: relative;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
@@ -38,11 +53,36 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html[dir="ltr"] .mdc-fab > .mdc-fab-button,
+html[dir] .mdc-fab[dir="ltr"] > .mdc-fab-button {
+    right: 1rem;
+    left: auto;
+}
+
+html[dir="rtl"] .mdc-fab > .mdc-fab-button,
+html[dir] .mdc-fab[dir="rtl"] > .mdc-fab-button {
+    right: auto;
+    left: 1rem;
+}
+
+.mdc-fab > .mdc-fab-button.mini {
+    border-radius: 2.5rem;
+    padding: 0.5rem;
+}
+
+.mdc-fab > .mdc-fab-button.extended {
+    max-width: 34rem;
+    padding: 0.75rem 1.25rem;
 }
 
 .mdc-fab > .mdc-fab-button:focus,
 .mdc-fab > .mdc-fab-button:active {
-    z-index: var(--z-axis-6-index);
+    z-index: var(--z-axis-12-index);
     box-shadow: var(--z-axis-12-shadow);
 }
 
@@ -91,13 +131,47 @@
     height: 1.5rem;
     font-size: 1.5rem;
     vertical-align: middle;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mdc-fab > .mdc-fab-button.disabled > .icon, .mdc-fab > .mdc-fab-button[disabled] > .icon, .mdc-fab > .mdc-fab-button:disabled > .icon {
+.mdc-fab > .mdc-fab-button.extended > .icon {
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+}
+
+html[dir="ltr"] .mdc-fab > .mdc-fab-button.extended > .icon,
+html[dir] .mdc-fab[dir="ltr"] > .mdc-fab-button.extended > .icon {
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+}
+
+html[dir="rtl"] .mdc-fab > .mdc-fab-button.extended > .icon,
+html[dir] .mdc-fab[dir="rtl"] > .mdc-fab-button.extended > .icon {
+    margin-left: 0.5rem;
+    margin-right: -0.5rem;
+}
+
+.mdc-fab > .mdc-fab-button > .label {
+    display: inline-block;
+    overflow: hidden;
+    max-height: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.mdc-fab > .mdc-fab-button.mini > .label {
+    display: none;
+}
+
+.mdc-fab > .mdc-fab-button.extended > .label {
+    max-width: 32rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+.mdc-fab > .mdc-fab-button.disabled > .icon, .mdc-fab > .mdc-fab-button[disabled] > .icon, .mdc-fab > .mdc-fab-button:disabled > .icon,
+.mdc-fab > .mdc-fab-button.disabled > .label, .mdc-fab > .mdc-fab-button[disabled] > .label, .mdc-fab > .mdc-fab-button:disabled > .label {
     color: var(--initial-text-hint);
-}
-
-.mdc-fab > .mdc-fab-button.mini {
-    border-radius: 2.5rem;
-    padding: 0.5rem;
 }
