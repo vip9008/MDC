@@ -41,9 +41,9 @@
     bottom: auto;
     left: 0;
     right: auto;
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
 }
 
 html[dir="ltr"] .mdc-menu-container .mdc-list-container,
@@ -52,9 +52,6 @@ html[dir="rtl"] .mdc-menu-container.reverse .mdc-list-container,
 html[dir] .mdc-menu-container.reverse[dir="rtl"] .mdc-list-container {
     left: 0;
     right: auto;
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
 }
 
 .mdc-menu-container.reverse .mdc-list-container,
@@ -64,42 +61,20 @@ html[dir="rtl"] .mdc-menu-container .mdc-list-container,
 html[dir] .mdc-menu-container[dir="rtl"] .mdc-list-container {
     left: auto;
     right: 0;
-    -webkit-transform-origin: top right;
-    -ms-transform-origin: top right;
-    transform-origin: top right;
 }
 
 .mdc-menu-container.bottom .mdc-list-container {
     top: auto;
     bottom: 0;
-    -webkit-transform-origin: bottom left;
-    -ms-transform-origin: bottom left;
-    transform-origin: bottom left;
-}
-
-html[dir="ltr"] .mdc-menu-container.bottom .mdc-list-container,
-html[dir] .mdc-menu-container.bottom[dir="ltr"] .mdc-list-container,
-html[dir="rtl"] .mdc-menu-container.bottom.reverse .mdc-list-container,
-html[dir] .mdc-menu-container.bottom.reverse[dir="rtl"] .mdc-list-container {
-    -webkit-transform-origin: bottom left;
-    -ms-transform-origin: bottom left;
-    transform-origin: bottom left;
-}
-
-.mdc-menu-container.bottom.reverse .mdc-list-container,
-html[dir="ltr"] .mdc-menu-container.bottom.reverse .mdc-list-container,
-html[dir] .mdc-menu-container.bottom.reverse[dir="ltr"] .mdc-list-container,
-html[dir="rtl"] .mdc-menu-container.bottom .mdc-list-container,
-html[dir] .mdc-menu-container.bottom[dir="rtl"] .mdc-list-container {
-    -webkit-transform-origin: bottom right;
-    -ms-transform-origin: bottom right;
-    transform-origin: bottom right;
+    -webkit-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    transform-origin: bottom;
 }
 
 .mdc-menu-container:not(.active) .mdc-list-container {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
     opacity: 0;
 }
 
