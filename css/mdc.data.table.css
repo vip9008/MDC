@@ -20,9 +20,10 @@
     color: var(--initial-text-primary);
 }
 
-.mdc-data-table > .header > .title {
+.mdc-data-table > .header > .table-title {
     font-size: 1.25rem;
     line-height: 1.5;
+    margin: 0;
 }
 
 .mdc-data-table > .header > .actions {
