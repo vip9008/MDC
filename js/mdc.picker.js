@@ -385,6 +385,7 @@ $(document).ready(function() {
         } else {
             $(parent).addClass('show-years');
         }
+        return false;
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-calendar-controls > .month-controls > .prev', function(event) {
@@ -392,6 +393,7 @@ $(document).ready(function() {
             return;
         }
         $(this).closest('.has-datepicker').mdcDatePicker.changeMonth(-1);
+        return false;
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-calendar-controls > .month-controls > .next', function(event) {
@@ -399,6 +401,7 @@ $(document).ready(function() {
             return;
         }
         $(this).closest('.has-datepicker').mdcDatePicker.changeMonth(1);
+        return false;
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .years-list .year-box > button', function(event) {
@@ -407,6 +410,7 @@ $(document).ready(function() {
             return;
         }
         $(this).closest('.has-datepicker').mdcDatePicker.setYear($(this).attr('data-year'));
+        return false;
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container table.month-days td > button.month-day', function(event) {
@@ -417,15 +421,18 @@ $(document).ready(function() {
         if ($(this).closest('.mdc-datepicker-container').hasClass('inline')) {
             $(this).closest('.mdc-datepicker-container').find('.mdc-button-group > .mdc-button.confirm-date').trigger('click');
         }
+        return false;
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-button-group > .mdc-button.close-picker', function(event) {
         $(this).closest('.has-datepicker').mdcDatePicker.close();
+        return false;
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-button-group > .mdc-button.confirm-date', function(event) {
         var date = $(this).closest('.has-datepicker').mdcDatePicker.getSelectedDate();
         $(this).closest('.has-datepicker').find('input.datepicker-input').val(date).trigger('change');
         $(this).closest('.has-datepicker').mdcDatePicker.close();
+        return false;
     });
 });
