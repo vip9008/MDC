@@ -18,7 +18,7 @@
 
 .mdc-checkbox:not(.indeterminate):not(.checked),
 .mdc-radiobutton:not(.checked) {
-    --main-color: rgb(var(--initial-main-color));
+    --main-color: var(--initial-main-color);
     --text-secondary: var(--initial-text-secondary);
 }
 
@@ -173,7 +173,7 @@
 }
 
 .mdc-switch:not(.checked) {
-    --main-color: rgb(var(--initial-main-color));
+    --main-color: var(--initial-main-color);
     --switch-rail-opacity: var(--switch-rail-opacity-0);
 }
 

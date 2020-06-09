@@ -41,7 +41,7 @@
     --switch-rail-opacity-0: 0.32;
     --switch-disabled-opacity: 0.38;
     --switch-color: #FFFFFF;
-    --slider-disabled-color: #7D7D7D;
+    --slider-disabled-color: 125, 125, 125;
 
     color: var(--text-primary);
     border-color: var(--bg-border);
@@ -89,7 +89,7 @@
     --switch-rail-opacity: 0.32;
     --switch-rail-opacity-0: 0.32;
     --switch-color: #FFFFFF;
-    --slider-disabled-color: #7D7D7D;
+    --slider-disabled-color: 125, 125, 125;
 
     color: var(--text-primary);
     border-color: var(--bg-border);
@@ -137,7 +137,7 @@
     --switch-rail-opacity: 0.38;
     --switch-rail-opacity-0: 0.38;
     --switch-color: #FAFAFA;
-    --slider-disabled-color: #979797;
+    --slider-disabled-color: 151, 151, 151;
     
     color: var(--text-primary);
     border-color: var(--bg-border);
@@ -956,11 +956,11 @@ body {
     --fg-hint: rgba(0, 0, 0, 0.38);
     --fg-divider: rgba(0, 0, 0, 0.12);
 
-    --text-primary: var(--main-color);
-    --text-secondary: var(--main-color);
-    --text-hint: var(--main-color);
-    --text-divider: var(--main-color);
-    --bg-border: var(--main-color);
+    --text-primary: rgb(var(--main-color));
+    --text-secondary: rgb(var(--main-color));
+    --text-hint: rgb(var(--main-color));
+    --text-divider: rgb(var(--main-color));
+    --bg-border: rgb(var(--main-color));
     
     --switch-rail-opacity: 0.5;
 
@@ -974,11 +974,11 @@ body {
     --fg-hint: rgba(255, 255, 255, 0.5);
     --fg-divider: rgba(255, 255, 255, 0.12);
 
-    --text-primary: var(--main-color);
-    --text-secondary: var(--main-color);
-    --text-hint: var(--main-color);
-    --text-divider: var(--main-color);
-    --bg-border: var(--main-color);
+    --text-primary: rgb(var(--main-color));
+    --text-secondary: rgb(var(--main-color));
+    --text-hint: rgb(var(--main-color));
+    --text-divider: rgb(var(--main-color));
+    --bg-border: rgb(var(--main-color));
 
     --switch-rail-opacity: 0.5;
     
@@ -1795,6 +1795,7 @@ body {
     --switch-rail-opacity: 0.32;
     --switch-rail-opacity-0: 0.32;
     --switch-color: #FFFFFF;
+    --slider-disabled-color: 125, 125, 125;
 
     color: var(--text-primary);
     background-color: var(--bg-cards);
@@ -1841,6 +1842,7 @@ body {
     --switch-rail-opacity: 0.38;
     --switch-rail-opacity-0: 0.38;
     --switch-color: #FAFAFA;
+    --slider-disabled-color: 151, 151, 151;
 
     color: var(--text-primary);
     background-color: var(--bg-cards);
