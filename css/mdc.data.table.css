@@ -196,13 +196,13 @@ html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > t
     z-index: 0;
     will-change: opacity;
     transition: all 0.2s;
-    background-color: var(--initial-main-color);
+    background-color: rgb(var(--initial-main-color));
     opacity: 0;
     pointer-events: none;
 }
 
 .mdc-data-table > .table-container > table > tbody > tr.selected > td > .cell-data::before {
-    background-color: var(--main-color);
+    background-color: rgb(var(--main-color));
     opacity: var(--opacity-selected);
 }
 

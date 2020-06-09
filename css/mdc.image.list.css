@@ -41,7 +41,7 @@
     pointer-events: none;
     will-change: opacity;
     transition: all 0.2s;
-    background-color: var(--main-color);
+    background-color: rgb(var(--main-color));
     opacity: 0;
     z-index: 999;
     border-radius: 0.25rem;

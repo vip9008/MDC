@@ -50,7 +50,7 @@
 }
 
 .mdc-datepicker > .header {
-    background-color: var(--main-color);
+    background-color: rgb(var(--main-color));
     color: var(--fg-primary);
     padding: 0 1.5rem;
 }
@@ -210,7 +210,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
 }
 
 .mdc-datepicker > table.month-days td > .month-day.active:not(.disabled) {
-    background-color: var(--main-color);
+    background-color: rgb(var(--main-color));
     color: var(--fg-primary);
     font-weight: 500;
 }
@@ -287,7 +287,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
 }
 
 .mdc-datepicker > .years-list > .nano-content > .year-box > button.active {
-    background-color: var(--main-color);
+    background-color: rgb(var(--main-color));
     color: var(--fg-primary);
     font-weight: 500;
 }

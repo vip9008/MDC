@@ -94,7 +94,7 @@
     pointer-events: none;
     will-change: opacity;
     transition: all 0.2s;
-    background-color: var(--initial-main-color);
+    background-color: rgb(var(--initial-main-color));
     opacity: 0;
     z-index: 999999;
     border-radius: 0.25rem;

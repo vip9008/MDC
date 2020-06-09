@@ -99,7 +99,7 @@ html[dir="rtl"] #mdc-nav-drawer {
 #mdc-nav-drawer .mdc-list-container:not(.standard) > .mdc-list-item.active::before,
 #mdc-nav-drawer .mdc-list-container:not(.standard) > .mdc-list-group > .mdc-list-item.active::before,
 #mdc-nav-drawer .mdc-list-container.standard .mdc-list-group.expanded > .mdc-list-item::before {
-    background-color: var(--main-color);
+    background-color: rgb(var(--main-color));
     opacity: var(--opacity-activated);
 }
 
@@ -108,17 +108,17 @@ html[dir="rtl"] #mdc-nav-drawer {
 }
 
 #mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:hover::before {
-    background-color: var(--initial-main-color);
+    background-color: rgb(var(--initial-main-color));
     opacity: var(--opacity-hover);
 }
 
 #mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:active::before {
-    background-color: var(--initial-main-color);
+    background-color: rgb(var(--initial-main-color));
     opacity: var(--opacity-pressed);
 }
 
 #mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:focus::before {
-    background-color: var(--initial-main-color);
+    background-color: rgb(var(--initial-main-color));
     opacity: var(--opacity-focus);
 }
 
