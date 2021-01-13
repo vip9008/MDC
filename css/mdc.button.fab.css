@@ -25,7 +25,7 @@ html[dir] .mdc-fab[dir="rtl"] {
     border: none;
     outline: none;
     border-radius: 3.5rem;
-    color: var(--text-primary);
+    color: rgba(var(--foreground-color), var(--opacity-primary));
     cursor: pointer;
     z-index: var(--z-axis-6-index);
     box-shadow: var(--z-axis-6-shadow);
@@ -96,7 +96,7 @@ html[dir] .mdc-fab[dir="rtl"] > .mdc-fab-button {
     left: 0;
     z-index: 0;
     transition: all 0.2s;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: 0;
 }
 
@@ -117,8 +117,8 @@ html[dir] .mdc-fab[dir="rtl"] > .mdc-fab-button {
     --initial-text-divider: inherit;
 
     cursor: default;
-    color: var(--initial-text-hint);
-    background-color: var(--initial-text-divider);
+    color: rgba(var(--foreground-color), var(--opacity-hint));
+    background-color: rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-fab > .mdc-fab-button.disabled::before, .mdc-fab > .mdc-fab-button[disabled]::before, .mdc-fab > .mdc-fab-button:disabled::before {
@@ -173,5 +173,5 @@ html[dir] .mdc-fab[dir="rtl"] > .mdc-fab-button.extended > .icon {
 
 .mdc-fab > .mdc-fab-button.disabled > .icon, .mdc-fab > .mdc-fab-button[disabled] > .icon, .mdc-fab > .mdc-fab-button:disabled > .icon,
 .mdc-fab > .mdc-fab-button.disabled > .label, .mdc-fab > .mdc-fab-button[disabled] > .label, .mdc-fab > .mdc-fab-button:disabled > .label {
-    color: var(--initial-text-hint);
+    color: rgba(var(--foreground-color), var(--opacity-hint));
 }

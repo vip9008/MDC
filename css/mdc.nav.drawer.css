@@ -3,9 +3,9 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    background-color: var(--bg-main-content);
+    background-color: rgb(var(--bg-main-content));
     z-index: var(--z-axis-16-index);
-    border-right: solid 0.0625rem var(--bg-border);
+    border-right: solid 0.0625rem;
     transition: all 0.3s;
     display: -ms-flexbox;
     display: flex;
@@ -17,11 +17,11 @@
 
 html[dir="ltr"] #mdc-nav-drawer {
     border-left: none;
-    border-right: solid 0.0625rem var(--bg-border);
+    border-right: solid 0.0625rem;
 }
 
 html[dir="rtl"] #mdc-nav-drawer {
-    border-left: solid 0.0625rem var(--bg-border);
+    border-left: solid 0.0625rem;
     border-right: none;
 }
 
@@ -36,7 +36,7 @@ html[dir="rtl"] #mdc-nav-drawer {
 }
 
 #mdc-nav-drawer.fixed-header .header {
-    border-bottom: solid 0.0625rem var(--initial-bg-border);
+    border-bottom: solid 0.0625rem;
 }
 
 #mdc-nav-drawer .header > .title {
@@ -62,7 +62,7 @@ html[dir="rtl"] #mdc-nav-drawer {
     font-size: 0.875rem;
     letter-spacing: 0.007143em;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -81,11 +81,9 @@ html[dir="rtl"] #mdc-nav-drawer {
     overflow-y: auto;
 }
 
-#mdc-nav-drawer a.mdc-list-item:not(.active) {
-    --text-primary: var(--initial-text-primary);
-    --text-secondary: var(--initial-text-secondary);
-    --text-hint: var(--initial-text-hint);
-    --text-divider: var(--initial-text-divider);
+#mdc-nav-drawer a.mdc-list-item.active {
+    --temp: var(--foreground-color);
+    --foreground-color: var(--mdc-foreground, var(--temp));
 }
 
 #mdc-nav-drawer .mdc-list-container:not(.standard) .mdc-list-item::before {
@@ -99,8 +97,8 @@ html[dir="rtl"] #mdc-nav-drawer {
 #mdc-nav-drawer .mdc-list-container:not(.standard) > .mdc-list-item.active::before,
 #mdc-nav-drawer .mdc-list-container:not(.standard) > .mdc-list-group > .mdc-list-item.active::before,
 #mdc-nav-drawer .mdc-list-container.standard .mdc-list-group.expanded > .mdc-list-item::before {
-    background-color: rgb(var(--main-color));
-    opacity: var(--opacity-activated);
+    background-color: rgb(var(--foreground-color));
+    opacity: var(--opacity-focus);
 }
 
 #mdc-nav-drawer .mdc-list-container:not(.standard) .mdc-list-group {
@@ -108,22 +106,22 @@ html[dir="rtl"] #mdc-nav-drawer {
 }
 
 #mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:hover::before {
-    background-color: rgb(var(--initial-main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: var(--opacity-hover);
 }
 
 #mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:active::before {
-    background-color: rgb(var(--initial-main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: var(--opacity-pressed);
 }
 
 #mdc-nav-drawer .mdc-list-group.expanded > .mdc-list-item:focus::before {
-    background-color: rgb(var(--initial-main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: var(--opacity-focus);
 }
 
 #mdc-nav-drawer .mdc-list-group > .mdc-dropdown > .mdc-list-item:not(.active) {
-    color: var(--text-secondary);
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 #mdc-nav-drawer.modal {

@@ -4,7 +4,7 @@
     clear: both;
     margin: 0;
     padding: 0;
-    border-top: solid 0.0625rem var(--initial-bg-border);
+    border-top: solid 0.0625rem rgb(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-list-container > .mdc-divider {

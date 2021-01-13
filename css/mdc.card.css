@@ -2,7 +2,7 @@
     max-width: 100%;
     border-radius: 0.25rem;
     overflow: hidden;
-    background-color: var(--bg-cards);
+    background-color: rgb(var(--bg-cards));
     position: relative;
     /*z-index: var(--z-axis-1-index);*/
     box-shadow: var(--z-axis-1-shadow);
@@ -35,7 +35,7 @@
 
 .mdc-card.resting {
     z-index: var(--z-axis-0-index);
-    box-shadow: 0 0 0 0.0625rem var(--initial-bg-border);
+    box-shadow: 0 0 0 0.0625rem;
 }
 
 .mdc-card.raised:hover {
@@ -49,7 +49,7 @@
     padding: 0;
     margin: 0;
     border: none;
-    color: var(--text-primary);
+    color: rgb(var(--foreground-color), var(--opacity-primary));
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -94,7 +94,7 @@
     pointer-events: none;
     will-change: opacity;
     transition: all 0.2s;
-    background-color: rgb(var(--initial-main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: 0;
     z-index: 999999;
     border-radius: 0.25rem;
@@ -215,7 +215,7 @@ html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary .card-header > .title + .thum
 .mdc-card > .mdc-card-primary .card-header > .title > .mdt-subtitle,
 .mdc-card > .mdc-card-primary .card-header > .title > .mdt-subtitle-1,
 .mdc-card > .mdc-card-primary .card-header > .title > .mdt-subtitle-2 {
-    color: var(--text-secondary);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-card > .mdc-card-primary .media {
@@ -234,7 +234,7 @@ html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary .card-header > .title + .thum
 
 .mdc-card > .mdc-card-primary .supporting-text {
     margin: 1rem;
-    color: var(--text-secondary);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-card > .mdc-card-primary:first-child,

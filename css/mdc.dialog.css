@@ -38,7 +38,7 @@
     text-align: initial;
     border-radius: 0.25rem;
     cursor: default;
-    background-color: var(--bg-cards);
+    background-color: rgb(var(--bg-cards));
     box-shadow: var(--z-axis-24-shadow);
     /* will-change: transform; */
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,7 +69,7 @@
 }
 
 .mdc-dialog-container > .mdc-dialog > .body {
-    color: var(--initial-text-secondary);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: 0.03125rem;

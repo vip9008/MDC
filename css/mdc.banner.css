@@ -99,8 +99,8 @@ html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
     left: -200%;
     right: -200%;
     z-index: -1;
-    background-color: var(--bg-cards);
-    border-bottom: solid 0.0625rem var(--bg-border);
+    background-color: rgb(var(--bg-cards));
+    border-bottom: solid 0.0625rem;
 }
 
 #mdc-banners .mdc-banner .text {
@@ -118,7 +118,7 @@ html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
     line-height: 1.25rem;
     padding: 0 1rem 0 1.5rem;
     margin: 1.25rem 0 1rem;
-    color: var(--text-secondary);
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 html[dir="ltr"] #mdc-banners .mdc-banner .text,

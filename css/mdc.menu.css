@@ -9,23 +9,13 @@
     width: 100%;
 }
 
-.mdc-menu-container.has-error {
-    --text-primary: var(--error-color);
-    --bg-border: var(--error-color);
-}
-
 .mdc-menu-container.has-error > .mdc-text-field > .hint-block,
 .mdc-menu-container.has-error > .mdc-text-field > .help-block {
-    color: var(--error-color);
+    color: rgb(var(--error-color));
 }
 
 .mdc-menu-container .mdc-list-container {
-    --text-primary: var(--initial-text-primary);
-    --text-secondary: var(--initial-text-secondary);
-    --text-hint: var(--initial-text-hint);
-    --text-divider: var(--initial-text-divider);
-    
-    background-color: var(--initial-bg-cards);
+    background-color: rgb(var(--bg-cards));
     z-index: var(--z-axis-8-index);
     box-shadow: var(--z-axis-8-shadow);
     min-width: 7rem;
@@ -106,14 +96,14 @@ html[dir] .mdc-menu-container[dir="rtl"] .mdc-list-container {
     left: 0;
     z-index: 0;
     transition: all 0.2s;
-    background-color: rgb(var(--initial-main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: var(--opacity-hover);
 }
 
 .mdc-menu-container .mdc-list-container > .mdc-list-group + .mdc-list-group {
     margin-top: 0.5rem;
     padding-top: 0.5rem;
-    border-top: solid 0.0625rem var(--initial-text-divider);
+    border-top: solid 0.0625rem;
 }
 
 .mdc-menu-container > .mdc-text-field > .material-icon.trailing {

@@ -223,7 +223,7 @@ table {
 }
 
 table th, table td {
-    border: solid 0.0625rem var(--initial-text-divider);
+    border: solid 0.0625rem;
     font-size: 0.875rem;
     font-weight: normal;
     line-height: 1.8;
@@ -261,7 +261,7 @@ pre {
     margin: 1rem 0;
     overflow-x: auto;
     padding: 1rem 1.5rem;
-    border: solid 0.0625rem var(--initial-text-divider);
+    border: solid 0.0625rem;
 }
 
 html[dir="ltr"] pre, html[dir] pre[dir="ltr"],
@@ -272,7 +272,7 @@ html[dir="rtl"] pre, html[dir] pre[dir="rtl"] {
 code {
     white-space: nowrap;
     padding: 0 0.25rem;
-    border: solid 0.0625rem var(--initial-text-divider);
+    border: solid 0.0625rem;
 }
 
 html[dir="ltr"] code, html[dir] code[dir="ltr"],
@@ -524,14 +524,14 @@ a.material-icon, button.material-icon, .material-icon.interactive {
 a.material-icon.disabled, a.material-icon[disabled], a.material-icon:disabled,
 button.material-icon.disabled, button.material-icon[disabled], button.material-icon:disabled,
 .material-icon.interactive.disabled, .material-icon.interactive[disabled], .material-icon.interactive:disabled {
-    color: var(--initial-text-hint);
+    color: rgba(var(--foreground-color), var(--opacity-hint));
     cursor: default;
 }
 
 a.material-icon::before, button.material-icon::before, .material-icon.interactive::before {
     content: '';
     display: inline-block;
-    background-color: rgb(var(--initial-main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: 0;
     border-radius: 100%;
     position: absolute;

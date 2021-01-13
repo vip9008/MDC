@@ -25,7 +25,7 @@ a.mdc-button, button.mdc-button, .mdc-button {
     border-radius: 0.25rem;
     min-width: 4rem;
     height: 2.25rem;
-    color: var(--text-primary);
+    color: rgba(var(--foreground-color), var(--opacity-primary));
     cursor: pointer;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -89,7 +89,7 @@ html[dir] .mdc-button[dir="rtl"] > .icon {
     left: 0;
     z-index: 0;
     transition: all 0.2s;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: 0;
 }
 
@@ -110,11 +110,11 @@ html[dir] .mdc-button[dir="rtl"] > .icon {
     --initial-text-divider: inherit;
 
     cursor: default;
-    color: var(--initial-text-hint);
+    color: rgba(var(--foreground-color), var(--opacity-hint));
 }
 
 .mdc-button.disabled[class*="bg-"], .mdc-button[class*="bg-"][disabled], .mdc-button[class*="bg-"]:disabled {
-    background-color: var(--initial-text-divider);
+    background-color: rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-button.disabled::before, .mdc-button[disabled]::before, .mdc-button:disabled::before {
@@ -122,7 +122,7 @@ html[dir] .mdc-button[dir="rtl"] > .icon {
 }
 
 .mdc-button.disabled > .icon, .mdc-button[disabled] > .icon, .mdc-button:disabled > .icon {
-    color: var(--initial-text-hint);
+    color: rgba(var(--foreground-color), var(--opacity-hint));
 }
 
 .mdc-button.btn-outlined, .mdc-button.btn-contained, .mdc-button[class*="bg-"] {
@@ -154,7 +154,7 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
 }
 
 .mdc-button.btn-outlined {
-    border: solid 0.0625rem var(--initial-text-divider);
+    border: solid 0.0625rem;
 }
 
 .mdc-button.btn-contained {
@@ -192,7 +192,7 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
     align-items: center;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    border: solid 0.0625rem var(--initial-text-divider);
+    border: solid 0.0625rem;
 }
 
 .mdc-toggle-buttons > .mdc-button {
@@ -211,14 +211,14 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
 .mdc-toggle-buttons > .mdc-button + .mdc-button,
 html[dir="ltr"] .mdc-toggle-buttons > .mdc-button + .mdc-button,
 html[dir] .mdc-toggle-buttons[dir="ltr"] > .mdc-button + .mdc-button {
-    border-left: solid 0.0625rem var(--initial-text-divider);
+    border-left: solid 0.0625rem;
     border-right: none;
 }
 
 html[dir="rtl"] .mdc-toggle-buttons > .mdc-button + .mdc-button,
 html[dir] .mdc-toggle-buttons[dir="rtl"] > .mdc-button + .mdc-button {
     border-left: none;
-    border-right: solid 0.0625rem var(--initial-text-divider);
+    border-right: solid 0.0625rem;
 }
 
 .mdc-toggle-buttons > .mdc-button:focus::before {
@@ -239,7 +239,7 @@ html[dir] .mdc-toggle-buttons[dir="rtl"] > .mdc-button + .mdc-button {
     left: 0;
     z-index: 0;
     transition: all 0.2s;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: 0;
 }
 

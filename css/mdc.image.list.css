@@ -41,7 +41,7 @@
     pointer-events: none;
     will-change: opacity;
     transition: all 0.2s;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     opacity: 0;
     z-index: 999;
     border-radius: 0.25rem;
@@ -93,7 +93,7 @@
     box-sizing: border-box;
     padding: 0.5rem 0;
     line-height: 1.5rem;
-    color: var(--text-primary);
+    color: rgb(var(--foreground-color), var(--opacity-primary));
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -113,7 +113,7 @@
 
 .mdc-image-list.overlay-support .list-item .support::before {
     content: '';
-    background-color: var(--bg-cards);
+    background-color: rgb(var(--bg-cards));
     opacity: var(--protection-opacity, 0.6);
     position: absolute;
     top: 0;

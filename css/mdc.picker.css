@@ -30,7 +30,7 @@
 }
 
 .mdc-datepicker {
-    background-color: var(--initial-bg-cards);
+    background-color: rgb(var(--bg-cards));
     box-shadow: var(--z-axis-24-shadow);
     border-radius: 0.25rem;
     overflow: hidden;
@@ -50,8 +50,8 @@
 }
 
 .mdc-datepicker > .header {
-    background-color: rgb(var(--main-color));
-    color: var(--fg-primary);
+    background-color: rgb(var(--mdc-foreground, var(--bg-status-bar)));
+    color: rgba(var(--mdc-theme, var(--foreground-color)), var(--opacity-primary));
     padding: 0 1.5rem;
 }
 
@@ -79,7 +79,7 @@
 
 .mdc-datepicker > .mdc-calendar-controls {
     margin: 1rem 0;
-    color: var(--initial-text-secondary);
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
     display: -ms-flexbox;
     display: flex;
     width: 100%;
@@ -171,7 +171,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
 .mdc-datepicker > table.month-days th {
     font-size: 0.75rem;
     text-align: center;
-    color: var(--initial-text-secondary);
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
     text-transform: uppercase;
     line-height: 2.25rem;
     padding: 0.125rem 0.25rem;
@@ -196,7 +196,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     height: 2.25rem;
     line-height: 2.25rem;
     border-radius: 100%;
-    color: var(--initial-text-primary);
+    color: rgba(var(--foreground-color), var(--opacity-primary));
     position: relative;
     cursor: pointer;
     will-change: background-color, color;
@@ -206,12 +206,12 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
 .mdc-datepicker > table.month-days td > div.month-day,
 .mdc-datepicker > table.month-days td > .month-day.disabled {
     cursor: default;
-    color: var(--initial-text-hint);
+    color: rgba(var(--foreground-color), var(--opacity-hint));
 }
 
 .mdc-datepicker > table.month-days td > .month-day.active:not(.disabled) {
-    background-color: rgb(var(--main-color));
-    color: var(--fg-primary);
+    background-color: rgb(var(--mdc-foreground, var(--bg-status-bar)));
+    color: rgba(var(--mdc-theme, var(--foreground-color)), var(--opacity-primary));
     font-weight: 500;
 }
 
@@ -224,7 +224,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     left: 0;
     border-radius: 100%;
     pointer-events: none;
-    border: solid 0.0625rem var(--initial-text-secondary);
+    border: solid 0.0625rem;
 }
 
 .mdc-datepicker > table.month-days td > .month-day.today.active::before {
@@ -239,8 +239,8 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     bottom: 3.25rem;
     width: 20.5rem;
     height: 17.5rem;
-    border-bottom: solid 0.0625rem var(--initial-text-divider);
-    background-color: var(--initial-bg-cards);
+    border-bottom: solid 0.0625rem;
+    background-color: rgb(var(--bg-cards));
     will-change: visibility, opacity, transform;
     transition: visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -276,7 +276,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     margin: 0.5rem 0.75rem;
     width: 4.5rem;
     height: 2.25rem;
-    color: var(--initial-text-primary);
+    color: rgba(var(--foreground-color), var(--opacity-hint));
     background: none;
     border: 0;
     padding: 0;
@@ -287,8 +287,8 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
 }
 
 .mdc-datepicker > .years-list > .nano-content > .year-box > button.active {
-    background-color: rgb(var(--main-color));
-    color: var(--fg-primary);
+    background-color: rgb(var(--mdc-foreground, var(--bg-status-bar)));
+    color: rgba(var(--mdc-theme, var(--foreground-color)), var(--opacity-primary));
     font-weight: 500;
 }
 

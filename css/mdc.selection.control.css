@@ -7,7 +7,7 @@
     width: 2.5rem;
     position: relative;
     cursor: pointer;
-    color: var(--text-secondary);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -16,21 +16,10 @@
     user-select: none;
 }
 
-.mdc-checkbox:not(.indeterminate):not(.checked),
-.mdc-radiobutton:not(.checked) {
-    --main-color: var(--initial-main-color);
-    --text-secondary: var(--initial-text-secondary);
-}
-
 .mdc-checkbox.disabled,
 .mdc-radiobutton.disabled,
 .mdc-switch.disabled {
     cursor: default;
-}
-
-.mdc-checkbox.disabled:not(.indeterminate),
-.mdc-radiobutton.disabled {
-    --text-secondary: var(--initial-text-hint);
 }
 
 .mdc-checkbox.disabled.indeterminate,
@@ -51,7 +40,7 @@
     opacity: 0;
     border-radius: 100%;
     z-index: 0;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     will-change: opacity, transform, background-color;
     transition: opacity 0.2s, transform 0.2s, background-color 0.2s;
     -ms-transform: scale(0);
@@ -172,11 +161,6 @@
     user-select: none;
 }
 
-.mdc-switch:not(.checked) {
-    --main-color: var(--initial-main-color);
-    --switch-rail-opacity: var(--switch-rail-opacity-0);
-}
-
 .mdc-switch::before {
     width: 2.5rem;
     left: -0.25rem;
@@ -224,7 +208,7 @@ html[dir] *[dir="rtl"] > .mdc-switch.checked::before {
     height: 1.25rem;
     width: 1.25rem;
     border-radius: 100%;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     box-shadow: var(--z-axis-2-shadow);
     will-change: left, right, background-color;
     transition: left 0.2s cubic-bezier(0.4,0,.2,1), right 0.2s cubic-bezier(0.4,0,.2,1), background-color 0.2s;
@@ -267,11 +251,9 @@ html[dir] *[dir="rtl"] > .mdc-switch.checked::after {
     display: block;
     height: 0.875rem;
     border-radius: 0.875rem;
-    background-color: rgb(var(--main-color));
-    opacity: var(--switch-rail-opacity);
+    background-color: rgb(var(--foreground-color));
+    opacity: var(--switch-opacity);
 }
-
-
 
 .mdc-list-item > .mdc-checkbox,
 .mdc-list-item > .mdc-radiobutton {
