@@ -65,6 +65,17 @@
     cursor: text;
 }
 
+.mdc-text-field:not(.active) > .input,
+.mdc-text-area:not(.active) > .input,
+.mdc-text-field:not(.active) > .label,
+.mdc-text-area:not(.active) > .label,
+.mdc-text-field > .input.disabled,
+.mdc-text-area > .input.disabled,
+.mdc-text-field > .input.disabled + .label,
+.mdc-text-area > .input.disabled + .label {
+    --foreground-color: var(--initial-foreground-color);
+}
+
 .mdc-text-field > .input.disabled,
 .mdc-text-area > .input.disabled {
     cursor: default;
@@ -85,7 +96,7 @@
     width: 100%;
     border: none;
     background: none;
-    color: rgba(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--initial-foreground-color), var(--opacity-primary));
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -266,7 +277,7 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
     right: auto;
     height: 1.5rem;
     width: 1.5rem;
-    color: rgba(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--initial-foreground-color), var(--opacity-secondary));
     cursor: default;
     pointer-events: none;
 
@@ -382,7 +393,7 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     font-size: 0.75rem;
     line-height: 1.25rem;
     letter-spacing: 0.033333em;
-    color: rgba(var(--foreground-color), var(--opacity-hint));
+    color: rgba(var(--initial-foreground-color), var(--opacity-hint));
     cursor: default;
     pointer-events: none;
     word-break: break-word;
@@ -392,11 +403,6 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
-}
-
-.mdc-text-field.active > .hint-block,
-.mdc-text-area.active > .hint-block {
-    color: rgba(var(--foreground-color), var(--opacity-primary));
 }
 
 .mdc-text-field.has-error > .hint-block,

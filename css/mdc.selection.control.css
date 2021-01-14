@@ -16,6 +16,12 @@
     user-select: none;
 }
 
+.mdc-checkbox.checked,
+.mdc-checkbox.indeterminate,
+.mdc-radiobutton.checked {
+    color: rgb(var(--foreground-color));
+}
+
 .mdc-checkbox:not(.checked):not(.indeterminate),
 .mdc-radiobutton:not(.checked),
 .mdc-switch:not(.checked) {
@@ -28,7 +34,8 @@
     cursor: default;
 }
 
-.mdc-checkbox.disabled.indeterminate,
+.mdc-checkbox.disabled,
+.mdc-radiobutton.disabled,
 .mdc-switch.disabled {
     opacity: 0.38;
 }
