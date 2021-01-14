@@ -5,7 +5,7 @@
     bottom: 0;
     background-color: rgb(var(--bg-main-content));
     z-index: var(--z-axis-16-index);
-    border-right: solid 0.0625rem;
+    border-right: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
     transition: all 0.3s;
     display: -ms-flexbox;
     display: flex;
@@ -17,11 +17,11 @@
 
 html[dir="ltr"] #mdc-nav-drawer {
     border-left: none;
-    border-right: solid 0.0625rem;
+    border-right: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 html[dir="rtl"] #mdc-nav-drawer {
-    border-left: solid 0.0625rem;
+    border-left: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
     border-right: none;
 }
 
@@ -36,7 +36,7 @@ html[dir="rtl"] #mdc-nav-drawer {
 }
 
 #mdc-nav-drawer.fixed-header .header {
-    border-bottom: solid 0.0625rem;
+    border-bottom: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 #mdc-nav-drawer .header > .title {

@@ -100,7 +100,7 @@ html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
     right: -200%;
     z-index: -1;
     background-color: rgb(var(--bg-cards));
-    border-bottom: solid 0.0625rem;
+    border-bottom: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 #mdc-banners .mdc-banner .text {

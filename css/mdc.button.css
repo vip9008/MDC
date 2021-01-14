@@ -154,7 +154,7 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
 }
 
 .mdc-button.btn-outlined {
-    border: solid 0.0625rem;
+    border: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-button.btn-contained {
@@ -192,7 +192,7 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
     align-items: center;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    border: solid 0.0625rem;
+    border: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-toggle-buttons > .mdc-button {
@@ -211,14 +211,14 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
 .mdc-toggle-buttons > .mdc-button + .mdc-button,
 html[dir="ltr"] .mdc-toggle-buttons > .mdc-button + .mdc-button,
 html[dir] .mdc-toggle-buttons[dir="ltr"] > .mdc-button + .mdc-button {
-    border-left: solid 0.0625rem;
+    border-left: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
     border-right: none;
 }
 
 html[dir="rtl"] .mdc-toggle-buttons > .mdc-button + .mdc-button,
 html[dir] .mdc-toggle-buttons[dir="rtl"] > .mdc-button + .mdc-button {
     border-left: none;
-    border-right: solid 0.0625rem;
+    border-right: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-toggle-buttons > .mdc-button:focus::before {

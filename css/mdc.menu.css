@@ -103,7 +103,7 @@ html[dir] .mdc-menu-container[dir="rtl"] .mdc-list-container {
 .mdc-menu-container .mdc-list-container > .mdc-list-group + .mdc-list-group {
     margin-top: 0.5rem;
     padding-top: 0.5rem;
-    border-top: solid 0.0625rem;
+    border-top: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-menu-container > .mdc-text-field > .material-icon.trailing {

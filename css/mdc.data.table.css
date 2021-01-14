@@ -92,7 +92,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .header > .actions > .action-item {
 }
 
 .mdc-data-table > .table-container > table > tbody > tr {
-    border-top: solid 0.0625rem;
+    border-top: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-data-table > .table-container > table > thead > tr > th {
@@ -134,14 +134,14 @@ html[dir="ltr"] .mdc-data-table > .table-container > table > tbody > tr > td:fir
 html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th:first-child,
 html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > tbody > tr > td:first-child {
     border-left: none;
-    border-right: solid 0.0625rem;
+    border-right: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th:first-child,
 html[dir="rtl"] .mdc-data-table > .table-container > table > tbody > tr > td:first-child,
 html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th:first-child,
 html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > td:first-child {
-    border-left: solid 0.0625rem;
+    border-left: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
     border-right: none;
 }
 
@@ -432,7 +432,7 @@ html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > t
     margin: 0;
     padding: 0 1rem;
     text-align: inherit;
-    border-top: solid 0.0625rem;
+    border-top: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
     color: rgb(var(--foreground-color), var(--opacity-secondary));
 
     -webkit-touch-callout: none; /* iOS Safari */
