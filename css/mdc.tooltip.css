@@ -1,7 +1,24 @@
-.mdc-tooltip {
-    --text-color: white;
-    --background-color: rgba(97, 97, 97, 0.9);
+.md-theme-light .mdc-tooltip, .mdc-tooltip.md-theme-light, .mdc-tooltip {
+    --opacity-primary: 1;
+    --opacity-secondary: 0.7;
+    --opacity-hint: 0.5;
+    --opacity-divider: 0.12;
 
+    --foreground-color: 255, 255, 255;
+    --background-color: 48, 48, 48;
+}
+
+.md-theme-dark .mdc-tooltip, .mdc-tooltip.md-theme-dark {
+    --opacity-primary: 0.87;
+    --opacity-secondary: 0.6;
+    --opacity-hint: 0.38;
+    --opacity-divider: 0.12;
+
+    --foreground-color: 0, 0, 0;
+    --background-color: 250, 250, 250;
+}
+
+.mdc-tooltip {
     position: fixed;
     font-size: 0.625rem;
     line-height: 1.5rem;
@@ -10,8 +27,8 @@
     pointer-events: none;
     cursor: default;
     z-index: var(--z-axis-24-index);
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: rgba(var(--foreground-color), var(--opacity-primary));
+    background-color: rgb(var(--background-color));
     -ms-transform: scale(0);
     -webkit-transform: scale(0);
     transform: scale(0);

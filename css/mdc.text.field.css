@@ -50,10 +50,10 @@
     position: relative;
     line-height: 0;
     font-size: 0;
-    background-color: var(--input);
+    background-color: rgb(var(--foreground-color), var(--opacity-hover));
     border-radius: 0.25rem 0.25rem 0 0;
     will-change: background-color;
-    border-bottom: var(--border-size) solid var(--initial-text-hint);
+    border-bottom: var(--border-size) solid rgb(var(--foreground-color), var(--opacity-hint));
 
     -webkit-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
     -o-transition: background-color 0.15s cubic-bezier(0.4,0,.2,1);
@@ -85,7 +85,7 @@
     width: 100%;
     border: none;
     background: none;
-    color: var(--initial-text-primary);
+    color: rgb(var(--foreground-color), var(--opacity-primary));
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -102,13 +102,13 @@
 
 .mdc-text-field > .input:hover,
 .mdc-text-area > .input:hover {
-    background-color: var(--input-hover);
-    border-bottom-color: var(--initial-text-secondary);
+    background-color: rgb(var(--foreground-color), var(--opacity-hover));
+    border-bottom-color: rgb(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-text-field > .input:active,
 .mdc-text-area > .input:active {
-    background-color: var(--input-focus);
+    background-color: rgb(var(--foreground-color), var(--opacity-focus));
 }
 
 .mdc-text-field > .input::after,
@@ -119,7 +119,7 @@
     left: 0;
     width: 100%;
     height: var(--focus-border-size);
-    background-color: var(--bg-border);
+    background-color: rgb(var(--foreground-color), var(--opacity-divider));
     will-change: transform;
 
     transform: scale(0);
@@ -136,8 +136,8 @@
 
 .mdc-text-field.has-error,
 .mdc-text-area.has-error {
-    --text-primary: var(--error-color);
-    --bg-border: var(--error-color);
+    --text-primary: rgb(var(--error-color));
+    --bg-border: rgb(var(--error-color));
 }
 
 @-webkit-keyframes autofill {
@@ -160,7 +160,7 @@
 
 .mdc-text-field.active > .input,
 .mdc-text-area.active > .input {
-    background-color: var(--input);
+    background-color: rgb(var(--foreground-color), var(--opacity-hover));
 }
 
 .mdc-text-field > .input > .input-element {
@@ -187,7 +187,7 @@
     pointer-events: none;
     overflow: hidden;
     line-height: 1.15rem;
-    color: var(--initial-text-secondary);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -233,7 +233,7 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
 
 .mdc-text-field.active > .label,
 .mdc-text-area.active > .label {
-    color: var(--text-primary);
+    color: rgb(var(--foreground-color), var(--opacity-primary));
     transform: translateY(-50%) scale(0.75);
 }
 
@@ -244,19 +244,19 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
 
 .mdc-text-field > .input.disabled,
 .mdc-text-area > .input.disabled {
-    background-color: var(--input-disabled);
+    background-color: rgb(var(--foreground-color), var(--opacity-disabled));
 }
 
 .mdc-text-field > .input.disabled > input,
 .mdc-text-field > .input.disabled > div,
 .mdc-text-area > .input.disabled > textarea {
-    color: var(--initial-text-secondary);
-    border-bottom-color: var(--initial-text-divider);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    border-bottom-color: rgb(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-text-field > .input.disabled + .label,
 .mdc-text-area > .input.disabled + .label {
-    color: var(--initial-text-hint);
+    color: rgb(var(--foreground-color), var(--opacity-hint));
 }
 
 .mdc-text-field > .icon {
@@ -266,7 +266,7 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
     right: auto;
     height: 1.5rem;
     width: 1.5rem;
-    color: var(--initial-text-secondary);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
     cursor: default;
     pointer-events: none;
 
@@ -283,7 +283,7 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
     text-decoration: none;
     cursor: pointer;
     pointer-events: all;
-    color: var(--text-secondary);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
 }
 
 html[dir="ltr"] .mdc-text-field > .icon,
@@ -382,7 +382,7 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     font-size: 0.75rem;
     line-height: 1.25rem;
     letter-spacing: 0.033333em;
-    color: var(--initial-text-hint);
+    color: rgb(var(--foreground-color), var(--opacity-hint));
     cursor: default;
     pointer-events: none;
     word-break: break-word;
@@ -396,14 +396,14 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
 
 .mdc-text-field.active > .hint-block,
 .mdc-text-area.active > .hint-block {
-    color: var(--text-primary);
+    color: rgb(var(--foreground-color), var(--opacity-primary));
 }
 
 .mdc-text-field.has-error > .hint-block,
 .mdc-text-area.has-error > .hint-block,
 .mdc-text-field.has-error > .help-block,
 .mdc-text-area.has-error > .help-block {
-    color: var(--error-color);
+    color: rgb(var(--error-color));
 }
 
 .mdc-text-field.standard > .input,
@@ -559,7 +559,7 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
 .mdc-text-field.outlined > .input,
 .mdc-text-area.outlined > .input {
     background-color: transparent;
-    border: var(--border-size) solid var(--initial-text-hint);
+    border: var(--border-size) solid rgb(var(--foreground-color), var(--opacity-hint));
     border-radius: 0.25rem;
     will-change: border-color;
     transition: border-color 0.15s cubic-bezier(0.4,0,.2,1);
@@ -600,7 +600,7 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input >
 
 .mdc-text-field.outlined > .input:hover,
 .mdc-text-area.outlined > .input:hover {
-    border-color: var(--initial-text-secondary);
+    border-color: rgb(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-text-field.outlined.active > .input,
@@ -684,7 +684,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     opacity: 0;
     will-change: opacity;
     transition: opacity 0.15s cubic-bezier(0.4,0,.2,1);
-    border-bottom: solid var(--border-size) var(--initial-text-hint);
+    border-bottom: solid var(--border-size) rgb(var(--foreground-color), var(--opacity-hint));
 }
 
 .mdc-text-field.outlined.active > .input > .outline,
@@ -694,7 +694,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     left: calc(var(--border-size) * -1);
     right: calc(var(--border-size) * -1);
     margin: 0 calc(0.5rem + var(--focus-border-size));
-    border-bottom: solid var(--focus-border-size) var(--initial-text-hint);
+    border-bottom: solid var(--focus-border-size) rgb(var(--foreground-color), var(--opacity-hint));
     opacity: 1;
 }
 
@@ -712,7 +712,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     bottom: calc(var(--border-size) * -1);
     width: 0.4375rem;
     border-radius: 0.25rem 0 0 0.25rem;
-    border: solid var(--border-size) var(--initial-text-hint);
+    border: solid var(--border-size) rgb(var(--foreground-color), var(--opacity-hint));
     border-right: none;
 }
 
@@ -721,7 +721,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     left: calc(-0.5rem - var(--focus-border-size));
     bottom: calc(var(--focus-border-size) * -1);
     width: 0.5rem;
-    border: solid var(--focus-border-size) var(--initial-text-hint);
+    border: solid var(--focus-border-size) rgb(var(--foreground-color), var(--opacity-hint));
     border-right: none;
 }
 
@@ -734,7 +734,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     bottom: calc(var(--border-size) * -1);
     width: 0.4375rem;
     border-radius: 0 0.25rem 0.25rem 0;
-    border: solid var(--border-size) var(--initial-text-hint);
+    border: solid var(--border-size) rgb(var(--foreground-color), var(--opacity-hint));
     border-left: none;
 }
 
@@ -743,7 +743,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     right: calc(-0.5rem - var(--focus-border-size));
     bottom: calc(var(--focus-border-size) * -1);
     width: 0.5rem;
-    border: solid var(--focus-border-size) var(--initial-text-hint);
+    border: solid var(--focus-border-size) rgb(var(--foreground-color), var(--opacity-hint));
     border-left: none;
 }
 
@@ -754,12 +754,12 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
     left: auto;
     right: 0;
     width: 100%;
-    border-top: solid var(--border-size) var(--initial-text-hint);
+    border-top: solid var(--border-size) rgb(var(--foreground-color), var(--opacity-hint));
 }
 
 .mdc-text-field.outlined.active > .input > .outline > .top,
 .mdc-text-area.outlined.active > .input > .outline > .top {
-    border-top: solid var(--focus-border-size) var(--initial-text-hint);
+    border-top: solid var(--focus-border-size) rgb(var(--foreground-color), var(--opacity-hint));
 }
 
 html[dir="ltr"] .mdc-text-field.outlined > .input > .outline > .top,
@@ -790,7 +790,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
 .mdc-text-area.outlined > .input:hover > .outline > .top,
 .mdc-text-area.outlined > .input:hover > .outline::before,
 .mdc-text-area.outlined > .input:hover > .outline::after {
-    border-color: var(--initial-text-secondary);
+    border-color: rgb(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-text-field.outlined.active > .input > .outline,
@@ -806,7 +806,7 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
 
 .mdc-text-field > .input.disabled,
 .mdc-text-area > .input.disabled {
-    border-color: var(--initial-text-divider) !important;
+    border-color: rgb(var(--foreground-color), var(--opacity-divider)) !important;
 }
 
 .mdc-text-field > .input.disabled > .outline,

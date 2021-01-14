@@ -13,10 +13,10 @@ body {
     padding: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: var(--bg-cards);
+    background-color: rgb(var(--bg-cards));
     z-index: var(--z-axis-8-index);
     box-shadow: var(--z-axis-8-shadow);
-    border-left: solid 0.0625rem var(--bg-border);
+    border-left: solid 0.0625rem;
     will-change: top, right, left;
     transition: top 0.3s, right 0.3s, left 0.3s;
 }
@@ -27,13 +27,13 @@ body {
 
 html[dir="ltr"] .mdc-sheets-side {
     border-right: none;
-    border-left: solid 0.0625rem var(--bg-border);
+    border-left: solid 0.0625rem;
     right: -20rem;
     left: auto;
 }
 
 html[dir="rtl"] .mdc-sheets-side {
-    border-right: solid 0.0625rem var(--bg-border);
+    border-right: solid 0.0625rem;
     border-left: none;
     right: auto;
     left: -20rem;

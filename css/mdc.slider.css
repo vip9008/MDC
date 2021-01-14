@@ -15,7 +15,7 @@
 }
 
 .mdc-slider.disabled {
-    --main-color: var(--slider-disabled-color);
+    --foreground-color: var(--slider-disabled-color);
 }
 
 .mdc-slider.full-width {
@@ -30,8 +30,8 @@
     left: 0;
     margin-top: -0.0625rem;
     height: 0.125rem;
-    background-color: rgb(var(--main-color));
-    opacity: var(--switch-rail-opacity-0);
+    background-color: rgb(var(--foreground-color));
+    opacity: var(--switch-opacity);
     pointer-events: none;
     border-radius: 0.125rem;
 }
@@ -47,7 +47,7 @@
     pointer-events: none;
     border-radius: 0.125rem;
     z-index: -1;
-    background: linear-gradient(90deg, rgb(var(--main-color)) 0.125rem, transparent 0);
+    background: linear-gradient(90deg, rgb(var(--foreground-color)) 0.125rem, transparent 0);
     background-position: center left;
     background-size: calc(var(--slider-point) - 0.1%) 0.125rem;
 }
@@ -94,13 +94,13 @@
     left: 0;
     margin-top: -0.0625rem;
     height: 0.125rem;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     pointer-events: none;
     border-radius: 0.125rem;
 }
 
 .mdc-slider.discrete > .highlight {
-    background: linear-gradient(90deg, rgba(255, 255, 255, var(--switch-rail-opacity-0)) 0.125rem, rgb(var(--main-color)) 0);
+    background: linear-gradient(90deg, rgba(255, 255, 255, var(--switch-opacity)) 0.125rem, rgb(var(--foreground-color)) 0);
     background-position: center left;
 }
 
@@ -125,7 +125,7 @@ html[dir] *[dir="rtl"] > .mdc-slider > .highlight {
     content: '';
     display: inline-block;
     border-radius: 100%;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     will-change: opacity, transform;
     transition: opacity 0.2s, transform 0.2s;
     opacity: 0;
@@ -179,7 +179,7 @@ html[dir] *[dir="rtl"] > .mdc-slider > .highlight::before {
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 100%;
-    background-color: rgb(var(--main-color));
+    background-color: rgb(var(--foreground-color));
     box-shadow: var(--z-axis-1-shadow);
     pointer-events: none;
 }

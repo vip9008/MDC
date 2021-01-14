@@ -7,8 +7,8 @@
     align-items: center;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background-color: var(--bg-app-bar);
-    color: var(--text-primary);
+    background-color: rgb(var(--bg-app-bar));
+    color: rgb(var(--foreground-color), var(--opacity-divider));
     position: absolute;
     top: 0;
     right: 0;

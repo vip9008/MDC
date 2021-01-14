@@ -59,7 +59,7 @@ html[dir] #mdc-snackbars.position-start[dir="rtl"] {
     justify-content: flex-start;
     border-radius: 0.25rem;
     box-shadow: var(--z-axis-6-shadow);
-    background-color: var(--bg-cards);
+    background-color: rgb(var(--bg-cards));
     pointer-events: all;
     will-change: opacity, visibility, transform;
     transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -108,7 +108,7 @@ html[dir] #mdc-snackbars.position-start[dir="rtl"] {
     font-weight: 400;
     line-height: 1.25rem;
     margin: 0.8125rem 0.5rem;
-    color: var(--text-secondary);
+    color: rgb(var(--foreground-color), var(--opacity-secondary));
 }
 
 #mdc-snackbars > .mdc-snackbar .mdc-button-group {

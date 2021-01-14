@@ -34,8 +34,8 @@
 
     --opacity-disabled: 0.04;
     --opacity-hover: 0.08;
-    --opacity-focus: 0.24;
     --opacity-selected: 0.16;
+    --opacity-focus: 0.24;
     --opacity-pressed: 0.32;
 
     --switch-color: 250, 250, 250;
@@ -1677,8 +1677,8 @@ body {
 
     --opacity-disabled: 0.04;
     --opacity-hover: 0.08;
-    --opacity-focus: 0.24;
     --opacity-selected: 0.16;
+    --opacity-focus: 0.24;
     --opacity-pressed: 0.32;
 
     --switch-color: 250, 250, 250;
