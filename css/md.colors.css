@@ -1,1850 +1,1699 @@
-:root {
-    --main-color: 0, 0, 0;
-    --initial-main-color: 0, 0, 0;
-    --error-color: #B00020;
+:root, .md-theme-light {
+    --opacity-primary: 0.87;
+    --opacity-secondary: 0.6;
+    --opacity-hint: 0.38;
+    --opacity-divider: 0.12;
 
+    --opacity-disabled: 0.02;
     --opacity-hover: 0.04;
-    --opacity-focus: 0.12;
     --opacity-selected: 0.08;
-    --opacity-activated: 0.12;
+    --opacity-focus: 0.12;
     --opacity-pressed: 0.16;
-    --opacity-dragged: 0.08;
 
-    --initial-text-primary: rgba(var(--initial-main-color), 0.87);
-    --initial-text-secondary: rgba(var(--initial-main-color), 0.6);
-    --initial-text-hint: rgba(var(--initial-main-color), 0.38);
-    --initial-text-divider: rgba(var(--initial-main-color), 0.12);
-
-    --text-primary: var(--initial-text-primary);
-    --text-secondary: var(--initial-text-secondary);
-    --text-hint: var(--initial-text-hint);
-    --text-divider: var(--initial-text-divider);
-
-    --initial-bg-status-bar: #E0E0E0;
-    --initial-bg-app-bar: #F5F5F5;
-    --initial-bg-main-content: #FAFAFA;
-    --initial-bg-cards: #FFFFFF;
-    --initial-bg-border: rgba(var(--initial-main-color), 0.12);
-
-    --bg-status-bar: var(--initial-bg-status-bar);
-    --bg-app-bar: var(--initial-bg-app-bar);
-    --bg-main-content: var(--initial-bg-main-content);
-    --bg-cards: var(--initial-bg-cards);
-    --bg-border: var(--initial-bg-border);
-
-    --input: rgba(var(--initial-main-color), 0.04);
-    --input-hover: rgba(var(--initial-main-color), 0.12);
-    --input-focus: rgba(var(--initial-main-color), 0.16);
-    --input-disabled: rgba(var(--initial-main-color), 0.02);
-
-    --switch-rail-opacity: 0.32;
-    --switch-rail-opacity-0: 0.32;
-    --switch-disabled-opacity: 0.38;
-    --switch-color: #FFFFFF;
+    --switch-color: 255, 255, 255;
+    --switch-opacity: 0.32;
     --slider-disabled-color: 125, 125, 125;
 
-    color: var(--text-primary);
-    border-color: var(--bg-border);
-}
+    --foreground-color: 0, 0, 0;
+    --error-color: 176, 0, 32;
 
-.md-theme-light {
-    --main-color: 0, 0, 0;
-    --initial-main-color: 0, 0, 0;
-    --error-color: #B00020;
+    --bg-status-bar: 224, 224, 224;
+    --bg-app-bar: 245, 245, 245;
+    --bg-main-content: 250, 250, 250;
+    --bg-cards: 255, 255, 255;
 
-    --opacity-hover: 0.04;
-    --opacity-focus: 0.12;
-    --opacity-selected: 0.08;
-    --opacity-activated: 0.12;
-    --opacity-pressed: 0.16;
-    --opacity-dragged: 0.08;
-
-    --initial-text-primary: rgba(var(--initial-main-color), 0.87);
-    --initial-text-secondary: rgba(var(--initial-main-color), 0.6);
-    --initial-text-hint: rgba(var(--initial-main-color), 0.38);
-    --initial-text-divider: rgba(var(--initial-main-color), 0.12);
-
-    --text-primary: var(--initial-text-primary);
-    --text-secondary: var(--initial-text-secondary);
-    --text-hint: var(--initial-text-hint);
-    --text-divider: var(--initial-text-divider);
-
-    --initial-bg-status-bar: #E0E0E0;
-    --initial-bg-app-bar: #F5F5F5;
-    --initial-bg-main-content: #FAFAFA;
-    --initial-bg-cards: #FFFFFF;
-    --initial-bg-border: rgba(var(--initial-main-color), 0.12);
-
-    --bg-status-bar: var(--initial-bg-status-bar);
-    --bg-app-bar: var(--initial-bg-app-bar);
-    --bg-main-content: var(--initial-bg-main-content);
-    --bg-cards: var(--initial-bg-cards);
-    --bg-border: var(--initial-bg-border);
-
-    --input: rgba(var(--initial-main-color), 0.04);
-    --input-hover: rgba(var(--initial-main-color), 0.12);
-    --input-focus: rgba(var(--initial-main-color), 0.16);
-    --input-disabled: rgba(var(--initial-main-color), 0.02);
-
-    --switch-rail-opacity: 0.32;
-    --switch-rail-opacity-0: 0.32;
-    --switch-color: #FFFFFF;
-    --slider-disabled-color: 125, 125, 125;
-
-    color: var(--text-primary);
-    border-color: var(--bg-border);
+    color: rgba(var(--foreground-color), var(--opacity-primary));
+    border-color: rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .md-theme-dark {
-    --main-color: 255, 255, 255;
-    --initial-main-color: 255, 255, 255;
-    --error-color: #FF3159;
+    --opacity-primary: 1;
+    --opacity-secondary: 0.7;
+    --opacity-hint: 0.5;
+    --opacity-divider: 0.12;
 
+    --opacity-disabled: 0.04;
     --opacity-hover: 0.08;
-    --opacity-focus: 0.24;
     --opacity-selected: 0.16;
-    --opacity-activated: 0.24;
+    --opacity-focus: 0.24;
     --opacity-pressed: 0.32;
-    --opacity-dragged: 0.16;
 
-    --initial-text-primary: rgba(var(--initial-main-color), 1);
-    --initial-text-secondary: rgba(var(--initial-main-color), 0.7);
-    --initial-text-hint: rgba(var(--initial-main-color), 0.5);
-    --initial-text-divider: rgba(var(--initial-main-color), 0.12);
-
-    --text-primary: var(--initial-text-primary);
-    --text-secondary: var(--initial-text-secondary);
-    --text-hint: var(--initial-text-hint);
-    --text-divider: var(--initial-text-divider);
-
-    --initial-bg-status-bar: #000000;
-    --initial-bg-app-bar: #212121;
-    --initial-bg-main-content: #303030;
-    --initial-bg-cards: #424242;
-    --initial-bg-border: rgba(var(--initial-main-color), 0.12);
-
-    --bg-status-bar: var(--initial-bg-status-bar);
-    --bg-app-bar: var(--initial-bg-app-bar);
-    --bg-main-content: var(--initial-bg-main-content);
-    --bg-cards: var(--initial-bg-cards);
-    --bg-border: var(--initial-bg-border);
-
-    --input: rgba(var(--initial-main-color), 0.08);
-    --input-hover: rgba(var(--initial-main-color), 0.16);
-    --input-focus: rgba(var(--initial-main-color), 0.24);
-    --input-disabled: rgba(var(--initial-main-color), 0.04);
-
-    --switch-rail-opacity: 0.38;
-    --switch-rail-opacity-0: 0.38;
-    --switch-color: #FAFAFA;
+    --switch-color: 250, 250, 250;
+    --switch-opacity: 0.38;
     --slider-disabled-color: 151, 151, 151;
-    
-    color: var(--text-primary);
-    border-color: var(--bg-border);
+
+    --foreground-color: 255, 255, 255;
+    --error-color: 255, 49, 89;
+
+    --bg-status-bar: 0, 0, 0;
+    --bg-app-bar: 33, 33, 33;
+    --bg-main-content: 48, 48, 48;
+    --bg-cards: 66, 66, 66;
+
+    color: rgba(var(--foreground-color), var(--opacity-primary));
+    border-color: rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 body {
-    background-color: var(--bg-main-content);
-    color: var(--text-primary);
-    border-color: var(--bg-border);
+    color: rgba(var(--foreground-color), var(--opacity-primary));
+    background-color: rgb(var(--bg-main-content));
+    border-color: rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .text-primary {
-    color: var(--text-primary) !important;
+    color: rgba(var(--foreground-color), var(--opacity-primary)) !important;
 }
-
 .text-secondary {
-    color: var(--text-secondary) !important;
+    color: rgba(var(--foreground-color), var(--opacity-secondary)) !important;
 }
-
 .text-hint {
-    color: var(--text-hint) !important;
+    color: rgba(var(--foreground-color), var(--opacity-hint)) !important;
 }
-
 .text-divider {
-    color: var(--text-divider) !important;
+    color: rgba(var(--foreground-color), var(--opacity-divider)) !important;
 }
 
 .bg-status-bar {
-    background-color: var(--bg-status-bar) !important;
+    background-color: rgb(var(--bg-status-bar)) !important;
 }
-
 .bg-app-bar {
-    background-color: var(--bg-app-bar) !important;
+    background-color: rgb(var(--bg-app-bar)) !important;
 }
-
 .bg-main-content {
-    background-color: var(--bg-main-content) !important;
+    background-color: rgb(var(--bg-main-content)) !important;
 }
-
 .bg-cards {
-    background-color: var(--bg-cards) !important;
+    background-color: rgb(var(--bg-cards)) !important;
 }
 
 .red-50 {
-	--main-color: 255, 235, 238;
+	--mdc-foreground: 255, 235, 238;
 }
 .red-100 {
-	--main-color: 255, 205, 210;
+	--mdc-foreground: 255, 205, 210;
 }
 .red-200 {
-	--main-color: 239, 154, 154;
+	--mdc-foreground: 239, 154, 154;
 }
 .red-300 {
-	--main-color: 229, 115, 115;
+	--mdc-foreground: 229, 115, 115;
 }
 .red-400 {
-	--main-color: 239, 83, 80;
+	--mdc-foreground: 239, 83, 80;
 }
 .red, .red-500 {
-	--main-color: 244, 67, 54;
+	--mdc-foreground: 244, 67, 54;
 }
 .red-600 {
-	--main-color: 229, 57, 53;
+	--mdc-foreground: 229, 57, 53;
 }
 .red-700 {
-	--main-color: 211, 47, 47;
+	--mdc-foreground: 211, 47, 47;
 }
 .red-800 {
-	--main-color: 198, 40, 40;
+	--mdc-foreground: 198, 40, 40;
 }
 .red-900 {
-	--main-color: 183, 28, 28;
+	--mdc-foreground: 183, 28, 28;
 }
 .red-A100 {
-	--main-color: 255, 138, 128;
+	--mdc-foreground: 255, 138, 128;
 }
 .red-A200 {
-	--main-color: 255, 82, 82;
+	--mdc-foreground: 255, 82, 82;
 }
 .red-A400 {
-	--main-color: 255, 23, 68;
+	--mdc-foreground: 255, 23, 68;
 }
 .red-A700 {
-	--main-color: 213, 0, 0;
+	--mdc-foreground: 213, 0, 0;
 }
 .pink-50 {
-	--main-color: 252, 228, 236;
+	--mdc-foreground: 252, 228, 236;
 }
 .pink-100 {
-	--main-color: 248, 187, 208;
+	--mdc-foreground: 248, 187, 208;
 }
 .pink-200 {
-	--main-color: 244, 143, 177;
+	--mdc-foreground: 244, 143, 177;
 }
 .pink-300 {
-	--main-color: 240, 98, 146;
+	--mdc-foreground: 240, 98, 146;
 }
 .pink-400 {
-	--main-color: 236, 64, 122;
+	--mdc-foreground: 236, 64, 122;
 }
 .pink, .pink-500 {
-	--main-color: 233, 30, 99;
+	--mdc-foreground: 233, 30, 99;
 }
 .pink-600 {
-	--main-color: 216, 27, 96;
+	--mdc-foreground: 216, 27, 96;
 }
 .pink-700 {
-	--main-color: 194, 24, 91;
+	--mdc-foreground: 194, 24, 91;
 }
 .pink-800 {
-	--main-color: 173, 20, 87;
+	--mdc-foreground: 173, 20, 87;
 }
 .pink-900 {
-	--main-color: 136, 14, 79;
+	--mdc-foreground: 136, 14, 79;
 }
 .pink-A100 {
-	--main-color: 255, 128, 171;
+	--mdc-foreground: 255, 128, 171;
 }
 .pink-A200 {
-	--main-color: 255, 64, 129;
+	--mdc-foreground: 255, 64, 129;
 }
 .pink-A400 {
-	--main-color: 245, 0, 87;
+	--mdc-foreground: 245, 0, 87;
 }
 .pink-A700 {
-	--main-color: 197, 17, 98;
+	--mdc-foreground: 197, 17, 98;
 }
 .purple-50 {
-	--main-color: 243, 229, 245;
+	--mdc-foreground: 243, 229, 245;
 }
 .purple-100 {
-	--main-color: 225, 190, 231;
+	--mdc-foreground: 225, 190, 231;
 }
 .purple-200 {
-	--main-color: 206, 147, 216;
+	--mdc-foreground: 206, 147, 216;
 }
 .purple-300 {
-	--main-color: 186, 104, 200;
+	--mdc-foreground: 186, 104, 200;
 }
 .purple-400 {
-	--main-color: 171, 71, 188;
+	--mdc-foreground: 171, 71, 188;
 }
 .purple, .purple-500 {
-	--main-color: 156, 39, 176;
+	--mdc-foreground: 156, 39, 176;
 }
 .purple-600 {
-	--main-color: 142, 36, 170;
+	--mdc-foreground: 142, 36, 170;
 }
 .purple-700 {
-	--main-color: 123, 31, 162;
+	--mdc-foreground: 123, 31, 162;
 }
 .purple-800 {
-	--main-color: 106, 27, 154;
+	--mdc-foreground: 106, 27, 154;
 }
 .purple-900 {
-	--main-color: 74, 20, 140;
+	--mdc-foreground: 74, 20, 140;
 }
 .purple-A100 {
-	--main-color: 234, 128, 252;
+	--mdc-foreground: 234, 128, 252;
 }
 .purple-A200 {
-	--main-color: 224, 64, 251;
+	--mdc-foreground: 224, 64, 251;
 }
 .purple-A400 {
-	--main-color: 213, 0, 249;
+	--mdc-foreground: 213, 0, 249;
 }
 .purple-A700 {
-	--main-color: 170, 0, 255;
+	--mdc-foreground: 170, 0, 255;
 }
 .deep-purple-50 {
-	--main-color: 237, 231, 246;
+	--mdc-foreground: 237, 231, 246;
 }
 .deep-purple-100 {
-	--main-color: 209, 196, 233;
+	--mdc-foreground: 209, 196, 233;
 }
 .deep-purple-200 {
-	--main-color: 179, 157, 219;
+	--mdc-foreground: 179, 157, 219;
 }
 .deep-purple-300 {
-	--main-color: 149, 117, 205;
+	--mdc-foreground: 149, 117, 205;
 }
 .deep-purple-400 {
-	--main-color: 126, 87, 194;
+	--mdc-foreground: 126, 87, 194;
 }
 .deep-purple, .deep-purple-500 {
-	--main-color: 103, 58, 183;
+	--mdc-foreground: 103, 58, 183;
 }
 .deep-purple-600 {
-	--main-color: 94, 53, 177;
+	--mdc-foreground: 94, 53, 177;
 }
 .deep-purple-700 {
-	--main-color: 81, 45, 168;
+	--mdc-foreground: 81, 45, 168;
 }
 .deep-purple-800 {
-	--main-color: 69, 39, 160;
+	--mdc-foreground: 69, 39, 160;
 }
 .deep-purple-900 {
-	--main-color: 49, 27, 146;
+	--mdc-foreground: 49, 27, 146;
 }
 .deep-purple-A100 {
-	--main-color: 179, 136, 255;
+	--mdc-foreground: 179, 136, 255;
 }
 .deep-purple-A200 {
-	--main-color: 124, 77, 255;
+	--mdc-foreground: 124, 77, 255;
 }
 .deep-purple-A400 {
-	--main-color: 101, 31, 255;
+	--mdc-foreground: 101, 31, 255;
 }
 .deep-purple-A700 {
-	--main-color: 98, 0, 234;
+	--mdc-foreground: 98, 0, 234;
 }
 .indigo-50 {
-	--main-color: 232, 234, 246;
+	--mdc-foreground: 232, 234, 246;
 }
 .indigo-100 {
-	--main-color: 197, 202, 233;
+	--mdc-foreground: 197, 202, 233;
 }
 .indigo-200 {
-	--main-color: 159, 168, 218;
+	--mdc-foreground: 159, 168, 218;
 }
 .indigo-300 {
-	--main-color: 121, 134, 203;
+	--mdc-foreground: 121, 134, 203;
 }
 .indigo-400 {
-	--main-color: 92, 107, 192;
+	--mdc-foreground: 92, 107, 192;
 }
 .indigo, .indigo-500 {
-	--main-color: 63, 81, 181;
+	--mdc-foreground: 63, 81, 181;
 }
 .indigo-600 {
-	--main-color: 57, 73, 171;
+	--mdc-foreground: 57, 73, 171;
 }
 .indigo-700 {
-	--main-color: 48, 63, 159;
+	--mdc-foreground: 48, 63, 159;
 }
 .indigo-800 {
-	--main-color: 40, 53, 147;
+	--mdc-foreground: 40, 53, 147;
 }
 .indigo-900 {
-	--main-color: 26, 35, 126;
+	--mdc-foreground: 26, 35, 126;
 }
 .indigo-A100 {
-	--main-color: 140, 158, 255;
+	--mdc-foreground: 140, 158, 255;
 }
 .indigo-A200 {
-	--main-color: 83, 109, 254;
+	--mdc-foreground: 83, 109, 254;
 }
 .indigo-A400 {
-	--main-color: 61, 90, 254;
+	--mdc-foreground: 61, 90, 254;
 }
 .indigo-A700 {
-	--main-color: 48, 79, 254;
+	--mdc-foreground: 48, 79, 254;
 }
 .blue-50 {
-	--main-color: 227, 242, 253;
+	--mdc-foreground: 227, 242, 253;
 }
 .blue-100 {
-	--main-color: 187, 222, 251;
+	--mdc-foreground: 187, 222, 251;
 }
 .blue-200 {
-	--main-color: 144, 202, 249;
+	--mdc-foreground: 144, 202, 249;
 }
 .blue-300 {
-	--main-color: 100, 181, 246;
+	--mdc-foreground: 100, 181, 246;
 }
 .blue-400 {
-	--main-color: 66, 165, 245;
+	--mdc-foreground: 66, 165, 245;
 }
 .blue, .blue-500 {
-	--main-color: 33, 150, 243;
+	--mdc-foreground: 33, 150, 243;
 }
 .blue-600 {
-	--main-color: 30, 136, 229;
+	--mdc-foreground: 30, 136, 229;
 }
 .blue-700 {
-	--main-color: 25, 118, 210;
+	--mdc-foreground: 25, 118, 210;
 }
 .blue-800 {
-	--main-color: 21, 101, 192;
+	--mdc-foreground: 21, 101, 192;
 }
 .blue-900 {
-	--main-color: 13, 71, 161;
+	--mdc-foreground: 13, 71, 161;
 }
 .blue-A100 {
-	--main-color: 130, 177, 255;
+	--mdc-foreground: 130, 177, 255;
 }
 .blue-A200 {
-	--main-color: 68, 138, 255;
+	--mdc-foreground: 68, 138, 255;
 }
 .blue-A400 {
-	--main-color: 41, 121, 255;
+	--mdc-foreground: 41, 121, 255;
 }
 .blue-A700 {
-	--main-color: 41, 98, 255;
+	--mdc-foreground: 41, 98, 255;
 }
 .light-blue-50 {
-	--main-color: 225, 245, 254;
+	--mdc-foreground: 225, 245, 254;
 }
 .light-blue-100 {
-	--main-color: 179, 229, 252;
+	--mdc-foreground: 179, 229, 252;
 }
 .light-blue-200 {
-	--main-color: 129, 212, 250;
+	--mdc-foreground: 129, 212, 250;
 }
 .light-blue-300 {
-	--main-color: 79, 195, 247;
+	--mdc-foreground: 79, 195, 247;
 }
 .light-blue-400 {
-	--main-color: 41, 182, 246;
+	--mdc-foreground: 41, 182, 246;
 }
 .light-blue, .light-blue-500 {
-	--main-color: 3, 169, 244;
+	--mdc-foreground: 3, 169, 244;
 }
 .light-blue-600 {
-	--main-color: 3, 155, 229;
+	--mdc-foreground: 3, 155, 229;
 }
 .light-blue-700 {
-	--main-color: 2, 136, 209;
+	--mdc-foreground: 2, 136, 209;
 }
 .light-blue-800 {
-	--main-color: 2, 119, 189;
+	--mdc-foreground: 2, 119, 189;
 }
 .light-blue-900 {
-	--main-color: 1, 87, 155;
+	--mdc-foreground: 1, 87, 155;
 }
 .light-blue-A100 {
-	--main-color: 128, 216, 255;
+	--mdc-foreground: 128, 216, 255;
 }
 .light-blue-A200 {
-	--main-color: 64, 196, 255;
+	--mdc-foreground: 64, 196, 255;
 }
 .light-blue-A400 {
-	--main-color: 0, 176, 255;
+	--mdc-foreground: 0, 176, 255;
 }
 .light-blue-A700 {
-	--main-color: 0, 145, 234;
+	--mdc-foreground: 0, 145, 234;
 }
 .cyan-50 {
-	--main-color: 224, 247, 250;
+	--mdc-foreground: 224, 247, 250;
 }
 .cyan-100 {
-	--main-color: 178, 235, 242;
+	--mdc-foreground: 178, 235, 242;
 }
 .cyan-200 {
-	--main-color: 128, 222, 234;
+	--mdc-foreground: 128, 222, 234;
 }
 .cyan-300 {
-	--main-color: 77, 208, 225;
+	--mdc-foreground: 77, 208, 225;
 }
 .cyan-400 {
-	--main-color: 38, 198, 218;
+	--mdc-foreground: 38, 198, 218;
 }
 .cyan, .cyan-500 {
-	--main-color: 0, 188, 212;
+	--mdc-foreground: 0, 188, 212;
 }
 .cyan-600 {
-	--main-color: 0, 172, 193;
+	--mdc-foreground: 0, 172, 193;
 }
 .cyan-700 {
-	--main-color: 0, 151, 167;
+	--mdc-foreground: 0, 151, 167;
 }
 .cyan-800 {
-	--main-color: 0, 131, 143;
+	--mdc-foreground: 0, 131, 143;
 }
 .cyan-900 {
-	--main-color: 0, 96, 100;
+	--mdc-foreground: 0, 96, 100;
 }
 .cyan-A100 {
-	--main-color: 132, 255, 255;
+	--mdc-foreground: 132, 255, 255;
 }
 .cyan-A200 {
-	--main-color: 24, 255, 255;
+	--mdc-foreground: 24, 255, 255;
 }
 .cyan-A400 {
-	--main-color: 0, 229, 255;
+	--mdc-foreground: 0, 229, 255;
 }
 .cyan-A700 {
-	--main-color: 0, 184, 212;
+	--mdc-foreground: 0, 184, 212;
 }
 .teal-50 {
-	--main-color: 224, 242, 241;
+	--mdc-foreground: 224, 242, 241;
 }
 .teal-100 {
-	--main-color: 178, 223, 219;
+	--mdc-foreground: 178, 223, 219;
 }
 .teal-200 {
-	--main-color: 128, 203, 196;
+	--mdc-foreground: 128, 203, 196;
 }
 .teal-300 {
-	--main-color: 77, 182, 172;
+	--mdc-foreground: 77, 182, 172;
 }
 .teal-400 {
-	--main-color: 38, 166, 154;
+	--mdc-foreground: 38, 166, 154;
 }
 .teal, .teal-500 {
-	--main-color: 0, 150, 136;
+	--mdc-foreground: 0, 150, 136;
 }
 .teal-600 {
-	--main-color: 0, 137, 123;
+	--mdc-foreground: 0, 137, 123;
 }
 .teal-700 {
-	--main-color: 0, 121, 107;
+	--mdc-foreground: 0, 121, 107;
 }
 .teal-800 {
-	--main-color: 0, 105, 92;
+	--mdc-foreground: 0, 105, 92;
 }
 .teal-900 {
-	--main-color: 0, 77, 64;
+	--mdc-foreground: 0, 77, 64;
 }
 .teal-A100 {
-	--main-color: 167, 255, 235;
+	--mdc-foreground: 167, 255, 235;
 }
 .teal-A200 {
-	--main-color: 100, 255, 218;
+	--mdc-foreground: 100, 255, 218;
 }
 .teal-A400 {
-	--main-color: 29, 233, 182;
+	--mdc-foreground: 29, 233, 182;
 }
 .teal-A700 {
-	--main-color: 0, 191, 165;
+	--mdc-foreground: 0, 191, 165;
 }
 .green-50 {
-	--main-color: 232, 245, 233;
+	--mdc-foreground: 232, 245, 233;
 }
 .green-100 {
-	--main-color: 200, 230, 201;
+	--mdc-foreground: 200, 230, 201;
 }
 .green-200 {
-	--main-color: 165, 214, 167;
+	--mdc-foreground: 165, 214, 167;
 }
 .green-300 {
-	--main-color: 129, 199, 132;
+	--mdc-foreground: 129, 199, 132;
 }
 .green-400 {
-	--main-color: 102, 187, 106;
+	--mdc-foreground: 102, 187, 106;
 }
 .green, .green-500 {
-	--main-color: 76, 175, 80;
+	--mdc-foreground: 76, 175, 80;
 }
 .green-600 {
-	--main-color: 67, 160, 71;
+	--mdc-foreground: 67, 160, 71;
 }
 .green-700 {
-	--main-color: 56, 142, 60;
+	--mdc-foreground: 56, 142, 60;
 }
 .green-800 {
-	--main-color: 46, 125, 50;
+	--mdc-foreground: 46, 125, 50;
 }
 .green-900 {
-	--main-color: 27, 94, 32;
+	--mdc-foreground: 27, 94, 32;
 }
 .green-A100 {
-	--main-color: 185, 246, 202;
+	--mdc-foreground: 185, 246, 202;
 }
 .green-A200 {
-	--main-color: 105, 240, 174;
+	--mdc-foreground: 105, 240, 174;
 }
 .green-A400 {
-	--main-color: 0, 230, 118;
+	--mdc-foreground: 0, 230, 118;
 }
 .green-A700 {
-	--main-color: 0, 200, 83;
+	--mdc-foreground: 0, 200, 83;
 }
 .light-green-50 {
-	--main-color: 241, 248, 233;
+	--mdc-foreground: 241, 248, 233;
 }
 .light-green-100 {
-	--main-color: 220, 237, 200;
+	--mdc-foreground: 220, 237, 200;
 }
 .light-green-200 {
-	--main-color: 197, 225, 165;
+	--mdc-foreground: 197, 225, 165;
 }
 .light-green-300 {
-	--main-color: 174, 213, 129;
+	--mdc-foreground: 174, 213, 129;
 }
 .light-green-400 {
-	--main-color: 156, 204, 101;
+	--mdc-foreground: 156, 204, 101;
 }
 .light-green, .light-green-500 {
-	--main-color: 139, 195, 74;
+	--mdc-foreground: 139, 195, 74;
 }
 .light-green-600 {
-	--main-color: 124, 179, 66;
+	--mdc-foreground: 124, 179, 66;
 }
 .light-green-700 {
-	--main-color: 104, 159, 56;
+	--mdc-foreground: 104, 159, 56;
 }
 .light-green-800 {
-	--main-color: 85, 139, 47;
+	--mdc-foreground: 85, 139, 47;
 }
 .light-green-900 {
-	--main-color: 51, 105, 30;
+	--mdc-foreground: 51, 105, 30;
 }
 .light-green-A100 {
-	--main-color: 204, 255, 144;
+	--mdc-foreground: 204, 255, 144;
 }
 .light-green-A200 {
-	--main-color: 178, 255, 89;
+	--mdc-foreground: 178, 255, 89;
 }
 .light-green-A400 {
-	--main-color: 118, 255, 3;
+	--mdc-foreground: 118, 255, 3;
 }
 .light-green-A700 {
-	--main-color: 100, 221, 23;
+	--mdc-foreground: 100, 221, 23;
 }
 .lime-50 {
-	--main-color: 249, 251, 231;
+	--mdc-foreground: 249, 251, 231;
 }
 .lime-100 {
-	--main-color: 240, 244, 195;
+	--mdc-foreground: 240, 244, 195;
 }
 .lime-200 {
-	--main-color: 230, 238, 156;
+	--mdc-foreground: 230, 238, 156;
 }
 .lime-300 {
-	--main-color: 220, 231, 117;
+	--mdc-foreground: 220, 231, 117;
 }
 .lime-400 {
-	--main-color: 212, 225, 87;
+	--mdc-foreground: 212, 225, 87;
 }
 .lime, .lime-500 {
-	--main-color: 205, 220, 57;
+	--mdc-foreground: 205, 220, 57;
 }
 .lime-600 {
-	--main-color: 192, 202, 51;
+	--mdc-foreground: 192, 202, 51;
 }
 .lime-700 {
-	--main-color: 175, 180, 43;
+	--mdc-foreground: 175, 180, 43;
 }
 .lime-800 {
-	--main-color: 158, 157, 36;
+	--mdc-foreground: 158, 157, 36;
 }
 .lime-900 {
-	--main-color: 130, 119, 23;
+	--mdc-foreground: 130, 119, 23;
 }
 .lime-A100 {
-	--main-color: 244, 255, 129;
+	--mdc-foreground: 244, 255, 129;
 }
 .lime-A200 {
-	--main-color: 238, 255, 65;
+	--mdc-foreground: 238, 255, 65;
 }
 .lime-A400 {
-	--main-color: 198, 255, 0;
+	--mdc-foreground: 198, 255, 0;
 }
 .lime-A700 {
-	--main-color: 174, 234, 0;
+	--mdc-foreground: 174, 234, 0;
 }
 .yellow-50 {
-	--main-color: 255, 253, 231;
+	--mdc-foreground: 255, 253, 231;
 }
 .yellow-100 {
-	--main-color: 255, 249, 196;
+	--mdc-foreground: 255, 249, 196;
 }
 .yellow-200 {
-	--main-color: 255, 245, 157;
+	--mdc-foreground: 255, 245, 157;
 }
 .yellow-300 {
-	--main-color: 255, 241, 118;
+	--mdc-foreground: 255, 241, 118;
 }
 .yellow-400 {
-	--main-color: 255, 238, 88;
+	--mdc-foreground: 255, 238, 88;
 }
 .yellow, .yellow-500 {
-	--main-color: 255, 235, 59;
+	--mdc-foreground: 255, 235, 59;
 }
 .yellow-600 {
-	--main-color: 253, 216, 53;
+	--mdc-foreground: 253, 216, 53;
 }
 .yellow-700 {
-	--main-color: 251, 192, 45;
+	--mdc-foreground: 251, 192, 45;
 }
 .yellow-800 {
-	--main-color: 249, 168, 37;
+	--mdc-foreground: 249, 168, 37;
 }
 .yellow-900 {
-	--main-color: 245, 127, 23;
+	--mdc-foreground: 245, 127, 23;
 }
 .yellow-A100 {
-	--main-color: 255, 255, 141;
+	--mdc-foreground: 255, 255, 141;
 }
 .yellow-A200 {
-	--main-color: 255, 255, 0;
+	--mdc-foreground: 255, 255, 0;
 }
 .yellow-A400 {
-	--main-color: 255, 234, 0;
+	--mdc-foreground: 255, 234, 0;
 }
 .yellow-A700 {
-	--main-color: 255, 214, 0;
+	--mdc-foreground: 255, 214, 0;
 }
 .amber-50 {
-	--main-color: 255, 248, 225;
+	--mdc-foreground: 255, 248, 225;
 }
 .amber-100 {
-	--main-color: 255, 236, 179;
+	--mdc-foreground: 255, 236, 179;
 }
 .amber-200 {
-	--main-color: 255, 224, 130;
+	--mdc-foreground: 255, 224, 130;
 }
 .amber-300 {
-	--main-color: 255, 213, 79;
+	--mdc-foreground: 255, 213, 79;
 }
 .amber-400 {
-	--main-color: 255, 202, 40;
+	--mdc-foreground: 255, 202, 40;
 }
 .amber, .amber-500 {
-	--main-color: 255, 193, 7;
+	--mdc-foreground: 255, 193, 7;
 }
 .amber-600 {
-	--main-color: 255, 179, 0;
+	--mdc-foreground: 255, 179, 0;
 }
 .amber-700 {
-	--main-color: 255, 160, 0;
+	--mdc-foreground: 255, 160, 0;
 }
 .amber-800 {
-	--main-color: 255, 143, 0;
+	--mdc-foreground: 255, 143, 0;
 }
 .amber-900 {
-	--main-color: 255, 111, 0;
+	--mdc-foreground: 255, 111, 0;
 }
 .amber-A100 {
-	--main-color: 255, 229, 127;
+	--mdc-foreground: 255, 229, 127;
 }
 .amber-A200 {
-	--main-color: 255, 215, 64;
+	--mdc-foreground: 255, 215, 64;
 }
 .amber-A400 {
-	--main-color: 255, 196, 0;
+	--mdc-foreground: 255, 196, 0;
 }
 .amber-A700 {
-	--main-color: 255, 171, 0;
+	--mdc-foreground: 255, 171, 0;
 }
 .orange-50 {
-	--main-color: 255, 243, 224;
+	--mdc-foreground: 255, 243, 224;
 }
 .orange-100 {
-	--main-color: 255, 224, 178;
+	--mdc-foreground: 255, 224, 178;
 }
 .orange-200 {
-	--main-color: 255, 204, 128;
+	--mdc-foreground: 255, 204, 128;
 }
 .orange-300 {
-	--main-color: 255, 183, 77;
+	--mdc-foreground: 255, 183, 77;
 }
 .orange-400 {
-	--main-color: 255, 167, 38;
+	--mdc-foreground: 255, 167, 38;
 }
 .orange, .orange-500 {
-	--main-color: 255, 152, 0;
+	--mdc-foreground: 255, 152, 0;
 }
 .orange-600 {
-	--main-color: 251, 140, 0;
+	--mdc-foreground: 251, 140, 0;
 }
 .orange-700 {
-	--main-color: 245, 124, 0;
+	--mdc-foreground: 245, 124, 0;
 }
 .orange-800 {
-	--main-color: 239, 108, 0;
+	--mdc-foreground: 239, 108, 0;
 }
 .orange-900 {
-	--main-color: 230, 81, 0;
+	--mdc-foreground: 230, 81, 0;
 }
 .orange-A100 {
-	--main-color: 255, 209, 128;
+	--mdc-foreground: 255, 209, 128;
 }
 .orange-A200 {
-	--main-color: 255, 171, 64;
+	--mdc-foreground: 255, 171, 64;
 }
 .orange-A400 {
-	--main-color: 255, 145, 0;
+	--mdc-foreground: 255, 145, 0;
 }
 .orange-A700 {
-	--main-color: 255, 109, 0;
+	--mdc-foreground: 255, 109, 0;
 }
 .deep-orange-50 {
-	--main-color: 251, 233, 231;
+	--mdc-foreground: 251, 233, 231;
 }
 .deep-orange-100 {
-	--main-color: 255, 204, 188;
+	--mdc-foreground: 255, 204, 188;
 }
 .deep-orange-200 {
-	--main-color: 255, 171, 145;
+	--mdc-foreground: 255, 171, 145;
 }
 .deep-orange-300 {
-	--main-color: 255, 138, 101;
+	--mdc-foreground: 255, 138, 101;
 }
 .deep-orange-400 {
-	--main-color: 255, 112, 67;
+	--mdc-foreground: 255, 112, 67;
 }
 .deep-orange, .deep-orange-500 {
-	--main-color: 255, 87, 34;
+	--mdc-foreground: 255, 87, 34;
 }
 .deep-orange-600 {
-	--main-color: 244, 81, 30;
+	--mdc-foreground: 244, 81, 30;
 }
 .deep-orange-700 {
-	--main-color: 230, 74, 25;
+	--mdc-foreground: 230, 74, 25;
 }
 .deep-orange-800 {
-	--main-color: 216, 67, 21;
+	--mdc-foreground: 216, 67, 21;
 }
 .deep-orange-900 {
-	--main-color: 191, 54, 12;
+	--mdc-foreground: 191, 54, 12;
 }
 .deep-orange-A100 {
-	--main-color: 255, 158, 128;
+	--mdc-foreground: 255, 158, 128;
 }
 .deep-orange-A200 {
-	--main-color: 255, 110, 64;
+	--mdc-foreground: 255, 110, 64;
 }
 .deep-orange-A400 {
-	--main-color: 255, 61, 0;
+	--mdc-foreground: 255, 61, 0;
 }
 .deep-orange-A700 {
-	--main-color: 221, 44, 0;
+	--mdc-foreground: 221, 44, 0;
 }
 .brown-50 {
-	--main-color: 239, 235, 233;
+	--mdc-foreground: 239, 235, 233;
 }
 .brown-100 {
-	--main-color: 215, 204, 200;
+	--mdc-foreground: 215, 204, 200;
 }
 .brown-200 {
-	--main-color: 188, 170, 164;
+	--mdc-foreground: 188, 170, 164;
 }
 .brown-300 {
-	--main-color: 161, 136, 127;
+	--mdc-foreground: 161, 136, 127;
 }
 .brown-400 {
-	--main-color: 141, 110, 99;
+	--mdc-foreground: 141, 110, 99;
 }
 .brown, .brown-500 {
-	--main-color: 121, 85, 72;
+	--mdc-foreground: 121, 85, 72;
 }
 .brown-600 {
-	--main-color: 109, 76, 65;
+	--mdc-foreground: 109, 76, 65;
 }
 .brown-700 {
-	--main-color: 93, 64, 55;
+	--mdc-foreground: 93, 64, 55;
 }
 .brown-800 {
-	--main-color: 78, 52, 46;
+	--mdc-foreground: 78, 52, 46;
 }
 .brown-900 {
-	--main-color: 62, 39, 35;
+	--mdc-foreground: 62, 39, 35;
 }
 .grey-50 {
-	--main-color: 250, 250, 250;
+	--mdc-foreground: 250, 250, 250;
 }
 .grey-100 {
-	--main-color: 245, 245, 245;
+	--mdc-foreground: 245, 245, 245;
 }
 .grey-200 {
-	--main-color: 238, 238, 238;
+	--mdc-foreground: 238, 238, 238;
 }
 .grey-300 {
-	--main-color: 224, 224, 224;
+	--mdc-foreground: 224, 224, 224;
 }
 .grey-400 {
-	--main-color: 189, 189, 189;
+	--mdc-foreground: 189, 189, 189;
 }
 .grey, .grey-500 {
-	--main-color: 158, 158, 158;
+	--mdc-foreground: 158, 158, 158;
 }
 .grey-600 {
-	--main-color: 117, 117, 117;
+	--mdc-foreground: 117, 117, 117;
 }
 .grey-700 {
-	--main-color: 97, 97, 97;
+	--mdc-foreground: 97, 97, 97;
 }
 .grey-800 {
-	--main-color: 66, 66, 66;
+	--mdc-foreground: 66, 66, 66;
 }
 .grey-900 {
-	--main-color: 33, 33, 33;
+	--mdc-foreground: 33, 33, 33;
 }
 .blue-grey-50 {
-	--main-color: 236, 239, 241;
+	--mdc-foreground: 236, 239, 241;
 }
 .blue-grey-100 {
-	--main-color: 207, 216, 220;
+	--mdc-foreground: 207, 216, 220;
 }
 .blue-grey-200 {
-	--main-color: 176, 190, 197;
+	--mdc-foreground: 176, 190, 197;
 }
 .blue-grey-300 {
-	--main-color: 144, 164, 174;
+	--mdc-foreground: 144, 164, 174;
 }
 .blue-grey-400 {
-	--main-color: 120, 144, 156;
+	--mdc-foreground: 120, 144, 156;
 }
 .blue-grey, .blue-grey-500 {
-	--main-color: 96, 125, 139;
+	--mdc-foreground: 96, 125, 139;
 }
 .blue-grey-600 {
-	--main-color: 84, 110, 122;
+	--mdc-foreground: 84, 110, 122;
 }
 .blue-grey-700 {
-	--main-color: 69, 90, 100;
+	--mdc-foreground: 69, 90, 100;
 }
 .blue-grey-800 {
-	--main-color: 55, 71, 79;
+	--mdc-foreground: 55, 71, 79;
 }
 .blue-grey-900 {
-	--main-color: 38, 50, 56;
+	--mdc-foreground: 38, 50, 56;
 }
 .black {
-    --main-color: 0, 0, 0;
+    --mdc-foreground: 0, 0, 0;
 }
 .white {
-    --main-color: 255, 255, 255;
+    --mdc-foreground: 255, 255, 255;
 }
 
 .red-50, .red-100, .red-200, .red-300, .red-A100, .pink-50, .pink-100, .pink-200, .pink-A100, .purple-50, .purple-100, .purple-200, .purple-A100, .deep-purple-50, .deep-purple-100, .deep-purple-200, .deep-purple-A100, .indigo-50, .indigo-100, .indigo-200, .indigo-A100, .blue-50, .blue-100, .blue-200, .blue-300, .blue-400, .blue-A100, .light-blue-50, .light-blue-100, .light-blue-200, .light-blue-300, .light-blue-400, .light-blue, .light-blue-500, .light-blue-A100, .light-blue-A200, .light-blue-A400, .cyan-50, .cyan-100, .cyan-200, .cyan-300, .cyan-400, .cyan, .cyan-500, .cyan-600, .cyan-A100, .cyan-A200, .cyan-A400, .cyan-A700, .teal-50, .teal-100, .teal-200, .teal-300, .teal-400, .teal-A100, .teal-A200, .teal-A400, .teal-A700, .green-50, .green-100, .green-200, .green-300, .green-400, .green, .green-500, .green-A100, .green-A200, .green-A400, .green-A700, .light-green-50, .light-green-100, .light-green-200, .light-green-300, .light-green-400, .light-green, .light-green-500, .light-green-600, .light-green-A100, .light-green-A200, .light-green-A400, .light-green-A700, .lime-50, .lime-100, .lime-200, .lime-300, .lime-400, .lime, .lime-500, .lime-600, .lime-700, .lime-800, .lime-A100, .lime-A200, .lime-A400, .lime-A700, .yellow-50, .yellow-100, .yellow-200, .yellow-300, .yellow-400, .yellow, .yellow-500, .yellow-600, .yellow-700, .yellow-800, .yellow-900, .yellow-A100, .yellow-A200, .yellow-A400, .yellow-A700, .amber-50, .amber-100, .amber-200, .amber-300, .amber-400, .amber, .amber-500, .amber-600, .amber-700, .amber-800, .amber-900, .amber-A100, .amber-A200, .amber-A400, .amber-A700, .orange-50, .orange-100, .orange-200, .orange-300, .orange-400, .orange, .orange-500, .orange-600, .orange-700, .orange-A100, .orange-A200, .orange-A400, .orange-A700, .deep-orange-50, .deep-orange-100, .deep-orange-200, .deep-orange-300, .deep-orange-400, .deep-orange-A100, .deep-orange-A200, .brown-50, .brown-100, .brown-200, .grey-50, .grey-100, .grey-200, .grey-300, .grey-400, .grey, .grey-500, .blue-grey-50, .blue-grey-100, .blue-grey-200, .blue-grey-300, .white {
-    --fg-primary: rgba(0, 0, 0, 0.87);
-    --fg-secondary: rgba(0, 0, 0, 0.6);
-    --fg-hint: rgba(0, 0, 0, 0.38);
-    --fg-divider: rgba(0, 0, 0, 0.12);
+    --switch-opacity: 0.5;
+    --mdc-theme: 0, 0, 0;
 
-    --text-primary: rgb(var(--main-color));
-    --text-secondary: rgb(var(--main-color));
-    --text-hint: rgb(var(--main-color));
-    --text-divider: rgb(var(--main-color));
-    --bg-border: rgb(var(--main-color));
-    
-    --switch-rail-opacity: 0.5;
-
-    color: var(--text-primary);
-    border-color: var(--bg-border);
+    color: rgb(var(--mdc-foreground));
+    border-color: rgb(var(--mdc-foreground));
 }
 
 .red-400, .red, .red-500, .red-600, .red-700, .red-800, .red-900, .red-A200, .red-A400, .red-A700, .pink-300, .pink-400, .pink, .pink-500, .pink-600, .pink-700, .pink-800, .pink-900, .pink-A200, .pink-A400, .pink-A700, .purple-300, .purple-400, .purple, .purple-500, .purple-600, .purple-700, .purple-800, .purple-900, .purple-A200, .purple-A400, .purple-A700, .deep-purple-300, .deep-purple-400, .deep-purple, .deep-purple-500, .deep-purple-600, .deep-purple-700, .deep-purple-800, .deep-purple-900, .deep-purple-A200, .deep-purple-A400, .deep-purple-A700, .indigo-300, .indigo-400, .indigo, .indigo-500, .indigo-600, .indigo-700, .indigo-800, .indigo-900, .indigo-A200, .indigo-A400, .indigo-A700, .blue, .blue-500, .blue-600, .blue-700, .blue-800, .blue-900, .blue-A200, .blue-A400, .blue-A700, .light-blue-600, .light-blue-700, .light-blue-800, .light-blue-900, .light-blue-A700, .cyan-700, .cyan-800, .cyan-900, .teal, .teal-500, .teal-600, .teal-700, .teal-800, .teal-900, .green-600, .green-700, .green-800, .green-900, .light-green-700, .light-green-800, .light-green-900, .lime-900, .orange-800, .orange-900, .deep-orange, .deep-orange-500, .deep-orange-600, .deep-orange-700, .deep-orange-800, .deep-orange-900, .deep-orange-A400, .deep-orange-A700, .brown-300, .brown-400, .brown, .brown-500, .brown-600, .brown-700, .brown-800, .brown-900, .grey-600, .grey-700, .grey-800, .grey-900, .blue-grey-400, .blue-grey, .blue-grey-500, .blue-grey-600, .blue-grey-700, .blue-grey-800, .blue-grey-900, .black {
-    --fg-primary: rgba(255, 255, 255, 1);
-    --fg-secondary: rgba(255, 255, 255, 0.7);
-    --fg-hint: rgba(255, 255, 255, 0.5);
-    --fg-divider: rgba(255, 255, 255, 0.12);
+    --switch-opacity: 0.5;
+    --mdc-theme: 255, 255, 255;
 
-    --text-primary: rgb(var(--main-color));
-    --text-secondary: rgb(var(--main-color));
-    --text-hint: rgb(var(--main-color));
-    --text-divider: rgb(var(--main-color));
-    --bg-border: rgb(var(--main-color));
-
-    --switch-rail-opacity: 0.5;
-    
-    color: var(--text-primary);
-    border-color: var(--bg-border);
+    color: rgb(var(--mdc-foreground));
+    border-color: rgb(var(--mdc-foreground));
 }
 
 .bg-red-50 {
-	--bg-main-content: rgb(255, 235, 238);
+	--mdc-background: rgb(255, 235, 238);
 }
 .bg-red-100 {
-	--bg-main-content: rgb(255, 205, 210);
+	--mdc-background: rgb(255, 205, 210);
 }
 .bg-red-200 {
-	--bg-main-content: rgb(239, 154, 154);
+	--mdc-background: rgb(239, 154, 154);
 }
 .bg-red-300 {
-	--bg-main-content: rgb(229, 115, 115);
+	--mdc-background: rgb(229, 115, 115);
 }
 .bg-red-400 {
-	--bg-main-content: rgb(239, 83, 80);
+	--mdc-background: rgb(239, 83, 80);
 }
 .bg-red, .bg-red-500 {
-	--bg-main-content: rgb(244, 67, 54);
+	--mdc-background: rgb(244, 67, 54);
 }
 .bg-red-600 {
-	--bg-main-content: rgb(229, 57, 53);
+	--mdc-background: rgb(229, 57, 53);
 }
 .bg-red-700 {
-	--bg-main-content: rgb(211, 47, 47);
+	--mdc-background: rgb(211, 47, 47);
 }
 .bg-red-800 {
-	--bg-main-content: rgb(198, 40, 40);
+	--mdc-background: rgb(198, 40, 40);
 }
 .bg-red-900 {
-	--bg-main-content: rgb(183, 28, 28);
+	--mdc-background: rgb(183, 28, 28);
 }
 .bg-red-A100 {
-	--bg-main-content: rgb(255, 138, 128);
+	--mdc-background: rgb(255, 138, 128);
 }
 .bg-red-A200 {
-	--bg-main-content: rgb(255, 82, 82);
+	--mdc-background: rgb(255, 82, 82);
 }
 .bg-red-A400 {
-	--bg-main-content: rgb(255, 23, 68);
+	--mdc-background: rgb(255, 23, 68);
 }
 .bg-red-A700 {
-	--bg-main-content: rgb(213, 0, 0);
+	--mdc-background: rgb(213, 0, 0);
 }
 .bg-pink-50 {
-	--bg-main-content: rgb(252, 228, 236);
+	--mdc-background: rgb(252, 228, 236);
 }
 .bg-pink-100 {
-	--bg-main-content: rgb(248, 187, 208);
+	--mdc-background: rgb(248, 187, 208);
 }
 .bg-pink-200 {
-	--bg-main-content: rgb(244, 143, 177);
+	--mdc-background: rgb(244, 143, 177);
 }
 .bg-pink-300 {
-	--bg-main-content: rgb(240, 98, 146);
+	--mdc-background: rgb(240, 98, 146);
 }
 .bg-pink-400 {
-	--bg-main-content: rgb(236, 64, 122);
+	--mdc-background: rgb(236, 64, 122);
 }
 .bg-pink, .bg-pink-500 {
-	--bg-main-content: rgb(233, 30, 99);
+	--mdc-background: rgb(233, 30, 99);
 }
 .bg-pink-600 {
-	--bg-main-content: rgb(216, 27, 96);
+	--mdc-background: rgb(216, 27, 96);
 }
 .bg-pink-700 {
-	--bg-main-content: rgb(194, 24, 91);
+	--mdc-background: rgb(194, 24, 91);
 }
 .bg-pink-800 {
-	--bg-main-content: rgb(173, 20, 87);
+	--mdc-background: rgb(173, 20, 87);
 }
 .bg-pink-900 {
-	--bg-main-content: rgb(136, 14, 79);
+	--mdc-background: rgb(136, 14, 79);
 }
 .bg-pink-A100 {
-	--bg-main-content: rgb(255, 128, 171);
+	--mdc-background: rgb(255, 128, 171);
 }
 .bg-pink-A200 {
-	--bg-main-content: rgb(255, 64, 129);
+	--mdc-background: rgb(255, 64, 129);
 }
 .bg-pink-A400 {
-	--bg-main-content: rgb(245, 0, 87);
+	--mdc-background: rgb(245, 0, 87);
 }
 .bg-pink-A700 {
-	--bg-main-content: rgb(197, 17, 98);
+	--mdc-background: rgb(197, 17, 98);
 }
 .bg-purple-50 {
-	--bg-main-content: rgb(243, 229, 245);
+	--mdc-background: rgb(243, 229, 245);
 }
 .bg-purple-100 {
-	--bg-main-content: rgb(225, 190, 231);
+	--mdc-background: rgb(225, 190, 231);
 }
 .bg-purple-200 {
-	--bg-main-content: rgb(206, 147, 216);
+	--mdc-background: rgb(206, 147, 216);
 }
 .bg-purple-300 {
-	--bg-main-content: rgb(186, 104, 200);
+	--mdc-background: rgb(186, 104, 200);
 }
 .bg-purple-400 {
-	--bg-main-content: rgb(171, 71, 188);
+	--mdc-background: rgb(171, 71, 188);
 }
 .bg-purple, .bg-purple-500 {
-	--bg-main-content: rgb(156, 39, 176);
+	--mdc-background: rgb(156, 39, 176);
 }
 .bg-purple-600 {
-	--bg-main-content: rgb(142, 36, 170);
+	--mdc-background: rgb(142, 36, 170);
 }
 .bg-purple-700 {
-	--bg-main-content: rgb(123, 31, 162);
+	--mdc-background: rgb(123, 31, 162);
 }
 .bg-purple-800 {
-	--bg-main-content: rgb(106, 27, 154);
+	--mdc-background: rgb(106, 27, 154);
 }
 .bg-purple-900 {
-	--bg-main-content: rgb(74, 20, 140);
+	--mdc-background: rgb(74, 20, 140);
 }
 .bg-purple-A100 {
-	--bg-main-content: rgb(234, 128, 252);
+	--mdc-background: rgb(234, 128, 252);
 }
 .bg-purple-A200 {
-	--bg-main-content: rgb(224, 64, 251);
+	--mdc-background: rgb(224, 64, 251);
 }
 .bg-purple-A400 {
-	--bg-main-content: rgb(213, 0, 249);
+	--mdc-background: rgb(213, 0, 249);
 }
 .bg-purple-A700 {
-	--bg-main-content: rgb(170, 0, 255);
+	--mdc-background: rgb(170, 0, 255);
 }
 .bg-deep-purple-50 {
-	--bg-main-content: rgb(237, 231, 246);
+	--mdc-background: rgb(237, 231, 246);
 }
 .bg-deep-purple-100 {
-	--bg-main-content: rgb(209, 196, 233);
+	--mdc-background: rgb(209, 196, 233);
 }
 .bg-deep-purple-200 {
-	--bg-main-content: rgb(179, 157, 219);
+	--mdc-background: rgb(179, 157, 219);
 }
 .bg-deep-purple-300 {
-	--bg-main-content: rgb(149, 117, 205);
+	--mdc-background: rgb(149, 117, 205);
 }
 .bg-deep-purple-400 {
-	--bg-main-content: rgb(126, 87, 194);
+	--mdc-background: rgb(126, 87, 194);
 }
 .bg-deep-purple, .bg-deep-purple-500 {
-	--bg-main-content: rgb(103, 58, 183);
+	--mdc-background: rgb(103, 58, 183);
 }
 .bg-deep-purple-600 {
-	--bg-main-content: rgb(94, 53, 177);
+	--mdc-background: rgb(94, 53, 177);
 }
 .bg-deep-purple-700 {
-	--bg-main-content: rgb(81, 45, 168);
+	--mdc-background: rgb(81, 45, 168);
 }
 .bg-deep-purple-800 {
-	--bg-main-content: rgb(69, 39, 160);
+	--mdc-background: rgb(69, 39, 160);
 }
 .bg-deep-purple-900 {
-	--bg-main-content: rgb(49, 27, 146);
+	--mdc-background: rgb(49, 27, 146);
 }
 .bg-deep-purple-A100 {
-	--bg-main-content: rgb(179, 136, 255);
+	--mdc-background: rgb(179, 136, 255);
 }
 .bg-deep-purple-A200 {
-	--bg-main-content: rgb(124, 77, 255);
+	--mdc-background: rgb(124, 77, 255);
 }
 .bg-deep-purple-A400 {
-	--bg-main-content: rgb(101, 31, 255);
+	--mdc-background: rgb(101, 31, 255);
 }
 .bg-deep-purple-A700 {
-	--bg-main-content: rgb(98, 0, 234);
+	--mdc-background: rgb(98, 0, 234);
 }
 .bg-indigo-50 {
-	--bg-main-content: rgb(232, 234, 246);
+	--mdc-background: rgb(232, 234, 246);
 }
 .bg-indigo-100 {
-	--bg-main-content: rgb(197, 202, 233);
+	--mdc-background: rgb(197, 202, 233);
 }
 .bg-indigo-200 {
-	--bg-main-content: rgb(159, 168, 218);
+	--mdc-background: rgb(159, 168, 218);
 }
 .bg-indigo-300 {
-	--bg-main-content: rgb(121, 134, 203);
+	--mdc-background: rgb(121, 134, 203);
 }
 .bg-indigo-400 {
-	--bg-main-content: rgb(92, 107, 192);
+	--mdc-background: rgb(92, 107, 192);
 }
 .bg-indigo, .bg-indigo-500 {
-	--bg-main-content: rgb(63, 81, 181);
+	--mdc-background: rgb(63, 81, 181);
 }
 .bg-indigo-600 {
-	--bg-main-content: rgb(57, 73, 171);
+	--mdc-background: rgb(57, 73, 171);
 }
 .bg-indigo-700 {
-	--bg-main-content: rgb(48, 63, 159);
+	--mdc-background: rgb(48, 63, 159);
 }
 .bg-indigo-800 {
-	--bg-main-content: rgb(40, 53, 147);
+	--mdc-background: rgb(40, 53, 147);
 }
 .bg-indigo-900 {
-	--bg-main-content: rgb(26, 35, 126);
+	--mdc-background: rgb(26, 35, 126);
 }
 .bg-indigo-A100 {
-	--bg-main-content: rgb(140, 158, 255);
+	--mdc-background: rgb(140, 158, 255);
 }
 .bg-indigo-A200 {
-	--bg-main-content: rgb(83, 109, 254);
+	--mdc-background: rgb(83, 109, 254);
 }
 .bg-indigo-A400 {
-	--bg-main-content: rgb(61, 90, 254);
+	--mdc-background: rgb(61, 90, 254);
 }
 .bg-indigo-A700 {
-	--bg-main-content: rgb(48, 79, 254);
+	--mdc-background: rgb(48, 79, 254);
 }
 .bg-blue-50 {
-	--bg-main-content: rgb(227, 242, 253);
+	--mdc-background: rgb(227, 242, 253);
 }
 .bg-blue-100 {
-	--bg-main-content: rgb(187, 222, 251);
+	--mdc-background: rgb(187, 222, 251);
 }
 .bg-blue-200 {
-	--bg-main-content: rgb(144, 202, 249);
+	--mdc-background: rgb(144, 202, 249);
 }
 .bg-blue-300 {
-	--bg-main-content: rgb(100, 181, 246);
+	--mdc-background: rgb(100, 181, 246);
 }
 .bg-blue-400 {
-	--bg-main-content: rgb(66, 165, 245);
+	--mdc-background: rgb(66, 165, 245);
 }
 .bg-blue, .bg-blue-500 {
-	--bg-main-content: rgb(33, 150, 243);
+	--mdc-background: rgb(33, 150, 243);
 }
 .bg-blue-600 {
-	--bg-main-content: rgb(30, 136, 229);
+	--mdc-background: rgb(30, 136, 229);
 }
 .bg-blue-700 {
-	--bg-main-content: rgb(25, 118, 210);
+	--mdc-background: rgb(25, 118, 210);
 }
 .bg-blue-800 {
-	--bg-main-content: rgb(21, 101, 192);
+	--mdc-background: rgb(21, 101, 192);
 }
 .bg-blue-900 {
-	--bg-main-content: rgb(13, 71, 161);
+	--mdc-background: rgb(13, 71, 161);
 }
 .bg-blue-A100 {
-	--bg-main-content: rgb(130, 177, 255);
+	--mdc-background: rgb(130, 177, 255);
 }
 .bg-blue-A200 {
-	--bg-main-content: rgb(68, 138, 255);
+	--mdc-background: rgb(68, 138, 255);
 }
 .bg-blue-A400 {
-	--bg-main-content: rgb(41, 121, 255);
+	--mdc-background: rgb(41, 121, 255);
 }
 .bg-blue-A700 {
-	--bg-main-content: rgb(41, 98, 255);
+	--mdc-background: rgb(41, 98, 255);
 }
 .bg-light-blue-50 {
-	--bg-main-content: rgb(225, 245, 254);
+	--mdc-background: rgb(225, 245, 254);
 }
 .bg-light-blue-100 {
-	--bg-main-content: rgb(179, 229, 252);
+	--mdc-background: rgb(179, 229, 252);
 }
 .bg-light-blue-200 {
-	--bg-main-content: rgb(129, 212, 250);
+	--mdc-background: rgb(129, 212, 250);
 }
 .bg-light-blue-300 {
-	--bg-main-content: rgb(79, 195, 247);
+	--mdc-background: rgb(79, 195, 247);
 }
 .bg-light-blue-400 {
-	--bg-main-content: rgb(41, 182, 246);
+	--mdc-background: rgb(41, 182, 246);
 }
 .bg-light-blue, .bg-light-blue-500 {
-	--bg-main-content: rgb(3, 169, 244);
+	--mdc-background: rgb(3, 169, 244);
 }
 .bg-light-blue-600 {
-	--bg-main-content: rgb(3, 155, 229);
+	--mdc-background: rgb(3, 155, 229);
 }
 .bg-light-blue-700 {
-	--bg-main-content: rgb(2, 136, 209);
+	--mdc-background: rgb(2, 136, 209);
 }
 .bg-light-blue-800 {
-	--bg-main-content: rgb(2, 119, 189);
+	--mdc-background: rgb(2, 119, 189);
 }
 .bg-light-blue-900 {
-	--bg-main-content: rgb(1, 87, 155);
+	--mdc-background: rgb(1, 87, 155);
 }
 .bg-light-blue-A100 {
-	--bg-main-content: rgb(128, 216, 255);
+	--mdc-background: rgb(128, 216, 255);
 }
 .bg-light-blue-A200 {
-	--bg-main-content: rgb(64, 196, 255);
+	--mdc-background: rgb(64, 196, 255);
 }
 .bg-light-blue-A400 {
-	--bg-main-content: rgb(0, 176, 255);
+	--mdc-background: rgb(0, 176, 255);
 }
 .bg-light-blue-A700 {
-	--bg-main-content: rgb(0, 145, 234);
+	--mdc-background: rgb(0, 145, 234);
 }
 .bg-cyan-50 {
-	--bg-main-content: rgb(224, 247, 250);
+	--mdc-background: rgb(224, 247, 250);
 }
 .bg-cyan-100 {
-	--bg-main-content: rgb(178, 235, 242);
+	--mdc-background: rgb(178, 235, 242);
 }
 .bg-cyan-200 {
-	--bg-main-content: rgb(128, 222, 234);
+	--mdc-background: rgb(128, 222, 234);
 }
 .bg-cyan-300 {
-	--bg-main-content: rgb(77, 208, 225);
+	--mdc-background: rgb(77, 208, 225);
 }
 .bg-cyan-400 {
-	--bg-main-content: rgb(38, 198, 218);
+	--mdc-background: rgb(38, 198, 218);
 }
 .bg-cyan, .bg-cyan-500 {
-	--bg-main-content: rgb(0, 188, 212);
+	--mdc-background: rgb(0, 188, 212);
 }
 .bg-cyan-600 {
-	--bg-main-content: rgb(0, 172, 193);
+	--mdc-background: rgb(0, 172, 193);
 }
 .bg-cyan-700 {
-	--bg-main-content: rgb(0, 151, 167);
+	--mdc-background: rgb(0, 151, 167);
 }
 .bg-cyan-800 {
-	--bg-main-content: rgb(0, 131, 143);
+	--mdc-background: rgb(0, 131, 143);
 }
 .bg-cyan-900 {
-	--bg-main-content: rgb(0, 96, 100);
+	--mdc-background: rgb(0, 96, 100);
 }
 .bg-cyan-A100 {
-	--bg-main-content: rgb(132, 255, 255);
+	--mdc-background: rgb(132, 255, 255);
 }
 .bg-cyan-A200 {
-	--bg-main-content: rgb(24, 255, 255);
+	--mdc-background: rgb(24, 255, 255);
 }
 .bg-cyan-A400 {
-	--bg-main-content: rgb(0, 229, 255);
+	--mdc-background: rgb(0, 229, 255);
 }
 .bg-cyan-A700 {
-	--bg-main-content: rgb(0, 184, 212);
+	--mdc-background: rgb(0, 184, 212);
 }
 .bg-teal-50 {
-	--bg-main-content: rgb(224, 242, 241);
+	--mdc-background: rgb(224, 242, 241);
 }
 .bg-teal-100 {
-	--bg-main-content: rgb(178, 223, 219);
+	--mdc-background: rgb(178, 223, 219);
 }
 .bg-teal-200 {
-	--bg-main-content: rgb(128, 203, 196);
+	--mdc-background: rgb(128, 203, 196);
 }
 .bg-teal-300 {
-	--bg-main-content: rgb(77, 182, 172);
+	--mdc-background: rgb(77, 182, 172);
 }
 .bg-teal-400 {
-	--bg-main-content: rgb(38, 166, 154);
+	--mdc-background: rgb(38, 166, 154);
 }
 .bg-teal, .bg-teal-500 {
-	--bg-main-content: rgb(0, 150, 136);
+	--mdc-background: rgb(0, 150, 136);
 }
 .bg-teal-600 {
-	--bg-main-content: rgb(0, 137, 123);
+	--mdc-background: rgb(0, 137, 123);
 }
 .bg-teal-700 {
-	--bg-main-content: rgb(0, 121, 107);
+	--mdc-background: rgb(0, 121, 107);
 }
 .bg-teal-800 {
-	--bg-main-content: rgb(0, 105, 92);
+	--mdc-background: rgb(0, 105, 92);
 }
 .bg-teal-900 {
-	--bg-main-content: rgb(0, 77, 64);
+	--mdc-background: rgb(0, 77, 64);
 }
 .bg-teal-A100 {
-	--bg-main-content: rgb(167, 255, 235);
+	--mdc-background: rgb(167, 255, 235);
 }
 .bg-teal-A200 {
-	--bg-main-content: rgb(100, 255, 218);
+	--mdc-background: rgb(100, 255, 218);
 }
 .bg-teal-A400 {
-	--bg-main-content: rgb(29, 233, 182);
+	--mdc-background: rgb(29, 233, 182);
 }
 .bg-teal-A700 {
-	--bg-main-content: rgb(0, 191, 165);
+	--mdc-background: rgb(0, 191, 165);
 }
 .bg-green-50 {
-	--bg-main-content: rgb(232, 245, 233);
+	--mdc-background: rgb(232, 245, 233);
 }
 .bg-green-100 {
-	--bg-main-content: rgb(200, 230, 201);
+	--mdc-background: rgb(200, 230, 201);
 }
 .bg-green-200 {
-	--bg-main-content: rgb(165, 214, 167);
+	--mdc-background: rgb(165, 214, 167);
 }
 .bg-green-300 {
-	--bg-main-content: rgb(129, 199, 132);
+	--mdc-background: rgb(129, 199, 132);
 }
 .bg-green-400 {
-	--bg-main-content: rgb(102, 187, 106);
+	--mdc-background: rgb(102, 187, 106);
 }
 .bg-green, .bg-green-500 {
-	--bg-main-content: rgb(76, 175, 80);
+	--mdc-background: rgb(76, 175, 80);
 }
 .bg-green-600 {
-	--bg-main-content: rgb(67, 160, 71);
+	--mdc-background: rgb(67, 160, 71);
 }
 .bg-green-700 {
-	--bg-main-content: rgb(56, 142, 60);
+	--mdc-background: rgb(56, 142, 60);
 }
 .bg-green-800 {
-	--bg-main-content: rgb(46, 125, 50);
+	--mdc-background: rgb(46, 125, 50);
 }
 .bg-green-900 {
-	--bg-main-content: rgb(27, 94, 32);
+	--mdc-background: rgb(27, 94, 32);
 }
 .bg-green-A100 {
-	--bg-main-content: rgb(185, 246, 202);
+	--mdc-background: rgb(185, 246, 202);
 }
 .bg-green-A200 {
-	--bg-main-content: rgb(105, 240, 174);
+	--mdc-background: rgb(105, 240, 174);
 }
 .bg-green-A400 {
-	--bg-main-content: rgb(0, 230, 118);
+	--mdc-background: rgb(0, 230, 118);
 }
 .bg-green-A700 {
-	--bg-main-content: rgb(0, 200, 83);
+	--mdc-background: rgb(0, 200, 83);
 }
 .bg-light-green-50 {
-	--bg-main-content: rgb(241, 248, 233);
+	--mdc-background: rgb(241, 248, 233);
 }
 .bg-light-green-100 {
-	--bg-main-content: rgb(220, 237, 200);
+	--mdc-background: rgb(220, 237, 200);
 }
 .bg-light-green-200 {
-	--bg-main-content: rgb(197, 225, 165);
+	--mdc-background: rgb(197, 225, 165);
 }
 .bg-light-green-300 {
-	--bg-main-content: rgb(174, 213, 129);
+	--mdc-background: rgb(174, 213, 129);
 }
 .bg-light-green-400 {
-	--bg-main-content: rgb(156, 204, 101);
+	--mdc-background: rgb(156, 204, 101);
 }
 .bg-light-green, .bg-light-green-500 {
-	--bg-main-content: rgb(139, 195, 74);
+	--mdc-background: rgb(139, 195, 74);
 }
 .bg-light-green-600 {
-	--bg-main-content: rgb(124, 179, 66);
+	--mdc-background: rgb(124, 179, 66);
 }
 .bg-light-green-700 {
-	--bg-main-content: rgb(104, 159, 56);
+	--mdc-background: rgb(104, 159, 56);
 }
 .bg-light-green-800 {
-	--bg-main-content: rgb(85, 139, 47);
+	--mdc-background: rgb(85, 139, 47);
 }
 .bg-light-green-900 {
-	--bg-main-content: rgb(51, 105, 30);
+	--mdc-background: rgb(51, 105, 30);
 }
 .bg-light-green-A100 {
-	--bg-main-content: rgb(204, 255, 144);
+	--mdc-background: rgb(204, 255, 144);
 }
 .bg-light-green-A200 {
-	--bg-main-content: rgb(178, 255, 89);
+	--mdc-background: rgb(178, 255, 89);
 }
 .bg-light-green-A400 {
-	--bg-main-content: rgb(118, 255, 3);
+	--mdc-background: rgb(118, 255, 3);
 }
 .bg-light-green-A700 {
-	--bg-main-content: rgb(100, 221, 23);
+	--mdc-background: rgb(100, 221, 23);
 }
 .bg-lime-50 {
-	--bg-main-content: rgb(249, 251, 231);
+	--mdc-background: rgb(249, 251, 231);
 }
 .bg-lime-100 {
-	--bg-main-content: rgb(240, 244, 195);
+	--mdc-background: rgb(240, 244, 195);
 }
 .bg-lime-200 {
-	--bg-main-content: rgb(230, 238, 156);
+	--mdc-background: rgb(230, 238, 156);
 }
 .bg-lime-300 {
-	--bg-main-content: rgb(220, 231, 117);
+	--mdc-background: rgb(220, 231, 117);
 }
 .bg-lime-400 {
-	--bg-main-content: rgb(212, 225, 87);
+	--mdc-background: rgb(212, 225, 87);
 }
 .bg-lime, .bg-lime-500 {
-	--bg-main-content: rgb(205, 220, 57);
+	--mdc-background: rgb(205, 220, 57);
 }
 .bg-lime-600 {
-	--bg-main-content: rgb(192, 202, 51);
+	--mdc-background: rgb(192, 202, 51);
 }
 .bg-lime-700 {
-	--bg-main-content: rgb(175, 180, 43);
+	--mdc-background: rgb(175, 180, 43);
 }
 .bg-lime-800 {
-	--bg-main-content: rgb(158, 157, 36);
+	--mdc-background: rgb(158, 157, 36);
 }
 .bg-lime-900 {
-	--bg-main-content: rgb(130, 119, 23);
+	--mdc-background: rgb(130, 119, 23);
 }
 .bg-lime-A100 {
-	--bg-main-content: rgb(244, 255, 129);
+	--mdc-background: rgb(244, 255, 129);
 }
 .bg-lime-A200 {
-	--bg-main-content: rgb(238, 255, 65);
+	--mdc-background: rgb(238, 255, 65);
 }
 .bg-lime-A400 {
-	--bg-main-content: rgb(198, 255, 0);
+	--mdc-background: rgb(198, 255, 0);
 }
 .bg-lime-A700 {
-	--bg-main-content: rgb(174, 234, 0);
+	--mdc-background: rgb(174, 234, 0);
 }
 .bg-yellow-50 {
-	--bg-main-content: rgb(255, 253, 231);
+	--mdc-background: rgb(255, 253, 231);
 }
 .bg-yellow-100 {
-	--bg-main-content: rgb(255, 249, 196);
+	--mdc-background: rgb(255, 249, 196);
 }
 .bg-yellow-200 {
-	--bg-main-content: rgb(255, 245, 157);
+	--mdc-background: rgb(255, 245, 157);
 }
 .bg-yellow-300 {
-	--bg-main-content: rgb(255, 241, 118);
+	--mdc-background: rgb(255, 241, 118);
 }
 .bg-yellow-400 {
-	--bg-main-content: rgb(255, 238, 88);
+	--mdc-background: rgb(255, 238, 88);
 }
 .bg-yellow, .bg-yellow-500 {
-	--bg-main-content: rgb(255, 235, 59);
+	--mdc-background: rgb(255, 235, 59);
 }
 .bg-yellow-600 {
-	--bg-main-content: rgb(253, 216, 53);
+	--mdc-background: rgb(253, 216, 53);
 }
 .bg-yellow-700 {
-	--bg-main-content: rgb(251, 192, 45);
+	--mdc-background: rgb(251, 192, 45);
 }
 .bg-yellow-800 {
-	--bg-main-content: rgb(249, 168, 37);
+	--mdc-background: rgb(249, 168, 37);
 }
 .bg-yellow-900 {
-	--bg-main-content: rgb(245, 127, 23);
+	--mdc-background: rgb(245, 127, 23);
 }
 .bg-yellow-A100 {
-	--bg-main-content: rgb(255, 255, 141);
+	--mdc-background: rgb(255, 255, 141);
 }
 .bg-yellow-A200 {
-	--bg-main-content: rgb(255, 255, 0);
+	--mdc-background: rgb(255, 255, 0);
 }
 .bg-yellow-A400 {
-	--bg-main-content: rgb(255, 234, 0);
+	--mdc-background: rgb(255, 234, 0);
 }
 .bg-yellow-A700 {
-	--bg-main-content: rgb(255, 214, 0);
+	--mdc-background: rgb(255, 214, 0);
 }
 .bg-amber-50 {
-	--bg-main-content: rgb(255, 248, 225);
+	--mdc-background: rgb(255, 248, 225);
 }
 .bg-amber-100 {
-	--bg-main-content: rgb(255, 236, 179);
+	--mdc-background: rgb(255, 236, 179);
 }
 .bg-amber-200 {
-	--bg-main-content: rgb(255, 224, 130);
+	--mdc-background: rgb(255, 224, 130);
 }
 .bg-amber-300 {
-	--bg-main-content: rgb(255, 213, 79);
+	--mdc-background: rgb(255, 213, 79);
 }
 .bg-amber-400 {
-	--bg-main-content: rgb(255, 202, 40);
+	--mdc-background: rgb(255, 202, 40);
 }
 .bg-amber, .bg-amber-500 {
-	--bg-main-content: rgb(255, 193, 7);
+	--mdc-background: rgb(255, 193, 7);
 }
 .bg-amber-600 {
-	--bg-main-content: rgb(255, 179, 0);
+	--mdc-background: rgb(255, 179, 0);
 }
 .bg-amber-700 {
-	--bg-main-content: rgb(255, 160, 0);
+	--mdc-background: rgb(255, 160, 0);
 }
 .bg-amber-800 {
-	--bg-main-content: rgb(255, 143, 0);
+	--mdc-background: rgb(255, 143, 0);
 }
 .bg-amber-900 {
-	--bg-main-content: rgb(255, 111, 0);
+	--mdc-background: rgb(255, 111, 0);
 }
 .bg-amber-A100 {
-	--bg-main-content: rgb(255, 229, 127);
+	--mdc-background: rgb(255, 229, 127);
 }
 .bg-amber-A200 {
-	--bg-main-content: rgb(255, 215, 64);
+	--mdc-background: rgb(255, 215, 64);
 }
 .bg-amber-A400 {
-	--bg-main-content: rgb(255, 196, 0);
+	--mdc-background: rgb(255, 196, 0);
 }
 .bg-amber-A700 {
-	--bg-main-content: rgb(255, 171, 0);
+	--mdc-background: rgb(255, 171, 0);
 }
 .bg-orange-50 {
-	--bg-main-content: rgb(255, 243, 224);
+	--mdc-background: rgb(255, 243, 224);
 }
 .bg-orange-100 {
-	--bg-main-content: rgb(255, 224, 178);
+	--mdc-background: rgb(255, 224, 178);
 }
 .bg-orange-200 {
-	--bg-main-content: rgb(255, 204, 128);
+	--mdc-background: rgb(255, 204, 128);
 }
 .bg-orange-300 {
-	--bg-main-content: rgb(255, 183, 77);
+	--mdc-background: rgb(255, 183, 77);
 }
 .bg-orange-400 {
-	--bg-main-content: rgb(255, 167, 38);
+	--mdc-background: rgb(255, 167, 38);
 }
 .bg-orange, .bg-orange-500 {
-	--bg-main-content: rgb(255, 152, 0);
+	--mdc-background: rgb(255, 152, 0);
 }
 .bg-orange-600 {
-	--bg-main-content: rgb(251, 140, 0);
+	--mdc-background: rgb(251, 140, 0);
 }
 .bg-orange-700 {
-	--bg-main-content: rgb(245, 124, 0);
+	--mdc-background: rgb(245, 124, 0);
 }
 .bg-orange-800 {
-	--bg-main-content: rgb(239, 108, 0);
+	--mdc-background: rgb(239, 108, 0);
 }
 .bg-orange-900 {
-	--bg-main-content: rgb(230, 81, 0);
+	--mdc-background: rgb(230, 81, 0);
 }
 .bg-orange-A100 {
-	--bg-main-content: rgb(255, 209, 128);
+	--mdc-background: rgb(255, 209, 128);
 }
 .bg-orange-A200 {
-	--bg-main-content: rgb(255, 171, 64);
+	--mdc-background: rgb(255, 171, 64);
 }
 .bg-orange-A400 {
-	--bg-main-content: rgb(255, 145, 0);
+	--mdc-background: rgb(255, 145, 0);
 }
 .bg-orange-A700 {
-	--bg-main-content: rgb(255, 109, 0);
+	--mdc-background: rgb(255, 109, 0);
 }
 .bg-deep-orange-50 {
-	--bg-main-content: rgb(251, 233, 231);
+	--mdc-background: rgb(251, 233, 231);
 }
 .bg-deep-orange-100 {
-	--bg-main-content: rgb(255, 204, 188);
+	--mdc-background: rgb(255, 204, 188);
 }
 .bg-deep-orange-200 {
-	--bg-main-content: rgb(255, 171, 145);
+	--mdc-background: rgb(255, 171, 145);
 }
 .bg-deep-orange-300 {
-	--bg-main-content: rgb(255, 138, 101);
+	--mdc-background: rgb(255, 138, 101);
 }
 .bg-deep-orange-400 {
-	--bg-main-content: rgb(255, 112, 67);
+	--mdc-background: rgb(255, 112, 67);
 }
 .bg-deep-orange, .bg-deep-orange-500 {
-	--bg-main-content: rgb(255, 87, 34);
+	--mdc-background: rgb(255, 87, 34);
 }
 .bg-deep-orange-600 {
-	--bg-main-content: rgb(244, 81, 30);
+	--mdc-background: rgb(244, 81, 30);
 }
 .bg-deep-orange-700 {
-	--bg-main-content: rgb(230, 74, 25);
+	--mdc-background: rgb(230, 74, 25);
 }
 .bg-deep-orange-800 {
-	--bg-main-content: rgb(216, 67, 21);
+	--mdc-background: rgb(216, 67, 21);
 }
 .bg-deep-orange-900 {
-	--bg-main-content: rgb(191, 54, 12);
+	--mdc-background: rgb(191, 54, 12);
 }
 .bg-deep-orange-A100 {
-	--bg-main-content: rgb(255, 158, 128);
+	--mdc-background: rgb(255, 158, 128);
 }
 .bg-deep-orange-A200 {
-	--bg-main-content: rgb(255, 110, 64);
+	--mdc-background: rgb(255, 110, 64);
 }
 .bg-deep-orange-A400 {
-	--bg-main-content: rgb(255, 61, 0);
+	--mdc-background: rgb(255, 61, 0);
 }
 .bg-deep-orange-A700 {
-	--bg-main-content: rgb(221, 44, 0);
+	--mdc-background: rgb(221, 44, 0);
 }
 .bg-brown-50 {
-	--bg-main-content: rgb(239, 235, 233);
+	--mdc-background: rgb(239, 235, 233);
 }
 .bg-brown-100 {
-	--bg-main-content: rgb(215, 204, 200);
+	--mdc-background: rgb(215, 204, 200);
 }
 .bg-brown-200 {
-	--bg-main-content: rgb(188, 170, 164);
+	--mdc-background: rgb(188, 170, 164);
 }
 .bg-brown-300 {
-	--bg-main-content: rgb(161, 136, 127);
+	--mdc-background: rgb(161, 136, 127);
 }
 .bg-brown-400 {
-	--bg-main-content: rgb(141, 110, 99);
+	--mdc-background: rgb(141, 110, 99);
 }
 .bg-brown, .bg-brown-500 {
-	--bg-main-content: rgb(121, 85, 72);
+	--mdc-background: rgb(121, 85, 72);
 }
 .bg-brown-600 {
-	--bg-main-content: rgb(109, 76, 65);
+	--mdc-background: rgb(109, 76, 65);
 }
 .bg-brown-700 {
-	--bg-main-content: rgb(93, 64, 55);
+	--mdc-background: rgb(93, 64, 55);
 }
 .bg-brown-800 {
-	--bg-main-content: rgb(78, 52, 46);
+	--mdc-background: rgb(78, 52, 46);
 }
 .bg-brown-900 {
-	--bg-main-content: rgb(62, 39, 35);
+	--mdc-background: rgb(62, 39, 35);
 }
 .bg-grey-50 {
-	--bg-main-content: rgb(250, 250, 250);
+	--mdc-background: rgb(250, 250, 250);
 }
 .bg-grey-100 {
-	--bg-main-content: rgb(245, 245, 245);
+	--mdc-background: rgb(245, 245, 245);
 }
 .bg-grey-200 {
-	--bg-main-content: rgb(238, 238, 238);
+	--mdc-background: rgb(238, 238, 238);
 }
 .bg-grey-300 {
-	--bg-main-content: rgb(224, 224, 224);
+	--mdc-background: rgb(224, 224, 224);
 }
 .bg-grey-400 {
-	--bg-main-content: rgb(189, 189, 189);
+	--mdc-background: rgb(189, 189, 189);
 }
 .bg-grey, .bg-grey-500 {
-	--bg-main-content: rgb(158, 158, 158);
+	--mdc-background: rgb(158, 158, 158);
 }
 .bg-grey-600 {
-	--bg-main-content: rgb(117, 117, 117);
+	--mdc-background: rgb(117, 117, 117);
 }
 .bg-grey-700 {
-	--bg-main-content: rgb(97, 97, 97);
+	--mdc-background: rgb(97, 97, 97);
 }
 .bg-grey-800 {
-	--bg-main-content: rgb(66, 66, 66);
+	--mdc-background: rgb(66, 66, 66);
 }
 .bg-grey-900 {
-	--bg-main-content: rgb(33, 33, 33);
+	--mdc-background: rgb(33, 33, 33);
 }
 .bg-blue-grey-50 {
-	--bg-main-content: rgb(236, 239, 241);
+	--mdc-background: rgb(236, 239, 241);
 }
 .bg-blue-grey-100 {
-	--bg-main-content: rgb(207, 216, 220);
+	--mdc-background: rgb(207, 216, 220);
 }
 .bg-blue-grey-200 {
-	--bg-main-content: rgb(176, 190, 197);
+	--mdc-background: rgb(176, 190, 197);
 }
 .bg-blue-grey-300 {
-	--bg-main-content: rgb(144, 164, 174);
+	--mdc-background: rgb(144, 164, 174);
 }
 .bg-blue-grey-400 {
-	--bg-main-content: rgb(120, 144, 156);
+	--mdc-background: rgb(120, 144, 156);
 }
 .bg-blue-grey, .bg-blue-grey-500 {
-	--bg-main-content: rgb(96, 125, 139);
+	--mdc-background: rgb(96, 125, 139);
 }
 .bg-blue-grey-600 {
-	--bg-main-content: rgb(84, 110, 122);
+	--mdc-background: rgb(84, 110, 122);
 }
 .bg-blue-grey-700 {
-	--bg-main-content: rgb(69, 90, 100);
+	--mdc-background: rgb(69, 90, 100);
 }
 .bg-blue-grey-800 {
-	--bg-main-content: rgb(55, 71, 79);
+	--mdc-background: rgb(55, 71, 79);
 }
 .bg-blue-grey-900 {
-	--bg-main-content: rgb(38, 50, 56);
+	--mdc-background: rgb(38, 50, 56);
 }
 .bg-black {
-    --bg-main-content: rgb(0, 0, 0);
+    --mdc-background: rgb(0, 0, 0);
 }
 .bg-white {
-    --bg-main-content: rgb(255, 255, 255);
+    --mdc-background: rgb(255, 255, 255);
 }
 
 .bg-red-50, .bg-red-100, .bg-red-200, .bg-red-300, .bg-red-A100, .bg-pink-50, .bg-pink-100, .bg-pink-200, .bg-pink-A100, .bg-purple-50, .bg-purple-100, .bg-purple-200, .bg-purple-A100, .bg-deep-purple-50, .bg-deep-purple-100, .bg-deep-purple-200, .bg-deep-purple-A100, .bg-indigo-50, .bg-indigo-100, .bg-indigo-200, .bg-indigo-A100, .bg-blue-50, .bg-blue-100, .bg-blue-200, .bg-blue-300, .bg-blue-400, .bg-blue-A100, .bg-light-blue-50, .bg-light-blue-100, .bg-light-blue-200, .bg-light-blue-300, .bg-light-blue-400, .bg-light-blue, .bg-light-blue-500, .bg-light-blue-A100, .bg-light-blue-A200, .bg-light-blue-A400, .bg-cyan-50, .bg-cyan-100, .bg-cyan-200, .bg-cyan-300, .bg-cyan-400, .bg-cyan, .bg-cyan-500, .bg-cyan-600, .bg-cyan-A100, .bg-cyan-A200, .bg-cyan-A400, .bg-cyan-A700, .bg-teal-50, .bg-teal-100, .bg-teal-200, .bg-teal-300, .bg-teal-400, .bg-teal-A100, .bg-teal-A200, .bg-teal-A400, .bg-teal-A700, .bg-green-50, .bg-green-100, .bg-green-200, .bg-green-300, .bg-green-400, .bg-green, .bg-green-500, .bg-green-A100, .bg-green-A200, .bg-green-A400, .bg-green-A700, .bg-light-green-50, .bg-light-green-100, .bg-light-green-200, .bg-light-green-300, .bg-light-green-400, .bg-light-green, .bg-light-green-500, .bg-light-green-600, .bg-light-green-A100, .bg-light-green-A200, .bg-light-green-A400, .bg-light-green-A700, .bg-lime-50, .bg-lime-100, .bg-lime-200, .bg-lime-300, .bg-lime-400, .bg-lime, .bg-lime-500, .bg-lime-600, .bg-lime-700, .bg-lime-800, .bg-lime-A100, .bg-lime-A200, .bg-lime-A400, .bg-lime-A700, .bg-yellow-50, .bg-yellow-100, .bg-yellow-200, .bg-yellow-300, .bg-yellow-400, .bg-yellow, .bg-yellow-500, .bg-yellow-600, .bg-yellow-700, .bg-yellow-800, .bg-yellow-900, .bg-yellow-A100, .bg-yellow-A200, .bg-yellow-A400, .bg-yellow-A700, .bg-amber-50, .bg-amber-100, .bg-amber-200, .bg-amber-300, .bg-amber-400, .bg-amber, .bg-amber-500, .bg-amber-600, .bg-amber-700, .bg-amber-800, .bg-amber-900, .bg-amber-A100, .bg-amber-A200, .bg-amber-A400, .bg-amber-A700, .bg-orange-50, .bg-orange-100, .bg-orange-200, .bg-orange-300, .bg-orange-400, .bg-orange, .bg-orange-500, .bg-orange-600, .bg-orange-700, .bg-orange-A100, .bg-orange-A200, .bg-orange-A400, .bg-orange-A700, .bg-deep-orange-50, .bg-deep-orange-100, .bg-deep-orange-200, .bg-deep-orange-300, .bg-deep-orange-400, .bg-deep-orange-A100, .bg-deep-orange-A200, .bg-brown-50, .bg-brown-100, .bg-brown-200, .bg-grey-50, .bg-grey-100, .bg-grey-200, .bg-grey-300, .bg-grey-400, .bg-grey, .bg-grey-500, .bg-blue-grey-50, .bg-blue-grey-100, .bg-blue-grey-200, .bg-blue-grey-300, .bg-white {
-    --main-color: 0, 0, 0;
-    --initial-main-color: 0, 0, 0;
+    --opacity-primary: 0.87;
+    --opacity-secondary: 0.6;
+    --opacity-hint: 0.38;
+    --opacity-divider: 0.12;
 
+    --opacity-disabled: 0.02;
     --opacity-hover: 0.04;
-    --opacity-focus: 0.12;
     --opacity-selected: 0.08;
-    --opacity-activated: 0.12;
+    --opacity-focus: 0.12;
     --opacity-pressed: 0.16;
-    --opacity-dragged: 0.08;
 
-    --initial-text-primary: rgba(var(--initial-main-color), 0.87);
-    --initial-text-secondary: rgba(var(--initial-main-color), 0.6);
-    --initial-text-hint: rgba(var(--initial-main-color), 0.38);
-    --initial-text-divider: rgba(var(--initial-main-color), 0.12);
-
-    --text-primary: var(--initial-text-primary);
-    --text-secondary: var(--initial-text-secondary);
-    --text-hint: var(--initial-text-hint);
-    --text-divider: var(--initial-text-divider);
-
-    --initial-bg-status-bar: #E0E0E0;
-    --initial-bg-app-bar: #F5F5F5;
-    --initial-bg-main-content: #FAFAFA;
-    --initial-bg-cards: #FFFFFF;
-    --initial-bg-border: rgba(var(--initial-main-color), 0.12);
-
-    --bg-status-bar: var(--bg-main-content);
-    --bg-app-bar: var(--bg-main-content);
-    --bg-cards: var(--bg-main-content);
-    --bg-border: var(--bg-main-content);
-
-    --input: rgba(var(--initial-main-color), 0.04);
-    --input-hover: rgba(var(--initial-main-color), 0.12);
-    --input-focus: rgba(var(--initial-main-color), 0.16);
-    --input-disabled: rgba(var(--initial-main-color), 0.02);
-
-    --switch-rail-opacity: 0.32;
-    --switch-rail-opacity-0: 0.32;
-    --switch-color: #FFFFFF;
+    --switch-color: 255, 255, 255;
+    --switch-opacity: 0.32;
     --slider-disabled-color: 125, 125, 125;
 
-    color: var(--text-primary);
-    background-color: var(--bg-cards);
-    border-color: var(--bg-border);
+    --foreground-color: 0, 0, 0;
+    --error-color: 176, 0, 32;
+
+    --bg-status-bar: 224, 224, 224;
+    --bg-app-bar: 245, 245, 245;
+    --bg-main-content: 250, 250, 250;
+    --bg-cards: 255, 255, 255;
+
+    color: rgb(var(--foreground-color), var(--opacity-primary));
+    border-color: rgb(var(--foreground-color), var(--opacity-divider));
+    background-color: rgb(var(--mdc-background));
 }
 
 .bg-red-400, .bg-red, .bg-red-500, .bg-red-600, .bg-red-700, .bg-red-800, .bg-red-900, .bg-red-A200, .bg-red-A400, .bg-red-A700, .bg-pink-300, .bg-pink-400, .bg-pink, .bg-pink-500, .bg-pink-600, .bg-pink-700, .bg-pink-800, .bg-pink-900, .bg-pink-A200, .bg-pink-A400, .bg-pink-A700, .bg-purple-300, .bg-purple-400, .bg-purple, .bg-purple-500, .bg-purple-600, .bg-purple-700, .bg-purple-800, .bg-purple-900, .bg-purple-A200, .bg-purple-A400, .bg-purple-A700, .bg-deep-purple-300, .bg-deep-purple-400, .bg-deep-purple, .bg-deep-purple-500, .bg-deep-purple-600, .bg-deep-purple-700, .bg-deep-purple-800, .bg-deep-purple-900, .bg-deep-purple-A200, .bg-deep-purple-A400, .bg-deep-purple-A700, .bg-indigo-300, .bg-indigo-400, .bg-indigo, .bg-indigo-500, .bg-indigo-600, .bg-indigo-700, .bg-indigo-800, .bg-indigo-900, .bg-indigo-A200, .bg-indigo-A400, .bg-indigo-A700, .bg-blue, .bg-blue-500, .bg-blue-600, .bg-blue-700, .bg-blue-800, .bg-blue-900, .bg-blue-A200, .bg-blue-A400, .bg-blue-A700, .bg-light-blue-600, .bg-light-blue-700, .bg-light-blue-800, .bg-light-blue-900, .bg-light-blue-A700, .bg-cyan-700, .bg-cyan-800, .bg-cyan-900, .bg-teal, .bg-teal-500, .bg-teal-600, .bg-teal-700, .bg-teal-800, .bg-teal-900, .bg-green-600, .bg-green-700, .bg-green-800, .bg-green-900, .bg-light-green-700, .bg-light-green-800, .bg-light-green-900, .bg-lime-900, .bg-orange-800, .bg-orange-900, .bg-deep-orange, .bg-deep-orange-500, .bg-deep-orange-600, .bg-deep-orange-700, .bg-deep-orange-800, .bg-deep-orange-900, .bg-deep-orange-A400, .bg-deep-orange-A700, .bg-brown-300, .bg-brown-400, .bg-brown, .bg-brown-500, .bg-brown-600, .bg-brown-700, .bg-brown-800, .bg-brown-900, .bg-grey-600, .bg-grey-700, .bg-grey-800, .bg-grey-900, .bg-blue-grey-400, .bg-blue-grey, .bg-blue-grey-500, .bg-blue-grey-600, .bg-blue-grey-700, .bg-blue-grey-800, .bg-blue-grey-900, .bg-black {
-    --main-color: 255, 255, 255;
-    --initial-main-color: 255, 255, 255;
+    --opacity-primary: 1;
+    --opacity-secondary: 0.7;
+    --opacity-hint: 0.5;
+    --opacity-divider: 0.12;
 
+    --opacity-disabled: 0.04;
     --opacity-hover: 0.08;
-    --opacity-focus: 0.24;
     --opacity-selected: 0.16;
-    --opacity-activated: 0.24;
+    --opacity-focus: 0.24;
     --opacity-pressed: 0.32;
-    --opacity-dragged: 0.16;
 
-    --initial-text-primary: rgba(var(--initial-main-color), 1);
-    --initial-text-secondary: rgba(var(--initial-main-color), 0.7);
-    --initial-text-hint: rgba(var(--initial-main-color), 0.5);
-    --initial-text-divider: rgba(var(--initial-main-color), 0.12);
-
-    --text-primary: var(--initial-text-primary);
-    --text-secondary: var(--initial-text-secondary);
-    --text-hint: var(--initial-text-hint);
-    --text-divider: var(--initial-text-divider);
-
-    --initial-bg-status-bar: #000000;
-    --initial-bg-app-bar: #212121;
-    --initial-bg-main-content: #303030;
-    --initial-bg-cards: #424242;
-    --initial-bg-border: rgba(var(--initial-main-color), 0.12);
-
-    --bg-status-bar: var(--bg-main-content);
-    --bg-app-bar: var(--bg-main-content);
-    --bg-cards: var(--bg-main-content);
-    --bg-border: var(--bg-main-content);
-
-    --input: rgba(var(--initial-main-color), 0.08);
-    --input-hover: rgba(var(--initial-main-color), 0.16);
-    --input-focus: rgba(var(--initial-main-color), 0.24);
-    --input-disabled: rgba(var(--initial-main-color), 0.04);
-
-    --switch-rail-opacity: 0.38;
-    --switch-rail-opacity-0: 0.38;
-    --switch-color: #FAFAFA;
+    --switch-color: 250, 250, 250;
+    --switch-opacity: 0.38;
     --slider-disabled-color: 151, 151, 151;
 
-    color: var(--text-primary);
-    background-color: var(--bg-cards);
-    border-color: var(--bg-border);
+    --foreground-color: 255, 255, 255;
+    --error-color: 255, 49, 89;
+
+    --bg-status-bar: 0, 0, 0;
+    --bg-app-bar: 33, 33, 33;
+    --bg-main-content: 48, 48, 48;
+    --bg-cards: 66, 66, 66;
+
+    color: rgb(var(--foreground-color), var(--opacity-primary));
+    border-color: rgb(var(--foreground-color), var(--opacity-divider));
+    background-color: rgb(var(--mdc-background));
 }
