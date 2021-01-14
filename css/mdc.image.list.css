@@ -93,7 +93,7 @@
     box-sizing: border-box;
     padding: 0.5rem 0;
     line-height: 1.5rem;
-    color: rgb(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--foreground-color), var(--opacity-primary));
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */

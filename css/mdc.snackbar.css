@@ -108,7 +108,7 @@ html[dir] #mdc-snackbars.position-start[dir="rtl"] {
     font-weight: 400;
     line-height: 1.25rem;
     margin: 0.8125rem 0.5rem;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 #mdc-snackbars > .mdc-snackbar .mdc-button-group {

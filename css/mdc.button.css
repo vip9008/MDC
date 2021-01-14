@@ -106,8 +106,7 @@ html[dir] .mdc-button[dir="rtl"] > .icon {
 }
 
 .mdc-button.disabled, .mdc-button[disabled], .mdc-button:disabled {
-    --initial-text-hint: inherit;
-    --initial-text-divider: inherit;
+    --foreground-color: var(--initial-foreground-color);
 
     cursor: default;
     color: rgba(var(--foreground-color), var(--opacity-hint));

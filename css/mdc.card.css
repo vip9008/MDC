@@ -49,7 +49,7 @@
     padding: 0;
     margin: 0;
     border: none;
-    color: rgb(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--foreground-color), var(--opacity-primary));
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -215,7 +215,7 @@ html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary .card-header > .title + .thum
 .mdc-card > .mdc-card-primary .card-header > .title > .mdt-subtitle,
 .mdc-card > .mdc-card-primary .card-header > .title > .mdt-subtitle-1,
 .mdc-card > .mdc-card-primary .card-header > .title > .mdt-subtitle-2 {
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-card > .mdc-card-primary .media {
@@ -234,7 +234,7 @@ html[dir] .mdc-card[dir="rtl"] > .mdc-card-primary .card-header > .title + .thum
 
 .mdc-card > .mdc-card-primary .supporting-text {
     margin: 1rem;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-card > .mdc-card-primary:first-child,

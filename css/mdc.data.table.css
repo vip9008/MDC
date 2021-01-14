@@ -17,7 +17,7 @@
     padding: 0 1rem;
     text-align: inherit;
     border: none;
-    color: rgb(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--foreground-color), var(--opacity-primary));
 }
 
 .mdc-data-table > .header > .table-title {
@@ -35,7 +35,7 @@
     align-items: center;
     height: 100%;
     margin: 0 0 0 auto;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 html[dir="ltr"] .mdc-data-table > .header > .actions,
@@ -92,7 +92,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .header > .actions > .action-item {
 }
 
 .mdc-data-table > .table-container > table > tbody > tr {
-    border-top: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
+    border-top: solid 0.0625rem rgba(var(--initial-foreground-color), var(--opacity-divider));
 }
 
 .mdc-data-table > .table-container > table > thead > tr > th {
@@ -101,7 +101,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .header > .actions > .action-item {
     line-height: 1.5rem;
     border: none;
     padding: 0.75rem 1rem;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
     white-space: nowrap;
 }
 
@@ -123,7 +123,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > t
     font-weight: 400;
     border: none;
     padding: 0;
-    color: rgb(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--foreground-color), var(--opacity-primary));
     white-space: nowrap;
 }
 
@@ -134,14 +134,14 @@ html[dir="ltr"] .mdc-data-table > .table-container > table > tbody > tr > td:fir
 html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > th:first-child,
 html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > tbody > tr > td:first-child {
     border-left: none;
-    border-right: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
+    border-right: solid 0.0625rem rgba(var(--initial-foreground-color), var(--opacity-divider));
 }
 
 html[dir="rtl"] .mdc-data-table > .table-container > table > thead > tr > th:first-child,
 html[dir="rtl"] .mdc-data-table > .table-container > table > tbody > tr > td:first-child,
 html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > thead > tr > th:first-child,
 html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > td:first-child {
-    border-left: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
+    border-left: solid 0.0625rem rgba(var(--initial-foreground-color), var(--opacity-divider));
     border-right: none;
 }
 
@@ -183,7 +183,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > t
     text-align: inherit;
     height: 3rem;
     line-height: 3rem;
-    color: rgb(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--foreground-color), var(--opacity-primary));
 }
 
 .mdc-data-table > .table-container > table > tbody > tr > td > .cell-data::before {
@@ -199,6 +199,10 @@ html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > t
     background-color: rgb(var(--foreground-color));
     opacity: 0;
     pointer-events: none;
+}
+
+.mdc-data-table > .table-container > table > tbody > tr:not(.selected) {
+    --foreground-color: var(--initial-foreground-color);
 }
 
 .mdc-data-table > .table-container > table > tbody > tr.selected > td > .cell-data::before {
@@ -256,7 +260,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .table-container > table > tbody > tr > t
     align-items: center;
     height: 100%;
     margin: 0 0 0 auto;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 html[dir="ltr"] .mdc-data-table > .table-container > table > tbody > tr > td > .cell-data.action-container > .actions,
@@ -338,7 +342,7 @@ html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > t
 .mdc-data-table > .table-container > table > thead > tr > th > button.column-sort.asc,
 .mdc-data-table > .table-container > table > thead > tr > th > a.column-sort.desc,
 .mdc-data-table > .table-container > table > thead > tr > th > button.column-sort.desc {
-    color: rgb(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--foreground-color), var(--opacity-primary));
 }
 
 .mdc-data-table > .table-container > table > thead > tr > th > a.column-sort::before,
@@ -432,8 +436,8 @@ html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > t
     margin: 0;
     padding: 0 1rem;
     text-align: inherit;
-    border-top: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    border-top: solid 0.0625rem rgba(var(--initial-foreground-color), var(--opacity-divider));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -495,7 +499,7 @@ html[dir] .mdc-data-table[dir="rtl"] > .footer > .pagination > .link {
 }
 
 .mdc-data-table > .footer > .pagination > .link > .icon {
-    color: rgb(var(--foreground-color), var(--opacity-hint));
+    color: rgba(var(--foreground-color), var(--opacity-hint));
 }
 
 html[dir="rtl"] .mdc-data-table > .footer > .pagination > .link > .icon,
@@ -507,6 +511,6 @@ html[dir] .mdc-data-table[dir="rtl"] > .footer > .pagination > .link > .icon {
 
 .mdc-data-table > .footer > .pagination > .link > a.icon,
 .mdc-data-table > .footer > .pagination > .link > button.icon {
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
     text-decoration: none;
 }

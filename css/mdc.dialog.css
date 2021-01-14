@@ -69,7 +69,7 @@
 }
 
 .mdc-dialog-container > .mdc-dialog > .body {
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: 0.03125rem;

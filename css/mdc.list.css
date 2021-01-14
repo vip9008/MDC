@@ -9,7 +9,7 @@
 }
 
 .mdc-list-subtitle {
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.009375em;
@@ -39,7 +39,7 @@
     padding: 0;
     text-align: inherit;
     border: none;
-    color: rgb(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--foreground-color), var(--opacity-primary));
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -126,7 +126,7 @@ button.mdc-list-item:active::before,
     white-space: nowrap;
     overflow: hidden;
     margin: -0.125rem 0;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-list-item > .text > .overline {
@@ -138,7 +138,7 @@ button.mdc-list-item:active::before,
     overflow: hidden;
     margin: -0.125rem 0;
     text-transform: uppercase;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-list-item > .icon {
@@ -169,7 +169,7 @@ button.mdc-list-item:active::before,
     padding-left: 0.75rem;
     -webkit-align-self: flex-start;
     align-self: flex-start;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 html[dir="ltr"] .mdc-list-item > .meta,
@@ -321,8 +321,8 @@ html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
 }
 
 .mdc-list-group.expanded {
-    border-top: solid 1px rgb(var(--foreground-color), var(--opacity-divider));
-    border-bottom: solid 1px rgb(var(--foreground-color), var(--opacity-divider));
+    border-top: solid 1px rgba(var(--foreground-color), var(--opacity-divider));
+    border-bottom: solid 1px rgba(var(--foreground-color), var(--opacity-divider));
 }
 
 .mdc-list-group.expanded:first-child,
@@ -334,14 +334,14 @@ html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
     border-bottom: none;
 }
 
-.mdc-list-group.collapsed > .mdc-list-item.active {
-    --temp: var(--foreground-color);
-    --foreground-color: var(--mdc-foreground, var(--temp));
+.mdc-list-group.collapsed > .mdc-list-item,
+.mdc-list-item:not(.active) {
+    --foreground-color: var(--initial-foreground-color);
 }
 
 .mdc-list-group.collapsed > .mdc-list-item > .meta.icon,
 .mdc-list-group.expanded > .mdc-list-item > .meta.icon {
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
 .mdc-list-group.expanded > .mdc-list-item > .meta.icon > .material-icon {

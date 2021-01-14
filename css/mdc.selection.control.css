@@ -7,13 +7,19 @@
     width: 2.5rem;
     position: relative;
     cursor: pointer;
-    color: rgb(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
+}
+
+.mdc-checkbox:not(.checked):not(.indeterminate),
+.mdc-radiobutton:not(.checked),
+.mdc-switch:not(.checked) {
+    --foreground-color: var(--initial-foreground-color);
 }
 
 .mdc-checkbox.disabled,
@@ -161,6 +167,10 @@
     user-select: none;
 }
 
+.mdc-switch.checked {
+    --switch-opacity: 0.5;
+}
+
 .mdc-switch::before {
     width: 2.5rem;
     left: -0.25rem;
@@ -244,7 +254,7 @@ html[dir] *[dir="rtl"] > .mdc-switch.checked::after {
 }
 
 .mdc-switch:not(.checked)::after {
-    background-color: var(--switch-color);
+    background-color: rgb(var(--switch-color));
 }
 
 .mdc-switch > .rail {
