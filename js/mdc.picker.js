@@ -13,88 +13,7 @@
         label: 'Select a date'
     };
 
-    // The plugin constructor
-    function mdcDatePickerPlugin(container, options) {
-        this.container = container;
-        this.options = $.extend({}, defaults, options);
-        this.pickerContainer = null;
-
-        this._defaults = defaults;
-        this._name = "mdcDatePicker";
-
-        this.init();
-    }
-
-    $.extend(mdcDatePickerPlugin.prototype = {
-        init: function() {
-            if (!$(this.container).hasClass('has-datepicker')) {
-                $(this.container).addClass('has-datepicker');
-            }
-
-            $(this.container).find('input').addClass('datepicker-input');
-
-            if (typeof this.options.startDate === "string") {
-                this.options.startDate = new Date(this.options.startDate);
-            }
-            if (typeof this.options.endDate === "string") {
-                this.options.endDate = new Date(this.options.endDate);
-            }
-            if (typeof this.options.selectedDate === "string") {
-                this.options.selectedDate = new Date(this.options.selectedDate);
-            }
-
-            if (this.getDateNumber(this.options.selectedDate) > this.getDateNumber(this.options.endDate) || this.getDateNumber(this.options.selectedDate) < this.getDateNumber(this.options.startDate)) {
-                this.options.selectedDate = new Date(this.dateFormat(this.options.endDate, 'yyyy-MM-dd'));
-                this.options.currentMonth = new Date(this.dateFormat(this.options.endDate, 'yyyy-MM-01'));
-            }
-
-            var yearsList = '';
-            for (var i = this.options.startDate.getFullYear(); i <= this.options.endDate.getFullYear(); i++) {
-                var thisYear = this.options.currentMonth.getFullYear();
-                yearsList += '<div class="year-box"><button class="year-'+ i + (i == thisYear ? ' active' : '') + '" data-year="' + i + '">' + i + '</button></div>';
-            }
-
-            var pickerHTML = '<div class="mdc-datepicker-container">' +
-                                '<div class="mdc-datepicker ' + this.options.color + '">' +
-                                    '<div class="header">' +
-                                        '<div class="label">' + this.options.label + '</div>' +
-                                        '<div class="selected-date">' + this.dateFormat(this.options.selectedDate, '<span>EEE, </span>MMM d') + '</div>' +
-                                    '</div>' +
-                                    '<div class="mdc-calendar-controls">' +
-                                        '<div class="selected-month">' + this.dateFormat(this.options.currentMonth, 'MMMM yyyy') + '</div>' +
-                                        '<button class="material-icon dense toggle-years">arrow_drop_down</button>' +
-                                        '<div class="month-controls">' +
-                                            '<button class="material-icon dense prev">chevron_left</button>' +
-                                            '<button class="material-icon dense next">chevron_right</button>' +
-                                        '</div>' +
-                                    '</div>' +
-                                    this.renderMonth(this.options.currentMonth, this.options.selectedDate, this.options.startDate, this.options.endDate) +
-                                    '<div class="years-list nano">' +
-                                        '<div class="nano-content">' + yearsList + '</div>' +
-                                    '</div>' +
-                                    '<div class="mdc-button-group">' +
-                                        '<button class="mdc-button close-picker">Cancel</button>' +
-                                        '<button class="mdc-button confirm-date">OK</button>' +
-                                    '</div>' +
-                                '</div>'+
-                            '</div>';
-
-            $(this.container).append(pickerHTML);
-
-            this.pickerContainer = $(this.container).find('.mdc-datepicker-container');
-            var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
-            if (viewport_width >= 960) {
-                this.pickerContainer.addClass('inline');
-            }
-            // this.pickerContainer.on('touchmove mousewheel DOMMouseScroll', function (event) {
-            //     if ($(event.target).hasClass('years-list') || $(event.target).closest('.years-list').length) {
-            //         event.stopPropagation();
-            //         return;
-            //     }
-            //     event.preventDefault();
-            // });
-            nano_scoller_init(this.pickerContainer.find('.mdc-datepicker > .years-list.nano'));
-        },
+    var helpers = {
         getDateNumber: function(date) {
             var year = date.getFullYear();
             var month = date.getMonth() + 1;
@@ -161,10 +80,7 @@
                         '</thead>' +
                     '</table>';
         },
-        updateCalendar: function() {
-            var options = this.options;
-            var pickerContainer = this.pickerContainer;
-
+        updateCalendar: function(pickerContainer, options) {
             var year = options.currentMonth.getFullYear();
             var month = options.currentMonth.getMonth();
     
@@ -247,16 +163,100 @@
             string = string.replace('EEE', D[weekDay]);
         
             return string;
+        }
+    };
+
+    // The plugin constructor
+    function mdcDatePickerPlugin(container, options) {
+        this.container = container;
+        this.options = $.extend({}, defaults, options);
+        this.pickerContainer = null;
+
+        this._defaults = defaults;
+        this._name = "mdcDatePicker";
+
+        this.init();
+    }
+
+    $.extend(mdcDatePickerPlugin.prototype = {
+        init: function() {
+            if (!$(this.container).hasClass('has-datepicker')) {
+                $(this.container).addClass('has-datepicker');
+            }
+
+            $(this.container).find('input').addClass('datepicker-input');
+
+            if (typeof this.options.startDate === "string") {
+                this.options.startDate = new Date(this.options.startDate);
+            }
+            if (typeof this.options.endDate === "string") {
+                this.options.endDate = new Date(this.options.endDate);
+            }
+            if (typeof this.options.selectedDate === "string") {
+                this.options.selectedDate = new Date(this.options.selectedDate);
+            }
+
+            if (helpers.getDateNumber(this.options.selectedDate) > helpers.getDateNumber(this.options.endDate) || helpers.getDateNumber(this.options.selectedDate) < helpers.getDateNumber(this.options.startDate)) {
+                this.options.selectedDate = new Date(helpers.dateFormat(this.options.endDate, 'yyyy-MM-dd'));
+                this.options.currentMonth = new Date(helpers.dateFormat(this.options.endDate, 'yyyy-MM-01'));
+            }
+
+            var yearsList = '';
+            for (var i = this.options.startDate.getFullYear(); i <= this.options.endDate.getFullYear(); i++) {
+                var thisYear = this.options.currentMonth.getFullYear();
+                yearsList += '<div class="year-box"><button class="year-'+ i + (i == thisYear ? ' active' : '') + '" data-year="' + i + '">' + i + '</button></div>';
+            }
+
+            var pickerHTML = '<div class="mdc-datepicker-container">' +
+                                '<div class="mdc-datepicker ' + this.options.color + '">' +
+                                    '<div class="header">' +
+                                        '<div class="label">' + this.options.label + '</div>' +
+                                        '<div class="selected-date">' + helpers.dateFormat(this.options.selectedDate, '<span>EEE, </span>MMM d') + '</div>' +
+                                    '</div>' +
+                                    '<div class="mdc-calendar-controls">' +
+                                        '<div class="selected-month">' + helpers.dateFormat(this.options.currentMonth, 'MMMM yyyy') + '</div>' +
+                                        '<button class="material-icon dense toggle-years">arrow_drop_down</button>' +
+                                        '<div class="month-controls">' +
+                                            '<button class="material-icon dense prev">chevron_left</button>' +
+                                            '<button class="material-icon dense next">chevron_right</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                    helpers.renderMonth(this.options.currentMonth, this.options.selectedDate, this.options.startDate, this.options.endDate) +
+                                    '<div class="years-list nano">' +
+                                        '<div class="nano-content">' + yearsList + '</div>' +
+                                    '</div>' +
+                                    '<div class="mdc-button-group">' +
+                                        '<button class="mdc-button close-picker">Cancel</button>' +
+                                        '<button class="mdc-button confirm-date">OK</button>' +
+                                    '</div>' +
+                                '</div>'+
+                            '</div>';
+
+            $(this.container).append(pickerHTML);
+
+            this.pickerContainer = $(this.container).find('.mdc-datepicker-container');
+            var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
+            if (viewport_width >= 960) {
+                this.pickerContainer.addClass('inline');
+            }
+            // this.pickerContainer.on('touchmove mousewheel DOMMouseScroll', function (event) {
+            //     if ($(event.target).hasClass('years-list') || $(event.target).closest('.years-list').length) {
+            //         event.stopPropagation();
+            //         return;
+            //     }
+            //     event.preventDefault();
+            // });
+            nano_scoller_init(this.pickerContainer.find('.mdc-datepicker > .years-list.nano'));
         },
         changeMonth: function(x) {
             var options = this.options;
 
             var month = options.currentMonth.getMonth() + x;
-            if (!this.canChangeMonth(options.currentMonth.getFullYear(), month, options.startDate, options.endDate)) {
+            if (!helpers.canChangeMonth(options.currentMonth.getFullYear(), month, options.startDate, options.endDate)) {
                 return;
             }
             this.options.currentMonth = new Date(options.currentMonth.getFullYear(), month, 1);
-            this.updateCalendar();
+            helpers.updateCalendar(this.pickerContainer, this.options);
         },
         setYear: function(year) {
             var options = this.options;
@@ -268,30 +268,30 @@
             if (year == options.endDate.getFullYear() && month > options.endDate.getMonth()) {
                 month = options.endDate.getMonth();
             }
-            if (!this.canChangeMonth(year, month, options.startDate, options.endDate)) {
+            if (!helpers.canChangeMonth(year, month, options.startDate, options.endDate)) {
                 return;
             }
     
             this.options.currentMonth = new Date(year, month, 1);
-            this.updateCalendar();
+            helpers.updateCalendar(this.pickerContainer, this.options);
         },
         selectDate: function(dateString) {
             this.options.selectedDate = new Date(dateString);
-            var dateAttr = this.dateFormat(this.options.selectedDate, 'yyyy-MM-dd');
+            var dateAttr = helpers.dateFormat(this.options.selectedDate, 'yyyy-MM-dd');
 
-            this.pickerContainer.find('.mdc-datepicker > .header > .selected-date').html(this.dateFormat(this.options.selectedDate, '<span>EEE, </span>MMM d'));
+            this.pickerContainer.find('.mdc-datepicker > .header > .selected-date').html(helpers.dateFormat(this.options.selectedDate, '<span>EEE, </span>MMM d'));
             this.pickerContainer.find('.mdc-datepicker > table.month-days td > .month-day.active').removeClass('active');
             this.pickerContainer.find(".mdc-datepicker > table.month-days td > .month-day[data-date='" + dateAttr + "']").addClass('active');
         },
         getSelectedDate: function () {
-            return this.dateFormat(this.options.selectedDate, this.options.dateFormat);
+            return helpers.dateFormat(this.options.selectedDate, this.options.dateFormat);
         },
         close: function () {
-            this.options.currentMonth = new Date(this.dateFormat(this.options.selectedDate, 'yyyy-MM-01'));
+            this.options.currentMonth = new Date(helpers.dateFormat(this.options.selectedDate, 'yyyy-MM-01'));
             this.pickerContainer.removeClass('active').children('.mdc-datepicker').removeClass('show-years');
         },
         open: function () {
-            this.updateCalendar();
+            helpers.updateCalendar(this.pickerContainer, this.options);
             this.pickerContainer.addClass('active').removeAttr('style');
             if (this.pickerContainer.hasClass('inline')) {
                 var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
@@ -372,14 +372,17 @@ jQuery(function($) {
     });
 
     $(window).on('resize', function(event) {
-        var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
-        if (viewport_width >= 960) {
+        if (window.innerWidth >= 960) {
             $('.mdc-datepicker-container').addClass('inline');
         } else {
             $('.mdc-datepicker-container').removeClass('inline');
         }
 
-        $('.mdc-datepicker-container.active').closest('.has-datepicker').data('plugin_mdcDatePicker').close();
+        if ($('.mdc-datepicker-container.inline.active').length) {
+            $('.mdc-datepicker-container.inline.active').each(function() {
+                $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').close();
+            });
+        }
     });
 
     $(window).on('scroll', function(event) {
