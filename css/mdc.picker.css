@@ -78,6 +78,8 @@
 }
 
 .mdc-datepicker > .mdc-calendar-controls {
+    --foreground-color: var(--initial-foreground-color);
+
     margin: 1rem 0;
     color: rgba(var(--foreground-color), var(--opacity-secondary));
     display: -ms-flexbox;
@@ -171,7 +173,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
 .mdc-datepicker > table.month-days th {
     font-size: 0.75rem;
     text-align: center;
-    color: rgba(var(--foreground-color), var(--opacity-secondary));
+    color: rgba(var(--initial-foreground-color), var(--opacity-secondary));
     text-transform: uppercase;
     line-height: 2.25rem;
     padding: 0.125rem 0.25rem;
@@ -196,7 +198,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     height: 2.25rem;
     line-height: 2.25rem;
     border-radius: 100%;
-    color: rgba(var(--foreground-color), var(--opacity-primary));
+    color: rgba(var(--initial-foreground-color), var(--opacity-primary));
     position: relative;
     cursor: pointer;
     will-change: background-color, color;
@@ -206,7 +208,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
 .mdc-datepicker > table.month-days td > div.month-day,
 .mdc-datepicker > table.month-days td > .month-day.disabled {
     cursor: default;
-    color: rgba(var(--foreground-color), var(--opacity-hint));
+    color: rgba(var(--initial-foreground-color), var(--opacity-hint));
 }
 
 .mdc-datepicker > table.month-days td > .month-day.active:not(.disabled) {
@@ -276,7 +278,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     margin: 0.5rem 0.75rem;
     width: 4.5rem;
     height: 2.25rem;
-    color: rgba(var(--foreground-color), var(--opacity-hint));
+    color: rgba(var(--initial-foreground-color), var(--opacity-hint));
     background: none;
     border: 0;
     padding: 0;
