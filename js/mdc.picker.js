@@ -14,6 +14,16 @@
     };
 
     var helpers = {
+        getConfigData: function(container) {
+            var data = $(container).data();
+            var filteredData = {};
+            $.each(defaults, function(key, value) {
+                if (data.hasOwnProperty(key)) {
+                    filteredData[key] = data[key];
+                }
+            });
+            return filteredData;
+        },
         getDateNumber: function(date) {
             var year = date.getFullYear();
             var month = date.getMonth() + 1;
@@ -169,7 +179,7 @@
     // The plugin constructor
     function mdcDatePickerPlugin(container, options) {
         this.container = container;
-        this.options = $.extend({}, defaults, options);
+        this.options = $.extend({}, defaults, helpers.getConfigData(container), options);
         this.pickerContainer = null;
 
         this._defaults = defaults;
