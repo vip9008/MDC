@@ -5,7 +5,7 @@
         var options = $.extend({}, $.fn.mdcDatePicker.defaults, userOptions);
 
         return this.each(function() {
-            container = $(this);
+            var container = $(this);
             if (!container.hasClass('has-datepicker')) {
                 container.addClass('has-datepicker');
             }
@@ -57,8 +57,10 @@
                                     '</div>' +
                                 '</div>'+
                             '</div>';
+            
+            $(pickerHTML).appendTo(container);
 
-            $.fn.mdcDatePicker.container = $(pickerHTML).appendTo(container);
+            $.fn.mdcDatePicker.container = container.find('.mdc-datepicker-container');
             $.fn.mdcDatePicker.defaults = options;
             
             var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
@@ -72,7 +74,7 @@
             //     }
             //     event.preventDefault();
             // });
-            nano_scoller_init($(container).find('.mdc-datepicker-container > .mdc-datepicker > .years-list.nano'));
+            nano_scoller_init(container.find('.mdc-datepicker-container > .mdc-datepicker > .years-list.nano'));
         });
     };
     // default options
@@ -87,7 +89,7 @@
         label: 'Select a date'
     };
 
-    $.fn.mdcDatePicker.container = $('<div />');
+    $.fn.mdcDatePicker.container = $('<div/>');
 
     function getDateNumber(date) {
         var year = date.getFullYear();
@@ -340,7 +342,7 @@
     }
 })(jQuery);
 
-$(document).ready(function() {
+jQuery(function($) {
     $('.has-datepicker').each(function() {
         $(this).mdcDatePicker();
     });
