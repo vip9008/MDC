@@ -256,7 +256,9 @@
             //     }
             //     event.preventDefault();
             // });
-            overlayScrollbarsInit(this.pickerContainer.find('.mdc-datepicker > .years-list'));
+            this.pickerContainer.find('.mdc-datepicker > .years-list').overlayScrollbars({
+                className: "os-theme-main"
+            });;
         },
         changeMonth: function(x) {
             var options = this.options;
