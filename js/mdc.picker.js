@@ -179,7 +179,7 @@
     // The plugin constructor
     function mdcDatePickerPlugin(container, options) {
         this.container = container;
-        this.options = $.extend({}, defaults, helpers.getConfigData(container), options);
+        this.options = $.extend({}, defaults, options, helpers.getConfigData(container));
         this.pickerContainer = null;
 
         this._defaults = defaults;
@@ -232,8 +232,8 @@
                                         '</div>' +
                                     '</div>' +
                                     helpers.renderMonth(this.options.currentMonth, this.options.selectedDate, this.options.startDate, this.options.endDate) +
-                                    '<div class="years-list nano">' +
-                                        '<div class="nano-content">' + yearsList + '</div>' +
+                                    '<div class="years-list">' +
+                                        '<div class="years-items">' + yearsList + '</div>' +
                                     '</div>' +
                                     '<div class="mdc-button-group">' +
                                         '<button class="mdc-button close-picker">Cancel</button>' +
@@ -256,7 +256,7 @@
             //     }
             //     event.preventDefault();
             // });
-            nano_scoller_init(this.pickerContainer.find('.mdc-datepicker > .years-list.nano'));
+            overlayScrollbarsInit(this.pickerContainer.find('.mdc-datepicker > .years-list'));
         },
         changeMonth: function(x) {
             var options = this.options;

@@ -24,7 +24,7 @@ function md_touch_handler(event)
     first.target.dispatchEvent(simulatedEvent);
 }
 
-function md_init() 
+function md_init()
 {
     document.addEventListener("touchstart", md_touch_handler, true);
     // document.addEventListener("touchmove", md_touch_handler, true);
@@ -52,6 +52,18 @@ function nano_scoller_init(selector) {
     });
 }
 
-$(document).ready(function() {
+function overlayScrollbarsInit(selector) {
+    $(selector).overlayScrollbars({
+        className: "os-theme-main",
+        callbacks: {
+            onScroll: function(eventArgs) {
+                $(this.getElements().host).trigger('scroll');
+            }
+        }
+    });
+}
+
+jQuery(function($) {
     nano_scoller_init(".nano");
+    overlayScrollbarsInit('.overlay-scrollbars');
 });

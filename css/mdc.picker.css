@@ -251,14 +251,14 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     visibility: hidden;
     opacity: 0;
     transform: translateY(-20%);
+    pointer-events: none;
+    z-index: -9;
 }
 
-.mdc-datepicker > .years-list > .nano-content {
+.mdc-datepicker > .years-list .years-items {
     padding: 0 1.25rem;
     bottom: auto;
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    height: auto;
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
@@ -268,17 +268,17 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     flex-wrap: wrap;
 }
 
-.mdc-datepicker > .years-list > .nano-content > .year-box {
+.mdc-datepicker > .years-list .years-items .year-box {
     margin: 0;
     width: 6rem;
     height: 3.25rem;
 }
 
-.mdc-datepicker > .years-list > .nano-content > .year-box > button {
+.mdc-datepicker > .years-list .years-items .year-box > button {
     margin: 0.5rem 0.75rem;
     width: 4.5rem;
     height: 2.25rem;
-    color: rgba(var(--initial-foreground-color), var(--opacity-hint));
+    color: rgba(var(--initial-foreground-color), var(--opacity-primary));
     background: none;
     border: 0;
     padding: 0;
@@ -288,7 +288,7 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-calendar-controls > 
     cursor: pointer;
 }
 
-.mdc-datepicker > .years-list > .nano-content > .year-box > button.active {
+.mdc-datepicker > .years-list .years-items .year-box > button.active {
     background-color: rgb(var(--mdc-foreground, var(--bg-status-bar)));
     color: rgba(var(--mdc-theme, var(--foreground-color)), var(--opacity-primary));
     font-weight: 500;
@@ -375,7 +375,6 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
         margin-bottom: 0.5rem;
     }
 
-
     .mdc-datepicker > table.month-days {
         margin: 0 1.125rem;
     }
@@ -404,12 +403,12 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
         right: 10.5rem;
     }
 
-    .mdc-datepicker > .years-list > .nano-content > .year-box {
+    .mdc-datepicker > .years-list .years-items .year-box {
         width: 4.75rem;
         height: 2.75rem;
     }
 
-    .mdc-datepicker > .years-list > .nano-content > .year-box > button {
+    .mdc-datepicker > .years-list .years-items .year-box > button {
         margin: 0.25rem 0.125rem;
     }
 
@@ -512,46 +511,46 @@ html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .mdc-button-group {
         border-bottom: none;
     }
 
-    .mdc-datepicker > .years-list > .nano-content {
+    .mdc-datepicker > .years-list .years-items {
         padding: 0.25rem 1.25rem 0 0.75rem;
     }
 
-    html[dir="ltr"] .mdc-datepicker > .years-list > .nano-content,
-    html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .years-list > .nano-content {
+    html[dir="ltr"] .mdc-datepicker > .years-list .years-items,
+    html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .years-list .years-items {
         padding: 0.25rem 1.25rem 0 0.75rem;
     }
 
-    html[dir="rtl"] .mdc-datepicker > .years-list > .nano-content,
-    html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .years-list > .nano-content {
+    html[dir="rtl"] .mdc-datepicker > .years-list .years-items,
+    html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .years-list .years-items {
         padding: 0.25rem 0.75rem 0 1.25rem;
     }
 
-    .mdc-datepicker > .years-list > .nano-content > .year-box {
+    .mdc-datepicker > .years-list .years-items .year-box {
         width: 3.5rem;
         height: 2rem;
     }
 
-    .mdc-datepicker > .years-list > .nano-content > .year-box > button {
-        margin: 0.25rem;
+    .mdc-datepicker > .years-list .years-items .year-box > button {
+        margin: 0.125rem;
         width: 3.25rem;
         height: 1.75rem;
         font-size: 0.875rem;
-        line-height: 1.875rem;
+        line-height: 1.75rem;
     }
 
-    .mdc-datepicker > .years-list > .nano-pane {
+    .mdc-datepicker > .years-list > .os-scrollbar {
         opacity: 1;
         right: 0.5rem;
     }
 
-    html[dir="ltr"] .mdc-datepicker > .years-list > .nano-pane,
-    html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .years-list > .nano-pane {
+    html[dir="ltr"] .mdc-datepicker > .years-list > .os-scrollbar,
+    html[dir] .has-datepicker[dir="ltr"] .mdc-datepicker > .years-list > .os-scrollbar {
         left: auto;
         right: 0.5rem;
     }
 
-    html[dir="rtl"] .mdc-datepicker > .years-list > .nano-pane,
-    html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .years-list > .nano-pane {
+    html[dir="rtl"] .mdc-datepicker > .years-list > .os-scrollbar,
+    html[dir] .has-datepicker[dir="rtl"] .mdc-datepicker > .years-list > .os-scrollbar {
         left: 0.5rem;
         right: auto;
     }
