@@ -10,6 +10,7 @@
 .mdc-text-area, .mdc-text-field {
     --border-size: 1px;
     --focus-border-size: 2px;
+    --border-color: var(--foreground-color);
 
     display: block;
     position: relative;
@@ -130,7 +131,7 @@
     left: 0;
     width: 100%;
     height: var(--focus-border-size);
-    background-color: rgba(var(--foreground-color), var(--opacity-divider));
+    background-color: rgba(var(--border-color));
     will-change: transform;
 
     transform: scale(0);
@@ -147,8 +148,8 @@
 
 .mdc-text-field.has-error,
 .mdc-text-area.has-error {
-    --text-primary: rgb(var(--error-color));
-    --bg-border: rgb(var(--error-color));
+    --foreground-color: var(--error-color);
+    --border-color: rgb(var(--error-color));
 }
 
 @-webkit-keyframes autofill {
