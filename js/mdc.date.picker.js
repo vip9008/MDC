@@ -303,6 +303,16 @@
             this.pickerContainer.removeClass('active').children('.mdc-datepicker').removeClass('show-years');
         },
         open: function () {
+            if (this.pickerContainer.hasClass('active')) {
+                return;
+            }
+
+            if ($('.mdc-datepicker-container.active').length) {
+                $('.mdc-datepicker-container.active').each(function() {
+                    $(this).closest('.has-datepicker').mdcDatePicker('close');
+                });
+            }
+            
             helpers.updateCalendar(this.pickerContainer, this.options);
             this.pickerContainer.addClass('active').removeAttr('style');
             if (this.pickerContainer.hasClass('inline')) {
@@ -355,6 +365,11 @@
             if (!$.data(this, "plugin_mdcDatePicker")) {
                 $.data(this, "plugin_mdcDatePicker", new mdcDatePickerPlugin(this, userOptions));
             }
+
+            var plugin = $.data(this, "plugin_mdcDatePicker");
+            if (typeof userOptions === 'string' && typeof plugin[userOptions] === 'function') {
+                plugin[userOptions](); // call the function by name
+            }
         });
     };
 
@@ -378,7 +393,7 @@ jQuery(function($) {
     $('html').on(md_click_event, function(event) {
         if ($('.mdc-datepicker-container.inline.active').length) {
             $('.mdc-datepicker-container.inline.active').each(function() {
-                $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').close();
+                $(this).closest('.has-datepicker').mdcDatePicker('close');
             });
         }
     });
@@ -392,7 +407,7 @@ jQuery(function($) {
 
         if ($('.mdc-datepicker-container.active').length) {
             $('.mdc-datepicker-container.active').each(function() {
-                $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').close();
+                $(this).closest('.has-datepicker').mdcDatePicker('close');
             });
         }
     });
@@ -400,7 +415,7 @@ jQuery(function($) {
     $(window).on('scroll', function(event) {
         if ($('.mdc-datepicker-container.inline.active').length) {
             $('.mdc-datepicker-container.inline.active').each(function() {
-                $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').close();
+                $(this).closest('.has-datepicker').mdcDatePicker('close');
             });
         }
     });
@@ -418,10 +433,10 @@ jQuery(function($) {
 
         if ($('.mdc-datepicker-container.inline.active').length) {
             $('.mdc-datepicker-container.inline.active').each(function() {
-                $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').close();
+                $(this).closest('.has-datepicker').mdcDatePicker('close');
             });
         }
-        $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').open();
+        $(this).closest('.has-datepicker').mdcDatePicker('open');
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-calendar-controls > .toggle-years', function(event) {
@@ -471,14 +486,14 @@ jQuery(function($) {
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-button-group > .mdc-button.close-picker', function(event) {
-        $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').close();
+        $(this).closest('.has-datepicker').mdcDatePicker('close');
         return false;
     });
 
     $('body').on(md_click_event, '.mdc-datepicker-container .mdc-button-group > .mdc-button.confirm-date', function(event) {
         var date = $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').getSelectedDate();
         $(this).closest('.has-datepicker').find('input.datepicker-input').val(date).trigger('change');
-        $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').close();
+        $(this).closest('.has-datepicker').mdcDatePicker('close');
         return false;
     });
 });
