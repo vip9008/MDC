@@ -388,8 +388,8 @@ jQuery(function($) {
             $('.mdc-datepicker-container').removeClass('inline');
         }
 
-        if ($('.mdc-datepicker-container.inline.active').length) {
-            $('.mdc-datepicker-container.inline.active').each(function() {
+        if ($('.mdc-datepicker-container.active').length) {
+            $('.mdc-datepicker-container.active').each(function() {
                 $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').close();
             });
         }
