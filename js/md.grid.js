@@ -57,6 +57,5 @@ function overlayScrollbarsInit(selector) {
 }
 
 jQuery(function($) {
-    nano_scoller_init(".nano");
     overlayScrollbarsInit('.overlay-scrollbars');
 });
