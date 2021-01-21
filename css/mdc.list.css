@@ -335,7 +335,7 @@ html[dir] .mdc-list-container[dir] > .md-3line.mdc-list-item > .graphic {
 }
 
 .mdc-list-group.collapsed > .mdc-list-item,
-.mdc-list-item:not(.active) {
+a.mdc-list-item:not(.active) {
     --foreground-color: var(--initial-foreground-color);
 }
 
