@@ -1,11 +1,7 @@
-function mdc_open_dialog(selector) {
+MDC.dialogOpen = function(selector) {
     $(selector).addClass('active');
 }
 
-function mdc_close_dialog(selector) {
+MDC.dialogClose = function(selector) {
     $(selector).removeClass('active');
 }
-
-// $(document).ready(function() {
-    
-// });

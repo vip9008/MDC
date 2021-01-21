@@ -1,3 +1,6 @@
+// initialize MDC object
+const MDC = {};
+
 function md_touch_handler(event)
 {
     var touches = event.changedTouches,

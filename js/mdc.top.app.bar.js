@@ -39,7 +39,7 @@ function mdc_top_app_bar() {
     return scroll;
 }
 
-$(document).ready(function() {
+jQuery(function() {
     last_scroll_position = mdc_top_app_bar();
 
     if ($('#mdc-top-app-bar').hasClass('fixed')) {

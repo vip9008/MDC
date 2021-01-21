@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function() {
     $('body').on('change', '.mdc-data-table table > thead > tr > th > .mdc-checkbox > input', function(event) {
         var checkboxes = $(this).closest('table').find('tbody > tr > td > .cell-data > .mdc-checkbox');
         if (parseInt($(this).val()) == 1) {

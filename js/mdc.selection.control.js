@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function() {
     $('.mdc-checkbox, .mdc-switch').each(function() {
         if ($(this).children('input').prop('disabled')) {
             $(this).addClass('disabled');

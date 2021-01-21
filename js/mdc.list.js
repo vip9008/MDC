@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function() {
     $('body').on(md_click_event, '.mdc-list-group.collapsed > .mdc-list-item', function(event) {
         $(this).closest('.mdc-list-group').removeClass('collapsed').addClass('expanded');
     });

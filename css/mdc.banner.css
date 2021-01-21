@@ -1,79 +1,41 @@
-body::before {
-    content: '';
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    will-change: height;
-    transition: height 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body.mdc-banner-active::before {
-    height: 8.5rem;
-}
-
-#mdc-banners {
-    position: fixed;
+#mdc-banner {
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    min-height: 8.5rem;
-    overflow: hidden;
+    z-index: var(--z-axis-4-index);
+    background-color: rgb(var(--bg-cards));
+    border-bottom: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
+    -ms-transform-origin: top center;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
     will-change: opacity, visibility;
     transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-                visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body:not(.mdc-banner-active) #mdc-banners {
-    visibility: hidden;
-    opacity: 0;
-}
-
-#mdc-top-app-bar + #mdc-banners {
+#mdc-top-app-bar ~ #mdc-main-content #mdc-banner {
     top: 4rem;
 }
 
-body.mdc-drawer-expand #mdc-banners,
-html[dir="ltr"] body.mdc-drawer-expand #mdc-banners,
-html[dir] body.mdc-drawer-expand #mdc-banners[dir="ltr"] {
-    margin-left: 16rem;
-    margin-right: 0;
+body:not(.mdc-banner-active) #mdc-banner {
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
 }
 
-html[dir="rtl"] body.mdc-drawer-expand #mdc-banners,
-html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
-    margin-left: 0;
-    margin-right: 16rem;
-}
-
-#mdc-banners > .container, #mdc-banners > .container-fluid {
+#mdc-banner > .container, #mdc-banner > .container-fluid {
     padding: 0;
     position: relative;
-}
-
-#mdc-banners .mdc-banner {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    top: 0;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    opacity: 0;
-    visibility: hidden;
-    -ms-transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    will-change: opacity, visibility, transform;
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-                visibility 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -82,28 +44,7 @@ html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
     user-select: none;
 }
 
-#mdc-banners .mdc-banner.active {
-    opacity: 1;
-    visibility: visible;
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-#mdc-banners .mdc-banner::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -200%;
-    right: -200%;
-    z-index: -1;
-    background-color: rgb(var(--bg-cards));
-    border-bottom: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
-}
-
-#mdc-banners .mdc-banner .text {
+#mdc-banner .text {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-align: start;
@@ -121,17 +62,17 @@ html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
     color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
-html[dir="ltr"] #mdc-banners .mdc-banner .text,
-html[dir] #mdc-banners[dir="ltr"] .mdc-banner .text {
+html[dir="ltr"] #mdc-banner .text,
+html[dir] #mdc-banner[dir="ltr"] .text {
     padding: 0 1rem 0 1.5rem;
 }
 
-html[dir="rtl"] #mdc-banners .mdc-banner .text,
-html[dir] #mdc-banners[dir="rtl"] .mdc-banner .text {
+html[dir="rtl"] #mdc-banner .text,
+html[dir] #mdc-banner[dir="rtl"] .text {
     padding: 0 1.5rem 0 1rem;
 }
 
-#mdc-banners .mdc-banner .text > .graphic {
+#mdc-banner .text > .graphic {
     height: 2.5rem;
     width: 2.5rem;
     min-height: 2.5rem;
@@ -140,36 +81,36 @@ html[dir] #mdc-banners[dir="rtl"] .mdc-banner .text {
     margin: 0 1.5rem 0 -0.5rem;
 }
 
-html[dir="ltr"] #mdc-banners .mdc-banner .text > .graphic,
-html[dir] #mdc-banners[dir="ltr"] .mdc-banner .text > .graphic {
+html[dir="ltr"] #mdc-banner .text > .graphic,
+html[dir] #mdc-banner[dir="ltr"] .text > .graphic {
     margin: 0 1.5rem 0 -0.5rem;
 }
 
-html[dir="rtl"] #mdc-banners .mdc-banner .text > .graphic,
-html[dir] #mdc-banners[dir="rtl"] .mdc-banner .text > .graphic {
+html[dir="rtl"] #mdc-banner .text > .graphic,
+html[dir] #mdc-banner[dir="rtl"] .text > .graphic {
     margin: 0 -0.5rem 0 1.5rem;
 }
 
-#mdc-banners .mdc-banner .text > .graphic > .material-icon,
-#mdc-banners .mdc-banner .text > .graphic > .material-icon.md-24 {
+#mdc-banner .text > .graphic > .material-icon,
+#mdc-banner .text > .graphic > .material-icon.md-24 {
     margin: 0.5rem 0.5rem 0;
 }
 
-#mdc-banners .mdc-banner .text > .graphic > .material-icon.md-18 {
+#mdc-banner .text > .graphic > .material-icon.md-18 {
     margin: 0.6875rem 0.6875rem 0;
 }
 
-#mdc-banners .mdc-banner .text > .graphic > .material-icon.md-36 {
+#mdc-banner .text > .graphic > .material-icon.md-36 {
     margin: 0.125rem 0.125rem 0;
 }
 
-#mdc-banners .mdc-banner .text > .body {
+#mdc-banner .text > .body {
     -ms-flex-item-align: center;
     align-self: center;
     max-height: 3.75rem;
 }
 
-#mdc-banners .mdc-banner .mdc-button-group {
+#mdc-banner .mdc-button-group {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -ms-flex-item-align: end;
@@ -178,84 +119,75 @@ html[dir] #mdc-banners[dir="rtl"] .mdc-banner .text > .graphic {
     margin: 0.5rem 0.25rem 0.5rem auto;
 }
 
-html[dir="ltr"] #mdc-banners .mdc-banner .mdc-button-group,
-html[dir] #mdc-banners[dir="ltr"] .mdc-banner .mdc-button-group {
+html[dir="ltr"] #mdc-banner .mdc-button-group,
+html[dir] #mdc-banner[dir="ltr"] .mdc-button-group {
     padding: 0 0 0 4.375rem;
     margin: 0.5rem 0.25rem 0.5rem auto;
 }
 
-html[dir="rtl"] #mdc-banners .mdc-banner .mdc-button-group,
-html[dir] #mdc-banners[dir="rtl"] .mdc-banner .mdc-button-group {
+html[dir="rtl"] #mdc-banner .mdc-button-group,
+html[dir] #mdc-banner[dir="rtl"] .mdc-button-group {
     padding: 0 4.375rem 0 0;
     margin: 0.5rem auto 0.5rem 0.25rem;
 }
 
 @media (max-width: 1023px) {
-    body.mdc-drawer-expand #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir="ltr"] body.mdc-drawer-expand #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir] body.mdc-drawer-expand #mdc-banners[dir="ltr"] .mdc-banner .mdc-button-group,
-    html[dir="rtl"] body.mdc-drawer-expand #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] .mdc-banner .mdc-button-group {
+    body.mdc-drawer-expand #mdc-banner .mdc-button-group,
+    html[dir="ltr"] body.mdc-drawer-expand #mdc-banner .mdc-button-group,
+    html[dir] body.mdc-drawer-expand #mdc-banner[dir="ltr"] .mdc-button-group,
+    html[dir="rtl"] body.mdc-drawer-expand #mdc-banner .mdc-button-group,
+    html[dir] body.mdc-drawer-expand #mdc-banner[dir="rtl"] .mdc-button-group {
         padding: 0;
     }
 }
 
 @media (max-width: 719px) {
-    body.mdc-drawer-expand #mdc-banners,
-    html[dir="ltr"] body.mdc-drawer-expand #mdc-banners,
-    html[dir] body.mdc-drawer-expand #mdc-banners[dir="ltr"],
-    html[dir="rtl"] body.mdc-drawer-expand #mdc-banners,
-    html[dir] body.mdc-drawer-expand #mdc-banners[dir="rtl"] {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #mdc-banners .mdc-banner .text,
-    html[dir="ltr"] #mdc-banners .mdc-banner .text,
-    html[dir] #mdc-banners[dir="ltr"] .mdc-banner .text,
-    html[dir="rtl"] #mdc-banners .mdc-banner .text,
-    html[dir] #mdc-banners[dir="rtl"] .mdc-banner .text {
+    #mdc-banner .text,
+    html[dir="ltr"] #mdc-banner .text,
+    html[dir] #mdc-banner[dir="ltr"] .text,
+    html[dir="rtl"] #mdc-banner .text,
+    html[dir] #mdc-banner[dir="rtl"] .text {
         padding: 0 1rem 0;
     }
 
-    #mdc-banners .mdc-banner .text > .graphic,
-    html[dir="ltr"] #mdc-banners .mdc-banner .text > .graphic,
-    html[dir] #mdc-banners[dir="ltr"] .mdc-banner .text > .graphic {
+    #mdc-banner .text > .graphic,
+    html[dir="ltr"] #mdc-banner .text > .graphic,
+    html[dir] #mdc-banner[dir="ltr"] .text > .graphic {
         margin: 0 1rem 0 0;
     }
 
-    html[dir="rtl"] #mdc-banners .mdc-banner .text > .graphic,
-    html[dir] #mdc-banners[dir="rtl"] .mdc-banner .text > .graphic {
+    html[dir="rtl"] #mdc-banner .text > .graphic,
+    html[dir] #mdc-banner[dir="rtl"] .text > .graphic {
         margin: 0 0 0 1rem;
     }
 
-    #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir="ltr"] #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir] #mdc-banners[dir="ltr"] .mdc-banner .mdc-button-group {
+    #mdc-banner .mdc-button-group,
+    html[dir="ltr"] #mdc-banner .mdc-button-group,
+    html[dir] #mdc-banner[dir="ltr"] .mdc-button-group {
         padding: 0 0 0 1rem;
     }
 
-    html[dir="rtl"] #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir] #mdc-banners[dir="rtl"] .mdc-banner .mdc-button-group {
+    html[dir="rtl"] #mdc-banner .mdc-button-group,
+    html[dir] #mdc-banner[dir="rtl"] .mdc-button-group {
         padding: 0 1rem 0 0;
     }
 
-    #mdc-banners .mdc-banner {
+    #mdc-banner .container, #mdc-banner .container-fluid {
         -ms-flex-align: flex-start;
         align-items: flex-start;
         -webkit-flex-direction: column;
         flex-direction: column;
     }
 
-    #mdc-banners .mdc-banner .text {
+    #mdc-banner .text {
         margin-bottom: 0.25rem;
     }
 
-    #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir="ltr"] #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir] #mdc-banners[dir="ltr"] .mdc-banner .mdc-button-group,
-    html[dir="rtl"] #mdc-banners .mdc-banner .mdc-button-group,
-    html[dir] #mdc-banners[dir="rtl"] .mdc-banner .mdc-button-group {
+    #mdc-banner .mdc-button-group,
+    html[dir="ltr"] #mdc-banner .mdc-button-group,
+    html[dir] #mdc-banner[dir="ltr"] .mdc-button-group,
+    html[dir="rtl"] #mdc-banner .mdc-button-group,
+    html[dir] #mdc-banner[dir="rtl"] .mdc-button-group {
         padding: 0;
     }
 }

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function() {
     if ($('#mdc-nav-drawer').hasClass('permanent')) {
         $('body').addClass('mdc-drawer-expand');
     }

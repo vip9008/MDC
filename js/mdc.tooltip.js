@@ -1,7 +1,7 @@
 var mdc_active_tooltip;
 var mdc_tooltip_timeout = 1.5;
 
-$(document).ready(function() {
+jQuery(function() {
     $('body').on('mouseenter', '.has-tooltip', function(event) {
         // positioning the tooltip
         var baseSize = parseFloat($(':root').css('font-size'));

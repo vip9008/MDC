@@ -1,22 +1,22 @@
-function mdc_outlined_fields_init() {
+MDC.textFieldsInit = function() {
     $('.mdc-text-field.outlined, .mdc-text-area.outlined').each(function() {
-        mdc_outlined_field_init(this);
+        MDC.outlinedTextFieldInit(this);
     });
 }
 
-function mdc_outlined_field_init(outlined_text_field) {
-    var container = $(outlined_text_field).children('.input');
+MDC.outlinedTextFieldInit = function(outlinedTextField) {
+    var container = $(outlinedTextField).children('.input');
 
     if (!$(container).children('.outline').length) {
         $(container).append('<div class="outline"><div class="top"></div></div>');
     }
 
     var base_size = parseInt($('body').css('font-size'));
-    var label_width = ($(outlined_text_field).children('.label').width() * 0.75) / base_size;
+    var label_width = ($(outlinedTextField).children('.label').width() * 0.75) / base_size;
     $(container).children('.outline').children('.top').css('width', 'calc(100% - ' + (label_width + 0.5) + 'rem)');
 }
 
-$(document).ready(function() {
+jQuery(function() {
     $('.mdc-text-field').each(function() {
         var inputElement = $(this).children('.input').children('.input-element');
         var value = '';
@@ -53,7 +53,7 @@ $(document).ready(function() {
         }
     });
 
-    mdc_outlined_fields_init();
+    MDC.textFieldsInit();
 
     $('body').on('change', '.mdc-text-field > .input > input', function() {
         if($(this).val()) {

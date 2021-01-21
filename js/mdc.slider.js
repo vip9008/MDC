@@ -1,4 +1,4 @@
-function mdc_slider_update(selector) {
+MDC.sliderUpdate = function(selector) {
     var min = $(selector).attr('min');
     var max = $(selector).attr('max');
     var val = $(selector).val();
@@ -13,17 +13,17 @@ function mdc_slider_update(selector) {
     }
 }
 
-function mdc_slider_enable(selector) {
+MDC.sliderEnable = function(selector) {
     $(selector).children('input').prop('disabled', false);
     $(selector).removeClass('disabled');
 }
 
-function mdc_slider_disable(selector) {
+MDC.sliderDisable = function(selector) {
     $(selector).children('input').prop('disabled', true);
     $(selector).addClass('disabled');
 }
 
-$(document).ready(function() {
+jQuery(function() {
     $('.mdc-slider').each(function() {
         if ($(this).hasClass('discrete')) {
             var val = $(this).children('input').val();
@@ -31,10 +31,10 @@ $(document).ready(function() {
         }
 
         if ($(this).hasClass('disabled') || $(this).children('input').prop('disabled')) {
-            mdc_slider_disable(this);
+            MDC.sliderDisable(this);
         }
 
-        mdc_slider_update($(this).children('input'));
+        MDC.sliderUpdate($(this).children('input'));
     });
 
     $('body').on('input', '.mdc-slider > input', function(event) {
@@ -42,6 +42,6 @@ $(document).ready(function() {
             return false;
         }
 
-        mdc_slider_update(this);
+        MDC.sliderUpdate(this);
     });
 });
