@@ -288,13 +288,18 @@
             helpers.updateCalendar(this.pickerContainer, this.options);
         },
         selectDate: function(dateString) {
-            this.options.selectedDate = new Date(dateString);
+            var newDate = new Date(dateString);
+            if (newDate < this.options.startDate || newDate > this.options.endDate) {
+                return false;
+            }
+
+            this.options.selectedDate = newDate;
             var dateAttr = helpers.dateFormat(this.options.selectedDate, 'yyyy-MM-dd');
 
             this.pickerContainer.find('.mdc-datepicker > .header > .selected-date').html(helpers.dateFormat(this.options.selectedDate, '<span>EEE, </span>MMM d'));
             this.pickerContainer.find('.mdc-datepicker > table.month-days td > .month-day.active').removeClass('active');
             this.pickerContainer.find(".mdc-datepicker > table.month-days td > .month-day[data-date='" + dateAttr + "']").addClass('active');
-            
+
             if (this.pickerContainer.hasClass('inline')) {
                 this.pickerContainer.find('.mdc-button-group > .mdc-button.confirm-date').trigger('click');
             }
