@@ -294,6 +294,10 @@
             this.pickerContainer.find('.mdc-datepicker > .header > .selected-date').html(helpers.dateFormat(this.options.selectedDate, '<span>EEE, </span>MMM d'));
             this.pickerContainer.find('.mdc-datepicker > table.month-days td > .month-day.active').removeClass('active');
             this.pickerContainer.find(".mdc-datepicker > table.month-days td > .month-day[data-date='" + dateAttr + "']").addClass('active');
+            
+            if (this.pickerContainer.hasClass('inline')) {
+                this.pickerContainer.find('.mdc-button-group > .mdc-button.confirm-date').trigger('click');
+            }
         },
         getSelectedDate: function () {
             return helpers.dateFormat(this.options.selectedDate, this.options.dateFormat);
@@ -358,17 +362,19 @@
         }
     });
 
-    // A really lightweight plugin wrapper around the constructor,
-    // preventing against multiple instantiations
+    // A really lightweight plugin wrapper around the constructor, preventing against multiple instantiations
     $.fn.mdcDatePicker = function(userOptions) {
+        var params = Array.prototype.slice.call(arguments);
+
         return this.each(function () {
-            if (!$.data(this, "plugin_mdcDatePicker")) {
+            // only allow the plugin to be instantiated once
+            if (!($.data(this, "plugin_mdcDatePicker") instanceof mdcDatePickerPlugin)) {
                 $.data(this, "plugin_mdcDatePicker", new mdcDatePickerPlugin(this, userOptions));
             }
 
             var plugin = $.data(this, "plugin_mdcDatePicker");
             if (typeof userOptions === 'string' && typeof plugin[userOptions] === 'function') {
-                plugin[userOptions](); // call the function by name
+                return plugin[userOptions].apply(plugin, params.slice(1));
             }
         });
     };
@@ -453,7 +459,7 @@ jQuery(function($) {
         if ( $(this).hasClass('disabled') || $(this).prop('disabled')) {
             return;
         }
-        $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').changeMonth(-1);
+        $(this).closest('.has-datepicker').mdcDatePicker('changeMonth', -1);
         return false;
     });
 
@@ -461,7 +467,7 @@ jQuery(function($) {
         if ( $(this).hasClass('disabled') || $(this).prop('disabled')) {
             return;
         }
-        $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').changeMonth(1);
+        $(this).closest('.has-datepicker').mdcDatePicker('changeMonth', 1);
         return false;
     });
 
@@ -470,7 +476,7 @@ jQuery(function($) {
         if ($(this).hasClass('active')) {
             return;
         }
-        $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').setYear($(this).attr('data-year'));
+        $(this).closest('.has-datepicker').mdcDatePicker('setYear', $(this).attr('data-year'));
         return false;
     });
 
@@ -478,10 +484,7 @@ jQuery(function($) {
         if ($(this).hasClass('active') || $(this).hasClass('disabled') || $(this).prop('disabled')) {
             return;
         }
-        $(this).closest('.has-datepicker').data('plugin_mdcDatePicker').selectDate($(this).attr('data-date'));
-        if ($(this).closest('.mdc-datepicker-container').hasClass('inline')) {
-            $(this).closest('.mdc-datepicker-container').find('.mdc-button-group > .mdc-button.confirm-date').trigger('click');
-        }
+        $(this).closest('.has-datepicker').mdcDatePicker('selectDate', $(this).attr('data-date'));
         return false;
     });
 
