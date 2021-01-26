@@ -48,7 +48,7 @@ function md_init()
 
 var md_click_event = 'click';
 
-function overlayScrollbarsInit(selector) {
+MDC.overlayScrollbarsInit = function(selector) {
     $(selector).overlayScrollbars({
         className: "os-theme-main",
         callbacks: {
@@ -60,5 +60,5 @@ function overlayScrollbarsInit(selector) {
 }
 
 jQuery(function($) {
-    overlayScrollbarsInit('.overlay-scrollbars');
+    MDC.overlayScrollbarsInit('.overlay-scrollbars');
 });

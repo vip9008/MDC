@@ -82,8 +82,8 @@
     cursor: default;
 }
 
-.mdc-text-field > .input > .input-element,
-.mdc-text-area > .input > .input-element {
+.mdc-text-field > .input .input-element,
+.mdc-text-area > .input .input-element {
     font-size: 1rem;
     line-height: 2.25rem;
     min-height: 3.5rem;
@@ -104,7 +104,7 @@
     appearance: none;
 }
 
-.mdc-text-area > .input > .input-element {
+.mdc-text-area > .input .input-element {
     line-height: 1.75rem;
     min-height: 7rem;
     height: calc(1.75rem * var(--number-of-lines) + var(--border-size)); /*1.75 * LINES_NUMBER + .0625 rem*/
@@ -118,8 +118,8 @@
     border-bottom-color: rgba(var(--foreground-color), var(--opacity-secondary));
 }
 
-.mdc-text-field > .input:active,
-.mdc-text-area > .input:active {
+.mdc-text-field.active > .input,
+.mdc-text-area.active > .input {
     background-color: rgba(var(--foreground-color), var(--opacity-focus));
 }
 
@@ -164,8 +164,8 @@
     }
 }
 
-.mdc-text-field > .input > .input-element:-webkit-autofill,
-.mdc-text-area > .input > .input-element:-webkit-autofill {
+.mdc-text-field > .input .input-element:-webkit-autofill,
+.mdc-text-area > .input .input-element:-webkit-autofill {
     -webkit-animation-name: autofill;
     -webkit-animation-fill-mode: both;
 }
@@ -175,7 +175,7 @@
     background-color: rgba(var(--foreground-color), var(--opacity-hover));
 }
 
-.mdc-text-field > .input > .input-element {
+.mdc-text-field > .input .input-element {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -259,9 +259,7 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
     background-color: rgba(var(--foreground-color), var(--opacity-disabled));
 }
 
-.mdc-text-field > .input.disabled > input,
-.mdc-text-field > .input.disabled > div,
-.mdc-text-area > .input.disabled > textarea {
+.mdc-text-field > .input.disabled .input-element {
     color: rgba(var(--foreground-color), var(--opacity-secondary));
     border-bottom-color: rgba(var(--foreground-color), var(--opacity-divider));
 }
@@ -312,8 +310,8 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon {
     right: 0.75rem;
 }
 
-.mdc-text-field > .icon + .input > .input-element,
-.mdc-text-field > .icon + .input > .input-element {
+.mdc-text-field > .icon + .input .input-element,
+.mdc-text-field > .icon + .input .input-element {
     padding: 1.25rem 0.75rem 0 3rem;
 }
 
@@ -342,22 +340,22 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input + .label {
     right: 0.75rem;
 }
 
-html[dir="rtl"] .mdc-text-field > .icon + .input > .input-element,
-html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input > .input-element,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input > .input-element,
-.mdc-text-field > .icon.trailing + .input > .input-element,
-html[dir="ltr"] .mdc-text-field > .icon.trailing + .input > .input-element,
-html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input > .input-element,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input > .input-element {
+html[dir="rtl"] .mdc-text-field > .icon + .input .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input .input-element,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input .input-element,
+.mdc-text-field > .icon.trailing + .input .input-element,
+html[dir="ltr"] .mdc-text-field > .icon.trailing + .input .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input .input-element,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input .input-element {
     padding: 1.25rem 3rem 0 0.75rem;
 }
 
-html[dir="ltr"] .mdc-text-field > .icon + .input > .input-element,
-html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input > .input-element,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input > .input-element,
-html[dir="rtl"] .mdc-text-field > .icon.trailing + .input > .input-element,
-html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input > .input-element,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input > .input-element {
+html[dir="ltr"] .mdc-text-field > .icon + .input .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input .input-element,
+html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input .input-element,
+html[dir="rtl"] .mdc-text-field > .icon.trailing + .input .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input .input-element,
+html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input .input-element {
     padding: 1.25rem 0.75rem 0 3rem;
 }
 
@@ -419,8 +417,8 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     border-radius: 0;
 }
 
-.mdc-text-field.standard > .input > .input-element,
-.mdc-text-area.standard > .input > .input-element {
+.mdc-text-field.standard > .input .input-element,
+.mdc-text-area.standard > .input .input-element {
     padding-left: 0;
     padding-right: 0;
 }
@@ -448,8 +446,7 @@ html[dir] *[dir] .mdc-text-area.standard[dir="rtl"] > .label {
 }
 
 .mdc-text-field.standard.active > .label,
-.mdc-text-field.standard.focus > .label,
-.mdc-text-field.standard > .input:focus + .label {
+.mdc-text-field.standard.focus > .label {
     transform: translateY(-100%) scale(0.75);
 }
 
@@ -478,7 +475,7 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon {
     right: 0;
 }
 
-.mdc-text-field.standard > .icon + .input > .input-element {
+.mdc-text-field.standard > .icon + .input .input-element {
     padding: 1.25rem 0 0 2.25rem;
 }
 
@@ -507,22 +504,22 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input + .label {
     right: 0;
 }
 
-html[dir="rtl"] .mdc-text-field.standard > .icon + .input > .input-element,
-html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input > .input-element,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input > .input-element,
-.mdc-text-field.standard > .icon.trailing + .input > .input-element,
-html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > .input-element,
-html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input > .input-element,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input > .input-element {
+html[dir="rtl"] .mdc-text-field.standard > .icon + .input .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input .input-element,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input .input-element,
+.mdc-text-field.standard > .icon.trailing + .input .input-element,
+html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input .input-element,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input .input-element {
     padding: 1.25rem 2.25rem 0 0;
 }
 
-html[dir="ltr"] .mdc-text-field.standard > .icon + .input > .input-element,
-html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input > .input-element,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input > .input-element,
-html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > .input-element,
-html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input > .input-element,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input > .input-element {
+html[dir="ltr"] .mdc-text-field.standard > .icon + .input .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input .input-element,
+html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input .input-element,
+html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input .input-element,
+html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input .input-element {
     padding: 1.25rem 0 0 2.25rem;
 }
 
@@ -576,32 +573,32 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
     padding: 0.75rem 0 0;
 }
 
-.mdc-text-field.outlined > .input > .input-element {
+.mdc-text-field.outlined > .input .input-element {
     line-height: 2rem;
     padding: 0.75rem 0.8125rem;
 }
 
-.mdc-text-area.outlined > .input > .input-element {
+.mdc-text-area.outlined > .input .input-element {
     padding: 0 0.8125rem 0.75rem;
 }
 
-.mdc-text-field.outlined > .icon + .input > .input-element,
-html[dir="ltr"] .mdc-text-field.outlined > .icon + .input > .input-element,
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input > .input-element,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input > .input-element,
-html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > .input-element,
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input > .input-element,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input > .input-element {
+.mdc-text-field.outlined > .icon + .input .input-element,
+html[dir="ltr"] .mdc-text-field.outlined > .icon + .input .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input .input-element,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input .input-element,
+html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input .input-element,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input .input-element {
     padding: 0.75rem 0.75rem 0.75rem 2.9375rem;
 }
 
-html[dir="rtl"] .mdc-text-field.outlined > .icon + .input > .input-element,
-html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input > .input-element,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input > .input-element,
-.mdc-text-field.outlined > .icon.trailing + .input > .input-element,
-html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > .input-element,
-html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input > .input-element,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input > .input-element {
+html[dir="rtl"] .mdc-text-field.outlined > .icon + .input .input-element,
+html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input .input-element,
+html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input .input-element,
+.mdc-text-field.outlined > .icon.trailing + .input .input-element,
+html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input .input-element,
+html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input .input-element,
+html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input .input-element {
     padding: 0.75rem 2.9375rem 0.75rem 0.75rem;
 }
 
