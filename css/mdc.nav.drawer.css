@@ -81,11 +81,6 @@ html[dir="rtl"] #mdc-nav-drawer {
     overflow-y: auto;
 }
 
-#mdc-nav-drawer a.mdc-list-item.active {
-    --temp: var(--foreground-color);
-    --foreground-color: var(--mdc-foreground, var(--temp));
-}
-
 #mdc-nav-drawer .mdc-list-container:not(.standard) .mdc-list-item::before {
     top: 0.25rem;
     right: 0.5rem;
