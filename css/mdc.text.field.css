@@ -149,7 +149,7 @@
 .mdc-text-field.has-error,
 .mdc-text-area.has-error {
     --foreground-color: var(--error-color);
-    --border-color: rgb(var(--error-color));
+    --border-color: var(--error-color);
 }
 
 @-webkit-keyframes autofill {
@@ -219,8 +219,8 @@ html[dir="ltr"] .mdc-text-field > .label,
 html[dir="ltr"] .mdc-text-area > .label,
 html[dir] *[dir="ltr"] .mdc-text-field > .label,
 html[dir] *[dir="ltr"] .mdc-text-area > .label,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .label,
-html[dir] *[dir] .mdc-text-area[dir="ltr"] > .label {
+html[dir] * .mdc-text-field[dir="ltr"] > .label,
+html[dir] * .mdc-text-area[dir="ltr"] > .label {
     left: 0.75rem;
     right: auto;
 
@@ -233,8 +233,8 @@ html[dir="rtl"] .mdc-text-field > .label,
 html[dir="rtl"] .mdc-text-area > .label,
 html[dir] *[dir="rtl"] .mdc-text-field > .label,
 html[dir] *[dir="rtl"] .mdc-text-area > .label,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .label,
-html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
+html[dir] * .mdc-text-field[dir="rtl"] > .label,
+html[dir] * .mdc-text-area[dir="rtl"] > .label {
     left: auto;
     right: 0.75rem;
 
@@ -298,14 +298,14 @@ html[dir] *[dir] .mdc-text-area[dir="rtl"] > .label {
 
 html[dir="ltr"] .mdc-text-field > .icon,
 html[dir] *[dir="ltr"] .mdc-text-field > .icon,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon {
+html[dir] * .mdc-text-field[dir="ltr"] > .icon {
     left: 0.75rem;
     right: auto;
 }
 
 html[dir="rtl"] .mdc-text-field > .icon,
 html[dir] *[dir="rtl"] .mdc-text-field > .icon,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon {
+html[dir] * .mdc-text-field[dir="rtl"] > .icon {
     left: auto;
     right: 0.75rem;
 }
@@ -323,14 +323,14 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon {
 
 html[dir="ltr"] .mdc-text-field > .icon + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input + .label,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input + .label {
+html[dir] * .mdc-text-field[dir="ltr"] > .icon + .input + .label {
     left: 3rem;
     right: auto;
 }
 
 html[dir="rtl"] .mdc-text-field > .icon + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input + .label,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input + .label {
+html[dir] * .mdc-text-field[dir="rtl"] > .icon + .input + .label {
     left: auto;
     right: 3rem;
 }
@@ -342,20 +342,20 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input + .label {
 
 html[dir="rtl"] .mdc-text-field > .icon + .input .input-element,
 html[dir] *[dir="rtl"] .mdc-text-field > .icon + .input .input-element,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon + .input .input-element,
+html[dir] * .mdc-text-field[dir="rtl"] > .icon + .input .input-element,
 .mdc-text-field > .icon.trailing + .input .input-element,
 html[dir="ltr"] .mdc-text-field > .icon.trailing + .input .input-element,
 html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input .input-element,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input .input-element {
+html[dir] * .mdc-text-field[dir="ltr"] > .icon.trailing + .input .input-element {
     padding: 1.25rem 3rem 0 0.75rem;
 }
 
 html[dir="ltr"] .mdc-text-field > .icon + .input .input-element,
 html[dir] *[dir="ltr"] .mdc-text-field > .icon + .input .input-element,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon + .input .input-element,
+html[dir] * .mdc-text-field[dir="ltr"] > .icon + .input .input-element,
 html[dir="rtl"] .mdc-text-field > .icon.trailing + .input .input-element,
 html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input .input-element,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input .input-element {
+html[dir] * .mdc-text-field[dir="rtl"] > .icon.trailing + .input .input-element {
     padding: 1.25rem 0.75rem 0 3rem;
 }
 
@@ -366,20 +366,20 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input .input-ele
 
 html[dir="rtl"] .mdc-text-field > .icon.trailing,
 html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing,
+html[dir] * .mdc-text-field[dir="rtl"] > .icon.trailing,
 html[dir="ltr"] .mdc-text-field > .icon.trailing + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing + .input + .label,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing + .input + .label {
+html[dir] * .mdc-text-field[dir="ltr"] > .icon.trailing + .input + .label {
     left: 0.75rem;
     right: auto;
 }
 
 html[dir="ltr"] .mdc-text-field > .icon.trailing,
 html[dir] *[dir="ltr"] .mdc-text-field > .icon.trailing,
-html[dir] *[dir] .mdc-text-field[dir="ltr"] > .icon.trailing,
+html[dir] * .mdc-text-field[dir="ltr"] > .icon.trailing,
 html[dir="rtl"] .mdc-text-field > .icon.trailing + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field > .icon.trailing + .input + .label,
-html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
+html[dir] * .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     left: auto;
     right: 0.75rem;
 }
@@ -431,16 +431,16 @@ html[dir] *[dir] .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
 
 html[dir="ltr"] .mdc-text-field.standard > .label,
 html[dir] *[dir="ltr"] .mdc-text-field.standard > .label,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .label,
+html[dir] * .mdc-text-field.standard[dir="ltr"] > .label,
 html[dir="rtl"] .mdc-text-field.standard > .label,
 html[dir] *[dir="rtl"] .mdc-text-field.standard > .label,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .label,
+html[dir] * .mdc-text-field.standard[dir="rtl"] > .label,
 html[dir="ltr"] .mdc-text-area.standard > .label,
 html[dir] *[dir="ltr"] .mdc-text-area.standard > .label,
-html[dir] *[dir] .mdc-text-area.standard[dir="ltr"] > .label,
+html[dir] * .mdc-text-area.standard[dir="ltr"] > .label,
 html[dir="rtl"] .mdc-text-area.standard > .label,
 html[dir] *[dir="rtl"] .mdc-text-area.standard > .label,
-html[dir] *[dir] .mdc-text-area.standard[dir="rtl"] > .label {
+html[dir] * .mdc-text-area.standard[dir="rtl"] > .label {
     right: auto;
     left: auto;
 }
@@ -463,14 +463,14 @@ html[dir] *[dir] .mdc-text-area.standard[dir="rtl"] > .label {
 
 html[dir="ltr"] .mdc-text-field.standard > .icon,
 html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon {
+html[dir] * .mdc-text-field.standard[dir="ltr"] > .icon {
     left: 0;
     right: auto;
 }
 
 html[dir="rtl"] .mdc-text-field.standard > .icon,
 html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon {
+html[dir] * .mdc-text-field.standard[dir="rtl"] > .icon {
     left: auto;
     right: 0;
 }
@@ -487,14 +487,14 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon {
 
 html[dir="ltr"] .mdc-text-field.standard > .icon + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input + .label,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input + .label {
+html[dir] * .mdc-text-field.standard[dir="ltr"] > .icon + .input + .label {
     left: 2.25rem;
     right: auto;
 }
 
 html[dir="rtl"] .mdc-text-field.standard > .icon + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input + .label,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input + .label {
+html[dir] * .mdc-text-field.standard[dir="rtl"] > .icon + .input + .label {
     left: auto;
     right: 2.25rem;
 }
@@ -506,20 +506,20 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input + .label {
 
 html[dir="rtl"] .mdc-text-field.standard > .icon + .input .input-element,
 html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon + .input .input-element,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon + .input .input-element,
+html[dir] * .mdc-text-field.standard[dir="rtl"] > .icon + .input .input-element,
 .mdc-text-field.standard > .icon.trailing + .input .input-element,
 html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input .input-element,
 html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input .input-element,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input .input-element {
+html[dir] * .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input .input-element {
     padding: 1.25rem 2.25rem 0 0;
 }
 
 html[dir="ltr"] .mdc-text-field.standard > .icon + .input .input-element,
 html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon + .input .input-element,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon + .input .input-element,
+html[dir] * .mdc-text-field.standard[dir="ltr"] > .icon + .input .input-element,
 html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input .input-element,
 html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input .input-element,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input .input-element {
+html[dir] * .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input .input-element {
     padding: 1.25rem 0 0 2.25rem;
 }
 
@@ -530,20 +530,20 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input .
 
 html[dir="rtl"] .mdc-text-field.standard > .icon.trailing,
 html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing,
+html[dir] * .mdc-text-field.standard[dir="rtl"] > .icon.trailing,
 html[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing + .input + .label,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input + .label {
+html[dir] * .mdc-text-field.standard[dir="ltr"] > .icon.trailing + .input + .label {
     left: 0;
     right: auto;
 }
 
 html[dir="ltr"] .mdc-text-field.standard > .icon.trailing,
 html[dir] *[dir="ltr"] .mdc-text-field.standard > .icon.trailing,
-html[dir] *[dir] .mdc-text-field.standard[dir="ltr"] > .icon.trailing,
+html[dir] * .mdc-text-field.standard[dir="ltr"] > .icon.trailing,
 html[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.standard > .icon.trailing + .input + .label,
-html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input + .label {
+html[dir] * .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input + .label {
     left: auto;
     right: 0;
 }
@@ -585,20 +585,20 @@ html[dir] *[dir] .mdc-text-field.standard[dir="rtl"] > .icon.trailing + .input +
 .mdc-text-field.outlined > .icon + .input .input-element,
 html[dir="ltr"] .mdc-text-field.outlined > .icon + .input .input-element,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon + .input .input-element,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon + .input .input-element,
+html[dir] * .mdc-text-field.outlined[dir="ltr"] > .icon + .input .input-element,
 html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input .input-element,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input .input-element,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input .input-element {
+html[dir] * .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input .input-element {
     padding: 0.75rem 0.75rem 0.75rem 2.9375rem;
 }
 
 html[dir="rtl"] .mdc-text-field.outlined > .icon + .input .input-element,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon + .input .input-element,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon + .input .input-element,
+html[dir] * .mdc-text-field.outlined[dir="rtl"] > .icon + .input .input-element,
 .mdc-text-field.outlined > .icon.trailing + .input .input-element,
 html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input .input-element,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input .input-element,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input .input-element {
+html[dir] * .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input .input-element {
     padding: 0.75rem 2.9375rem 0.75rem 0.75rem;
 }
 
@@ -630,41 +630,41 @@ html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input .
 
 html[dir="ltr"] .mdc-text-field.outlined > .label,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined > .label,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .label,
+html[dir] * .mdc-text-field.outlined[dir="ltr"] > .label,
 .mdc-text-field.outlined.active > .icon + .input + .label,
 html[dir="ltr"] .mdc-text-field.outlined.active > .icon + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined.active > .icon + .input + .label,
-html[dir] *[dir] .mdc-text-field.outlined.active[dir="ltr"] > .icon + .input + .label,
+html[dir] * .mdc-text-field.outlined.active[dir="ltr"] > .icon + .input + .label,
 .mdc-text-field.outlined.focus > .icon + .input + .label,
 html[dir="ltr"] .mdc-text-field.outlined.focus > .icon + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined.focus > .icon + .input + .label,
-html[dir] *[dir] .mdc-text-field.outlined.focus[dir="ltr"] > .icon + .input + .label,
+html[dir] * .mdc-text-field.outlined.focus[dir="ltr"] > .icon + .input + .label,
 .mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input + .label,
+html[dir] * .mdc-text-field.outlined[dir="ltr"] > .icon.trailing + .input + .label,
 html[dir="ltr"] .mdc-text-area.outlined > .label,
 html[dir] *[dir="ltr"] .mdc-text-area.outlined > .label,
-html[dir] *[dir] .mdc-text-area.outlined[dir="ltr"] > .label {
+html[dir] * .mdc-text-area.outlined[dir="ltr"] > .label {
     left: calc(0.8rem + var(--focus-border-size));
     right: auto;
 }
 
 html[dir="rtl"] .mdc-text-field.outlined > .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .label,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .label,
+html[dir] * .mdc-text-field.outlined[dir="rtl"] > .label,
 html[dir="rtl"] .mdc-text-field.outlined.active > .icon + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined.active > .icon + .input + .label,
-html[dir] *[dir] .mdc-text-field.outlined.active[dir="rtl"] > .icon + .input + .label,
+html[dir] * .mdc-text-field.outlined.active[dir="rtl"] > .icon + .input + .label,
 html[dir="rtl"] .mdc-text-field.outlined.focus > .icon + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined.focus > .icon + .input + .label,
-html[dir] *[dir] .mdc-text-field.outlined.focus[dir="rtl"] > .icon + .input + .label,
+html[dir] * .mdc-text-field.outlined.focus[dir="rtl"] > .icon + .input + .label,
 html[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .icon.trailing + .input + .label,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input + .label,
+html[dir] * .mdc-text-field.outlined[dir="rtl"] > .icon.trailing + .input + .label,
 html[dir="rtl"] .mdc-text-area.outlined > .label,
 html[dir] *[dir="rtl"] .mdc-text-area.outlined > .label,
-html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
+html[dir] * .mdc-text-area.outlined[dir="rtl"] > .label {
     left: auto;
     right: calc(0.8rem + var(--focus-border-size));
 }
@@ -768,20 +768,20 @@ html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .label {
 
 html[dir="ltr"] .mdc-text-field.outlined > .input > .outline > .top,
 html[dir] *[dir="ltr"] .mdc-text-field.outlined > .input > .outline > .top,
-html[dir] *[dir] .mdc-text-field.outlined[dir="ltr"] > .input > .outline > .top,
+html[dir] * .mdc-text-field.outlined[dir="ltr"] > .input > .outline > .top,
 html[dir="ltr"] .mdc-text-area.outlined > .input > .outline > .top,
 html[dir] *[dir="ltr"] .mdc-text-area.outlined > .input > .outline > .top,
-html[dir] *[dir] .mdc-text-area.outlined[dir="ltr"] > .input > .outline > .top {
+html[dir] * .mdc-text-area.outlined[dir="ltr"] > .input > .outline > .top {
     left: auto;
     right: 0;
 }
 
 html[dir="rtl"] .mdc-text-field.outlined > .input > .outline > .top,
 html[dir] *[dir="rtl"] .mdc-text-field.outlined > .input > .outline > .top,
-html[dir] *[dir] .mdc-text-field.outlined[dir="rtl"] > .input > .outline > .top,
+html[dir] * .mdc-text-field.outlined[dir="rtl"] > .input > .outline > .top,
 html[dir="rtl"] .mdc-text-area.outlined > .input > .outline > .top,
 html[dir] *[dir="rtl"] .mdc-text-area.outlined > .input > .outline > .top,
-html[dir] *[dir] .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
+html[dir] * .mdc-text-area.outlined[dir="rtl"] > .input > .outline > .top {
     left: 0;
     right: auto;
 }
