@@ -5,6 +5,11 @@ MDC.snackbars = {
 };
 
 MDC.snackbarsActivate = function(seconds = 4) {
+    var snackbar = $('#mdc-snackbars > .mdc-snackbar').first();
+    if ($(snackbar).hasClass('active')) {
+        return false;
+    }
+
     seconds = parseFloat(seconds);
 
     if (isNaN(seconds) || seconds < 4) {
@@ -19,7 +24,6 @@ MDC.snackbarsActivate = function(seconds = 4) {
 
     var timeVisible = seconds * 1000;
 
-    var snackbar = $('#mdc-snackbars > .mdc-snackbar').first();
     if (snackbar.length) {
         $(snackbar).addClass('active');
         MDC.snackbars.activeSnackbar = setTimeout(function() {
