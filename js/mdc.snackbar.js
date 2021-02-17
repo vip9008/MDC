@@ -1,12 +1,12 @@
 MDC.snackbars = {
-    activeSnackbar: {},
+    activeSnackbar: null,
     snackbarTimeout: {},
     fadeOutTime: 200
 };
 
 MDC.snackbarsActivate = function(seconds = 4) {
     var snackbar = $('#mdc-snackbars > .mdc-snackbar').first();
-    if ($(snackbar).hasClass('active')) {
+    if (MDC.snackbars.activeSnackbar !== null) {
         return false;
     }
 
@@ -33,6 +33,8 @@ MDC.snackbarsActivate = function(seconds = 4) {
                 next();
             });
         }, timeVisible);
+    } else {
+        MDC.snackbars.activeSnackbar = null;
     }
 }
 
