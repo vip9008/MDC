@@ -6,7 +6,8 @@ MDC.snackbars = {
 
 MDC.snackbarsActivate = function(seconds = 4) {
     var snackbar = $('#mdc-snackbars > .mdc-snackbar').first();
-    if (MDC.snackbars.activeSnackbar !== null) {
+
+    if (snackbar.length && $(snackbar).hasClass('active')) {
         return false;
     }
 
