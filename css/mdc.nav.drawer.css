@@ -1,5 +1,6 @@
 #mdc-nav-drawer {
     min-width: 16rem;
+    max-width: 20rem;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -121,7 +122,6 @@ html[dir="rtl"] #mdc-nav-drawer {
 
 #mdc-nav-drawer.modal {
     width: calc(100% - 3.5rem);
-    max-width: 20rem;
     left: -20rem;
     right: auto;
     z-index: var(--z-axis-16-index);
@@ -266,7 +266,6 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
     #mdc-nav-drawer.persistent,
     #mdc-nav-drawer.permanent {
         width: calc(100% - 3.5rem);
-        max-width: 20rem;
         left: -20rem;
         right: auto;
         z-index: var(--z-axis-16-index);
