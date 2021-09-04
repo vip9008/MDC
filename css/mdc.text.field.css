@@ -294,6 +294,7 @@ html[dir] * .mdc-text-area[dir="rtl"] > .label {
     cursor: pointer;
     pointer-events: all;
     color: rgba(var(--foreground-color), var(--opacity-secondary));
+    z-index: 9;
 }
 
 html[dir="ltr"] .mdc-text-field > .icon,
