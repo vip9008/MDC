@@ -66,6 +66,8 @@
     cursor: text;
 }
 
+.mdc-text-field:not(.active) > .icon,
+.mdc-text-area:not(.active) > .icon,
 .mdc-text-field:not(.active) > .input,
 .mdc-text-area:not(.active) > .input,
 .mdc-text-field:not(.active) > .label,
@@ -276,7 +278,7 @@ html[dir] * .mdc-text-area[dir="rtl"] > .label {
     right: auto;
     height: 1.5rem;
     width: 1.5rem;
-    color: rgba(var(--initial-foreground-color), var(--opacity-secondary));
+    color: rgba(var(--foreground-color), var(--opacity-secondary));
     cursor: default;
     pointer-events: none;
 
@@ -293,7 +295,6 @@ html[dir] * .mdc-text-area[dir="rtl"] > .label {
     text-decoration: none;
     cursor: pointer;
     pointer-events: all;
-    color: rgba(var(--foreground-color), var(--opacity-secondary));
     z-index: 9;
 }
 
