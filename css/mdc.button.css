@@ -106,22 +106,22 @@ html[dir] .mdc-button[dir="rtl"] > .icon {
 }
 
 .mdc-button.disabled, .mdc-button[disabled], .mdc-button:disabled {
-    --foreground-color: var(--initial-foreground-color);
+    --foreground-color: var(--initial-foreground-color) !important;
 
-    cursor: default;
-    color: rgba(var(--foreground-color), var(--opacity-hint));
+    cursor: default !important;
+    color: rgba(var(--foreground-color), var(--opacity-hint)) !important;
 }
 
 .mdc-button.disabled[class*="bg-"], .mdc-button[class*="bg-"][disabled], .mdc-button[class*="bg-"]:disabled {
-    background-color: rgba(var(--foreground-color), var(--opacity-divider));
+    background-color: rgba(var(--foreground-color), var(--opacity-divider)) !important;
 }
 
 .mdc-button.disabled::before, .mdc-button[disabled]::before, .mdc-button:disabled::before {
-    display: none;
+    display: none !important;
 }
 
 .mdc-button.disabled > .icon, .mdc-button[disabled] > .icon, .mdc-button:disabled > .icon {
-    color: rgba(var(--foreground-color), var(--opacity-hint));
+    color: rgba(var(--foreground-color), var(--opacity-hint)) !important;
 }
 
 .mdc-button.btn-outlined, .mdc-button.btn-contained, .mdc-button[class*="bg-"] {
@@ -174,8 +174,8 @@ html[dir] .mdc-button[class*="bg-"][dir="rtl"] > .icon {
 .mdc-button.btn-contained.disabled, .mdc-button.btn-contained[disabled], .mdc-button.btn-contained:disabled,
 .mdc-button.btn-contained.disabled:hover, .mdc-button.btn-contained[disabled]:hover, .mdc-button.btn-contained:disabled:hover,
 .mdc-button.btn-contained.disabled:active, .mdc-button.btn-contained[disabled]:active, .mdc-button.btn-contained:disabled:active {
-    z-index: var(--z-axis-0-index);
-    box-shadow: var(--z-axis-0-shadow);
+    z-index: var(--z-axis-0-index) !important;
+    box-shadow: var(--z-axis-0-shadow) !important;
 }
 
 .mdc-button.full-width.btn-outlined, .mdc-button.full-width.btn-contained, .mdc-button.full-width[class*="bg-"] {
