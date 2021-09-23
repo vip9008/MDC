@@ -96,7 +96,7 @@
     transition: all 0.2s;
     background-color: rgb(var(--foreground-color));
     opacity: 0;
-    z-index: 999999;
+    z-index: 99;
     border-radius: 0.25rem;
 }
 
