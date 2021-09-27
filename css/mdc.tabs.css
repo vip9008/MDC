@@ -71,7 +71,7 @@
     opacity: var(--opacity-pressed);
 }
 
-.mdc-tabs .tab-item::after {
+/* .mdc-tabs .tab-item::after {
     content: '';
     position: absolute;
     right: 0;
@@ -87,6 +87,36 @@
 
 .mdc-tabs .tab-item.active::after {
     opacity: 1;
+} */
+
+.mdc-tabs > .ink-bar {
+    position: absolute;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    width: 0;
+    height: 0.125rem;
+    will-change: left, right, width;
+    pointer-events: none;
+    background-color: rgb(var(--foreground-color));
+}
+
+.mdc-tabs.animate > .ink-bar {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html[dir="ltr"] .mdc-tabs > .ink-bar,
+html[dir] *[dir="ltr"] .mdc-tabs > .ink-bar,
+html[dir] * .mdc-tabs[dir="ltr"] > .ink-bar {
+    left: 0;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-tabs > .ink-bar,
+html[dir] *[dir="rtl"] .mdc-tabs > .ink-bar,
+html[dir] * .mdc-tabs[dir="rtl"] > .ink-bar {
+    left: auto;
+    right: 0;
 }
 
 .mdc-tabs .tab-item > .icon,
