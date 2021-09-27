@@ -28,10 +28,14 @@ MDC.activateTab = function(tab, animate = true) {
     }
 }
 
-jQuery(function() {
+MDC.updateTabs = function () {
     $('.mdc-tabs .tab-item.active').each(function () {
         MDC.activateTab(this, false);
     });
+}
+
+jQuery(function() {
+    MDC.updateTabs();
 
     $('body').on(md_click_event, '.mdc-tabs .tab-item', function(event) {
         if (!$(this).hasClass('active')) {
@@ -41,7 +45,5 @@ jQuery(function() {
 });
 
 $(window).resize(function () {
-    $('.mdc-tabs .tab-item.active').each(function () {
-        MDC.activateTab(this, false);
-    });
+    MDC.updateTabs();
 });
