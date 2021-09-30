@@ -7,9 +7,7 @@ MDC.SideSheetOpen = function(selector) {
 
 MDC.SideSheetClose = function(selector) {
     $(selector).removeClass('active');
-    if ($(selector).hasClass('fixed')) {
-        $('body').removeClass('mdc-sheets-side-fixed');
-    }
+    $('body').removeClass('mdc-sheets-side-fixed');
 }
 
 jQuery(function() {
