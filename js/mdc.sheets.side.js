@@ -1,23 +1,21 @@
-MDC.sideSheetOpen = function(selector) {
+MDC.SideSheetOpen = function(selector) {
     $(selector).addClass('active');
     if ($(selector).hasClass('fixed')) {
         $('body').addClass('mdc-sheets-side-fixed');
     }
 }
 
-MDC.sideSheetClose = function(selector) {
+MDC.SideSheetClose = function(selector) {
     $(selector).removeClass('active');
-    if ($(selector).hasClass('fixed')) {
-        $('body').removeClass('mdc-sheets-side-fixed');
-    }
+    $('body').removeClass('mdc-sheets-side-fixed');
 }
 
 jQuery(function() {
     $('body').on(md_click_event, '.mdc-sheets-side .header .close-action > button', function(event) {
-        MDC.sideSheetClose($(this).closest('.mdc-sheets-side'));
+        MDC.SideSheetClose($(this).closest('.mdc-sheets-side'));
     });
 
     $('body').on(md_click_event, '.mdc-sheets-side-scrim', function(event) {
-        MDC.sideSheetClose($(this).prev('.mdc-sheets-side'));
+        MDC.SideSheetClose($(this).prev('.mdc-sheets-side'));
     });
 });
