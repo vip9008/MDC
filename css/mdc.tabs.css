@@ -1,9 +1,18 @@
 .mdc-tabs {
+    height: auto;
+}
+
+.mdc-tabs:not(.scrollable),
+.mdc-tabs.scrollable .os-content {
     position: relative;
     display: flex;
     flex: 1 0 auto;
     transform: none;
     will-change: transform;
+}
+
+.mdc-tabs.scrollable .os-scrollbar {
+    display: none;
 }
 
 .mdc-tabs .tab-item {
@@ -41,6 +50,12 @@
     --foreground-color: var(--initial-foreground-color);
 }
 
+.mdc-tabs .tab-item.disabled, .mdc-tabs .tab-item[disabled], .mdc-tabs .tab-item:disabled {
+    --foreground-color: var(--initial-foreground-color) !important;
+
+    cursor: default !important;
+}
+
 .mdc-tabs .tab-item::before {
     content: '';
     position: absolute;
@@ -71,6 +86,10 @@
     opacity: var(--opacity-pressed);
 }
 
+.mdc-tabs .tab-item.disabled::before, .mdc-tabs .tab-item[disabled]::before, .mdc-tabs .tab-item:disabled::before {
+    display: none;
+}
+
 /* .mdc-tabs .tab-item::after {
     content: '';
     position: absolute;
@@ -89,7 +108,7 @@
     opacity: 1;
 } */
 
-.mdc-tabs > .ink-bar {
+.mdc-tabs .ink-bar {
     position: absolute;
     left: 0;
     right: auto;
@@ -101,7 +120,8 @@
     background-color: rgb(var(--foreground-color));
 }
 
-.mdc-tabs.animate > .ink-bar {
+.mdc-tabs.animate:not(.scrollable) .ink-bar,
+.mdc-tabs.scrollable .os-content.animate .ink-bar {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -150,4 +170,45 @@ html[dir] *[dir="rtl"] .mdc-tabs:not(.stacked) .tab-item > .icon + .title,
 html[dir] * .mdc-tabs[dir="rtl"]:not(.stacked) .tab-item > .icon + .title {
     margin-left: 0;
     margin-right: 0.5rem;
+}
+
+.mdc-tabs .tab-item.disabled > .icon, .mdc-tabs .tab-item[disabled] > .icon, .mdc-tabs .tab-item:disabled > .icon,
+.mdc-tabs .tab-item.disabled > .title, .mdc-tabs .tab-item[disabled] > .title, .mdc-tabs .tab-item:disabled > .title {
+    color: rgba(var(--foreground-color), var(--opacity-hint)) !important;
+}
+
+.mdc-tabs-pages {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.mdc-tabs-pages .tab-page {
+    width: 100%;
+    min-height: 100%;
+    flex: 0 0 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: auto;
+    padding: 1rem;
+    margin: 0;
+    will-change: left, right;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html[dir="ltr"] .mdc-tabs-pages .tab-page,
+html[dir] *[dir="ltr"] .mdc-tabs-pages .tab-page,
+html[dir] * .mdc-tabs-pages[dir="ltr"] .tab-page {
+    left: 0;
+    right: auto;
+}
+
+html[dir="rtl"] .mdc-tabs-pages .tab-page,
+html[dir] *[dir="rtl"] .mdc-tabs-pages .tab-page,
+html[dir] * .mdc-tabs-pages[dir="rtl"] .tab-page {
+    left: auto;
+    right: 0;
 }
