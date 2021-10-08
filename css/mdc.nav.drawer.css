@@ -7,7 +7,7 @@
     background-color: rgb(var(--bg-main-content));
     z-index: var(--z-axis-16-index);
     border-right: solid 0.0625rem rgba(var(--foreground-color), var(--opacity-divider));
-    transition: all 0.3s;
+    transition: left 0.3s, right 0.3s;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
