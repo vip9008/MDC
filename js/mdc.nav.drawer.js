@@ -18,7 +18,7 @@ MDC.NavBarClose = function () {
 }
 
 MDC.IsNavBarOpen = function () {
-    return ($('body').hasClass('mdc-drawer-expand') || $('body').hasClass('mdc-drawer-modal')) && (!$('#mdc-nav-drawer').hasClass('permanent') || $(window).outerWidth() < 960);
+    return $('#mdc-nav-drawer').hasClass('active') || ($('#mdc-nav-drawer').hasClass('permanent') || $(window).outerWidth() >= 960);
 }
 
 jQuery(function() {
