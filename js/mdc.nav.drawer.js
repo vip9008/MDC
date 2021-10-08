@@ -9,7 +9,11 @@ MDC.NavBarOpen = function () {
 }
 
 MDC.NavBarClose = function () {
-    $('body').removeClass('mdc-drawer-modal').removeClass('mdc-drawer-expand');
+    if (!$('#mdc-nav-drawer').hasClass('permanent')) {
+        $('body').removeClass('mdc-drawer-expand');
+    }
+
+    $('body').removeClass('mdc-drawer-modal');
     $('#mdc-nav-drawer').removeClass('active');
 }
 
