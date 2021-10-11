@@ -26,7 +26,7 @@
 .mdc-checkbox:not(.checked):not(.indeterminate),
 .mdc-radiobutton:not(.checked),
 .mdc-switch:not(.checked) {
-    --foreground-color: var(--initial-foreground-color);
+    --foreground-color: var(--initial-foreground-color) !important;
 }
 
 .mdc-checkbox.disabled,
