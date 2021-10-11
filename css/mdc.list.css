@@ -70,6 +70,14 @@ button.mdc-list-item::before,
     opacity: 0;
 }
 
+.mdc-list-item.disabled, .mdc-list-item[disabled], .mdc-list-item:disabled {
+    color: rgba(var(--foreground-color), var(--opacity-hint)) !important;
+}
+
+.mdc-list-item.disabled::before, .mdc-list-item[disabled]::before, .mdc-list-item:disabled::before {
+    display: none;
+}
+
 .mdc-list-item > .primary-action {
     display: block;
     position: absolute;
