@@ -7,7 +7,8 @@
     width: 2.5rem;
     position: relative;
     cursor: pointer;
-    color: rgba(var(--foreground-color), var(--opacity-secondary));
+    color: rgb(var(--foreground-color));
+    opacity: var(--opacity-secondary);
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -19,7 +20,7 @@
 .mdc-checkbox.checked,
 .mdc-checkbox.indeterminate,
 .mdc-radiobutton.checked {
-    color: rgb(var(--foreground-color));
+    opacity: 1;
 }
 
 .mdc-checkbox:not(.checked):not(.indeterminate),
