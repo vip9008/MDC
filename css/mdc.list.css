@@ -72,6 +72,7 @@ button.mdc-list-item::before,
 
 .mdc-list-item.disabled, .mdc-list-item[disabled], .mdc-list-item:disabled {
     color: rgba(var(--foreground-color), var(--opacity-hint)) !important;
+    cursor: default;
 }
 
 .mdc-list-item.disabled::before, .mdc-list-item[disabled]::before, .mdc-list-item:disabled::before {
