@@ -37,6 +37,7 @@ MDC.activateTab = function(tab, animate = true) {
 
     var inkBar = container.children('.ink-bar');
     var startingSide = container.css('direction') == 'ltr' ? 'left' : 'right';
+    var endingSide = container.css('direction') == 'ltr' ? 'right' : 'left';
     var width = $(tab).outerWidth();
 
     if (scrollable) {
@@ -53,7 +54,7 @@ MDC.activateTab = function(tab, animate = true) {
         var offset = (container.offset().left + container.outerWidth()) - ($(tab).offset().left + width);
     }
 
-    inkBar.css(startingSide, offset).css('width', width);
+    inkBar.css(startingSide, offset).css(endingSide, 'auto').css('width', width);
 
     if (animate) {
         setTimeout(function () {
