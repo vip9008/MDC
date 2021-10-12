@@ -2,7 +2,7 @@ MDC.activateTab = function(tab, animate = true) {
     var container = $(tab).closest('.mdc-tabs');
     var scrollable = false;
 
-    if (container.hasClass('scrollable')) {
+    if (container.closest('.mdc-tabs-group').hasClass('scrollable')) {
         container = $(tab).closest('.os-content');
         scrollable = true;
     }
@@ -40,7 +40,7 @@ MDC.activateTab = function(tab, animate = true) {
     var width = $(tab).outerWidth();
 
     if (scrollable) {
-        $(tab).closest('.mdc-tabs.scrollable').overlayScrollbars().scroll({
+        $(tab).closest('.mdc-tabs').overlayScrollbars().scroll({
             el: $(tab),
             scroll: 'ifneeded',
             margin: (parseInt($('body').css('font-size')) * 2.75)
@@ -69,7 +69,7 @@ MDC.updateTabs = function () {
 }
 
 jQuery(function() {
-    MDC.overlayScrollbarsInit('.mdc-tabs.scrollable');
+    MDC.overlayScrollbarsInit('.mdc-tabs-group.scrollable .mdc-tabs');
     MDC.updateTabs();
 
     $('body').on(md_click_event, '.mdc-tabs .tab-item', function(event) {
@@ -79,6 +79,6 @@ jQuery(function() {
     });
 });
 
-$(window).resize(function () {
+$(window).on('load resize', function () {
     MDC.updateTabs();
 });
