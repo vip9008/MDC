@@ -17,6 +17,10 @@
     user-select: none;
 }
 
+.mdc-checkbox input, .mdc-switch input {
+    display: none;
+}
+
 .mdc-checkbox.checked,
 .mdc-checkbox.indeterminate,
 .mdc-radiobutton.checked {

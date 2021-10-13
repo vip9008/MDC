@@ -1,26 +1,30 @@
 jQuery(function() {
     $('.mdc-checkbox, .mdc-switch').each(function() {
-        if ($(this).children('input').prop('disabled')) {
+        var input = $(this).children('input[type="checkbox"]');
+
+        if (input.prop('disabled')) {
             $(this).addClass('disabled');
         }
 
-        if (parseInt($(this).children('input').val())) {
+        if (input.prop('checked')) {
             $(this).addClass('checked');
         }
     });
     
     $('body').on(md_click_event, '.mdc-checkbox, .mdc-switch', function(event) {
-        if ($(this).children('input').prop('disabled')) {
+        var input = $(this).children('input[type="checkbox"]');
+
+        if (input.prop('disabled')) {
             return false;
         }
 
-        if (parseInt($(this).children('input').val()) || $(this).hasClass('indeterminate')) {
+        if (input.prop('checked') || $(this).hasClass('indeterminate')) {
             $(this).removeClass('checked indeterminate');
-            $(this).children('input').val(0).trigger('change');
+            input.prop('checked', false).trigger('change');
             return false;
         } else {
             $(this).addClass('checked');
-            $(this).children('input').val(1).trigger('change');
+            input.prop('checked', true).trigger('change');
             return true;
         }
     });
