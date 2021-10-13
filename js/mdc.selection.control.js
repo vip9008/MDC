@@ -13,11 +13,13 @@ MDC.checkboxInit = function (item) {
 };
 
 MDC.radioInit = function (item) {
-    if ($(item).children('input').prop('disabled')) {
+    var input = $(item).children('input[type="radio"]');
+
+    if (input.prop('disabled')) {
         $(item).addClass('disabled');
     }
 
-    if ($(item).children('input').prop('checked')) {
+    if (input.prop('checked')) {
         $(item).addClass('checked');
     } else {
         $(item).removeClass('checked');
