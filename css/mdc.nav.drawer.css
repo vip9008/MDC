@@ -16,7 +16,7 @@
     overflow-y: auto;
 }
 
-#mdc-nav-drawer::before {
+#mdc-nav-drawer::after {
     content: '';
     position: absolute;
     top: 0;
@@ -25,14 +25,15 @@
     left: auto;
     width: 0.0625rem;
     background-color: rgba(var(--foreground-color), var(--opacity-divider));
+    pointer-events: none;
 }
 
-html[dir="ltr"] #mdc-nav-drawer::before {
+html[dir="ltr"] #mdc-nav-drawer::after {
     right: 0;
     left: auto;
 }
 
-html[dir="rtl"] #mdc-nav-drawer::before {
+html[dir="rtl"] #mdc-nav-drawer::after {
     right: auto;
     left: 0;
 }
