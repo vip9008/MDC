@@ -1,14 +1,36 @@
+MDC.checkboxInit = function (item) {
+    var input = $(item).children('input[type="checkbox"]');
+
+    if (input.prop('disabled')) {
+        $(item).addClass('disabled');
+    }
+
+    if (input.prop('checked')) {
+        $(item).addClass('checked');
+    } else {
+        $(item).removeClass('checked');
+    }
+};
+
+MDC.radioInit = function (item) {
+    if ($(item).children('input').prop('disabled')) {
+        $(item).addClass('disabled');
+    }
+
+    if ($(item).children('input').prop('checked')) {
+        $(item).addClass('checked');
+    } else {
+        $(item).removeClass('checked');
+    }
+};
+
 jQuery(function() {
     $('.mdc-checkbox, .mdc-switch').each(function() {
-        var input = $(this).children('input[type="checkbox"]');
+        MDC.checkboxInit(this);
+    });
 
-        if (input.prop('disabled')) {
-            $(this).addClass('disabled');
-        }
-
-        if (input.prop('checked')) {
-            $(this).addClass('checked');
-        }
+    $('.mdc-radiobutton').each(function() {
+        MDC.radioInit(this);
     });
     
     $('body').on(md_click_event, '.mdc-checkbox, .mdc-switch', function(event) {
@@ -26,16 +48,6 @@ jQuery(function() {
             $(this).addClass('checked');
             input.prop('checked', true).trigger('change');
             return true;
-        }
-    });
-
-    $('.mdc-radiobutton').each(function() {
-        if ($(this).children('input').prop('disabled')) {
-            $(this).addClass('disabled');
-        }
-
-        if ($(this).children('input').prop('checked')) {
-            $(this).addClass('checked');
         }
     });
 
