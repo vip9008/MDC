@@ -386,3 +386,18 @@ html[dir] .mdc-list-container[dir="rtl"] > .mdc-list-item > .mdc-switch.checked:
     left: auto;
     right: 1.375rem;
 }
+
+.mdc-list-group .hint-block, .mdc-list-group .help-block {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.033333em;
+    color: rgba(var(--initial-foreground-color), var(--opacity-hint));
+    cursor: default;
+    pointer-events: none;
+    word-break: break-word;
+    user-select: none;
+}
+
+.mdc-list-group.has-error .hint-block, .mdc-list-group.has-error .help-block {
+    color: rgb(var(--error-color));
+}
