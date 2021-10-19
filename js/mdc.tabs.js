@@ -1,6 +1,7 @@
 MDC.activateTab = function(tab, animate = true) {
     var container = $(tab).closest('.mdc-tabs');
     var scrollable = false;
+    var target = container.data('target');
 
     if (container.closest('.mdc-tabs-group').hasClass('scrollable')) {
         container = $(tab).closest('.os-content');
@@ -11,7 +12,6 @@ MDC.activateTab = function(tab, animate = true) {
         $(tab).addClass('active').siblings().removeClass('active');
 
         var tabIndex = $(tab).index();
-        var target = container.data('target');
         if (target) {
             target = $(target);
 
