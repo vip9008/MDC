@@ -1660,6 +1660,7 @@ body {
     --switch-opacity: 0.32;
     --slider-disabled-color: 125, 125, 125;
 
+    --initial-foreground-color: 0, 0, 0;
     --foreground-color: 0, 0, 0;
     --error-color: 176, 0, 32;
 
@@ -1689,6 +1690,7 @@ body {
     --switch-opacity: 0.38;
     --slider-disabled-color: 151, 151, 151;
 
+    --initial-foreground-color: 255, 255, 255;
     --foreground-color: 255, 255, 255;
     --error-color: 255, 49, 89;
 
