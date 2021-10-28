@@ -1,5 +1,5 @@
 MDC.tooltip = {
-    activeTooltip,
+    activeTooltip: undefined,
     timeout: 1.5
 };
 
