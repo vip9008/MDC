@@ -40,7 +40,7 @@ MDC.topAppBar = function () {
 }
 
 jQuery(function() {
-    MDC.lastScrollPosition = MDC.TopAppBar();
+    MDC.lastScrollPosition = MDC.topAppBar();
 
     if ($('#mdc-top-app-bar').hasClass('fixed')) {
         $('body').addClass('mdc-top-app-bar-visible');
