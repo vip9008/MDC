@@ -1,4 +1,4 @@
-MDC.NavBarOpen = function () {
+MDC.navBarOpen = function () {
     var css_class = 'mdc-drawer-expand';
     if ($('#mdc-nav-drawer').hasClass('modal')) {
         css_class = 'mdc-drawer-modal';
@@ -8,7 +8,7 @@ MDC.NavBarOpen = function () {
     $('#mdc-nav-drawer').addClass('active');
 }
 
-MDC.NavBarClose = function () {
+MDC.navBarClose = function () {
     if (!$('#mdc-nav-drawer').hasClass('permanent')) {
         $('body').removeClass('mdc-drawer-expand');
     }
@@ -17,7 +17,7 @@ MDC.NavBarClose = function () {
     $('#mdc-nav-drawer').removeClass('active');
 }
 
-MDC.IsNavBarOpen = function () {
+MDC.isNavBarOpen = function () {
     return $('#mdc-nav-drawer').hasClass('active') || ($('#mdc-nav-drawer').hasClass('permanent') && $(window).outerWidth() >= 960);
 }
 
@@ -27,6 +27,6 @@ jQuery(function() {
     }
     
     $('body').on(md_click_event, '.mdc-drawer-scrim', function(event) {
-        MDC.NavBarClose();
+        MDC.navBarClose();
     });
 });

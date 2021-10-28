@@ -1,6 +1,6 @@
 MDC.lastScrollPosition = 0;
 
-MDC.TopAppBar = function () {
+MDC.topAppBar = function () {
     var scroll = $(window).scrollTop();
     var height = $('#mdc-top-app-bar').height();
 
@@ -47,14 +47,14 @@ jQuery(function() {
     }
 
     $('body').on(md_click_event, '#mdc-top-app-bar > .nav-icon', function(event) {
-        if (MDC.IsNavBarOpen()) {
-            MDC.NavBarClose();
+        if (MDC.isNavBarOpen()) {
+            MDC.navBarClose();
         } else {
-            MDC.NavBarOpen();
+            MDC.navBarOpen();
         }
     });
 });
 
 $(window).scroll(function () {
-    MDC.lastScrollPosition = MDC.TopAppBar();
+    MDC.lastScrollPosition = MDC.topAppBar();
 });

@@ -1,5 +1,7 @@
-var mdc_active_tooltip;
-var mdc_tooltip_timeout = 1.5;
+MDC.tooltip = {
+    activeTooltip,
+    timeout: 1.5
+};
 
 jQuery(function() {
     $('body').on('mouseenter', '.has-tooltip', function(event) {
@@ -23,15 +25,15 @@ jQuery(function() {
 
         $(target).css(offset).addClass('active');
 
-        mdc_active_tooltip = setTimeout(function() {
+        MDC.tooltip.activeTooltip = setTimeout(function() {
             $('.mdc-tooltip.active').removeClass('active');
-        }, (mdc_tooltip_timeout * 1000));
+        }, (MDC.tooltip.timeout * 1000));
     });
 
     $('body').on('mouseleave', '.has-tooltip', function(event) {
         $('.mdc-tooltip.active').removeClass('active');
-        if (typeof mdc_active_tooltip !== 'undefined') {
-            clearTimeout(mdc_active_tooltip);
+        if (typeof MDC.tooltip.activeTooltip !== 'undefined') {
+            clearTimeout(MDC.tooltip.activeTooltip);
         }
     });
 });

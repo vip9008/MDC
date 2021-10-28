@@ -1,21 +1,21 @@
-MDC.SideSheetOpen = function(selector) {
+MDC.sideSheetOpen = function(selector) {
     $(selector).addClass('active');
     if ($(selector).hasClass('fixed')) {
         $('body').addClass('mdc-sheets-side-fixed');
     }
 }
 
-MDC.SideSheetClose = function(selector) {
+MDC.sideSheetClose = function(selector) {
     $(selector).removeClass('active');
     $('body').removeClass('mdc-sheets-side-fixed');
 }
 
 jQuery(function() {
     $('body').on(md_click_event, '.mdc-sheets-side .header .close-action > button', function(event) {
-        MDC.SideSheetClose($(this).closest('.mdc-sheets-side'));
+        MDC.sideSheetClose($(this).closest('.mdc-sheets-side'));
     });
 
     $('body').on(md_click_event, '.mdc-sheets-side-scrim', function(event) {
-        MDC.SideSheetClose($(this).prev('.mdc-sheets-side'));
+        MDC.sideSheetClose($(this).prev('.mdc-sheets-side'));
     });
 });
