@@ -1,4 +1,5 @@
 .mdc-card {
+    display: block;
     max-width: 100%;
     border-radius: 0.25rem;
     overflow: hidden;
