@@ -498,7 +498,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .material-icon {
-    font-family: 'Material Icons' !important;
+    font-family: 'Material Symbols Outlined' !important;
     font-weight: normal;
     font-style: normal;
     font-size: 1.5rem; /* Preferred icon size */
@@ -513,6 +513,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: 'liga';
     font-feature-settings: 'liga';
 }
 
