@@ -31,7 +31,7 @@
     opacity: 1;
 }
 
-.mdc-dialog-container > .mdc-dialog {
+.mdc-dialog-container .mdc-dialog {
     min-width: 17.5rem;
     max-width: 35rem;
     width: 17.5rem;
@@ -44,13 +44,13 @@
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mdc-dialog-container:not(.active) > .mdc-dialog {
+.mdc-dialog-container:not(.active) .mdc-dialog {
     -ms-transform: scale(1.12);
     -webkit-transform: scale(1.12);
     transform: scale(1.12);
 }
 
-.mdc-dialog-container > .mdc-dialog > .header {
+.mdc-dialog-container .mdc-dialog > .header {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -58,7 +58,7 @@
     padding: 1.5rem 1.5rem 0;
 }
 
-.mdc-dialog-container > .mdc-dialog > .header > .title {
+.mdc-dialog-container .mdc-dialog > .header > .title {
     font-size: 1.25rem;
     line-height: 2rem;
     letter-spacing: 0.0075em;
@@ -68,7 +68,8 @@
     margin: 0;
 }
 
-.mdc-dialog-container > .mdc-dialog > .body {
+.mdc-dialog-container .mdc-dialog > .body {
+    display: block;
     color: rgba(var(--foreground-color), var(--opacity-secondary));
     font-size: 1rem;
     line-height: 1.5rem;
@@ -77,23 +78,23 @@
     padding: 0 1.5rem 1.5rem;
 }
 
-.mdc-dialog-container > .mdc-dialog > .mdc-button-group {
+.mdc-dialog-container .mdc-dialog > .mdc-button-group {
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin: 0;
     padding-left: 1.25rem;
-    padding-right: 0.25rem;
+    padding-right: 0.5rem;
 }
 
-html[dir="ltr"] .mdc-dialog-container > .mdc-dialog > .mdc-button-group,
-html[dir] .mdc-button-group[dir="ltr"] > .mdc-dialog > .mdc-button-group {
+html[dir="ltr"] .mdc-dialog-container .mdc-dialog > .mdc-button-group,
+html[dir] .mdc-dialog-container[dir="ltr"] .mdc-dialog > .mdc-button-group {
     padding-left: 1.25rem;
-    padding-right: 0.25rem;
+    padding-right: 0.5rem;
 }
 
-html[dir="rtl"] .mdc-dialog-container > .mdc-dialog > .mdc-button-group,
-html[dir] .mdc-button-group[dir="rtl"] > .mdc-dialog > .mdc-button-group {
-    padding-left: 0.25rem;
+html[dir="rtl"] .mdc-dialog-container .mdc-dialog > .mdc-button-group,
+html[dir] .mdc-dialog-container[dir="rtl"] .mdc-dialog > .mdc-button-group {
+    padding-left: 0.5rem;
     padding-right: 1.25rem;
 }
 
@@ -103,31 +104,31 @@ html[dir] .mdc-button-group[dir="rtl"] > .mdc-dialog > .mdc-button-group {
 /* width must be a multiple of 3.5rem */
 /* MIN MARGINS = 40 Left, 40 Right */
 @media (min-width: 26rem) {
-    .mdc-dialog-container > .mdc-dialog {
+    .mdc-dialog-container .mdc-dialog {
         width: 21rem;
     }
 }
 
 @media (min-width: 29.5rem) {
-    .mdc-dialog-container > .mdc-dialog {
+    .mdc-dialog-container .mdc-dialog {
         width: 24.5rem;
     }
 }
 
 @media (min-width: 33rem) {
-    .mdc-dialog-container > .mdc-dialog {
+    .mdc-dialog-container .mdc-dialog {
         width: 28rem;
     }
 }
 
 @media (min-width: 36.5rem) {
-    .mdc-dialog-container > .mdc-dialog {
+    .mdc-dialog-container .mdc-dialog {
         width: 31.5rem;
     }
 }
 
 @media (min-width: 40rem) {
-    .mdc-dialog-container > .mdc-dialog {
+    .mdc-dialog-container .mdc-dialog {
         width: 35rem;
     }
 }

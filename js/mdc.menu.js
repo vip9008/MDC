@@ -5,7 +5,7 @@ MDC.menuCloseAll = function() {
 }
 
 MDC.menuClose = function(selector) {
-    $(selector).trigger('MDC.menuClose').removeClass('active').find('.menu-button').removeClass('active');
+    $(selector).trigger('MDC.menuClose').removeClass('active');
 }
 
 jQuery(function() {
@@ -20,7 +20,7 @@ jQuery(function() {
         }
     });
 
-    $('body').on(md_click_event, '.mdc-menu-container .mdc-list-container', function(event) {
+    $('body').on(md_click_event, '.mdc-menu-container .menu-container', function(event) {
         event.stopPropagation();
     });
 
@@ -44,7 +44,7 @@ jQuery(function() {
         }
 
         // $(menu_container).removeClass('bottom reverse').find('.mdc-list-container').removeAttr('style');
-        $(menu_container).find('.mdc-list-container').removeAttr('style');
+        $(menu_container).find('.menu-container').removeAttr('style');
 
         if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
             return false;
@@ -53,7 +53,7 @@ jQuery(function() {
         var viewport_width = document.documentElement.clientWidth || document.body.clientWidth;
         var viewport_height = document.documentElement.clientHeight || document.body.clientHeight;
 
-        var menu = $(menu_container).find('.mdc-list-container');
+        var menu = $(menu_container).find('.menu-container');
         var menu_height = $(menu).outerHeight();
         var menu_width = $(this).hasClass('mdc-text-field') ? $(this).outerWidth() : $(menu).outerWidth();
         var menu_position = $(menu)[0].getBoundingClientRect();
@@ -123,7 +123,7 @@ jQuery(function() {
         }
     });
 
-    $('body').on(md_click_event, '.mdc-menu-container.select-menu .mdc-list-container button.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container a.mdc-list-item, .mdc-menu-container.select-menu .mdc-list-container .mdc-list-item.interactive', function(event) {
+    $('body').on(md_click_event, '.mdc-menu-container.select-menu .menu-container button.mdc-list-item, .mdc-menu-container.select-menu .menu-container a.mdc-list-item, .mdc-menu-container.select-menu .menu-container .mdc-list-item.interactive', function(event) {
         var container = $(this).closest('.select-menu');
 
         if ($(this).hasClass('selected')) {
@@ -157,8 +157,8 @@ jQuery(function() {
         var field = $(this).find('.mdc-text-field');
 
         if ($(field).hasClass('mdc-searchable')) {
-            $(this).find('.mdc-list-container .mdc-list-item').removeClass('hidden').removeClass('visible');
-            var selected = $(this).find('.mdc-list-container .mdc-list-item.selected');
+            $(this).find('.menu-container .mdc-list-item').removeClass('hidden').removeClass('visible');
+            var selected = $(this).find('.menu-container .mdc-list-item.selected');
             if ($(selected).length) {
                 $(field).children('.input').children('input').val($(selected).attr('data-label')).trigger('change');
             } else {

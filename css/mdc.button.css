@@ -1,17 +1,10 @@
 .mdc-button-group {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-align: center;
     align-items: center;
+    gap: 0.5rem;
     padding: 0.5rem 0;
-    margin: 0 -0.25rem;
-}
-
-.mdc-button-group > .mdc-button,
-.mdc-button-group > .mdc-toggle-buttons {
-    margin: 0 0.25rem;
+    margin: 0;
 }
 
 .mdc-button-group.direction-reverse {

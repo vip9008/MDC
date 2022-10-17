@@ -156,20 +156,23 @@
 
 @-webkit-keyframes autofill {
     to {
-        background: transparent;
+        background: transparent !important;
     }
 }
 
 @keyframes autofill {
     to {
-        background: transparent;
+        background: transparent !important;
     }
 }
 
 .mdc-text-field > .input .input-element:-webkit-autofill,
 .mdc-text-area > .input .input-element:-webkit-autofill {
+    -webkit-text-fill-color: rgba(var(--initial-foreground-color), var(--opacity-primary)) !important;
     -webkit-animation-name: autofill;
     -webkit-animation-fill-mode: both;
+    animation-name: autofill;
+    animation-fill-mode: both;
 }
 
 .mdc-text-field.active > .input,
@@ -190,7 +193,7 @@
     text-decoration: inherit;
     text-transform: inherit;
     position: absolute;
-    top: 1.125rem;
+    top: 1.25rem;
     left: 0.75rem;
     right: auto;
     cursor: text;
@@ -281,6 +284,7 @@ html[dir] * .mdc-text-area[dir="rtl"] > .label {
     color: rgba(var(--foreground-color), var(--opacity-secondary));
     cursor: default;
     pointer-events: none;
+    z-index: 9;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -295,7 +299,6 @@ html[dir] * .mdc-text-area[dir="rtl"] > .label {
     text-decoration: none;
     cursor: pointer;
     pointer-events: all;
-    z-index: 9;
 }
 
 html[dir="ltr"] .mdc-text-field > .icon,
@@ -398,6 +401,7 @@ html[dir] * .mdc-text-field[dir="rtl"] > .icon.trailing + .input + .label {
     cursor: default;
     pointer-events: none;
     word-break: break-word;
+    display: block;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */

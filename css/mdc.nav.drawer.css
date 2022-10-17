@@ -157,17 +157,17 @@ body.mdc-drawer-modal {
     overflow: hidden;
 }
 
-body.mdc-drawer-modal > #mdc-nav-drawer.modal {
+body.mdc-drawer-modal #mdc-nav-drawer.modal {
     left: 0;
     box-shadow: var(--z-axis-16-shadow);
 }
 
-html[dir="ltr"] body.mdc-drawer-modal > #mdc-nav-drawer.modal {
+html[dir="ltr"] body.mdc-drawer-modal #mdc-nav-drawer.modal {
     left: 0;
     right: auto;
 }
 
-html[dir="rtl"] body.mdc-drawer-modal > #mdc-nav-drawer.modal {
+html[dir="rtl"] body.mdc-drawer-modal #mdc-nav-drawer.modal {
     left: auto;
     right: 0;
 }
@@ -179,7 +179,7 @@ html[dir="rtl"] body.mdc-drawer-modal > #mdc-nav-drawer.modal {
     z-index: calc(var(--z-axis-16-index) - 1);
 }
 
-body.mdc-drawer-modal > #mdc-nav-drawer.modal + .mdc-drawer-scrim {
+body.mdc-drawer-modal #mdc-nav-drawer.modal + .mdc-drawer-scrim {
     visibility: visible;
     position: fixed;
     top: 0;
@@ -207,16 +207,16 @@ html[dir="rtl"] #mdc-nav-drawer.persistent {
     right: -16rem;
 }
 
-body.mdc-drawer-expand > #mdc-nav-drawer.persistent {
+body.mdc-drawer-expand #mdc-nav-drawer.persistent {
     left: 0;
 }
 
-html[dir="ltr"] body.mdc-drawer-expand > #mdc-nav-drawer.persistent {
+html[dir="ltr"] body.mdc-drawer-expand #mdc-nav-drawer.persistent {
     left: 0;
     right: auto;
 }
 
-html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer.persistent {
+html[dir="rtl"] body.mdc-drawer-expand #mdc-nav-drawer.persistent {
     left: auto;
     right: 0;
 }
@@ -238,26 +238,26 @@ html[dir="rtl"] #mdc-nav-drawer.permanent {
     right: 0;
 }
 
-body:not(.mdc-top-app-bar-hidden) > #mdc-nav-drawer.clipped:not(.modal) {
+body:not(.mdc-top-app-bar-hidden) #mdc-nav-drawer.clipped:not(.modal) {
     margin-top: 4rem;
     z-index: var(--z-axis-0-index);
 }
 
-body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
+body.mdc-drawer-expand #mdc-nav-drawer:not(.clipped) ~ #mdc-top-app-bar {
     margin-left: 16rem;
 }
 
-html[dir="ltr"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
+html[dir="ltr"] body.mdc-drawer-expand #mdc-nav-drawer:not(.clipped) ~ #mdc-top-app-bar {
     margin-left: 16rem;
     margin-right: 0;
 }
 
-html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
+html[dir="rtl"] body.mdc-drawer-expand #mdc-nav-drawer:not(.clipped) ~ #mdc-top-app-bar {
     margin-left: 0;
     margin-right: 16rem;
 }
 
-#mdc-nav-drawer.permanent + .mdc-drawer-scrim + #mdc-top-app-bar > .nav-icon {
+#mdc-nav-drawer.permanent ~ #mdc-top-app-bar > .nav-icon {
     display: none;
 }
 
@@ -325,17 +325,17 @@ html[dir="rtl"] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-dr
         opacity: 0.5;
     }
 
-    body:not(.mdc-top-app-bar-hidden) > #mdc-nav-drawer.clipped:not(.modal) {
+    body:not(.mdc-top-app-bar-hidden) #mdc-nav-drawer.clipped:not(.modal) {
         margin-top: 0;
         z-index: var(--z-axis-16-index);
     }
 
-    body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar,
-    html[dir] body.mdc-drawer-expand > #mdc-nav-drawer:not(.clipped) + .mdc-drawer-scrim + #mdc-top-app-bar {
+    body.mdc-drawer-expand #mdc-nav-drawer:not(.clipped) ~ #mdc-top-app-bar,
+    html[dir] body.mdc-drawer-expand #mdc-nav-drawer:not(.clipped) ~ #mdc-top-app-bar {
         margin: 0;
     }
 
-    #mdc-nav-drawer.permanent + .mdc-drawer-scrim + #mdc-top-app-bar > .nav-icon {
+    #mdc-nav-drawer.permanent ~ #mdc-top-app-bar > .nav-icon {
         display: -ms-inline-flexbox;
         display: inline-flex;
     }
