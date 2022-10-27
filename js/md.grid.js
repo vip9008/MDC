@@ -48,17 +48,23 @@ function md_init()
 
 var md_click_event = 'click';
 
-MDC.overlayScrollbarsInit = function(selector) {
+MDC.overlayScrollbarsInit = function(selector, overflow = {
+    x: "scroll",
+    y: "scroll"
+}) {
     $(selector).overlayScrollbars({
         className: "os-theme-main",
         callbacks: {
             onScroll: function(eventArgs) {
                 $(this.getElements().host).trigger('scroll');
             }
-        }
+        },
+        overflowBehavior : overflow
     });
 }
 
 jQuery(function($) {
     MDC.overlayScrollbarsInit('.overlay-scrollbars');
+    MDC.overlayScrollbarsInit('.overlay-scrollbar-y', {x: "hidden"});
+    MDC.overlayScrollbarsInit('.overlay-scrollbar-x', {y: "hidden"});
 });
