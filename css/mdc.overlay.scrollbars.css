@@ -1,4 +1,6 @@
-.overlay-scrollbars {
+.overlay-scrollbars,
+.overlay-scrollbar-x,
+.overlay-scrollbar-y {
     height: 100%;
     max-width: 100%;
     overflow: auto;
