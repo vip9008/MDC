@@ -355,7 +355,7 @@ html[dir] .mdc-data-table[dir="ltr"] > .table-container > table > thead > tr > t
     opacity: 0;
     will-change: transform, opacity;
     transition: transform 0.2s, opacity 0.2s;
-    font-family: 'Material Icons' !important;
+    font-family: 'Material Symbols Outlined' !important;
     font-weight: normal;
     font-style: normal;
     font-size: 1.125rem;
