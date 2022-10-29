@@ -129,14 +129,14 @@ html[dir] .mdc-menu-container[dir="rtl"] .menu-container {
     transition: transform 365ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
-html[dir="ltr"] .mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
-html[dir] .mdc-menu-container[dir="ltr"] > .mdc-text-field.active > .material-icon.trailing {
+.mdc-menu-container.active > .mdc-text-field > .material-icon.trailing,
+html[dir="ltr"] .mdc-menu-container.active > .mdc-text-field > .material-icon.trailing,
+html[dir] .mdc-menu-container.active[dir="ltr"] > .mdc-text-field > .material-icon.trailing {
     transform: rotate(-180deg);
 }
 
-html[dir="rtl"] .mdc-menu-container > .mdc-text-field.active > .material-icon.trailing,
-html[dir] .mdc-menu-container[dir="rtl"] > .mdc-text-field.active > .material-icon.trailing {
+html[dir="rtl"] .mdc-menu-container.active > .mdc-text-field > .material-icon.trailing,
+html[dir] .mdc-menu-container.active[dir="rtl"] > .mdc-text-field > .material-icon.trailing {
     transform: rotate(180deg);
 }
 
