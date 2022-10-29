@@ -86,11 +86,17 @@ html[dir] .mdc-menu-container[dir="rtl"] .menu-container {
     opacity: 0;
 }
 
+.mdc-menu-container.select-menu {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 .mdc-menu-container.select-menu > .menu-button {
     background: transparent;
     padding: 0;
     text-align: inherit;
     text-align: unset;
+    margin: 0;
 }
 
 .mdc-menu-container.select-menu .menu-container {
