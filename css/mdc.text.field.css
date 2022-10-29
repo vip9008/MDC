@@ -12,12 +12,16 @@
     --focus-border-size: 2px;
     --border-color: var(--foreground-color);
 
-    display: block;
     position: relative;
-    margin-top: 1rem;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     margin-bottom: 0.5rem;
     width: 17.5rem;
     max-width: 100%;
+}
+
+.mdc-text-area.outlined, .mdc-text-field.outlined {
+    margin-top: 0.5rem;
 }
 
 .mdc-form.inline .mdc-text-area,

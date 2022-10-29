@@ -87,7 +87,6 @@ html[dir] .mdc-menu-container[dir="rtl"] .menu-container {
 }
 
 .mdc-menu-container.select-menu {
-    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
