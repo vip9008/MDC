@@ -102,14 +102,6 @@ html[dir] .mdc-menu-container[dir="rtl"] .menu-container {
     min-width: 100%;
 }
 
-.mdc-menu-container.select-menu:not(.bottom) .menu-container {
-    top: 4.5625rem;
-}
-
-.mdc-menu-container.select-menu:not(.bottom) > .mdc-text-field.outlined + .menu-container {
-    margin-top: 0.0625rem;
-}
-
 .mdc-menu-container > .menu-container .mdc-list-item.selected::after {
     content: '';
     position: absolute;
