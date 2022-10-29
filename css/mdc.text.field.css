@@ -15,6 +15,7 @@
     position: relative;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    flex-direction: column;
     margin-bottom: 0.5rem;
     width: 17.5rem;
     max-width: 100%;
