@@ -16,7 +16,7 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     flex-direction: column;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     width: 17.5rem;
     max-width: 100%;
 }

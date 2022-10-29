@@ -6,6 +6,10 @@
     max-width: 100%;
 }
 
+.mdc-menu-container.select-menu {
+    margin-bottom: 1rem;
+}
+
 .mdc-menu-container.full-width {
     width: 100%;
 }
@@ -85,10 +89,6 @@ html[dir] .mdc-menu-container[dir="rtl"] .menu-container {
     -ms-transform: scaleY(0);
     transform: scaleY(0);
     opacity: 0;
-}
-
-.mdc-menu-container.select-menu {
-    margin-bottom: 0.5rem;
 }
 
 .mdc-menu-container.select-menu > .menu-button {
