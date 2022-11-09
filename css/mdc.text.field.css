@@ -50,7 +50,7 @@
 .mdc-text-area > .input {
     text-decoration: inherit;
     text-transform: inherit;
-    min-width: 100%;
+    width: 100%;
     -ms-flex-item-align: end;
     align-self: flex-end;
     position: relative;
