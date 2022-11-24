@@ -162,7 +162,7 @@ jQuery(function() {
             $(container).find('.mdc-text-field').removeClass('focus');
         }
 
-        $(container).find('.mdc-text-field').children('.select-value').val(value);
+        $(container).find('.mdc-text-field').children('.select-value').val(value).trigger('change');
         MDC.menuClose(container);
     });
 
