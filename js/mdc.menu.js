@@ -121,6 +121,9 @@ jQuery(function() {
         var filter = $(this).val().toUpperCase().replace("'", '');
         var found = false;
         var container = $(this).closest('.select-menu');
+
+        $(container).trigger('MDC.menuOpen');
+
         $(container).find('.mdc-list-container .mdc-list-item').each(function() {
             if ($(this).children('.text').text().toUpperCase().replace("'", '').indexOf(filter) > -1) {
                 $(this).removeClass('hidden');
