@@ -6,9 +6,12 @@ MDC.tooltip = {
 jQuery(function() {
     $('body').on('mouseenter', '.has-tooltip', function(event) {
         // positioning the tooltip
-        var baseSize = parseFloat($(':root').css('font-size'));
-        var offset = $(this).offset();
-        var target = $(this).find('.mdc-tooltip').clone();
+        let baseSize = parseFloat($(':root').css('font-size'));
+        let offset = $(this).offset();
+        let target = $('<div/>', {
+            class: 'mdc-tooltip',
+            text: $(this).attr('data-tooltip')
+        });
 
         $('body').append($(target)).ready(() => {
             offset.top = offset.top + $(this).innerHeight() + baseSize - $(window).scrollTop();
