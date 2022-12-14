@@ -65,7 +65,7 @@
                     if (this.compareDates(currentDate, selectedDate)) {
                         cssClass += ' active';
                     }
-                    monthDaysHTML += '<td><button class="' + cssClass + '" data-date="'+ this.dateFormat(currentDate, 'yyyy-MM-dd') +'">' + i + '</button></td>';
+                    monthDaysHTML += '<td><button type="button" class="' + cssClass + '" data-date="'+ this.dateFormat(currentDate, 'yyyy-MM-dd') +'">' + i + '</button></td>';
                 }
     
                 if ((i + startingDay) % 7 == 0) {
@@ -214,7 +214,7 @@
             var yearsList = '';
             for (var i = this.options.startDate.getFullYear(); i <= this.options.endDate.getFullYear(); i++) {
                 var thisYear = this.options.currentMonth.getFullYear();
-                yearsList += '<div class="year-box"><button class="year-'+ i + (i == thisYear ? ' active' : '') + '" data-year="' + i + '">' + i + '</button></div>';
+                yearsList += '<div class="year-box"><button type="button" class="year-'+ i + (i == thisYear ? ' active' : '') + '" data-year="' + i + '">' + i + '</button></div>';
             }
 
             var pickerHTML = '<div class="mdc-datepicker-container">' +
@@ -225,10 +225,10 @@
                                     '</div>' +
                                     '<div class="mdc-calendar-controls">' +
                                         '<div class="selected-month">' + helpers.dateFormat(this.options.currentMonth, 'MMMM yyyy') + '</div>' +
-                                        '<button class="material-icon dense toggle-years">arrow_drop_down</button>' +
+                                        '<button type="button" class="material-icon dense toggle-years">arrow_drop_down</button>' +
                                         '<div class="month-controls">' +
-                                            '<button class="material-icon dense prev">chevron_left</button>' +
-                                            '<button class="material-icon dense next">chevron_right</button>' +
+                                            '<button type="button" class="material-icon dense prev">chevron_left</button>' +
+                                            '<button type="button" class="material-icon dense next">chevron_right</button>' +
                                         '</div>' +
                                     '</div>' +
                                     helpers.renderMonth(this.options.currentMonth, this.options.selectedDate, this.options.startDate, this.options.endDate) +
@@ -236,8 +236,8 @@
                                         '<div class="years-items">' + yearsList + '</div>' +
                                     '</div>' +
                                     '<div class="mdc-button-group">' +
-                                        '<button class="mdc-button close-picker">Cancel</button>' +
-                                        '<button class="mdc-button confirm-date">OK</button>' +
+                                        '<button type="button" class="mdc-button close-picker">Cancel</button>' +
+                                        '<button type="button" class="mdc-button confirm-date">OK</button>' +
                                     '</div>' +
                                 '</div>'+
                             '</div>';
